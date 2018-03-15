@@ -1,8 +1,13 @@
-git commit -m "git config --global user.name "Bruce Wayne""
-
+CONFIGURE TOOLING :
+git commit -m "git config --global user.name "Bruce Wayne"
+git config --global user.name "Bruce Wayne"
 git config --global user.email explorer436@tutanota.com
-
 git config --system core.longpaths true
+git config --global color.ui auto
+
+CREATE REPOSITORIES :
+git init (project name) - Creates a new local repository with the specified name
+git clone (url) - downloads a project and its entire version history
 
 ssh-keygen -t rsa -b 4096 -C "explorer436@tutanota.com" (When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.) Now add this SSH ket to
 
