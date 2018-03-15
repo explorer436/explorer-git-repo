@@ -33,25 +33,37 @@ git push
 
 git push <remotename> <commit SHA>:<remotebranchname>
 
-If it says "Your branch is ahead of 'origin/feature/LifeXXXXXX' by 1 commit" and if you want to push your commit to remote branch, use "git push". If you do not want to push your commit to remote branch, use "git reset HEAD~"
+If it says "Your branch is ahead of 'origin/feature/LifeXXXXXX' by 1 commit" and 
+if you want to push your commit to remote branch, use "git push". 
+If you do not want to push your commit to remote branch, use "git reset HEAD~"
 
-git revert : is used to undo a previous commit. In git, you can't alter or erase an earlier commit. (Actually you can, but it can cause problems.) So instead of editing the earlier commit, revert introduces a new commit that reverses an earlier one.
+git revert : is used to undo a previous commit. In git, you can't alter or erase an earlier commit. 
+    (Actually you can, but it can cause problems.) 
+    So instead of editing the earlier commit, revert introduces a new commit that       reverses an earlier one.
 git reset  : is used to undo changes in your working directory that haven't been comitted yet.
-git checkout  : is used to copy a file from some other commit to your current working tree. It doesn't automatically commit the file. (Switch branches or restore working tree files)
+git checkout  : is used to copy a file from some other commit to your current working tree. 
+    It doesn't automatically commit the file. (Switch branches or restore working tree files)
 
 git checkout fileName - Command to undo changes to a single file in working directory
-git reset --mixed HEAD file.txt - it essentially just takes whatever file.txt looks like in HEAD and puts that in the Index
+git reset --mixed HEAD file.txt - it essentially just takes whatever file.txt looks like in HEAD and 
+    puts that in the Index
 git reset HEAD~ (to undo previous commits that you don't want to push)
-git reset --soft HEAD~ (When you reset back to HEAD~ (the parent of HEAD), you are moving the branch back to where it was without changing the Index (staging area) or Working Directory. You could now do a bit more work and commit again to accomplish basically what git commit --amend would have done. Note that if you run git status now you'll see in green the difference between the Index and what the new HEAD is.)
-git reset --mixed HEAD~  (It still undid your last commit, but also unstaged everything. You rolled back to before you ran all your git adds AND git commit.)
+git reset --soft HEAD~ (When you reset back to HEAD~ (the parent of HEAD), 
+    you are moving the branch back to where it was without changing the Index (staging area) or Working Directory. 
+    You could now do a bit more work and commit again to accomplish basically what git commit --amend would have done. 
+    Note that if you run git status now you'll see in green the difference between the Index and what the new HEAD is.)
+git reset --mixed HEAD~  (It still undid your last commit, but also unstaged everything. 
+    You rolled back to before you ran all your git adds AND git commit.)
 git reset --hard HEAD~  (You undid your last commit, all the git adds, and all the work you did in your working directory.)
 
-git reset --hard origin/master<remotebranchname> : master branch and 'origin/master' have diverged, how to 'undiverge' branches'
+git reset --hard origin/master<remotebranchname> : master branch and 'origin/master' have diverged, 
+    how to 'undiverge' branches'
 
 If the names of your local branch and the remote branch are different, you will see this error.
 fatal: The upstream branch of your current branch does not match the name of your current branch.
 To push to the upstream branch on the remote, use "git push origin HEAD:feature/LifeEventObjectLocks"
-To push to the branch of the same name on the remote, use "git push origin feature/SavePropertyQuoteFailureLifeEventObjectLocks"
+To push to the branch of the same name on the remote, 
+    use "git push origin feature/SavePropertyQuoteFailureLifeEventObjectLocks"
 
 git stash -u : command to undo all changes
 git diff file_name.txt  : command to show changes in a specific file
