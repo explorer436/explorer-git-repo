@@ -1,0 +1,52 @@
+git commit -m "git config --global user.name "Bruce Wayne""
+
+git config --global user.email explorer436@tutanota.com
+
+git config --system core.longpaths true
+
+ssh-keygen -t rsa -b 4096 -C "explorer436@tutanota.com" (When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.) Now add this SSH ket to
+
+If you want to add an SSH key generated from Git console to the ssh-agent in your computer : 
+( You might need to start ssh-agent before you run the ssh-add command: eval `ssh-agent -s` )
+Add your SSH private key to the ssh-agent using the following command : ssh-add  ~/Downloads/CloudForgeGitSSHKeys/id_rsa
+(this should point to the location of the private key file)
+
+git branch (local branch name) -u (remote branch name) : To point local branch to a different remote branch
+git branch -m <newname>  : command to rename the current local branch
+
+Git - Use these comments for check in :
+git status
+git diff myfile.txt : command to see what you haven't "git add"ed yet
+git diff --cached myfile.txt : command to see already "-add" ed changes
+git add -A : To add all changed files
+git add (fileName) : To add individual changed files :
+git commit -m "comments - include JIRA id in comments"
+git commit -m 'USPS-684 MapAddressesToSSMForDeletedAgreementAddressTypes' path/to/my/file.ext : command to git commit a single file/directory :
+git push
+
+git push <remotename> <commit SHA>:<remotebranchname>
+
+If it says "Your branch is ahead of 'origin/feature/LifeXXXXXX' by 1 commit" and if you want to push your commit to remote branch, use "git push". If you do not want to push your commit to remote branch, use "git reset HEAD~"
+
+git revert : is used to undo a previous commit. In git, you can't alter or erase an earlier commit. (Actually you can, but it can cause problems.) So instead of editing the earlier commit, revert introduces a new commit that reverses an earlier one.
+git reset  : is used to undo changes in your working directory that haven't been comitted yet.
+git checkout  : is used to copy a file from some other commit to your current working tree. It doesn't automatically commit the file. (Switch branches or restore working tree files)
+
+git checkout fileName - Command to undo changes to a single file in working directory
+git reset --mixed HEAD file.txt - it essentially just takes whatever file.txt looks like in HEAD and puts that in the Index
+git reset HEAD~ (to undo previous commits that you don't want to push)
+git reset --soft HEAD~ (When you reset back to HEAD~ (the parent of HEAD), you are moving the branch back to where it was without changing the Index (staging area) or Working Directory. You could now do a bit more work and commit again to accomplish basically what git commit --amend would have done. Note that if you run git status now you'll see in green the difference between the Index and what the new HEAD is.)
+git reset --mixed HEAD~  (It still undid your last commit, but also unstaged everything. You rolled back to before you ran all your git adds AND git commit.)
+git reset --hard HEAD~  (You undid your last commit, all the git adds, and all the work you did in your working directory.)
+
+git reset --hard origin/master<remotebranchname> : master branch and 'origin/master' have diverged, how to 'undiverge' branches'
+
+If the names of your local branch and the remote branch are different, you will see this error.
+fatal: The upstream branch of your current branch does not match the name of your current branch.
+To push to the upstream branch on the remote, use "git push origin HEAD:feature/LifeEventObjectLocks"
+To push to the branch of the same name on the remote, use "git push origin feature/SavePropertyQuoteFailureLifeEventObjectLocks"
+
+git stash -u : command to undo all changes
+git diff file_name.txt  : command to show changes in a specific file
+git remote update : command to update remote branches
+git branch -a : command to list all branches
