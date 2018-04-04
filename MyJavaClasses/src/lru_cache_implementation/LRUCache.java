@@ -31,7 +31,8 @@ public class LRUCache
 {
 	/*There is only a few details to make it better.
 
-	1) When the cache is reaches its max capacity you only remove the end of the list. You should also remove the entry from the hash table.
+	1) When the cache is reaches its max capacity you only remove the end of the list. 
+	You should also remove the entry from the hash table.
 
 	if(map.size()>=capacity)
 	{
@@ -52,33 +53,41 @@ public class LRUCache
         this.capacity = capacity;
     }
  
-    public int get(int key) {
-        if(map.containsKey(key)){
-            Node n = map.get(key);
-            remove(n);
-            setHead(n);
-            return n.value;
-        }
+	public int get(int key) 
+	{
+		if (map.containsKey(key)) 
+		{
+			Node n = map.get(key);
+			remove(n);
+			setHead(n);
+			return n.value;
+		}
+		return -1;
+	}
  
-        return -1;
-    }
- 
-    public void remove(Node n){
-        if(n.pre!=null){
+    public void remove(Node n)
+    {
+        if(n.pre!=null)
+        {
             n.pre.next = n.next;
-        }else{
+        }
+        else
+        {
             head = n.next;
         }
  
-        if(n.next!=null){
+        if(n.next != null)
+        {
             n.next.pre = n.pre;
-        }else{
+        }
+        else
+        {
             end = n.pre;
         }
- 
     }
  
-    public void setHead(Node n){
+    public void setHead(Node n)
+    {
         n.next = head;
         n.pre = null;
  
