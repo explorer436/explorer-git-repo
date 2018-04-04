@@ -23,7 +23,7 @@ public class FrogRiverOne
         System.out.println("result : " + solution(1, A5));
         
         int[] A6 = {2, 2, 2, 2, 2};
-        System.out.println("result : " + solution(2, A5));
+        System.out.println("result : " + solution(2, A6));
     }
     
     public static int solution(int X, int[] A)
