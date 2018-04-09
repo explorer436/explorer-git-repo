@@ -1,3 +1,5 @@
 Implement to logic for the problems specified in the "to_be_implemented" folder
 
 write your own logic for MooshakCatchingCheese.java
+
+write an application to send an email in java - build on it later to use custom templates etc.
