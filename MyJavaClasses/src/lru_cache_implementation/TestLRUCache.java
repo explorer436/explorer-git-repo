@@ -1,8 +1,10 @@
 package lru_cache_implementation;
 
-public class TestLRUCache {
+public class TestLRUCache 
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		int[] pageNumberArray = {1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5};
 		
 		int cacheSize = 3;

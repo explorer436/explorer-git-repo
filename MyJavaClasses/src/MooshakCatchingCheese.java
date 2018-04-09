@@ -98,8 +98,6 @@ public class MooshakCatchingCheese {
 	
 	public static int isPath(int[][] grid)
 	{
-		//System.out.println("grid.length : " + grid.length);
-		//System.out.println("grid[0].length : " + grid[0].length);
 		return isPath(grid, grid.length, grid[0].length);
 	}
 	
@@ -111,8 +109,14 @@ public class MooshakCatchingCheese {
 	
 	/**
 	 * (x, y) represents the starting point of Mooshak
+	 * 
+	 * In this method, the mouse can either move in horizontal right 
+	 * or vertically down. But in some cases, 
+	 * it may need that mouse move in horizontal left and 
+	 * vertically up to make a way and get cheese.
+	 * That part of the functionality has to be implemented.
 	 */
-	/*static int solveMazeUtil(int[][] grid,int x,int y,int rows,int columns)
+	static int solveMazeUtil(int[][] grid,int x,int y,int rows,int columns)
 	{
 		if(x>=0 && x < rows && y>=0 && y<columns)
 		{
@@ -123,37 +127,6 @@ public class MooshakCatchingCheese {
 			// Check if maze[x][y] is valid - 1 represents path
 			if(grid[x][y] == 1)
 			{
-				 Move forward in x direction 
-				if (solveMazeUtil(grid, x+1, y, rows,columns) == 1)
-				{
-					return 1;
-				}
-				
-				 If moving in x direction doesn't give solution then move down in y direction 
-				if (solveMazeUtil(grid, x, y+1, rows,columns) == 1)
-				{
-					return 1;
-				}
-				 If none of the above movements work then BACKTRACK: unmark x,y as part of solution path 
-				return 0;
-			}
-			return 0;
-		}
-		return 0;
-	}*/
-	
-	static int solveMazeUtil(int[][] grid,int x,int y,int rows,int columns)
-	{
-		if(x>=0 && x < rows && y>=0 && y<columns)
-		{
-			System.out.println("x : " + x + ", grid[" + x + "]["+ y +"] : " + grid[x][y]);
-			if(grid[x][y]==9)
-			{
-				return 1;
-			}
-			// Check if maze[x][y] is valid - 1 represents path
-			else if(grid[x][y] == 1)
-			{
 				// Move forward in x direction 
 				if (solveMazeUtil(grid, x+1, y, rows,columns) == 1)
 				{
@@ -161,23 +134,10 @@ public class MooshakCatchingCheese {
 				}
 				
 				// If moving in x direction doesn't give solution then move down in y direction 
-				else if (solveMazeUtil(grid, x, y+1, rows,columns) == 1)
+				if (solveMazeUtil(grid, x, y+1, rows,columns) == 1)
 				{
 					return 1;
 				}
-				
-				// If moving in x direction doesn't give solution then move down in y direction 
-				else if (x != 0 && solveMazeUtil(grid, x-1, y, rows,columns) == 1)
-				{
-					return 1;
-				}
-				
-				// If moving in x direction doesn't give solution then move down in y direction 
-				else if (y != 0 && solveMazeUtil(grid, x, y-1, rows,columns) == 1)
-				{
-					return 1;
-				}
-				
 				// If none of the above movements work then BACKTRACK: unmark x,y as part of solution path 
 				return 0;
 			}
