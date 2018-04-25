@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 
 /**
  * A DNA sequence can be represented as a string consisting of 
@@ -95,13 +95,20 @@ public class GenomicRangeQuery
 
         for (int location = 0; location < chars.length; location++) 
         {
+        		System.out.println("location : " + location);
             if (location > 0) 
             {
                 for (int zzz = 0; zzz < 4; zzz++) 
                 {
+                		System.out.println("zzz : " + zzz);
                     cumulativeAnswers[zzz][location + 1] = cumulativeAnswers[zzz][location];
                 }
+                System.out.println(Arrays.deepToString(cumulativeAnswers));
             }
+            
+            //printing
+            System.out.println("outside location > 0 if condition");
+            System.out.println(Arrays.deepToString(cumulativeAnswers));
 
             switch (chars[location]) 
             {
@@ -118,15 +125,18 @@ public class GenomicRangeQuery
                     cumulativeAnswers[3][location + 1]++;
                     break;
             }
+            
+            //printing
+            System.out.println(Arrays.deepToString(cumulativeAnswers));
         }
 
-        for (int iii = 0; iii < P.length; iii++) 
+        for (int bounds = 0; bounds < P.length; bounds++) 
         {
-            for (int zzz = 0; zzz < 4; zzz++) 
+            for (int geneCharacter = 0; geneCharacter < 4; geneCharacter++) 
             {
-                if ((cumulativeAnswers[zzz][Q[iii] + 1] - cumulativeAnswers[zzz][P[iii]]) > 0) 
+                if ((cumulativeAnswers[geneCharacter][Q[bounds] + 1] - cumulativeAnswers[geneCharacter][P[bounds]]) > 0) 
                 {
-                    answer[iii] = zzz + 1;
+                    answer[bounds] = geneCharacter + 1;
                     break;
                 }
             }
