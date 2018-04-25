@@ -1,17 +1,12 @@
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeMap;
-import java.util.stream.IntStream;
 
 /*
  * 1. coupons whose category is not in the personalized list should be removed from the list.
@@ -28,12 +23,28 @@ public class PersonalizedCoupons
         preferredCategories.add("cat2");
         preferredCategories.add("cat4");
         preferredCategories.add("cat5");
+        preferredCategories.add("cat6");
+        preferredCategories.add("cat7");
+        preferredCategories.add("cat8");
+        preferredCategories.add("cat9");
+        preferredCategories.add("cat10");
+        preferredCategories.add("cat11");
+        preferredCategories.add("cat12");
+        preferredCategories.add("cat13");
         List<Map<String, Object>> coupons = new ArrayList<>();
         coupons.add(getCoupon1());
         coupons.add(getCoupon2());
         coupons.add(getCoupon3());
         coupons.add(getCoupon4());
         coupons.add(getCoupon5());
+        coupons.add(getCoupon6());
+        coupons.add(getCoupon7());
+        coupons.add(getCoupon8());
+        coupons.add(getCoupon9());
+        coupons.add(getCoupon10());
+        coupons.add(getCoupon11());
+        coupons.add(getCoupon12());
+        coupons.add(getCoupon13());
         List<Map<String, Object>> personalizedCoupons = personalizeCoupons(coupons, preferredCategories);
         personalizedCoupons.stream().forEach(PersonalizedCoupons::printCoupon);
     }
@@ -88,6 +99,86 @@ public class PersonalizedCoupons
         coupon.put("couponAmount", 40.0f);
         return coupon;
     }
+    public static Map<String, Object> getCoupon6() 
+    {    
+        Map<String,Object> coupon = new HashMap<>();
+        coupon.put("upc", "345");
+        coupon.put("code", "345");
+        coupon.put("category", "cat6");
+        coupon.put("itemPrice", 200.0f);
+        coupon.put("couponAmount", 40.0f);
+        return coupon;
+    }
+    public static Map<String, Object> getCoupon7() 
+    {    
+        Map<String,Object> coupon = new HashMap<>();
+        coupon.put("upc", "345");
+        coupon.put("code", "345");
+        coupon.put("category", "cat7");
+        coupon.put("itemPrice", 200.0f);
+        coupon.put("couponAmount", 40.0f);
+        return coupon;
+    }
+    public static Map<String, Object> getCoupon8() 
+    {    
+        Map<String,Object> coupon = new HashMap<>();
+        coupon.put("upc", "345");
+        coupon.put("code", "345");
+        coupon.put("category", "cat8");
+        coupon.put("itemPrice", 200.0f);
+        coupon.put("couponAmount", 40.0f);
+        return coupon;
+    }
+    public static Map<String, Object> getCoupon9() 
+    {    
+        Map<String,Object> coupon = new HashMap<>();
+        coupon.put("upc", "345");
+        coupon.put("code", "345");
+        coupon.put("category", "cat9");
+        coupon.put("itemPrice", 200.0f);
+        coupon.put("couponAmount", 40.0f);
+        return coupon;
+    }
+    public static Map<String, Object> getCoupon10() 
+    {    
+        Map<String,Object> coupon = new HashMap<>();
+        coupon.put("upc", "345");
+        coupon.put("code", "345");
+        coupon.put("category", "cat10");
+        coupon.put("itemPrice", 200.0f);
+        coupon.put("couponAmount", 40.0f);
+        return coupon;
+    }
+    public static Map<String, Object> getCoupon11() 
+    {    
+        Map<String,Object> coupon = new HashMap<>();
+        coupon.put("upc", "345");
+        coupon.put("code", "345");
+        coupon.put("category", "cat11");
+        coupon.put("itemPrice", 200.0f);
+        coupon.put("couponAmount", 40.0f);
+        return coupon;
+    }
+    public static Map<String, Object> getCoupon12() 
+    {    
+        Map<String,Object> coupon = new HashMap<>();
+        coupon.put("upc", "345");
+        coupon.put("code", "345");
+        coupon.put("category", "cat12");
+        coupon.put("itemPrice", 200.0f);
+        coupon.put("couponAmount", 40.0f);
+        return coupon;
+    }
+    public static Map<String, Object> getCoupon13() 
+    {    
+        Map<String,Object> coupon = new HashMap<>();
+        coupon.put("upc", "345");
+        coupon.put("code", "345");
+        coupon.put("category", "cat13");
+        coupon.put("itemPrice", 200.0f);
+        coupon.put("couponAmount", 40.0f);
+        return coupon;
+    }
 	
 	/*public static void main(String[] args) throws IOException{
         Scanner input = new Scanner(System.in);
@@ -130,16 +221,9 @@ public class PersonalizedCoupons
  	{
  	    public int compare(Map<String, Object> coupon1, Map<String, Object> coupon2)
  	    {
- 	    		/*System.out.println("printing coupons in comparator class");
- 	    		printCoupon(coupon1);
- 	    		printCoupon(coupon2);*/
  	    		float f1 = (float) coupon1.get("percentage");
  	        float f2 = (float) coupon2.get("percentage");
  	        int retval = Float.compare(f1, f2);
- 	        
- 	    		/*System.out.println("c1 perc : " + f1);
- 	    		System.out.println("c2 perc : " + f2);
- 	    		System.out.println("retval : " + retval);*/
  	    		
  	        if (retval > 0) return -1;
  	        else if (retval < 0) return 1;
@@ -176,7 +260,7 @@ public class PersonalizedCoupons
     		
     		if(coupons.size() > 10)
     		{
-    			return new ArrayList<Map<String, Object>>(coupons.subList(0, 9));
+    			return new ArrayList<Map<String, Object>>(coupons.subList(0, 10));
     		}
     		else
     		{
