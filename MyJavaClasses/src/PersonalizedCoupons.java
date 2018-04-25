@@ -12,7 +12,7 @@ import java.util.Scanner;
  * 1. coupons whose category is not in the personalized list should be removed from the list.
  * 2. coupon code must not be displayed to the user - it should only be used in the company.
  * 3. sort by coupon discount percentage
- * 
+ * 4. return only the first 10 coupons with highest percentage
  */
 public class PersonalizedCoupons
 {
