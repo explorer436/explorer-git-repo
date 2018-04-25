@@ -9,8 +9,7 @@ public class SmallestIndexInAnArrayThatHasAllTheElements
 		System.out.println("starting test class");
 		// List<Integer> A = new ArrayList<Integer>();
 
-		int[] A = new int[]
-		{ 0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0 };
+		int[] A = new int[] { 0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0 };
 
 		SmallestIndexInAnArrayThatHasAllTheElements sol = new SmallestIndexInAnArrayThatHasAllTheElements();
 

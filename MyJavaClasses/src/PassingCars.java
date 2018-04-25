@@ -43,20 +43,17 @@ public class PassingCars
 
 	public static void main(String[] args) throws Exception
 	{
-		if (5 != solution(new int[]
-		{ 0, 1, 0, 1, 1 }))
+		if (5 != solution(new int[] { 0, 1, 0, 1, 1 }))
 		{
 			throw new Exception("wrong answer");
 		}
 
-		if (1 != solution(new int[]
-		{ 0, 1 }))
+		if (1 != solution(new int[] { 0, 1 }))
 		{
 			throw new Exception("wrong answer");
 		}
 
-		if (0 != solution(new int[]
-		{ 1, 0 }))
+		if (0 != solution(new int[] { 1, 0 }))
 		{
 			throw new Exception("wrong answer");
 		}

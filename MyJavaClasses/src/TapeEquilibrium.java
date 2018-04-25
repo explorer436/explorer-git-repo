@@ -4,8 +4,7 @@ public class TapeEquilibrium
 
 	public static void main(String args[])
 	{
-		int[] A =
-		{ 3, 1, 2, 4, 3 };
+		int[] A = { 3, 1, 2, 4, 3 };
 		int res = solution(A);
 		System.out.println("res : " + res);
 

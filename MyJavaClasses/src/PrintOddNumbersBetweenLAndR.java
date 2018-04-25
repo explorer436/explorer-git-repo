@@ -46,8 +46,7 @@ public class PrintOddNumbersBetweenLAndR
 			}
 		}
 
-		int[] series =
-		{};
+		int[] series = {};
 		for (int i : result)
 		{
 			series = addElement(series, i);

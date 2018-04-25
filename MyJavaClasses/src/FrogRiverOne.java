@@ -7,28 +7,22 @@ public class FrogRiverOne
 
 	public static void main(String[] args)
 	{
-		int[] A =
-		{ 1, 3, 1, 4, 2, 3, 5, 4 };
+		int[] A = { 1, 3, 1, 4, 2, 3, 5, 4 };
 		System.out.println("result : " + solution(5, A));
 
-		int[] A2 =
-		{ 3 };
+		int[] A2 = { 3 };
 		System.out.println("result : " + solution(5, A2));
 
-		int[] A3 =
-		{ 3 };
+		int[] A3 = { 3 };
 		System.out.println("result : " + solution(2, A3));
 
-		int[] A4 =
-		{ 3 };
+		int[] A4 = { 3 };
 		System.out.println("result : " + solution(3, A4));
 
-		int[] A5 =
-		{ 1 };
+		int[] A5 = { 1 };
 		System.out.println("result : " + solution(1, A5));
 
-		int[] A6 =
-		{ 2, 2, 2, 2, 2 };
+		int[] A6 = { 2, 2, 2, 2, 2 };
 		System.out.println("result : " + solution(2, A6));
 	}
 

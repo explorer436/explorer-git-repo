@@ -3,8 +3,7 @@ public class MaxCounters
 
 	public static void main(String[] args)
 	{
-		int[] A =
-		{ 3, 4, 4, 6, 1, 4, 4 };
+		int[] A = { 3, 4, 4, 6, 1, 4, 4 };
 		for (int i : solution(5, A))
 		{
 			System.out.println("counter : " + i);

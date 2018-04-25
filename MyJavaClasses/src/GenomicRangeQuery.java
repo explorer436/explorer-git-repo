@@ -60,9 +60,7 @@ public class GenomicRangeQuery
 
 	public static void main(String[] args)
 	{
-		for (int i : solution("CAGCCTA", new int[]
-		{ 2, 5, 0 }, new int[]
-		{ 4, 5, 6 }))
+		for (int i : solution("CAGCCTA", new int[] { 2, 5, 0 }, new int[] { 4, 5, 6 }))
 		{
 			System.out.println("result i : " + i);
 		}

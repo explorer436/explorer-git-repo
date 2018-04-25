@@ -6,12 +6,10 @@ public class OddNumberOfAnArray
 
 		OddNumberOfAnArray sol = new OddNumberOfAnArray();
 
-		int finalResult = sol.solution(new int[]
-		{ 9, 3, 9, 3, 9, 7, 9 });
+		int finalResult = sol.solution(new int[] { 9, 3, 9, 3, 9, 7, 9 });
 		System.out.println("finalResult : " + finalResult);
 
-		finalResult = sol.solution(new int[]
-		{ 1 });
+		finalResult = sol.solution(new int[] { 1 });
 		System.out.println("finalResult : " + finalResult);
 
 	}

@@ -1,3 +1,4 @@
+
 /*A non-empty zero-indexed array A consisting of N integers is given.
 
 A permutation is a sequence containing each element from 1 to N once, and only once.
@@ -55,24 +56,19 @@ public class PermCheck
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		int[] A =
-		{ 4, 1, 3, 2 };
+		int[] A = { 4, 1, 3, 2 };
 		System.out.println("result : " + solution(A));
 
-		int[] A2 =
-		{ 4, 1, 3 };
+		int[] A2 = { 4, 1, 3 };
 		System.out.println("result : " + solution(A2));
 
-		int[] A3 =
-		{ 1 };
+		int[] A3 = { 1 };
 		System.out.println("result : " + solution(A3));
 
-		int[] A4 =
-		{ 2 };
+		int[] A4 = { 2 };
 		System.out.println("result : " + solution(A4));
 
-		int[] A5 =
-		{};
+		int[] A5 = {};
 		System.out.println("result : " + solution(A5));
 	}
 

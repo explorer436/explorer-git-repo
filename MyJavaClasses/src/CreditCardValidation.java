@@ -14,39 +14,18 @@ import java.util.stream.IntStream;
 
 /*
  * 
- * MissingInteger.java
+ * 
  * 
  */
 public class CreditCardValidation
 {
 
-	/*
-	 * public static void main(String[] args) { for(int i : solution(2, 5)) {
-	 * System.out.println("i : " + i); }
-	 * 
-	 * 
-	 * int[] A2 = {3, 2, 3, 1, 3}; System.out.println("result : " + solution(A2,
-	 * 5));
-	 * 
-	 * int[] A3 = {-1, -3}; System.out.println("result : " + solution(A3));
-	 * 
-	 * int[] A4 = {3}; System.out.println("result : " + solution(A4));
-	 * 
-	 * int[] A5 = {2, 2, 2, 2, 2}; System.out.println("result : " + solution(A5));
-	 * 
-	 * int[] A6 = {}; System.out.println("result : " + solution(A6));
-	 * 
-	 * System.out.println("result : " + solution(null, 4)); }
-	 */
-
 	public static void main(String args[]) throws Exception
 	{
-		String[] swipedCreditCards =
-		{ "6724843711060148", "6745343711060149" };
+		String[] swipedCreditCards = { "6724843711060148", "6745343711060149" };
 		// String[] swipedCreditCards = {"6724843711060148"};
 
-		String[] invalidPrefixes =
-		{ "11", "3434", "67453", "9" };
+		String[] invalidPrefixes = { "11", "3434", "67453", "9" };
 
 		// Scanner input = new Scanner(System.in);
 		// String[] bannedPrefixes = input.nextLine().split(",");

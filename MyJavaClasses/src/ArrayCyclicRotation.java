@@ -5,40 +5,35 @@ public class ArrayCyclicRotation
 	{
 		ArrayCyclicRotation solution = new ArrayCyclicRotation();
 
-		for (int i : solution.solution(new int[]
-		{ 1, 5, 2, 1, 4, 0 }, 2))
+		for (int i : solution.solution(new int[] { 1, 5, 2, 1, 4, 0 }, 2))
 		{
 			System.out.print(i + " - ");
 		}
 		System.out.println();
 		System.out.println("------------------------------------------------");
 
-		for (int i : solution.solution(new int[]
-		{ 1, 5, 2, 1, 4, 0 }, 6))
+		for (int i : solution.solution(new int[] { 1, 5, 2, 1, 4, 0 }, 6))
 		{
 			System.out.print(i + " - ");
 		}
 		System.out.println();
 		System.out.println("------------------------------------------------");
 
-		for (int i : solution.solution(new int[]
-		{ 1, 5, 2, 1, 4, 0 }, 10))
+		for (int i : solution.solution(new int[] { 1, 5, 2, 1, 4, 0 }, 10))
 		{
 			System.out.print(i + " - ");
 		}
 		System.out.println();
 		System.out.println("------------------------------------------------");
 
-		for (int i : solution.solution(new int[]
-		{}, 2))
+		for (int i : solution.solution(new int[] {}, 2))
 		{
 			System.out.print(i + " - ");
 		}
 		System.out.println();
 		System.out.println("------------------------------------------------");
 
-		for (int i : solution.solution(new int[]
-		{}, -2))
+		for (int i : solution.solution(new int[] {}, -2))
 		{
 			System.out.print(i + " - ");
 		}
