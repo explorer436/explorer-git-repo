@@ -23,12 +23,15 @@ public class Insertion
 		{
 			for (int j = i; j > 0; j--)
 			{
+				System.out.print("a[j - 1] : " + a[j - 1] + ", a[j] : " + a[j]);
 				if (a[j - 1].compareTo(a[j]) > 0)
 				{
+					System.out.println(", need to exchange");
 					exch(a, j - 1, j);
 				}
 				else
 				{
+					System.out.println(", else");
 					break;
 				}
 			}
@@ -47,15 +50,13 @@ public class Insertion
 	// them out in sorted order
 	public static void main(String[] args)
 	{
-		String[] strArray = new String[] { "ghi", "abc", "def" };
+		/*
+		 * String[] strArray = new String[] { "ghi", "abc", "def" };
+		 * 
+		 * sort(strArray); for (int i = 0; i < strArray.length; i++) {
+		 * System.out.println(strArray[i] + " "); } System.out.println();
+		 */
 
-		sort(strArray);
-		for (int i = 0; i < strArray.length; i++)
-		{
-			System.out.println(strArray[i] + " ");
-		}
-		System.out.println();
-		
 		Integer[] intArray = new Integer[] { 5, 7, 0, 3, 4, 2, 6, 1 };
 
 		sort(intArray);

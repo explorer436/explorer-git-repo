@@ -4,7 +4,15 @@
  * and open the template in the editor.
  */
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  *
@@ -12,6 +20,8 @@ import java.io.File;
  */
 public class PrintFileNamesInAFolder
 {
+	private final static String folderLocation = "/Users/harshavardhanedupuganti/Google Drive/eBooks/Kindle Library (Final)/K";
+	private final static String catalogLocation = "/Users/harshavardhanedupuganti/Google Drive/eBooks/Kindle Library (Final)";
 
 	/**
 	 * @param args
@@ -19,32 +29,61 @@ public class PrintFileNamesInAFolder
 	 */
 	public static void main(String[] args)
 	{
-		String folderLocation = "/Users/harshavardhane/Desktop/eBooks/Kindle Library (Final)/K";
+		// String folderLocation = "/Users/harshavardhane/Desktop/eBooks/Kindle Library
+		// (Final)/K";
+
 		readAuthors(folderLocation);
+		System.out.println("--finished--");
 	}
 
 	private static void readAuthors(String folderLocation)
 	{
-		File folder = new File(folderLocation);
-		File[] listOfFiles = folder.listFiles();
-		for (int i = 0; i < listOfFiles.length; i++)
+		Writer writer = null;
+		try
 		{
-			if (listOfFiles[i].isFile())
+			writer = new BufferedWriter(new OutputStreamWriter(
+					new FileOutputStream(
+							catalogLocation + "/Catalog.txt"),
+					"utf-8"));
+			
+			File folder = new File(folderLocation);
+			File[] listOfFiles = folder.listFiles();
+			for (int i = 0; i < listOfFiles.length; i++)
 			{
-				System.out.println("File " + listOfFiles[i].getName());
+				if (listOfFiles[i].isFile())
+				{
+					System.out.println("File " + listOfFiles[i].getName());
+				}
+				else if (listOfFiles[i].isDirectory())
+				{
+					// System.out.println("Author : "+listOfFiles[i].getName());
+					readBooks(listOfFiles[i].getName(), folderLocation + "/" + listOfFiles[i].getName(), writer);
+				}
 			}
-			else if (listOfFiles[i].isDirectory())
+			
+		}
+		catch (IOException ex)
+		{
+			// Report
+			System.out.println("IO exception : " + ex.toString());
+		}
+		finally
+		{
+			try
 			{
-				// System.out.println("Author : "+listOfFiles[i].getName());
-				readBooks(folderLocation + "/" + listOfFiles[i].getName());
+				writer.close();
 			}
+			catch (Exception ex)
+			{
+				/* ignore */}
 		}
 	}
 
-	private static void readBooks(String location)
+	private static void readBooks(String authorName, String location, Writer writer) throws IOException
 	{
 		File folder = new File(location);
 		File[] listOfFiles = folder.listFiles();
+		
 		for (int i = 0; i < listOfFiles.length; i++)
 		{
 			if (listOfFiles[i].isFile())
@@ -53,8 +92,10 @@ public class PrintFileNamesInAFolder
 			}
 			else if (listOfFiles[i].isDirectory())
 			{
-				System.out.println(location.substring(62) + " } " + listOfFiles[i].getName());
-				// System.out.println("Book : " + listOfFiles[i].getName());
+				// System.out.println(location.substring(62) + " } " +
+				// listOfFiles[i].getName());
+				//System.out.println(authorName + "\t } \t" + listOfFiles[i].getName());
+				writer.write(authorName + "\t } \t" + listOfFiles[i].getName() + "\n");
 			}
 		}
 	}
