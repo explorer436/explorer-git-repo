@@ -10,9 +10,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  *
@@ -20,8 +17,11 @@ import java.util.Date;
  */
 public class PrintFileNamesInAFolder
 {
-	private final static String folderLocation = "/Users/harshavardhanedupuganti/Google Drive/eBooks/Kindle Library (Final)/K";
-	private final static String catalogLocation = "/Users/harshavardhanedupuganti/Google Drive/eBooks/Kindle Library (Final)";
+	/*private final static String folderLocation = "/Users/harshavardhanedupuganti/Google Drive/eBooks/Kindle Library (Final)/K";
+	private final static String catalogLocation = "/Users/harshavardhanedupuganti/Google Drive/eBooks/Kindle Library (Final)";*/
+	
+	private final static String folderLocation = "/Users/harshavardhanedupuganti/Google Drive/OCD Pirate's Library - Java Books";
+	private final static String catalogLocation = "/Users/harshavardhanedupuganti/Google Drive/OCD Pirate's Library - Java Books";
 
 	/**
 	 * @param args
@@ -43,7 +43,7 @@ public class PrintFileNamesInAFolder
 		{
 			writer = new BufferedWriter(new OutputStreamWriter(
 					new FileOutputStream(
-							catalogLocation + "/Catalog.txt"),
+							catalogLocation + "/0000Catalog.txt"),
 					"utf-8"));
 			
 			File folder = new File(folderLocation);
@@ -52,7 +52,20 @@ public class PrintFileNamesInAFolder
 			{
 				if (listOfFiles[i].isFile())
 				{
-					System.out.println("File " + listOfFiles[i].getName());
+					try
+					{
+						System.out.println("File " + listOfFiles[i].getName());
+						System.out.println("File name length : " + listOfFiles[i].getName().substring(22, listOfFiles[i].getName().length()));
+					}
+					catch (Exception e)
+					{
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					
+					//String str = "8776815013 {7CB886F5} ";
+					//System.out.println(str.length());
+					writer.write(listOfFiles[i].getName() + "\n");
 				}
 				else if (listOfFiles[i].isDirectory())
 				{
