@@ -69,3 +69,18 @@ git stash -u : command to undo all changes
 git diff file_name.txt  : command to show changes in a specific file
 git remote update : command to update remote branches
 git branch -a : command to list all branches
+
+
+--------------------------------------------
+$ git pull
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+A "Permission denied" error means that the server rejected your connection. 
+
+Resolution : 
+git remote set-url origin https://n0281526@git.forge.lmig.com/scm/uscm-esales/services-policywriting.git
+------------------------------------------------
