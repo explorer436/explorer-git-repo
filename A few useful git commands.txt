@@ -1,5 +1,5 @@
 CONFIGURE TOOLING :
-git commit -m "git config --global user.name "Bruce Wayne"
+
 git config --global user.name "Bruce Wayne"
 git config --global user.email explorer436@tutanota.com
 git config --system core.longpaths true
