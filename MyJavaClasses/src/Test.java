@@ -8,8 +8,6 @@ public class Test
 	{
 		System.out.println("in main");
 
-		int i = 0;
-
 	}
 
 }
