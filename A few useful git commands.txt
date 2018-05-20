@@ -102,16 +102,6 @@ Use these commands to switch between the two :
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git (if you want to use HTTPS)
 git remote set-url origin git@github.com:USERNAME/REPOSITORY.git (if you want to use SSH
 
-A new URL for the remote. For example:
-
-    If you're updating to use HTTPS, your URL might look like:
-
-    https://github.com/USERNAME/REPOSITORY.git
-
-    If you're updating to use SSH, your URL might look like:
-
-    git@github.com:USERNAME/REPOSITORY.git
-
 
 ------------------------------------------------
 
