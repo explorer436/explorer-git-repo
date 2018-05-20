@@ -81,8 +81,16 @@ and the repository exists.
 
 A "Permission denied" error means that the server rejected your connection. 
 
-Resolution : 
+Resolution 1 : 
 git remote set-url origin https://n0281526@git.forge.lmig.com/scm/uscm-esales/services-policywriting.git
+
+If you generated the keys yourself from your clinet machine, do not forget to add them to the SSH agent using the command "ssh-add".
+Run ssh-add on the client machine, that will add the SSH key to the agent. 
+
+To figure out where your client's SSH agent is looking for private and public keys, use this command:
+ssh -vT git@github.com
+This will show the list of the directories that your computer's SSH agent is looking in for public and private keys.
+If everything looks good with this command, you are pretty much set to push and pull from the remote repositories.
 ------------------------------------------------
 
 How to remove local untracked files from the current Git branch?
