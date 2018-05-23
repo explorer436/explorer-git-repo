@@ -70,6 +70,9 @@ git diff file_name.txt  : command to show changes in a specific file
 git remote update : command to update remote branches
 git branch -a : command to list all branches
 
+Find out which remote branch a local branch is tracking : 
+git branch -vv : command to give tracking branch
+git status -sb : command to give tracking branch
 
 --------------------------------------------
 $ git pull
