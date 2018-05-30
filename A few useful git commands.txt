@@ -107,6 +107,15 @@ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git (if you want to
 
 
 ------------------------------------------------
+Undoing a 'git push'
+You need to make sure that no other users of this repository are fetching the incorrect changes or trying to build on top of the commits that you want removed because you are about to rewind history.
+
+Then you need to 'force' push the old reference.
+
+git push -f origin last_known_good_commit:branch_name
+e.g.
+git push -f origin cc4b63bebb6:alpha-0.3.0
+------------------------------------------------
 
 How to remove local untracked files from the current Git branch?
 
