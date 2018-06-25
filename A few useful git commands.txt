@@ -76,6 +76,7 @@ To push to the branch of the same name on the remote,
 git stash -u : command to undo all changes
 git diff file_name.txt  : command to show changes in a specific file
 git remote update : command to update remote branches
+git remote update --prune : command to update remote branches. This will remove all remote branches which you have a local record of, but are no longer actually present on the remote
 git branch -a : command to list all branches
 
 Find out which remote branch a local branch is tracking : 
