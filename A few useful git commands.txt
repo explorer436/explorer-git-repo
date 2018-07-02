@@ -154,3 +154,18 @@ Here are some more options for you to delete directories, files, ignored and non
     To remove ignored and non-ignored files, run git clean -f -x or git clean -fx
 
 Note the case difference on the X for the two latter commands.
+
+-------------------------------------------------------
+
+Git: See all unpushed commits or commits that are not in another branch
+If you need to find out which of your local commits are not on the remote server do this:
+
+COPY
+git cherry -v
+The -v option prints out the commit messages. Without it you will see only the SHA1 codes.
+
+You may also compare against another (upstream) branch like that:
+
+COPY
+git cherry -v origin/somebranch
+This tool is especially useful when you have a ton of commits after a merge and want to know the commit differences between branches
