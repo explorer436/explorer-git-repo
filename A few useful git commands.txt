@@ -13,7 +13,7 @@ ssh-keygen -t rsa -b 4096 -C "explorer436@tutanota.com" (When you're prompted to
 press Enter. This accepts the default file location.) Now add this SSH ket to
 
 If you want to add an SSH key generated from Git console to the ssh-agent in your computer : 
-( You might need to start ssh-agent before you run the ssh-add command: eval `ssh-agent -s` )
+( You might need to start ssh-agent before you run the ssh-add command: eval `ssh-agent -s` or eval $(ssh-agent))
 Add your SSH private key to the ssh-agent using the following command : ssh-add  ~/Downloads/CloudForgeGitSSHKeys/id_rsa
 (this should point to the location of the private key file)
 
