@@ -111,8 +111,10 @@ The issue with using HTTPS URL is, every time you want to push a change, it migh
 With SSH, you don't have to enter username and password every single time.
 
 Use these commands to switch between the two :
-git remote set-url origin https://github.com/USERNAME/REPOSITORY.git (if you want to use HTTPS)
-git remote set-url origin git@github.com:USERNAME/REPOSITORY.git (if you want to use SSH)
+1. git remote set-url origin https://github.com/USERNAME/REPOSITORY.git (if you want to use HTTPS)
+If you got authentication issues with the GIT console you can try your auth this way : https://<username>:<password>@bitbucket.org/<username>/<repo>.git
+
+2. git remote set-url origin git@github.com:USERNAME/REPOSITORY.git (if you want to use SSH)
 
 
 ------------------------------------------------
