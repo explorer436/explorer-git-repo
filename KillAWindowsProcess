@@ -1,0 +1,9 @@
+If you need to kill a process manually on Windows it’s actually pretty easy. First, fire up a command prompt and type the following command.
+
+netstat -a -o -n
+
+To kill the process we need to find the PID of the process in question. I just run down the list by port until I find port 8080 and here you will see the process id was 28344.
+
+Finally, with the PID we can run the following command to kill the process
+
+taskkill /F /PID 28344
