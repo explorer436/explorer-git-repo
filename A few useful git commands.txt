@@ -173,3 +173,9 @@ git cherry -v origin/somebranch
 This tool is especially useful when you have a ton of commits after a merge and want to know the commit differences between branches
 
 Once you have the list, use this to see the files that changed in each commit : git show (COMMIT_HASH)
+
+-------------------------------------------------------
+
+How to remove local untracked files from the current Git branch : 
+If you want to see which files will be deleted you can use the -n option before you run the actual command: git clean -n
+Then when you are comfortable (because it will delete the files for real!) use the -f option: git clean -f
