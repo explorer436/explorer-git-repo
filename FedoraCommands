@@ -11,3 +11,7 @@ Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k 
 update fedora from command line : dnf upgrade
 
 -----------------------------------------------------------------
+
+command to install a tar file in linux : how to use sudo command to install .tar.gz :
+Open a console, and go to the directory where the file is
+Type: tar -zxvf file.tar.gz
