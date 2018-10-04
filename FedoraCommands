@@ -7,3 +7,7 @@ $ shrinkpdf in.pdf out.pdf
 Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
 
 -----------------------------------------------------------------
+
+update fedora from command line : dnf upgrade
+
+-----------------------------------------------------------------
