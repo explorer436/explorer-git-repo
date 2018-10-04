@@ -41,3 +41,25 @@ To use KDiff as the merge tool use the following command : 'git mergetool'
 Hitting enter will launch the KDiff3 as the merge tool.
 
 KDiff3 shows nice GUI to do the merge easily.  It shows the original file on the leftmost window called "A" or "Base", local file in the middle called "B" or "Local" and remote file in the rightmost window called "C" or "Remote".
+
+========================================================================================================
+If you want to use DiffMerge as the diff and merge tool with git, this is how the git confile should look like : 
+[core]
+	longpaths = true
+[user]
+	name = Harsha Edupuganti
+	email = Harsha.Edupuganti01@libertymutual.com
+
+[merge]
+	tool = DiffMerge
+[diff]
+	tool = DiffMerge
+[mergetool "DiffMerge"]
+    path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
+    keepBackup = false
+    trustExitCode = false
+ 
+[difftool "DiffMerge"]
+    path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
+    keepBackup = false
+    trustExitCode = false
