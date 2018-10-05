@@ -11,3 +11,15 @@ Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k 
 update fedora from command line : dnf upgrade
 
 -----------------------------------------------------------------
+
+command to install a tar file in linux : how to use sudo command to install .tar.gz :
+Open a console, and go to the directory where the file is
+Type: tar -zxvf file.tar.gz
+------------------------------------------------------------------
+command to search for a file in linux : locate fileName
+---------------------------------------------------------------------
+command to install rpm package in fedora : 
+sudo dnf install NAME_OF_RPM.rpm
+
+differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
+---------------------------------------------------------------------
