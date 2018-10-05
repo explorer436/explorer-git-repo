@@ -1,6 +1,6 @@
 Need updates : 
 
-ConvertTextfilesInAFolderToPDF is using iText imports
+ConvertTextfilesInAFolderToPDF is using iText imports.
 
 ListAllTheImportsFromJavaClassesInAProject is using custom imports
 
