@@ -23,3 +23,11 @@ sudo dnf install NAME_OF_RPM.rpm
 
 differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
 ---------------------------------------------------------------------
+How to execute .sh programs in fedora :
+Either make the file executable, and then run it while specifying the path:
+chmod +x somefile.sh
+./somefile.sh
+
+or, pass it to the shell interpreter like this:
+sh somefile.sh
+---------------------------------------------------------------------
