@@ -3,3 +3,5 @@ Implement the logic for the problems specified in the "to_be_implemented" folder
 Write your own logic for MooshakCatchingCheese.java
 
 Write an application to send an email in java (pure java and spring email) - build on it later to use custom templates etc.
+
+How are tests being written for Codility tests? How are they testing them with inputs in the range of 1000s?
