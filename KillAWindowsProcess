@@ -7,3 +7,10 @@ To kill the process we need to find the PID of the process in question. I just r
 Finally, with the PID we can run the following command to kill the process
 
 taskkill /F /PID 28344
+
+============================================================================================
+In Linux : 
+
+This command will print you PID of process bound on that port : "fuser 8080/tcp"
+
+And this command will kill that process : "fuser -k 8080/tcp"
