@@ -11,11 +11,16 @@ public class DeleteFileBasedOnExtension {
 	
 	private final static String folderLocation2 = "C:\\Users\\n0281526\\eclipse\\java-2018-09\\eclipse";
 	
-	private static List<String> extensionsToBeDeleted = Arrays.asList("dmp,trc".split(","));
+	private final static String folderLocation3 = "C:\\Users\\n0281526\\AppData\\Local\\Google\\Chrome\\User Data\\Crashpad\\reports";
+	
+	private static List<String> filesWithextensionsToBeDeleted = Arrays.asList("dmp,trc".split(","));
+	
+	private static List<String> filesWithNamesToBeDeleted = Arrays.asList("javacore".split(","));
 	
 	public static void main(String[] args) {
 		readFolders(folderLocation1);
 		readFolders(folderLocation2);
+		readFolders(folderLocation3);
 		System.out.println("--finished--");
 
 	}
@@ -38,12 +43,12 @@ public class DeleteFileBasedOnExtension {
 				        System.out.println("printing file name : " + file.getName());
 				        String extension = "";
 				        int indexOfDot = file.getName().lastIndexOf('.');
-				        System.out.println("indexOfDot : " + indexOfDot);
+				        // System.out.println("indexOfDot : " + indexOfDot);
 				        if (indexOfDot > 0) {
 				            extension = file.getName().substring(indexOfDot+1);
 				        }
 				        System.out.println("extension : " + extension);
-				        if(extensionsToBeDeleted.contains(extension))
+				        if(filesWithextensionsToBeDeleted.contains(extension) || doesFileWithThisNmaeNeedsToBeDeleted(file.getName()))
 				        {
 				        	if(file.delete())
 					        {
@@ -77,6 +82,19 @@ public class DeleteFileBasedOnExtension {
 		{
 			
 		}
+	}
+	
+	private static boolean doesFileWithThisNmaeNeedsToBeDeleted(String fileName)
+	{
+		boolean result = false;
+		for (String str : filesWithNamesToBeDeleted)
+		{
+			if(fileName.contains(str))
+			{
+				result = true;
+			}
+		}
+		return result;
 	}
 
 	private static void readBooks(String authorName, String location) throws IOException
