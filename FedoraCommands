@@ -21,6 +21,14 @@ command to search for a file in linux : locate fileName
 command to install rpm package in fedora : 
 sudo dnf install NAME_OF_RPM.rpm
 
+To install a rpm package using command line on redhat based system use -i command line switch with rpm command.
+rpm -i package-1.2.3.rpm
+
+
+You can also use YUM or DNF package manager to install downloaded rpm file. Its benefit to resolve dependencies required for the package
+yum localinstall package-1.2.3.rpm     ## CentOS, RHEL systems 
+dnf localinstall package-1.2.3.rpm     ## Fedora systems
+
 differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
 ---------------------------------------------------------------------
 How to execute .sh programs in fedora :
@@ -31,3 +39,7 @@ chmod +x somefile.sh
 or, pass it to the shell interpreter like this:
 sh somefile.sh
 ---------------------------------------------------------------------
+Removing Package:
+In case if we need to remove any package use -e command line switch with the package name.
+
+rpm -e package-1.2.3.rpm
