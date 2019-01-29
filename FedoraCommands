@@ -1,3 +1,7 @@
+command to reboot from terminal : reboot
+
+-----------------------------------------------------------------
+
 $ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
 
 $ shrinkpdf in.pdf out.pdf
