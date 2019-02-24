@@ -8,6 +8,10 @@ $ shrinkpdf in.pdf out.pdf
 
 -----------------------------------------------------------------
 
+To install gVim on fedora : yum install vim-X11
+
+-----------------------------------------------------------------
+
 Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
 
 -----------------------------------------------------------------
