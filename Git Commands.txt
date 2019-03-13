@@ -9,13 +9,7 @@ CREATE REPOSITORIES :
 git init (project name) - Creates a new local repository with the specified name
 git clone (url) - downloads a project and its entire version history
 
-ssh-keygen -t rsa -b 4096 -C "explorer436@tutanota.com" (When you're prompted to "Enter a file in which to save the key," 
-press Enter. This accepts the default file location.) Now add this SSH ket to
 
-If you want to add an SSH key generated from Git console to the ssh-agent in your computer : 
-( You might need to start ssh-agent before you run the ssh-add command: eval `ssh-agent -s` or eval $(ssh-agent))
-Add your SSH private key to the ssh-agent using the following command : ssh-add  ~/Downloads/CloudForgeGitSSHKeys/id_rsa
-(this should point to the location of the private key file)
 
 git branch (local branch name) -u (remote branch name) : To point local branch to a different remote branch
 git branch -m <newname>  : command to rename the current local branch
@@ -104,7 +98,7 @@ To figure out where your client's SSH agent is looking for private and public ke
 ssh -vT git@github.com
 This will show the list of the directories that your computer's SSH agent is looking in for public and private keys.
 If everything looks good with this command, you are pretty much set to push and pull from the remote repositories.
-------------------------------------------------
+
 You can change the protocol that your local repository is using to communicate with the remote repository :
 It can be HTTPS or SSH.
 The issue with using HTTPS URL is, every time you want to push a change, it might ask you for username and password.
@@ -116,6 +110,13 @@ If you got authentication issues with the GIT console you can try your auth this
 
 2. git remote set-url origin git@github.com:USERNAME/REPOSITORY.git (if you want to use SSH)
 
+ssh-keygen -t rsa -b 4096 -C "explorer436@tutanota.com" (When you're prompted to "Enter a file in which to save the key," 
+press Enter. This accepts the default file location.) Now add this SSH ket to bitbucket server.
+
+If you want to add an SSH key generated from Git console to the ssh-agent in your computer : 
+( You might need to start ssh-agent before you run the ssh-add command: eval `ssh-agent -s` or eval $(ssh-agent))
+Add your SSH private key to the ssh-agent using the following command : ssh-add  ~/Downloads/CloudForgeGitSSHKeys/id_rsa
+(this should point to the location of the private key file)
 
 ------------------------------------------------
 Undoing a 'git push'
