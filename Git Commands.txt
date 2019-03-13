@@ -97,7 +97,7 @@ Resolution 1 :
 git remote set-url origin https://n0281526@git.forge.lmig.com/scm/uscm-esales/services-policywriting.git
 
 Resolution 2 : 
-If you generated the keys yourself from your clinet machine, do not forget to add them to the SSH agent using the command "ssh-add".
+If you generated the keys yourself from your client machine, do not forget to add them to the SSH agent using the command "ssh-add".
 Run ssh-add on the client machine, that will add the SSH key to the agent. 
 
 To figure out where your client's SSH agent is looking for private and public keys, use this command:
