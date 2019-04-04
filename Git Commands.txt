@@ -1,5 +1,6 @@
 CONFIGURE TOOLING :
 
+git config --global push.default simple
 git config --global user.name "Bruce Wayne"
 git config --global user.email explorer436@tutanota.com
 git config --system core.longpaths true
