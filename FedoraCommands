@@ -9,6 +9,7 @@ $ shrinkpdf in.pdf out.pdf
 -----------------------------------------------------------------
 
 To install gVim on fedora : yum install vim-X11
+To install emacs on fedora : sudo yum install emacs
 
 -----------------------------------------------------------------
 
