@@ -1,2 +1,11 @@
 
 https://vimhelp.org/
+
+
+Enabling left-margin display
+To display line numbers - :set number
+This will turn off the line number display - :set nonumber
+
+To enable line numbers on startup, simply add the following to your vimrc - set number
+
+To display line numbers relative to the line with the cursor, use this - :set relativenumber or :set norelativenumber
