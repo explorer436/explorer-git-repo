@@ -48,4 +48,5 @@ Quickly change word or line :
 To quickly change a word you can use cw,caw or ciw. 
 Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis for a sentence
 
+To append something to a word (at the end of the word) - ea
 ------------------------------------------
