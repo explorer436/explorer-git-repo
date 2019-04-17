@@ -43,3 +43,9 @@ Search and replace...
 :%s/search_for_this/replace_with_this/c   - confirm each replace
 
 ------------------------------------------
+
+Quickly change word or line : 
+To quickly change a word you can use cw,caw or ciw. 
+Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis for a sentence
+
+------------------------------------------
