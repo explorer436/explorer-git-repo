@@ -49,7 +49,7 @@ public class CountDiv
 	// how is this solution using prefix sums?
 	public static int solution(int A, int B, int K)
 	{
-		// Explanation: Number of integer in the range [1 .. X] that divisible by K is
+		// Explanation: Number of integers in the range [1 .. X] that divisible by K is
 		// X/K.
 		// So, within the range [A .. B], the result is B/K - (A - 1)/K
 
