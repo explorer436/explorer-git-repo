@@ -1,3 +1,5 @@
+package codility.countingelements;
+
 public class MaxCounters
 {
 

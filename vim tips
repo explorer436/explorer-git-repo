@@ -50,3 +50,5 @@ Use c$ or just C to quickly change from the cursor to the end of a line, cc to c
 
 To append something to a word (at the end of the word) - ea
 ------------------------------------------
+
+How to generate tags and use them for navigation in a big java project?

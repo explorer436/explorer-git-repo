@@ -1,3 +1,5 @@
+package codility.arrays;
+
 public class OddNumberOfAnArray
 {
 	public static void main(String[] args)

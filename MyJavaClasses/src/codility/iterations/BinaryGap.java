@@ -1,3 +1,4 @@
+package codility.iterations;
 
 public class BinaryGap
 {

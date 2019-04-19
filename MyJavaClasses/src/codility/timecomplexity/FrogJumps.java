@@ -1,3 +1,5 @@
+package codility.timecomplexity;
+
 public class FrogJumps
 {
 

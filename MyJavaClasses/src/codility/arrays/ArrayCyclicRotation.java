@@ -1,3 +1,5 @@
+package codility.arrays;
+
 
 public class ArrayCyclicRotation
 {

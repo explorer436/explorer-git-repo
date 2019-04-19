@@ -1,3 +1,4 @@
+package codility.timecomplexity;
 
 public class TapeEquilibrium
 {

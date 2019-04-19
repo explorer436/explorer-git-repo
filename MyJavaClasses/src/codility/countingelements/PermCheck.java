@@ -1,3 +1,4 @@
+package codility.countingelements;
 
 /*A non-empty zero-indexed array A consisting of N integers is given.
 
