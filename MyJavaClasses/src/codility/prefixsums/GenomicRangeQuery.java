@@ -87,78 +87,80 @@ public class GenomicRangeQuery
 	}
 
 	public static int[] solution(String S, int[] P, int[] Q)
-	{
-		int[] answer = new int[P.length];
-		char[] chars = S.toCharArray();
-		int[][] cumulativeAnswers = new int[4][chars.length + 1];
+    {
+        // P.length = Q.length and this will be the length of the final answer array
+        int[] answerArray = new int[P.length];
 
-		for (int location = 0; location < chars.length; location++)
-		{
-			System.out.println("location : " + location);
-			if (location > 0)
-			{
-				for (int zzz = 0; zzz < 4; zzz++)
-				{
-					System.out.println("zzz : " + zzz);
-					cumulativeAnswers[zzz][location + 1] = cumulativeAnswers[zzz][location];
-				}
-				System.out.println(Arrays.deepToString(cumulativeAnswers));
-			}
+        char[] chars_from_s_array = S.toCharArray();
+        System.out.println("chars_from_s_array.length : " + chars_from_s_array.length);
 
-			// printing
-			System.out.println("outside location > 0 if condition");
-			System.out.println(Arrays.deepToString(cumulativeAnswers));
+        // 4 X 8 array
+        // 4 columns - each column for each letter A, C, G, T
+        // 8 rows
+        int[][] cumulativeAnswers = new int[4][chars_from_s_array.length + 1];
 
-			switch (chars[location])
-			{
-				case 'A':
-					cumulativeAnswers[0][location + 1]++;
-					break;
-				case 'C':
-					cumulativeAnswers[1][location + 1]++;
-					break;
-				case 'G':
-					cumulativeAnswers[2][location + 1]++;
-					break;
-				case 'T':
-					cumulativeAnswers[3][location + 1]++;
-					break;
-			}
+        // run for loop on S = CAGCCTA
+        for (int location_in_s_array = 0; location_in_s_array < chars_from_s_array.length; location_in_s_array++)
+        {
+            System.out.println(">>> location_in_s_array : " + location_in_s_array);
+            if (location_in_s_array > 0)
+            {
+                for (int eachLettersInDnaSequence = 0; eachLettersInDnaSequence < 4; eachLettersInDnaSequence++)
+                {
+                    System.out.println("eachLettersInDnaSequence : " + eachLettersInDnaSequence);
 
-			// printing
-			System.out.println(Arrays.deepToString(cumulativeAnswers));
-		}
+                    cumulativeAnswers[eachLettersInDnaSequence][location_in_s_array
+                        + 1] = cumulativeAnswers[eachLettersInDnaSequence][location_in_s_array];
+                }
+                System.out.println("cumulativeAnswers : ");
+                System.out.println(print2DArray(cumulativeAnswers));
+            }
 
-		for (int bounds = 0; bounds < P.length; bounds++)
-		{
-			for (int geneCharacter = 0; geneCharacter < 4; geneCharacter++)
-			{
-				if ((cumulativeAnswers[geneCharacter][Q[bounds] + 1] - cumulativeAnswers[geneCharacter][P[bounds]]) > 0)
-				{
-					answer[bounds] = geneCharacter + 1;
-					break;
-				}
-			}
-		}
+            // printing
+            System.out.println("outside location > 0 if condition - ");
+            System.out.println(print2DArray(cumulativeAnswers));
 
-		return answer;
-	}
+            switch (chars_from_s_array[location_in_s_array])
+            {
+                case 'A':
+                    cumulativeAnswers[0][location_in_s_array + 1] = cumulativeAnswers[0][location_in_s_array + 1] + 1;
+                    break;
+                case 'C':
+                    cumulativeAnswers[1][location_in_s_array + 1] = cumulativeAnswers[1][location_in_s_array + 1] + 1;
+                    break;
+                case 'G':
+                    cumulativeAnswers[2][location_in_s_array + 1] = cumulativeAnswers[2][location_in_s_array + 1] + 1;
+                    break;
+                case 'T':
+                    cumulativeAnswers[3][location_in_s_array + 1] = cumulativeAnswers[3][location_in_s_array + 1] + 1;
+                    break;
+            }
 
-	/*
-	 * public static int[] solution(String S, int[] P, int[] Q) { int[] result = new
-	 * int[P.length];
-	 * 
-	 * int[] S_int_values_list = new int[S.length()]; for(int i = 0; i < S.length();
-	 * i++) { switch (S.charAt(i)) { case 'A': S_int_values_list[i] = 1; break; case
-	 * 'C': S_int_values_list[i] = 2; break; case 'G': S_int_values_list[i] = 3;
-	 * break; case 'T': S_int_values_list[i] = 4; break; } }
-	 * 
-	 * for(int i = 0; i < P.length; i++) { int pth = P[i]; int qth = Q[i];
-	 * 
-	 * if(pth == qth) { result[i] = S_int_values_list[pth]; } else if(qth > pth) {
-	 * int min = S_int_values_list[pth]; for(int j = pth; j <= qth; j++) { if
-	 * (S_int_values_list[j] < min) { min = S_int_values_list[j]; } }
-	 * 
-	 * result[i] = min; } } return result; }
-	 */
+            // printing
+            System.out.println("after incrementing the letter count for location " + location_in_s_array + " - ");
+            System.out.println(print2DArray(cumulativeAnswers));
+        }
+        // end of the for loop for each letter in the string S
+
+        // finally, populate an element at each location in answerArray
+        for (int i = 0; i < P.length; i++)
+        {
+            // j stands for the letters A,C,G,T
+            for (int j = 0; j < 4; j++)
+            {
+                if ((cumulativeAnswers[j][Q[i] + 1] - cumulativeAnswers[j][P[i]]) > 0)
+                {
+                    answerArray[i] = j + 1;
+                    break;
+                }
+            }
+        }
+
+        return answerArray;
+    }
+
+    private static String print2DArray(int[][] array)
+    {
+        return Arrays.deepToString(array).replace("], ", "]\n").replace("[[", "[").replace("]]", "]");
+    }
 }
