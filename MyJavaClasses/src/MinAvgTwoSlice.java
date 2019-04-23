@@ -135,7 +135,7 @@ public class MinAvgTwoSlice {
 
     private static String print2DArray(int[][] array)
     {
-        return Arrays.deepToString(array).replace("], ", "]\n").replace("[[", "[").replace("]]", "]");
+        return java.util.Arrays.deepToString(array).replace("], ", "]\n").replace("[[", "[").replace("]]", "]");
     }
 
 
