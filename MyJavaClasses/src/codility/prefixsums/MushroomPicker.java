@@ -1,3 +1,5 @@
+package codility.prefixsums;
+
 /**
  * 
  Problem:You are given a non-empty, zero-indexed arrayAofn(1¬n¬100 000) integersa0, a1, . . . , an−1(0¬ai¬1 000). This array represents number of mushrooms growing on theconsecutive spots along a road. You are also given integerskandm(0¬k, m < n).
