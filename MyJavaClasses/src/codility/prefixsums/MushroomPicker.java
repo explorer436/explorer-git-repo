@@ -48,15 +48,10 @@ public class MushroomPicker
       int A[] = {2,3,7,5,1,3,9};
     }
 
-    private static solution(int A[])
+    private static void solution(int A[])
     {
       int n = A.length;
       int result = 0;
-
-      for (int p)
-      {
-
-      }
 
     }
 
