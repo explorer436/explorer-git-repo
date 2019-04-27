@@ -1,3 +1,7 @@
+Recursive copy
+To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
+$ cp -R * /home/mycomputer/backup
+-------------------------------------------------------------------
 command to reboot from terminal : reboot
 
 -----------------------------------------------------------------
