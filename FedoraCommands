@@ -2,27 +2,21 @@ Recursive copy
 To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
 $ cp -R * /home/mycomputer/backup
 -------------------------------------------------------------------
-command to reboot from terminal : reboot
-
+To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip *
+To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
 -----------------------------------------------------------------
-
+command to reboot from terminal : reboot
+-----------------------------------------------------------------
 $ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
 
 $ shrinkpdf in.pdf out.pdf
-
 -----------------------------------------------------------------
-
 To install gVim on fedora : yum install vim-X11
 To install emacs on fedora : sudo yum install emacs
-
 -----------------------------------------------------------------
-
 Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
-
 -----------------------------------------------------------------
-
 update fedora from command line : dnf upgrade
-
 -----------------------------------------------------------------
 
 command to install a tar file in linux : how to use sudo command to install .tar.gz :
