@@ -1,6 +1,7 @@
 https://vimhelp.org/
 ------------------------------------------
-
+In Linux, the vimrc file is in /etc
+------------------------------------------
 LINE NUMBERS :
 
 Enabling left-margin display
