@@ -1,6 +1,7 @@
 https://vimhelp.org/
 ------------------------------------------
 In Linux, the vimrc file is in /etc
+(if we want to edit it, we might have to do it as root)
 ------------------------------------------
 LINE NUMBERS :
 
