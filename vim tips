@@ -51,8 +51,6 @@ Use c$ or just C to quickly change from the cursor to the end of a line, cc to c
 ------------------------------------------
 To append something to a word (at the end of the word) - ea
 ------------------------------------------
-How to generate tags and use them for navigation in a big java project?
-------------------------------------------
 vi/vim search and replace: how to replace all tabs with spaces
 
 vi/vim question: How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?
@@ -75,3 +73,5 @@ To install ctags in centos:
 2) Install package
     $ yum install <packagename>
 ---------------------------------------------------------
+How to generate tags and use them for navigation in a big java project?
+ctags -R
