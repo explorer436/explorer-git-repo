@@ -74,4 +74,4 @@ To install ctags in centos:
     $ yum install <packagename>
 ---------------------------------------------------------
 How to generate tags and use them for navigation in a big java project?
-ctags -R
+Go to the root folder of the project and execute this command : ctags -R
