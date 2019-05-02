@@ -45,12 +45,26 @@ Search and replace...
 :%s/search_for_this/replace_with_this/c   - confirm each replace
 
 ------------------------------------------
-
 Quickly change word or line : 
 To quickly change a word you can use cw,caw or ciw. 
 Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis for a sentence
-
+------------------------------------------
 To append something to a word (at the end of the word) - ea
 ------------------------------------------
-
 How to generate tags and use them for navigation in a big java project?
+------------------------------------------
+vi/vim search and replace: how to replace all tabs with spaces
+
+vi/vim question: How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?
+
+Answer: This is actually easy to do with the vi or vim editor. Just go into "last line mode" by typing the ":" character, then enter a command like this to replace all occurrences of the string ABC with the string XYZ:
+
+1,$s/ABC/XYZ/g
+
+and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.
+
+I needed to convert all tab characters in a file with two spaces (I was converting some Java code someone gave me to standards that I follow). To convert each tab in the file to four spaces, I used this command:
+
+1,$s/\t/    /g
+
+Note that in both of these examples the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
