@@ -68,3 +68,10 @@ I needed to convert all tab characters in a file with two spaces (I was converti
 1,$s/\t/    /g
 
 Note that in both of these examples the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
+---------------------------------------------------------
+To install ctags in centos:
+1) Find the package you want to install
+    $ yum list *ctags*
+2) Install package
+    $ yum install <packagename>
+---------------------------------------------------------
