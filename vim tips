@@ -83,3 +83,13 @@ The next step is to get the full path of this tags file - in Linux, use the read
 open a file in the root folder of the project and run this command from within vim (use semi-colon and then type it)
 set tags=./tags;/
 (It starts with a tags file in the current directory and goes up to the root directory.)
+-----------------------------------------------------------
+Vim page up and page down keystrokes:
+The Vim page up keystroke is [Control][b]. You can remember the 'b' by thinking "back".
+The Vim page down keystroke is [Control][f]. You can remember the 'f' by thinking "forward".
+
+You can use other keystrokes in Vim to move up and down, as shown here:
+[Control][b] - Move back one full screen
+[Control][f] - Move forward one full screen
+[Control][d] - Move forward 1/2 screen
+[Control][u] - Move back (up) 1/2 screen
