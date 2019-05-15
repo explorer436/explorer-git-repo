@@ -4,27 +4,21 @@ In Linux, the vimrc file is in /etc
 (if we want to edit it, we might have to do it as root)
 ------------------------------------------
 LINE NUMBERS :
-
-Enabling left-margin display
-To display line numbers - :set number
-This will turn off the line number display - :set nonumber
+To display line numbers :set number
+To turn off the line number display :set nonumber
 
 To enable line numbers on startup, simply add the following to your vimrc - set number
 
-To display line numbers relative to the line with the cursor, use this - :set relativenumber or :set norelativenumber
-
+RELATIVE LINE NUMBERS : 
+To display line numbers relative to the line with the cursor, 
+:set relativenumber or :set norelativenumber
 ------------------------------------------
-
 SEARCHING : 
-
-For basic searching:
 
 /pattern       - search forward for pattern
 ?pattern       - search backward
 n              - repeat forward search
 N              - repeat backward
-
-Some variables you might want to set:
 
 :set ignorecase - case insensitive
 :set smartcase  - use case if any caps used 
