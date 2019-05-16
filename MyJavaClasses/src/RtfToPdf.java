@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-import java.io.ByteArrayOutputStream;
+/*import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -16,7 +16,7 @@ import java.security.NoSuchAlgorithmException;
 
 import org.artofsolving.jodconverter.office.DefaultOfficeManagerConfiguration;
 import org.artofsolving.jodconverter.OfficeDocumentConverter;
-import org.artofsolving.jodconverter.office.OfficeManager;
+import org.artofsolving.jodconverter.office.OfficeManager;*/
 
 /**
  *
@@ -25,7 +25,7 @@ import org.artofsolving.jodconverter.office.OfficeManager;
 public class RtfToPdf
 {
 
-	public static void main(String[] args) throws FileNotFoundException, IOException, NoSuchAlgorithmException
+	/* public static void main(String[] args) throws FileNotFoundException, IOException, NoSuchAlgorithmException
 	{
 		readFileNames("/Users/harshavardhane/Desktop/rtffiles");
 	}
@@ -204,6 +204,6 @@ public class RtfToPdf
 			baos.write(buffer, 0, bytesRead);
 		}
 		return baos.toByteArray();
-	}
+	}*/
 
 }
