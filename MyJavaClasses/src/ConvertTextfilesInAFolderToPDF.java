@@ -3,15 +3,15 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.PageSize;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.PdfWriter;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileReader;
+// import com.itextpdf.text.Document;
+// import com.itextpdf.text.Element;
+// import com.itextpdf.text.PageSize;
+// import com.itextpdf.text.Paragraph;
+// import com.itextpdf.text.pdf.PdfWriter;
+// import java.io.BufferedReader;
+// import java.io.File;
+// import java.io.FileOutputStream;
+// import java.io.FileReader;
 
 /**
  *
@@ -24,7 +24,7 @@ public class ConvertTextfilesInAFolderToPDF
 	 * @param args
 	 *            the command line arguments
 	 */
-	public static void main(String[] args)
+	/* public static void main(String[] args)
 	{
 		readFileNames("/Users/harshavardhane/Desktop/textfiles");
 	}
@@ -100,5 +100,5 @@ public class ConvertTextfilesInAFolderToPDF
 		{
 			e.printStackTrace();
 		}
-	}
+	}*/
 }

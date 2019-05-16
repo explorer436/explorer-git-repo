@@ -1,5 +1,5 @@
-import com.thoughtworks.qdox.JavaDocBuilder;
-import com.thoughtworks.qdox.model.JavaSource;
+// import com.thoughtworks.qdox.JavaDocBuilder;
+// import com.thoughtworks.qdox.model.JavaSource;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,7 +8,7 @@ import java.io.FileReader;
 public class ListAllTheImportsFromJavaClassesInAProject
 {
 
-	public static void main(String[] args)
+	/* public static void main(String[] args)
 	{
 		// String fileFullPath = "Your\\java\\ file \\full\\path";
 
@@ -108,5 +108,5 @@ public class ListAllTheImportsFromJavaClassesInAProject
 				readFiles(projectLocation + "/" + listOfFiles[i].getName());
 			}
 		}
-	}
+	}*/
 }
