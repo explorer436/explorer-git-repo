@@ -1,6 +1,6 @@
 
 
-developed a brand new API application to expose an internal jax-ws service as a RESTful API. Used springboot, cucumber, spock, spring cloud contract, 
+developed a brand new API application to expose an internal jax-ws service as a RESTful API. Used springboot, cucumber, spock, junit, spring cloud contract, 
 
 used apigee for proxy configuration - set up proxy environments for prod and a few non-prod environments and set up routing rules from these proxies to various environments in the backend.
 
