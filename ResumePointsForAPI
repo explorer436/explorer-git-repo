@@ -15,3 +15,5 @@ set up environments, deployment pipelines using Jenkins and bamboo builds for no
 created threat model diagram and other architectural diagrams using lucid charts.
 
 created a brand new repository and migrated the team documentation from Atlassian Confluence to GitBooks. created the CICD pipelines using bamboo.
+
+TDD and BDD
