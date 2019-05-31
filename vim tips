@@ -37,6 +37,8 @@ Search and replace...
 
 :%s/search_for_this/replace_with_this/    - search whole file and replace
 :%s/search_for_this/replace_with_this/c   - confirm each replace
+------------------------------------------
+Removing duplicate rows in vi :sort u
 
 ------------------------------------------
 Quickly change word or line : 
