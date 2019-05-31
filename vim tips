@@ -39,7 +39,11 @@ Search and replace...
 :%s/search_for_this/replace_with_this/c   - confirm each replace
 ------------------------------------------
 Removing duplicate rows in vi :sort u
-
+------------------------------------------
+If want to delete the texts after the pattern ":" (colon). I have used the following command to replace every
+:%s/\:.*$//
+If want to delete the texts after "sometext" . I have used the following command to replace every
+:%s/sometext.*$//
 ------------------------------------------
 Quickly change word or line : 
 To quickly change a word you can use cw,caw or ciw. 
