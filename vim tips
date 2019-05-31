@@ -40,10 +40,26 @@ Search and replace...
 ------------------------------------------
 Removing duplicate rows in vi :sort u
 ------------------------------------------
+question : Delete all text before search pattern
+I have a file that looks like below
+1: #sometext
+2: #sometext
+3: #sometext
+If want to delete the texts before the pattern ":" (colon). I have used the following command to replace every
+:%s/^.*/\://
 If want to delete the texts after the pattern ":" (colon). I have used the following command to replace every
 :%s/\:.*$//
-If want to delete the texts after "sometext" . I have used the following command to replace every
-:%s/sometext.*$//
+I would like to learn other ways to do. Thank you!.
+
+Another answer : 
+Do you want to not include the colon?
+If so, then for deleting everything before (but not including) the colon:
+:%s/.*\ze://
+And for everything after:
+:%s/:\zs.*//
+See :help \zs and :help \ze for more info.
+
+These atoms are amazing! After I discovered them, I started using them all the time. I remember them as z == zero-width (since they don't match anything).
 ------------------------------------------
 Quickly change word or line : 
 To quickly change a word you can use cw,caw or ciw. 
