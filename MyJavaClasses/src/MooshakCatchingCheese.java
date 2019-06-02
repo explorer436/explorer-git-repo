@@ -35,10 +35,10 @@ public class MooshakCatchingCheese
 	{
 
 		int[][] grid1 = new int[][] { { 1, 1, 1 }, { 9, 1, 1 }, { 0, 1, 0 } };
-		// System.out.println("isPath(grid1) : " + isPath(grid1));
+		System.out.println("isPath(grid1) : " + isPath(grid1));
 
 		int[][] grid2 = new int[][] { { 0, 0, 0 }, { 9, 1, 1 }, { 0, 1, 1 } };
-		// System.out.println("isPath(grid2) : " + isPath(grid2));
+		System.out.println("isPath(grid2) : " + isPath(grid2));
 
 		int[][] grid3 = new int[][] { { 1, 0, 1, 1, 1, 0, 0, 1 }, { 1, 0, 0, 0, 1, 1, 1, 1 },
 				{ 1, 0, 0, 0, 0, 0, 0, 0 }, { 1, 0, 1, 0, 9, 0, 1, 1 }, { 1, 1, 1, 0, 1, 0, 0, 1 },
@@ -48,12 +48,12 @@ public class MooshakCatchingCheese
 		int[][] grid4 = new int[][] { { 1, 0, 1, 1, 1, 0, 0, 1 }, { 1, 0, 0, 0, 1, 1, 1, 1 },
 				{ 1, 0, 0, 0, 0, 0, 0, 0 }, { 1, 1, 1, 1, 9, 0, 1, 1 }, { 1, 1, 1, 0, 1, 0, 0, 1 },
 				{ 1, 0, 1, 0, 1, 1, 0, 1 }, { 1, 0, 0, 0, 0, 1, 0, 1 }, { 1, 1, 1, 1, 1, 1, 1, 1 } };
-		// System.out.println("isPath(grid4) : " + isPath(grid4));
+		System.out.println("isPath(grid4) : " + isPath(grid4));
 
 		int[][] grid5 = new int[][] { { 1, 0, 1, 1, 1, 0, 0, 1 }, { 1, 0, 0, 0, 1, 1, 1, 1 },
 				{ 1, 0, 0, 0, 0, 0, 0, 0 }, { 1, 0, 1, 0, 9, 0, 1, 1 }, { 1, 1, 1, 1, 1, 0, 0, 1 },
 				{ 1, 0, 1, 0, 1, 1, 0, 1 }, { 1, 0, 0, 0, 0, 1, 0, 1 }, { 1, 1, 1, 1, 1, 1, 1, 1 } };
-		// System.out.println("isPath(grid5) : " + isPath(grid5));
+		System.out.println("isPath(grid5) : " + isPath(grid5));
 	}
 
 	public static int isPath(int[][] grid)
