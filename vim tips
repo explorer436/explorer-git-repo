@@ -50,7 +50,7 @@ If want to delete the texts before the pattern ":" (colon). I have used the foll
 If want to delete the texts after the pattern ":" (colon). I have used the following command to replace every
 :%s/\:.*$//
 I would like to learn other ways to do. Thank you!.
-
+------
 Another answer : 
 Do you want to not include the colon?
 If so, then for deleting everything before (but not including) the colon:
@@ -60,6 +60,12 @@ And for everything after:
 See :help \zs and :help \ze for more info.
 
 These atoms are amazing! After I discovered them, I started using them all the time. I remember them as z == zero-width (since they don't match anything).
+------
+If you want to delete all characters before "Hello", you can do
+:%s/.*Hello/Hello/
+Note that .* is greedy, i.e. it will eat all occurrences of "Hello" till it finds the last one. If you have a line:
+abcHellodefHelloghi - it will become - Helloghi
+If you want a non-greedy solution, try - :%s/.\{-}Hello/Hello
 ------------------------------------------
 Quickly change word or line : 
 To quickly change a word you can use cw,caw or ciw. 
