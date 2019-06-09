@@ -137,16 +137,34 @@ Additionally:
 Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
 
 
-
 To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg
 
 you should define the following option:
 
 :set nostartofline
+-----------------------------------------------------------
+TEXT SELECTION :
 
+If you want to do the same thing to a collection of lines, like cut, copy, sort, or format, you first need to select the text. Get out of insert mode, hit one of the options below, and then move up or down a few lines. You should see the selected text highlighted.
 
+V       - selects entire lines 
+v       - selects range of text
+ctrl-v  - selects columns
+gv      - reselect block
+
+After selecting the text, try d to delete, or y to copy, or :s/match/replace/, or :center, or !sort, or...
+
+Here's one way to move selected text over a few spaces:
+
+ - select a chunk of code using capital V and the arrow keys (or j, k)
+ - type colon
+ - then type s/^/   /
+ - hit return
+
+What you've done is replace the beginning of each selected line (the ^ symbol means "the beginning of the line") with spaces. 
 -----------------------------------------------------------
 https://vimhelp.org/
 -----------------------------------------------------------
 In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
 -----------------------------------------------------------
+
