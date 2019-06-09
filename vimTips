@@ -1,28 +1,29 @@
 ------------------------------------------
 Open question - vi/vim search and replace: how to replace all tabs with spaces
 ------------------------------------------
-How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?  :1,$s/ABC/XYZ/g   and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.  Note that in both of these examples the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
-------------------------------------------
+WORD MANIPULATION:
+
+Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
+
 To append something to a word (at the end of the word) - ea
-------------------------------------------
-Search and replace :
+Open question : How to change lower case letters words to upper case words? How to change upper case words to lower case words?
+You can change the case of text:
+
+    Toggle case "HellO" to "hELLo" with g~ then a movement (word or end of line). 
+    Uppercase "HellO" to "HELLO" with gU then a movement (word or end of line). 
+    Lowercase "HellO" to "hello" with gu then a movement (word or end of line). 
+
+Alternatively, you can visually select text then press ~ to toggle case, or U to convert to uppercase, or u to convert to lowercase. 
+-----------------------------------------
+SEARCH AND REPLACE :
+
+How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?  :1,$s/ABC/XYZ/g   and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.  Note that in this example, the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
+
 :%s/search_for_this/replace_with_this/    - search whole file and replace
 :%s/search_for_this/replace_with_this/c   - confirm each replace
 To convert each tab in the file to four spaces : 1,$s/\t/    /g
-------------------------------------------
-In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
-------------------------------------------
-Removing duplicate rows in vi :sort u
-------------------------------------------
-LINE NUMBERS :
-To display line numbers :set number
-To turn off the line number display :set nonumber
 
-To enable line numbers on startup, simply add the following to your vimrc - set number
-
-RELATIVE LINE NUMBERS : To display line numbers relative to the line with the cursor, :set relativenumber or :set norelativenumber
-------------------------------------------
-SEARCHING : 
+General tips for searching : 
 
 /pattern       - search forward for pattern
 ?pattern       - search backward
@@ -39,6 +40,14 @@ More cool searching tricks:
 g*              - search for partial word under cursor (repeat with n)
 ctrl-o, ctrl-i  - go through jump locations
 [I              - show lines with matching word under cursor
+------------------------------------------
+Removing duplicate rows in vi :sort u
+------------------------------------------
+LINE NUMBERS :
+To display line numbers :set number (To turn off the line number display :set nonumber)
+
+To enable line numbers on startup, simply add the following to your vimrc - set number
+Relative Line Numbers : To display line numbers relative to the line with the cursor, :set relativenumber or :set norelativenumber
 ------------------------------------------
 question : Delete all text before search pattern
 I have a file that looks like below
@@ -66,15 +75,15 @@ If you want to delete all characters before "Hello", you can do
 Note that .* is greedy, i.e. it will eat all occurrences of "Hello" till it finds the last one. If you have a line:
 abcHellodefHelloghi - it will become - Helloghi
 If you want a non-greedy solution, try - :%s/.\{-}Hello/Hello
-------------------------------------------
-Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
 ---------------------------------------------------------
+CTAGS : 
+
 To install ctags in centos:
 1) Find the package you want to install
     $ yum list *ctags*
 2) Install package
     $ yum install <packagename>
----------------------------------------------------------
+
 How to generate tags and use them for navigation in a big java project?
 Go to the root folder of the project and execute this command : ctags -R
 
@@ -86,6 +95,16 @@ open a file in the root folder of the project and run this command from within v
 set tags=./tags;/
 (It starts with a tags file in the current directory and goes up to the root directory.)
 -----------------------------------------------------------
+SCROLLING : 
+
+How to scroll up and down through a page gracefully?
+
+The main scrolling commands in Vim are:
+    Ctrl-B and Ctrl-F, as well as PageUp and PageDown scroll by full page
+    Ctrl-U and Ctrl-D scroll half a page by default
+    Ctrl-Y and Ctrl-E scroll one line
+I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. 
+
 Vim page up and page down keystrokes:
 The Vim page up keystroke is [Control][b]. You can remember the 'b' by thinking "back".
 The Vim page down keystroke is [Control][f]. You can remember the 'f' by thinking "forward".
@@ -95,5 +114,13 @@ You can use other keystrokes in Vim to move up and down, as shown here:
 [Control][f] - Move forward one full screen
 [Control][d] - Move forward 1/2 screen
 [Control][u] - Move back (up) 1/2 screen
+
+    zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
+    zt - move current line to the top of the screen
+    zb - move current line to the bottom of the screen
+
 -----------------------------------------------------------
 https://vimhelp.org/
+-----------------------------------------------------------
+In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
+-----------------------------------------------------------
