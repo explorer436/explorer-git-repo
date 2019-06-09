@@ -1,7 +1,18 @@
-https://vimhelp.org/
 ------------------------------------------
-In Linux, the vimrc file is in /etc
-(if we want to edit it, we might have to do it as root)
+Open question - vi/vim search and replace: how to replace all tabs with spaces
+------------------------------------------
+How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?  :1,$s/ABC/XYZ/g   and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.  Note that in both of these examples the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
+------------------------------------------
+To append something to a word (at the end of the word) - ea
+------------------------------------------
+Search and replace :
+:%s/search_for_this/replace_with_this/    - search whole file and replace
+:%s/search_for_this/replace_with_this/c   - confirm each replace
+To convert each tab in the file to four spaces : 1,$s/\t/    /g
+------------------------------------------
+In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
+------------------------------------------
+Removing duplicate rows in vi :sort u
 ------------------------------------------
 LINE NUMBERS :
 To display line numbers :set number
@@ -9,9 +20,7 @@ To turn off the line number display :set nonumber
 
 To enable line numbers on startup, simply add the following to your vimrc - set number
 
-RELATIVE LINE NUMBERS : 
-To display line numbers relative to the line with the cursor, 
-:set relativenumber or :set norelativenumber
+RELATIVE LINE NUMBERS : To display line numbers relative to the line with the cursor, :set relativenumber or :set norelativenumber
 ------------------------------------------
 SEARCHING : 
 
@@ -26,19 +35,10 @@ N              - repeat backward
 :set hlsearch   - search highlighting
 
 More cool searching tricks:
-
 *               - search for word currently under cursor
-g*              - search for partial word under cursor 
-                  (repeat with n)
+g*              - search for partial word under cursor (repeat with n)
 ctrl-o, ctrl-i  - go through jump locations
 [I              - show lines with matching word under cursor
-
-Search and replace...
-
-:%s/search_for_this/replace_with_this/    - search whole file and replace
-:%s/search_for_this/replace_with_this/c   - confirm each replace
-------------------------------------------
-Removing duplicate rows in vi :sort u
 ------------------------------------------
 question : Delete all text before search pattern
 I have a file that looks like below
@@ -67,27 +67,7 @@ Note that .* is greedy, i.e. it will eat all occurrences of "Hello" till it find
 abcHellodefHelloghi - it will become - Helloghi
 If you want a non-greedy solution, try - :%s/.\{-}Hello/Hello
 ------------------------------------------
-Quickly change word or line : 
-To quickly change a word you can use cw,caw or ciw. 
-Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis for a sentence
-------------------------------------------
-To append something to a word (at the end of the word) - ea
-------------------------------------------
-vi/vim search and replace: how to replace all tabs with spaces
-
-vi/vim question: How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?
-
-Answer: This is actually easy to do with the vi or vim editor. Just go into "last line mode" by typing the ":" character, then enter a command like this to replace all occurrences of the string ABC with the string XYZ:
-
-1,$s/ABC/XYZ/g
-
-and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.
-
-I needed to convert all tab characters in a file with two spaces (I was converting some Java code someone gave me to standards that I follow). To convert each tab in the file to four spaces, I used this command:
-
-1,$s/\t/    /g
-
-Note that in both of these examples the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
+Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
 ---------------------------------------------------------
 To install ctags in centos:
 1) Find the package you want to install
@@ -115,3 +95,5 @@ You can use other keystrokes in Vim to move up and down, as shown here:
 [Control][f] - Move forward one full screen
 [Control][d] - Move forward 1/2 screen
 [Control][u] - Move back (up) 1/2 screen
+-----------------------------------------------------------
+https://vimhelp.org/
