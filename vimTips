@@ -119,6 +119,28 @@ You can use other keystrokes in Vim to move up and down, as shown here:
     zt - move current line to the top of the screen
     zb - move current line to the bottom of the screen
 
+
+
+Additionally:
+
+    Ctrl-y Moves screen up one line
+    Ctrl-e Moves screen down one line
+    Ctrl-u Moves cursor & screen up ½ page
+    Ctrl-d Moves cursor & screen down ½ page
+    Ctrl-b Moves screen up one page, cursor to last line
+    Ctrl-f Moves screen down one page, cursor to first line
+
+Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
+
+
+
+To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg
+
+you should define the following option:
+
+:set nostartofline
+
+
 -----------------------------------------------------------
 https://vimhelp.org/
 -----------------------------------------------------------
