@@ -27,6 +27,12 @@ How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor
 :%s/search_for_this/replace_with_this/c   - confirm each replace
 To convert each tab in the file to four spaces : 1,$s/\t/    /g
 
+To remove unnecessary spaces and tabs in empty lines in Vim:
+In a search, \s finds whitespace (a space or a tab), and \+ finds one or more occurrences.
+The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
+:%s/\s\+$//e
+(this did not work with eclipse vim plugin)
+
 General tips for searching : 
 
 /pattern       - search forward for pattern
@@ -129,8 +135,8 @@ Additionally:
 
     Ctrl-y Moves screen up one line
     Ctrl-e Moves screen down one line
-    Ctrl-u Moves cursor & screen up ½ page
-    Ctrl-d Moves cursor & screen down ½ page
+    Ctrl-u Moves cursor & screen up Â½ page
+    Ctrl-d Moves cursor & screen down Â½ page
     Ctrl-b Moves screen up one page, cursor to last line
     Ctrl-f Moves screen down one page, cursor to first line
 
