@@ -7,6 +7,8 @@ Open question - how to use vim's default file navigation mechanism? Is the answe
 ------------------------------------------
 Open question - how to do file comparison using Vim?
 ------------------------------------------
+Open question - how to align/format markup language tables in Vim?
+------------------------------------------
 WORD MANIPULATION:
 
 Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
