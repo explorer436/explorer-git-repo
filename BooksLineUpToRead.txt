@@ -38,13 +38,8 @@ Target for 2019 :
 24. Deep work : rules for focused success in a distracted world by Newport, Cal. (Dover Public Library)
 
 
-found - Jack Kerouac	 } 	On the Road
-found - Jack Kerouac	 } 	The Dharma Bums (718)
-found - Eckhart Tolle	 } 	A New Earth_ Awakening to Your Life's Pu (271)
 found - Steve Wozniak	 } 	IWoz_ Computer Geek to Cult Icon _ How I (8788)
-found - Ken Follett	 } 	Fall of Giants (6837)
 found - Coming of Age in the Milky Way
-found - George Orwell	 } 	The Complete Novels of George Orwell (8084)
 found - Daron Acemoglu and James Robinson	 } 	Why Nations Fail
 found - Steven D. Levitt	 } 	Freakonomics_ A Rogue Economist Explores (697)
 found - Steven D. Levitt	 } 	Superfreakonomics_ Global Cooling, Patri (696)
@@ -92,7 +87,6 @@ found - The Alienist
 found - Foucault's Pendulum
 found - 2666
 found - Erosion
-found - Too Much Happiness
 found - Founding Brothers
 found - The Revolutionary Generation
 found - Team of Rivals
