@@ -173,6 +173,20 @@ Here's one way to move selected text over a few spaces:
 
 What you've done is replace the beginning of each selected line (the ^ symbol means "the beginning of the line") with spaces. 
 -----------------------------------------------------------
+INDENTATION :     
+    Example line
+        This is part of the parsed line
+        Thats goes one
+    End of line
+
+What I want is to remove all spaces in front of these lines, the final text should be
+
+Example line
+This is part of the parsed line
+Thats goes one
+End of line
+Answer : To format a line to the left I use :left. Use this format an entire file :%le
+-----------------------------------------------------------
 https://vimhelp.org/
 -----------------------------------------------------------
 In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
