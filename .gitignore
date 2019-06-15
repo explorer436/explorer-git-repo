@@ -36,6 +36,7 @@
 ehthumbs.db
 Thumbs.db
 
-
+# Vim related files #
+######################
 *~
 *.swp
