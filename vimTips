@@ -129,8 +129,6 @@ You can use other keystrokes in Vim to move up and down, as shown here:
     zt - move current line to the top of the screen
     zb - move current line to the bottom of the screen
 
-
-
 Additionally:
 
     Ctrl-y Moves screen up one line
@@ -141,7 +139,6 @@ Additionally:
     Ctrl-f Moves screen down one page, cursor to first line
 
 Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
-
 
 To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg
 
@@ -181,6 +178,7 @@ Example line
 This is part of the parsed line
 Thats goes one
 End of line
+
 Answer : To format a line to the left I use :left. Use this format an entire file :%le
 -----------------------------------------------------------
 https://vimhelp.org/
