@@ -1,13 +1,9 @@
 ------------------------------------------
-Open question - vi/vim search and replace: how to replace all tabs with spaces
-------------------------------------------
 Open question - how to customize color scheme?
 ------------------------------------------
 Open question - how to use vim's default file navigation mechanism? Is the answer in Leeran's youtube video?
 ------------------------------------------
 Open question - how to do file comparison using Vim?
-------------------------------------------
-Open question - how to align/format markup language tables in Vim?
 ------------------------------------------
 WORD MANIPULATION:
 
@@ -30,6 +26,7 @@ How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor
 :%s/search_for_this/replace_with_this/    - search whole file and replace
 :%s/search_for_this/replace_with_this/c   - confirm each replace
 To convert each tab in the file to four spaces : 1,$s/\t/    /g
+How to replace all tabs with spaces :%s/\t/    /g
 
 To remove unnecessary spaces and tabs in empty lines in Vim:
 In a search, \s finds whitespace (a space or a tab), and \+ finds one or more occurrences.
@@ -191,4 +188,5 @@ https://vimhelp.org/
 -----------------------------------------------------------
 In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
 -----------------------------------------------------------
-
+Open question - how to align/format markup language tables in Vim? This is probably easier to do using one of the extensions available for Visual Studio Code.
+-----------------------------------------------------------
