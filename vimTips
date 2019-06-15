@@ -10,13 +10,12 @@ WORD MANIPULATION:
 Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
 
 To append something to a word (at the end of the word) - ea
-Open question : How to change lower case letters words to upper case words? How to change upper case words to lower case words?
-You can change the case of text:
 
+How to change lower case letters words to upper case words? How to change upper case words to lower case words?
+You can change the case of text:
     Toggle case "HellO" to "hELLo" with g~ then a movement (word or end of line). 
     Uppercase "HellO" to "HELLO" with gU then a movement (word or end of line). 
     Lowercase "HellO" to "hello" with gu then a movement (word or end of line). 
-
 Alternatively, you can visually select text then press ~ to toggle case, or U to convert to uppercase, or u to convert to lowercase. 
 -----------------------------------------
 SEARCH AND REPLACE :
