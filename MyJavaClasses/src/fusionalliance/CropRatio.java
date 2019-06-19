@@ -1,3 +1,5 @@
+package fusionalliance;
+
 import java.util.HashMap;
 
 public class CropRatio {
