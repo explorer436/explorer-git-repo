@@ -6,19 +6,17 @@ public class BinaryGap
 	{
 		System.out.println("starting test class");
 
-		BinaryGap sol = new BinaryGap();
-
-		int finalResult = sol.solution(1041);
+		int finalResult = (new BinaryGap()).solution(1041);
 		System.out.println("finalResult : " + finalResult);
 
-		finalResult = sol.solution(328);
+		finalResult = (new BinaryGap()).solution(328);
 		System.out.println("finalResult : " + finalResult);
 
-		finalResult = sol.solution(1024);
+		finalResult = (new BinaryGap()).solution(1024);
 		System.out.println("finalResult : " + finalResult);
 	}
 
-	public static int solution(int N)
+	public int solution(int N)
 	{
 		int current = 0;
 		int max = 0;
