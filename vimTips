@@ -17,10 +17,38 @@ You can change the case of text:
     Uppercase "HellO" to "HELLO" with gU then a movement (word or end of line). 
     Lowercase "HellO" to "hello" with gu then a movement (word or end of line). 
 Alternatively, you can visually select text then press ~ to toggle case, or U to convert to uppercase, or u to convert to lowercase. 
+
+TEXT SELECTION :
+
+If you want to do the same thing to a collection of lines, like cut, copy, sort, or format, you first need to select the text. Get out of insert mode, hit one of the options below, and then move up or down a few lines. You should see the selected text highlighted.
+
+V       - selects entire lines 
+v       - selects range of text
+ctrl-v  - selects columns
+gv      - reselect block
+
+After selecting the text, try d to delete, or y to copy, or :s/match/replace/, or :center, or !sort, or...
+
+Here's one way to move selected text over a few spaces:
+
+ - select a chunk of code using capital V and the arrow keys (or j, k)
+ - type colon
+ - then type s/^/   /
+ - hit return
+
+What you've done is replace the beginning of each selected line (the ^ symbol means "the beginning of the line") with spaces. 
+
+
+TEXT navigation :
+first and last non blank characters in a line : ^ and g_
+first and last characters in a line : 0 and $
 -----------------------------------------
 SEARCH AND REPLACE :
 
 How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?  :1,$s/ABC/XYZ/g   and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.  Note that in this example, the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
+
+/ : Search
+*/# : Search forward/back for word under cursor
 
 :%s/search_for_this/replace_with_this/    - search whole file and replace
 :%s/search_for_this/replace_with_this/c   - confirm each replace
@@ -50,8 +78,6 @@ More cool searching tricks:
 g*              - search for partial word under cursor (repeat with n)
 ctrl-o, ctrl-i  - go through jump locations
 [I              - show lines with matching word under cursor
-------------------------------------------
-Removing duplicate rows in vi :sort u
 ------------------------------------------
 LINE NUMBERS :
 To display line numbers :set number (To turn off the line number display :set nonumber)
@@ -85,29 +111,19 @@ If you want to delete all characters before "Hello", you can do
 Note that .* is greedy, i.e. it will eat all occurrences of "Hello" till it finds the last one. If you have a line:
 abcHellodefHelloghi - it will become - Helloghi
 If you want a non-greedy solution, try - :%s/.\{-}Hello/Hello
----------------------------------------------------------
-CTAGS : 
-
-To install ctags in centos:
-1) Find the package you want to install
-    $ yum list *ctags*
-2) Install package
-    $ yum install <packagename>
-
-How to generate tags and use them for navigation in a big java project?
-Go to the root folder of the project and execute this command : ctags -R
-
-The next step is to get the full path of this tags file - in Linux, use the readlink utility to get the full path.
-[n0281526@VDDP14P-4UCXMSH renters-api-sb2]$ readlink -f tags
-/home/n0281526/Downloads/GitRepositories/renters-api-sb2/tags
-
-open a file in the root folder of the project and run this command from within vim (use semi-colon and then type it)
-set tags=./tags;/
-(It starts with a tags file in the current directory and goes up to the root directory.)
 -----------------------------------------------------------
 SCROLLING : 
 
 How to scroll up and down through a page gracefully?
+
+Ctrl+e/Ctrl+y : Scroll 1 line down/up
+Ctrl+f/Ctrl+b : Scroll 1 page down/up
+
+M/H/L : Move cursor to middle/top/bottom of screen
+
+:N : Go to line N
+N% : Go to the line N percent through the file
+N| : Go to column N
 
 The main scrolling commands in Vim are:
     Ctrl-B and Ctrl-F, as well as PageUp and PageDown scroll by full page
@@ -146,26 +162,6 @@ you should define the following option:
 
 :set nostartofline
 -----------------------------------------------------------
-TEXT SELECTION :
-
-If you want to do the same thing to a collection of lines, like cut, copy, sort, or format, you first need to select the text. Get out of insert mode, hit one of the options below, and then move up or down a few lines. You should see the selected text highlighted.
-
-V       - selects entire lines 
-v       - selects range of text
-ctrl-v  - selects columns
-gv      - reselect block
-
-After selecting the text, try d to delete, or y to copy, or :s/match/replace/, or :center, or !sort, or...
-
-Here's one way to move selected text over a few spaces:
-
- - select a chunk of code using capital V and the arrow keys (or j, k)
- - type colon
- - then type s/^/   /
- - hit return
-
-What you've done is replace the beginning of each selected line (the ^ symbol means "the beginning of the line") with spaces. 
------------------------------------------------------------
 INDENTATION :     
     Example line
         This is part of the parsed line
@@ -180,6 +176,27 @@ Thats goes one
 End of line
 
 Answer : To format a line to the left I use :left. Use this format an entire file :%le
+-----------------------------------------------------------
+CTAGS : 
+
+To install ctags in centos:
+1) Find the package you want to install
+    $ yum list *ctags*
+2) Install package
+    $ yum install <packagename>
+
+How to generate tags and use them for navigation in a big java project?
+Go to the root folder of the project and execute this command : ctags -R
+
+The next step is to get the full path of this tags file - in Linux, use the readlink utility to get the full path.
+[n0281526@VDDP14P-4UCXMSH renters-api-sb2]$ readlink -f tags
+/home/n0281526/Downloads/GitRepositories/renters-api-sb2/tags
+
+open a file in the root folder of the project and run this command from within vim (use semi-colon and then type it)
+set tags=./tags;/
+(It starts with a tags file in the current directory and goes up to the root directory.)
+-----------------------------------------------------------
+Removing duplicate rows in vi :sort u
 -----------------------------------------------------------
 https://vimhelp.org/
 -----------------------------------------------------------
