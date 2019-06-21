@@ -1,3 +1,5 @@
+pdf file modification in fedora : use the pdfmod utility that comes with fedora
+-------------------------------------------------------------------
 Recursive copy
 To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
 $ cp -R * /home/mycomputer/backup
