@@ -1,6 +1,4 @@
 ------------------------------------------
-Open question - how to customize color scheme?
-------------------------------------------
 Open question - how to use vim's default file navigation mechanism? Is the answer in Leeran's youtube video?
 ------------------------------------------
 Open question - how to do file comparison using Vim?
@@ -203,4 +201,11 @@ https://vimhelp.org/
 In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
 -----------------------------------------------------------
 Open question - how to align/format markup language tables in Vim? This is probably easier to do using one of the extensions available for Visual Studio Code.
+-----------------------------------------------------------
+(this is the general method to update multiple java files at once)
+If you want to open all files matching the pattern in subfolders - :args **/*.java
+To replace four white spaces in java files with a tab use this - :bufdo exexute "%s/    /(press tab)/g" | update
+step 1 - :bufdo execute "%s/(press tab){/{/g" | update
+step 2 - :bufdo execute "global/^{/normal -gJ" | update
+step 3 - :bufdo execute "%s/){/) {/g" | update
 -----------------------------------------------------------
