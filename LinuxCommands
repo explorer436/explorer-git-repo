@@ -55,5 +55,5 @@ In case if we need to remove any package use -e command line switch with the pac
 
 rpm -e package-1.2.3.rpm
 _______________
-Command to view ip address: hostname -i
+Command to view ip address: hostname -I
 ---------------
