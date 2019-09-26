@@ -220,3 +220,6 @@ The g character says, “perform the following operation globally in this file.�
 The forward slash characters enclose the pattern I’m trying to match. In this case I want to match blank lines, so I use the regular expression ^$. Here the ^ means “beginning of line,” and $ means “end of line,” so with no characters in between them, this vim regex means “blank line.” (If I had typed ^abc$, that would mean, “find a line with only the sequence of characters ‘abc’”.)
 The d at the end of the command says, “When you find this pattern, delete the line.”
 -------------------------------------------------------------------------------------
+Delete Lines Beginning With A certain text In Vim
+:g/^(enter text here)/d
+-------------------------------------------------------------------------------------
