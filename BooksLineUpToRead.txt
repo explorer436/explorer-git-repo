@@ -95,7 +95,6 @@ found - Einstein
 found - A Memoir
 found - East of Eden
 found - Infinite Jest
-
 ---------------------------------------------------------
 Extreme Ownership — How U.S. Navy SEALs Lead and Win by Jocko Willink and Leif Babin
 ---------------------------------------------------------
@@ -120,7 +119,6 @@ Jack Kerouac
 Julian Barnes
 Rebecca Solnit
 Keegan
-
 ---------------------------------------------------------
 The will to change
 Biographies : 
@@ -139,10 +137,9 @@ But overall, here:
     For work: Big Magic (Gilbert), Rework (Fried, Hansson), Zero to One (Thiel)
     For relationships: All About Love (hooks)
     For something beautiful: A Field Guide to Getting Lost (Solnit)
-
 ---------------------------------------------------------
 Want to read : 
-The Prophet - Khalil Gibran
+The awakening of intelligence - Jiddu Krishna Murthy
 Trust me, I'm lying : confessions of a media manipulator by Holiday, Ryan. 
 Pachinko by Min Jin Lee
 In Order to Live: A North Korean Girl's Journey to Freedom by Yeonmi Park, Maryanne Vollers
@@ -150,6 +147,16 @@ The Motivation Hacker by Nick Winter
 Vedas in english
 Viking mythology
 Pragmatic Thinking and Learning: Refactor Your Wetware by Andy Hunt
+The Revenant by Michael Punke
+The First Deadly Sin (Deadly Sins #2) by Lawrence Sanders
+Lincoln in the Bardo by George Saunders
+Jamaica Inn by Daphne du Maurier
+Affinity by Sarah Waters
+The Dream of Scipio by Iain Pears
+An Instance of the Fingerpost by Iain Pears
+Choose Yourself: Be Happy, Make Millions, Live the Dream by James Altucher 
+The Lost Wife by Alyson Richman
+Seveneves by Neal Stephenson
 found - Matthew Kneale	 } 	English Passengers (6760)
 found - Edith Wharton	 } 	The Age of Innocence (242)
 found - Octavia Butler	 } 	Wild Seed
@@ -159,23 +166,19 @@ found - S E Hinton	 } 	The Outsiders
 found - The Poisonwood Bible
 found - The Prestige
 found - Red Dragon (Hannibal Lecter #1) by Thomas Harris
-The Revenant by Michael Punke
-The First Deadly Sin (Deadly Sins #2) by Lawrence Sanders
-Lincoln in the Bardo by George Saunders
-Jamaica Inn by Daphne du Maurier
-Affinity by Sarah Waters
-The Dream of Scipio by Iain Pears
-An Instance of the Fingerpost by Iain Pears
-Choose Yourself: Be Happy, Make Millions, Live the Dream by James Altucher 
 found - Kafka on the Shore by Haruki Murakami, Philip Gabriel (Translator)
 found - Chuck Palahniuk	 } 	Fight Club (11304)
 found - Christopher Priest	 } 	The Prestige (466)
 found - Neal Stephenson	 } 	Snow Crash (228)
-Seveneves by Neal Stephenson
 found - Dante Alighieri	 } 	The Divine Comedy (1816)
-Papillon by Henri CharriÃ¨re
 found - Alice Munro	 } 	Too Much Happiness_ Stories (8408)
-The Lost Wife by Alyson Richman
+---------------------------------------------------------
+Five books every student should read: 
+1. Mastery - George Leonard 
+2. Atomic habits - James Clear 
+3. The secret to success - Eric Thomas
+4. Big Magic - Elizabeth Gilbert 
+5. The war of art - Steven Pressfield
 ---------------------------------------------------------
 I read an interview where Neil Strauss mentioned John Fante’s Ask the Dust, so I bought it, read it, and fell in love with it… and in reading about John Fante, I learned that he’d been influenced by Nietzsche and Knut Hamsun, so I read both of them. Napoleon and Alexander Hamilton were changed by Plutarch’s Lives (and so were about a million other people across history), so of course, I read it. I heard that Phil Jackson recommended his players read Corelli’s Mandolin, and that Pete Carroll recommends The Inner Game of Tennis. Lots of successful people have reading lists that they either post on their blogs or that their biographers have compiled after their deaths. I made my way through those, too, book by book.
 ---------------------------------------------------------
@@ -216,13 +219,6 @@ Principles: Life and Work Hardcover by Ray Dalio
 Charlie Mungers’ only book is packed full of his top mental models too.
 Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger, Expanded Third Edition Hardcover – 2005
 by Peter D. Kaufman (Editor), Ed Wexler (Illustrator), Warren E. Buffett (Foreword), Charles T. Munger (Author) 
----------------------------------------------------------
-Five books every student should read: 
-1. Mastery - George Leonard 
-2. Atomic habits - James Clear 
-3. The secret to success - Eric Thomas
-4. Big Magic - Elizabeth Gilbert 
-5. The war of art - Steven Pressfield
 ---------------------------------------------------------
 Andre Agassi quotes this book inspired him to put his life as a story on paper.
 The Tender Bar: A Memoir by J. R. Moehringer
