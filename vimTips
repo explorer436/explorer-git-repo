@@ -1,8 +1,51 @@
-------------------------------------------
-Open question - how to use vim's default file navigation mechanism? Is the answer in Leeran's youtube video?
-------------------------------------------
-Open question - how to do file comparison using Vim?
-------------------------------------------
+------------------------------------------------------------
+SCROLLING : 
+
+How to scroll up and down through a page gracefully?
+
+M/H/L : Move cursor to middle/top/bottom of screen
+
+:N : Go to line N
+N% : Go to the line N percent through the file
+N| : Go to column N
+
+The main scrolling commands in Vim are:
+    Ctrl-B and Ctrl-F, as well as PageUp and PageDown scroll by full page
+    Ctrl-U and Ctrl-D scroll half a page by default
+    Ctrl-Y and Ctrl-E scroll one line
+I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. 
+
+Vim page up and page down keystrokes:
+The Vim page up keystroke is [Control][b]. You can remember the 'b' by thinking "back".
+The Vim page down keystroke is [Control][f]. You can remember the 'f' by thinking "forward".
+
+You can use other keystrokes in Vim to move up and down, as shown here:
+[Control][b] - Move back one full screen
+[Control][f] - Move forward one full screen
+[Control][d] - Move forward 1/2 screen
+[Control][u] - Move back (up) 1/2 screen
+
+    zt - move current line to the top of the screen
+    zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
+    zb - move current line to the bottom of the screen
+
+Additionally:
+
+    Ctrl-y Moves screen up one line
+    Ctrl-e Moves screen down one line
+    Ctrl-u Moves cursor & screen up ½ page
+    Ctrl-d Moves cursor & screen down ½ page
+    Ctrl-b Moves screen up one page, cursor to last line
+    Ctrl-f Moves screen down one page, cursor to first line
+
+Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
+
+To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg
+
+you should define the following option:
+
+:set nostartofline
+-----------------------------------------------------------
 WORD MANIPULATION:
 
 Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
@@ -15,7 +58,7 @@ You can change the case of text:
     Uppercase "HellO" to "HELLO" with gU then a movement (word or end of line). 
     Lowercase "HellO" to "hello" with gu then a movement (word or end of line). 
 Alternatively, you can visually select text then press ~ to toggle case, or U to convert to uppercase, or u to convert to lowercase. 
-
+------------------------------------------------------------
 TEXT SELECTION :
 
 If you want to do the same thing to a collection of lines, like cut, copy, sort, or format, you first need to select the text. Get out of insert mode, hit one of the options below, and then move up or down a few lines. You should see the selected text highlighted.
@@ -35,9 +78,9 @@ Here's one way to move selected text over a few spaces:
  - hit return
 
 What you've done is replace the beginning of each selected line (the ^ symbol means "the beginning of the line") with spaces. 
+------------------------------------------------------------
+TEXT NAVIGATION :
 
-
-TEXT navigation :
 first and last non blank characters in a line : ^ and g_
 first and last characters in a line : 0 and $
 -----------------------------------------
@@ -110,56 +153,6 @@ Note that .* is greedy, i.e. it will eat all occurrences of "Hello" till it find
 abcHellodefHelloghi - it will become - Helloghi
 If you want a non-greedy solution, try - :%s/.\{-}Hello/Hello
 -----------------------------------------------------------
-SCROLLING : 
-
-How to scroll up and down through a page gracefully?
-
-Ctrl+e/Ctrl+y : Scroll 1 line down/up
-Ctrl+f/Ctrl+b : Scroll 1 page down/up
-
-M/H/L : Move cursor to middle/top/bottom of screen
-
-:N : Go to line N
-N% : Go to the line N percent through the file
-N| : Go to column N
-
-The main scrolling commands in Vim are:
-    Ctrl-B and Ctrl-F, as well as PageUp and PageDown scroll by full page
-    Ctrl-U and Ctrl-D scroll half a page by default
-    Ctrl-Y and Ctrl-E scroll one line
-I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. 
-
-Vim page up and page down keystrokes:
-The Vim page up keystroke is [Control][b]. You can remember the 'b' by thinking "back".
-The Vim page down keystroke is [Control][f]. You can remember the 'f' by thinking "forward".
-
-You can use other keystrokes in Vim to move up and down, as shown here:
-[Control][b] - Move back one full screen
-[Control][f] - Move forward one full screen
-[Control][d] - Move forward 1/2 screen
-[Control][u] - Move back (up) 1/2 screen
-
-    zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
-    zt - move current line to the top of the screen
-    zb - move current line to the bottom of the screen
-
-Additionally:
-
-    Ctrl-y Moves screen up one line
-    Ctrl-e Moves screen down one line
-    Ctrl-u Moves cursor & screen up ½ page
-    Ctrl-d Moves cursor & screen down ½ page
-    Ctrl-b Moves screen up one page, cursor to last line
-    Ctrl-f Moves screen down one page, cursor to first line
-
-Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
-
-To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg
-
-you should define the following option:
-
-:set nostartofline
------------------------------------------------------------
 INDENTATION :     
     Example line
         This is part of the parsed line
@@ -200,8 +193,6 @@ https://vimhelp.org/
 -----------------------------------------------------------
 In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
 -----------------------------------------------------------
-Open question - how to align/format markup language tables in Vim? This is probably easier to do using one of the extensions available for Visual Studio Code.
------------------------------------------------------------
 (this is the general method to update multiple java files at once)
 If you want to open all files matching the pattern in subfolders - :args **/*.java
 To replace four white spaces in java files with a tab use this - :bufdo exexute "%s/    /(press tab)/g" | update
@@ -210,16 +201,21 @@ step 2 - :bufdo execute "global/^{/normal -gJ" | update
 step 3 - :bufdo execute "%s/){/) {/g" | update
 -------------------------------------------------------------------------------------
 How do I delete blank lines in vim?
-To delete blank lines in vim (empty lines), use this vim command in “last line mode”:
+To delete blank lines in vim (empty lines), use this vim command in “last line mode”- :g/^$/d
 
-:g/^$/d
 Here’s a brief explanation of how this vim “delete blank lines” command works:
-
 The : character says, “put vim in last-line mode.”
 The g character says, “perform the following operation globally in this file.” (Operate on all lines in this file.)
 The forward slash characters enclose the pattern I’m trying to match. In this case I want to match blank lines, so I use the regular expression ^$. Here the ^ means “beginning of line,” and $ means “end of line,” so with no characters in between them, this vim regex means “blank line.” (If I had typed ^abc$, that would mean, “find a line with only the sequence of characters ‘abc’”.)
 The d at the end of the command says, “When you find this pattern, delete the line.”
--------------------------------------------------------------------------------------
-Delete Lines Beginning With A certain text In Vim
+
+In a similar way, to delete Lines Beginning With A certain text In Vim
 :g/^(enter text here)/d
 -------------------------------------------------------------------------------------
+Open question - how to align/format markup language tables in Vim? This is probably easier to do using one of the extensions available for Visual Studio Code.
+-----------------------------------------------------------
+Open question - how to use vim's default file navigation mechanism? Is the answer in Leeran's youtube video?
+------------------------------------------
+Open question - how to do file comparison using Vim?
+------------------------------------------
+
