@@ -96,7 +96,7 @@ How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor
 To convert each tab in the file to four spaces : 1,$s/\t/    /g
 How to replace all tabs with spaces :%s/\t/    /g
 
-To remove unnecessary spaces and tabs in empty lines in Vim:
+To remove unnecessary spaces and tabs in empty lines in Vim-
 In a search, \s finds whitespace (a space or a tab), and \+ finds one or more occurrences.
 The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
 :%s/\s\+$//e
