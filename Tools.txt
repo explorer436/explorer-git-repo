@@ -3,11 +3,11 @@ Git + Good git interface for Windows
 Text editors : Notepad++ - plugins: Compare plugin,XML tools plugin, Vim
 Git + Good git interface for Windows
 IDEs : Eclipse, Visual Studio Code
-Browsers : Firefox, Vivaldi
+Browsers : Firefox(lastpass), Vivaldi
 7 zip
 
 Linux:
 IDEs : Eclipse, Visual Studio Code
 Git + Good git interface for Linux
 Text editors : Vim
-Browsers : Firefox, Vivaldi
+Browsers : Firefox(lastpass), Vivaldi
