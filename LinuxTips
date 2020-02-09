@@ -57,3 +57,19 @@ rpm -e package-1.2.3.rpm
 _______________
 Command to view ip address: hostname -I
 ---------------
+
+
+How do I install a .deb file via the command line?
+
+Packages are manually installed via the dpkg command (Debian Package Management System). dpkg is the backend to commands like apt-get and aptitude, which in turn are the backend for GUI install apps like the Software Center and Synaptic.
+
+Since dpkg is the base, you can use it to install packaged directly from the command line.
+Install a package
+sudo dpkg -i DEB_PACKAGE
+
+If dpkg reports an error due to dependency problems, you can run sudo apt-get install -f to download the missing dependencies and configure everything.
+
+Remove a package
+sudo dpkg -r PACKAGE_NAME
+_______________
+
