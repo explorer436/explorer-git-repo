@@ -1,0 +1,13 @@
+Windows:
+Notepad++ - plugins: Compare plugin,XML tools plugin
+Git
+7 zip
+Eclipse
+Visual Studio Code
+Vim
+
+Linux:
+Eclipse
+Visual Studio Code
+good git interface for Linux
+Vim
