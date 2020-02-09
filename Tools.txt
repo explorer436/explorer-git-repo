@@ -1,13 +1,13 @@
 Windows:
-Notepad++ - plugins: Compare plugin,XML tools plugin
-Git
+Git + Good git interface for Windows
+Text editors : Notepad++ - plugins: Compare plugin,XML tools plugin, Vim
+Git + Good git interface for Windows
+IDEs : Eclipse, Visual Studio Code
+Browsers : Firefox, Vivaldi
 7 zip
-Eclipse
-Visual Studio Code
-Vim
 
 Linux:
-Eclipse
-Visual Studio Code
-good git interface for Linux
-Vim
+IDEs : Eclipse, Visual Studio Code
+Git + Good git interface for Linux
+Text editors : Vim
+Browsers : Firefox, Vivaldi
