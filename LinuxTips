@@ -1,4 +1,9 @@
-Fedora uses rpm packages
+Fedora uses rpm packages.
+Install RPM File With Yum (Fedora or RedHat Linux)
+You can use the yum package manager to install .rpm files.
+Enter the following:
+sudo yum localinstall sample_file.rpm
+The localinstall option instructions yum to look at your current working directory for the installation file.
 -------------------------------------------------------------------
 Kdenlive
 -------------------------------------------------------------------
