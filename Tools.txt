@@ -9,3 +9,11 @@ Text editors : Notepad++ - plugins: Compare plugin,XML tools plugin, Vim
 
 Linux:
 Git + Good git interface for Linux
+
+----------------------------------------------------------------------------------------
+Ready API/Soap UI preferences:
+UI - Workspace type : Tabbed Desktop
+ReadyAPI - Default SOAP request editor : XML
+           Default REST request editor : Request
+		   Default response editor : XML
+----------------------------------------------------------------------------------------       
