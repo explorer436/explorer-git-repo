@@ -1,0 +1,235 @@
+------------------------------------------------------------
+SCROLLING : 
+
+How to scroll up and down through a page gracefully?
+
+M/H/L : Move cursor to middle/top/bottom of screen
+
+:N : Go to line N
+N% : Go to the line N percent through the file
+N| : Go to column N
+
+The main scrolling commands in Vim are:
+    Ctrl-B and Ctrl-F, as well as PageUp and PageDown scroll by full page
+    Ctrl-U and Ctrl-D scroll half a page by default
+    Ctrl-Y and Ctrl-E scroll one line
+I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. 
+
+Vim page up and page down keystrokes:
+The Vim page up keystroke is [Control][b]. You can remember the 'b' by thinking "back".
+The Vim page down keystroke is [Control][f]. You can remember the 'f' by thinking "forward".
+
+You can use other keystrokes in Vim to move up and down, as shown here:
+[Control][b] - Move back one full screen
+[Control][f] - Move forward one full screen
+[Control][d] - Move forward 1/2 screen
+[Control][u] - Move back (up) 1/2 screen
+
+    zt - move current line to the top of the screen
+    zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
+    zb - move current line to the bottom of the screen
+
+Additionally:
+
+    Ctrl-y Moves screen up one line
+    Ctrl-e Moves screen down one line
+    Ctrl-u Moves cursor & screen up ½ page
+    Ctrl-d Moves cursor & screen down ½ page
+    Ctrl-b Moves screen up one page, cursor to last line
+    Ctrl-f Moves screen down one page, cursor to first line
+
+Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
+
+To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg
+
+you should define the following option:
+
+:set nostartofline
+-----------------------------------------------------------
+WORD MANIPULATION:
+
+Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
+
+To append something to a word (at the end of the word) - ea
+
+How to change lower case letters words to upper case words? How to change upper case words to lower case words?
+You can change the case of text:
+    Toggle case "HellO" to "hELLo" with g~ then a movement (word or end of line). 
+    Uppercase "HellO" to "HELLO" with gU then a movement (word or end of line). 
+    Lowercase "HellO" to "hello" with gu then a movement (word or end of line). 
+Alternatively, you can visually select text then press ~ to toggle case, or U to convert to uppercase, or u to convert to lowercase. 
+------------------------------------------------------------
+TEXT SELECTION :
+
+If you want to do the same thing to a collection of lines, like cut, copy, sort, or format, you first need to select the text. Get out of insert mode, hit one of the options below, and then move up or down a few lines. You should see the selected text highlighted.
+
+V       - selects entire lines 
+v       - selects range of text
+ctrl-v  - selects columns
+gv      - reselect block
+
+After selecting the text, try d to cut/delete, or y to copy, or :s/match/replace/, or :center, or !sort, or...
+Move to cursor where you would like to paste.
+Press P to paste before the cursor, or p to paste after.
+
+Here's one way to move selected text over a few spaces:
+
+ - select a chunk of code using capital V and the arrow keys (or j, k)
+ - type colon
+ - then type s/^/   /
+ - hit return
+
+What you've done is replace the beginning of each selected line (the ^ symbol means "the beginning of the line") with spaces. 
+------------------------------------------------------------
+TEXT NAVIGATION :
+
+first and last non blank characters in a line : ^ and g_
+first and last characters in a line : 0 and $
+-----------------------------------------
+SEARCH AND REPLACE :
+
+How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?  :1,$s/ABC/XYZ/g   and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.  Note that in this example, the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
+
+/ : Search
+*/# : Search forward/back for word under cursor
+
+:%s/search_for_this/replace_with_this/    - search whole file and replace
+:%s/search_for_this/replace_with_this/c   - confirm each replace
+To convert each tab in the file to four spaces : 1,$s/\t/    /g
+How to replace all tabs with spaces :%s/\t/    /g
+
+To remove unnecessary spaces and tabs in empty lines in Vim-
+In a search, \s finds whitespace (a space or a tab), and \+ finds one or more occurrences.
+The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
+:%s/\s\+$//e
+(this did not work with eclipse vim plugin)
+
+General tips for searching : 
+
+/pattern       - search forward for pattern
+?pattern       - search backward
+n              - repeat forward search
+N              - repeat backward
+
+:set ignorecase - case insensitive
+:set smartcase  - use case if any caps used 
+:set incsearch  - show match as search proceeds
+:set hlsearch   - search highlighting
+
+More cool searching tricks:
+*               - search for word currently under cursor
+g*              - search for partial word under cursor (repeat with n)
+ctrl-o, ctrl-i  - go through jump locations
+[I              - show lines with matching word under cursor
+------------------------------------------
+LINE NUMBERS :
+To display line numbers :set number (To turn off the line number display :set nonumber)
+
+To enable line numbers on startup, simply add the following to your vimrc - set number
+Relative Line Numbers : To display line numbers relative to the line with the cursor, :set relativenumber or :set norelativenumber
+------------------------------------------
+question : Delete all text before search pattern
+I have a file that looks like below
+1: #sometext
+2: #sometext
+3: #sometext
+If want to delete the texts before the pattern ":" (colon). I have used the following command to replace every
+:%s/^.*/\://
+If want to delete the texts after the pattern ":" (colon). I have used the following command to replace every
+:%s/\:.*$//
+I would like to learn other ways to do. Thank you!.
+------
+Another answer : 
+Do you want to not include the colon?
+If so, then for deleting everything before (but not including) the colon:
+:%s/.*\ze://
+And for everything after:
+:%s/:\zs.*//
+See :help \zs and :help \ze for more info.
+
+These atoms are amazing! After I discovered them, I started using them all the time. I remember them as z == zero-width (since they don't match anything).
+------
+If you want to delete all characters before "Hello", you can do
+:%s/.*Hello/Hello/
+Note that .* is greedy, i.e. it will eat all occurrences of "Hello" till it finds the last one. If you have a line:
+abcHellodefHelloghi - it will become - Helloghi
+If you want a non-greedy solution, try - :%s/.\{-}Hello/Hello
+-----------------------------------------------------------
+INDENTATION :     
+    Example line
+        This is part of the parsed line
+        Thats goes one
+    End of line
+
+What I want is to remove all spaces in front of these lines, the final text should be
+
+Example line
+This is part of the parsed line
+Thats goes one
+End of line
+
+Answer : To format a line to the left I use :left. Use this format an entire file :%le
+-----------------------------------------------------------
+CTAGS : 
+
+To install ctags in centos:
+1) Find the package you want to install
+    $ yum list *ctags*
+2) Install package
+    $ yum install <packagename>
+
+How to generate tags and use them for navigation in a big java project?
+Go to the root folder of the project and execute this command : ctags -R
+
+The next step is to get the full path of this tags file - in Linux, use the readlink utility to get the full path.
+[n0281526@VDDP14P-4UCXMSH renters-api-sb2]$ readlink -f tags
+/home/n0281526/Downloads/GitRepositories/renters-api-sb2/tags
+
+open a file in the root folder of the project and run this command from within vim (use semi-colon and then type it)
+set tags=./tags;/
+(It starts with a tags file in the current directory and goes up to the root directory.)
+-----------------------------------------------------------
+COPY AND PASTE:
+How to copy a line in vim and paste it in a different program (a browser or word document or email):
+shift v (to select the line)
+(") quotation mark to select a register
+(+) we want to select the + register
+y - to yank
+
+Now, go to the other program and press Cntrol v to paste it.
+
+In the same way, if we want to copy something from a broser, copy it there and go to vim:
+" (to select a register) + (to select the + register) p (to paste it)
+-----------------------------------------------------------
+Removing duplicate rows in vi :sort u
+-----------------------------------------------------------
+https://vimhelp.org/
+-----------------------------------------------------------
+In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
+-----------------------------------------------------------
+(this is the general method to update multiple java files at once)
+If you want to open all files matching the pattern in subfolders - :args **/*.java
+To replace four white spaces in java files with a tab use this - :bufdo exexute "%s/    /(press tab)/g" | update
+step 1 - :bufdo execute "%s/(press tab){/{/g" | update
+step 2 - :bufdo execute "global/^{/normal -gJ" | update
+step 3 - :bufdo execute "%s/){/) {/g" | update
+-------------------------------------------------------------------------------------
+How do I delete blank lines in vim?
+To delete blank lines in vim (empty lines), use this vim command in “last line mode”- :g/^$/d
+
+Here’s a brief explanation of how this vim “delete blank lines” command works:
+The : character says, “put vim in last-line mode.”
+The g character says, “perform the following operation globally in this file.” (Operate on all lines in this file.)
+The forward slash characters enclose the pattern I’m trying to match. In this case I want to match blank lines, so I use the regular expression ^$. Here the ^ means “beginning of line,” and $ means “end of line,” so with no characters in between them, this vim regex means “blank line.” (If I had typed ^abc$, that would mean, “find a line with only the sequence of characters ‘abc’”.)
+The d at the end of the command says, “When you find this pattern, delete the line.”
+
+In a similar way, to delete Lines Beginning With A certain text In Vim
+:g/^(enter text here)/d
+-------------------------------------------------------------------------------------
+Open question - how to align/format markup language tables in Vim? This is probably easier to do using one of the extensions available for Visual Studio Code.
+-----------------------------------------------------------
+Open question - how to use vim's default file navigation mechanism? Is the answer in Leeran's youtube video?
+------------------------------------------
+Open question - how to do file comparison using Vim?
+------------------------------------------
+
