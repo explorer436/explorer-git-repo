@@ -1,4 +1,4 @@
-IDEs : Eclipse (Plugins : CodeMix, TestNG, EclEmma Code Coverage, Spring Tools 4, TypeScript), Visual Studio Code
+IDEs : Eclipse (Plugins : CodeMix, TestNG, EclEmma Code Coverage, Spring Tools 4, TypeScript), Visual Studio Code (light theme)
 Text editors : Vim
 Browsers : Firefox(lastpass), Vivaldi
 
