@@ -1,3 +1,6 @@
+To check if docker is running : 
+sudo service docker status
+-------------------------------------------------------------------
 Fedora uses rpm packages.
 Install RPM File With Yum (Fedora or RedHat Linux)
 You can use the yum package manager to install .rpm files.
