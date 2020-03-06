@@ -1,3 +1,7 @@
+E212: Can't open file for writing
+Vim has a builtin help system.
+You might want to edit the file as a superuser as "sudo vim FILE"
+-------------------------------------------------------------------
 To update the installed packages and package cache on your instance.
 sudo yum update -y
 -------------------------------------------------------------------
