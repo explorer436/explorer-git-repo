@@ -1,5 +1,4 @@
-Update the installed packages and package cache on your instance.
-
+To update the installed packages and package cache on your instance.
 sudo yum update -y
 -------------------------------------------------------------------
 To check if docker is running : 
