@@ -10,6 +10,7 @@ ConEmu (Console Emulation program)
 
 Linux:
 Git + Good git interface for Linux
+Broot (directory navigator)
 
 ----------------------------------------------------------------------------------------
 Ready API/Soap UI preferences:
