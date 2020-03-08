@@ -1,3 +1,5 @@
+-------------------------------------------------------------------
+Toggle full screen : F11
 E212: Can't open file for writing
 Vim has a builtin help system.
 You might want to edit the file as a superuser as "sudo vim FILE"
