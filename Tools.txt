@@ -19,3 +19,19 @@ ReadyAPI - Default SOAP request editor : XML
            Default REST request editor : Request
 		   Default response editor : XML
 ----------------------------------------------------------------------------------------       
+Android:
+
+Signal (messaging app)
+NetGuard
+Weather (any one)
+Lastpass
+Whatsapp
+Fasthub (Github client)
+Goodreads
+Instapaper
+Tutanota
+Spotify
+GPS Tools
+Tor Browser
+Firefox
+Mapquest
