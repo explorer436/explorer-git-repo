@@ -173,8 +173,6 @@ Removing duplicate rows in vi :sort u
 -----------------------------------------------------------
 https://vimhelp.org/
 -----------------------------------------------------------
-In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
------------------------------------------------------------
 (this is the general method to update multiple java files at once)
 If you want to open all files matching the pattern in subfolders - :args **/*.java
 To replace four white spaces in java files with a tab use this - :bufdo exexute "%s/    /(press tab)/g" | update
