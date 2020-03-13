@@ -63,6 +63,9 @@ Quickly change word or line : To quickly change a word you can use cw,caw (chang
 
 To append something to a word (at the end of the word) - ea
 
+To delete a word along with the whitespace after the word - dw (vw to select in visual mode)
+To delete a word but not the the whitespace after the word - de (ve to select in visual mode)
+
 How to change lower case letters words to upper case words? How to change upper case words to lower case words?
 You can change the case of text:
     Toggle case "HellO" to "hELLo" with g~ then a movement (word or end of line). 
