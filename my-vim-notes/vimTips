@@ -201,4 +201,6 @@ Open question - how to use vim's default file navigation mechanism? Is the answe
 ------------------------------------------
 Open question - how to do file comparison using Vim?
 ------------------------------------------
-
+Open question - how to move an entire line up? (like alt up arrow  or down arrow in visual studio code)
+Open question - how to move an entire paragraph (or block of code) up? (like alt up arrow  or down arrow in visual studio code)
+------------------------------------------
