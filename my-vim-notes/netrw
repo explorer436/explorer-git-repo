@@ -1,3 +1,6 @@
+How to : always show line numbers in netrw:
+Always show netrw : even when a file is opened in a new tab
+--------------------------------------------
 netrw:
 Vim documentation: pi_netrw
 http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html#netrw
