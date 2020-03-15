@@ -9,6 +9,7 @@ Invoking netrw can be achieved in three ways
     :Explore (:E) - opens netrw in the current window
     :Sexplore (:Sex) - opens netrw in a horizontal split
     :Vexplore (:Vex) - opens netrw in a vertical split
+    :Texplore (:Tex) - opens netrw in a new tab (use Cntrl PgUp, Cntrl PgDn to switch between tabs)
 --------------------------------------------
 Changing the directory view in netrw
 With the directory browser open hit i to cycle through the view types. There are four different view types: thin, long, wide and tree. A preferred view type can be made permanent by setting it in a .vimrc file.
@@ -62,3 +63,21 @@ To open a file in a horizontal split use the following. This also supports tab c
 To open a file in a new tab use the following. This also supports tab completion.
 :tabnew path/to/file.txt
 --------------------------------------------
+How do I configure .vimrc so that line numbers display in netrw in Vim?
+
+I'm using netrw to read directory listings in Vim, and I would like to display line numbers in my netrw tabs (so I can use :24 to navigate through directory listings faster). I'm using "set number" in my vimrc to enable line numbers when editing files, but this does not display line numbers in netrw.
+
+When in netrw, if I type the command ":set number", the line numbers display, but as soon as I change directories the line numbers go away.
+
+Is there a configuration option I can put in .vimrc that will make line numbers show up in netrw windows?
+
+
+From autoload/netrw.vim in the runtime:
+
+call s:NetrwInit("g:netrw_bufsettings" , "noma nomod nonu nobl nowrap ro")
+
+s:NetrwInit overrides a variable only if it is not defined.
+
+Therefore put let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro' in your vimrc and it should work. 
+--------------------------------------------
+

@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+(this is the general method to update multiple java files at once)
+If you want to open all files matching the pattern in subfolders - :args **/*.java
+To replace four white spaces in java files with a tab use this - :bufdo exexute "%s/    /(press tab)/g" | update
+step 1 - :bufdo execute "%s/(press tab){/{/g" | update
+step 2 - :bufdo execute "global/^{/normal -gJ" | update
+step 3 - :bufdo execute "%s/){/) {/g" | update
+-------------------------------------------------------------------------------------
+To create a new file in a new tab : tabnew
+-------------------------------------------------------------------------------------
+
