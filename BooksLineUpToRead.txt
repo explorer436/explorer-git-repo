@@ -298,4 +298,9 @@ How To Be A Leader by Plutarch
 
 One of the best leadership books I've read in a very long time—and not surprisingly, it was written a very long time ago. There's a reason Plutarch has been a favorite of thinkers and doers since the days of Ancient Rome. He's insightful. He's funny. He's a great story teller. He wasn't just a writer either, but like the best historians and philosophers, a practitioner of what he talked about. Highly recommend. Also my friend Ryan Hawk has a new book that pairs well with this: Welcome to Management.  
 -----------------------------------------------------------
+The Cathedral and the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary (abbreviated CatB) is an essay, and later a book, by Eric S. Raymond on software engineering methods, based on his observations of the Linux kernel development process and his experiences managing an open source project, fetchmail. It examines the struggle between top-down and bottom-up design. The essay was first presented by the author at the Linux Kongress on May 27, 1997 in Würzburg (Germany) and was published as part of the book in 1999. 
+
+Free as in Freedom: Richard Stallman's Crusade for Free Software (ISBN 0-596-00287-4) is a free book licensed under the GNU Free Documentation License about the life of Richard Stallman, written by Sam Williams and published by O'Reilly Media on March 1, 2002.
+Williams conducted several interviews with Stallman during the writing of the book, as well as with classmates, colleagues of Stallman, and his mother. The book has received positive reviews. 
+-----------------------------------------------------------
 
