@@ -11,7 +11,8 @@ ConEmu (Console Emulation program)
 Linux:
 Git + Good git interface for Linux
 Broot (directory navigator)
-
+Geany (text editor)
+Tmux + FuzzyFinder (CntrlP ?) for Vim
 ----------------------------------------------------------------------------------------
 Ready API/Soap UI preferences:
 UI - Workspace type : Tabbed Desktop
