@@ -8,3 +8,5 @@ Open question - how to do file comparison using Vim?
 Open question - netrw - always fix the width at 25%. Right now, it is at 25% on start-up but when a new buffer is opened, its size is changing.
 Open question - netrw - always show line numbers in netrw.
 ------------------------------------------
+Open question - how to open buffers in tabs from netrw and how to move buffers from one tab to another or into split windows when wanted?
+------------------------------------------
