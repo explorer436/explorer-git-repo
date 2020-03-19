@@ -5,4 +5,6 @@ Open question - how to move an entire line up? (like alt up arrow  or down arrow
 ------------------------------------------
 Open question - how to do file comparison using Vim?
 ------------------------------------------
-
+Open question - netrw - always fix the width at 25%. Right now, it is at 25% on start-up but when a new buffer is opened, its size is changing.
+Open question - netrw - always show line numbers in netrw.
+------------------------------------------
