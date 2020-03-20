@@ -52,4 +52,7 @@ The d at the end of the command says, “When you find this pattern, delete the 
 In a similar way, to delete Lines Beginning With A certain text In Vim :g/^(enter text here)/d
 ---------------------------------------------------------------------------
 delete line containing certain text in vim with prompt :%s/.*text.*\n//gc
+The substitute command works by 
+1. adding a wildcard
+2. and adding an end-of-line.
 ---------------------------------------------------------------------------
