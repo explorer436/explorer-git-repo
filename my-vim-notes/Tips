@@ -92,3 +92,5 @@ This looks for lines ending with "{" and a next line starting with the text (a w
 -----------------------------------------------------------
 Replace each "' }," in the current file by a new line - :%s/' ,/',\r/g 
 -----------------------------------------------------------
+https://vim.fandom.com/wiki/Search_across_multiple_lines
+-----------------------------------------------------------
