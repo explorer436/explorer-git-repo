@@ -86,3 +86,7 @@ https://vimhelp.org/
 :g/<pattern>/j to join lines within a pattern
 To join the subsequent line with a line containing a certain text: :g/.*__text.*/j
 -----------------------------------------------------------
+Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line - 
+%s/{\_s.*__text/{__text/g
+This looks for lines ending with "{" and a next line starting with the text (a wildcard) "__text" and joins them into a single line.
+-----------------------------------------------------------
