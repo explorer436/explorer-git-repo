@@ -83,3 +83,6 @@ In the same way, if we want to copy something from a broser, copy it there and g
 -----------------------------------------------------------
 https://vimhelp.org/
 -----------------------------------------------------------
+:g/<pattern>/j to join lines within a pattern
+To join the subsequent line with a line containing a certain text: :g/.*__text.*/j
+-----------------------------------------------------------
