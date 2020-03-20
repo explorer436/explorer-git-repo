@@ -51,4 +51,5 @@ The d at the end of the command says, “When you find this pattern, delete the 
 
 In a similar way, to delete Lines Beginning With A certain text In Vim :g/^(enter text here)/d
 ---------------------------------------------------------------------------
-
+delete line containing certain text in vim with prompt :%s/.*text.*\n//gc
+---------------------------------------------------------------------------
