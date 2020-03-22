@@ -10,4 +10,7 @@ step 3 - :bufdo execute "%s/){/) {/g" | update
 -------------------------------------------------------------------------------------
 To create a new file in a new tab : tabnew
 -------------------------------------------------------------------------------------
-
+How do I move an existing window to a new tab?
+Is there a way to take an existing window (split) and put it into a new tab?
+Ctrl W followed by T
+-------------------------------------------------------------------------------------
