@@ -1,0 +1,13 @@
+Prepend an asterisk to every non-blank line in the input file.
+
+This is a
+very short
+
+file, but it is 
+still
+full
+
+of
+
+surpises. 
+      

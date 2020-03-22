@@ -8,13 +8,6 @@ To append something to a word (at the end of the word) - ea
 To delete a word along with the whitespace after the word - dw (vw to select in visual mode)
 To delete a word but not the the whitespace after the word - de (ve to select in visual mode)
 ------------------------------------------------------------
-How to change lower case letters words to upper case words? How to change upper case words to lower case words?
-You can change the case of text:
-    Toggle case "HellO" to "hELLo" with g~ then a movement (word or end of line). 
-    Uppercase "HellO" to "HELLO" with gU then a movement (word or end of line). 
-    Lowercase "HellO" to "hello" with gu then a movement (word or end of line). 
-Alternatively(easier to remember), you can visually select text then press ~ to toggle case, or U to convert to uppercase, or u to convert to lowercase. 
-------------------------------------------------------------
 TEXT SELECTION :
 
 If you want to do the same thing to a collection of lines, like cut, copy, sort, or format, you first need to select the text. Get out of insert mode, hit one of the options below, and then move up or down a few lines. You should see the selected text highlighted.
@@ -63,12 +56,6 @@ g*              - search for partial word under cursor (repeat with n)
 ctrl-o, ctrl-i  - go through jump locations
 [I              - show lines with matching word under cursor
 ------------------------------------------
-LINE NUMBERS :
-To display line numbers :set number (To turn off the line number display :set nonumber)
-
-To enable line numbers on startup, simply add the following to your vimrc - set number
-Relative Line Numbers : To display line numbers relative to the line with the cursor, :set relativenumber or :set norelativenumber
-------------------------------------------
 COPY AND PASTE:
 How to copy a line in vim and paste it in a different program (a browser or word document or email):
 shift v (to select the line)
@@ -81,8 +68,6 @@ Now, go to the other program and press Cntrol v to paste it.
 In the same way, if we want to copy something from a broser, copy it there and go to vim:
 " (to select a register) + (to select the + register) p (to paste it)
 -----------------------------------------------------------
-https://vimhelp.org/
------------------------------------------------------------
 :g/<pattern>/j to join lines within a pattern
 To join the subsequent line with a line containing a certain text: :g/.*__text.*/j
 -----------------------------------------------------------
@@ -91,6 +76,4 @@ Join two lines with a pattern ending on one line and a pattern beginning on the 
 This looks for lines ending with "{" and a next line starting with the text (a wildcard) "__text" and joins them into a single line.
 -----------------------------------------------------------
 Replace each "' }," in the current file by a new line - :%s/' ,/',\r/g 
------------------------------------------------------------
-https://vim.fandom.com/wiki/Search_across_multiple_lines
 -----------------------------------------------------------
