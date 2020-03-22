@@ -10,7 +10,7 @@ Text editors : Notepad++ - plugins: Compare plugin,XML tools plugin,
 Console Emulation program - ConEmu
 
 Linux:
-Git + Good git interface for Linux (Gitfiend?)
+Git + Good git interface for Linux (GitAhead)
 Directory navigators - Broot
 Text editors - Geany
 IDEs - Kdevelop (KDE)
