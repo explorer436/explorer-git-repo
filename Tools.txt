@@ -9,12 +9,23 @@ Text editors : Notepad++ - plugins: Compare plugin,XML tools plugin, Vim
 ConEmu (Console Emulation program)
 
 Linux:
-Git + Good git interface for Linux
-Broot (directory navigator)
-Geany (text editor)
-Tmux + FuzzyFinder (CntrlP ?) for Vim
-Thunar or PCManFM (file managers)
-HTop - system monitor
+Git + Good git interface for Linux (Gitfiend?)
+Directory navigators - Broot
+Text editors - Geany
+IDEs - Kdevelop (KDE)
+       Tmux + FuzzyFinder (CntrlP ?) for Vim
+File managers - Thunar
+                PCManFM
+System Monitors - HTop  
+Screenshot utility - Flameshot
+Graphics tools - Blender
+                 Pinta
+                 Gimp
+Office suites - Libre office
+                Open office
+                Calligra
+                wps office?
+arcolinux-meta-fun
 ----------------------------------------------------------------------------------------
 Ready API/Soap UI preferences:
 UI - Workspace type : Tabbed Desktop
