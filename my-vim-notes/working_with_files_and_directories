@@ -1,3 +1,5 @@
+https://vim.fandom.com/wiki/Quick_tips_for_using_tab_pages
+https://vim.fandom.com/wiki/Using_tab_pages
 -------------------------------------------------------------------------------------
 (this is the general method to update multiple java files at once)
 If you want to open all files matching the pattern in subfolders - :args **/*.java
