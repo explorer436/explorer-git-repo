@@ -1,12 +1,13 @@
-IDEs : Eclipse (Plugins : CodeMix, TestNG, EclEmma Code Coverage, Spring Tools 4, TypeScript), Visual Studio Code (light theme)
+IDEs : Eclipse (Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), Visual Studio Code (light theme)
 Text editors : Vim
-Browsers : Firefox(lastpass)
+Browsers : Firefox(lastpass), Tor browser
 
 Windows:
 Git + Good git interface for Windows
-Text editors : Notepad++ - plugins: Compare plugin,XML tools plugin, Vim
+Text editors : Notepad++ - plugins: Compare plugin,XML tools plugin, 
+               Vim
 7 zip
-ConEmu (Console Emulation program)
+Console Emulation program - ConEmu
 
 Linux:
 Git + Good git interface for Linux (Gitfiend?)
