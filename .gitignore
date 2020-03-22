@@ -37,6 +37,10 @@ ehthumbs.db
 Thumbs.db
 
 # Vim related files #
+# Vim swap files
 ######################
 *~
 *.swp
+*.swo
+*.swn
+tags
