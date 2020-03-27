@@ -83,3 +83,5 @@ This searches for lines ending with "'," and a subsequent line starting with "__
 This searches for lines ending with "{" and a subsequent line starting with "__prefix" and joins the two lines together - %s/{\_$\_s*__prefix/{__prefix\g
 Record a macro in register a and play it on a pattern match - :g/.*__prefix.*__text.* },\_$/normal! @a
 -----------------------------------------------------------
+How to mix global command and replace command : :g/pattern_to_match/ s/text_to_search/text_to_replace/gc
+Using the above command or variants of it, we can search for patterns in the entire file and do replace operations on those specific lines.
