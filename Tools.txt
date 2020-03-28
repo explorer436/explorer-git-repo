@@ -51,3 +51,12 @@ GPS Tools
 Tor Browser
 Firefox
 Mapquest
+-----------------------------------------------------------------------------------------
+How to use multiple workspaces : This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace.
+Keyboard shortcuts are available. 
+Hold down Ctrl + Alt and tap an arrow key to 
+quickly move up, down, left, or right between workspaces, 
+depending on how they’re laid out. 
+Add the Shift key—so, press Shift + Ctrl + Alt and 
+tap an arrow key—and you’ll switch between workspaces, 
+taking the currently active window with you to the new workspace.
