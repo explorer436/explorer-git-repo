@@ -78,7 +78,9 @@ taking the currently active window with you to the new workspace.
 
 -----------------------------------------------------------------------------------------
 Ready API/Soap UI preferences:
+
 UI - Workspace type : Tabbed Desktop
+
 ReadyAPI - Default SOAP request editor : XML
            Default REST request editor : Request
-		   Default response editor : XML
+           Default response editor : XML
