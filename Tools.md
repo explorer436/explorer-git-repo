@@ -1,5 +1,7 @@
 IDEs : Eclipse (Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), Visual Studio Code (light theme)
+
 Text editors : Vim
+
 Browsers : Firefox(lastpass), Tor browser
 
 -----------------------------------------------------------------------------------------
