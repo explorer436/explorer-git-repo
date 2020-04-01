@@ -28,15 +28,14 @@ Office suites - Libre office
                 Calligra
                 wps office?
 arcolinux-meta-fun
-----------------------------------------------------------------------------------------
+
 Ready API/Soap UI preferences:
 UI - Workspace type : Tabbed Desktop
 ReadyAPI - Default SOAP request editor : XML
            Default REST request editor : Request
 		   Default response editor : XML
-----------------------------------------------------------------------------------------       
-Android:
 
+Android:
 Signal (messaging app)
 NetGuard
 Weather (any one)
