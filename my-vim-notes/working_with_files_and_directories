@@ -8,8 +8,6 @@ step 1 - :bufdo execute "%s/(press tab){/{/g" | update
 step 2 - :bufdo execute "global/^{/normal -gJ" | update
 step 3 - :bufdo execute "%s/){/) {/g" | update
 -------------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------------
 How do I move an existing window to a new tab?
 Is there a way to take an existing window (split) and put it into a new tab?
 Ctrl W followed by T
