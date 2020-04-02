@@ -8,17 +8,18 @@ step 1 - :bufdo execute "%s/(press tab){/{/g" | update
 step 2 - :bufdo execute "global/^{/normal -gJ" | update
 step 3 - :bufdo execute "%s/){/) {/g" | update
 -------------------------------------------------------------------------------------
-To create a new file in a new tab : tabnew
+
 -------------------------------------------------------------------------------------
 How do I move an existing window to a new tab?
 Is there a way to take an existing window (split) and put it into a new tab?
 Ctrl W followed by T
 -------------------------------------------------------------------------------------
  Opening a tab 
- The easiest to remember is to run :tabnew command while in normal mode. This will open a new tab with an empty buffer.  
-
+ To create a new file in a new tab : tabnew
+ This will open a new tab with an empty buffer.  
+-------------------------------------------------------------------------------------
  Switching between tabs in Vim:  
  Go to the next tab :gt 
  Go to the previous tab: gT 
  Go to a numbered tab: nnn gt 
-  
+-------------------------------------------------------------------------------------  
