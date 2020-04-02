@@ -1,3 +1,4 @@
+```
 # Copyright (c) 1993-2009 Microsoft Corp.
 #
 # This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
@@ -373,3 +374,4 @@
 #TBD					routed-tmsservices.safeco.com 				 #uat-tmsservices.safeco.com
 #TBD					routed-policyadmin.libertyec.com			 #uat-policyadmin.libertyec.com
 #10.18.228.253          routed-parealtime.libertyec.com              #uat-parealtime.libertyec.com
+```

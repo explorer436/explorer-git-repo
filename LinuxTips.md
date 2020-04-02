@@ -16,10 +16,15 @@ You can use the yum package manager to install .rpm files.
 Enter the following:
 sudo yum localinstall sample_file.rpm
 The localinstall option instructions yum to look at your current working directory for the installation file.
+
 -------------------------------------------------------------------
+
 Kdenlive
+
 -------------------------------------------------------------------
+
 pdf file modification in fedora : use the pdfmod utility that comes with fedora
+
 -------------------------------------------------------------------
 Recursive copy
 To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
@@ -28,25 +33,35 @@ $ cp -R * /home/mycomputer/backup
 To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip *
 To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
 -----------------------------------------------------------------
+
 command to reboot from terminal : reboot
+
 -----------------------------------------------------------------
 $ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
 
 $ shrinkpdf in.pdf out.pdf
+
 -----------------------------------------------------------------
 To install gVim on fedora : yum install vim-X11
 To install emacs on fedora : sudo yum install emacs
 -----------------------------------------------------------------
+
 Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
+
 -----------------------------------------------------------------
+
 update fedora from command line : dnf upgrade
+
 -----------------------------------------------------------------
 
 command to install a tar file in linux : how to use sudo command to install .tar.gz :
 Open a console, and go to the directory where the file is
 Type: tar -zxvf file.tar.gz
+
 ------------------------------------------------------------------
+
 command to search for a file in linux : locate fileName
+
 ---------------------------------------------------------------------
 command to install rpm package in fedora : 
 sudo dnf install NAME_OF_RPM.rpm
@@ -60,7 +75,9 @@ yum localinstall package-1.2.3.rpm     ## CentOS, RHEL systems
 dnf localinstall package-1.2.3.rpm     ## Fedora systems
 
 differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
+
 ---------------------------------------------------------------------
+
 How to execute .sh programs in fedora :
 Either make the file executable, and then run it while specifying the path:
 chmod +x somefile.sh
@@ -73,8 +90,9 @@ Removing Package:
 In case if we need to remove any package use -e command line switch with the package name.
 
 rpm -e package-1.2.3.rpm
-_______________
+
 Command to view ip address: hostname -I
+
 ---------------
 
 
@@ -94,13 +112,15 @@ sudo dpkg -r PACKAGE_NAME
 Run the following to install Homebrew:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 
-Next, add Homebrew to your PATH by running the following commands. These commands work on all major flavors of Linux by adding either ~/.profile on Debian/Ubuntu or ~/.bash_profile on CentOS/Fedora/RedHat:
+Next, add Homebrew to your PATH by running the following commands. These commands work on all major flavors of Linux by adding either `~/.profile` on Debian/Ubuntu or `~/.bash_profile` on CentOS/Fedora/RedHat:
 
+```
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
 echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+```
 
-Verify that Homebrew is installed:
-brew --version
+Verify that Homebrew is installed: `brew --version`
+
 ---------------------------------------------------------------

@@ -155,9 +155,9 @@ Then when you are comfortable (because it will delete the files for real!) use t
 
 Here are some more options for you to delete directories, files, ignored and non-ignored files
 
-    To remove directories, run git clean -f -d or git clean -fd
-    To remove ignored files, run git clean -f -X or git clean -fX
-    To remove ignored and non-ignored files, run git clean -f -x or git clean -fx
+* To remove directories, run git clean -f -d or git clean -fd
+* To remove ignored files, run git clean -f -X or git clean -fX
+* To remove ignored and non-ignored files, run git clean -f -x or git clean -fx
 
 Note the case difference on the X for the two latter commands.
 
@@ -190,17 +190,17 @@ To view recent commit messages : git log --oneline
 
 If the commit you want to fix isn’t the most recent one:
 
-    git rebase --interactive $parent_of_flawed_commit (after the git log command, if you want to edit the fifth commit, then enter the name of the sixth commit in this command.)
-
-    If you want to fix several flawed commits, pass the parent of the oldest one of them.
-
-    An editor will come up, with a list of all commits since the one you gave.
-        Change pick to reword (or on old versions of Git, to edit) in front of any commits you want to fix.
-        Once you save, Git will replay the listed commits.
-
-    For each commit you want to reword, Git will drop you back into your editor. For each commit you want to edit, Git drops you into the shell. If you’re in the shell:
-        Change the commit in any way you like.
-        git commit --amend
-        git rebase --continue
+* git rebase --interactive $parent_of_flawed_commit (after the git log command, if you want to edit the fifth commit, then enter the name of the sixth commit in this command.)
+ 
+If you want to fix several flawed commits, pass the parent of the oldest one of them.
+ 
+* An editor will come up, with a list of all commits since the one you gave.
+*     Change pick to reword (or on old versions of Git, to edit) in front of any commits you want to fix.
+*     Once you save, Git will replay the listed commits.
+ 
+For each commit you want to reword, Git will drop you back into your editor. For each commit you want to edit, Git drops you into the shell. If you’re in the shell:
+*     Change the commit in any way you like.
+*     git commit --amend
+*     git rebase --continue
 
 Most of this sequence will be explained to you by the output of the various commands as you go. It’s very easy, you don’t need to memorise it – just remember that git rebase --interactive lets you correct commits no matter how long ago they were.

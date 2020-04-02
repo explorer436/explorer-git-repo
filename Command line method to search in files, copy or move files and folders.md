@@ -1,7 +1,9 @@
 Command to do file search for a string in a folder (including its sub folders) in Windows :
 
 C:\Users\user\Desktop\FolderName>findstr /S /I /M /C:"search text" *.*
+
 =============================================================
+
 Find files on windows modified/created after a given date using the command line
 
 You can use PowerShell to do this :
@@ -9,7 +11,9 @@ You can use PowerShell to do this :
 Get-ChildItem -Recurse | Where-Object { $_.LastWriteTime -ge "12/27/2016" }
 
 This also works with time: { $_.LastWriteTime -ge "12/27/2016 20:00:00" }
+
 =============================================================
+
 Be careful before using this command. If there are files or folders in the destination folder before using this command, they will all be erased. Make sure this command is used to copy files into a new  folder only.
 
 command to copy everything from one folder to another folder :
@@ -17,7 +21,9 @@ command to copy everything from one folder to another folder :
 ROBOCOPY sourceFolder   destinationFolder /MIR /R:0 /W:0
 
 ROBOCOPY C:\Users\n123456\Desktop   C:\Users\n123456\Downloads\NewFolder /MIR /R:0 /W:0
+
 =============================================================
+
 In Mac OSX:
 A few commands that help in copying files in Mac OSX :
 

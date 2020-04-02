@@ -16,7 +16,9 @@
 "The character you seem to have been born with is not necessarily who you are; beyond the characteristics you have inherited, your parents, your friends, and your peers have helped to shape your personality. The promethean task of the powerful is to take control of the process, to stop allowing others that ability to limit and mold them. Remake yourself into a character of power. Working on yourself like clay should be one of your greatest and most pleasurable life tasks. It makes you in essence an artist - an artist creating yourself." - Robert Greene (Law 25)
 
 "Learn to play many roles, to be whatever the moment requires. Adapt your mask to the situation - be protean in the faces you wear. Bismarck played this game to perfection: To a liberal he was a liberal, to a hawk he was a hawk. He could not be grasped, and what cannot be grasped cannot be consumed." - Robert Greene
+
 ---------------------------------------------------------------------------------
+
 “Men are more ready to repay an injury than a benefit, because gratitude is a burden and revenge a pleasure.”
 — Tacitus, C. (A.D. 55-120)
 
