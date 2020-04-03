@@ -103,3 +103,7 @@ How to select a word within Vim and replace it with something else?
     Replace each match of the last search pattern with 'bar'. 
     For example, you might first place the cursor on the word foo then press * to search for that word. 
     The above substitute would then change all words exactly matching 'foo' to 'bar'.
+    
+Refer to [this page](https://vim.fandom.com/wiki/Search_and_replace#substitute_last_search) for more examples
+
+-------------------------------------------------------------
