@@ -5,14 +5,17 @@ git config --global user.email explorer436@tutanota.com
 git config --system core.longpaths true
 git config --global color.ui auto
 git config --global core.autocrlf true
+
 --------------------------------------------
 CREATE REPOSITORIES :
 git init (project name) - Creates a new local repository with the specified name
 git clone (url) - downloads a project and its entire version history
+
 --------------------------------------------
 CREATE FEATURE BRANCH FROM COMMAND LINE : 
 To start a feature branch from command line, simply create a new branch from remotes/origin/develop:
 git checkout -b feature/testFeatureBranch remotes/origin/develop
+
 --------------------------------------------
 git branch (local branch name) -u (remote branch name) : To point local branch to a different remote branch
 git branch -m <newname>  : command to rename the current local branch
@@ -130,6 +133,7 @@ Then you need to 'force' push the old reference.
 git push -f origin last_known_good_commit:branch_name
 e.g.
 git push -f origin cc4b63bebb6:alpha-0.3.0
+
 ------------------------------------------------
 Undo a commit and redo
 $ git commit -m "Something terribly misguided"              (1)

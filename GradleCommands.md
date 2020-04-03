@@ -16,6 +16,7 @@ From folder :      C:\Users\n0281526\Documents\services-property-insurance-partn
 To folder :        C:\WASLP_dev\tools\WASLP8559\wlp\usr\servers\default\dropins
 Windows command to copy the EAR from a source folder to a destination folder:
 xcopy C:\WASLP_dev\workspaces\git_repo\services-property-insurance-partner-exchange\PiAcordSalesMediationServiceEAR\build\distributions C:\WASLP_dev\tools\WASLP8559\wlp\usr\servers\default\dropins
+
 ---------------------------------------------------------------------------
 To exclude a few tasks from the build process : 
 ./gradlew build -x checkstyleMain -x findbugsMain -x test -x jacocoTestCoverageVerification -x pmdMain

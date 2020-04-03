@@ -3,12 +3,15 @@ Toggle full screen : F11
 E212: Can't open file for writing
 Vim has a builtin help system.
 You might want to edit the file as a superuser as "sudo vim FILE"
+
 -------------------------------------------------------------------
 To update the installed packages and package cache on your instance.
 sudo yum update -y
+
 -------------------------------------------------------------------
 To check if docker is running : 
 sudo service docker status
+
 -------------------------------------------------------------------
 Fedora uses rpm packages.
 Install RPM File With Yum (Fedora or RedHat Linux)
@@ -29,9 +32,11 @@ pdf file modification in fedora : use the pdfmod utility that comes with fedora
 Recursive copy
 To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
 $ cp -R * /home/mycomputer/backup
+
 -------------------------------------------------------------------
 To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip *
 To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
+
 -----------------------------------------------------------------
 
 command to reboot from terminal : reboot
@@ -44,6 +49,7 @@ $ shrinkpdf in.pdf out.pdf
 -----------------------------------------------------------------
 To install gVim on fedora : yum install vim-X11
 To install emacs on fedora : sudo yum install emacs
+
 -----------------------------------------------------------------
 
 Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
@@ -85,6 +91,7 @@ chmod +x somefile.sh
 
 or, pass it to the shell interpreter like this:
 sh somefile.sh
+
 ---------------------------------------------------------------------
 Removing Package:
 In case if we need to remove any package use -e command line switch with the package name.
@@ -108,6 +115,7 @@ If dpkg reports an error due to dependency problems, you can run sudo apt-get in
 
 Remove a package
 sudo dpkg -r PACKAGE_NAME
+
 ---------------------------------------------------------------
 Run the following to install Homebrew:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"

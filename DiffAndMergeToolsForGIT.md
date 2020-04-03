@@ -63,6 +63,7 @@ If you want to use DiffMerge as the diff and merge tool with git, this is how th
     path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
     keepBackup = false
     trustExitCode = false
+    
 ============================================================================================================
 To use diffuse as the merge tool and kdiff3 as the diff tool : 
 [core]
