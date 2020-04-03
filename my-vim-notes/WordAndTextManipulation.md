@@ -56,31 +56,34 @@ N              - repeat backward
 :set hlsearch   - search highlighting
 
 More cool searching tricks:
+```
 *               - search for word currently under cursor
 g*              - search for partial word under cursor (repeat with n)
 ctrl-o, ctrl-i  - go through jump locations
 [I              - show lines with matching word under cursor
+```
 
 -----------------------------------------------------------
-:g/<pattern>/j to join lines within a pattern
-To join the subsequent line with a line containing a certain text: :g/.*__text.*/j
+`:g/<pattern>/j` to join lines within a pattern
+
+To join the subsequent line with a line containing a certain text: `:g/.*__text.*/j`
 
 -----------------------------------------------------------
-Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line - 
-%s/{\_s.*__text/{__text/g
-This looks for lines ending with "{" and a next line starting with the text (a wildcard) "__text" and joins them into a single line.
+`:%s/{\_s.*__text/{__text/g` - Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line.
+
+This looks for lines ending with `{` and a next line starting with the text (a wildcard) `__text` and joins them into a single line.
 
 -----------------------------------------------------------
-Replace each "' }," in the current file by a new line - :%s/' ,/',\r/g 
+`:%s/' ,/',\r/g` - Replace each `' },` in the current file by a new line. 
 
 -----------------------------------------------------------
-`{\_$\_s*__prefix` - This searches for lines ending with "{" and a subsequent line starting with "__prefix". 
+`:{\_$\_s*__prefix` - This searches for lines ending with `{` and a subsequent line starting with `__prefix`. 
 
-`',\_$\_s*__text` - This searches for lines ending with "'," and a subsequent line starting with "__text".
+`:',\_$\_s*__text` - This searches for lines ending with `',` and a subsequent line starting with `__text`.
 
-`%s/',\_$\_s*__text/',__text/g` - This searches for lines ending with "'," and a subsequent line starting with "__text" and joins the two lines together.
+`:%s/',\_$\_s*__text/',__text/g` - This searches for lines ending with `',` and a subsequent line starting with `__text` and joins the two lines together.
 
-`%s/{\_$\_s*__prefix/{__prefix\g` - This searches for lines ending with "{" and a subsequent line starting with "__prefix" and joins the two lines together.
+`:%s/{\_$\_s*__prefix/{__prefix\g` - This searches for lines ending with `{` and a subsequent line starting with `__prefix` and joins the two lines together.
 
 `:g/.*__prefix.*__text.* },\_$/normal! @a` - Record a macro in register a and play it on a pattern match.
 
