@@ -1,3 +1,5 @@
+https://vim.fandom.com/wiki/Search_and_replace#substitute_last_search
+
 ------------------------------------------------------------
 WORD MANIPULATION:
 
@@ -81,3 +83,13 @@ Record a macro in register a and play it on a pattern match - :g/.*__prefix.*__t
 -----------------------------------------------------------
 How to mix global command and replace command : :g/pattern_to_match/ s/text_to_search/text_to_replace/gc
 Using the above command or variants of it, we can search for patterns in the entire file and do replace operations on those specific lines.
+
+-------------------------------------------------------------
+How to select a word within Vim and replace it with something else?
+
+(a quick search on the internet shows many ways to do this. but here is a simple way to do it)
+
+`:%s//bar/g`
+    Replace each match of the last search pattern with 'bar'. 
+    For example, you might first place the cursor on the word foo then press * to search for that word. 
+    The above substitute would then change all words exactly matching 'foo' to 'bar'.
