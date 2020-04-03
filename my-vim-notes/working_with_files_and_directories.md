@@ -7,9 +7,10 @@ https://vim.fandom.com/wiki/Using_tab_pages
 If you want to open all files matching the pattern in subfolders - :args **/*.java
 
 To replace four white spaces in java files with a tab use this - :bufdo exexute "%s/    /(press tab)/g" | update
-step 1 - :bufdo execute "%s/(press tab){/{/g" | update
-step 2 - :bufdo execute "global/^{/normal -gJ" | update
-step 3 - :bufdo execute "%s/){/) {/g" | update
+
+1- :bufdo execute "%s/(press tab){/{/g" | update
+2- :bufdo execute "global/^{/normal -gJ" | update
+3- :bufdo execute "%s/){/) {/g" | update
 
 -------------------------------------------------------------------------------------
 How do I move an existing window to a new tab?
