@@ -1,8 +1,10 @@
 INDENTATION :     
+```
     Example line
         This is part of the parsed line
         Thats goes one
     End of line
+```
 
 How to remove all spaces in front of these lines? The final text should be:
 Example line

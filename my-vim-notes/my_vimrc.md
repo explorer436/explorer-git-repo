@@ -1,4 +1,5 @@
 In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
+
 --------------------------------------------------------------------------------------
 set number
 set ignorecase
@@ -8,13 +9,16 @@ let g:netrw_browse_split = 3
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+
 ------------------------------
 set tags=./tags;/
 " This will look in the current directory for "tags", and work up the tree towards root until one is found. In other words, you can be anywhere in your source tree instead of just the root of it.
+
 ------------------------------
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=ucs-bom,utf-8,latin1
 endif
+
 ------------------------------
 set nocompatible        " Use Vim defaults (much better!)
 set bs=indent,eol,start         " allow backspacing over everything in insert mode

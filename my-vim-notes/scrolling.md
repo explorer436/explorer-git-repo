@@ -44,5 +44,6 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 you should define the following option:
 
 :set nostartofline
+
 -----------------------------------------------------------
 

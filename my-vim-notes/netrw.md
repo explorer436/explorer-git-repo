@@ -1,25 +1,30 @@
 How to : always show line numbers in netrw:
 Always show netrw : even when a file is opened in a new tab
+
 --------------------------------------------
 netrw:
 Vim documentation: pi_netrw
 http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html#netrw
+
 --------------------------------------------
 Invoking netrw can be achieved in three ways
     :Explore (:E) - opens netrw in the current window
     :Sexplore (:Sex) - opens netrw in a horizontal split
     :Vexplore (:Vex) - opens netrw in a vertical split
     :Texplore (:Tex) - opens netrw in a new tab (use Cntrl PgUp, Cntrl PgDn to switch between tabs)
+    
 --------------------------------------------
 Changing the directory view in netrw
 With the directory browser open hit i to cycle through the view types. There are four different view types: thin, long, wide and tree. A preferred view type can be made permanent by setting it in a .vimrc file.
 
 let g:netrw_liststyle = 3
+
 --------------------------------------------
 Removing the banner
 The directory banner is mostly useless. To remove it temporarily press I. To remove it permanently add the following to your .vimrc.
 
 let g:netrw_banner = 0
+
 --------------------------------------------
 Changing how files are opened
 By default files will be opened in the same window as the netrw directory browser. To change this behaviour the netrw_browse_split option may be set. The options are as follows
@@ -30,11 +35,13 @@ By default files will be opened in the same window as the netrw directory browse
 To make the selection permanent add the following to your .vimrc.
 
 let g:netrw_browse_split = 1
+
 --------------------------------------------
 Set the width of the directory explorer
 The width of the directory explorer can be fixed with the netrw_browse_split option. The following sets the width to 25% of the page.
 
 let g:netrw_winsize = 25
+
 --------------------------------------------
 NERDtree like setup
 If NERDtree is your thing netrw can give you a similar experience with the following settings
@@ -48,6 +55,7 @@ augroup ProjectDrawer
   autocmd!
   autocmd VimEnter * :Vexplore
 augroup END
+
 --------------------------------------------
 There are a number of ways to open files in vim and if that is what you use netrw for. 
 
@@ -62,6 +70,7 @@ To open a file in a horizontal split use the following. This also supports tab c
 
 To open a file in a new tab use the following. This also supports tab completion.
 :tabnew path/to/file.txt
+
 --------------------------------------------
 How do I configure .vimrc so that line numbers display in netrw in Vim?
 
@@ -79,5 +88,6 @@ call s:NetrwInit("g:netrw_bufsettings" , "noma nomod nonu nobl nowrap ro")
 s:NetrwInit overrides a variable only if it is not defined.
 
 Therefore put let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro' in your vimrc and it should work. 
+
 --------------------------------------------
 

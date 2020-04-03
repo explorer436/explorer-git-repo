@@ -1,4 +1,5 @@
 https://andrew.stwrt.ca/posts/vim-ctags/
+
 ---------------------------------------------------------------------------------------------------
 CTAGS : 
 
@@ -18,10 +19,12 @@ The next step is to get the full path of this tags file - in Linux, use the read
 open a file in the root folder of the project and run this command from within vim (use semi-colon and then type it)
 set tags=./tags;/
 (It starts with a tags file in the current directory and goes up to the root directory.)
+
 ---------------------------------------------------------------------------------------------------
 One line that always goes in my .vimrc:
 set tags=./tags;/
 This will look in the current directory for "tags", and work up the tree towards root until one is found. IOW, you can be anywhere in your source tree instead of just the root of it.
+
 ---------------------------------------------------------------------------------------------------
 Ctrl+] - go to definition
 Ctrl+T - Jump back from the definition.
@@ -38,4 +41,5 @@ After the tags are generated. You can use the following keys to tag into and tag
 
 Ctrl+Left MouseClick - Go to definition
 Ctrl+Right MouseClick - Jump back from definition
+
 ---------------------------------------------------------------------------------------------------
