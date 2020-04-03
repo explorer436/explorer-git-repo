@@ -74,11 +74,11 @@ This looks for lines ending with "{" and a next line starting with the text (a w
 Replace each "' }," in the current file by a new line - :%s/' ,/',\r/g 
 
 -----------------------------------------------------------
-This searches for lines ending with "{" and a subsequent line starting with "__prefix" - {\_$\_s*__prefix
-This searches for lines ending with "'," and a subsequent line starting with "__text" - ',\_$\_s*__text
-This searches for lines ending with "'," and a subsequent line starting with "__text" and joins the two lines together - %s/',\_$\_s*__text/',__text/g
-This searches for lines ending with "{" and a subsequent line starting with "__prefix" and joins the two lines together - %s/{\_$\_s*__prefix/{__prefix\g
-Record a macro in register a and play it on a pattern match - :g/.*__prefix.*__text.* },\_$/normal! @a
+`{\_$\_s*__prefix` - This searches for lines ending with "{" and a subsequent line starting with "__prefix". 
+`',\_$\_s*__text` - This searches for lines ending with "'," and a subsequent line starting with "__text"
+`%s/',\_$\_s*__text/',__text/g` - This searches for lines ending with "'," and a subsequent line starting with "__text" and joins the two lines together.
+`%s/{\_$\_s*__prefix/{__prefix\g` - This searches for lines ending with "{" and a subsequent line starting with "__prefix" and joins the two lines together.
+`:g/.*__prefix.*__text.* },\_$/normal! @a` - Record a macro in register a and play it on a pattern match.
 
 -----------------------------------------------------------
 How to mix global command and replace command : :g/pattern_to_match/ s/text_to_search/text_to_replace/gc
