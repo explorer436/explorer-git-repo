@@ -1,6 +1,4 @@
 ---------------------------------------------------------------------------------
-"...a woman who is interested in a man wants to see that other women are interested in him, too. Not only does that give him instant value, it makes it all the more satisfying to snatch him from their clutches." -Robert Greene
-
 "By saying less than necessary you create the appearance of meaning and power. Also, the less you say, the less risk you run of saying something foolish, even dangerous." -Robert Greene
 
 "If you think it important to do all the work yourself, you will never get far, and you will suffer the fate of the Balboas and Teslas of the world. Find people with the skills and creativity you lack. Either hire them, while putting your own name on top of theirs, or find a way to take their work and make it your own. Their creativity thus becomes yours, and you seem a genius to the world." -Robert Greene
@@ -20,7 +18,3 @@
 "In any organization it is inevitable for a small group to hold the strings. And often it is not those with the titles. In the game of power, only the fool flails about without fixing his target. You must find out who controls the operations, who is the real director behind the scenes." - Robert Greene 
 
 ---------------------------------------------------------------------------------
-
-“Men are so simple of mind, and so much dominated by their immediate needs, that a deceitful man will always find plenty who are ready to be deceived.” - Niccolò Machiavelli (1469-1527)
-
-"When you want to fight us, we don't let you and you can't find us. But when we want to fight you, we make sure that you can't get away and we hit you squarely... and wipe you out... The enemy advances, we retreat; the enemy camps, we harass; the enemy tires, we attack; the enemy retreats, we pursue." - Mai Tse-tung (1893-1976) (less)
