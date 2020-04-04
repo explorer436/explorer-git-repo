@@ -19,14 +19,7 @@
 
 ---------------------------------------------------------------------------------
 
-“Men are more ready to repay an injury than a benefit, because gratitude is a burden and revenge a pleasure.”
-— Tacitus, C. (A.D. 55-120)
-
 "Everything in seduction however, depends on suggestion. You cannot announce your intentions or reveal them directly in words."
-
-"To have ultimate victory, you must be ruthless." - Napolean Bonaparte 1769-1821
-
-"Do not commit yourself to anybody or anything, for that is to be a slave, a slave to every man... Above all, keep yourself free of commitments and obligations - they are the device of another to get you into his power..." - Baltasar Gracián (1601-1658)
 
 "When the great lord passes, the wise peasant bows deeply and silently farts." - Ethiopian Proverb
 
