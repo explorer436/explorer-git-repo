@@ -17,20 +17,10 @@
 
 "Learn to play many roles, to be whatever the moment requires. Adapt your mask to the situation - be protean in the faces you wear. Bismarck played this game to perfection: To a liberal he was a liberal, to a hawk he was a hawk. He could not be grasped, and what cannot be grasped cannot be consumed." - Robert Greene
 
----------------------------------------------------------------------------------
-
-"Everything in seduction however, depends on suggestion. You cannot announce your intentions or reveal them directly in words."
-
-"When the great lord passes, the wise peasant bows deeply and silently farts." - Ethiopian Proverb
-
 "In any organization it is inevitable for a small group to hold the strings. And often it is not those with the titles. In the game of power, only the fool flails about without fixing his target. You must find out who controls the operations, who is the real director behind the scenes." - Robert Greene 
 
+---------------------------------------------------------------------------------
+
 “Men are so simple of mind, and so much dominated by their immediate needs, that a deceitful man will always find plenty who are ready to be deceived.” - Niccolò Machiavelli (1469-1527)
-
-"Time is an artificial concept that we ourselves have created to make the limitlessness of eternity and the universe more bearable, more human."
-
-"Desire often creates paradoxical effects: The more you want something, the more you chase after it, the more it eludes you. The more interest you show, the more you repel the object of your desire. This is because your interest is too strong - it makes people awkward, even fearful. Uncontrollable desire makes you seem weak, unworthy, pathetic."
-
-"...showing his wealth only on the inside of his house."
 
 "When you want to fight us, we don't let you and you can't find us. But when we want to fight you, we make sure that you can't get away and we hit you squarely... and wipe you out... The enemy advances, we retreat; the enemy camps, we harass; the enemy tires, we attack; the enemy retreats, we pursue." - Mai Tse-tung (1893-1976) (less)
