@@ -27,12 +27,6 @@
 
 “Men are so simple of mind, and so much dominated by their immediate needs, that a deceitful man will always find plenty who are ready to be deceived.” - Niccolò Machiavelli (1469-1527)
 
-"The Reality: Change is slow and gradual. It requires hard work, a bit of luck, a fair amount of self-sacrifice, and lots of patience.
-
-The Fantasy: A sudden transformation will bring a total change in one's fortunes, bypassing work, luck, self-sacrifice, and time in on fantastic stroke."
-
-"...there is often someone behind the scenes who has a great deal of power, a tremendous influence over the person superficially on top. These behind-the-scenes powerbrokers are the group's weak link: Win their favor and you indirectly influence the king."
-
 "Time is an artificial concept that we ourselves have created to make the limitlessness of eternity and the universe more bearable, more human."
 
 "Desire often creates paradoxical effects: The more you want something, the more you chase after it, the more it eludes you. The more interest you show, the more you repel the object of your desire. This is because your interest is too strong - it makes people awkward, even fearful. Uncontrollable desire makes you seem weak, unworthy, pathetic."
