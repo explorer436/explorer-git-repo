@@ -1,3 +1,3 @@
 In order to increase line spacing in paragraphs:
 
-Preferences -> User Stylesheet -> p {line-height: 2}
+    Preferences -> User Stylesheet -> p {line-height: 2}

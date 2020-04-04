@@ -1,3 +1,4 @@
+```
 import com.eviware.soapui.support.XmlHolder
 
 def response = testRunner.testCase.testSteps["TestRequest"].testRequest.response.getRequest().getResponseContentAsXml()
@@ -5,9 +6,7 @@ def response = testRunner.testCase.testSteps["TestRequest"].testRequest.response
 def responseAsXml = new XmlHolder( response )
 
 
-
 responseAsXml.declareNamespace( 'ns2', 'http://abcd.com/test/xyz/service/specificservice/v1_0')
-
 
 
 def RqUID = responseAsXml.getNodeValue("//ns2:getResponse/response/RqUID")
@@ -31,3 +30,4 @@ responseFile.println(payload)
 responseFile.flush()
 
 responseFile.close()
+```

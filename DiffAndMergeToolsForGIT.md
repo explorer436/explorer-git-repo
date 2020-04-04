@@ -42,7 +42,7 @@ Hitting enter will launch the KDiff3 as the merge tool.
 
 KDiff3 shows nice GUI to do the merge easily.  It shows the original file on the leftmost window called "A" or "Base", local file in the middle called "B" or "Local" and remote file in the rightmost window called "C" or "Remote".
 
-========================================================================================================
+--------------------------
 If you want to use DiffMerge as the diff and merge tool with git, this is how the git confile should look like : 
 [core]
 	longpaths = true
@@ -64,7 +64,7 @@ If you want to use DiffMerge as the diff and merge tool with git, this is how th
     keepBackup = false
     trustExitCode = false
     
-============================================================================================================
+--------------------------
 To use diffuse as the merge tool and kdiff3 as the diff tool : 
 [core]
 	longpaths = true

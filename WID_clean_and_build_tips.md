@@ -1,7 +1,9 @@
 List only files of a particular extension with the DIR command:
-dir *.class
 
-dir /S *.class
+`dir *.class`
+
+`dir /S *.class`
+
 will show files with ".txt" suffix in specified directory and all sub-directories.
 
 When you do a full clean/build within wid it takes quite some time to do the clean part.  

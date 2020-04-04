@@ -20,7 +20,7 @@ Go to the "cache" tab
 Click "Configure Settings" and acknowledge the UAC Prompt if prompted
 The "Delete Files" button should become available. Click this button to clear files. It will automatically keep any files which should not be deleted.
 
-=================================================================================
+---------------------------------
 
 Mouse Issues in Windows : 
 If you want to change it to a larger one :
