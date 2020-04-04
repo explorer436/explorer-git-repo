@@ -1,9 +1,5 @@
 ---------------------------------------------------------------------------------
-"By saying less than necessary you create the appearance of meaning and power. Also, the less you say, the less risk you run of saying something foolish, even dangerous." -Robert Greene
-
 "If you think it important to do all the work yourself, you will never get far, and you will suffer the fate of the Balboas and Teslas of the world. Find people with the skills and creativity you lack. Either hire them, while putting your own name on top of theirs, or find a way to take their work and make it your own. Their creativity thus becomes yours, and you seem a genius to the world." -Robert Greene
-
-"...view all those around you as pawns in your rise to the top. You cannot let yourself become the lackey for any cause." -Robert Greene (Law 20)
 
 "To reveal the true nature of your intelligence rarely plays; you should get in the habit of downplaying it at all times. If people inadvertently learn the truth - that you are actually much smarter than you look - they will admire you more for being discreet than for making your brilliance show." - Robert Greene (Law 21)
 
