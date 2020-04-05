@@ -57,14 +57,14 @@ Android
 * Lastpass
 * Whatsapp
 * Fasthub (Github client)
-* Goodreads
 * Instapaper
 * Tutanota
-* Spotify
-* GPS Tools
+* Fairmail
 * Tor Browser
 * Firefox
 * Mapquest
+* OsmAnd
+* Quora
 
 -----------------------------------------------------------------------------------------
 How to use multiple workspaces : This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace.
