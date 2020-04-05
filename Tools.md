@@ -84,3 +84,7 @@ UI - Workspace type : Tabbed Desktop
 ReadyAPI - Default SOAP request editor : XML
            Default REST request editor : Request
            Default response editor : XML
+
+-----------------------------------------------------------------------------------------
+Android alternatives - GrapheneOS
+

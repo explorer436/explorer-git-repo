@@ -363,4 +363,16 @@ Williams conducted several interviews with Stallman during the writing of the bo
 13. She wants to relax in the demonstration of your direction.
 
 -----------------------------------------------------------
+9 Free Books that Are More Important than a University Degree
 
+1. why you act the way you do - Tim Lahaye
+2. Positioning - the battle for your mind
+3. Unleashing the ideavirus - Seth Godin
+4. Scientific advertising - Claude C. Hopkins
+5. Mastery- Robert Greene
+6. How to win friends and influence people - Dale Carnegie
+7. The magic of thinking big - David Schwartz
+8. The purple cow - Seth Godin
+9. Think and grow rich - Napoleon Hill
+
+-----------------------------------------------------------
