@@ -260,3 +260,7 @@ For each commit you want to reword, Git will drop you back into your editor. For
 *     git rebase --continue
 
 Most of this sequence will be explained to you by the output of the various commands as you go. It’s very easy, you don’t need to memorise it – just remember that git rebase --interactive lets you correct commits no matter how long ago they were.
+
+-----------------------------------------------------------
+
+https://www.atlassian.com/git/tutorials/merging-vs-rebasing 
