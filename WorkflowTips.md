@@ -31,3 +31,11 @@ Step count plan :
 * 01:30 PM - 6700
 * 02:30 PM - 7800
 * 03:30 PM - 8500
+
+----------------------------------------------------------------------
+
+When learning something new, write it down as much as possible. This helps with memorizing it. 
+
+----------------------------------------------------------------------
+
+Toastmasters for public speaking capabilities.
