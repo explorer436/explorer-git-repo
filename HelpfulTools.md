@@ -92,3 +92,7 @@ Android alternatives - GrapheneOS
 Parses the WSDL files and generates SOAP messages for you # Wizdler
 
 Recognizes WSDL information on the page to show you the available services and operations. Click the operation to generate the SOAP requests and view the response. By clicking the service, you can download WSDL and external XSD files in single ZIP file.
+
+-----------------------------------------------------------------------------------------
+Swagger YAML  editing tool : http://editor.swagger.io/
+use this to generate server code and client code as well.
