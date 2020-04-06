@@ -39,3 +39,9 @@ When learning something new, write it down as much as possible. This helps with 
 ----------------------------------------------------------------------
 
 Toastmasters for public speaking capabilities.
+
+----------------------------------------------------------------------
+
+Try and maintain a list of todo items in only one place. Do not keep them in multiple places like phone, other devices and notebooks. The online kanban board should help with this. Use notebooks for jotting down ideas but as soon as you have a good understanding of what to do and a roadmap to do it, move it to the central note taking location.
+
+----------------------------------------------------------------------
