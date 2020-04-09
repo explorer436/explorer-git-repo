@@ -1,6 +1,7 @@
 In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
 
 --------------------------------------------------------------------------------------
+set hlsearch
 set number
 set ignorecase
 set ruler         " show the cursor position all the time
