@@ -1,15 +1,21 @@
 In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do it as root)
 
 --------------------------------------------------------------------------------------
-set hlsearch
-set number
-set ignorecase
-set ruler         " show the cursor position all the time
+`set hlsearch`
+
+`set number`
+
+`set ignorecase`
+
+`set ruler`         shows the cursor position all the time
+
+```
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
 let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+```
 
 ------------------------------
 set tags=./tags;/
