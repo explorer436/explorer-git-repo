@@ -6,7 +6,7 @@ In Linux, the vimrc file is in /etc (if we want to edit it, we might have to do 
 set hlsearch
 set number
 set ignorecase
-set ruler         shows the cursor position all the time
+set ruler         // shows the cursor position all the time
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
 let g:netrw_banner = 0
