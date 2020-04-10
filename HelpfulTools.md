@@ -86,7 +86,10 @@ ReadyAPI - Default SOAP request editor : XML
            Default response editor : XML
 
 -----------------------------------------------------------------------------------------
-Android alternatives - GrapheneOS
+Android alternatives - 
+
+GrapheneOS
+LineageOS (supports many older devices) - worth a shot
 
 -----------------------------------------------------------------------------------------
 Parses the WSDL files and generates SOAP messages for you # Wizdler
