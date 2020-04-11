@@ -35,10 +35,6 @@ need a working example.
 
 ------------------------------------------
 
-How to count the number of times a given word occurs in a file?
-
-------------------------------------------
-
 How to make a presentation like ppt using Vim?
 
 ------------------------------------------
