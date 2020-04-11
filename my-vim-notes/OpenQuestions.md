@@ -16,3 +16,11 @@ Open question - netrw - always show line numbers in netrw.
 Open question - how to open buffers in tabs from netrw and how to move buffers from one tab to another or into split windows when wanted?
 
 ------------------------------------------
+
+How to turn on auto indentation in Vim for java or javascript?
+
+------------------------------------------
+
+What is Vim maillist archives? Bram Moolenar talks about it in the talk "7 tips for highly effective text editiong"
+
+------------------------------------------
