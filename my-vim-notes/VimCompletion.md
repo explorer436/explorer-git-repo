@@ -120,3 +120,9 @@ Ask now, or later: @georgebrock on Twitter or email george@thoughtbot.com
 I work for thoughtbot
 
 These slides: georgebrock.github.io/talks/vim-completion
+
+-------------------------
+
+Insert mode completion : `Cntrl N`
+
+Omni completion : `^O ^N ^P`
