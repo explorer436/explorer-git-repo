@@ -107,3 +107,25 @@ How to select a word within Vim and replace it with something else?
 Refer to [this page](https://vim.fandom.com/wiki/Search_and_replace#substitute_last_search) for more examples
 
 -------------------------------------------------------------
+
+COUNTING WORDS OR PATTERNS
+
+
+* Count the number of occurrences of a word or pattern in the current file : 
+
+    (first use * on the word)
+
+    after that, use the following command to get a count : `%s///gn`
+
+    We are actually calling the :substitute command, but the n flag suppresses the usual behaviour.
+    Instead of replacing each match witht the target, it simply counts the number of matches and then echoes the result below the command line.
+    Do not omit any of the forward slashes.
+    g stands for global (in the curent file).
+
+
+
+* Find all occurrences of a word in the current file and populate the quickfix list window
+
+    `:vim /pattern/ % | cw`
+
+------------------------------------------------
