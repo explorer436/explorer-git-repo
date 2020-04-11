@@ -132,3 +132,10 @@ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 Verify that Homebrew is installed: `brew --version`
 
 ---------------------------------------------------------------
+
+To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
+
+---------------------------------------------------------------
+In XFCE, there is a utility program called 'Preferred Applications' that lets you change the default applications for browser, mail reader, file manager and terminal emulator. If you want to change the default applications, this is a very helpful tool.
+---------------------------------------------------------------
+
