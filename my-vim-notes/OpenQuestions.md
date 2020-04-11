@@ -24,3 +24,21 @@ How to turn on auto indentation in Vim for java or javascript?
 What is Vim maillist archives? Bram Moolenar talks about it in the talk "7 tips for highly effective text editiong"
 
 ------------------------------------------
+
+How to use folding in Vim? 
+
+To minimise the method/function implementation.
+
+(-) - minus?
+
+need a working example.
+
+------------------------------------------
+
+How to count the number of times a given word occurs in a file?
+
+------------------------------------------
+
+How to make a presentation like ppt using Vim?
+
+------------------------------------------
