@@ -5,18 +5,25 @@ Put your cursor at the point you want to start at.
 Make sure you're in command mode.
 
 hit v to start a visual selection
+
 then hit / and type the word you're looking for to select up to it, then press enter to make the selection
+
 then hit d to delete the text 
 
 ---------------------------------------------------------------------------
 To delete a word along with the whitespace after the word - dw (vw to select in visual mode)
+
 To delete a word but not the the whitespace after the word - de (ve to select in visual mode)
 
 ---------------------------------------------------------------------------
 To remove unnecessary spaces and tabs in empty lines in Vim-
+
 In a search, \s finds whitespace (a space or a tab), and \+ finds one or more occurrences.
+
 The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
-:%s/\s\+$//e
+
+`:%s/\s\+$//e`
+
 (this did not work with eclipse vim plugin)
 
 ---------------------------------------------------------------------------
