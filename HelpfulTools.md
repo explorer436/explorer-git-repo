@@ -65,6 +65,7 @@ Android
 * Mapquest
 * OsmAnd
 * Quora
+* Foxit PDF Reader
 
 -----------------------------------------------------------------------------------------
 How to use multiple workspaces : This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace.
