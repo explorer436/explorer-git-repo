@@ -70,3 +70,10 @@ The substitute command works by
 2. and adding an end-of-line.
 
 ---------------------------------------------------------------------------
+How to delete all lines that do NOT contain a certain word in Vim?
+
+`:%g!/price/d`
+
+to delete every line that doesn't contain the word "price"
+
+---------------------------------------------------------------------------
