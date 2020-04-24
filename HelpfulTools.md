@@ -105,6 +105,7 @@ use this to generate server code and client code as well.
 -----------------------------------------------------------------------------------------
 Helpful Visual Studio Code extensions :
 Haskell Linter
+Haskell syntax highlighter
 Markdown preview
 Vim (very important)
 Open with Vim (make sure this opens with gVim)
