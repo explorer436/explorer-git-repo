@@ -1,6 +1,6 @@
 To turn  it off `:set nospell`
 
-** Using Spellchecking:
+Using Spellchecking:
 
 To move to a misspelled word, use `]s` (the next misspelled word) and `[s` (the previous misspelled word).
 
