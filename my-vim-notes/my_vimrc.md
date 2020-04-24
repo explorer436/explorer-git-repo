@@ -7,6 +7,8 @@ set hlsearch
 set number
 set ignorecase
 set ruler         // shows the cursor position all the time
+setlocal spell spelllang=en_us         // to turn spell checking on
+
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
 let g:netrw_banner = 0
