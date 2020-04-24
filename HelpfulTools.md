@@ -25,8 +25,9 @@ Linux:
 
 * Text editors - Geany
 
-* IDEs - Kdevelop (KDE)
-       Tmux + FuzzyFinder (CntrlP ?) for Vim
+* IDEs - Visual Studio Code + Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
+       Kdevelop (KDE) - never tried this before. Not convinced that this is a viable option.
+       Tmux + FuzzyFinder (CntrlP ?) for Vim - seen great examples online. Question is : is this for me?
        
 * File managers - Thunar
                 PCManFM
