@@ -101,3 +101,10 @@ Recognizes WSDL information on the page to show you the available services and o
 -----------------------------------------------------------------------------------------
 Swagger YAML  editing tool : http://editor.swagger.io/
 use this to generate server code and client code as well.
+
+-----------------------------------------------------------------------------------------
+Helpful Visual Studio Code extensions :
+Haskell Linter
+Markdown preview
+Vim (very important)
+Open with Vim (make sure this opens with gVim)
