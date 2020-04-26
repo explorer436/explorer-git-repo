@@ -77,3 +77,9 @@ How to delete all lines that do NOT contain a certain word in Vim?
 to delete every line that doesn't contain the word "price"
 
 ---------------------------------------------------------------------------
+
+The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
+
+:%s/\s\+$//e
+
+---------------------------------------------------------------------------

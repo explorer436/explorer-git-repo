@@ -64,3 +64,15 @@ It is important to understand how a trailing slash on the source argument functi
 So if you want to replicate one path to another include the trailing slash as follows:
 
 `rsync -av /sourcepath/sourcedir/ /duplicatpath/sourcedir/`
+
+---------------------------------------------------------------------
+
+How to create nonexistent directories and subdirectories recursively using Bash?
+mkdir -p folder/subfolder
+The -p flag causes any parent directories to be created if necessary.
+
+Is there a way to create multiple directories at once with mkdir?
+mkdir takes multiple arguments, simply run
+mkdir dir_1 dir_2
+
+---------------------------------------------------------------------

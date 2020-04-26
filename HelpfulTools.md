@@ -31,6 +31,7 @@ Linux:
        
 * File managers - Thunar
                 PCManFM
+                Vifm is a curses based vi[m] like file manager extended with some useful ideas from mutt. If you use vi[m], vifm gives you complete keyboard control over your files without having to learn a new set of commands. It goes not just about vi[m] like keybindings, but also about modes, options, registers, commands and other things you might already like in vi[m].
 		
 * System Monitors - HTop  
 

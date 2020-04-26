@@ -42,3 +42,7 @@ How to make a presentation like ppt using Vim?
 color schemes in Vim
 
 ------------------------------------------
+
+vimrc shortcut for finding and displaying all the occurences of a word
+
+------------------------------------------
