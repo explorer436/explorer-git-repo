@@ -110,3 +110,9 @@ Haskell syntax highlighter
 Markdown preview
 Vim (very important)
 Open with Vim (make sure this opens with gVim)
+
+-----------------------------------------------------------------------------------------
+Google drive alternatives : Tresorit
+compare prices.
+
+-----------------------------------------------------------------------------------------

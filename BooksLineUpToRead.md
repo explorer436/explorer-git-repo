@@ -376,3 +376,23 @@ Williams conducted several interviews with Stallman during the writing of the bo
 9. Think and grow rich - Napoleon Hill
 
 -----------------------------------------------------------
+
+Recently added to the collection (these are not included in the catalog yet) :
+
+Ben Horowitz - The Hard Thing About Hard Things
+Cal Newport - Deep Work
+Cal Newport - Digital Minimalism_ Choosing a Focused Life in a Noisy World    
+Cal Newport - So Good They Can't Ignore You
+Chrissy Metz - This Is Me
+Hans Rosling - Factfulness
+Neil DeGrasse Tyson - Astrophysics for People in a Hurry
+Pete Souza - Obama_ An Intimate Portrait
+Tara Westover - Educated
+James Comey - A Higher Loyalty_ Truth, Lies
+Jerome R. Corsi - Killing The Deep State
+Jocko Willink - Extreme Ownership -  How U.S. Navy SEALs Lead and Win
+Lawrence Wright - God Save Texas          
+Madeleine Albright - Fascism_A Warning
+Michael Isikoff - Russian Roulette     
+Michael Wolff - Fire And Fury    
+Michelle McNamara - I'll Be Gone In The Dark
