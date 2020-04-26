@@ -38,3 +38,7 @@ need a working example.
 How to make a presentation like ppt using Vim?
 
 ------------------------------------------
+
+color schemes in Vim
+
+------------------------------------------
