@@ -129,3 +129,7 @@ COUNTING WORDS OR PATTERNS
     `:vim /pattern/ % | cw`
 
 ------------------------------------------------
+
+~ & - repeat last substitution on current line
+
+------------------------------------------------
