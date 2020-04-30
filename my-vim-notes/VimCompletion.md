@@ -126,3 +126,15 @@ These slides: georgebrock.github.io/talks/vim-completion
 Insert mode completion : `Cntrl N`
 
 Omni completion : `^O ^N ^P`
+
+-------------------------------------------------
+
+Completion tips : 
+~ vim is very completion friendly
+~ just use <Tab> on command line
+~ for filenames, set ‘wildmenu’ and ‘wildmode’ (I
+like "list:longest,full")
+~ :new ~/dev/fo<Tab> - complete filename
+~ :help ‘comp<Tab> - complete option name
+~ :re<Tab> - complete command
+~ hit <Tab> again to cycle, CTRL-N for next match, CTRL-P for previous
