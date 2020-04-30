@@ -113,14 +113,6 @@ If you have Vim's filetype plugins enables, you will have access to omnicomplete
 
 For example, in a Ruby file, typing "Hello world".capctrl+xctrl+o would complete to "Hello world".capitalize or "Hello world".capitalize!.
 
-**Any questions?**
-
-Ask now, or later: @georgebrock on Twitter or email george@thoughtbot.com
-
-I work for thoughtbot
-
-These slides: georgebrock.github.io/talks/vim-completion
-
 -------------------------
 
 Insert mode completion : `Cntrl N`
