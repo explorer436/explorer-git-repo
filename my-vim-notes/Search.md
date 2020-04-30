@@ -10,6 +10,8 @@ i case insensitive search. grep is case sensitive by default
 
 ---------------------------------------------------------------------------
 
-search tips :
-or find lines with a certain word:
+Search tips :
+
+Find lines with a certain word:
+
 ~ [I and ]I - list lines with word under the cursor
