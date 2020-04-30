@@ -7,3 +7,9 @@ In terminal, navigate to the project folder and use this : grep -r -n -l i text_
 -l only list the names of the files
 i case insensitive search. grep is case sensitive by default
 * search in files of all types
+
+---------------------------------------------------------------------------
+
+search tips :
+or find lines with a certain word:
+~ [I and ]I - list lines with word under the cursor
