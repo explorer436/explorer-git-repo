@@ -133,3 +133,25 @@ COUNTING WORDS OR PATTERNS
 ~ & - repeat last substitution on current line
 
 ------------------------------------------------
+
+Insert mode tips :
+
+~ gi - incredibly handy
+
+~ goes to Insert mode where you left it last time
+
+~ scenario: edit something, exit Insert, go look at something else, then gi back to restart editing
+
+~ CTRL-T and CTRL-D (tab and de-tab)
+
+~ inserts or deletes one shiftwidth of indent at the start of the line
+
+------------------------------------------------
+
+Moving tips :
+
+~ first non-blank character on next line? <CR>
+    
+~ first non-blank character on previous line? -
+
+------------------------------------------------
