@@ -34,3 +34,15 @@ Ctrl W followed by T
 1. Go to a numbered tab: nnn gt 
  
 -------------------------------------------------------------------------------------  
+
+Some more tab tips :
+
+~ :tabe <file> to edit file in a new tab
+
+~ :tabc to close
+
+~ :tabn, :tabp (or gt, gT to switch) 
+
+~ probably want to map these for easier navigation (if gt, gT are too difficult)
+
+-------------------------------------------------------------------------------------  
