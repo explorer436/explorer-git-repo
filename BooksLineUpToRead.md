@@ -377,7 +377,7 @@ Williams conducted several interviews with Stallman during the writing of the bo
 
 -----------------------------------------------------------
 
-Recently added to the collection (these are not included in the catalog yet) :
+These are not included in the catalog yet :
 
 Ben Horowitz - The Hard Thing About Hard Things
 Cal Newport - Deep Work
