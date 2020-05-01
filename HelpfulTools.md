@@ -55,7 +55,7 @@ Android
 
 * Signal (messaging app)
 * NetGuard
-* Weather (any one)
+* Weather (the weather channel)
 * Lastpass
 * Whatsapp
 * Fasthub (Github client)
@@ -114,5 +114,6 @@ Open with Vim (make sure this opens with gVim)
 -----------------------------------------------------------------------------------------
 Google drive alternatives : Tresorit
 compare prices.
+There is one other alternative with better palns and cheaper prices : pDrive?
 
 -----------------------------------------------------------------------------------------
