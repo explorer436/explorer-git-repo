@@ -2,7 +2,7 @@ IDEs : Eclipse (Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), Visual
 
 Text editors : Vim
 
-Browsers : Firefox(lastpass), Tor browser
+Browsers : Firefox(lastpass, instapaper), Tor browser
 
 -----------------------------------------------------------------------------------------
 
