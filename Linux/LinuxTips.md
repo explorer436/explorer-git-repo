@@ -1,3 +1,8 @@
+How do I make `ls` show file sizes in megabytes?
+ls -l --block-size=M (round file sizes to the nearest MB)
+ls -l --block-size=MB
+ls -l --block-size=K
+
 -------------------------------------------------------------------
 Toggle full screen : F11
 E212: Can't open file for writing
