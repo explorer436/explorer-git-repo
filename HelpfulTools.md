@@ -53,21 +53,25 @@ Linux:
 Android
 -----------
 
-* Signal (messaging app)
+* Whatsapp, Signal (messaging app)
 * NetGuard
 * Weather (the weather channel)
 * Lastpass
-* Whatsapp
 * Fasthub (Github client)
 * Instapaper
-* Tutanota
-* Fairmail
-* Tor Browser
-* Firefox
-* Mapquest
-* OsmAnd
+* Tutanota, Fairmail (email clients)
+* Tor Browser, Firefox
+* Mapquest, OsmAnd
 * Quora
+* Sync
+* Spotify
+* Alltrails
+* APAS Algorithm Problems and Solutions
+* Geeks for Geeks
 * Foxit PDF Reader
+* Asana
+* WriterP
+* Microsoft Word (for word files)
 
 -----------------------------------------------------------------------------------------
 How to use multiple workspaces : This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace.
@@ -92,7 +96,7 @@ ReadyAPI - Default SOAP request editor : XML
 Android alternatives - 
 
 GrapheneOS
-LineageOS (supports many older devices) - worth a shot
+LineageOS (supports many older devices)
 
 -----------------------------------------------------------------------------------------
 Parses the WSDL files and generates SOAP messages for you # Wizdler
