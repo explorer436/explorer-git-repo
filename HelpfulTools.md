@@ -1,18 +1,23 @@
 IDEs : 
        Eclipse (Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), 
        Visual Studio Code :
-              Themes: azure, light theme
+              Themes: 
+                     azure (nice theme but it doesn't apply to file menu on the left)
+                     light theme (I like to use it in daylight),
+                     GitHub Theme (nice theme that applies to file menu on the left)
               Plugins: Language Support for Java,
                        Debugger for Java,
                        haskell-linter,
                        Haskell Syatax Highlighting,
                        Open in Vim,
-                       Vim extension
-
+                       Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
+                       
 
 Text editors : Vim
 
 Browsers : Firefox(lastpass, instapaper), Tor browser
+
+Miscellaneous : Calibre ebook viewer
 
 -----------------------------------------------------------------------------------------
 
@@ -28,16 +33,21 @@ Console Emulation program - ConEmu
 
 Linux:
 -----------
-* Git + Good git interface for Linux - gitg (lighter and faster - lets us stage individual lines and chunks)
-                                     GitAhead
+* Git + Good git interface for Linux - 
+       gitg (lighter and faster - lets us stage individual lines and chunks)
+       GitAhead
 				     
+* Ghostwriter - good editor to work with markdown files. formats them exactly the way github expects.
+
 * Directory navigators - Broot
 
 * Text editors - Geany
+                 
 
-* IDEs - Visual Studio Code + Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
-       Kdevelop (KDE) - never tried this before. Not convinced that this is a viable option.
+* IDEs - 
+       Visual Studio Code
        Tmux + FuzzyFinder (CntrlP ?) for Vim - seen great examples online. Question is : is this for me?
+       Eclipse
        
 * File managers - Thunar
                 PCManFM
@@ -56,6 +66,10 @@ Linux:
                 Calligra
                 wps office?
 		
+* pdf arranger (to work with pdf documents - joining multiple pdf documents into one)
+
+* GNU web browser - to keep firefox and regular surfing separate
+
 * arcolinux-meta-fun
 
 -----------------------------------------------------------------------------------------
