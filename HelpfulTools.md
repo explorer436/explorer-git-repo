@@ -1,4 +1,14 @@
-IDEs : Eclipse (Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), Visual Studio Code (light theme)
+IDEs : 
+       Eclipse (Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), 
+       Visual Studio Code :
+              Themes: azure, light theme
+              Plugins: Language Support for Java,
+                       Debugger for Java,
+                       haskell-linter,
+                       Haskell Syatax Highlighting,
+                       Open in Vim,
+                       Vim extension
+
 
 Text editors : Vim
 
