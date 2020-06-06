@@ -396,3 +396,19 @@ Madeleine Albright - Fascism_A Warning
 Michael Isikoff - Russian Roulette     
 Michael Wolff - Fire And Fury    
 Michelle McNamara - I'll Be Gone In The Dark
+
+Sean Seah - Gone fishing with Buffet
+
+----------------------------------------------------------------------
+
+After speaking about what he's learned from The Richest Man in Babylon, Freeway Ricky spoke about the book Think and Grow Rich, which he said taught him about growing a mastermind group of people to get to the position that you want to be in, adding that he's been consciously putting people in certain positions recently. He went on to share how As a Man Thinketh taught him to exercise his mind and plant the right seeds to grow, which you can hear more about above, including Ricky's thoughts on people being slaves to products. 
+
+You can read Freeway Ricky's book, The 21 Keys of Success, here: https://a.co/0dRXaIA
+
+Purchase the books mentioned by Freeway Ricky:
+
+The Richest Man in Babylon
+Think and Grow Rich
+As a Man Thinketh
+
+----------------------------------------------------------------------
