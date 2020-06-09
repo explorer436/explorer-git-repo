@@ -1,3 +1,9 @@
+To figure out if your computer has 64 bit or 32 bit processor :  
+uname -a
+lscpu (look at the architecture row)
+
+-------------------------------------------------------------------
+
 ls --all (command to show all files and folders including hidden ones)
 How do I make `ls` show file sizes in megabytes?
 ls -l --block-size=M (round file sizes to the nearest MB)

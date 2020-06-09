@@ -99,7 +99,7 @@ Look at the githut repo for the plugin manager "plug" for details about installi
 	
 	"set shortmess+=c            " Don't pass messages to |ins-completion-menu|.
 
-	set colorcolumn=80            " shows a line at the 80 column of the page
+	set colorcolumn=120            " shows a line at the 80 column of the page
 	
 	highlight ColorColumn ctermbg=0 guibg=lightgrey            " the color that needs to be used for the 80 column line
 
