@@ -1,3 +1,4 @@
+ls --all (command to show all files and folders including hidden ones)
 How do I make `ls` show file sizes in megabytes?
 ls -l --block-size=M (round file sizes to the nearest MB)
 ls -l --block-size=MB
