@@ -113,3 +113,9 @@ Look at the githut repo for the plugin manager "plug" for details about installi
 "------------------------------
 
 set tags=./tags;/         " This will look in the current directory for "tags", and work up the tree towards root until one is found. In other words, you can be anywhere in your source tree instead of just the root of it.
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'ctrlpvim/ctrlp.vim'
+
+call plug#end()
