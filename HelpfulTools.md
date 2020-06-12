@@ -11,6 +11,7 @@ IDEs :
                        Haskell Syatax Highlighting,
                        Open in Vim,
                        Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
+       jEdit : Plugins: Project Viewer (Not as useful as other editors)
                        
 
 Text editors : Vim
@@ -74,28 +75,30 @@ Linux:
 
 -----------------------------------------------------------------------------------------
 
-Android
+Android (alphabetical order)
 -----------
 
-* Whatsapp, Signal (messaging app)
-* NetGuard
-* Weather (the weather channel)
-* Lastpass
-* Fasthub (Github client)
-* Instapaper
-* Tutanota, Fairmail (email clients)
-* Tor Browser, Firefox
-* Mapquest, OsmAnd
-* Quora
-* Sync
-* Spotify
 * Alltrails
-* APAS Algorithm Problems and Solutions
-* Geeks for Geeks
-* Foxit PDF Reader
+* APAS (Algorithm Problems and Solutions)
 * Asana
-* WriterP
+* Browsers : Tor Browser, Firefox
+* Email clients : Tutanota, Fairmail
+* Foxit PDF Reader (for pdf files)
+* Geeks for Geeks
+* Github client : Fasthub (is there a better one?)
+* Instapaper
+* Lastpass
+* Maps : Mapquest, OsmAnd
+* Messaging app : Whatsapp, Signal
 * Microsoft Word (for word files)
+* Microsoft Launcher (dark mode featue is nice)
+* Moonreader
+* NetGuard
+* Quora
+* Spotify
+* Sync (cloud client)
+* Weather (the weather channel)
+* WriterP (text editor)
 
 -----------------------------------------------------------------------------------------
 How to use multiple workspaces : This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace.
