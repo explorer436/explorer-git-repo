@@ -1,24 +1,33 @@
 IDEs : 
-       Eclipse (Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), 
-       Visual Studio Code :
-              Themes: 
-                     azure (nice theme but it doesn't apply to file menu on the left)
-                     light theme (I like to use it in daylight),
-                     GitHub Theme (nice theme that applies to file menu on the left)
-              Plugins: Language Support for Java,
-                       Debugger for Java,
-                       haskell-linter,
-                       Haskell Syatax Highlighting,
-                       Open in Vim,
-                       Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
-       jEdit : Plugins: Project Viewer (Not as useful as other editors)
-                       
 
-Text editors : Vim
+* Eclipse (Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), 
+* Visual Studio Code :
+	* Themes: 
+		* azure (nice theme but it doesn't apply to file menu on the left)
+		* light theme (I like to use it in daylight),
+		* GitHub Theme (nice theme that applies to file menu on the left)
+	* Plugins: 
+		* Language Support for Java
+		* Debugger for Java
+		* haskell-linter
+		* Haskell Syatax Highlighting
+		* Open in Vim
+		* Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
+		* Markdown preview
+* jEdit : Plugins: Project Viewer (Not as useful as other editors)
 
-Browsers : Firefox(lastpass, instapaper), Tor browser
+Text editors : 
 
-Miscellaneous : Calibre ebook viewer
+* Vim
+
+Browsers : 
+
+* Firefox(lastpass, instapaper)
+* Tor browser
+
+Miscellaneous : 
+
+* Calibre ebook viewer
 
 -----------------------------------------------------------------------------------------
 
@@ -101,11 +110,15 @@ Android (alphabetical order)
 * WriterP (text editor)
 
 -----------------------------------------------------------------------------------------
-How to use multiple workspaces : This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace.
+How to use multiple workspaces : 
+
+This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace.
 Keyboard shortcuts are available. 
+
 Hold down Ctrl + Alt and tap an arrow key to 
 quickly move up, down, left, or right between workspaces, 
 depending on how they’re laid out. 
+
 Add the Shift key—so, press Shift + Ctrl + Alt and 
 tap an arrow key—and you’ll switch between workspaces, 
 taking the currently active window with you to the new workspace.
@@ -134,13 +147,7 @@ Recognizes WSDL information on the page to show you the available services and o
 Swagger YAML  editing tool : http://editor.swagger.io/
 use this to generate server code and client code as well.
 
------------------------------------------------------------------------------------------
-Helpful Visual Studio Code extensions :
-Haskell Linter
-Haskell syntax highlighter
-Markdown preview
-Vim (very important)
-Open with Vim (make sure this opens with gVim)
+Stoplight studio is another good one. 
 
 -----------------------------------------------------------------------------------------
 Google drive alternatives : Tresorit
