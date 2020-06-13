@@ -11,34 +11,25 @@ ls -l --block-size=MB
 ls -l --block-size=K
 
 -------------------------------------------------------------------
+
 Toggle full screen : F11
 E212: Can't open file for writing
 Vim has a builtin help system.
 You might want to edit the file as a superuser as "sudo vim FILE"
 
 -------------------------------------------------------------------
+
 To update the installed packages and package cache on your instance.
 sudo yum update -y
 
 -------------------------------------------------------------------
+
 To check if docker is running : 
 sudo service docker status
 
 -------------------------------------------------------------------
-Fedora uses rpm packages.
-Install RPM File With Yum (Fedora or RedHat Linux)
-You can use the yum package manager to install .rpm files.
-Enter the following:
-sudo yum localinstall sample_file.rpm
-The localinstall option instructions yum to look at your current working directory for the installation file.
 
--------------------------------------------------------------------
-
-Kdenlive
-
--------------------------------------------------------------------
-
-pdf file modification in fedora : use the pdfmod utility that comes with fedora
+Kdenlive - good tool for editing videos.
 
 -------------------------------------------------------------------
 Recursive copy
@@ -54,21 +45,14 @@ To zip all the contents of the a folder from some other location in command line
 command to reboot from terminal : reboot
 
 -----------------------------------------------------------------
+
 $ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
 
 $ shrinkpdf in.pdf out.pdf
 
 -----------------------------------------------------------------
-To install gVim on fedora : yum install vim-X11
-To install emacs on fedora : sudo yum install emacs
-
------------------------------------------------------------------
 
 Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
-
------------------------------------------------------------------
-
-update fedora from command line : dnf upgrade
 
 -----------------------------------------------------------------
 
@@ -81,30 +65,7 @@ Type: tar -zxvf file.tar.gz
 command to search for a file in linux : locate fileName
 
 ---------------------------------------------------------------------
-command to install rpm package in fedora : 
-sudo dnf install NAME_OF_RPM.rpm
 
-To install a rpm package using command line on redhat based system use -i command line switch with rpm command.
-rpm -i package-1.2.3.rpm
-
-
-You can also use YUM or DNF package manager to install downloaded rpm file. Its benefit to resolve dependencies required for the package
-yum localinstall package-1.2.3.rpm     ## CentOS, RHEL systems 
-dnf localinstall package-1.2.3.rpm     ## Fedora systems
-
-differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
-
----------------------------------------------------------------------
-
-How to execute .sh programs in fedora :
-Either make the file executable, and then run it while specifying the path:
-chmod +x somefile.sh
-./somefile.sh
-
-or, pass it to the shell interpreter like this:
-sh somefile.sh
-
----------------------------------------------------------------------
 Removing Package:
 In case if we need to remove any package use -e command line switch with the package name.
 
@@ -129,6 +90,7 @@ Remove a package
 sudo dpkg -r PACKAGE_NAME
 
 ---------------------------------------------------------------
+
 Run the following to install Homebrew:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 
@@ -148,7 +110,45 @@ Verify that Homebrew is installed: `brew --version`
 To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
 
 ---------------------------------------------------------------
+
 In XFCE, there is a utility program called 'Preferred Applications' that lets you change the default applications for browser, mail reader, file manager and terminal emulator. If you want to change the default applications, this is a very helpful tool.
 
 ---------------------------------------------------------------
+
+Fedora tips : 
+
+Fedora uses rpm packages.
+Install RPM File With Yum (Fedora or RedHat Linux)
+You can use the yum package manager to install .rpm files.
+Enter the following:
+sudo yum localinstall sample_file.rpm
+The localinstall option instructions yum to look at your current working directory for the installation file.
+
+pdf file modification in fedora : use the pdfmod utility that comes with fedora
+
+To install gVim on fedora : yum install vim-X11
+To install emacs on fedora : sudo yum install emacs
+
+update fedora from command line : dnf upgrade
+
+command to install rpm package in fedora : 
+sudo dnf install NAME_OF_RPM.rpm
+
+To install a rpm package using command line on redhat based system use -i command line switch with rpm command.
+rpm -i package-1.2.3.rpm
+
+
+You can also use YUM or DNF package manager to install downloaded rpm file. Its benefit to resolve dependencies required for the package
+yum localinstall package-1.2.3.rpm     ## CentOS, RHEL systems 
+dnf localinstall package-1.2.3.rpm     ## Fedora systems
+
+differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
+
+How to execute .sh programs in fedora :
+Either make the file executable, and then run it while specifying the path:
+chmod +x somefile.sh
+./somefile.sh
+
+or, pass it to the shell interpreter like this:
+sh somefile.sh
 
