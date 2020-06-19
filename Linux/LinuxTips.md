@@ -1,3 +1,9 @@
+How to launch terminal in Linux : 
+
+Super key (Windows) + T
+
+-------------------------------------------------------------------
+
 To figure out if your computer has 64 bit or 32 bit processor :  
 uname -a
 lscpu (look at the architecture row)
