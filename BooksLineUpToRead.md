@@ -13,13 +13,18 @@ Books line-up :
 
 Upcoming Target for 2019 : 
 
-2. The New Good Fat Bad Fat by William P. Castelli (book at home)
-3. Sam Harris - The Moral Landscape : How Science Can Determine Human Values - (Dover Public Library) - found in collection 
+1. Cal Newport - So Good They Can't Ignore You - found in collection
+2. Jocko Willink - Extreme Ownership -  How U.S. Navy SEALs Lead and Win - found in collection
+12. Helen Keller - The story of my life - found in collection
+The magic of thinking big
+The inner game of tennis
+The one thing - Gary Keller
+The productivity project - Chris Bailey
+4. Sam Harris - The Moral Landscape : How Science Can Determine Human Values - (Dover Public Library) - found in collection 
 6. Niall Ferguson - Civilization_ The West and the Rest (11123) - found in collection 
 7. Niall Ferguson - The Ascent of Money_ A Financial History (12517) - found in collection and there is a hard copy at home 
 8. Niall Ferguson - The House of Rothschild_ . Money's Proph (6811) - found in collection
 11. The Better Angels of Our Nature: Why Violence Has Declined by Steven Pinker - found in collection  (Dover Public Library)
-12. Helen Keller : The story of my life (Dover Middle School)
 13. The new Jim Crow (Dover Public Library - eBook only)
 14. T. Whitmore - Memory Manipulation How to Train Your Brain to Think Faster, Concentrate More, and Remember Anything - found in collection
 15. The Art and Science of Remembering Everything - found in collection
@@ -92,9 +97,12 @@ Books founs in the library :
 1. found - Infinite Jest
 
 ---------------------------------------------------------
+
 Extreme Ownership — How U.S. Navy SEALs Lead and Win by Jocko Willink and Leif Babin
 
 ---------------------------------------------------------
+
+Do we have these in the collection? Make a note of it here.
 
 A few books that pair perfectly with Mindset (help with developing a growth mindset), check out:
 
@@ -398,6 +406,8 @@ Michael Wolff - Fire And Fury
 Michelle McNamara - I'll Be Gone In The Dark
 
 Sean Seah - Gone fishing with Buffet
+Helen Keller - The story of my life
+George Horace Lorimer - Letters From a Self-Made Merchant to His Son
 
 ----------------------------------------------------------------------
 
