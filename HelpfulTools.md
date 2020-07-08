@@ -95,6 +95,7 @@ Android (alphabetical order)
 * Foxit PDF Reader (for pdf files)
 * Geeks for Geeks
 * Github client : Fasthub (is there a better one?)
+* Google Podcasts
 * Instapaper
 * Lastpass
 * Maps : Mapquest, OsmAnd
