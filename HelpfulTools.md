@@ -94,19 +94,20 @@ Android (alphabetical order)
 * Email clients : Tutanota, Fairmail
 * Foxit PDF Reader (for pdf files)
 * Geeks for Geeks
-* Github client : Fasthub (is there a better one?)
+* Github client : Fasthub (is there a better one?). Actually, using Firefox browser seems to be an easier option. The app is not all that useful.
 * Google Podcasts
 * Instapaper
 * Lastpass
 * Maps : Mapquest, OsmAnd
 * Messaging app : Whatsapp, Signal
 * Microsoft Word (for word files)
-* Microsoft Launcher (dark mode featue is nice)
+* Microsoft Launcher (dark mode featue is nice) - deleted this. Not missing it all that much.
 * Moonreader
 * NetGuard
 * Quora
 * Spotify
 * Sync (cloud client)
+* Walldrobe (wallpapers from Unsplash)
 * Weather (the weather channel)
 * WriterP (text editor)
 
