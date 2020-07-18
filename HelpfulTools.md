@@ -1,6 +1,9 @@
+Common for all OSs:
+-------------------
+
 IDEs : 
 
-* Eclipse (Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), 
+* Eclipse (Optional Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), 
 * Visual Studio Code :
 	* Themes: 
 		* azure (nice theme but it doesn't apply to file menu on the left)
@@ -16,9 +19,10 @@ IDEs :
 		* Markdown preview
 * jEdit : Plugins: Project Viewer (Not as useful as other editors)
 
-Text editors : 
+Text editors
 
 * Vim
+* gVim
 
 Browsers : 
 
@@ -27,60 +31,60 @@ Browsers :
 
 Miscellaneous : 
 
-* Calibre ebook viewer
+* Calibre ebook editor and viewer
 
 -----------------------------------------------------------------------------------------
 
 Windows:
 -----------
-Git + Good git interface for Windows
+* Git + Good git interface for Windows
 
-Text editors : Notepad++ - plugins: Compare plugin,XML tools plugin, 
-               Vim
-	       
-7 zip
-Console Emulation program - ConEmu
+* Text editors : 
+	* Notepad++ - plugins: Compare plugin,XML tools plugin, 
+	* Vim
+* 7 zip
+* Console Emulation program - ConEmu
 
 Linux:
 -----------
 * Git + Good git interface for Linux - 
-       gitg (lighter and faster - lets us stage individual lines and chunks)
-       GitAhead
+	* gitg (lighter and faster - lets us stage individual lines and chunks)
+	* GitAhead
 				     
 * Ghostwriter - good editor to work with markdown files. formats them exactly the way github expects.
 
-* Directory navigators - Broot
-
-* Text editors - Geany
+* Directory navigators
+	* Broot
                  
-
-* IDEs - 
-       Visual Studio Code
-       Tmux + FuzzyFinder (CntrlP ?) for Vim - seen great examples online. Question is : is this for me?
-       Eclipse
+* IDEs
+	* See common section above.
        
-* File managers - Thunar
-                PCManFM
-                Vifm is a curses based vi[m] like file manager extended with some useful ideas from mutt. If you use vi[m], vifm gives you complete keyboard control over your files without having to learn a new set of commands. It goes not just about vi[m] like keybindings, but also about modes, options, registers, commands and other things you might already like in vi[m].
+* File managers
+	* Thunar
+	* PCManFM
+	* Vifm is a curses based vi[m] like file manager extended with some useful ideas from mutt. If you use vi[m], vifm gives you complete keyboard control over your files without having to learn a new set of commands. It goes not just about vi[m] like keybindings, but also about modes, options, registers, commands and other things you might already like in vi[m].
 		
-* System Monitors - HTop  
+* System Monitors
+	* HTop  
 
-* Screenshot utility - Flameshot
+* Screenshot utility
+	* Flameshot
 
-* Graphics tools - Blender
-                 Pinta
-                 Gimp
+* Graphics tools
+	* Blender (never used)
+	* Pinta (never used)
+	* Gimp (never used)
 		 
-* Office suites - Libre office
-                Open office
-                Calligra
-                wps office?
+* Office suites
+	* Libre office
+	* Open office
+	* Calligra
+	* wps office?
 		
 * pdf arranger (to work with pdf documents - joining multiple pdf documents into one)
 
 * GNU web browser - to keep firefox and regular surfing separate
-
-* arcolinux-meta-fun
+* Nitrogen - wallpaper utility tool. Generally, there are great wallpapers on unsplash.com
 
 -----------------------------------------------------------------------------------------
 
@@ -90,22 +94,30 @@ Android (alphabetical order)
 * Alltrails
 * APAS (Algorithm Problems and Solutions)
 * Asana
-* Browsers : Tor Browser, Firefox
-* Email clients : Tutanota, Fairmail
+* Browsers
+	* Tor Browser
+	* Firefox
+* Email clients
+	* Tutanota
+	* Fairmail
 * Foxit PDF Reader (for pdf files)
 * Geeks for Geeks
-* Github client : Fasthub (is there a better one?). Actually, using Firefox browser seems to be an easier option. The app is not all that useful.
-* Google Podcasts
-* Instapaper
+* Reading
+	* Instapaper
+	* Moonreader
+	* Quora
 * Lastpass
-* Maps : Mapquest, OsmAnd
-* Messaging app : Whatsapp, Signal
+* Maps
+	* Mapquest
+	* OsmAnd
+* Messaging app
+	* Whatsapp
+	* Signal
 * Microsoft Word (for word files)
-* Microsoft Launcher (dark mode featue is nice) - deleted this. Not missing it all that much.
-* Moonreader
 * NetGuard
-* Quora
-* Spotify
+* Listening
+	* Spotify
+	* Google Podcasts
 * Sync (cloud client)
 * Walldrobe (wallpapers from Unsplash)
 * Weather (the weather channel)
@@ -150,10 +162,5 @@ Swagger YAML  editing tool : http://editor.swagger.io/
 use this to generate server code and client code as well.
 
 Stoplight studio is another good one. 
-
------------------------------------------------------------------------------------------
-Google drive alternatives : Tresorit
-compare prices.
-There is one other alternative with better palns and cheaper prices : pDrive?
 
 -----------------------------------------------------------------------------------------
