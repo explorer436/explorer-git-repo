@@ -83,8 +83,8 @@ Linux:
 		
 * pdf arranger (to work with pdf documents - joining multiple pdf documents into one)
 
-* GNU web browser - to keep firefox and regular surfing separate
-* Nitrogen - wallpaper utility tool. Generally, there are great wallpapers on unsplash.com
+* GNU web browser - to keep firefox and regular surfing separate (Chromium is an alternative to this).
+* Variety (Nitrogen is an alternative) - wallpaper utility tool. Generally, there are great wallpapers on unsplash.com. There is an option in Variety's preferences to pull wallpapers from unsplash.
 * USB Stick Formatter
 * USB Image Writer
 

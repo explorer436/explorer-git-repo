@@ -1,3 +1,26 @@
+How to rename a file from terminal in Linux?
+
+In order to rename a file in Linux you can use either of two approaches
+
+1.  Create a copy of the existing file with the new desired name and then delete the old file.
+    $ cp oldfile newfile
+
+    This creates a copy of the same file with a new name in the same location.
+
+    $ rm oldfile
+
+    This will delete the old file keeping the newfile intact.
+
+2.  Rename the file by moving it with the mv command.
+
+    Rename by moving
+
+    $mv old-file-name  new-file-name
+
+    This just moves the old file, to a new name.
+
+-------------------------------------------------------------------
+
 How to launch terminal in Linux : 
 
 Super key (Windows) + T
