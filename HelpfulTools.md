@@ -85,6 +85,8 @@ Linux:
 
 * GNU web browser - to keep firefox and regular surfing separate
 * Nitrogen - wallpaper utility tool. Generally, there are great wallpapers on unsplash.com
+* USB Stick Formatter
+* USB Image Writer
 
 -----------------------------------------------------------------------------------------
 
