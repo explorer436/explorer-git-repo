@@ -10,14 +10,14 @@ IDEs :
 		* light theme (I like to use it in daylight),
 		* GitHub Theme (nice theme that applies to file menu on the left)
 	* Plugins: 
-		* Language Support for Java
-		* Debugger for Java
+		* (It is probably good idea to stick with Eclipse for anything related to Java) Language Support for Java
+		* (It is probably good idea to stick with Eclipse for anything related to Java) Debugger for Java
 		* haskell-linter
 		* Haskell Syatax Highlighting
 		* Open in Vim
 		* Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
 		* Markdown preview
-* jEdit : Plugins: Project Viewer (Not as useful as other editors)
+* jEdit : Plugins: Project Viewer (Not as useful as other editors - Visual Studio Code is probably better)
 
 Text editors
 
@@ -62,13 +62,13 @@ Linux:
 * File managers
 	* Thunar
 	* PCManFM
-	* Vifm is a curses based vi[m] like file manager extended with some useful ideas from mutt. If you use vi[m], vifm gives you complete keyboard control over your files without having to learn a new set of commands. It goes not just about vi[m] like keybindings, but also about modes, options, registers, commands and other things you might already like in vi[m].
+	* Vifm is a curser based vi[m] like file manager extended with some useful ideas from mutt. If you use vi[m], vifm gives you complete keyboard control over your files without having to learn a new set of commands. It goes not just about vi[m] like keybindings, but also about modes, options, registers, commands and other things you might already like in vi[m].
 		
 * System Monitors
 	* HTop  
 
 * Screenshot utility
-	* Flameshot
+	* Flameshot (never used)
 
 * Graphics tools
 	* Blender (never used)
@@ -77,9 +77,9 @@ Linux:
 		 
 * Office suites
 	* Libre office
-	* Open office
-	* Calligra
-	* wps office?
+	* Open office (never used)
+	* Calligra (never used)
+	* wps office? (never used)
 		
 * pdf arranger (to work with pdf documents - joining multiple pdf documents into one)
 
