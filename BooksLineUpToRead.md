@@ -14,27 +14,28 @@ Books line-up :
 Upcoming Target for 2019 : 
 
 1. Cal Newport - So Good They Can't Ignore You - found in collection
-2. Jocko Willink - Extreme Ownership -  How U.S. Navy SEALs Lead and Win - found in collection
-12. Helen Keller - The story of my life - found in collection
-The magic of thinking big
-The inner game of tennis
-The one thing - Gary Keller
-The productivity project - Chris Bailey
-4. Sam Harris - The Moral Landscape : How Science Can Determine Human Values - (Dover Public Library) - found in collection 
-6. Niall Ferguson - Civilization_ The West and the Rest (11123) - found in collection 
-7. Niall Ferguson - The Ascent of Money_ A Financial History (12517) - found in collection and there is a hard copy at home 
-8. Niall Ferguson - The House of Rothschild_ . Money's Proph (6811) - found in collection
-11. The Better Angels of Our Nature: Why Violence Has Declined by Steven Pinker - found in collection  (Dover Public Library)
-13. The new Jim Crow (Dover Public Library - eBook only)
-14. T. Whitmore - Memory Manipulation How to Train Your Brain to Think Faster, Concentrate More, and Remember Anything - found in collection
-15. The Art and Science of Remembering Everything - found in collection
-17. Sapiens : a brief history of humankind by Harari, Yuval N.  (Dover Public Library)
-18. Factfulness : ten reasons we're wrong about the world - and why things are better than you think by Rosling, Hans; Rosling, Ola; Ronnlund, Anna Rosling.  (Dover Public Library)
-20. Waking up : a guide to spirituality without religion by Harris, Sam.   (Dover Public Library)
-21. Data and Goliath : the hidden battles to collect your data and control your world by Schneier, Bruce.   (Dover Public Library)
-23. Digital minimalism : choosing a focused life in a noisy world by Newport, Cal. (Dover Public Library)
-24. Deep work : rules for focused success in a distracted world by Newport, Cal. (Dover Public Library)
-25. Memoirs of Hadrian by Marguerite Yourcenar  (Dover Public Library)
+1. You Are Not So Smart: Why You Have Too Many Friends on Facebook, Why Your Memory Is Mostly Fiction, and 46 Other Ways You're Deluding Yourself by David McRaney
+1. Jocko Willink - Extreme Ownership -  How U.S. Navy SEALs Lead and Win - found in collection
+1. Helen Keller - The story of my life - found in collection
+1. The magic of thinking big
+1. The inner game of tennis
+1. The one thing - Gary Keller
+1. The productivity project - Chris Bailey
+1. Sam Harris - The Moral Landscape : How Science Can Determine Human Values - (Dover Public Library) - found in collection 
+1. Niall Ferguson - Civilization_ The West and the Rest (11123) - found in collection 
+1. Niall Ferguson - The Ascent of Money_ A Financial History (12517) - found in collection and there is a hard copy at home 
+1. Niall Ferguson - The House of Rothschild_ . Money's Proph (6811) - found in collection
+1. The Better Angels of Our Nature: Why Violence Has Declined by Steven Pinker - found in collection  (Dover Public Library)
+1. The new Jim Crow (Dover Public Library - eBook only)
+1. T. Whitmore - Memory Manipulation How to Train Your Brain to Think Faster, Concentrate More, and Remember Anything - found in collection
+1. The Art and Science of Remembering Everything - found in collection
+1. Sapiens : a brief history of humankind by Harari, Yuval N.  (Dover Public Library)
+1. Factfulness : ten reasons we're wrong about the world - and why things are better than you think by Rosling, Hans; Rosling, Ola; Ronnlund, Anna Rosling.  (Dover Public Library)
+1. Waking up : a guide to spirituality without religion by Harris, Sam.   (Dover Public Library)
+1. Data and Goliath : the hidden battles to collect your data and control your world by Schneier, Bruce.   (Dover Public Library)
+1. Digital minimalism : choosing a focused life in a noisy world by Newport, Cal. (Dover Public Library)
+1. Deep work : rules for focused success in a distracted world by Newport, Cal. (Dover Public Library)
+1. Memoirs of Hadrian by Marguerite Yourcenar  (Dover Public Library)
 
 Books founs in the library :
 
