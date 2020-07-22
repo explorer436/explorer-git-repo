@@ -388,15 +388,17 @@ Williams conducted several interviews with Stallman during the writing of the bo
 
 These are not included in the catalog yet :
 
+(alphabetical order)
+
 Ben Horowitz - The Hard Thing About Hard Things
 Cal Newport - Deep Work
 Cal Newport - Digital Minimalism_ Choosing a Focused Life in a Noisy World    
 Cal Newport - So Good They Can't Ignore You
 Chrissy Metz - This Is Me
+David McRaney - You Are Not So Smart: Why You Have Too Many Friends on Facebook, Why Your Memory Is Mostly Fiction, and 46 Other Ways You're Deluding Yourself
+George Horace Lorimer - Letters From a Self-Made Merchant to His Son
 Hans Rosling - Factfulness
-Neil DeGrasse Tyson - Astrophysics for People in a Hurry
-Pete Souza - Obama_ An Intimate Portrait
-Tara Westover - Educated
+Helen Keller - The story of my life
 James Comey - A Higher Loyalty_ Truth, Lies
 Jerome R. Corsi - Killing The Deep State
 Jocko Willink - Extreme Ownership -  How U.S. Navy SEALs Lead and Win
@@ -405,10 +407,10 @@ Madeleine Albright - Fascism_A Warning
 Michael Isikoff - Russian Roulette     
 Michael Wolff - Fire And Fury    
 Michelle McNamara - I'll Be Gone In The Dark
-
+Neil DeGrasse Tyson - Astrophysics for People in a Hurry
+Pete Souza - Obama_ An Intimate Portrait
 Sean Seah - Gone fishing with Buffet
-Helen Keller - The story of my life
-George Horace Lorimer - Letters From a Self-Made Merchant to His Son
+Tara Westover - Educated
 
 ----------------------------------------------------------------------
 
