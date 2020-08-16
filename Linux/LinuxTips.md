@@ -173,11 +173,40 @@ dnf localinstall package-1.2.3.rpm     ## Fedora systems
 
 differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
 
-How to execute .sh programs in fedora :
-Either make the file executable, and then run it while specifying the path:
-chmod +x somefile.sh
-./somefile.sh
+--------------------------------
 
-or, pass it to the shell interpreter like this:
-sh somefile.sh
+How to execute .sh programs in fedora :
+	Either make the file executable, and then run it while specifying the path:
+	chmod +x somefile.sh
+	./somefile.sh
+
+	or, pass it to the shell interpreter like this: sh somefile.sh
+
+--------------------------------
+
+Configure RPMfusion Yum Repository : 
+	Some packages/frameworks may be available only in RPMFusion repository. So, we may have to add it to Fedora using the following commands :
+	
+	sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+	sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+	After the repository is added, they can be installed using commands like the one below :
+	sudo dnf -y install ffmpeg
+
+--------------------------------
+
+How to install OSS code (the open source version of Visual Studio Code) in Fedora?
+
+	RHEL, Fedora, and CentOS based distributions#
+	
+	We currently ship the stable 64-bit VS Code in a yum repository, the following script will install the key and repository:
+	
+	sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+	sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+	
+	Then update the package cache and install the package using dnf (Fedora 22 and above):
+	
+	sudo dnf check-update
+	sudo dnf install code
+
 
