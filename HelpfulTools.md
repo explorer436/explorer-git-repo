@@ -95,7 +95,6 @@ Android (alphabetical order)
 
 * Alltrails
 * APAS (Algorithm Problems and Solutions)
-* Asana
 * Browsers
 	* Tor Browser
 	* Firefox
@@ -104,23 +103,28 @@ Android (alphabetical order)
 	* Fairmail
 * Foxit PDF Reader (for pdf files)
 * Geeks for Geeks
-* Reading
-	* Instapaper
-	* Moonreader
-	* Quora
+* Job search related
+	* Glassdoor
+	* LinkedIn 
 * Lastpass
+* Listening
+	* Spotify
+	* Google Podcasts
 * Maps
 	* Mapquest
 	* OsmAnd
 * Messaging app
 	* Whatsapp
 	* Signal
+	* Facebook Messenger
 * Microsoft Word (for word files)
+* Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
 * NetGuard
-* Listening
-	* Spotify
-	* Google Podcasts
+* Reading
+	* Instapaper
+	* Quora	
 * Sync (cloud client)
+* Vim Master
 * Walldrobe (wallpapers from Unsplash)
 * Weather (the weather channel)
 * WriterP (text editor)
