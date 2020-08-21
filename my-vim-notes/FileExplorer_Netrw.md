@@ -5,7 +5,7 @@ Always show netrw : even when a file is opened in a new tab
 
 The file explorer is just another Vim buffer, so you can navigate up and down with k and j keys, or jump to the bottom with G, etc. If it is a large file listing, you may be quicker finding your target by searching for it.
 
-There are a handful of useful commands for opening the file explorer - either in the current window or a split, focussing on the project root, or the directory of the most recent file edited. This table summarizes:
+There are a handful of useful commands for opening the file explorer - either in the current window or a split, focusing on the project root, or the directory of the most recent file edited. This table summarizes:
 lazy 	mnemonic 	open file explorer
 :e. 	:edit . 	at current working directory
 :sp. 	:split . 	in split at current working directory
@@ -94,6 +94,11 @@ augroup ProjectDrawer
   autocmd!
   autocmd VimEnter * :Vexplore
 augroup END
+
+--------------------------------------------
+
+Vim also supports arbitrary commands to be run following !. For a quick directory listing the following works...  :! ls -lF
+For a more complex command other commands like ack, grep or find can be used.
 
 --------------------------------------------
 
