@@ -63,7 +63,7 @@ Kdenlive - good tool for editing videos.
 -------------------------------------------------------------------
 Recursive copy
 To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
-$ cp -R * /home/mycomputer/backup
+$ cp -R * /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
 
 -------------------------------------------------------------------
 To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip *
