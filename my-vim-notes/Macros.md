@@ -1,3 +1,20 @@
+Recording a macro is a great way to perform a one-time task, or to get things done quickly when you don't want to mess with Vim script or mappings, or if you do not yet know how to do it more elegantly. 
+
+Recording a macro
+
+	Each register is identified by a letter a to z. To enter a macro, type: q<letter><commands>q
+	
+	To execute the macro <number> times (once by default), type: <number>@<letter>
+	
+	So, the complete process looks like:
+	* qd 	start recording to register d
+	* ... 	your complex series of commands
+	* q 	stop recording
+	* @d 	execute your macro
+	* @@ 	execute your macro again 
+
+----------------------------
+
 In Vim, how do we apply a macro to a set of lines?
 
 Use the normal command in Ex mode to execute the macro on multiple/all lines:
