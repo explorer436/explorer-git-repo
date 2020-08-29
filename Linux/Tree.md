@@ -58,6 +58,21 @@ Here, L indicates the maximum display depth of the directory tree.
 For more details, refer the man pages.
 $ man tree
 
+
+------------------------------------------------
+
+In Windows machines : 
+$ tree /a /f > Catalog.txt
+
+Options:
+
+/A - Specifies that alternative characters (plus signs, hyphens, and vertical bars) be used to draw the tree diagram so that it can be printed by printers that don`t support the line-drawing and box-drawing characters (DOS Versions 4 and 5).
+
+/F - Displays the names of the files found within each directory listed.
+
+
+--------------------------
+
 Conclusion
 As you can see in this guide, tree command will give you a nice graphical tree view of the directory structure. You can use this command when you want to view the contents of directories that have tons of other files/folders nested inside their folders.
 
