@@ -1,9 +1,6 @@
-Chris Johnson
-·
-Updated June 1, 2019
-Around 20 years experience with Windows (since 3.1), OS X, Linux and BSD
-
 Is Linux really better than Windows in terms of system architecture?
+
+Chris Johnson · Updated June 1, 2019 Around 20 years experience with Windows (since 3.1), OS X, Linux and BSD
 
 This is one of those fundamental questions every deveolper, technician and IT specialists will always stumble across.
 

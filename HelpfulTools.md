@@ -17,7 +17,7 @@ IDEs :
 		* Open in Vim
 		* Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
 		* Markdown preview
-* jEdit : Plugins: Project Viewer (Not as useful as other editors - Visual Studio Code is probably better)
+* (ignore this) jEdit : Plugins: Project Viewer (Not as useful as other editors - Visual Studio Code is probably better)
 
 Text editors
 
@@ -38,7 +38,6 @@ Miscellaneous :
 Windows:
 -----------
 * Git + Good git interface for Windows
-
 * Text editors : 
 	* Notepad++ - plugins: Compare plugin,XML tools plugin, 
 	* Vim
@@ -50,8 +49,9 @@ Linux:
 * Git + Good git interface for Linux - 
 	* gitg (lighter and faster - lets us stage individual lines and chunks)
 	* GitAhead
+	* Eclipse eGit plugin is probably best. It works the same way in all OSs and it has all the features we really need.
 				     
-* Ghostwriter - good editor to work with markdown files. formats them exactly the way github expects. One problem that I noticed with this app is, if you open a file in it, and make changes to that file using some other app at the same time (like Vim, VS Code, etc.) and save the changes to the file there, those changes are not reloaded into Ghostwriter automatically. What is worse is, as soon as the file is closed in Ghostwriter, the changes made to the file (using the other apps) are reverted. All those changes are lost. This is a bad use case. This app is good for looking at files and making changes to files but it is not great at working with other apps simultaneously. Maybe, it would be a good idea to stick to Visual Studio Code for md files as well. The markdown preview in Visual Studio Code is not that bad. Use Ghostwriter only if it is absolutely mandatory.
+* Ghostwriter - good editor to work with markdown files. Formats them exactly the way github expects. One problem that I noticed with this app is, if you open a file in it, and make changes to that file using some other app at the same time (like Vim, VS Code, etc.) and save the changes to the file there, those changes are not reloaded into Ghostwriter automatically. What is worse is, as soon as the file is closed in Ghostwriter, the changes made to the file (using the other apps) are reverted. All those changes are lost. This is a bad use case. This app is good for looking at files and making changes to files but it is not great at working with other apps simultaneously. Maybe, it would be a good idea to stick to Visual Studio Code for md files as well. The markdown preview in Visual Studio Code is not that bad. Use Ghostwriter only if it is absolutely mandatory.
 
 * Directory navigators
 	* Broot
@@ -61,7 +61,7 @@ Linux:
        
 * File managers
 	* Thunar
-	* PCManFM
+	* PCManFM (not really necessary if you already have Thunar)
 	* Vifm is a curser based vi[m] like file manager extended with some useful ideas from mutt. If you use vi[m], vifm gives you complete keyboard control over your files without having to learn a new set of commands. It goes not just about vi[m] like keybindings, but also about modes, options, registers, commands and other things you might already like in vi[m].
 		
 * System Monitors
@@ -127,7 +127,7 @@ Android (alphabetical order)
 * Vim Master
 * Walldrobe (wallpapers from Unsplash)
 * Weather (the weather channel)
-* WriterP (text editor)
+* WriterP (simple text editor)
 
 -----------------------------------------------------------------------------------------
 How to use multiple workspaces : 
