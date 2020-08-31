@@ -94,15 +94,19 @@ Android (alphabetical order)
 -----------
 
 * Alltrails
+* Algorithms (visual explanation)
 * APAS (Algorithm Problems and Solutions)
 * Browsers
 	* Tor Browser
 	* Firefox
+* Dropbox (optional)
 * Email clients
 	* Tutanota
 	* Fairmail
 * Foxit PDF Reader (for pdf files)
 * Geeks for Geeks
+* Glassdoor
+* Is there an app for indeed?
 * Job search related
 	* Glassdoor
 	* LinkedIn 
@@ -113,11 +117,12 @@ Android (alphabetical order)
 * Maps
 	* Mapquest
 	* OsmAnd
+* Mega Client
 * Messaging app
 	* Whatsapp
 	* Signal
 	* Facebook Messenger
-* Microsoft Word (for word files)
+* Microsoft Authenticator and Word (for word files)
 * Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
 * NetGuard
 * Reading
