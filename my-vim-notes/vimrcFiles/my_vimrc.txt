@@ -3,6 +3,8 @@
 "If it is not already available, create it manually.
 "The plugins also go into the ".vim" directory located here : /home/user/.vim
 
+"On Windows, when you start Vim normally, it *either* runs the file “C:\Documents and Settings\(user name)\_vimrc” (where “(user name)” is replaced by the actual user "name); *or*, if that file doesn’t exist (it usually doesn’t, for most users), it runs the file “C:\Program Files\vim\_vimrc”.
+
 "For a clean start : 
 "To remove the .vim directory, open terminal and run this : rm -rf ~/.vim
 "To remove the .vimrc file, open terminal and run this : rm ~/.vimrc
@@ -58,8 +60,9 @@
 	" set autowriteall"
 	set hidden	
 
+	syntax on                   " basic highlighting for a lot of languages. If you want more highlighting for your language, you may have to download additional stuff.
 	set bs=indent,eol,start         " allow backspacing over everything in insert mode
-	"set ai                 " always set autoindenting on
+	set ai                 " always set autoindenting on
 	"set backup             " keep a backup file
 	set viminfo='20,\"50    " read/write a .viminfo file, don't store more than 50 lines of registers
 	set history=50          " keep 50 lines of command line history
@@ -67,19 +70,19 @@
 	"set guicursor=           " what does this do?
 	"set noshowmatch          " what does this do?
 	set relativenumber        " shows relative line numbers
-	"set number               " shows line numbers - we are not going to use this because we are going to use relative line numbers.
+	set number               " shows line numbers - we are not going to use this because we are going to use relative line numbers.
 	set hlsearch            " what does this do?
 	set nohlsearch            " what does this do?
-	"set noerrorbells            " what does this do?
-	set tabstop=4 softtabstop=4            " what does this do?
+	set noerrorbells            " will not make error sounds when we go to the end of the line, etc.
+	set tabstop=4 softtabstop=4            " tabstop means it is only 4 characters long. softtabstop means it is only 4 spaces long.
 	set shiftwidth=4            " every time we hit tab, it shifts the characters by 4 spaces instead of 8.
-	"set expandtab            " what does this do?
-	set smartindent            " what does this do?
-	"set nowrap            " what does this do?
+	set expandtab            " convert it from tab character to spaces
+	set smartindent            " vim tires its best to indent the code for us
+	"set nowrap            " if the line goes off the screen, keep going to the right instead of showing it on the next line on the screen.
 	set ignorecase            " what does this do?
-	set smartcase            " what does this do?
-	"set noswapfile            " what does this do?
-	"set nobackup            " what does this do?
+	"set smartcase            " it ewill do case sensitive searching until we put in a capital letter.
+	set noswapfile            " do not create vim.swap files all throughout the project.
+	"set nobackup            " it will not create backup files. If you use this, make sure you also use the undodir and undofile.
 	"set undodir=~/.vim/undodir            " what does this do?
 	"set undofile            " what does this do?
 	set incsearch            " turns on incremental search
@@ -89,7 +92,7 @@
 	"set updatetime=50            " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable delays and poor user experience.
 	"set shortmess+=c            " Don't pass messages to |ins-completion-menu|.
 	set colorcolumn=120            " shows a line at the 80 column of the page
-	highlight ColorColumn ctermbg=0 guibg=lightgrey            " the color that needs to be used for the 80 column line
+	highlight ColorColumn ctermbg=0 guibg=lightgrey            " the color that needs to be used for the 80 column line	
 
 
 "------------------------------
