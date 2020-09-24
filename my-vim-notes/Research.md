@@ -25,8 +25,9 @@ It can then provide for capabilities including but not limited to:
 
 How to switch between Vim and terminal when using Vim in a terminal (found this when looking for differences between Vim and GVim)
 
-with vim you can get benefit from ctrl-Z
+With vim (not gVim) you can get benefit from ctrl-Z
 
 if you want to test your codes in shell/terminal, or execute some shell commands during your editing. 
 In vim you can just ctrl-z to back to terminal do what you want, and fg back to vim. 
 With Gvim, you cannot do that. 
+

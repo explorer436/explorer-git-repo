@@ -3,7 +3,8 @@ Common for all OSs:
 
 IDEs : 
 
-* Eclipse (Optional Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4), 
+* IntelliJ Idea (Probably don't need Visual Studio Code if we have this.)
+* Eclipse (Optional Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4) 
 * Visual Studio Code :
 	* Themes: 
 		* azure (nice theme but it doesn't apply to file menu on the left)

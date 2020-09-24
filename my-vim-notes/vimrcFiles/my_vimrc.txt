@@ -20,21 +20,55 @@
 "(we can copy paste everything starting from the line below.)
 
 "------------------------------
-
-	" custom settings for the netrw file/directory menu...
-	let g:netrw_liststyle = 3            " what does this do?
-	let g:netrw_browse_split = 3            " what does this do?
-	let g:netrw_banner = 0            " what does this do?
-	let g:netrw_winsize = 25            " what does this do?
-	let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'            " what does this do?
-	
 	" Set 'nocompatible' to ward off unexpected things that your distro might
 	" have made, as well as sanely reset options when re-sourcing .vimrc
 	set nocompatible
+"------------------------------
+	let mapleader = " "        " set space bar as the leader key
+    nnoremap <leader>u :UndotreeShow<CR>
+	nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+    nnoremap <leader>h :wincmd h<CR>
+    nnoremap <leader>j :wincmd j<CR>
+    nnoremap <leader>k :wincmd k<CR>
+    nnoremap <leader>l :wincmd l<CR>
+
+    " pressing + is too difficult. = is + without having to press shift.
+    " pressing - is easy enough.
+    nnoremap <Leader>= :vertical resize +5<CR>
+    nnoremap <Leader>- :vertical resize -5<CR>
+
+"------------------------------
+	" custom settings for the netrw file/directory menu...
+		    " available netrw_liststyle options - 
+		    " 1 (thin), 2 (long), 3 (wide), 4 (tree)
+			let g:netrw_liststyle = 3            	
+		
+		    " netrw_browse_split| option - zero by default
+		    " used to cause the opening of files to be done in a new window or tab instead of the default.
+		    " When the option is one or two, the splitting will be taken horizontally or vertically, respectively.
+		    " When the option is set to three, a <cr> will cause the file to appear in a new tab.
+		    let g:netrw_browse_split = 2
+		
+		    " enable/suppress the banner. =0: suppress the banner =1: banner is enabled (default)
+			let g:netrw_banner = 0
+		
+		    " netrw_winsize - 
+            " specify initial size of new windows made with "o" (see |netrw-o|), "v" (see |netrw-v|),
+            " |:Hexplore| or |:Vexplore|.
+            " The g:netrw_winsize is an integer describing 
+            " the percentage of the current netrw buffer's window to be used for the new window.
+			let g:netrw_winsize = 25
+		
+		    " netrw_bufsettings - you can control netrw's buffer settings; change
+		    " these if you want to change line number displays, relative line number
+		    " displays and other settings in netrw menu.
+			let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+"------------------------------
  
-	" Attempt to determine the type of a file based on its name and possibly its
-	" contents. Use this to allow intelligent auto-indenting for each filetype,
-	" and for plugins that are filetype specific.
+	" Attempt to determine the type of a file 
+    " based on its name and possibly its contents.
+    " Use this to allow intelligent auto-indenting for each filetype,
+    " and for plugins that are filetype specific.
 	filetype indent plugin on
  
 	" Enable color syntax highlighting - wherever applicable
@@ -60,7 +94,11 @@
 	" set autowriteall"
 	set hidden	
 
-	syntax on                   " basic highlighting for a lot of languages. If you want more highlighting for your language, you may have to download additional stuff.
+    " Basic highlighting for a lot of languages.
+    " If you want more highlighting for your language,
+    " you may have to download additional stuff.
+	syntax on                   
+
 	set bs=indent,eol,start         " allow backspacing over everything in insert mode
 	set ai                 " always set autoindenting on
 	"set backup             " keep a backup file
@@ -68,18 +106,18 @@
 	set history=50          " keep 50 lines of command line history
 	set ruler               " show the cursor position all the time
 	"set guicursor=           " what does this do?
-	"set noshowmatch          " what does this do?
+	"set noshowmatch          " When a bracket is inserted, briefly jump to the matching one.
 	set relativenumber        " shows relative line numbers
-	set number               " shows line numbers - we are not going to use this because we are going to use relative line numbers.
-	set hlsearch            " what does this do?
-	set nohlsearch            " what does this do?
+	"set number               " shows line numbers - we are not going to use this because we are going to use relative line numbers.
+	set hlsearch            " When there is a previous search pattern, highlight all its matches.
+	"set nohlsearch            " opposite of set hlsearch
 	set noerrorbells            " will not make error sounds when we go to the end of the line, etc.
 	set tabstop=4 softtabstop=4            " tabstop means it is only 4 characters long. softtabstop means it is only 4 spaces long.
 	set shiftwidth=4            " every time we hit tab, it shifts the characters by 4 spaces instead of 8.
 	set expandtab            " convert it from tab character to spaces
 	set smartindent            " vim tires its best to indent the code for us
 	"set nowrap            " if the line goes off the screen, keep going to the right instead of showing it on the next line on the screen.
-	set ignorecase            " what does this do?
+	set ignorecase            " Ignore case in search patterns.  Also used when searching in the tags file.
 	"set smartcase            " it ewill do case sensitive searching until we put in a capital letter.
 	set noswapfile            " do not create vim.swap files all throughout the project.
 	"set nobackup            " it will not create backup files. If you use this, make sure you also use the undodir and undofile.
@@ -102,7 +140,10 @@
 
 "------------------------------
 
-set tags=./tags;/         " This will look in the current directory for "tags", and work up the tree towards root until one is found. In other words, you can be anywhere in your source tree instead of just the root of it.
+" This will look in the current directory for "tags",
+" and work up the tree towards root until one is found.
+" In other words, you can be anywhere in your source tree instead of just the root of it.
+set tags=./tags;/         
 
 " Before this, visit the github project for instructions about installing plugged : https://github.com/junegunn/vim-plug
 " We need to run a command to Download plug.vim and put it in the "autoload" directory.

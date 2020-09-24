@@ -1,5 +1,8 @@
 How to : always show line numbers in netrw:
-Always show netrw : even when a file is opened in a new tab
+		    " netrw_bufsettings - you can control netrw's buffer settings; change
+		    " these if you want to change line number displays, relative line number
+		    " displays and other settings in netrw menu.
+			let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 --------------------------------------------
 
