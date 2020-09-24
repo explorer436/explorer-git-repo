@@ -1,3 +1,8 @@
+Open question - netrw - always fix the width at 25%. Right now, it is at 25% on start-up but when a new buffer is opened, its size is changing.
+
+------------------------------------------
+
+
 How to : always show line numbers in netrw:
 		    " netrw_bufsettings - you can control netrw's buffer settings; change
 		    " these if you want to change line number displays, relative line number

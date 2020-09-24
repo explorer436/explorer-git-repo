@@ -1,3 +1,7 @@
+------------------------------------------
+
+How to insert numbered bullet list for a few lines in a file?
+
 It's not a macro solution, but at least it's easy:
 
 To add numbers to all lines - 
@@ -16,3 +20,4 @@ Formatting
 
 To add some characters (., :, )) after the numbers, select them in visual block (Ctrl+v), then append the character (A, type the character, then finish with Esc).
 
+------------------------------------------

@@ -2,6 +2,7 @@ https://vim.fandom.com/wiki/Quick_tips_for_using_tab_pages
 https://vim.fandom.com/wiki/Using_tab_pages
 
 -------------------------------------------------------------------------------------
+
 (this is the general method to update multiple java files at once)
 
 If you want to open all files matching the pattern in subfolders - :args **/*.java
@@ -12,7 +13,15 @@ To replace four white spaces in java files with a tab use this - :bufdo exexute 
 1. :bufdo execute "global/^{/normal -gJ" | update
 1. :bufdo execute "%s/){/) {/g" | update
 
+------------------------------------------
+
+ Open question - how to move buffers from one tab to another or into split windows when wanted?
+
 -------------------------------------------------------------------------------------
+
+How to open buffers in tabs from netrw
+Open it in a window and move it into a tab using Cntrl W T
+
 How do I move an existing window to a new tab?
 
 Is there a way to take an existing window (split) and put it into a new tab?
@@ -20,6 +29,7 @@ Is there a way to take an existing window (split) and put it into a new tab?
 Ctrl W followed by T
 
 -------------------------------------------------------------------------------------
+ 
  Opening a tab 
  
  To create a new file in a new tab : tabnew
@@ -27,6 +37,7 @@ Ctrl W followed by T
  This will open a new tab with an empty buffer.  
  
 -------------------------------------------------------------------------------------
+ 
  Switching between tabs in Vim:  
  
 1. Go to the next tab :gt 
@@ -55,3 +66,4 @@ Ctrl+W |: set width (ex. 50<C-w>|)
 Ctrl+W =: equalize width and height of all windows
 See also: :help CTRL-W
 
+-------------------------------------------------------------------------------------  

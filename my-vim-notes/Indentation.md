@@ -14,6 +14,8 @@ End of line
 
 Answer : To format a line to the left I use :left. Use this format an entire file :%le
 
+--------------------------------------------
+
 
 How to insert white spaces before a line?
 Here's one way to move selected text over a few spaces:
@@ -25,4 +27,4 @@ Here's one way to move selected text over a few spaces:
 
 What you've done is replace the beginning of each selected line (the ^ symbol means "the beginning of the line") with spaces. 
 
-
+--------------------------------------------
