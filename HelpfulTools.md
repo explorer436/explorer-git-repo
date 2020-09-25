@@ -18,6 +18,9 @@ IDEs :
 		* Open in Vim
 		* Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
 		* Markdown preview
+	* Customizations:
+		* To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
+
 * (ignore this) jEdit : Plugins: Project Viewer (Not as useful as other editors - Visual Studio Code is probably better)
 
 Text editors
