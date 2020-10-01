@@ -1,6 +1,6 @@
 Add semicolons;
 
-Simply add a semicolon at the end of each non-blank line;
+Simply add a semicolon at the end of each non-blank (non-empty) line;
 
  super.onCreate(savedInstanceState);
  setContentView(R.layout.activity_second);

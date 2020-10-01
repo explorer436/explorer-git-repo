@@ -106,7 +106,9 @@ Android (alphabetical order)
 * Dropbox (optional)
 * Email clients
 	* Tutanota
-	* Fairmail
+	* Fairmail (using this for Gmail and hotmail accounts right now)
+	* Microsoft Outlook (Fusion Webmail and hotmail accounts - might also work for Gmail and other accounts)
+	* Yahoomail (good with Yahoo accounts - if this cannot be set up in other email clients - can we set it up in Microsoft Outlook app?)
 * Foxit PDF Reader (for pdf files)
 * Geeks for Geeks
 * Glassdoor
@@ -124,7 +126,7 @@ Android (alphabetical order)
 * Mega Client
 * Messaging app
 	* Whatsapp
-	* Signal
+	* Signal (Not using this all that much.)
 	* Facebook Messenger
 * Microsoft Authenticator and Word (for word files)
 * Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
