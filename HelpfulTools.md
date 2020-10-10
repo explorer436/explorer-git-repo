@@ -97,48 +97,44 @@ Linux:
 Android (alphabetical order)
 -----------
 
-* Alltrails
-* Algorithms (visual explanation)
 * APAS (Algorithm Problems and Solutions)
-* Browsers
-	* Tor Browser
-	* Firefox
+* Algorithms (visual explanation)
+* Alltrails
+* Authenticator (Microsoft)
 * Dropbox (optional)
-* Email clients
-	* Tutanota
-	* Fairmail (using this for Gmail and hotmail accounts right now)
-	* Microsoft Outlook (Fusion Webmail and hotmail accounts - might also work for Gmail and other accounts)
-	* Yahoomail (good with Yahoo accounts - if this cannot be set up in other email clients - can we set it up in Microsoft Outlook app?)
+* Fairmail (using this for Gmail and hotmail accounts right now)
+* Firefox (browser)
 * Foxit PDF Reader (for pdf files)
+* GPS Tools
 * Geeks for Geeks
-* Glassdoor
-* Is there an app for indeed?
-* Job search related
-	* Glassdoor
-	* LinkedIn 
+* GitHub
+* Glassdoor (Job search) Is there an app for indeed?
+* Instapaper (Reading)
 * Lastpass
-* Listening
-	* Spotify
-	* Google Podcasts
-* Maps
-	* Mapquest
-	* OsmAnd
+* LinkedIn (Job search) (Not using it all that much)
+* Mapquest (maps)
 * Mega Client
-* Messaging app
-	* Whatsapp
-	* Signal (Not using this all that much.)
-	* Facebook Messenger
-* Microsoft Authenticator and Word (for word files)
+* Mega Sync
+* Messenger (Facebook) (Messaging apps)
 * Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
 * NetGuard
-* Reading
-	* Instapaper
-	* Quora	
+* OsmAnd (maps)
+* Outlook (Microsoft) (For FusionAlliance Webmail and hotmail accounts - might also work for Gmail and other accounts) (Email client)
+* Podcasts (Google) (Podcasts)
+* Quora	 (Reading)
+* Spotify (Music)
 * Sync (cloud client)
+* The weather channel (weather)
+* Tor Browser (browser)
+* Tutanota (Email client)
+* Udemy
 * Vim Master
 * Walldrobe (wallpapers from Unsplash)
-* Weather (the weather channel)
+* Whatsapp (Messaging apps)
+* Word (Microsoft) (for word files)
 * WriterP (simple text editor)
+* Yahoomail (good with Yahoo accounts - if this cannot be set up in other email clients - can we set it up in Microsoft Outlook app?) (Email client)
+* Youtube
 
 -----------------------------------------------------------------------------------------
 How to use multiple workspaces : 
