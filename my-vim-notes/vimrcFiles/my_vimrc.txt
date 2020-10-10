@@ -1,9 +1,14 @@
-"In Linux, the system vimrc file is in /etc (if we want to change vim settings, it is a good idea to not mess with the system vimrc)
+"In Linux, the system vimrc file is in /etc (if we want to change vim settings, 
+"it is a good idea to not mess with the system vimrc)
 "(Do all the customizations to user vimrc which is located at /home/user/.vimrc)
 "If it is not already available, create it manually.
 "The plugins also go into the ".vim" directory located here : /home/user/.vim
 
-"On Windows, when you start Vim normally, it *either* runs the file “C:\Documents and Settings\(user name)\_vimrc” (where “(user name)” is replaced by the actual user "name); *or*, if that file doesn’t exist (it usually doesn’t, for most users), it runs the file “C:\Program Files\vim\_vimrc”.
+"On Windows, when you start Vim normally, 
+"it *either* runs the file “C:\Documents and Settings\(user name)\_vimrc” 
+"(where “(user name)” is replaced by the actual user "name); 
+"*or*, if that file doesn’t exist (it usually doesn’t, for most users),
+"it runs the file “C:\Program Files\vim\_vimrc”.
 
 "For a clean start : 
 "To remove the .vim directory, open terminal and run this : rm -rf ~/.vim
@@ -11,10 +16,14 @@
 
 "To create and edit our .vimrc, open terminal and run this : vim ~/.vimrc
 
-"After making changes to the .vimrc file, if we want to make them effective immediately (called sourcing them), :source % (from within vim)
-"After making changes to the list of plugins in the .vimrc file, if we want to make them effective immediately, :PlugInstall (from within vim)
+"After making changes to the .vimrc file,
+"if we want to make them effective immediately (called sourcing them),
+":source % (from within vim)
+"After making changes to the list of plugins in the .vimrc file,
+"if we want to make them effective immediately, :PlugInstall (from within vim)
 
-"Look at the githut repo for the plugin manager "plug" for details about installing it : https://github.com/junegunn/vim-plug 
+"Look at the githut repo for the plugin manager "plug" 
+"for details about installing it : https://github.com/junegunn/vim-plug 
 
 
 "(we can copy paste everything starting from the line below.)
