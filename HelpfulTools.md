@@ -52,16 +52,14 @@ Linux:
 -----------
 * Git + Good git interface for Linux - 
 	* gitg (lighter and faster - lets us stage individual lines and chunks)
-	* GitAhead
+	* GitAhead (Did not use this all that much)
 	* Eclipse eGit plugin is probably best. It works the same way in all OSs and it has all the features we really need.
 				     
 * Ghostwriter - good editor to work with markdown files. Formats them exactly the way github expects. One problem that I noticed with this app is, if you open a file in it, and make changes to that file using some other app at the same time (like Vim, VS Code, etc.) and save the changes to the file there, those changes are not reloaded into Ghostwriter automatically. What is worse is, as soon as the file is closed in Ghostwriter, the changes made to the file (using the other apps) are reverted. All those changes are lost. This is a bad use case. This app is good for looking at files and making changes to files but it is not great at working with other apps simultaneously. Maybe, it would be a good idea to stick to Visual Studio Code for md files as well. The markdown preview in Visual Studio Code is not that bad. Use Ghostwriter only if it is absolutely mandatory.
 
-* Directory navigators
-	* Broot
+* Broot (Directory navigators)
                  
-* IDEs
-	* See common section above.
+* IDEs (See common section above)
        
 * File managers
 	* Thunar
@@ -83,12 +81,14 @@ Linux:
 	* Libre office
 	* Open office (never used)
 	* Calligra (never used)
-	* wps office? (never used)
+	* wps office? (used - the interface is good. But support for fonts is not as good as that of LibreOffice? Some fonts were totally unreadable)
 		
+* img2pdf (to convert images into pdf documents) - (usage: in terminal: $ img2pdf img1.png img2.jpg -o out.pdf) (img2pdf --help)
 * pdf arranger (to work with pdf documents - joining multiple pdf documents into one)
 
 * GNU web browser - to keep firefox and regular surfing separate (Chromium is an alternative to this).
 * Variety (Nitrogen is an alternative) - wallpaper utility tool. Generally, there are great wallpapers on unsplash.com. There is an option in Variety's preferences to pull wallpapers from unsplash.
+
 * USB Stick Formatter
 * USB Image Writer
 
