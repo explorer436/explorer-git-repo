@@ -154,7 +154,8 @@
 " In other words, you can be anywhere in your source tree instead of just the root of it.
 set tags=./tags;/         
 
-" Before this, visit the github project for instructions about installing plugged : https://github.com/junegunn/vim-plug
+" Before this, visit the github project for instructions about installing plugged : 
+" https://github.com/junegunn/vim-plug
 " We need to run a command to Download plug.vim and put it in the "autoload" directory.
 call plug#begin('~/.vim/plugged')
 
