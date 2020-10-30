@@ -34,9 +34,8 @@
 "copy paste everything starting from the line below.
 
 "------------------------------
-	" Set 'nocompatible' to ward off unexpected things that your distro might
-	" have made, as well as sanely reset options when re-sourcing .vimrc
-	set nocompatible
+	set nocompatible " Set 'nocompatible' to ward off unexpected things that your distro might
+	                 " have made, as well as sanely reset options when re-sourcing .vimrc
 "------------------------------
 	let mapleader = " "        " set space bar as the leader key
     nnoremap <leader>u :UndotreeShow<CR>
@@ -52,41 +51,43 @@
     nnoremap <Leader>- :vertical resize -5<CR>
 
 "------------------------------
-	" custom settings for the netrw file/directory menu...
-	" available netrw_liststyle options - 
-	" 1 (thin), 2 (long), 3 (wide), 4 (tree)
-	let g:netrw_liststyle = 3            	
+	let g:netrw_liststyle = 3 " custom settings for the netrw file/directory menu...
+                              " available netrw_liststyle options - 
+                              " 1 (thin), 2 (long), 3 (wide), 4 (tree)
+
 	
-	" netrw_browse_split| option - zero by default
-	" used to cause the opening of files to be done in a new window or tab instead of the default.
-	" When the option is one or two, the splitting will be taken horizontally or vertically, respectively.
-	" When the option is set to three, a <cr> will cause the file to appear in a new tab.
-	let g:netrw_browse_split = 3
+	let g:netrw_browse_split = 3 " netrw_browse_split| option - zero by default
+                                 " used to cause the opening of files to be done in a new window or tab instead of the default.
+                                 " When the option is one or two, the splitting will be taken horizontally or vertically, respectively.
+                                 " When the option is set to three, a <cr> will cause the file to appear in a new tab.
+
 	
-	" enable/suppress the banner. =0: suppress the banner =1: banner is enabled (default)
-	let g:netrw_banner = 0
+	let g:netrw_banner = 0 " enable/suppress the banner. =0: suppress the banner =1: banner is enabled (default)
+
 	
-	" netrw_winsize - 
-    " specify initial size of new windows made with "o" (see |netrw-o|), "v" (see |netrw-v|),
-    " |:Hexplore| or |:Vexplore|.
-    " The g:netrw_winsize is an integer describing 
-    " the percentage of the current netrw buffer's window to be used for the new window.
-	let g:netrw_winsize = 25
+	let g:netrw_winsize = 25 " netrw_winsize - 
+                             " specify initial size of new windows made with "o" (see |netrw-o|), "v" (see |netrw-v|),
+                             " |:Hexplore| or |:Vexplore|.
+                             " The g:netrw_winsize is an integer describing 
+                             " the percentage of the current netrw buffer's window to be used for the new window.
+
 	
-	" netrw_bufsettings - you can control netrw's buffer settings; change
-	" these if you want to change line number displays, relative line number
-	" displays and other settings in netrw menu.
-	let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+	let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro' " netrw_bufsettings - you can control netrw's buffer settings; change
+                                                             " these if you want to change line number displays, relative line number
+                                                             " displays and other settings in netrw menu.
+
 "------------------------------
  
-	" Attempt to determine the type of a file 
-    " based on its name and possibly its contents.
-    " Use this to allow intelligent auto-indenting for each filetype,
-    " and for plugins that are filetype specific.
-	filetype indent plugin on
+	filetype indent plugin on " Attempt to determine the type of a file 
+                              " based on its name and possibly its contents.
+                              " Use this to allow intelligent auto-indenting for each filetype,
+                              " and for plugins that are filetype specific.
+
  
-	" Enable color syntax highlighting - wherever applicable
-	syntax on
+    syntax on " Enable color syntax highlighting - wherever applicable
+              " Basic highlighting for a lot of languages.
+              " If you want more highlighting for your language,
+              " you may have to download additional stuff.
 	
 	" Vim with default settings does not allow easy switching between multiple files
 	" in the same editor window. Users can use multiple split windows or multiple
@@ -107,11 +108,11 @@
 	" set confirm
 	" set autowriteall"
 	set hidden	
+    "File find options in addition to `hidden`
+    set path+=**
+    set wildmenu
+    set wildignore+=**/node_modules/**
 
-    " Basic highlighting for a lot of languages.
-    " If you want more highlighting for your language,
-    " you may have to download additional stuff.
-	syntax on                   
 
 	set bs=indent,eol,start         " allow backspacing over everything in insert mode
 	set ai                 " always set autoindenting on
