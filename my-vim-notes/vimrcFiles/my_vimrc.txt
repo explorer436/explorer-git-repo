@@ -56,7 +56,7 @@
 	" used to cause the opening of files to be done in a new window or tab instead of the default.
 	" When the option is one or two, the splitting will be taken horizontally or vertically, respectively.
 	" When the option is set to three, a <cr> will cause the file to appear in a new tab.
-	let g:netrw_browse_split = 2
+	let g:netrw_browse_split = 3
 	
 	" enable/suppress the banner. =0: suppress the banner =1: banner is enabled (default)
 	let g:netrw_banner = 0
