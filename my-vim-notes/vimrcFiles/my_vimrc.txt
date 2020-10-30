@@ -1,3 +1,33 @@
+"In Linux, the system vimrc file is in /etc.
+"However, if we want to change vim settings, do not mess with the system vimrc.
+"Instead, do all the customizations to user vimrc 
+"which is located at /home/user/.vimrc
+"If it is not already available, create it manually.
+"The plugins also go into the ".vim" directory located here : /home/user/.vim
+
+"To create and edit our .vimrc, open terminal and run this : vim ~/.vimrc
+
+"For a clean start : 
+"To remove the .vim directory, open terminal and run this : rm -rf ~/.vim
+"To remove the .vimrc file, open terminal and run this : rm ~/.vimrc
+
+"On Windows, when you start Vim normally, 
+"it *either* runs the file “C:\Documents and Settings\(user name)\_vimrc” 
+"(where “(user name)” is replaced by the actual user "name); 
+"*or*, if that file doesn’t exist (it usually doesn’t, for most users),
+"it runs the file “C:\Program Files\vim\_vimrc”.
+
+"After making changes to the .vimrc file,
+"if we want to make them effective immediately (called sourcing them),
+":source % (from within vim)
+"After making changes to the list of plugins in the .vimrc file,
+"if we want to make them effective immediately, :PlugInstall (from within vim)
+
+"Look at the githut repo for the plugin manager "plug" 
+"for details about installing it : https://github.com/junegunn/vim-plug 
+
+"(we can copy paste everything starting from the line below.)
+
 "------------------------------
 	" Set 'nocompatible' to ward off unexpected things that your distro might
 	" have made, as well as sanely reset options when re-sourcing .vimrc
@@ -18,30 +48,30 @@
 
 "------------------------------
 	" custom settings for the netrw file/directory menu...
-		    " available netrw_liststyle options - 
-		    " 1 (thin), 2 (long), 3 (wide), 4 (tree)
-			let g:netrw_liststyle = 3            	
-		
-		    " netrw_browse_split| option - zero by default
-		    " used to cause the opening of files to be done in a new window or tab instead of the default.
-		    " When the option is one or two, the splitting will be taken horizontally or vertically, respectively.
-		    " When the option is set to three, a <cr> will cause the file to appear in a new tab.
-		    let g:netrw_browse_split = 2
-		
-		    " enable/suppress the banner. =0: suppress the banner =1: banner is enabled (default)
-			let g:netrw_banner = 0
-		
-		    " netrw_winsize - 
-            " specify initial size of new windows made with "o" (see |netrw-o|), "v" (see |netrw-v|),
-            " |:Hexplore| or |:Vexplore|.
-            " The g:netrw_winsize is an integer describing 
-            " the percentage of the current netrw buffer's window to be used for the new window.
-			let g:netrw_winsize = 25
-		
-		    " netrw_bufsettings - you can control netrw's buffer settings; change
-		    " these if you want to change line number displays, relative line number
-		    " displays and other settings in netrw menu.
-			let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+	" available netrw_liststyle options - 
+	" 1 (thin), 2 (long), 3 (wide), 4 (tree)
+	let g:netrw_liststyle = 3            	
+	
+	" netrw_browse_split| option - zero by default
+	" used to cause the opening of files to be done in a new window or tab instead of the default.
+	" When the option is one or two, the splitting will be taken horizontally or vertically, respectively.
+	" When the option is set to three, a <cr> will cause the file to appear in a new tab.
+	let g:netrw_browse_split = 2
+	
+	" enable/suppress the banner. =0: suppress the banner =1: banner is enabled (default)
+	let g:netrw_banner = 0
+	
+	" netrw_winsize - 
+    " specify initial size of new windows made with "o" (see |netrw-o|), "v" (see |netrw-v|),
+    " |:Hexplore| or |:Vexplore|.
+    " The g:netrw_winsize is an integer describing 
+    " the percentage of the current netrw buffer's window to be used for the new window.
+	let g:netrw_winsize = 25
+	
+	" netrw_bufsettings - you can control netrw's buffer settings; change
+	" these if you want to change line number displays, relative line number
+	" displays and other settings in netrw menu.
+	let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 "------------------------------
  
 	" Attempt to determine the type of a file 
