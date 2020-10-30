@@ -1,34 +1,39 @@
+------------------------------------------------
+
+Moving the cursor gracefully :
+
+~ first non-blank character on next line? [Control][Enter]
+~ first non-blank character on previous line? -
+
+M/H/L : Move cursor to middle/top/bottom of screen (move only the cursor without moving the screen)
+
+first and last non blank characters in a line : ^ and g_
+first and last characters in a line : 0 and $
+
+To move to the beginning of the next or previous sentence, ( and ) can be used. 
+Paragraphs can be navigated using { and }.  The definition of a paragraph is based on nroff macros (read man nroff if you want to figure out what that means). 
+This generally works quite well for navigating between large space-separated blocks in a programming language.
+Another useful command is %, which moves to the next or previous related item. 
+Items include brackets, opening and closing c-style comments, and C preprocessor conditionals. 
+I find myself using % a lot depending on the programming language.
+
+------------------------------------------------
+
 SCROLLING : 
 
 How to scroll up and down through a page gracefully?
 
-M/H/L : Move cursor to middle/top/bottom of screen
 
-:N : Go to line N
-N% : Go to the line N percent through the file
-N| : Go to column N
-
-The main scrolling commands in Vim are:
-    Ctrl-B and Ctrl-F, as well as PageUp and PageDown scroll by full page
-    Ctrl-U and Ctrl-D scroll half a page by default
-    Ctrl-Y and Ctrl-E scroll one line
-I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. 
-
-Vim page up and page down keystrokes:
-The Vim page up keystroke is [Control][b]. You can remember the 'b' by thinking "back".
-The Vim page down keystroke is [Control][f]. You can remember the 'f' by thinking "forward".
-
-You can use other keystrokes in Vim to move up and down, as shown here:
+Vim full page up, full page down, half page up and half page down keystrokes:
 [Control][b] - Move back one full screen
 [Control][f] - Move forward one full screen
-[Control][d] - Move forward 1/2 screen
-[Control][u] - Move back (up) 1/2 screen
-
-    zt - move current line to the top of the screen
-    zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
-    zb - move current line to the bottom of the screen
-
-Additionally:
+Half-page navigations
+[Control][u] - Move up (back ) 1/2 screen
+[Control][d] - Move down (forward) 1/2 screen
+One-line movements:
+[Control][E] - move the page up by one line
+[Control][Y] - move the page down by one line
+I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. 
 
     Ctrl-y Moves screen up one line
     Ctrl-e Moves screen down one line
@@ -40,10 +45,20 @@ Additionally:
 Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
 
 To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg
-
 you should define the following option:
-
 :set nostartofline
 
 -----------------------------------------------------------
 
+Move the page using these commands:
+
+    zt - move current line to the top of the screen
+    zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
+    zb - move current line to the bottom of the screen
+-----------------------------------------------------------
+
+:N : Go to line N
+N% : Go to the line N percent through the file
+N| : Go to column N
+
+-----------------------------------------------------------

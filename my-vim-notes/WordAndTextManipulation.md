@@ -1,6 +1,7 @@
 https://vim.fandom.com/wiki/Search_and_replace#substitute_last_search
 
 ------------------------------------------------------------
+
 WORD MANIPULATION:
 
 Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
@@ -11,6 +12,7 @@ To delete a word along with the whitespace after the word - dw (vw to select in 
 To delete a word but not the the whitespace after the word - de (ve to select in visual mode)
 
 ------------------------------------------------------------
+
 TEXT SELECTION :
 
 If you want to do the same thing to a collection of lines, like cut, copy, sort, or format, you first need to select the text. Get out of insert mode, hit one of the options below, and then move up or down a few lines. You should see the selected text highlighted.
@@ -25,12 +27,7 @@ Move to cursor where you would like to paste.
 Press P to paste before the cursor, or p to paste after.
 
 ------------------------------------------------------------
-TEXT NAVIGATION :
 
-first and last non blank characters in a line : ^ and g_
-first and last characters in a line : 0 and $
-
------------------------------------------
 SEARCH AND REPLACE :
 
 How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?  :1,$s/ABC/XYZ/g   and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.  Note that in this example, the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
@@ -136,22 +133,9 @@ COUNTING WORDS OR PATTERNS
 
 Insert mode tips :
 
-~ gi - incredibly handy
+gi - (incredibly handy) - goes to Insert mode where you left it last time
+e.g. scenario: edit something, exit Insert, go look at something else, then gi back to restart editing
 
-~ goes to Insert mode where you left it last time
+CTRL-T and CTRL-D (tab and de-tab)
+inserts or deletes one shiftwidth of indent at the start of the line
 
-~ scenario: edit something, exit Insert, go look at something else, then gi back to restart editing
-
-~ CTRL-T and CTRL-D (tab and de-tab)
-
-~ inserts or deletes one shiftwidth of indent at the start of the line
-
-------------------------------------------------
-
-Moving tips :
-
-~ first non-blank character on next line? <CR>
-    
-~ first non-blank character on previous line? -
-
-------------------------------------------------
