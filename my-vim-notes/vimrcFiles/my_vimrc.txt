@@ -11,22 +11,27 @@
 "To remove the .vim directory, open terminal and run this : rm -rf ~/.vim
 "To remove the .vimrc file, open terminal and run this : rm ~/.vimrc
 
-"On Windows, when you start Vim normally, 
-"it *either* runs the file “C:\Documents and Settings\(user name)\_vimrc” 
-"(where “(user name)” is replaced by the actual user "name); 
+"On Windows, when you start Vim normally, it
+"*either* runs the file “C:\Documents and Settings\(username)\_vimrc” 
 "*or*, if that file doesn’t exist (it usually doesn’t, for most users),
 "it runs the file “C:\Program Files\vim\_vimrc”.
 
 "After making changes to the .vimrc file,
 "if we want to make them effective immediately (called sourcing them),
 ":source % (from within vim)
-"After making changes to the list of plugins in the .vimrc file,
-"if we want to make them effective immediately, :PlugInstall (from within vim)
 
+"Before using `Plugin` in vimrc to install plug-ins, 
+"we need to install it in the machine.
 "Look at the githut repo for the plugin manager "plug" 
 "for details about installing it : https://github.com/junegunn/vim-plug 
 
-"(we can copy paste everything starting from the line below.)
+"After making changes to the list of plugins in the .vimrc file,
+"if we want to make them effective immediately, 
+"run this `:PlugInstall` (from within vim)
+
+
+"If you want to use this vimrc settings in a machin, 
+"copy paste everything starting from the line below.
 
 "------------------------------
 	" Set 'nocompatible' to ward off unexpected things that your distro might
@@ -117,43 +122,43 @@
 	"set guicursor=           " what does this do?
 	"set noshowmatch          " When a bracket is inserted, briefly jump to the matching one.
 
-   "Hybrid Line Numbers
-   "enabling both the absolute and relative line numbers at the same time 
+   "Hybrid Line Numbers - 
+   "Enabling both the absolute and relative line numbers at the same time 
    "sets up the hybrid line number mode.  
    "Hybrid line numbering is the same as the relative line numbering 
    "with the only difference being that the current line 
    "shows its absolute line number instead of showing 0.
-	set relativenumber        " shows relative line numbers
-	set number               " shows line numbers - we are not going to use this because we are going to use relative line numbers.
+	set relativenumber       " shows relative line numbers
+	set number               " shows line numbers
 
-	"set hlsearch            " When there is a previous search pattern, highlight all its matches.
-	"set nohlsearch            " opposite of set hlsearch
+	"set hlsearch               " When there is a previous search pattern, highlight all its matches.
+	"set nohlsearch             " opposite of set hlsearch
 	set noerrorbells            " will not make error sounds when we go to the end of the line, etc.
 	set tabstop=4 softtabstop=4            " tabstop means it is only 4 characters long. softtabstop means it is only 4 spaces long.
 	set shiftwidth=4            " every time we hit tab, it shifts the characters by 4 spaces instead of 8.
-	set expandtab            " convert it from tab character to spaces
-	set smartindent            " vim tires its best to indent the code for us
-	"set nowrap            " if the line goes off the screen, keep going to the right instead of showing it on the next line on the screen.
-	set ignorecase            " Ignore case in search patterns.  Also used when searching in the tags file.
-	"set smartcase            " it ewill do case sensitive searching until we put in a capital letter.
-	set noswapfile            " do not create vim.swap files all throughout the project.
-	"set nobackup            " it will not create backup files. If you use this, make sure you also use the undodir and undofile.
+	set expandtab               " convert it from tab character to spaces
+	set smartindent             " vim tires its best to indent the code for us
+	"set nowrap                 " if the line goes off the screen, keep going to the right instead of showing it on the next line on the screen.
+	set ignorecase              " Ignore case in search patterns.  Also used when searching in the tags file.
+	"set smartcase              " it ewill do case sensitive searching until we put in a capital letter.
+	set noswapfile              " do not create vim.swap files all throughout the project.
+	"set nobackup               " it will not create backup files. If you use this, make sure you also use the undodir and undofile.
 	"set undodir=~/.vim/undodir            " what does this do?
-	"set undofile            " what does this do?
-	set incsearch            " turns on incremental search
-	"set termguicolors            " what does this do?
+	"set undofile               " what does this do?
+	set incsearch               " turns on incremental search
+	"set termguicolors          " what does this do?
 	"set scrolloff=8            " what does this do?
 	"set cmdheight=2            " Give more space for displaying messages. 
-	"set updatetime=50            " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable delays and poor user experience.
-	"set shortmess+=c            " Don't pass messages to |ins-completion-menu|.
-	set colorcolumn=80            " shows a line at the 80 column of the page
+	"set updatetime=50          " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable delays and poor user experience.
+	"set shortmess+=c           " Don't pass messages to |ins-completion-menu|.
+	set colorcolumn=80          " shows a line at the 80 column of the page
 	highlight ColorColumn ctermbg=0 guibg=lightgrey            " the color that needs to be used for the 80 column line	
 
 
 "------------------------------
 
 	"set spell               " to turn spell checking on
-	"set spelllang=en_us  " to use US English  for spell checking
+	"set spelllang=en_us     " to use US English  for spell checking
 
 "------------------------------
 
