@@ -34,8 +34,9 @@
 "copy paste everything starting from the line below.
 
 "------------------------------
-	set nocompatible " Set 'nocompatible' to ward off unexpected things that your distro might
-	                 " have made, as well as sanely reset options when re-sourcing .vimrc
+	set nocompatible " Limit search to your project.
+	                 " read the documentation related to this.
+                     " Use Vim settings, rather then Vi settings. This setting must be as early as possible, as it has side effects.
 "------------------------------
 	let mapleader = " "        " set space bar as the leader key
     nnoremap <leader>u :UndotreeShow<CR>
@@ -109,19 +110,31 @@
 	" set autowriteall"
 	set hidden	
     "File find options in addition to `hidden`
-    set path+=**
+    set path+=**  " Search all subdirectories and recursively
     set wildmenu
     set wildignore+=**/node_modules/**
 
 
-	set bs=indent,eol,start         " allow backspacing over everything in insert mode
-	set ai                 " always set autoindenting on
+    "Set default font in mac vim and gvim
+    " set guifont=Inconsolata\ for\ Powerline:h24
+    set cursorline    " highlight the current line
+    set visualbell    " stop that ANNOYING beeping
+    set wildmenu
+    set wildmode=list:longest,full
+
+
+    set autoread                           " Reload files changed outside vim
+    au FocusGained,BufEnter * :silent! !   " Trigger autoread when changing buffers or coming back to vim in terminal.
+
+	set bs=indent,eol,start " allow backspacing over everything in insert mode
+	set ai                  " always set autoindenting on
 	"set backup             " keep a backup file
 	set viminfo='20,\"50    " read/write a .viminfo file, don't store more than 50 lines of registers
 	set history=50          " keep 50 lines of command line history
 	set ruler               " show the cursor position all the time
-	"set guicursor=           " what does this do?
-	"set noshowmatch          " When a bracket is inserted, briefly jump to the matching one.
+	"set guicursor=         " what does this do?
+	"set noshowmatch        " When a bracket is inserted, briefly jump to the matching one.
+    set laststatus=2        " Always display the status line
 
    "Hybrid Line Numbers - 
    "Enabling both the absolute and relative line numbers at the same time 
