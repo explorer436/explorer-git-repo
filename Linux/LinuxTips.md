@@ -19,6 +19,8 @@ In order to rename a file in Linux you can use either of two approaches
 
     This just moves the old file, to a new name.
 
+vifm (a tool that works with vim commands) is an alternative to this. Using vifm, we can change the name of a file or folder using `cw` (change word).
+
 -------------------------------------------------------------------
 
 How to launch terminal in Linux : 
