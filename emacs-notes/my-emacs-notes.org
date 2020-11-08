@@ -42,16 +42,6 @@ To change to mode from some other mode : M-x evil-mode
 
 *** Other hints
 If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch again.
-Hints for operating on paragraphs: C-h i -> emacs -> Text -> Paragraphs
-    Select the entire paragraph : M-h
-    Move to the beginning of the paragraph : M-{
-    Move to the end of the paragraph : M-}
-Hints for operating on sentences: C-h i -> emacs -> Text -> Sentences
-    ‘M-a’ : Move back to the beginning of the sentence (‘backward-sentence’).
-    ‘M-e’ : Move forward to the end of the sentence (‘forward-sentence’).
-    ‘M-k’ : Kill forward to the end of the sentence (‘kill-sentence’).
-    ‘C-x <DEL>’ : Kill back to the beginning of the sentence (‘backward-kill-sentence’).
-What is the difference between a sentence and a line?
 
 *** Resources for emacs
 
