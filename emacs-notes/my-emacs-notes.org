@@ -1,7 +1,7 @@
 * My Emacs notes
   
   
-** Custom configurations
+** Helpful tips related to configuration and other things related to Emacs that I find useful.
 
 *** How to view the list of all the currently installed packages in Emacs?
 
