@@ -1,0 +1,68 @@
+* My Emacs notes
+  
+  
+** Custom configurations
+
+*** How to view the list of all the currently installed packages in Emacs?
+
+I am using Emacs in one machine. I have installed lots of packages from the package manager, and I want to use my settings on another machine.
+
+To see a list of the available packages : M-x list-packages
+Run this command till you find the first row of installed package: "C-s installed"
+Start selecting with C-SPC.
+Go down till you reach built-in packages. Copy with M-w. C-x b for new buffer. Paste with C-y.C-x C-s to save file.
+
+*** How to add MELPA as another source of packages in addition to GNU's elpa?
+    1. The easiest way is to copy the saved ".emacs" file from GitHub repo.
+    2. The alternative is: In a browser, visit MELPA website and grab the URL for the package archive "https://melpa.org/packages/"
+       M-x customize-group -> package -> Go to "package archives" -> "INS" to insert a new entry. Provide archive name and archive URL. Set the "State" to "Save for future sessions".
+
+After making changes to the config to add MELPA as a source of packages, run the following two commands:
+  M-x package-refresh-contents (to refresh the list of packages)
+  M-x package-install RET evil (to install the evil package)
+
+To change to mode from some other mode : M-x evil-mode
+
+*** How to work with org-mode and evil-mode? It looks like Vim key bindings will work in Org mode as well.
+
+*** Commands
+    | Command                                                                             | Description                                                 |
+    |                                                                                     |                                                             |
+    | C-x b and C-x C-b                                                                   | Switching between buffers                                   |
+    | C-g                                                                                 | Cancelling half-entered commands                            |
+    | C-h m, C-h k, C-h f, C-h a(just remember C-h and read the prompt in the minibuffer) | Getting help on editing modes,keybindings and commands      |
+    | C-x C-c                                                                             | Quitting Emacs                                              |
+    | C-h i                                                                               | The info directory                                          |
+    | C-x k                                                                               | kill buffer                                                 |
+    | M-x                                                                                 | Invoking commands by name                                   |
+    | M-x customize                                                                       | to enter customization menu                                 |
+    | C-x C-f (This puts us in Emac's dired mode - directory editor)                      | Visiting (opening) files                                    |
+    | C-x C-s                                                                             | Saving files                                                |
+    | g                                                                                   | Refresh the listing in dired mode                           |
+
+*** Other hints
+If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch again.
+Hints for operating on paragraphs: C-h i -> emacs -> Text -> Paragraphs
+    Select the entire paragraph : M-h
+    Move to the beginning of the paragraph : M-{
+    Move to the end of the paragraph : M-}
+Hints for operating on sentences: C-h i -> emacs -> Text -> Sentences
+    ‘M-a’ : Move back to the beginning of the sentence (‘backward-sentence’).
+    ‘M-e’ : Move forward to the end of the sentence (‘forward-sentence’).
+    ‘M-k’ : Kill forward to the end of the sentence (‘kill-sentence’).
+    ‘C-x <DEL>’ : Kill back to the beginning of the sentence (‘backward-kill-sentence’).
+What is the difference between a sentence and a line?
+
+*** Resources for emacs
+
+How to learn Emacs :: About this guide to Emacs - https://david.rothlis.net/emacs/howtolearn.html   
+MELPA - http://melpa.org/#/ 
+mastering-emacs-in-one-year - https://github.com/redguardtoo/mastering-emacs-in-one-year-guide 
+From Vim to Emacs in Fourteen Days - https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html 
+Howardism - http://howardism.org/ 
+Magit User Manual - https://magit.vc/manual/magit/ 
+The Org Manual - https://orgmode.org/manual/index.html 
+Org mode beginning at the basics - https://orgmode.org/worg/org-tutorials/org4beginners.html 
+EmacsWiki - https://www.emacswiki.org/emacs/SiteMap 
+Xah Emacs Site - http://ergoemacs.org/index.html 
+https://jaderholm.com/screencasts.html
