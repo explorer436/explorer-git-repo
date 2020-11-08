@@ -1,64 +1,70 @@
 
 # Table of Contents
 
-1.  [My Emacs notes](#org576c81d)
-    1.  [Helpful tips related to configuration and other things related to Emacs that I find useful.](#org106b62f)
-        1.  [How to view the list of all the currently installed packages in Emacs?](#orgb48465e)
-        2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#orgae0997b)
-        3.  [How to work with org-mode and evil-mode?](#orgd29276e)
-        4.  [Commands](#org75bca50)
-        5.  [Other hints](#orga2f935a)
-        6.  [Resources for emacs](#org76bfc19)
-        7.  [How to auto save an org document in markdown format?](#org2253ff5)
+1.  [My Emacs notes](#org6dc515b)
+    1.  [Helpful tips related to configuration and other things related to Emacs that I find useful.](#org2a050b1)
+        1.  [How to view the list of all the currently installed packages in Emacs?](#org863a4c9)
+        2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#orgceb045f)
+        3.  [How to work with org-mode and evil-mode?](#org41c11ec)
+        4.  [Other helpful commands](#org1608536)
+        5.  [Other hints](#org1fed690)
+        6.  [Resources for emacs](#org3641f18)
+        7.  [How to auto save an org document in markdown format?](#orga2bc9ff)
 
 
-<a id="org576c81d"></a>
+<a id="org6dc515b"></a>
 
 # My Emacs notes
 
 
-<a id="org106b62f"></a>
+<a id="org2a050b1"></a>
 
 ## Helpful tips related to configuration and other things related to Emacs that I find useful.
 
 
-<a id="orgb48465e"></a>
+<a id="org863a4c9"></a>
 
 ### How to view the list of all the currently installed packages in Emacs?
 
-I am using Emacs in one machine. I have installed lots of packages from the package manager, and I want to use my settings on another machine.
+If you are using Emacs in one machine, and if you want to set-up the exact same set-up settings in another machine, you need to view the list of installed packages from the package manager.
 
 To see a list of the available packages : M-x list-packages
+
 Run this command till you find the first row of installed package: "C-s installed"
+
 Start selecting with C-SPC.
+
 Go down till you reach built-in packages. Copy with M-w. C-x b for new buffer. Paste with C-y.C-x C-s to save file.
 
+Another alternative is, simply copy the ".emacs" file from this computer to the other computer.
 
-<a id="orgae0997b"></a>
+
+<a id="orgceb045f"></a>
 
 ### How to add MELPA as another source of packages in addition to GNU's elpa?
 
-1.  The easiest way is to copy the saved ".emacs" file from GitHub repo.
+1.  Hint: In order to avoid having to do this multiple times when switching between multiple machines, save the \`.emacs\` settings in GitHub so that you can just move it from machine to machine.
 2.  The alternative is: In a browser, visit MELPA website and grab the URL for the package archive "<https://melpa.org/packages/>"
     M-x customize-group -> package -> Go to "package archives" -> "INS" to insert a new entry. Provide archive name and archive URL. Set the "State" to "Save for future sessions".
 
 After making changes to the config to add MELPA as a source of packages, run the following two commands:
-  M-x package-refresh-contents (to refresh the list of packages)
-  M-x package-install RET evil (to install the evil package)
+
+1.  M-x package-refresh-contents (to refresh the list of packages)
+2.  M-x package-install RET evil (to install the evil package)
 
 To change to mode from some other mode : M-x evil-mode
 
 
-<a id="orgd29276e"></a>
+<a id="org41c11ec"></a>
 
 ### How to work with org-mode and evil-mode?
 
 It looks like Vim key bindings will work in Org mode as well.
 
 
-<a id="org75bca50"></a>
+<a id="org1608536"></a>
 
-### Commands
+### Other helpful commands
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -144,14 +150,14 @@ It looks like Vim key bindings will work in Org mode as well.
 </table>
 
 
-<a id="orga2f935a"></a>
+<a id="org1fed690"></a>
 
 ### Other hints
 
 If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch again.
 
 
-<a id="org76bfc19"></a>
+<a id="org3641f18"></a>
 
 ### Resources for emacs
 
@@ -223,7 +229,7 @@ If anything goes wrong with the customizations, delete the ".emacs" file in the 
 </table>
 
 
-<a id="org2253ff5"></a>
+<a id="orga2bc9ff"></a>
 
 ### How to auto save an org document in markdown format?
 
