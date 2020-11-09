@@ -33,36 +33,38 @@ To change to mode from some other mode : M-x evil-mode
     It looks like Vim key bindings will work in Org mode as well.
 
 *** Other helpful commands
-    | Command                                                                             | Description                                            |
-    |-------------------------------------------------------------------------------------+--------------------------------------------------------|
-    | C-x b and C-x C-b                                                                   | Switching between buffers                              |
-    | C-g                                                                                 | Cancelling half-entered commands                       |
-    | C-h m, C-h k, C-h f, C-h a(just remember C-h and read the prompt in the minibuffer) | Getting help on editing modes,keybindings and commands |
-    | C-x C-c                                                                             | Quitting Emacs                                         |
-    | C-h i                                                                               | The info directory                                     |
-    | C-x k                                                                               | kill buffer                                            |
-    | M-x                                                                                 | Invoking commands by name                              |
-    | M-x customize                                                                       | to enter customization menu                            |
-    | C-x C-f (This puts us in Emac's dired mode - directory editor)                      | Visiting (opening) files                               |
-    | C-x C-s                                                                             | Saving files                                           |
-    | g                                                                                   | Refresh the listing in dired mode                      |
+    | Command                    | Description                                                                                                                                                             |
+    |----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | C-x b and C-x C-b          | Switching between buffers                                                                                                                                               |
+    | C-g                        | Cancelling half-entered commands                                                                                                                                        |
+    | C-h m, C-h k, C-h f, C-h a | Getting help on editing modes,keybindings and commands. (just remember C-h and read the prompt in the minibuffer)                                                       |
+    | C-x C-c                    | Quitting Emacs                                                                                                                                                          |
+    | C-h i                      | The info directory                                                                                                                                                      |
+    | C-x k                      | kill buffer                                                                                                                                                             |
+    | M-x                        | Invoking commands by name                                                                                                                                               |
+    | M-x customize              | to enter customization menu                                                                                                                                             |
+    | C-x C-f                    | Visiting (opening) files. (This puts us in Emac's dired mode - directory editor). To create a new file, just start typing the name of the file that you want to create. |
+    | C-x C-s                    | Saving files                                                                                                                                                            |
+    | g                          | Refresh the listing in dired mode                                                                                                                                       |
+    |                            | Refresh the listing in dired mode                                                                                                                                       |
 
 *** Other hints
 If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch again.
 
 *** Resources for emacs
 
-|How to learn Emacs :: About this guide to Emacs - https://david.rothlis.net/emacs/howtolearn.html   |
-|MELPA - http://melpa.org/#/ |
-|mastering-emacs-in-one-year - https://github.com/redguardtoo/mastering-emacs-in-one-year-guide |
-|From Vim to Emacs in Fourteen Days - https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html |
-|Howardism - http://howardism.org/ |
-|Magit User Manual - https://magit.vc/manual/magit/ |
-|The Org Manual - https://orgmode.org/manual/index.html |
-|Org mode beginning at the basics - https://orgmode.org/worg/org-tutorials/org4beginners.html |
-|EmacsWiki - https://www.emacswiki.org/emacs/SiteMap |
-|Xah Emacs Site - http://ergoemacs.org/index.html |
-|https://jaderholm.com/screencasts.html|
-|
+| How to learn Emacs :: About this guide to Emacs - https://david.rothlis.net/emacs/howtolearn.html                    |
+| MELPA - http://melpa.org/#/                                                                                          |
+| mastering-emacs-in-one-year - https://github.com/redguardtoo/mastering-emacs-in-one-year-guide                       |
+| From Vim to Emacs in Fourteen Days - https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html |
+| Howardism - http://howardism.org/                                                                                    |
+| Magit User Manual - https://magit.vc/manual/magit/                                                                   |
+| The Org Manual - https://orgmode.org/manual/index.html                                                               |
+| Org mode beginning at the basics - https://orgmode.org/worg/org-tutorials/org4beginners.html                         |
+| EmacsWiki - https://www.emacswiki.org/emacs/SiteMap                                                                  |
+| Xah Emacs Site - http://ergoemacs.org/index.html                                                                     |
+| https://jaderholm.com/screencasts.html                                                                               |
+| https://cestlaz.github.io/stories/emacs/                                                                             |
+
 *** How to auto save an org document in markdown format?
     Install the package 'auto-org-md' and after editing the file in org-mode, switch to it using this : "M-x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.

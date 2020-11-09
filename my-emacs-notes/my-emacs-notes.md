@@ -1,28 +1,28 @@
 
 # Table of Contents
 
-1.  [My Emacs notes](#org6dc515b)
-    1.  [Helpful tips related to configuration and other things related to Emacs that I find useful.](#org2a050b1)
-        1.  [How to view the list of all the currently installed packages in Emacs?](#org863a4c9)
-        2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#orgceb045f)
-        3.  [How to work with org-mode and evil-mode?](#org41c11ec)
-        4.  [Other helpful commands](#org1608536)
-        5.  [Other hints](#org1fed690)
-        6.  [Resources for emacs](#org3641f18)
-        7.  [How to auto save an org document in markdown format?](#orga2bc9ff)
+1.  [My Emacs notes](#orgc382bea)
+    1.  [Helpful tips related to configuration and other things related to Emacs that I find useful.](#orgec3775c)
+        1.  [How to view the list of all the currently installed packages in Emacs?](#org3fa23c2)
+        2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#org42f7abe)
+        3.  [How to work with org-mode and evil-mode?](#org2204a99)
+        4.  [Other helpful commands](#org63e5f82)
+        5.  [Other hints](#org41be0fb)
+        6.  [Resources for emacs](#org511839d)
+        7.  [How to auto save an org document in markdown format?](#orgc6bba6f)
 
 
-<a id="org6dc515b"></a>
+<a id="orgc382bea"></a>
 
 # My Emacs notes
 
 
-<a id="org2a050b1"></a>
+<a id="orgec3775c"></a>
 
 ## Helpful tips related to configuration and other things related to Emacs that I find useful.
 
 
-<a id="org863a4c9"></a>
+<a id="org3fa23c2"></a>
 
 ### How to view the list of all the currently installed packages in Emacs?
 
@@ -39,7 +39,7 @@ Go down till you reach built-in packages. Copy with M-w. C-x b for new buffer. P
 Another alternative is, simply copy the ".emacs" file from this computer to the other computer.
 
 
-<a id="orgceb045f"></a>
+<a id="org42f7abe"></a>
 
 ### How to add MELPA as another source of packages in addition to GNU's elpa?
 
@@ -55,14 +55,14 @@ After making changes to the config to add MELPA as a source of packages, run the
 To change to mode from some other mode : M-x evil-mode
 
 
-<a id="org41c11ec"></a>
+<a id="org2204a99"></a>
 
 ### How to work with org-mode and evil-mode?
 
 It looks like Vim key bindings will work in Org mode as well.
 
 
-<a id="org1608536"></a>
+<a id="org63e5f82"></a>
 
 ### Other helpful commands
 
@@ -95,8 +95,8 @@ It looks like Vim key bindings will work in Org mode as well.
 
 
 <tr>
-<td class="org-left">C-h m, C-h k, C-h f, C-h a(just remember C-h and read the prompt in the minibuffer)</td>
-<td class="org-left">Getting help on editing modes,keybindings and commands</td>
+<td class="org-left">C-h m, C-h k, C-h f, C-h a</td>
+<td class="org-left">Getting help on editing modes,keybindings and commands. (just remember C-h and read the prompt in the minibuffer)</td>
 </tr>
 
 
@@ -131,8 +131,8 @@ It looks like Vim key bindings will work in Org mode as well.
 
 
 <tr>
-<td class="org-left">C-x C-f (This puts us in Emac's dired mode - directory editor)</td>
-<td class="org-left">Visiting (opening) files</td>
+<td class="org-left">C-x C-f</td>
+<td class="org-left">Visiting (opening) files. (This puts us in Emac's dired mode - directory editor)</td>
 </tr>
 
 
@@ -150,14 +150,14 @@ It looks like Vim key bindings will work in Org mode as well.
 </table>
 
 
-<a id="org1fed690"></a>
+<a id="org41be0fb"></a>
 
 ### Other hints
 
 If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch again.
 
 
-<a id="org3641f18"></a>
+<a id="org511839d"></a>
 
 ### Resources for emacs
 
@@ -222,14 +222,15 @@ If anything goes wrong with the customizations, delete the ".emacs" file in the 
 <td class="org-left"><a href="https://jaderholm.com/screencasts.html">https://jaderholm.com/screencasts.html</a></td>
 </tr>
 
-<tbody>
+
 <tr>
+<td class="org-left"><a href="https://cestlaz.github.io/stories/emacs/">https://cestlaz.github.io/stories/emacs/</a></td>
 </tr>
 </tbody>
 </table>
 
 
-<a id="orga2bc9ff"></a>
+<a id="orgc6bba6f"></a>
 
 ### How to auto save an org document in markdown format?
 
