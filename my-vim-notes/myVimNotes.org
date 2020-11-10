@@ -1,0 +1,159 @@
+* My Vim notes
+  
+  
+** Helpful tips related to configuration and other things related to Vim that I find useful.
+
+*** Search tips
+:
+| What to Type | What it does                                            |
+| [i           | show first line containing word under the cursor        |
+| [I or ]I     | show every line containing word under the cursor        |
+| :g/pattern/  | show every line matching the regular expression pattern |
+
+*** Scrolling 
+
+**** Moving the cursor gracefully :
+
+     // TODO - Convert this into a table.
+#+BEGIN_EXAMPLE
+	~ first non-blank character on next line? [Control][Enter]
+	~ first non-blank character on previous line? -
+	M/H/L : Move cursor to middle/top/bottom of screen (move only the cursor without moving the screen)
+	first and last non blank characters in a line : ^ and g_
+	first and last characters in a line : 0 and $
+	To move to the beginning of the next or previous sentence, ( and ) can be used. 
+	Paragraphs can be navigated using { and }.  The definition of a paragraph is based on nroff macros (read man nroff if you want to figure out what that means). 
+	This generally works quite well for navigating between large space-separated blocks in a programming language.
+	Another useful command is %, which moves to the next or previous related item. 
+	Items include brackets, opening and closing c-style comments, and C preprocessor conditionals. 
+	I find myself using % a lot depending on the programming language.
+#+END_EXAMPLE
+
+**** SCROLLING : 
+
+Scroll up and down through a page gracefully using Vim the following keystrokes:
+
+#+BEGIN_EXAMPLE
+	[Control][b] - Moves screen up one page, cursor to last line
+	[Control][f] - Moves screen down one page, cursor to first line
+	Half-page navigations
+	[Control][u] - Moves cursor & screen up ½ page
+	[Control][d] - Moves cursor & screen down ½ page
+	One-line movements:
+	[Control][E] - move the page/screen up by one line
+	[Control][Y] - move the page/screen down by one line
+	I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. 
+	Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
+#+END_EXAMPLE
+
+To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg
+you should define the following option:
+
+:set nostartofline
+
+**** Move the page using these commands:
+
+	#+BEGIN_EXAMPLE
+		zt - move current line to the top of the screen
+		zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
+		zb - move current line to the bottom of the screen
+	
+		:N : Go to line N
+		N% : Go to the line N percent through the file
+		N| : Go to column N
+	#+END_EXAMPLE
+
+*** Sorting
+
+   Imagine you’re working in vim. You come across this code:
+
+#+BEGIN_EXAMPLE
+	gem 'clearance', '1.0.0.rc4'
+	gem 'neat'
+	gem 'stripe'
+	gem 'pg'
+	gem 'thin'
+	gem 'rails', '3.2.11'
+	gem 'bourbon'
+	gem 'simple_form'
+	gem 'strong_parameters'
+#+END_EXAMPLE
+
+	You want to sort the list alphabetically. You select the lines visually:
+	
+	Shift + V : You invoke the sort function
+	
+	:sort
+	You rejoice:
+	
+#+BEGIN_EXAMPLE
+	gem 'bourbon'
+	gem 'clearance', '1.0.0.rc4'
+	gem 'neat'
+	gem 'pg'
+	gem 'rails', '3.2.11'
+	gem 'simple_form'
+	gem 'stripe'
+	gem 'strong_parameters'
+	gem 'thin'
+	You dig deeper:
+#+END_EXAMPLE
+	:help sort
+ 
+*** Spell check
+
+   To turn  it off `:set nospell`
+
+	Using Spellchecking:
+	
+	To move to a misspelled word, use `]s` (the next misspelled word) and `[s` (the previous misspelled word).
+	
+	Once the cursor is on the word, use z=, and Vim will suggest a list of alternatives that it thinks may be correct. If the list does not contain the word we are looking for, dismiss it with `Esc`
+	
+	What if Vim is wrong, and the word is correct? 
+	zg - Add the current word to Vim's spell file. 
+	zw - Remove the current word from Vim's spell file.
+	zug - Revert zg or zw command for the current word.
+	
+	Usually, this is where the spell file will be :
+	~/.vim/spell/en.utf-8.add
+	
+	How to use it from insert modes?
+	Ctrl x - Ctrl s
+	Vim scans backward from the cursor position, stopping when it finds a mis-spelt word. It then builds a word list from suggested corrections and presents them in an autocomplete pop-up menu.
+ 
+*** Non empty lines
+   To do something only to non-empty lines, use `:g/./` before the command.
+	:g/./ s/$/;/
+	
+	To do something only to the visually selected non-empty lines, use the same approach.
+
+*** Split
+   Opening Vim help in a vertical split window
+
+   :vertical (vert)
+
+   :vert help
+
+   You can also control whether the window splits on the left/top or the right/bottom with topleft (to) and botright (bo). For example, to open help in the right window of a vertical split:
+
+   :vert bo help
+ 
+*** Terminal
+   Launch terminal from within Vim using `:term`
+ 
+*** Marks
+   https://vim.fandom.com/wiki/Using_marks
+
+	| Command   | Description                                                   |
+	|-----------+---------------------------------------------------------------|
+	| ma        | set mark a at current cursor location                         |
+	| 'a        | jump to line of mark a (first non-blank character in line)    |
+	| `a        | jump to position (line and column) of mark a                  |
+	| d'a       | delete from current line to line of mark a                    |
+	| d`a       | delete from current cursor position to position of mark a     |
+	| c'a       | change text from current line to line of mark a               |
+	| y`a       | yank text to unnamed buffer from cursor to position of mark a |
+	| :marks    | list all the current marks                                    |
+	| :marks aB | list marks a, B                                               |
+ 
