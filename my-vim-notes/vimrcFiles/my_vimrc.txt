@@ -14,11 +14,13 @@
 "On Windows, when you start Vim normally, it
 "*either* runs the file “C:\Documents and Settings\(username)\_vimrc” 
 "*or*, if that file doesn’t exist (it usually doesn’t, for most users),
-"it runs the file “C:\Program Files\vim\_vimrc”.
+"it runs the file “C:\Program Files\Vim\_vimrc”.
 
 "After making changes to the .vimrc file,
 "if we want to make them effective immediately (called sourcing them),
 ":source % (from within vim)
+"If you do not know where vimrc is located, running this command would help.
+"`:e $MYVIMRC`
 
 "Before using `Plugin` in vimrc to install plug-ins, 
 "we need to install it in the machine.
