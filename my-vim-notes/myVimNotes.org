@@ -4,7 +4,7 @@
 ** Helpful tips related to configuration and other things related to Vim that I find useful.
 
 *** Search tips
-:
+ 
 | What to Type | What it does                                            |
 | [i           | show first line containing word under the cursor        |
 | [I or ]I     | show every line containing word under the cursor        |
@@ -108,25 +108,25 @@ you should define the following option:
 
 *** Spell check
 
-   To turn  it off `:set nospell`
+   To turn it on `:set spell`. To turn it off `:set nospell`
 
-	Using Spellchecking:
-	
-	To move to a misspelled word, use `]s` (the next misspelled word) and `[s` (the previous misspelled word).
-	
-	Once the cursor is on the word, use z=, and Vim will suggest a list of alternatives that it thinks may be correct. If the list does not contain the word we are looking for, dismiss it with `Esc`
-	
-	What if Vim is wrong, and the word is correct? 
-	zg - Add the current word to Vim's spell file. 
-	zw - Remove the current word from Vim's spell file.
-	zug - Revert zg or zw command for the current word.
-	
-	Usually, this is where the spell file will be :
-	~/.vim/spell/en.utf-8.add
-	
-	How to use it from insert modes?
-	Ctrl x - Ctrl s
-	Vim scans backward from the cursor position, stopping when it finds a mis-spelt word. It then builds a word list from suggested corrections and presents them in an autocomplete pop-up menu.
+   Using Spellchecking:
+   
+   To move to a misspelled word, use `]s` (the next misspelled word) and `[s` (the previous misspelled word).
+   
+   Once the cursor is on the word, use z=, and Vim will suggest a list of alternatives that it thinks may be correct. If the list does not contain the word we are looking for, dismiss it with `Esc`
+   
+   What if Vim is wrong, and the word is correct? 
+   zg - Add the current word to Vim's spell file. 
+   zw - Remove the current word from Vim's spell file.
+   zug - Revert zg or zw command for the current word.
+   
+   Usually, this is where the spell file will be :
+   ~/.vim/spell/en.utf-8.add
+   
+   How to use it from insert modes?
+   Ctrl x - Ctrl s
+   Vim scans backward from the cursor position, stopping when it finds a mis-spelt word. It then builds a word list from suggested corrections and presents them in an autocomplete pop-up menu.
  
    ------------------------------------------
 
@@ -138,18 +138,6 @@ you should define the following option:
 
    ------------------------------------------
 
-*** Split
-   Opening Vim help in a vertical split window
-
-   :vertical (vert)
-
-   :vert help
-
-   You can also control whether the window splits on the left/top or the right/bottom with topleft (to) and botright (bo). For example, to open help in the right window of a vertical split:
-
-   :vert bo help
- 
-   ------------------------------------------
 
 *** Terminal
    Launch terminal from within Vim using `:term`
@@ -510,98 +498,16 @@ you should define the following option:
     https://vim.fandom.com/wiki/Using_tab_pages
     http://vimdoc.sourceforge.net/htmldoc/tabpage.html
     
+**** Buffers
     How to view all open buffers?
     :buffers
     
-    This will show a numbered list with all open buffers. To go to a specific buffer (file), do 
-    :b5 (to go to the buffer with the number 5)
+    This will show a numbered list with all open buffers. To go to a specific buffer (file), do `:b5` (to go to the buffer with the number 5)
     Tip: the numbers on buffers do not during a session.
-    
-    How to view all open tabs?
-    :tabs		List the tab pages and the windows they contain.
-    		Shows a ">" for the current window.
-    		Shows a "+" for modified buffers.
-    		For example:
-    			Tab page 1 ~
-    			  + tabpage.txt ~
-    			    ex_docmd.c ~
-    			Tab page 2 ~
-    			>   main.c ~
-    
-    This will show a numbered list with all open tabs. To go to a specific tab, do 
-    :5gt (to go to the tab with the number 5)
-    
-    g<Tab>		Go to the last accessed tab page.
-    
-    REORDERING TAB PAGES:
-    
-    :tabm[ove] +[N]
-    :tabm[ove] -[N]
-    		Move the current tab page N places to the right (with +) or to
-    		the left (with -). >
-    		    :tabmove -	" move the tab page to the left
-    		    :tabmove -1	" as above
-    		    :tabmove +	" move the tab page to the right
-    		    :tabmove +1	" as above
-    
+
     -------------------------------------------------------------------------------------
-    
-     Open question - how to move buffers from one tab to another or into split windows when wanted?
-     It may not be such a great idea to work on multiple windows in a given tab, unless there is a need for it.
-     Always prefer to work only on one buffer in a tab because that will give maximum visibility into the open buffer.
-     If there is a need to work on another file/buffer at the same time, put it in a separate tab.
-     For now, just go to the tab that you want to open split windows in and use :vsp to split it and open the file that you want to view as a split window.
-    
-    -------------------------------------------------------------------------------------
-    
-    How to open buffers in tabs from netrw
-    Open it in a window and move it into a tab using Cntrl W T
-    
-    How do I move an existing window to a new tab?
-    
-    Is there a way to take an existing window (split) and put it into a new tab?  Ctrl W followed by T
-    
-    -------------------------------------------------------------------------------------
-     
-     Opening a tab with an empty buffer : 
-     
-     To create a new file in a new tab : tabnew
-     
-     This will open a new tab with an empty buffer.  
-     
-    -------------------------------------------------------------------------------------
-     
-     Switching between tabs in Vim:  
-     
-    1. Go to the next tab :gt 
-    1. Go to the previous tab: gT 
-    1. Go to a numbered tab: nnn gt 
-     
-    -------------------------------------------------------------------------------------  
-    
-    Some more tab tips :
-    
-    ~ :tabe <file> to edit file in a new tab
-    ~ :tabc to close
-    ~ :tabn, :tabp (or gt, gT to switch) 
-    ~ probably want to map these for easier navigation (if gt, gT are too difficult)
-    
-    -------------------------------------------------------------------------------------  
-    
-    How do I change the current split's width and height?
-    
-    There are several window commands that allow you to do this:
-    
-    Ctrl+W +/-: increase/decrease height (ex. 20<C-w>+)
-    Ctrl+W >/<: increase/decrease width (ex. 30<C-w><)
-    Ctrl+W _: set height (ex. 50<C-w>_)
-    Ctrl+W |: set width (ex. 50<C-w>|)
-    Ctrl+W =: equalize width and height of all windows
-    See also: :help CTRL-W
-    
-    -------------------------------------------------------------------------------------  
-    
-    (this is the general method to update multiple java files at once)
+
+    (This is the general method to update multiple java files at once)
     
     If you want to open all files matching the pattern in subfolders - :args **/*.java
     
@@ -613,20 +519,99 @@ you should define the following option:
     
     -------------------------------------------------------------------------------------
 
+**** Tabs
+
+   Creating and closing tabs:
+   
+    | :tabnew      | To open a new tab with an empty buffer   |
+    | :tabe <file> | to edit file in a new tab                |
+    | :tabc        | to close a tab and all the buffers in it |
+
+    How to view all open tabs?
+    #+BEGIN_EXAMPLE
+        :tabs		List the tab pages and the windows they contain.
+        		Shows a ">" for the current window.
+        		Shows a "+" for modified buffers.
+        		For example:
+        			Tab page 1 ~
+        			  + tabpage.txt ~
+        			    ex_docmd.c ~
+        			Tab page 2 ~
+        			>   main.c ~
+    #+END_EXAMPLE
+    
+    This will show a numbered list with all open tabs. To go to a specific tab, do `:5gt` (to go to the tab with the number 5)
+
+    | g<Tab>       | Go to the last accessed tab page. |
+    | :gt          | Go to the next tab                |
+    | : gT         | Go to the previous tab            |
+    | : nnn gt     | Go to a numbered tab              |
+    | :tabn, :tabp | (or gt, gT to switch)             |
+
+    REORDERING TAB PAGES:
+    
+    | :tabm[ove] +[N] | Move the current tab page N places to the right (with +) or to the left (with -). |
+    | :tabm[ove] -[N] | Move the current tab page N places to the right (with +) or to the left (with -). |
+    | :tabmove -      | move the tab page to the left                                                     |
+    | :tabmove -1     | as above                                                                          |
+    | :tabmove +      | move the tab page to the right                                                    |
+    | :tabmove +1     | as above                                                                          |
+ 
+    -------------------------------------------------------------------------------------
+    
+     Open question - how to move buffers from one tab to another or into split windows when wanted?
+     It may not be such a great idea to work on multiple windows in a given tab, unless there is a need for it.
+     Always prefer to work only on one buffer in a tab because that will give maximum visibility into the open buffer.
+     If there is a need to work on another file/buffer at the same time, put it in a separate tab.
+     For now, just go to the tab that you want to open split windows in and use :vsp to split it and open the file that you want to view as a split window.
+    
+    -------------------------------------------------------------------------------------
+    
+    How to open buffers in tabs from netrw: One way is to change netrw settings using vimrc. The other way is, open it in a window and move it into a tab using Cntrl W T
+    
+    Is there a way to take an existing window (split) and put it into a new tab?  Ctrl W followed by T
+    
+    -------------------------------------------------------------------------------------  
+    
+**** Splits
+
+    How do I change the current split's width and height?
+    
+    | Ctrl+W +/-       | increase/decrease height (ex. 20<C-w>+)  |
+    | Ctrl+W >/<       | increase/decrease width (ex. 30<C-w><)   |
+    | Ctrl+W _         | set height (ex. 50<C-w>_)                |
+    | Ctrl+W    (pipe) | set width (ex. 50<C-w>)                   |
+    | Ctrl+W =         | equalize width and height of all windows |
+    
+    See also: :help CTRL-W
+
+    These mappings will help it a little easier.
+    (pressing + is too difficult. = is + without having to press shift.)
+    (pressing - is easy enough.)
+    nnoremap <Leader>= :vertical resize +5<CR>
+    nnoremap <Leader>- :vertical resize -5<CR>
+ 
+   ------------------------------------------
+    
+*** Vim help
+   Opening Vim help in a vertical split window
+
+   :vertical (vert)
+
+   :vert help
+
+   You can also control whether the window splits on the left/top or the right/bottom with topleft (to) and botright (bo). For example, to open help in the right window of a vertical split:
+
+   :vert bo help
+ 
+   ------------------------------------------
  
 *** cTags in Vim
 
    https://andrew.stwrt.ca/posts/vim-ctags/
 
-   ---------------------------------------------------------------------------------------------------
-   CTAGS : 
-   
-   To install ctags in centos:
-   1) Find the package you want to install
-       $ yum list *ctags*
-   2) Install package
-       $ yum install <packagename>
-   
+   You would have to install cTags separately. It does not come with Vim.
+  
    How to generate tags and use them for navigation in a big java project?
    Go to the root folder of the project and execute this command : ctags -R
    
@@ -793,14 +778,13 @@ you should define the following option:
 
 *** Indentation
 
-   INDENTATION :     
-   ```
+   #+BEGIN_EXAMPLE
        Example line
            This is part of the parsed line
            Thats goes one
        End of line
-   ```
-   
+   #+END_EXAMPLE
+
    How to remove all spaces in front of these lines? The final text should be:
    Example line
    This is part of the parsed line
@@ -826,9 +810,6 @@ you should define the following option:
 
 *** Line numbers
 
-   ------------------------------------------
-
-   LINE NUMBERS in text editor :
    To display line numbers :set number (To turn off the line number display :set nonumber)
    
    To enable line numbers on startup, simply add the following to your vimrc - set number
@@ -839,15 +820,15 @@ you should define the following option:
 
 *** Lower case Upper case
 
-   How to change lower case letters words to upper case words? 
-   
-   How to change upper case words to lower case words?
+   How to change lower case letters words to upper case words? How to change upper case words to lower case words?
    
    You can change the case of text:
-   
+   #+BEGIN_EXAMPLE
        Toggle case "HellO" to "hELLo" with g~ then a movement (word or end of line). 
        Uppercase "HellO" to "HELLO" with gU then a movement (word or end of line). 
        Lowercase "HellO" to "hello" with gu then a movement (word or end of line). 
+   #+END_EXAMPLE
+   
        
    Alternatively(easier to remember), you can visually select text then press ~ to toggle case, or U to convert to uppercase, or u to convert to lowercase. 
    
@@ -888,11 +869,13 @@ you should define the following option:
    	To execute the macro <number> times (once by default), type: <number>@<letter>
    	
    	So, the complete process looks like:
+   #+BEGIN_EXAMPLE
    	* qd 	start recording to register d
    	* ... 	your complex series of commands
    	* q 	stop recording
    	* @d 	execute your macro
    	* @@ 	execute your macro again 
+   #+END_EXAMPLE
    
    ----------------------------
    
@@ -928,92 +911,49 @@ you should define the following option:
 
    ------------------------------------------
    
-   
    How to : always show line numbers in netrw:
+   #+BEGIN_EXAMPLE
    		    " netrw_bufsettings - you can control netrw's buffer settings; change
    		    " these if you want to change line number displays, relative line number
    		    " displays and other settings in netrw menu.
    			let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
-   
-   --------------------------------------------
+   #+END_EXAMPLE
    
    The file explorer is just another Vim buffer, so you can navigate up and down with k and j keys, or jump to the bottom with G, etc. If it is a large file listing, you may be quicker finding your target by searching for it.
    
    There are a handful of useful commands for opening the file explorer - either in the current window or a split, focusing on the project root, or the directory of the most recent file edited. This table summarizes:
-   lazy 	mnemonic 	open file explorer
-   :e. 	:edit . 	at current working directory
-   :sp. 	:split . 	in split at current working directory
-   :vs. 	:vsplit . 	in vertical split at current working directory
-   :E 	:Explore 	at directory of current file
-   :Se 	:Sexplore 	in split at directory of current file
-   :Vex 	:Vexplore 	in vertical split at directory of current file
+
+    |   lazy|	mnemonic |open file explorer|
+    |   :e. |:edit . 	 |at current working directory|
+    |   :sp.|	:split . |in split at current working directory|
+    |   :vs.|	:vsplit .|in vertical split at current working directory|
+    |   :E :|Explore 	 |at directory of current file|
+    |   :Se |:Sexplore 	 |in split at directory of current file|
+    |   :Vex|	:Vexplore|in vertical split at directory of current file|
    
    Manipulating the filesystem
    
    The file explorer includes commands for creating new files and directories, as well as renaming or deleting existing ones. This table summarizes these:
-   command 	action
-   % 	create a new file
-   d 	create a new directory
-   R 	rename the file/directory under the cursor
-   D 	Delete the file/directory under the cursor
-   Further Reading
-   
-       :help netrw
-       :help :edit
-       :help :Explore
-       :help netrw-% - create new file
-       :help netrw-d - create new directory
-       :help netrw-R - renaming files or directories
-       :help netrw-D - deleting files or directories
-   
-   
-   --------------------------------------------
+   | command | action                                     |
+   | %       | create a new file                          |
+   | d       | create a new directory                     |
+   | R       | rename the file/directory under the cursor |
+   | D       | Delete the file/directory under the cursor |
+
    
    Invoking netrw can be achieved in three ways
-       :Explore (:E) - opens netrw in the current window
-       :Sexplore (:Sex) - opens netrw in a horizontal split
-       :Vexplore (:Vex) - opens netrw in a vertical split
-       :Texplore (:Tex) - opens netrw in a new tab (use Cntrl PgUp, Cntrl PgDn to switch between tabs)
+   | :Explore (:E)    | opens netrw in the current window                                            |
+   | :Sexplore (:Sex) | opens netrw in a horizontal split                                            |
+   | :Vexplore (:Vex) | opens netrw in a vertical split                                              |
+   | :Texplore (:Tex) | opens netrw in a new tab (use Cntrl PgUp, Cntrl PgDn to switch between tabs) |
        
    --------------------------------------------
    
-   Changing the directory view in netrw
-   With the directory browser open hit i to cycle through the view types. There are four different view types: thin, long, wide and tree. A preferred view type can be made permanent by setting it in a .vimrc file.
-   
-   let g:netrw_liststyle = 3
-   
-   --------------------------------------------
-   
-   Removing the banner
-   The directory banner is mostly useless. To remove it temporarily press I. To remove it permanently add the following to your .vimrc.
-   
-   let g:netrw_banner = 0
-   
-   --------------------------------------------
-   
-   Changing how files are opened
-   By default files will be opened in the same window as the netrw directory browser. To change this behaviour the netrw_browse_split option may be set. The options are as follows
-       1 - open files in a new horizontal split
-       2 - open files in a new vertical split
-       3 - open files in a new tab
-       4 - open in previous window
-   To make the selection permanent add the following to your .vimrc.
-   
-   let g:netrw_browse_split = 1
-   
-   --------------------------------------------
-   
-   Set the width of the directory explorer
-   The width of the directory explorer can be fixed with the netrw_browse_split option. The following sets the width to 25% of the page.
-   
-   let g:netrw_winsize = 25
-   
-   --------------------------------------------
-   
    NERDtree like setup
-   If NERDtree is your thing netrw can give you a similar experience with the following settings
+   If NERDtree is your thing, netrw can give you a similar experience with the following settings
    
-   let g:netrw_banner = 0
+   #+BEGIN_EXAMPLE
+   let g:netrw_banner = 0 (To remove the directory banner)
    let g:netrw_liststyle = 3
    let g:netrw_browse_split = 4
    let g:netrw_altv = 1
@@ -1022,8 +962,7 @@ you should define the following option:
      autocmd!
      autocmd VimEnter * :Vexplore
    augroup END
-   
-   --------------------------------------------
+   #+END_EXAMPLE
    
    Vim also supports arbitrary commands to be run following !. For a quick directory listing the following works...  :! ls -lF
    For a more complex command other commands like ack, grep or find can be used.
@@ -1065,6 +1004,61 @@ you should define the following option:
    
    --------------------------------------------
 
+   Further Reading
+       :help netrw
+       :help :edit
+       :help :Explore
+   --------------------------------------------
+   
+*** Packages and plugins
+
+   Vim's official plugin install method:
+   https://github.com/vim/vim/blob/03c3bd9fd094c1aede2e8fe3ad8fd25b9f033053/runtime/doc/repeat.txt#L515
+   
+   Manual installation of packages in Windows:
+   Create the folder "\harsha\start" if it doesn't exist and clone the git repositories into it or manually copy the repositories into this folder.
+   C:\Program Files\Vim\vim82\pack\harsha\start
+
+   Protip: To learn more about any plugin, simply prepend "https://github.com/" to any plugin name. So if you see this line in a .vimrc file:
+
+   #+BEGIN_EXAMPLE
+      Plug 'pechorin/any-jump.vim'
+   #+END_EXAMPLE
+
+   change it to this to get the plugin's URL: 
+   #+BEGIN_EXAMPLE
+      https://github.com/pechorin/any-jump.vim
+   #+END_EXAMPLE
+
+   ------------------------------------------
+
+*** gitignore
+
+    Vim creates temporary files throughout the project. One way to stop that is by using the following settings:   
+   #+BEGIN_EXAMPLE
+    set nobackup       "no backup files
+    set nowritebackup  "only in case you don't want a backup file while editing
+    set noswapfile     "no swap files
+   #+END_EXAMPLE
+    
+    Instead of changing Vim settings, just add the following lines to the project's gitignore files
+   #+BEGIN_EXAMPLE
+    *~
+    *.swp
+    *.swo
+   #+END_EXAMPLE
+
+   ------------------------------------------
+
+*** Helpful links : 
+
+| https://vim.fandom.com/wiki/Search_across_multiple_lines |
+| https://vimhelp.org/                                     |
+| https://sanctum.geek.nz/arabesque/advanced-vim-macros/   |
+| https://vim.fandom.com/wiki/Copy,_cut_and_paste          |
+
+   ------------------------------------------
+
 *** Open questions
     
     Open question - how to move an entire paragraph (or block of code) up? (like alt up arrow  or down arrow in visual studio code)
@@ -1077,12 +1071,4 @@ you should define the following option:
     color schemes in Vim
     vimrc shortcut for finding and displaying all the occurences of a word
 
-  
    ------------------------------------------
-
-*** Helpful links : 
-
-| https://vim.fandom.com/wiki/Search_across_multiple_lines |
-| https://vimhelp.org/                                     |
-| https://sanctum.geek.nz/arabesque/advanced-vim-macros/   |
-| https://vim.fandom.com/wiki/Copy,_cut_and_paste          |

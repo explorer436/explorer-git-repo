@@ -1,50 +1,50 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#org0305840)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org2488d36)
-        1.  [Search tips](#org672ccf6)
-        2.  [Scrolling](#org483bec4)
-        3.  [Sorting](#org8472ccd)
-        4.  [Spell check](#org22861a3)
-        5.  [Non empty lines](#org314015f)
-        6.  [Split](#orgfde923a)
-        7.  [Terminal](#org9aa2b90)
-        8.  [Marks](#orgbf58c9e)
-        9.  [Registers and copy and paste](#org45f6454)
-        10. [Research](#org561ead6)
-        11. [Vim completion](#org0dc2315)
-        12. [Word and text manipulation](#org1d98d51)
-        13. [Working with multiple files](#org270ee24)
-        14. [cTags in Vim](#org104bb8c)
-        15. [Deleting](#org4ea8fd2)
-        16. [File comparison with Vim](#org8ac03f1)
-        17. [Grep](#orge653c1e)
-        18. [Indentation](#orgcd40c86)
-        19. [Line numbers](#org373e5f5)
-        20. [Lower case Upper case](#orge8fb5f7)
-        21. [Manual insertion of numbered lists](#org05e173c)
-        22. [Macros](#org566e0b0)
-        23. [Netrw](#orga508608)
-        24. [Open questions](#org62662da)
-        25. [Helpful links :](#org48f6319)
+1.  [My Vim notes](#org6d09930)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#orgb9fa368)
+        1.  [Search tips](#org1206420)
+        2.  [Scrolling](#orge3f0cae)
+        3.  [Sorting](#orga52b642)
+        4.  [Spell check](#orgdf6e832)
+        5.  [Non empty lines](#org5066430)
+        6.  [Terminal](#orgd40212f)
+        7.  [Marks](#org0b21894)
+        8.  [Registers and copy and paste](#org070af5e)
+        9.  [Research](#org9ededa1)
+        10. [Vim completion](#orgd0fa422)
+        11. [Word and text manipulation](#org7d05d04)
+        12. [Working with multiple files](#org05d7bda)
+        13. [Vim help](#orgc99c15f)
+        14. [cTags in Vim](#orgcd8d544)
+        15. [Deleting](#orgae50949)
+        16. [File comparison with Vim](#org55ce075)
+        17. [Grep](#org8ba2ac5)
+        18. [Indentation](#org10c8b03)
+        19. [Line numbers](#org5ba52d3)
+        20. [Lower case Upper case](#orgc95e49d)
+        21. [Manual insertion of numbered lists](#orge66ea0e)
+        22. [Macros](#org9384747)
+        23. [Netrw](#org49b66fa)
+        24. [Packages and plugins](#orge717322)
+        25. [gitignore](#org1e113ce)
+        26. [Helpful links :](#org4f3a96e)
+        27. [Open questions](#orgdbd4266)
 
 
-<a id="org0305840"></a>
+<a id="org6d09930"></a>
 
 # My Vim notes
 
 
-<a id="org2488d36"></a>
+<a id="orgb9fa368"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="org672ccf6"></a>
+<a id="org1206420"></a>
 
 ### Search tips
-
-    
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -83,7 +83,7 @@
 ---
 
 
-<a id="org483bec4"></a>
+<a id="orge3f0cae"></a>
 
 ### Scrolling
 
@@ -136,7 +136,7 @@
     ---
 
 
-<a id="org8472ccd"></a>
+<a id="orga52b642"></a>
 
 ### Sorting
 
@@ -175,11 +175,11 @@ You rejoice:
 ---
 
 
-<a id="org22861a3"></a>
+<a id="orgdf6e832"></a>
 
 ### Spell check
 
-To turn  it off \`:set nospell\`
+To turn it on \`:set spell\`. To turn it off \`:set nospell\`
 
 Using Spellchecking:
 
@@ -202,7 +202,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="org314015f"></a>
+<a id="org5066430"></a>
 
 ### Non empty lines
 
@@ -214,24 +214,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="orgfde923a"></a>
-
-### Split
-
-Opening Vim help in a vertical split window
-
-:vertical (vert)
-
-:vert help
-
-You can also control whether the window splits on the left/top or the right/bottom with topleft (to) and botright (bo). For example, to open help in the right window of a vertical split:
-
-:vert bo help
-
----
-
-
-<a id="org9aa2b90"></a>
+<a id="orgd40212f"></a>
 
 ### Terminal
 
@@ -240,7 +223,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="orgbf58c9e"></a>
+<a id="org0b21894"></a>
 
 ### Marks
 
@@ -320,7 +303,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="org45f6454"></a>
+<a id="org070af5e"></a>
 
 ### Registers and copy and paste
 
@@ -355,7 +338,7 @@ How can I quickly type "Hello world"?
 ---
 
 
-<a id="org561ead6"></a>
+<a id="org9ededa1"></a>
 
 ### Research
 
@@ -394,7 +377,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="org0dc2315"></a>
+<a id="orgd0fa422"></a>
 
 ### Vim completion
 
@@ -522,7 +505,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org1d98d51"></a>
+<a id="org7d05d04"></a>
 
 ### Word and text manipulation
 
@@ -667,7 +650,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org270ee24"></a>
+<a id="org05d7bda"></a>
 
 ### Working with multiple files
 
@@ -675,128 +658,257 @@ Even if you're good at it, typing is still slower and more error-prone than not 
 <https://vim.fandom.com/wiki/Using_tab_pages>
 <http://vimdoc.sourceforge.net/htmldoc/tabpage.html>
 
-How to view all open buffers?
-:buffers
+1.  Buffers
 
-This will show a numbered list with all open buffers. To go to a specific buffer (file), do 
-:b5 (to go to the buffer with the number 5)
-Tip: the numbers on buffers do not during a session.
+    How to view all open buffers?
+    :buffers
+    
+    This will show a numbered list with all open buffers. To go to a specific buffer (file), do \`:b5\` (to go to the buffer with the number 5)
+    Tip: the numbers on buffers do not during a session.
+    
+    ---
+    
+    (This is the general method to update multiple java files at once)
+    
+    If you want to open all files matching the pattern in subfolders - :args **\*/**.java
+    
+    To replace four white spaces in java files with a tab use this - :bufdo exexute "%s/    /(press tab)/g" | update
+    
+    1.  :bufdo execute "%s/(press tab){/{/g" | update
+    2.  :bufdo execute "global/^{/normal -gJ" | update
+    3.  :bufdo execute "%s/){/) {/g" | update
+    
+    ---
 
-How to view all open tabs?
-:tabs		List the tab pages and the windows they contain.
-		Shows a ">" for the current window.
-		Shows a "+" for modified buffers.
-		For example:
-			Tab page 1 ~
+2.  Tabs
 
--   tabpage.txt ~
-    ex<sub>docmd.c</sub> ~
+    Creating and closing tabs:
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">:tabnew</td>
+    <td class="org-left">To open a new tab with an empty buffer</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:tabe &lt;file&gt;</td>
+    <td class="org-left">to edit file in a new tab</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:tabc</td>
+    <td class="org-left">to close a tab and all the buffers in it</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    How to view all open tabs?
+    
+        :tabs		List the tab pages and the windows they contain.
+                	Shows a ">" for the current window.
+                	Shows a "+" for modified buffers.
+                	For example:
+                		Tab page 1 ~
+                		  + tabpage.txt ~
+                		    ex_docmd.c ~
+                		Tab page 2 ~
+                		>   main.c ~
+    
+    This will show a numbered list with all open tabs. To go to a specific tab, do \`:5gt\` (to go to the tab with the number 5)
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">g&lt;Tab&gt;</td>
+    <td class="org-left">Go to the last accessed tab page.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:gt</td>
+    <td class="org-left">Go to the next tab</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">: gT</td>
+    <td class="org-left">Go to the previous tab</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">: nnn gt</td>
+    <td class="org-left">Go to a numbered tab</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:tabn, :tabp</td>
+    <td class="org-left">(or gt, gT to switch)</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    REORDERING TAB PAGES:
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">:tabm[ove] +[N]</td>
+    <td class="org-left">Move the current tab page N places to the right (with +) or to the left (with -).</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:tabm[ove] -[N]</td>
+    <td class="org-left">Move the current tab page N places to the right (with +) or to the left (with -).</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:tabmove -</td>
+    <td class="org-left">move the tab page to the left</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:tabmove -1</td>
+    <td class="org-left">as above</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:tabmove +</td>
+    <td class="org-left">move the tab page to the right</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:tabmove +1</td>
+    <td class="org-left">as above</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    ---
+    
+    Open question - how to move buffers from one tab to another or into split windows when wanted?
+    It may not be such a great idea to work on multiple windows in a given tab, unless there is a need for it.
+    Always prefer to work only on one buffer in a tab because that will give maximum visibility into the open buffer.
+    If there is a need to work on another file/buffer at the same time, put it in a separate tab.
+    For now, just go to the tab that you want to open split windows in and use :vsp to split it and open the file that you want to view as a split window.
+    
+    ---
+    
+    How to open buffers in tabs from netrw: One way is to change netrw settings using vimrc. The other way is, open it in a window and move it into a tab using Cntrl W T
+    
+    Is there a way to take an existing window (split) and put it into a new tab?  Ctrl W followed by T
+    
+    ---
 
-Tab page 2 ~
->   main.c ~
+3.  Splits
 
-This will show a numbered list with all open tabs. To go to a specific tab, do 
-:5gt (to go to the tab with the number 5)
+    How do I change the current split's width and height?
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">Ctrl+W +/-</td>
+    <td class="org-left">increase/decrease height (ex. 20&lt;C-w&gt;+)</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">Ctrl+W &gt;/&lt;</td>
+    <td class="org-left">increase/decrease width (ex. 30&lt;C-w&gt;&lt;)</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">Ctrl+W _</td>
+    <td class="org-left">set height (ex. 50&lt;C-w&gt;_)</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">Ctrl+W    (pipe)</td>
+    <td class="org-left">set width (ex. 50&lt;C-w&gt;)</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">Ctrl+W =</td>
+    <td class="org-left">equalize width and height of all windows</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    See also: :help CTRL-W
+    
+    These mappings will help it a little easier.
+    (pressing + is too difficult. = is + without having to press shift.)
+    (pressing - is easy enough.)
+    nnoremap <Leader>= :vertical resize +5<CR>
+    nnoremap <Leader>- :vertical resize -5<CR>
+    
+    ---
 
-g<Tab>		Go to the last accessed tab page.
 
-REORDERING TAB PAGES:
+<a id="orgc99c15f"></a>
 
-:tabm[ove] +[N]
-:tabm[ove] -[N]
-		Move the current tab page N places to the right (with +) or to
-		the left (with -). >
-		    :tabmove -	" move the tab page to the left
-		    :tabmove -1	" as above
-		    :tabmove +	" move the tab page to the right
-		    :tabmove +1	" as above
+### Vim help
+
+Opening Vim help in a vertical split window
+
+:vertical (vert)
+
+:vert help
+
+You can also control whether the window splits on the left/top or the right/bottom with topleft (to) and botright (bo). For example, to open help in the right window of a vertical split:
+
+:vert bo help
 
 ---
 
-Open question - how to move buffers from one tab to another or into split windows when wanted?
-It may not be such a great idea to work on multiple windows in a given tab, unless there is a need for it.
-Always prefer to work only on one buffer in a tab because that will give maximum visibility into the open buffer.
-If there is a need to work on another file/buffer at the same time, put it in a separate tab.
-For now, just go to the tab that you want to open split windows in and use :vsp to split it and open the file that you want to view as a split window.
 
----
-
-How to open buffers in tabs from netrw
-Open it in a window and move it into a tab using Cntrl W T
-
-How do I move an existing window to a new tab?
-
-Is there a way to take an existing window (split) and put it into a new tab?  Ctrl W followed by T
-
----
-
-Opening a tab with an empty buffer : 
-
-To create a new file in a new tab : tabnew
-
-This will open a new tab with an empty buffer.  
-
----
-
-Switching between tabs in Vim:  
-
-1.  Go to the next tab :gt
-2.  Go to the previous tab: gT
-3.  Go to a numbered tab: nnn gt
-
----
-
-Some more tab tips :
-
-~ :tabe <file> to edit file in a new tab
-~ :tabc to close
-~ :tabn, :tabp (or gt, gT to switch) 
-~ probably want to map these for easier navigation (if gt, gT are too difficult)
-
----
-
-How do I change the current split's width and height?
-
-There are several window commands that allow you to do this:
-
-Ctrl+W <del>/-: increase/decrease height (ex. 20<C-w></del>)
-Ctrl+W >/<: increase/decrease width (ex. 30<C-w><)
-Ctrl+W <span class="underline">: set height (ex. 50<C-w></span>)
-Ctrl+W |: set width (ex. 50<C-w>|)
-Ctrl+W =: equalize width and height of all windows
-See also: :help CTRL-W
-
----
-
-(this is the general method to update multiple java files at once)
-
-If you want to open all files matching the pattern in subfolders - :args **\*/**.java
-
-To replace four white spaces in java files with a tab use this - :bufdo exexute "%s/    /(press tab)/g" | update
-
-1.  :bufdo execute "%s/(press tab){/{/g" | update
-2.  :bufdo execute "global/^{/normal -gJ" | update
-3.  :bufdo execute "%s/){/) {/g" | update
-
----
-
-
-<a id="org104bb8c"></a>
+<a id="orgcd8d544"></a>
 
 ### cTags in Vim
 
 <https://andrew.stwrt.ca/posts/vim-ctags/>
 
----
-
-CTAGS : 
-
-To install ctags in centos:
-
-1.  Find the package you want to install
-    $ yum list **ctags**
-2.  Install package
-    $ yum install <packagename>
+You would have to install cTags separately. It does not come with Vim.
 
 How to generate tags and use them for navigation in a big java project?
 Go to the root folder of the project and execute this command : ctags -R
@@ -836,7 +948,7 @@ Ctrl+Right MouseClick - Jump back from definition
 ---
 
 
-<a id="org4ea8fd2"></a>
+<a id="orgae50949"></a>
 
 ### Deleting
 
@@ -935,7 +1047,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="org8ac03f1"></a>
+<a id="org55ce075"></a>
 
 ### File comparison with Vim
 
@@ -964,7 +1076,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="orge653c1e"></a>
+<a id="org8ba2ac5"></a>
 
 ### Grep
 
@@ -984,17 +1096,14 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="orgcd40c86"></a>
+<a id="org10c8b03"></a>
 
 ### Indentation
 
-INDENTATION :     
-\`\`\`
     Example line
-	This is part of the parsed line
-	Thats goes one
+        This is part of the parsed line
+        Thats goes one
     End of line
-\`\`\`
 
 How to remove all spaces in front of these lines? The final text should be:
 Example line
@@ -1019,13 +1128,10 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="org373e5f5"></a>
+<a id="org5ba52d3"></a>
 
 ### Line numbers
 
----
-
-LINE NUMBERS in text editor :
 To display line numbers :set number (To turn off the line number display :set nonumber)
 
 To enable line numbers on startup, simply add the following to your vimrc - set number
@@ -1035,26 +1141,24 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="orge8fb5f7"></a>
+<a id="orgc95e49d"></a>
 
 ### Lower case Upper case
 
-How to change lower case letters words to upper case words? 
-
-How to change upper case words to lower case words?
+How to change lower case letters words to upper case words? How to change upper case words to lower case words?
 
 You can change the case of text:
 
-Toggle case "HellO" to "hELLo" with g~ then a movement (word or end of line). 
-Uppercase "HellO" to "HELLO" with gU then a movement (word or end of line). 
-Lowercase "HellO" to "hello" with gu then a movement (word or end of line). 
+    Toggle case "HellO" to "hELLo" with g~ then a movement (word or end of line). 
+    Uppercase "HellO" to "HELLO" with gU then a movement (word or end of line). 
+    Lowercase "HellO" to "hello" with gu then a movement (word or end of line). 
 
 Alternatively(easier to remember), you can visually select text then press ~ to toggle case, or U to convert to uppercase, or u to convert to lowercase. 
 
 ---
 
 
-<a id="org05e173c"></a>
+<a id="orge66ea0e"></a>
 
 ### Manual insertion of numbered lists
 
@@ -1081,7 +1185,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org566e0b0"></a>
+<a id="org9384747"></a>
 
 ### Macros
 
@@ -1095,11 +1199,11 @@ To execute the macro <number> times (once by default), type: <number>@<letter>
 
 So, the complete process looks like:
 
--   qd 	start recording to register d
--   &#x2026; 	your complex series of commands
--   q 	stop recording
--   @d 	execute your macro
--   @@ 	execute your macro again
+    * qd 	start recording to register d
+    * ... 	your complex series of commands
+    * q 	stop recording
+    * @d 	execute your macro
+    * @@ 	execute your macro again 
 
 ---
 
@@ -1128,7 +1232,7 @@ For help, check: :help global.
 ---
 
 
-<a id="orga508608"></a>
+<a id="org49b66fa"></a>
 
 ### Netrw
 
@@ -1139,99 +1243,171 @@ Open question - netrw - always fix the width at 25%. Right now, it is at 25% on 
 ---
 
 How to : always show line numbers in netrw:
-		    " netrw<sub>bufsettings</sub> - you can control netrw's buffer settings; change
-		    " these if you want to change line number displays, relative line number
-		    " displays and other settings in netrw menu.
-			let g:netrw<sub>bufsettings</sub> = 'noma nomod nu nobl nowrap ro'
 
----
+    " netrw_bufsettings - you can control netrw's buffer settings; change
+    " these if you want to change line number displays, relative line number
+    " displays and other settings in netrw menu.
+        let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 
 The file explorer is just another Vim buffer, so you can navigate up and down with k and j keys, or jump to the bottom with G, etc. If it is a large file listing, you may be quicker finding your target by searching for it.
 
 There are a handful of useful commands for opening the file explorer - either in the current window or a split, focusing on the project root, or the directory of the most recent file edited. This table summarizes:
-lazy 	mnemonic 	open file explorer
-:e. 	:edit . 	at current working directory
-:sp. 	:split . 	in split at current working directory
-:vs. 	:vsplit . 	in vertical split at current working directory
-:E 	:Explore 	at directory of current file
-:Se 	:Sexplore 	in split at directory of current file
-:Vex 	:Vexplore 	in vertical split at directory of current file
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">lazy</td>
+<td class="org-left">mnemonic</td>
+<td class="org-left">open file explorer</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:e.</td>
+<td class="org-left">:edit .</td>
+<td class="org-left">at current working directory</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:sp.</td>
+<td class="org-left">:split .</td>
+<td class="org-left">in split at current working directory</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:vs.</td>
+<td class="org-left">:vsplit .</td>
+<td class="org-left">in vertical split at current working directory</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:E :</td>
+<td class="org-left">Explore</td>
+<td class="org-left">at directory of current file</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:Se</td>
+<td class="org-left">:Sexplore</td>
+<td class="org-left">in split at directory of current file</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:Vex</td>
+<td class="org-left">:Vexplore</td>
+<td class="org-left">in vertical split at directory of current file</td>
+</tr>
+</tbody>
+</table>
 
 Manipulating the filesystem
 
 The file explorer includes commands for creating new files and directories, as well as renaming or deleting existing ones. This table summarizes these:
-command 	action
-% 	create a new file
-d 	create a new directory
-R 	rename the file/directory under the cursor
-D 	Delete the file/directory under the cursor
-Further Reading
 
-:help netrw
-:help :edit
-:help :Explore
-:help netrw-% - create new file
-:help netrw-d - create new directory
-:help netrw-R - renaming files or directories
-:help netrw-D - deleting files or directories
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
----
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">command</td>
+<td class="org-left">action</td>
+</tr>
+
+
+<tr>
+<td class="org-left">%</td>
+<td class="org-left">create a new file</td>
+</tr>
+
+
+<tr>
+<td class="org-left">d</td>
+<td class="org-left">create a new directory</td>
+</tr>
+
+
+<tr>
+<td class="org-left">R</td>
+<td class="org-left">rename the file/directory under the cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">D</td>
+<td class="org-left">Delete the file/directory under the cursor</td>
+</tr>
+</tbody>
+</table>
 
 Invoking netrw can be achieved in three ways
-    :Explore (:E) - opens netrw in the current window
-    :Sexplore (:Sex) - opens netrw in a horizontal split
-    :Vexplore (:Vex) - opens netrw in a vertical split
-    :Texplore (:Tex) - opens netrw in a new tab (use Cntrl PgUp, Cntrl PgDn to switch between tabs)
 
----
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-Changing the directory view in netrw
-With the directory browser open hit i to cycle through the view types. There are four different view types: thin, long, wide and tree. A preferred view type can be made permanent by setting it in a .vimrc file.
 
-let g:netrw<sub>liststyle</sub> = 3
+<colgroup>
+<col  class="org-left" />
 
----
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">:Explore (:E)</td>
+<td class="org-left">opens netrw in the current window</td>
+</tr>
 
-Removing the banner
-The directory banner is mostly useless. To remove it temporarily press I. To remove it permanently add the following to your .vimrc.
 
-let g:netrw<sub>banner</sub> = 0
+<tr>
+<td class="org-left">:Sexplore (:Sex)</td>
+<td class="org-left">opens netrw in a horizontal split</td>
+</tr>
 
----
 
-Changing how files are opened
-By default files will be opened in the same window as the netrw directory browser. To change this behaviour the netrw<sub>browse</sub><sub>split</sub> option may be set. The options are as follows
-    1 - open files in a new horizontal split
-    2 - open files in a new vertical split
-    3 - open files in a new tab
-    4 - open in previous window
-To make the selection permanent add the following to your .vimrc.
+<tr>
+<td class="org-left">:Vexplore (:Vex)</td>
+<td class="org-left">opens netrw in a vertical split</td>
+</tr>
 
-let g:netrw<sub>browse</sub><sub>split</sub> = 1
 
----
-
-Set the width of the directory explorer
-The width of the directory explorer can be fixed with the netrw<sub>browse</sub><sub>split</sub> option. The following sets the width to 25% of the page.
-
-let g:netrw<sub>winsize</sub> = 25
+<tr>
+<td class="org-left">:Texplore (:Tex)</td>
+<td class="org-left">opens netrw in a new tab (use Cntrl PgUp, Cntrl PgDn to switch between tabs)</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 NERDtree like setup
-If NERDtree is your thing netrw can give you a similar experience with the following settings
+If NERDtree is your thing, netrw can give you a similar experience with the following settings
 
-let g:netrw<sub>banner</sub> = 0
-let g:netrw<sub>liststyle</sub> = 3
-let g:netrw<sub>browse</sub><sub>split</sub> = 4
-let g:netrw<sub>altv</sub> = 1
-let g:netrw<sub>winsize</sub> = 25
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter \* :Vexplore
-augroup END
-
----
+    let g:netrw_banner = 0 (To remove the directory banner)
+    let g:netrw_liststyle = 3
+    let g:netrw_browse_split = 4
+    let g:netrw_altv = 1
+    let g:netrw_winsize = 25
+    augroup ProjectDrawer
+      autocmd!
+      autocmd VimEnter * :Vexplore
+    augroup END
 
 Vim also supports arbitrary commands to be run following !. For a quick directory listing the following works&#x2026;  :! ls -lF
 For a more complex command other commands like ack, grep or find can be used.
@@ -1272,25 +1448,56 @@ Therefore put let g:netrw<sub>bufsettings</sub> = 'noma nomod nu nobl nowrap ro'
 
 ---
 
-
-<a id="org62662da"></a>
-
-### Open questions
-
-Open question - how to move an entire paragraph (or block of code) up? (like alt up arrow  or down arrow in visual studio code)
-Open question - how to move an entire line up? (like alt up arrow  or down arrow in visual studio code)
-Put the cursor on the first line (the line that needs to be moved to the next line) and do "ddpP" (deleting it from its current position and pasting if after the subsequent line). This will work with single lines. This will not work with paragraphs.
-Open question - how to do file comparison using Vim?
-What is Vim maillist archives? Bram Moolenar talks about it in the talk "7 tips for highly effective text editiong"
-How to use folding in Vim? 
-To minimise the method/function implementation. (-) - minus? need a working example.
-color schemes in Vim
-vimrc shortcut for finding and displaying all the occurences of a word
+Further Reading
+    :help netrw
+    :help :edit
+    :help :Explore
 
 ---
 
 
-<a id="org48f6319"></a>
+<a id="orge717322"></a>
+
+### Packages and plugins
+
+Vim's official plugin install method:
+<https://github.com/vim/vim/blob/03c3bd9fd094c1aede2e8fe3ad8fd25b9f033053/runtime/doc/repeat.txt#L515>
+
+Manual installation of packages in Windows:
+Create the folder "\harsha\start" if it doesn't exist and clone the git repositories into it or manually copy the repositories into this folder.
+C:\Program Files\Vim\vim82\pack\harsha\start
+
+Protip: To learn more about any plugin, simply prepend "<https://github.com/>" to any plugin name. So if you see this line in a .vimrc file:
+
+    Plug 'pechorin/any-jump.vim'
+
+change it to this to get the plugin's URL: 
+
+    https://github.com/pechorin/any-jump.vim
+
+---
+
+
+<a id="org1e113ce"></a>
+
+### gitignore
+
+Vim creates temporary files throughout the project. One way to stop that is by using the following settings:   
+
+    set nobackup       "no backup files
+    set nowritebackup  "only in case you don't want a backup file while editing
+    set noswapfile     "no swap files
+
+Instead of changing Vim settings, just add the following lines to the project's gitignore files
+
+    *~
+    *.swp
+    *.swo
+
+---
+
+
+<a id="org4f3a96e"></a>
 
 ### Helpful links :
 
@@ -1321,4 +1528,23 @@ vimrc shortcut for finding and displaying all the occurences of a word
 </tr>
 </tbody>
 </table>
+
+---
+
+
+<a id="orgdbd4266"></a>
+
+### Open questions
+
+Open question - how to move an entire paragraph (or block of code) up? (like alt up arrow  or down arrow in visual studio code)
+Open question - how to move an entire line up? (like alt up arrow  or down arrow in visual studio code)
+Put the cursor on the first line (the line that needs to be moved to the next line) and do "ddpP" (deleting it from its current position and pasting if after the subsequent line). This will work with single lines. This will not work with paragraphs.
+Open question - how to do file comparison using Vim?
+What is Vim maillist archives? Bram Moolenar talks about it in the talk "7 tips for highly effective text editiong"
+How to use folding in Vim? 
+To minimise the method/function implementation. (-) - minus? need a working example.
+color schemes in Vim
+vimrc shortcut for finding and displaying all the occurences of a word
+
+---
 
