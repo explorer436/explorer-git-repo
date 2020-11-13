@@ -3,6 +3,59 @@
   
 ** Helpful tips related to configuration and other things related to Vim that I find useful.
 
+*** Basic Movement
+
+| h l k j | character left, right; line up, down           |
+| b w     | word/token left, right                         |
+| ge e    | end of word/token left, right                  |
+| {  }    | beginning of previous, next paragraph          |
+| ( )     | beginning of previous, next sentence           |
+| 0       | beginning of line                              |
+| gm      | middle of line                                 |
+| ^       | first character of line                        |
+| $       | last character of line                         |
+| nG ngg  | line n, default the last, first                |
+| n%      | percentage n of the file (n must be provided)  |
+| n       | column n of current line                       |
+| %       | match of next brace, bracket, comment, #define |
+| nH      | line n from start of window                    |
+| nL      | line n from bottom of window                   |
+| M       | middle line of window                          |
+
+*** Insertion & replace → insert mode
+| i a     | insert before, after cursor                   |
+| I A     | insert at beginning, end of line              |
+| gI      | insert text in first column                   |
+| o O     | open a new line below, above the current line |
+| rc      | replace character under cursor with c         |
+| grc     | like r, but without affecting layout          |
+| R       | replace characters starting at the cursor     |
+| gR      | like R, but without affecting layout          |
+| cm      | change text of movement command m             |
+| cc or S | change current line                           |
+| C       | change to the end of line                     |
+| s       | change one character and insert               |
+| ~       | switch case and advance cursor                |
+| g~m     | switch case of movement command m             |
+| gum gUm | lowercase, uppercase text of movement m       |
+| <m >m   | shift left, right text of movement m          |
+| n<< n>> | shift n lines left, right                     |
+
+Insert mode
+
+| ^Vc ^Vn         | insert char c literally, decimal value n      |
+| ^A              | insert previously inserted text               |
+| ^@              | same as ^A and stop insert → command mode     |
+| ^Rx ^R^Rx       | insert content of register x, literally       |
+| ^N ^P           | text completion before, after cursor          |
+| ^W              | delete word before cursor                     |
+| ^U              | delete all inserted character in current line |
+| ^D ^T           | shift left, right one shift width             |
+| ^Kc1c2 or c1←c2 | enter digraph \c1,c2\                         |
+| ^Oc             | execute c in temporary command mode           |
+| ^X^E ^X^Y       | scroll up, down                               |
+| <esc> or ^[     | abandon edition → command mode                |
+
 *** Search tips
  
 | What to Type | What it does                                            |
@@ -100,8 +153,9 @@ you should define the following option:
 	gem 'stripe'
 	gem 'strong_parameters'
 	gem 'thin'
-	You dig deeper:
 #+END_EXAMPLE
+
+	You dig deeper:
 	:help sort
  
    ------------------------------------------
@@ -137,7 +191,6 @@ you should define the following option:
 	To do something only to the visually selected non-empty lines, use the same approach.
 
    ------------------------------------------
-
 
 *** Terminal
    Launch terminal from within Vim using `:term`
@@ -380,7 +433,6 @@ you should define the following option:
      Move to cursor where you would like to paste.
      Press P to paste before the cursor, or p to paste after.
      
-     
 **** SEARCH AND REPLACE :
      
      How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?  :1,$s/ABC/XYZ/g   and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.  Note that in this example, the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
@@ -569,7 +621,7 @@ you should define the following option:
     
     How to open buffers in tabs from netrw: One way is to change netrw settings using vimrc. The other way is, open it in a window and move it into a tab using Cntrl W T
     
-    Is there a way to take an existing window (split) and put it into a new tab?  Ctrl W followed by T
+    How to move an existing window (split) and put it in a new tab?  Ctrl W followed by T
     
     -------------------------------------------------------------------------------------  
     
@@ -648,6 +700,14 @@ you should define the following option:
    ---------------------------------------------------------------------------------------------------
  
 *** Deleting
+   Deletion
+   | x X   | delete character under, before cursor      |
+   | dm    | delete text of movement command m          |
+   | dd D  | delete current line, to the end of line    |
+   | J gJ  | join current line with next, without space |
+   | :rd↵  | delete range r lines                       |
+   | :rdx↵ | delete range r lines into register x       |
+
    vim delete up until a word
 
    Put your cursor at the point you want to start at.
@@ -1016,8 +1076,8 @@ you should define the following option:
    https://github.com/vim/vim/blob/03c3bd9fd094c1aede2e8fe3ad8fd25b9f033053/runtime/doc/repeat.txt#L515
    
    Manual installation of packages in Windows:
-   Create the folder "\harsha\start" if it doesn't exist and clone the git repositories into it or manually copy the repositories into this folder.
-   C:\Program Files\Vim\vim82\pack\harsha\start
+   Create the folder "\[your-name]\start" if it doesn't exist and clone the git repositories into it or manually copy the repositories into this folder.
+   C:\Program Files\Vim\vim82\pack\[your-name]\start
 
    Protip: To learn more about any plugin, simply prepend "https://github.com/" to any plugin name. So if you see this line in a .vimrc file:
 

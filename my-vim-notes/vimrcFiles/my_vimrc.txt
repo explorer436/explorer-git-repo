@@ -183,11 +183,18 @@
 " In other words, you can be anywhere in your source tree instead of just the root of it.
 set tags=./tags;/         
 
+colorscheme papaya
+
 " Before this, visit the github project for instructions about installing plugged : https://github.com/junegunn/vim-plug
 " We need to run a command to Download plug.vim and put it in the "autoload" directory.
 call plug#begin('~/.vim/plugged')
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'HenryNewcomer/vim-theme-papaya'
 
 call plug#end()
+" After making changes to the list here, run the command ':PlugInstall' to get
+" the latest updates.

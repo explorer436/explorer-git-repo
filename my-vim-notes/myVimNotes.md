@@ -1,48 +1,362 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#org6d09930)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#orgb9fa368)
-        1.  [Search tips](#org1206420)
-        2.  [Scrolling](#orge3f0cae)
-        3.  [Sorting](#orga52b642)
-        4.  [Spell check](#orgdf6e832)
-        5.  [Non empty lines](#org5066430)
-        6.  [Terminal](#orgd40212f)
-        7.  [Marks](#org0b21894)
-        8.  [Registers and copy and paste](#org070af5e)
-        9.  [Research](#org9ededa1)
-        10. [Vim completion](#orgd0fa422)
-        11. [Word and text manipulation](#org7d05d04)
-        12. [Working with multiple files](#org05d7bda)
-        13. [Vim help](#orgc99c15f)
-        14. [cTags in Vim](#orgcd8d544)
-        15. [Deleting](#orgae50949)
-        16. [File comparison with Vim](#org55ce075)
-        17. [Grep](#org8ba2ac5)
-        18. [Indentation](#org10c8b03)
-        19. [Line numbers](#org5ba52d3)
-        20. [Lower case Upper case](#orgc95e49d)
-        21. [Manual insertion of numbered lists](#orge66ea0e)
-        22. [Macros](#org9384747)
-        23. [Netrw](#org49b66fa)
-        24. [Packages and plugins](#orge717322)
-        25. [gitignore](#org1e113ce)
-        26. [Helpful links :](#org4f3a96e)
-        27. [Open questions](#orgdbd4266)
+1.  [My Vim notes](#org3b21b02)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org44580cd)
+        1.  [Basic Movement](#org34aa00b)
+        2.  [Insertion & replace → insert mode](#orgdd6825a)
+        3.  [Search tips](#org9d845dd)
+        4.  [Scrolling](#orgd4ee254)
+        5.  [Sorting](#org5995447)
+        6.  [Spell check](#orgc7185a6)
+        7.  [Non empty lines](#orgbb8bf87)
+        8.  [Terminal](#org467fea3)
+        9.  [Marks](#org167b0a3)
+        10. [Registers and copy and paste](#org2bf742b)
+        11. [Research](#org066f8bf)
+        12. [Vim completion](#org6046ba0)
+        13. [Word and text manipulation](#org8b56899)
+        14. [Working with multiple files](#org8e0d524)
+        15. [Vim help](#org6258092)
+        16. [cTags in Vim](#org9a3842d)
+        17. [Deleting](#org4d6c791)
+        18. [File comparison with Vim](#orga35aa50)
+        19. [Grep](#org48765e3)
+        20. [Indentation](#org4ef571c)
+        21. [Line numbers](#org2a6d8dd)
+        22. [Lower case Upper case](#org64b10d6)
+        23. [Manual insertion of numbered lists](#org1f1176b)
+        24. [Macros](#org2351600)
+        25. [Netrw](#org3d65780)
+        26. [Packages and plugins](#orgf93cacb)
+        27. [gitignore](#orge5ab447)
+        28. [Helpful links :](#orgd4c5e3c)
+        29. [Open questions](#orgae16852)
 
 
-<a id="org6d09930"></a>
+<a id="org3b21b02"></a>
 
 # My Vim notes
 
 
-<a id="orgb9fa368"></a>
+<a id="org44580cd"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="org1206420"></a>
+<a id="org34aa00b"></a>
+
+### Basic Movement
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">h l k j</td>
+<td class="org-left">character left, right; line up, down</td>
+</tr>
+
+
+<tr>
+<td class="org-left">b w</td>
+<td class="org-left">word/token left, right</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ge e</td>
+<td class="org-left">end of word/token left, right</td>
+</tr>
+
+
+<tr>
+<td class="org-left">{  }</td>
+<td class="org-left">beginning of previous, next paragraph</td>
+</tr>
+
+
+<tr>
+<td class="org-left">( )</td>
+<td class="org-left">beginning of previous, next sentence</td>
+</tr>
+
+
+<tr>
+<td class="org-left">0</td>
+<td class="org-left">beginning of line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gm</td>
+<td class="org-left">middle of line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^</td>
+<td class="org-left">first character of line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">$</td>
+<td class="org-left">last character of line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">nG ngg</td>
+<td class="org-left">line n, default the last, first</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n%</td>
+<td class="org-left">percentage n of the file (n must be provided)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n</td>
+<td class="org-left">column n of current line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">%</td>
+<td class="org-left">match of next brace, bracket, comment, #define</td>
+</tr>
+
+
+<tr>
+<td class="org-left">nH</td>
+<td class="org-left">line n from start of window</td>
+</tr>
+
+
+<tr>
+<td class="org-left">nL</td>
+<td class="org-left">line n from bottom of window</td>
+</tr>
+
+
+<tr>
+<td class="org-left">M</td>
+<td class="org-left">middle line of window</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="orgdd6825a"></a>
+
+### Insertion & replace → insert mode
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">i a</td>
+<td class="org-left">insert before, after cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">I A</td>
+<td class="org-left">insert at beginning, end of line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gI</td>
+<td class="org-left">insert text in first column</td>
+</tr>
+
+
+<tr>
+<td class="org-left">o O</td>
+<td class="org-left">open a new line below, above the current line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">rc</td>
+<td class="org-left">replace character under cursor with c</td>
+</tr>
+
+
+<tr>
+<td class="org-left">grc</td>
+<td class="org-left">like r, but without affecting layout</td>
+</tr>
+
+
+<tr>
+<td class="org-left">R</td>
+<td class="org-left">replace characters starting at the cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gR</td>
+<td class="org-left">like R, but without affecting layout</td>
+</tr>
+
+
+<tr>
+<td class="org-left">cm</td>
+<td class="org-left">change text of movement command m</td>
+</tr>
+
+
+<tr>
+<td class="org-left">cc or S</td>
+<td class="org-left">change current line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">change to the end of line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">s</td>
+<td class="org-left">change one character and insert</td>
+</tr>
+
+
+<tr>
+<td class="org-left">~</td>
+<td class="org-left">switch case and advance cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">g~m</td>
+<td class="org-left">switch case of movement command m</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gum gUm</td>
+<td class="org-left">lowercase, uppercase text of movement m</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&lt;m &gt;m</td>
+<td class="org-left">shift left, right text of movement m</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n&lt;&lt; n&gt;&gt;</td>
+<td class="org-left">shift n lines left, right</td>
+</tr>
+</tbody>
+</table>
+
+Insert mode
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">^Vc ^Vn</td>
+<td class="org-left">insert char c literally, decimal value n</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^A</td>
+<td class="org-left">insert previously inserted text</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^@</td>
+<td class="org-left">same as ^A and stop insert → command mode</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^Rx ^R<sup>Rx</sup></td>
+<td class="org-left">insert content of register x, literally</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^N ^P</td>
+<td class="org-left">text completion before, after cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^W</td>
+<td class="org-left">delete word before cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^U</td>
+<td class="org-left">delete all inserted character in current line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^D ^T</td>
+<td class="org-left">shift left, right one shift width</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^Kc1c2 or c1←c2</td>
+<td class="org-left">enter digraph \c1,c2\</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^Oc</td>
+<td class="org-left">execute c in temporary command mode</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^X<sup>E</sup> ^X<sup>Y</sup></td>
+<td class="org-left">scroll up, down</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&lt;esc&gt; or ^[</td>
+<td class="org-left">abandon edition → command mode</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="org9d845dd"></a>
 
 ### Search tips
 
@@ -83,7 +397,7 @@
 ---
 
 
-<a id="orge3f0cae"></a>
+<a id="orgd4ee254"></a>
 
 ### Scrolling
 
@@ -136,7 +450,7 @@
     ---
 
 
-<a id="orga52b642"></a>
+<a id="org5995447"></a>
 
 ### Sorting
 
@@ -168,14 +482,14 @@ You rejoice:
     gem 'stripe'
     gem 'strong_parameters'
     gem 'thin'
-    You dig deeper:
 
+You dig deeper:
 :help sort
 
 ---
 
 
-<a id="orgdf6e832"></a>
+<a id="orgc7185a6"></a>
 
 ### Spell check
 
@@ -202,7 +516,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="org5066430"></a>
+<a id="orgbb8bf87"></a>
 
 ### Non empty lines
 
@@ -214,7 +528,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="orgd40212f"></a>
+<a id="org467fea3"></a>
 
 ### Terminal
 
@@ -223,7 +537,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="org0b21894"></a>
+<a id="org167b0a3"></a>
 
 ### Marks
 
@@ -303,7 +617,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="org070af5e"></a>
+<a id="org2bf742b"></a>
 
 ### Registers and copy and paste
 
@@ -338,7 +652,7 @@ How can I quickly type "Hello world"?
 ---
 
 
-<a id="org9ededa1"></a>
+<a id="org066f8bf"></a>
 
 ### Research
 
@@ -377,7 +691,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="orgd0fa422"></a>
+<a id="org6046ba0"></a>
 
 ### Vim completion
 
@@ -505,7 +819,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org7d05d04"></a>
+<a id="org8b56899"></a>
 
 ### Word and text manipulation
 
@@ -650,7 +964,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org05d7bda"></a>
+<a id="org8e0d524"></a>
 
 ### Working with multiple files
 
@@ -826,7 +1140,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     
     How to open buffers in tabs from netrw: One way is to change netrw settings using vimrc. The other way is, open it in a window and move it into a tab using Cntrl W T
     
-    Is there a way to take an existing window (split) and put it into a new tab?  Ctrl W followed by T
+    How to move an existing window (split) and put it in a new tab?  Ctrl W followed by T
     
     ---
 
@@ -885,7 +1199,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="orgc99c15f"></a>
+<a id="org6258092"></a>
 
 ### Vim help
 
@@ -902,7 +1216,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="orgcd8d544"></a>
+<a id="org9a3842d"></a>
 
 ### cTags in Vim
 
@@ -948,9 +1262,57 @@ Ctrl+Right MouseClick - Jump back from definition
 ---
 
 
-<a id="orgae50949"></a>
+<a id="org4d6c791"></a>
 
 ### Deleting
+
+Deletion
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">x X</td>
+<td class="org-left">delete character under, before cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">dm</td>
+<td class="org-left">delete text of movement command m</td>
+</tr>
+
+
+<tr>
+<td class="org-left">dd D</td>
+<td class="org-left">delete current line, to the end of line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">J gJ</td>
+<td class="org-left">join current line with next, without space</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rd↵</td>
+<td class="org-left">delete range r lines</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rdx↵</td>
+<td class="org-left">delete range r lines into register x</td>
+</tr>
+</tbody>
+</table>
 
 vim delete up until a word
 
@@ -1047,7 +1409,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="org55ce075"></a>
+<a id="orga35aa50"></a>
 
 ### File comparison with Vim
 
@@ -1076,7 +1438,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="org8ba2ac5"></a>
+<a id="org48765e3"></a>
 
 ### Grep
 
@@ -1096,7 +1458,7 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="org10c8b03"></a>
+<a id="org4ef571c"></a>
 
 ### Indentation
 
@@ -1128,7 +1490,7 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="org5ba52d3"></a>
+<a id="org2a6d8dd"></a>
 
 ### Line numbers
 
@@ -1141,7 +1503,7 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="orgc95e49d"></a>
+<a id="org64b10d6"></a>
 
 ### Lower case Upper case
 
@@ -1158,7 +1520,7 @@ Alternatively(easier to remember), you can visually select text then press ~ to 
 ---
 
 
-<a id="orge66ea0e"></a>
+<a id="org1f1176b"></a>
 
 ### Manual insertion of numbered lists
 
@@ -1185,7 +1547,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org9384747"></a>
+<a id="org2351600"></a>
 
 ### Macros
 
@@ -1232,7 +1594,7 @@ For help, check: :help global.
 ---
 
 
-<a id="org49b66fa"></a>
+<a id="org3d65780"></a>
 
 ### Netrw
 
@@ -1456,7 +1818,7 @@ Further Reading
 ---
 
 
-<a id="orge717322"></a>
+<a id="orgf93cacb"></a>
 
 ### Packages and plugins
 
@@ -1464,8 +1826,8 @@ Vim's official plugin install method:
 <https://github.com/vim/vim/blob/03c3bd9fd094c1aede2e8fe3ad8fd25b9f033053/runtime/doc/repeat.txt#L515>
 
 Manual installation of packages in Windows:
-Create the folder "\harsha\start" if it doesn't exist and clone the git repositories into it or manually copy the repositories into this folder.
-C:\Program Files\Vim\vim82\pack\harsha\start
+Create the folder "\\[your-name]\start" if it doesn't exist and clone the git repositories into it or manually copy the repositories into this folder.
+C:\Program Files\Vim\vim82\pack\\[your-name]\start
 
 Protip: To learn more about any plugin, simply prepend "<https://github.com/>" to any plugin name. So if you see this line in a .vimrc file:
 
@@ -1478,7 +1840,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="org1e113ce"></a>
+<a id="orge5ab447"></a>
 
 ### gitignore
 
@@ -1497,7 +1859,7 @@ Instead of changing Vim settings, just add the following lines to the project's 
 ---
 
 
-<a id="org4f3a96e"></a>
+<a id="orgd4c5e3c"></a>
 
 ### Helpful links :
 
@@ -1532,7 +1894,7 @@ Instead of changing Vim settings, just add the following lines to the project's 
 ---
 
 
-<a id="orgdbd4266"></a>
+<a id="orgae16852"></a>
 
 ### Open questions
 
