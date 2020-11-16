@@ -1,52 +1,59 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#org3b21b02)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org44580cd)
-        1.  [Basic Movement](#org34aa00b)
-        2.  [Insertion & replace → insert mode](#orgdd6825a)
-        3.  [Search tips](#org9d845dd)
-        4.  [Scrolling](#orgd4ee254)
-        5.  [Sorting](#org5995447)
-        6.  [Spell check](#orgc7185a6)
-        7.  [Non empty lines](#orgbb8bf87)
-        8.  [Terminal](#org467fea3)
-        9.  [Marks](#org167b0a3)
-        10. [Registers and copy and paste](#org2bf742b)
-        11. [Research](#org066f8bf)
-        12. [Vim completion](#org6046ba0)
-        13. [Word and text manipulation](#org8b56899)
-        14. [Working with multiple files](#org8e0d524)
-        15. [Vim help](#org6258092)
-        16. [cTags in Vim](#org9a3842d)
-        17. [Deleting](#org4d6c791)
-        18. [File comparison with Vim](#orga35aa50)
-        19. [Grep](#org48765e3)
-        20. [Indentation](#org4ef571c)
-        21. [Line numbers](#org2a6d8dd)
-        22. [Lower case Upper case](#org64b10d6)
-        23. [Manual insertion of numbered lists](#org1f1176b)
-        24. [Macros](#org2351600)
-        25. [Netrw](#org3d65780)
-        26. [Packages and plugins](#orgf93cacb)
-        27. [gitignore](#orge5ab447)
-        28. [Helpful links :](#orgd4c5e3c)
-        29. [Open questions](#orgae16852)
+1.  [My Vim notes](#org2f26329)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#orgfd5749f)
+        1.  [Movement](#org0dfd65c)
+        2.  [Folding](#org881ac34)
+        3.  [Insertion & replace → insert mode](#org8bc71dd)
+        4.  [Search and Substitution](#org6003ef2)
+        5.  [Scrolling](#orgf8126a8)
+        6.  [Sorting](#orgafe7471)
+        7.  [Spell check](#orgdc67db4)
+        8.  [Non empty lines](#orga1af55e)
+        9.  [Terminal](#orgb02b34c)
+        10. [Marks](#orgc41da05)
+        11. [Visual Mode](#orgb449313)
+        12. [Registers and copy and paste](#org4583bfe)
+        13. [Ex commands](#orga71e927)
+        14. [Vim completion](#orgffec82d)
+        15. [Word and text manipulation](#orge53e35b)
+        16. [Working with multiple files](#org4538c5b)
+        17. [Vim help](#org49b8f14)
+        18. [Key mappings and abbreviations](#org300dce7)
+        19. [Tags in Vim](#org4a23d71)
+        20. [Deleting](#orgf15c828)
+        21. [File comparison with Vim](#org7622a5a)
+        22. [Grep](#orgfdcf53e)
+        23. [Indentation](#orgc534561)
+        24. [Line numbers](#orgf79b9c6)
+        25. [Lower case Upper case](#org2e2784a)
+        26. [Manual insertion of numbered lists](#org0deba82)
+        27. [Macros](#org0ec4483)
+        28. [Netrw](#orgcc60e26)
+        29. [Packages and plugins](#org2067830)
+        30. [gitignore](#orgdc695e0)
+        31. [Helpful links](#org6e56760)
+        32. [Open questions](#orge7f886f)
+        33. [Research](#orgb373063)
+        34. [Miscellaneous](#orgb025a0c)
 
 
-<a id="org3b21b02"></a>
+<a id="org2f26329"></a>
 
 # My Vim notes
 
 
-<a id="org44580cd"></a>
+<a id="orgfd5749f"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="org34aa00b"></a>
+<a id="org0dfd65c"></a>
 
-### Basic Movement
+### Movement
+
+Basic Movement
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -154,8 +161,189 @@
 </tbody>
 </table>
 
+Complex movement
 
-<a id="orgdd6825a"></a>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">(minus)</td>
+<td class="org-left">line up, down on first non-blank character</td>
+</tr>
+
+
+<tr>
+<td class="org-left">(plus)</td>
+<td class="org-left">line up, down on first non-blank character</td>
+</tr>
+
+
+<tr>
+<td class="org-left">B W</td>
+<td class="org-left">space-separated word left, right</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gE E</td>
+<td class="org-left">end of space-separated word left, right</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n_</td>
+<td class="org-left">down n-1 line on first non-blank character</td>
+</tr>
+
+
+<tr>
+<td class="org-left">g0</td>
+<td class="org-left">beginning of screen line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">g^  g$</td>
+<td class="org-left">first, last character of screen line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gk gj</td>
+<td class="org-left">screen line up, down</td>
+</tr>
+
+
+<tr>
+<td class="org-left">fc Fc</td>
+<td class="org-left">next, previous occurence of character c</td>
+</tr>
+
+
+<tr>
+<td class="org-left">tc Tc</td>
+<td class="org-left">before next, previous occurence of c</td>
+</tr>
+
+
+<tr>
+<td class="org-left">; ,</td>
+<td class="org-left">repeat last fFtT, in opposite direction</td>
+</tr>
+
+
+<tr>
+<td class="org-left">(Two square bracket openings)</td>
+<td class="org-left">start of section backward</td>
+</tr>
+
+
+<tr>
+<td class="org-left">]]</td>
+<td class="org-left">start of section forward</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[] ][</td>
+<td class="org-left">end of section backward, forward</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[( ])</td>
+<td class="org-left">unclosed (, ) backward, forward</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[{  ]}</td>
+<td class="org-left">unclosed {, } backward, forward</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[m ]m</td>
+<td class="org-left">start of backward, forward Java method</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[# ]#</td>
+<td class="org-left">unclosed #if, #else, #endif backward, forward</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[* ]*</td>
+<td class="org-left">start, end of <i>* *</i> backward, forward</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+
+<a id="org881ac34"></a>
+
+### Folding
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">zfm</td>
+<td class="org-left">create fold of movement m</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rfo</td>
+<td class="org-left">create fold for range r</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zd zE</td>
+<td class="org-left">delete fold at cursor, all in window</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zo zc zO zC</td>
+<td class="org-left">open, close one fold; recursively</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[z ]z</td>
+<td class="org-left">move to start, end of current open fold</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zj zk</td>
+<td class="org-left">move down, up to start, end of next fold</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+
+<a id="org8bc71dd"></a>
 
 ### Insertion & replace → insert mode
 
@@ -271,7 +459,7 @@
 </tbody>
 </table>
 
-Insert mode
+INSERT MODE
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -355,10 +543,76 @@ Insert mode
 </tbody>
 </table>
 
+ADVANCED INSERTION
 
-<a id="org9d845dd"></a>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-### Search tips
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">g?m</td>
+<td class="org-left">perform rot13 encoding on movement m</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n<sup>A</sup> n<sup>X</sup></td>
+<td class="org-left">+n, -n to number under cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gqm</td>
+<td class="org-left">format lines of movement m to fixed width</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rce w↵</td>
+<td class="org-left">center lines in range r to width w</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rle i↵</td>
+<td class="org-left">left align lines in range r with indent i</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rri w↵</td>
+<td class="org-left">right align lines in range r to width w</td>
+</tr>
+
+
+<tr>
+<td class="org-left">!mc↵</td>
+<td class="org-left">filter lines of movement m through command c</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n!!c↵</td>
+<td class="org-left">filter n lines through command c</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:r!c↵</td>
+<td class="org-left">filter range r lines through command c</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="org6003ef2"></a>
+
+### Search and Substitution
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -394,12 +648,274 @@ Insert mode
 </tbody>
 </table>
 
+SEARCH & SUBSTITUTION
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">/s↵  ?s↵</td>
+<td class="org-left">search forward, backward for s</td>
+</tr>
+
+
+<tr>
+<td class="org-left">/s/o↵  ?s?o↵</td>
+<td class="org-left">search fwd, bwd for s with offset o</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n or /↵</td>
+<td class="org-left">repeat forward last search</td>
+</tr>
+
+
+<tr>
+<td class="org-left">N or ?↵</td>
+<td class="org-left">repeat backward last search</td>
+</tr>
+
+
+<tr>
+<td class="org-left"># *</td>
+<td class="org-left">search backward, forward for word under cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">g# g*</td>
+<td class="org-left">same, but also find partial matches</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gd gD</td>
+<td class="org-left">local, global definition of symbol under cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rs/f/t/x↵</td>
+<td class="org-left">substitute f by t in range r x: g-all occurrences, c-confirm changes</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rs x↵</td>
+<td class="org-left">repeat substitution with new r &amp; x</td>
+</tr>
+</tbody>
+</table>
+
+SPECIAL CHARACTERS IN SEARCH PATTERNS
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">.   ^  $</td>
+<td class="org-left">any single character, start, end of line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\&lt; \&gt;</td>
+<td class="org-left">start, end of word</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[c1-c2]</td>
+<td class="org-left">a single character in range c1..c2</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[<sup>c1</sup>-c2]</td>
+<td class="org-left">a single character not in range</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\i \k \I \K</td>
+<td class="org-left">an identifier, keyword; excl. digits</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\f \p \F \P</td>
+<td class="org-left">a file name, printable char.; excl. digits</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\s &sect;</td>
+<td class="org-left">a white space, a non-white space</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\e \t \r \b</td>
+<td class="org-left">&lt;esc&gt;, &lt;tab&gt;, &lt;↵&gt;, &lt;←&gt;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\= * \+</td>
+<td class="org-left">match 0..1, 0..∞, 1..∞ of preceding atoms</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\(pipe)</td>
+<td class="org-left">separate two branches ( ≡ or)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\( \)</td>
+<td class="org-left">group patterns into an atom</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\&amp; \n</td>
+<td class="org-left">the whole matched pattern, nth () group</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\u \l</td>
+<td class="org-left">next character made upper, lowercase</td>
+</tr>
+
+
+<tr>
+<td class="org-left">\c \C</td>
+<td class="org-left">ignore, match case on next pattern</td>
+</tr>
+</tbody>
+</table>
+
+OFFSETS IN SEARCH COMMANDS
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">n or +n</td>
+<td class="org-left">n line downward in column 1</td>
+</tr>
+
+
+<tr>
+<td class="org-left">(minus)n</td>
+<td class="org-left">n line upward in column 1</td>
+</tr>
+
+
+<tr>
+<td class="org-left">e+n e-n</td>
+<td class="org-left">n characters right, left to end of match</td>
+</tr>
+
+
+<tr>
+<td class="org-left">s+n s-n</td>
+<td class="org-left">n characters right, left to start of match</td>
+</tr>
+
+
+<tr>
+<td class="org-left">;sc</td>
+<td class="org-left">execute search command sc next</td>
+</tr>
+</tbody>
+</table>
+
 ---
 
 
-<a id="orgd4ee254"></a>
+<a id="orgf8126a8"></a>
 
 ### Scrolling
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">^E ^Y</td>
+<td class="org-left">scroll line up, down</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^D ^U</td>
+<td class="org-left">scroll half a page up, down</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^F ^B</td>
+<td class="org-left">scroll page up, down</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zt or z↵</td>
+<td class="org-left">set current line at top of window</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zz or z.</td>
+<td class="org-left">set current line at center of window</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zb or z-</td>
+<td class="org-left">set current line at bottom of window</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zh zl</td>
+<td class="org-left">scroll one character to the right, left</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zH zL</td>
+<td class="org-left">scroll half a screen to the right, left</td>
+</tr>
+</tbody>
+</table>
 
 1.  Moving the cursor gracefully :
 
@@ -421,6 +937,8 @@ Insert mode
 
     Scroll up and down through a page gracefully using Vim the following keystrokes:
     
+    // TODO - Convert this into a table.j
+    
         [Control][b] - Moves screen up one page, cursor to last line
         [Control][f] - Moves screen down one page, cursor to first line
         Half-page navigations
@@ -439,6 +957,8 @@ Insert mode
 
 3.  Move the page using these commands:
 
+    // TODO - Convert this into a table.j
+    
         zt - move current line to the top of the screen
         zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
         zb - move current line to the bottom of the screen
@@ -450,7 +970,7 @@ Insert mode
     ---
 
 
-<a id="org5995447"></a>
+<a id="orgafe7471"></a>
 
 ### Sorting
 
@@ -489,7 +1009,7 @@ You dig deeper:
 ---
 
 
-<a id="orgc7185a6"></a>
+<a id="orgdc67db4"></a>
 
 ### Spell check
 
@@ -516,7 +1036,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="orgbb8bf87"></a>
+<a id="orga1af55e"></a>
 
 ### Non empty lines
 
@@ -528,7 +1048,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="org467fea3"></a>
+<a id="orgb02b34c"></a>
 
 ### Terminal
 
@@ -537,7 +1057,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="org167b0a3"></a>
+<a id="orgc41da05"></a>
 
 ### Marks
 
@@ -614,10 +1134,123 @@ Launch terminal from within Vim using \`:term\`
 </tbody>
 </table>
 
+MARKS AND MOTIONS
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">mc</td>
+<td class="org-left">mark current position with mark c ∈[a..Z]</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`c `C</td>
+<td class="org-left">go to mark c in current, C in any file</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`0..9</td>
+<td class="org-left">go to last exit position</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`` `"</td>
+<td class="org-left">go to position before jump, at last edit</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`[ `]</td>
+<td class="org-left">go to start, end of previously operated text</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:marks↵</td>
+<td class="org-left">print the active marks list</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:jumps↵</td>
+<td class="org-left">print the jump list</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n<sup>O</sup></td>
+<td class="org-left">go to nth older position in jump list</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n<sup>I</sup></td>
+<td class="org-left">go to nth newer position in jump list</td>
+</tr>
+</tbody>
+</table>
+
 ---
 
 
-<a id="org2bf742b"></a>
+<a id="orgb449313"></a>
+
+### Visual Mode
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">v V ^V</td>
+<td class="org-left">start/stop highlighting characters, lines, block</td>
+</tr>
+
+
+<tr>
+<td class="org-left">o</td>
+<td class="org-left">exchange cursor position with start of highlighting</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gv</td>
+<td class="org-left">start highlighting on previous visual area</td>
+</tr>
+
+
+<tr>
+<td class="org-left">aw as ap</td>
+<td class="org-left">select a word, a sentence, a paragraph</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ab aB</td>
+<td class="org-left">select a block ( ), a block { }</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+
+<a id="org4583bfe"></a>
 
 ### Registers and copy and paste
 
@@ -651,47 +1284,289 @@ How can I quickly type "Hello world"?
 
 ---
 
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<a id="org066f8bf"></a>
 
-### Research
+<colgroup>
+<col  class="org-left" />
 
-Interesting comments about Vim :
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">"x</td>
+<td class="org-left">use register x for next delete, yank, put</td>
+</tr>
 
-It's simply a piece of software that integrates several tools needed for Development in a single instance. Vim comes bare bone but plug ins can easily be installed using Plug ins Manager such as Vundle or Vim Plug.
 
-It can then provide for capabilities including but not limited to:
+<tr>
+<td class="org-left">:reg↵</td>
+<td class="org-left">show the content of all registers</td>
+</tr>
 
--   Version control within a few strokes such as GitGutter and Fugitive e.g. :Gstatus
 
--   Syntax checking using Syntastic
+<tr>
+<td class="org-left">:reg x↵</td>
+<td class="org-left">show the content of registers x</td>
+</tr>
 
--   NERDTree to provide Tree like document view
 
--   Goyo providing Zen Mode
+<tr>
+<td class="org-left">ym</td>
+<td class="org-left">yank the text of movement command m</td>
+</tr>
 
--   Plethora of themes and awesome power lines such as Airline
 
--   Spell checker that comes by default
+<tr>
+<td class="org-left">yy or Y</td>
+<td class="org-left">yank current line into register</td>
+</tr>
 
--   EasyMotion for rapid motion throughout a document without the use of the mouse
 
--   Additional support for languages such as Markdown
+<tr>
+<td class="org-left">p P</td>
+<td class="org-left">put register after, before cursor position</td>
+</tr>
+
+
+<tr>
+<td class="org-left">]p [p</td>
+<td class="org-left">like p, P with indent adjusted</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gp gP</td>
+<td class="org-left">like p, P leaving cursor after new text</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
-How to switch between Vim and terminal when using Vim in a terminal (found this when looking for differences between Vim and GVim)
+UNDOING, REPEATING & REGISTERS
 
-With vim (not gVim) you can get benefit from ctrl-Z
-
-if you want to test your codes in shell/terminal, or execute some shell commands during your editing. 
-In vim you can just ctrl-z to back to terminal do what you want, and fg back to vim. 
-With Gvim, you cannot do that. 
-
----
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<a id="org6046ba0"></a>
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">u U</td>
+<td class="org-left">undo last command, restore last changed line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">.  ^R</td>
+<td class="org-left">repeat last changes, redo last undo</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n.</td>
+<td class="org-left">repeat last changes with count replaced by n</td>
+</tr>
+
+
+<tr>
+<td class="org-left">qc qC</td>
+<td class="org-left">record, append typed characters in register c</td>
+</tr>
+
+
+<tr>
+<td class="org-left">q</td>
+<td class="org-left">stop recording</td>
+</tr>
+
+
+<tr>
+<td class="org-left">@c</td>
+<td class="org-left">execute the content of register c</td>
+</tr>
+
+
+<tr>
+<td class="org-left">@@</td>
+<td class="org-left">repeat previous @ command</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:@c↵</td>
+<td class="org-left">execute register c as an Ex command</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rg/p/c↵</td>
+<td class="org-left">execute Ex command c on range r where pattern p matches</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="orga71e927"></a>
+
+### Ex commands
+
+EX COMMANDS (↵)
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">:e f</td>
+<td class="org-left">edit file f, unless changes have been made</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:e!  f</td>
+<td class="org-left">edit file f always (by default reload current)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:wn :wN</td>
+<td class="org-left">write file and edit next, previous one</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:n :N</td>
+<td class="org-left">edit next, previous file in list</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rw</td>
+<td class="org-left">write range r to current file</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rw f</td>
+<td class="org-left">write range r to file f</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rw&gt;&gt;f</td>
+<td class="org-left">append range r to file f</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:q :q!</td>
+<td class="org-left">quit and confirm, quit and discard changes</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:wq or :x or ZZ</td>
+<td class="org-left">write to current file and exit</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&lt;up&gt; &lt;down&gt;</td>
+<td class="org-left">recall commands starting with current</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:r f</td>
+<td class="org-left">insert content of file f below cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:r!  c</td>
+<td class="org-left">insert output of command c below cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:args</td>
+<td class="org-left">display the argument list</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:rco  a :rm  a</td>
+<td class="org-left">copy, move range r below line a</td>
+</tr>
+</tbody>
+</table>
+
+EX RANGES
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">, ;</td>
+<td class="org-left">separates two lines numbers, set to first line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">n</td>
+<td class="org-left">an absolute line number n</td>
+</tr>
+
+
+<tr>
+<td class="org-left">.   $</td>
+<td class="org-left">the current line, the last line in file</td>
+</tr>
+
+
+<tr>
+<td class="org-left">% *</td>
+<td class="org-left">entire file, visual area</td>
+</tr>
+
+
+<tr>
+<td class="org-left">'t</td>
+<td class="org-left">position of mark t</td>
+</tr>
+
+
+<tr>
+<td class="org-left"><i>p</i> ?p?</td>
+<td class="org-left">the next, previous line where p matches</td>
+</tr>
+
+
+<tr>
+<td class="org-left">+n -n</td>
+<td class="org-left">+n, -n to the preceding line number</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="orgffec82d"></a>
 
 ### Vim completion
 
@@ -819,7 +1694,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org8b56899"></a>
+<a id="orge53e35b"></a>
 
 ### Word and text manipulation
 
@@ -964,13 +1839,53 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org8e0d524"></a>
+<a id="org4538c5b"></a>
 
 ### Working with multiple files
 
 <https://vim.fandom.com/wiki/Quick_tips_for_using_tab_pages>
 <https://vim.fandom.com/wiki/Using_tab_pages>
 <http://vimdoc.sourceforge.net/htmldoc/tabpage.html>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">^Ws or :split↵</td>
+<td class="org-left">split window in two</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^Wn or :new↵</td>
+<td class="org-left">create new empty window</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^Wo or :on↵</td>
+<td class="org-left">make current window one on screen</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^Wj ^Wk	move to</td>
+<td class="org-left">window below, above</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^Ww ^W<sup>W</sup></td>
+<td class="org-left">move to window below, above (wrap)</td>
+</tr>
+</tbody>
+</table>
 
 1.  Buffers
 
@@ -996,7 +1911,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
 
 2.  Tabs
 
-    Creating and closing tabs:
+    CREATING AND CLOSING TABS
     
     <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
     
@@ -1026,8 +1941,6 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     </tbody>
     </table>
     
-    How to view all open tabs?
-    
         :tabs		List the tab pages and the windows they contain.
                 	Shows a ">" for the current window.
                 	Shows a "+" for modified buffers.
@@ -1049,6 +1962,12 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     <col  class="org-left" />
     </colgroup>
     <tbody>
+    <tr>
+    <td class="org-left">:tabs</td>
+    <td class="org-left">List the tab pages and the windows they contain.</td>
+    </tr>
+    
+    
     <tr>
     <td class="org-left">g&lt;Tab&gt;</td>
     <td class="org-left">Go to the last accessed tab page.</td>
@@ -1199,7 +2118,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org6258092"></a>
+<a id="org49b8f14"></a>
 
 ### Vim help
 
@@ -1216,9 +2135,70 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org9a3842d"></a>
+<a id="org300dce7"></a>
 
-### cTags in Vim
+### Key mappings and abbreviations
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">:map c e↵</td>
+<td class="org-left">map c ↦ e in normal &amp; visual mode</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:map!  c e↵</td>
+<td class="org-left">map c ↦ e in insert &amp; cmd-line mode</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:unmap c↵  :unmap!  c↵</td>
+<td class="org-left">remove mapping c</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:mk f↵</td>
+<td class="org-left">write current mappings, settings&#x2026; to file f</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:ab c e↵</td>
+<td class="org-left">add abbreviation for c ↦ e</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:ab c↵</td>
+<td class="org-left">show abbreviations starting with c</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:una c↵</td>
+<td class="org-left">remove abbreviation c</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+
+<a id="org4a23d71"></a>
+
+### Tags in Vim
+
+cTags in Vim
 
 <https://andrew.stwrt.ca/posts/vim-ctags/>
 
@@ -1239,7 +2219,7 @@ set tags=./tags;/
 
 One line that always goes in my .vimrc:
 set tags=./tags;/
-This will look in the current directory for "tags", and work up the tree towards root until one is found. IOW, you can be anywhere in your source tree instead of just the root of it.
+This will look in the current directory for "tags", and work up the tree towards root until one is found. In other words, you can be anywhere in your source tree instead of just the root of it.
 
 ---
 
@@ -1259,10 +2239,86 @@ After the tags are generated. You can use the following keys to tag into and tag
 Ctrl+Left MouseClick - Go to definition
 Ctrl+Right MouseClick - Jump back from definition
 
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">:ta t↵</td>
+<td class="org-left">jump to tag t</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:nta↵</td>
+<td class="org-left">jump to nth newer tag in list</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^] ^T</td>
+<td class="org-left">jump to the tag under cursor, return from tag</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:ts t↵</td>
+<td class="org-left">list matching tags and select one for jump</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:tj t↵</td>
+<td class="org-left">jump to tag or select one if multiple matches</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:tags↵</td>
+<td class="org-left">print tag list</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:npo↵  :n<sup>T</sup>↵</td>
+<td class="org-left">jump back from, to nth older tag</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:tl↵</td>
+<td class="org-left">jump to last matching tag</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^W}  :pt t↵</td>
+<td class="org-left">preview tag under cursor, tag t</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^W]</td>
+<td class="org-left">split window and show tag under cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^Wz or :pc↵</td>
+<td class="org-left">close tag preview window</td>
+</tr>
+</tbody>
+</table>
+
 ---
 
 
-<a id="org4d6c791"></a>
+<a id="orgf15c828"></a>
 
 ### Deleting
 
@@ -1409,7 +2465,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="orga35aa50"></a>
+<a id="org7622a5a"></a>
 
 ### File comparison with Vim
 
@@ -1438,7 +2494,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="org48765e3"></a>
+<a id="orgfdcf53e"></a>
 
 ### Grep
 
@@ -1458,7 +2514,7 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="org4ef571c"></a>
+<a id="orgc534561"></a>
 
 ### Indentation
 
@@ -1490,7 +2546,7 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="org2a6d8dd"></a>
+<a id="orgf79b9c6"></a>
 
 ### Line numbers
 
@@ -1503,7 +2559,7 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="org64b10d6"></a>
+<a id="org2e2784a"></a>
 
 ### Lower case Upper case
 
@@ -1520,7 +2576,7 @@ Alternatively(easier to remember), you can visually select text then press ~ to 
 ---
 
 
-<a id="org1f1176b"></a>
+<a id="org0deba82"></a>
 
 ### Manual insertion of numbered lists
 
@@ -1547,7 +2603,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org2351600"></a>
+<a id="org0ec4483"></a>
 
 ### Macros
 
@@ -1594,7 +2650,7 @@ For help, check: :help global.
 ---
 
 
-<a id="org3d65780"></a>
+<a id="orgcc60e26"></a>
 
 ### Netrw
 
@@ -1818,7 +2874,7 @@ Further Reading
 ---
 
 
-<a id="orgf93cacb"></a>
+<a id="org2067830"></a>
 
 ### Packages and plugins
 
@@ -1840,7 +2896,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="orge5ab447"></a>
+<a id="orgdc695e0"></a>
 
 ### gitignore
 
@@ -1859,9 +2915,9 @@ Instead of changing Vim settings, just add the following lines to the project's 
 ---
 
 
-<a id="orgd4c5e3c"></a>
+<a id="org6e56760"></a>
 
-### Helpful links :
+### Helpful links
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1894,7 +2950,7 @@ Instead of changing Vim settings, just add the following lines to the project's 
 ---
 
 
-<a id="orgae16852"></a>
+<a id="orge7f886f"></a>
 
 ### Open questions
 
@@ -1907,6 +2963,140 @@ How to use folding in Vim?
 To minimise the method/function implementation. (-) - minus? need a working example.
 color schemes in Vim
 vimrc shortcut for finding and displaying all the occurences of a word
+
+---
+
+
+<a id="orgb373063"></a>
+
+### Research
+
+Interesting comments about Vim :
+
+It's simply a piece of software that integrates several tools needed for Development in a single instance. Vim comes bare bone but plug ins can easily be installed using Plug ins Manager such as Vundle or Vim Plug.
+
+It can then provide for capabilities including but not limited to:
+
+-   Version control within a few strokes such as GitGutter and Fugitive e.g. :Gstatus
+
+-   Syntax checking using Syntastic
+
+-   NERDTree to provide Tree like document view
+
+-   Goyo providing Zen Mode
+
+-   Plethora of themes and awesome power lines such as Airline
+
+-   Spell checker that comes by default
+
+-   EasyMotion for rapid motion throughout a document without the use of the mouse
+
+-   Additional support for languages such as Markdown
+
+---
+
+How to switch between Vim and terminal when using Vim in a terminal (found this when looking for differences between Vim and GVim)
+
+With vim (not gVim) you can get benefit from ctrl-Z
+
+if you want to test your codes in shell/terminal, or execute some shell commands during your editing. 
+In vim you can just ctrl-z to back to terminal do what you want, and fg back to vim. 
+With Gvim, you cannot do that. 
+
+---
+
+
+<a id="orgb025a0c"></a>
+
+### Miscellaneous
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">:sh↵  :!c↵</td>
+<td class="org-left">start shell, execute command c in shell</td>
+</tr>
+
+
+<tr>
+<td class="org-left">K</td>
+<td class="org-left">lookup keyword under cursor with man</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:make↵</td>
+<td class="org-left">start make, read errors and jump to first</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:cn↵  :cp↵</td>
+<td class="org-left">display the next, previous error</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:cl↵  :cf↵</td>
+<td class="org-left">list all errors, read errors from file</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^L ^G</td>
+<td class="org-left">redraw screen, show filename and position</td>
+</tr>
+
+
+<tr>
+<td class="org-left">g<sup>G</sup></td>
+<td class="org-left">show cursor column, line, and character position</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ga</td>
+<td class="org-left">show ASCII value of character under cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">gf</td>
+<td class="org-left">open file which filename is under cursor</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:redir&gt;f↵</td>
+<td class="org-left">redirect output to file f</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:mkview [f]</td>
+<td class="org-left">save view configuration [to file f]</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:loadview [f]</td>
+<td class="org-left">load view configuration [from file f]</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^@ ^K ^_  \  Fn ^Fn</td>
+<td class="org-left">unmapped keys</td>
+</tr>
+</tbody>
+</table>
 
 ---
 

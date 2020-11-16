@@ -3,7 +3,9 @@
   
 ** Helpful tips related to configuration and other things related to Vim that I find useful.
 
-*** Basic Movement
+*** Movement
+
+    Basic Movement
 
 | h l k j | character left, right; line up, down           |
 | b w     | word/token left, right                         |
@@ -22,7 +24,43 @@
 | nL      | line n from bottom of window                   |
 | M       | middle line of window                          |
 
+Complex movement
+
+| (minus)                       | line up, down on first non-blank character    |
+| (plus)                        | line up, down on first non-blank character    |
+| B W                           | space-separated word left, right              |
+| gE E                          | end of space-separated word left, right       |
+| n_                            | down n-1 line on first non-blank character    |
+| g0                            | beginning of screen line                      |
+| g^  g$                        | first, last character of screen line          |
+| gk gj                         | screen line up, down                          |
+| fc Fc                         | next, previous occurence of character c       |
+| tc Tc                         | before next, previous occurence of c          |
+| ; ,                           | repeat last fFtT, in opposite direction       |
+| (Two square bracket openings) | start of section backward                     |
+| ]]                            | start of section forward                      |
+| [] ][                         | end of section backward, forward              |
+| [( ])                         | unclosed (, ) backward, forward               |
+| [{  ]}                        | unclosed {, } backward, forward               |
+| [m ]m                         | start of backward, forward Java method        |
+| [# ]#                         | unclosed #if, #else, #endif backward, forward |
+| [* ]*                         | start, end of /* */ backward, forward         |
+
+   ------------------------------------------
+
+*** Folding
+
+| zfm         | create fold of movement m                |
+| :rfo        | create fold for range r                  |
+| zd zE       | delete fold at cursor, all in window     |
+| zo zc zO zC | open, close one fold; recursively        |
+| [z ]z       | move to start, end of current open fold  |
+| zj zk       | move down, up to start, end of next fold |
+
+   ------------------------------------------
+
 *** Insertion & replace → insert mode
+
 | i a     | insert before, after cursor                   |
 | I A     | insert at beginning, end of line              |
 | gI      | insert text in first column                   |
@@ -41,7 +79,7 @@
 | <m >m   | shift left, right text of movement m          |
 | n<< n>> | shift n lines left, right                     |
 
-Insert mode
+INSERT MODE
 
 | ^Vc ^Vn         | insert char c literally, decimal value n      |
 | ^A              | insert previously inserted text               |
@@ -56,17 +94,75 @@ Insert mode
 | ^X^E ^X^Y       | scroll up, down                               |
 | <esc> or ^[     | abandon edition → command mode                |
 
-*** Search tips
+ADVANCED INSERTION
+
+| g?m     | perform rot13 encoding on movement m         |
+| n^A n^X | +n, -n to number under cursor                |
+| gqm     | format lines of movement m to fixed width    |
+| :rce w↵ | center lines in range r to width w           |
+| :rle i↵ | left align lines in range r with indent i    |
+| :rri w↵ | right align lines in range r to width w      |
+| !mc↵    | filter lines of movement m through command c |
+| n!!c↵   | filter n lines through command c             |
+| :r!c↵   | filter range r lines through command c       |
+
+*** Search and Substitution
  
 | What to Type | What it does                                            |
 | [i           | show first line containing word under the cursor        |
 | [I or ]I     | show every line containing word under the cursor        |
 | :g/pattern/  | show every line matching the regular expression pattern |
 
+SEARCH & SUBSTITUTION
+
+| /s↵  ?s↵     | search forward, backward for s                                       |
+| /s/o↵  ?s?o↵ | search fwd, bwd for s with offset o                                  |
+| n or /↵      | repeat forward last search                                           |
+| N or ?↵      | repeat backward last search                                          |
+| # *          | search backward, forward for word under cursor                       |
+| g# g*        | same, but also find partial matches                                  |
+| gd gD        | local, global definition of symbol under cursor                      |
+| :rs/f/t/x↵   | substitute f by t in range r x: g-all occurrences, c-confirm changes |
+| :rs x↵       | repeat substitution with new r & x                                   |
+
+SPECIAL CHARACTERS IN SEARCH PATTERNS
+
+| .   ^  $    | any single character, start, end of line   |
+| \< \>       | start, end of word                         |
+| [c1-c2]     | a single character in range c1..c2         |
+| [^c1-c2]    | a single character not in range            |
+| \i \k \I \K | an identifier, keyword; excl. digits       |
+| \f \p \F \P | a file name, printable char.; excl. digits |
+| \s \S       | a white space, a non-white space           |
+| \e \t \r \b | <esc>, <tab>, <↵>, <←>                     |
+| \= * \+     | match 0..1, 0..∞, 1..∞ of preceding atoms  |
+| \(pipe)     | separate two branches ( ≡ or)              |
+| \( \)       | group patterns into an atom                |
+| \& \n       | the whole matched pattern, nth () group    |
+| \u \l       | next character made upper, lowercase       |
+| \c \C       | ignore, match case on next pattern         |
+
+OFFSETS IN SEARCH COMMANDS
+
+| n or +n  | n line downward in column 1                |
+| (minus)n | n line upward in column 1                  |
+| e+n e-n  | n characters right, left to end of match   |
+| s+n s-n  | n characters right, left to start of match |
+| ;sc      | execute search command sc next             |
+
    ------------------------------------------
 
 *** Scrolling 
 
+| ^E ^Y    | scroll line up, down                    |
+| ^D ^U    | scroll half a page up, down             |
+| ^F ^B    | scroll page up, down                    |
+| zt or z↵ | set current line at top of window       |
+| zz or z. | set current line at center of window    |
+| zb or z- | set current line at bottom of window    |
+| zh zl    | scroll one character to the right, left |
+| zH zL    | scroll half a screen to the right, left |
+    
 **** Moving the cursor gracefully :
 
      // TODO - Convert this into a table.j
@@ -88,6 +184,7 @@ Insert mode
 
 Scroll up and down through a page gracefully using Vim the following keystrokes:
 
+     // TODO - Convert this into a table.j
 #+BEGIN_EXAMPLE
 	[Control][b] - Moves screen up one page, cursor to last line
 	[Control][f] - Moves screen down one page, cursor to first line
@@ -108,6 +205,7 @@ you should define the following option:
 
 **** Move the page using these commands:
 
+     // TODO - Convert this into a table.j
 	#+BEGIN_EXAMPLE
 		zt - move current line to the top of the screen
 		zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
@@ -212,6 +310,27 @@ you should define the following option:
 	| :marks    | list all the current marks                                    |
 	| :marks aB | list marks a, B                                               |
  
+MARKS AND MOTIONS
+
+| mc      | mark current position with mark c ∈[a..Z]    |
+| `c `C   | go to mark c in current, C in any file       |
+| `0..9   | go to last exit position                     |
+| `` `"   | go to position before jump, at last edit     |
+| `[ `]   | go to start, end of previously operated text |
+| :marks↵ | print the active marks list                  |
+| :jumps↵ | print the jump list                          |
+| n^O     | go to nth older position in jump list        |
+| n^I     | go to nth newer position in jump list        |
+
+   ------------------------------------------
+*** Visual Mode
+
+| v V ^V   | start/stop highlighting characters, lines, block    |
+| o        | exchange cursor position with start of highlighting |
+| gv       | start highlighting on previous visual area          |
+| aw as ap | select a word, a sentence, a paragraph              |
+| ab aB    | select a block ( ), a block { }                     |
+
    ------------------------------------------
 
 *** Registers and copy and paste
@@ -244,43 +363,58 @@ you should define the following option:
  
    ------------------------------------------
 
-*** Research
-
-   Interesting comments about Vim :
-
-   It's simply a piece of software that integrates several tools needed for Development in a single instance. Vim comes bare bone but plug ins can easily be installed using Plug ins Manager such as Vundle or Vim Plug.
-   
-   It can then provide for capabilities including but not limited to:
-   
-   - Version control within a few strokes such as GitGutter and Fugitive e.g. :Gstatus
-   
-   - Syntax checking using Syntastic
-   
-   - NERDTree to provide Tree like document view
-   
-   - Goyo providing Zen Mode
-   
-   - Plethora of themes and awesome power lines such as Airline
-   
-   - Spell checker that comes by default
-   
-   - EasyMotion for rapid motion throughout a document without the use of the mouse
-   
-   - Additional support for languages such as Markdown
-   
-   
-   -------------------------------------------------------------
-   
-   How to switch between Vim and terminal when using Vim in a terminal (found this when looking for differences between Vim and GVim)
-   
-   With vim (not gVim) you can get benefit from ctrl-Z
-   
-   if you want to test your codes in shell/terminal, or execute some shell commands during your editing. 
-   In vim you can just ctrl-z to back to terminal do what you want, and fg back to vim. 
-   With Gvim, you cannot do that. 
+   | "x      | use register x for next delete, yank, put  |
+   | :reg↵   | show the content of all registers          |
+   | :reg x↵ | show the content of registers x            |
+   | ym      | yank the text of movement command m        |
+   | yy or Y | yank current line into register            |
+   | p P     | put register after, before cursor position |
+   | ]p [p   | like p, P with indent adjusted             |
+   | gp gP   | like p, P leaving cursor after new text    |
 
    ------------------------------------------
+   
+UNDOING, REPEATING & REGISTERS
 
+| u U      | undo last command, restore last changed line            |
+| .  ^R    | repeat last changes, redo last undo                     |
+| n.       | repeat last changes with count replaced by n            |
+| qc qC    | record, append typed characters in register c           |
+| q        | stop recording                                          |
+| @c       | execute the content of register c                       |
+| @@       | repeat previous @ command                               |
+| :@c↵     | execute register c as an Ex command                     |
+| :rg/p/c↵ | execute Ex command c on range r where pattern p matches |
+
+*** Ex commands
+
+   EX COMMANDS (↵)
+
+|:e f	|edit file f, unless changes have been made|
+|:e!  f	|edit file f always (by default reload current)|
+|:wn :wN	|write file and edit next, previous one|
+|:n :N	|edit next, previous file in list|
+|:rw	|write range r to current file|
+|:rw f	|write range r to file f|
+|:rw>>f	|append range r to file f|
+|:q :q!	|quit and confirm, quit and discard changes|
+|:wq or :x or ZZ	|write to current file and exit|
+|<up> <down>	|recall commands starting with current|
+|:r f	|insert content of file f below cursor|
+|:r!  c	|insert output of command c below cursor|
+|:args	|display the argument list|
+|:rco  a :rm  a	|copy, move range r below line a|
+
+EX RANGES
+
+| , ;     | separates two lines numbers, set to first line |
+| n       | an absolute line number n                      |
+| .   $   | the current line, the last line in file        |
+| % *     | entire file, visual area                       |
+| 't      | position of mark t                             |
+| /p/ ?p? | the next, previous line where p matches        |
+| +n -n   | +n, -n to the preceding line number            |
+    
 *** Vim completion
    
     Let Vim do the typing by George Brocklehurst (@georgebrock)
@@ -549,6 +683,12 @@ you should define the following option:
     https://vim.fandom.com/wiki/Quick_tips_for_using_tab_pages
     https://vim.fandom.com/wiki/Using_tab_pages
     http://vimdoc.sourceforge.net/htmldoc/tabpage.html
+
+| ^Ws or :split↵         | split window in two                |
+| ^Wn or :new↵           | create new empty window            |
+| ^Wo or :on↵            | make current window one on screen  |
+| ^Wj ^Wk	move to | window below, above                |
+| ^Ww ^W^W               | move to window below, above (wrap) |
     
 **** Buffers
     How to view all open buffers?
@@ -573,13 +713,12 @@ you should define the following option:
 
 **** Tabs
 
-   Creating and closing tabs:
+   CREATING AND CLOSING TABS
    
-    | :tabnew      | To open a new tab with an empty buffer   |
-    | :tabe <file> | to edit file in a new tab                |
-    | :tabc        | to close a tab and all the buffers in it |
+    | :tabnew      | To open a new tab with an empty buffer           |
+    | :tabe <file> | to edit file in a new tab                        |
+    | :tabc        | to close a tab and all the buffers in it         |
 
-    How to view all open tabs?
     #+BEGIN_EXAMPLE
         :tabs		List the tab pages and the windows they contain.
         		Shows a ">" for the current window.
@@ -594,11 +733,12 @@ you should define the following option:
     
     This will show a numbered list with all open tabs. To go to a specific tab, do `:5gt` (to go to the tab with the number 5)
 
-    | g<Tab>       | Go to the last accessed tab page. |
-    | :gt          | Go to the next tab                |
-    | : gT         | Go to the previous tab            |
-    | : nnn gt     | Go to a numbered tab              |
-    | :tabn, :tabp | (or gt, gT to switch)             |
+    | :tabs        | List the tab pages and the windows they contain. |
+    | g<Tab>       | Go to the last accessed tab page.                |
+    | :gt          | Go to the next tab                               |
+    | : gT         | Go to the previous tab                           |
+    | : nnn gt     | Go to a numbered tab                             |
+    | :tabn, :tabp | (or gt, gT to switch)                            |
 
     REORDERING TAB PAGES:
     
@@ -657,8 +797,22 @@ you should define the following option:
    :vert bo help
  
    ------------------------------------------
- 
-*** cTags in Vim
+
+*** Key mappings and abbreviations
+
+| :map c e↵              | map c ↦ e in normal & visual mode             |
+| :map!  c e↵            | map c ↦ e in insert & cmd-line mode           |
+| :unmap c↵  :unmap!  c↵ | remove mapping c                              |
+| :mk f↵                 | write current mappings, settings... to file f |
+| :ab c e↵               | add abbreviation for c ↦ e                    |
+| :ab c↵                 | show abbreviations starting with c            |
+| :una c↵                | remove abbreviation c                         |
+   
+   ------------------------------------------
+
+*** Tags in Vim
+
+    cTags in Vim
 
    https://andrew.stwrt.ca/posts/vim-ctags/
 
@@ -676,9 +830,10 @@ you should define the following option:
    (It starts with a tags file in the current directory and goes up to the root directory.)
    
    ---------------------------------------------------------------------------------------------------
+
    One line that always goes in my .vimrc:
    set tags=./tags;/
-   This will look in the current directory for "tags", and work up the tree towards root until one is found. IOW, you can be anywhere in your source tree instead of just the root of it.
+   This will look in the current directory for "tags", and work up the tree towards root until one is found. In other words, you can be anywhere in your source tree instead of just the root of it.
    
    ---------------------------------------------------------------------------------------------------
    Ctrl+] - go to definition
@@ -697,6 +852,18 @@ you should define the following option:
    Ctrl+Left MouseClick - Go to definition
    Ctrl+Right MouseClick - Jump back from definition
    
+   | :ta t↵       | jump to tag t                                 |
+   | :nta↵        | jump to nth newer tag in list                 |
+   | ^] ^T        | jump to the tag under cursor, return from tag |
+   | :ts t↵       | list matching tags and select one for jump    |
+   | :tj t↵       | jump to tag or select one if multiple matches |
+   | :tags↵       | print tag list                                |
+   | :npo↵  :n^T↵ | jump back from, to nth older tag              |
+   | :tl↵         | jump to last matching tag                     |
+   | ^W}  :pt t↵  | preview tag under cursor, tag t               |
+   | ^W]          | split window and show tag under cursor        |
+   | ^Wz or :pc↵  | close tag preview window                      |
+
    ---------------------------------------------------------------------------------------------------
  
 *** Deleting
@@ -1110,7 +1277,7 @@ you should define the following option:
 
    ------------------------------------------
 
-*** Helpful links : 
+*** Helpful links
 
 | https://vim.fandom.com/wiki/Search_across_multiple_lines |
 | https://vimhelp.org/                                     |
@@ -1130,5 +1297,60 @@ you should define the following option:
     To minimise the method/function implementation. (-) - minus? need a working example.
     color schemes in Vim
     vimrc shortcut for finding and displaying all the occurences of a word
+
+   ------------------------------------------
+
+*** Research
+
+   Interesting comments about Vim :
+
+   It's simply a piece of software that integrates several tools needed for Development in a single instance. Vim comes bare bone but plug ins can easily be installed using Plug ins Manager such as Vundle or Vim Plug.
+   
+   It can then provide for capabilities including but not limited to:
+   
+   - Version control within a few strokes such as GitGutter and Fugitive e.g. :Gstatus
+   
+   - Syntax checking using Syntastic
+   
+   - NERDTree to provide Tree like document view
+   
+   - Goyo providing Zen Mode
+   
+   - Plethora of themes and awesome power lines such as Airline
+   
+   - Spell checker that comes by default
+   
+   - EasyMotion for rapid motion throughout a document without the use of the mouse
+   
+   - Additional support for languages such as Markdown
+   
+   
+   -------------------------------------------------------------
+   
+   How to switch between Vim and terminal when using Vim in a terminal (found this when looking for differences between Vim and GVim)
+   
+   With vim (not gVim) you can get benefit from ctrl-Z
+   
+   if you want to test your codes in shell/terminal, or execute some shell commands during your editing. 
+   In vim you can just ctrl-z to back to terminal do what you want, and fg back to vim. 
+   With Gvim, you cannot do that. 
+
+   ------------------------------------------
+
+*** Miscellaneous
+
+| :sh↵  :!c↵          | start shell, execute command c in shell          |
+| K                   | lookup keyword under cursor with man             |
+| :make↵              | start make, read errors and jump to first        |
+| :cn↵  :cp↵          | display the next, previous error                 |
+| :cl↵  :cf↵          | list all errors, read errors from file           |
+| ^L ^G               | redraw screen, show filename and position        |
+| g^G                 | show cursor column, line, and character position |
+| ga                  | show ASCII value of character under cursor       |
+| gf                  | open file which filename is under cursor         |
+| :redir>f↵           | redirect output to file f                        |
+| :mkview [f]         | save view configuration [to file f]              |
+| :loadview [f]       | load view configuration [from file f]            |
+| ^@ ^K ^_  \  Fn ^Fn | unmapped keys                                    |
 
    ------------------------------------------
