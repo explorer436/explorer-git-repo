@@ -1,28 +1,29 @@
 
 # Table of Contents
 
-1.  [My Emacs notes](#orgc382bea)
-    1.  [Helpful tips related to configuration and other things related to Emacs that I find useful.](#orgec3775c)
-        1.  [How to view the list of all the currently installed packages in Emacs?](#org3fa23c2)
-        2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#org42f7abe)
-        3.  [How to work with org-mode and evil-mode?](#org2204a99)
-        4.  [Other helpful commands](#org63e5f82)
-        5.  [Other hints](#org41be0fb)
-        6.  [Resources for emacs](#org511839d)
-        7.  [How to auto save an org document in markdown format?](#orgc6bba6f)
+1.  [My Emacs notes](#org2f011a0)
+    1.  [Helpful tips related to configuration and other things related to Emacs that I find useful.](#orgf72d710)
+        1.  [How to view the list of all the currently installed packages in Emacs?](#org679b5f7)
+        2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#org7595b8a)
+        3.  [How to work with org-mode and evil-mode?](#orga6e6107)
+        4.  [Helpful commands](#org770e1f7)
+        5.  [.emacs file](#org25b799e)
+        6.  [Resources for emacs](#org427d64b)
+        7.  [How to auto save an org document in markdown format?](#org5f091a0)
+        8.  [Line numbers](#org43c07db)
 
 
-<a id="orgc382bea"></a>
+<a id="org2f011a0"></a>
 
 # My Emacs notes
 
 
-<a id="orgec3775c"></a>
+<a id="orgf72d710"></a>
 
 ## Helpful tips related to configuration and other things related to Emacs that I find useful.
 
 
-<a id="org3fa23c2"></a>
+<a id="org679b5f7"></a>
 
 ### How to view the list of all the currently installed packages in Emacs?
 
@@ -38,8 +39,10 @@ Go down till you reach built-in packages. Copy with M-w. C-x b for new buffer. P
 
 Another alternative is, simply copy the ".emacs" file from this computer to the other computer.
 
+---
 
-<a id="org42f7abe"></a>
+
+<a id="org7595b8a"></a>
 
 ### How to add MELPA as another source of packages in addition to GNU's elpa?
 
@@ -54,17 +57,21 @@ After making changes to the config to add MELPA as a source of packages, run the
 
 To change to mode from some other mode : M-x evil-mode
 
+---
 
-<a id="org2204a99"></a>
+
+<a id="orga6e6107"></a>
 
 ### How to work with org-mode and evil-mode?
 
 It looks like Vim key bindings will work in Org mode as well.
 
+---
 
-<a id="org63e5f82"></a>
 
-### Other helpful commands
+<a id="org770e1f7"></a>
+
+### Helpful commands
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -132,7 +139,7 @@ It looks like Vim key bindings will work in Org mode as well.
 
 <tr>
 <td class="org-left">C-x C-f</td>
-<td class="org-left">Visiting (opening) files. (This puts us in Emac's dired mode - directory editor)</td>
+<td class="org-left">Visiting (opening) files. (This puts us in Emac's dired mode - directory editor). To create a new file, just start typing the name of the file that you want to create.</td>
 </tr>
 
 
@@ -146,18 +153,46 @@ It looks like Vim key bindings will work in Org mode as well.
 <td class="org-left">g</td>
 <td class="org-left">Refresh the listing in dired mode</td>
 </tr>
+
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Refresh the listing in dired mode</td>
+</tr>
+
+
+<tr>
+<td class="org-left">C-x b <b>untitled</b></td>
+<td class="org-left">will open new buffer if not exist</td>
+</tr>
 </tbody>
 </table>
 
+---
 
-<a id="org41be0fb"></a>
 
-### Other hints
+<a id="org25b799e"></a>
+
+### .emacs file
 
 If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch again.
 
+---
 
-<a id="org511839d"></a>
+Where can I find my .emacs file for Emacs running on Windows?
+
+If you want to look at the contents of the file:
+
+Within Emacs, ~ at the beginning of a file name is expanded to your HOME directory, so you can always find your .emacs file with C-x C-f ~/.emacs.
+
+If you are trying to find out where the file is as opposed to looking at the contents of the file:
+
+It should be stored in the variable user-init-file. Use C-H v user-init-file RET to check. You can also open it directly by using M-x eval-expression RET (find-file user-init-file) RET
+
+---
+
+
+<a id="org427d64b"></a>
 
 ### Resources for emacs
 
@@ -229,10 +264,29 @@ If anything goes wrong with the customizations, delete the ".emacs" file in the 
 </tbody>
 </table>
 
+---
 
-<a id="orgc6bba6f"></a>
+
+<a id="org5f091a0"></a>
 
 ### How to auto save an org document in markdown format?
 
 Install the package 'auto-org-md' and after editing the file in org-mode, switch to it using this : "M-x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.
+
+---
+
+
+<a id="org43c07db"></a>
+
+### Line numbers
+
+How to show line numbers in files in emacs?
+
+emacs has 2 line numbers mode.
+
+Alt+x linum-mode ? old, hack, slow. Emacs 23 (released in 2009).
+
+Alt+x global-display-line-numbers-mode ? Emacs 26 (released in 2018-05)
+
+---
 

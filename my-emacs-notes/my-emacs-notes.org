@@ -17,6 +17,8 @@ Go down till you reach built-in packages. Copy with M-w. C-x b for new buffer. P
 
 Another alternative is, simply copy the ".emacs" file from this computer to the other computer.
 
+------------
+
 *** How to add MELPA as another source of packages in addition to GNU's elpa?
     1. Hint: In order to avoid having to do this multiple times when switching between multiple machines, save the `.emacs` settings in GitHub so that you can just move it from machine to machine.
     2. The alternative is: In a browser, visit MELPA website and grab the URL for the package archive "https://melpa.org/packages/"
@@ -29,10 +31,14 @@ After making changes to the config to add MELPA as a source of packages, run the
 
 To change to mode from some other mode : M-x evil-mode
 
+------------
+
 *** How to work with org-mode and evil-mode?
     It looks like Vim key bindings will work in Org mode as well.
 
-*** Other helpful commands
+------------
+
+*** Helpful commands
     | Command                    | Description                                                                                                                                                             |
     |----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | C-x b and C-x C-b          | Switching between buffers                                                                                                                                               |
@@ -47,9 +53,31 @@ To change to mode from some other mode : M-x evil-mode
     | C-x C-s                    | Saving files                                                                                                                                                            |
     | g                          | Refresh the listing in dired mode                                                                                                                                       |
     |                            | Refresh the listing in dired mode                                                                                                                                       |
+    | C-x b *untitled*           | will open new buffer if not exist                                                                                                                                       |
 
-*** Other hints
+------------
+
+*** .emacs file
+
 If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch again.
+
+------------
+
+Where can I find my .emacs file for Emacs running on Windows?
+
+ 
+
+If you want to look at the contents of the file:
+
+Within Emacs, ~ at the beginning of a file name is expanded to your HOME directory, so you can always find your .emacs file with C-x C-f ~/.emacs.
+
+ 
+
+If you are trying to find out where the file is as opposed to looking at the contents of the file:
+
+It should be stored in the variable user-init-file. Use C-H v user-init-file RET to check. You can also open it directly by using M-x eval-expression RET (find-file user-init-file) RET
+
+------------
 
 *** Resources for emacs
 
@@ -66,5 +94,21 @@ If anything goes wrong with the customizations, delete the ".emacs" file in the 
 | https://jaderholm.com/screencasts.html                                                                               |
 | https://cestlaz.github.io/stories/emacs/                                                                             |
 
+------------
+
 *** How to auto save an org document in markdown format?
     Install the package 'auto-org-md' and after editing the file in org-mode, switch to it using this : "M-x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.
+
+------------
+
+*** Line numbers
+
+    How to show line numbers in files in emacs?
+
+    emacs has 2 line numbers mode.
+    
+    Alt+x linum-mode ? old, hack, slow. Emacs 23 (released in 2009).
+    
+    Alt+x global-display-line-numbers-mode ? Emacs 26 (released in 2018-05)
+     
+------------
