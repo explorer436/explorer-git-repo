@@ -1,29 +1,29 @@
 
 # Table of Contents
 
-1.  [My Emacs notes](#org2f011a0)
-    1.  [Helpful tips related to configuration and other things related to Emacs that I find useful.](#orgf72d710)
-        1.  [How to view the list of all the currently installed packages in Emacs?](#org679b5f7)
-        2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#org7595b8a)
-        3.  [How to work with org-mode and evil-mode?](#orga6e6107)
-        4.  [Helpful commands](#org770e1f7)
-        5.  [.emacs file](#org25b799e)
-        6.  [Resources for emacs](#org427d64b)
-        7.  [How to auto save an org document in markdown format?](#org5f091a0)
-        8.  [Line numbers](#org43c07db)
+1.  [My Emacs notes](#org16e038a)
+    1.  [Helpful tips related to configuration and other things related to Emacs that I find useful.](#org42283a8)
+        1.  [How to view the list of all the currently installed packages in Emacs?](#org914dd10)
+        2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#org255b9d3)
+        3.  [How to work with org-mode and evil-mode?](#orgb3ba57e)
+        4.  [Helpful commands](#org3a2535e)
+        5.  [.emacs file](#orgb2bd0cc)
+        6.  [Resources for emacs](#orgd0d1c44)
+        7.  [How to auto save an org document in markdown format?](#org29b2e0c)
+        8.  [Line numbers](#org971efc8)
 
 
-<a id="org2f011a0"></a>
+<a id="org16e038a"></a>
 
 # My Emacs notes
 
 
-<a id="orgf72d710"></a>
+<a id="org42283a8"></a>
 
 ## Helpful tips related to configuration and other things related to Emacs that I find useful.
 
 
-<a id="org679b5f7"></a>
+<a id="org914dd10"></a>
 
 ### How to view the list of all the currently installed packages in Emacs?
 
@@ -42,7 +42,7 @@ Another alternative is, simply copy the ".emacs" file from this computer to the 
 ---
 
 
-<a id="org7595b8a"></a>
+<a id="org255b9d3"></a>
 
 ### How to add MELPA as another source of packages in addition to GNU's elpa?
 
@@ -60,7 +60,7 @@ To change to mode from some other mode : M-x evil-mode
 ---
 
 
-<a id="orga6e6107"></a>
+<a id="orgb3ba57e"></a>
 
 ### How to work with org-mode and evil-mode?
 
@@ -69,7 +69,7 @@ It looks like Vim key bindings will work in Org mode as well.
 ---
 
 
-<a id="org770e1f7"></a>
+<a id="org3a2535e"></a>
 
 ### Helpful commands
 
@@ -162,8 +162,8 @@ It looks like Vim key bindings will work in Org mode as well.
 
 
 <tr>
-<td class="org-left">C-x b <b>untitled</b></td>
-<td class="org-left">will open new buffer if not exist</td>
+<td class="org-left">C-x b * untitled *</td>
+<td class="org-left">(remove the spaces before and after the asterisks) will open new buffer if not exist</td>
 </tr>
 </tbody>
 </table>
@@ -171,7 +171,7 @@ It looks like Vim key bindings will work in Org mode as well.
 ---
 
 
-<a id="org25b799e"></a>
+<a id="orgb2bd0cc"></a>
 
 ### .emacs file
 
@@ -192,7 +192,7 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
 ---
 
 
-<a id="org427d64b"></a>
+<a id="orgd0d1c44"></a>
 
 ### Resources for emacs
 
@@ -267,7 +267,7 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
 ---
 
 
-<a id="org5f091a0"></a>
+<a id="org29b2e0c"></a>
 
 ### How to auto save an org document in markdown format?
 
@@ -276,7 +276,7 @@ Install the package 'auto-org-md' and after editing the file in org-mode, switch
 ---
 
 
-<a id="org43c07db"></a>
+<a id="org971efc8"></a>
 
 ### Line numbers
 

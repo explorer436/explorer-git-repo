@@ -1,55 +1,55 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#org2f26329)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#orgfd5749f)
-        1.  [Movement](#org0dfd65c)
-        2.  [Folding](#org881ac34)
-        3.  [Insertion & replace → insert mode](#org8bc71dd)
-        4.  [Search and Substitution](#org6003ef2)
-        5.  [Scrolling](#orgf8126a8)
-        6.  [Sorting](#orgafe7471)
-        7.  [Spell check](#orgdc67db4)
-        8.  [Non empty lines](#orga1af55e)
-        9.  [Terminal](#orgb02b34c)
-        10. [Marks](#orgc41da05)
-        11. [Visual Mode](#orgb449313)
-        12. [Registers and copy and paste](#org4583bfe)
-        13. [Ex commands](#orga71e927)
-        14. [Vim completion](#orgffec82d)
-        15. [Word and text manipulation](#orge53e35b)
-        16. [Working with multiple files](#org4538c5b)
-        17. [Vim help](#org49b8f14)
-        18. [Key mappings and abbreviations](#org300dce7)
-        19. [Tags in Vim](#org4a23d71)
-        20. [Deleting](#orgf15c828)
-        21. [File comparison with Vim](#org7622a5a)
-        22. [Grep](#orgfdcf53e)
-        23. [Indentation](#orgc534561)
-        24. [Line numbers](#orgf79b9c6)
-        25. [Lower case Upper case](#org2e2784a)
-        26. [Manual insertion of numbered lists](#org0deba82)
-        27. [Macros](#org0ec4483)
-        28. [Netrw](#orgcc60e26)
-        29. [Packages and plugins](#org2067830)
-        30. [gitignore](#orgdc695e0)
-        31. [Helpful links](#org6e56760)
-        32. [Open questions](#orge7f886f)
-        33. [Research](#orgb373063)
-        34. [Miscellaneous](#orgb025a0c)
+1.  [My Vim notes](#org49a10bf)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org05f854a)
+        1.  [Movement](#orgb4d7ed7)
+        2.  [Folding](#org5f79278)
+        3.  [Insertion & replace → insert mode](#orgffea051)
+        4.  [Search and Substitution](#orge4888c0)
+        5.  [Scrolling](#orgf58f8bb)
+        6.  [Sorting](#org74678b1)
+        7.  [Spell check](#org4c9e0b4)
+        8.  [Non empty lines](#org3bcaad0)
+        9.  [Terminal](#org62d4bc6)
+        10. [Marks](#org85133bf)
+        11. [Visual Mode](#org8bb08dd)
+        12. [Registers and copy and paste](#org83456a0)
+        13. [Ex commands](#org6688f32)
+        14. [Vim completion](#org0df1cd2)
+        15. [Word and text manipulation](#orged81959)
+        16. [Working with multiple files](#org29d1477)
+        17. [Vim help](#orged631ca)
+        18. [Key mappings and abbreviations](#org1a70ebf)
+        19. [Tags in Vim](#org5b595eb)
+        20. [Deleting](#org21b13ff)
+        21. [File comparison with Vim](#org632467e)
+        22. [Grep](#org1b415b6)
+        23. [Indentation](#org8da44d4)
+        24. [Line numbers](#org588c4fb)
+        25. [Lower case Upper case](#orgd908c34)
+        26. [Manual insertion of numbered lists](#org8eebe85)
+        27. [Macros](#org90ad2ce)
+        28. [Netrw](#orgf6c7117)
+        29. [Packages and plugins](#org3a74bbb)
+        30. [git](#org0164bc1)
+        31. [Helpful links](#orga60efff)
+        32. [Open questions](#orgd5a101f)
+        33. [Research](#org0a99e55)
+        34. [Miscellaneous](#orgbaeac33)
 
 
-<a id="org2f26329"></a>
+<a id="org49a10bf"></a>
 
 # My Vim notes
 
 
-<a id="orgfd5749f"></a>
+<a id="org05f854a"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="org0dfd65c"></a>
+<a id="orgb4d7ed7"></a>
 
 ### Movement
 
@@ -290,7 +290,7 @@ Complex movement
 ---
 
 
-<a id="org881ac34"></a>
+<a id="org5f79278"></a>
 
 ### Folding
 
@@ -343,7 +343,7 @@ Complex movement
 ---
 
 
-<a id="org8bc71dd"></a>
+<a id="orgffea051"></a>
 
 ### Insertion & replace → insert mode
 
@@ -610,7 +610,7 @@ ADVANCED INSERTION
 </table>
 
 
-<a id="org6003ef2"></a>
+<a id="orge4888c0"></a>
 
 ### Search and Substitution
 
@@ -855,7 +855,7 @@ OFFSETS IN SEARCH COMMANDS
 ---
 
 
-<a id="orgf8126a8"></a>
+<a id="orgf58f8bb"></a>
 
 ### Scrolling
 
@@ -970,7 +970,7 @@ OFFSETS IN SEARCH COMMANDS
     ---
 
 
-<a id="orgafe7471"></a>
+<a id="org74678b1"></a>
 
 ### Sorting
 
@@ -1009,7 +1009,7 @@ You dig deeper:
 ---
 
 
-<a id="orgdc67db4"></a>
+<a id="org4c9e0b4"></a>
 
 ### Spell check
 
@@ -1036,7 +1036,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="orga1af55e"></a>
+<a id="org3bcaad0"></a>
 
 ### Non empty lines
 
@@ -1048,7 +1048,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="orgb02b34c"></a>
+<a id="org62d4bc6"></a>
 
 ### Terminal
 
@@ -1057,7 +1057,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="orgc41da05"></a>
+<a id="org85133bf"></a>
 
 ### Marks
 
@@ -1203,7 +1203,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="orgb449313"></a>
+<a id="org8bb08dd"></a>
 
 ### Visual Mode
 
@@ -1250,7 +1250,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org4583bfe"></a>
+<a id="org83456a0"></a>
 
 ### Registers and copy and paste
 
@@ -1411,7 +1411,7 @@ UNDOING, REPEATING & REGISTERS
 </table>
 
 
-<a id="orga71e927"></a>
+<a id="org6688f32"></a>
 
 ### Ex commands
 
@@ -1566,7 +1566,7 @@ EX RANGES
 </table>
 
 
-<a id="orgffec82d"></a>
+<a id="org0df1cd2"></a>
 
 ### Vim completion
 
@@ -1694,7 +1694,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="orge53e35b"></a>
+<a id="orged81959"></a>
 
 ### Word and text manipulation
 
@@ -1839,7 +1839,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org4538c5b"></a>
+<a id="org29d1477"></a>
 
 ### Working with multiple files
 
@@ -2118,7 +2118,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org49b8f14"></a>
+<a id="orged631ca"></a>
 
 ### Vim help
 
@@ -2135,7 +2135,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org300dce7"></a>
+<a id="org1a70ebf"></a>
 
 ### Key mappings and abbreviations
 
@@ -2194,7 +2194,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org4a23d71"></a>
+<a id="org5b595eb"></a>
 
 ### Tags in Vim
 
@@ -2318,7 +2318,7 @@ Ctrl+Right MouseClick - Jump back from definition
 ---
 
 
-<a id="orgf15c828"></a>
+<a id="org21b13ff"></a>
 
 ### Deleting
 
@@ -2465,7 +2465,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="org7622a5a"></a>
+<a id="org632467e"></a>
 
 ### File comparison with Vim
 
@@ -2494,7 +2494,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="orgfdcf53e"></a>
+<a id="org1b415b6"></a>
 
 ### Grep
 
@@ -2514,7 +2514,7 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="orgc534561"></a>
+<a id="org8da44d4"></a>
 
 ### Indentation
 
@@ -2546,7 +2546,7 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="orgf79b9c6"></a>
+<a id="org588c4fb"></a>
 
 ### Line numbers
 
@@ -2559,7 +2559,7 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="org2e2784a"></a>
+<a id="orgd908c34"></a>
 
 ### Lower case Upper case
 
@@ -2576,7 +2576,7 @@ Alternatively(easier to remember), you can visually select text then press ~ to 
 ---
 
 
-<a id="org0deba82"></a>
+<a id="org8eebe85"></a>
 
 ### Manual insertion of numbered lists
 
@@ -2603,7 +2603,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org0ec4483"></a>
+<a id="org90ad2ce"></a>
 
 ### Macros
 
@@ -2650,7 +2650,7 @@ For help, check: :help global.
 ---
 
 
-<a id="orgcc60e26"></a>
+<a id="orgf6c7117"></a>
 
 ### Netrw
 
@@ -2874,7 +2874,7 @@ Further Reading
 ---
 
 
-<a id="org2067830"></a>
+<a id="org3a74bbb"></a>
 
 ### Packages and plugins
 
@@ -2896,26 +2896,76 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="orgdc695e0"></a>
+<a id="org0164bc1"></a>
 
-### gitignore
+### git
 
-Vim creates temporary files throughout the project. One way to stop that is by using the following settings:   
+1.  gitignore
 
-    set nobackup       "no backup files
-    set nowritebackup  "only in case you don't want a backup file while editing
-    set noswapfile     "no swap files
+    Vim creates temporary files throughout the project. One way to stop that is by using the following settings:   
+    
+        set nobackup       "no backup files
+        set nowritebackup  "only in case you don't want a backup file while editing
+        set noswapfile     "no swap files
+    
+    Instead of changing Vim settings, just add the following lines to the project's gitignore files
+    
+        *~
+        *.swp
+        *.swo
 
-Instead of changing Vim settings, just add the following lines to the project's gitignore files
+2.  If the command prompt does not recognize git in Windows machines
 
-    *~
-    *.swp
-    *.swo
+    I have an installation of Git for Windows, but when I try to use the git command in Command Prompt, I get the following error: 'git' is not recognized as an internal or external command, operable program or batch file. How to fix this problem?
+    
+    Have you correctly set your PATH to point at your Git installation?
+    
+    You need to add the following paths to PATH:
+    
+    C:\Program Files\Git\bin\\
+    
+    C:\Program Files\Git\cmd\\
 
----
+3.  If Vim does not recognize Git
+
+    Symptom : If there is an error when Vim is starting up due to the call plug#begin(), it indicates that Vim may not be recognizing Git appropriately. This might show up when using PlugInstall command or any other plugin manager.
+    
+    Do you have git installed on your system? What does :echo executable('git') say?
+    
+    If it says 0, then add these to the vimrc file:
+    
+    (for 32 bit machines)
+    
+    if has('win32')
+    
+    let $PATH .= ';' . 'C:/Program Files (x86)/Git/bin'
+    
+    endif
+    
+    (for 64 bit machines)
+    
+    if has('win64')
+    
+    let $PATH .= ';' . 'C:/Program Files/Git/bin/'
+    
+    endif
+
+4.  If the plugin managing tools have trouble connecting to git when working in a corporate environment:
+
+    Unable to resolve “unable to get local issuer certificate” using git on Windows with self-signed certificate
+    
+    Open Git Bash and run the command if you want to completely disable SSL verification.
+    
+    git config &#x2013;global http.sslVerify false
+    
+    Note: This solution may open you to attacks like man-in-the-middle attacks. Therefore turn on verification again as soon as possible:
+    
+    git config &#x2013;global http.sslVerify true 
+    
+    ---
 
 
-<a id="org6e56760"></a>
+<a id="orga60efff"></a>
 
 ### Helpful links
 
@@ -2950,7 +3000,7 @@ Instead of changing Vim settings, just add the following lines to the project's 
 ---
 
 
-<a id="orge7f886f"></a>
+<a id="orgd5a101f"></a>
 
 ### Open questions
 
@@ -2967,7 +3017,7 @@ vimrc shortcut for finding and displaying all the occurences of a word
 ---
 
 
-<a id="orgb373063"></a>
+<a id="org0a99e55"></a>
 
 ### Research
 
@@ -3006,7 +3056,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="orgb025a0c"></a>
+<a id="orgbaeac33"></a>
 
 ### Miscellaneous
 

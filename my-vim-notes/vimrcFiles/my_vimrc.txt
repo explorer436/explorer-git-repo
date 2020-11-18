@@ -189,11 +189,13 @@ colorscheme papaya
 " We need to run a command to Download plug.vim and put it in the "autoload" directory.
 call plug#begin('~/.vim/plugged')
 
+Plug 'HenryNewcomer/vim-theme-papaya'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'HenryNewcomer/vim-theme-papaya'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-fugitive'
+Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 " After making changes to the list here, run the command ':PlugInstall' to get

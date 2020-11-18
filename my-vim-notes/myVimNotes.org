@@ -1259,7 +1259,9 @@ EX RANGES
 
    ------------------------------------------
 
-*** gitignore
+*** git
+
+**** gitignore 
 
     Vim creates temporary files throughout the project. One way to stop that is by using the following settings:   
    #+BEGIN_EXAMPLE
@@ -1274,6 +1276,55 @@ EX RANGES
     *.swp
     *.swo
    #+END_EXAMPLE
+
+**** If the command prompt does not recognize git in Windows machines
+
+    I have an installation of Git for Windows, but when I try to use the git command in Command Prompt, I get the following error: 'git' is not recognized as an internal or external command, operable program or batch file. How to fix this problem?
+    
+    
+    Have you correctly set your PATH to point at your Git installation?
+    
+    You need to add the following paths to PATH:
+    
+    C:\Program Files\Git\bin\
+    
+    C:\Program Files\Git\cmd\
+
+**** If Vim does not recognize Git
+
+     Symptom : If there is an error when Vim is starting up due to the call plug#begin(), it indicates that Vim may not be recognizing Git appropriately. This might show up when using PlugInstall command or any other plugin manager.
+
+     Do you have git installed on your system? What does :echo executable('git') say?
+
+     If it says 0, then add these to the vimrc file:
+     
+     (for 32 bit machines)
+     
+     if has('win32')
+     
+         let $PATH .= ';' . 'C:/Program Files (x86)/Git/bin'
+     
+     endif
+     
+     (for 64 bit machines)
+     
+     if has('win64')
+     
+         let $PATH .= ';' . 'C:/Program Files/Git/bin/'
+     
+     endif
+
+**** If the plugin managing tools have trouble connecting to git when working in a corporate environment:
+
+    Unable to resolve “unable to get local issuer certificate” using git on Windows with self-signed certificate
+
+    Open Git Bash and run the command if you want to completely disable SSL verification.
+    
+    git config --global http.sslVerify false
+    
+    Note: This solution may open you to attacks like man-in-the-middle attacks. Therefore turn on verification again as soon as possible:
+    
+    git config --global http.sslVerify true 
 
    ------------------------------------------
 

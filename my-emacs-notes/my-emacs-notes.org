@@ -53,7 +53,7 @@ To change to mode from some other mode : M-x evil-mode
     | C-x C-s                    | Saving files                                                                                                                                                            |
     | g                          | Refresh the listing in dired mode                                                                                                                                       |
     |                            | Refresh the listing in dired mode                                                                                                                                       |
-    | C-x b *untitled*           | will open new buffer if not exist                                                                                                                                       |
+    | C-x b * untitled *         | (remove the spaces before and after the asterisks) will open new buffer if not exist                                                                                    |
 
 ------------
 
