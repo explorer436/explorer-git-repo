@@ -1,55 +1,56 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#org49a10bf)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org05f854a)
-        1.  [Movement](#orgb4d7ed7)
-        2.  [Folding](#org5f79278)
-        3.  [Insertion & replace → insert mode](#orgffea051)
-        4.  [Search and Substitution](#orge4888c0)
-        5.  [Scrolling](#orgf58f8bb)
-        6.  [Sorting](#org74678b1)
-        7.  [Spell check](#org4c9e0b4)
-        8.  [Non empty lines](#org3bcaad0)
-        9.  [Terminal](#org62d4bc6)
-        10. [Marks](#org85133bf)
-        11. [Visual Mode](#org8bb08dd)
-        12. [Registers and copy and paste](#org83456a0)
-        13. [Ex commands](#org6688f32)
-        14. [Vim completion](#org0df1cd2)
-        15. [Word and text manipulation](#orged81959)
-        16. [Working with multiple files](#org29d1477)
-        17. [Vim help](#orged631ca)
-        18. [Key mappings and abbreviations](#org1a70ebf)
-        19. [Tags in Vim](#org5b595eb)
-        20. [Deleting](#org21b13ff)
-        21. [File comparison with Vim](#org632467e)
-        22. [Grep](#org1b415b6)
-        23. [Indentation](#org8da44d4)
-        24. [Line numbers](#org588c4fb)
-        25. [Lower case Upper case](#orgd908c34)
-        26. [Manual insertion of numbered lists](#org8eebe85)
-        27. [Macros](#org90ad2ce)
-        28. [Netrw](#orgf6c7117)
-        29. [Packages and plugins](#org3a74bbb)
-        30. [git](#org0164bc1)
-        31. [Helpful links](#orga60efff)
-        32. [Open questions](#orgd5a101f)
-        33. [Research](#org0a99e55)
-        34. [Miscellaneous](#orgbaeac33)
+1.  [My Vim notes](#org1aaa040)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org8ad7751)
+        1.  [Movement](#org93453c5)
+        2.  [Folding](#org3b671a5)
+        3.  [Insertion & replace → insert mode](#org96ed6a8)
+        4.  [Search and Substitution](#org14498e4)
+        5.  [Scrolling](#org8c770be)
+        6.  [Sorting](#orge0d9144)
+        7.  [Spell check](#org29f2c44)
+        8.  [Non empty lines](#org3aea06f)
+        9.  [Terminal](#orgd3cd733)
+        10. [Marks](#orgd1732a0)
+        11. [Visual Mode](#org87e1072)
+        12. [Registers and copy and paste](#org14fec72)
+        13. [Ex commands](#orgc5a6ad6)
+        14. [Vim completion](#org4f21dfa)
+        15. [Word and text manipulation](#org4899763)
+        16. [Working with multiple files](#orgc3e621d)
+        17. [Vim help](#org2358b0c)
+        18. [Key mappings and abbreviations](#org3955356)
+        19. [Tags in Vim](#org359d920)
+        20. [Deleting](#org8b02b00)
+        21. [File comparison with Vim](#org7893310)
+        22. [Grep](#org1183b31)
+        23. [Indentation](#org4cbc32d)
+        24. [Line numbers](#org59368ea)
+        25. [Lower case Upper case](#org71e2ed7)
+        26. [Manual insertion of numbered lists](#org6d5b3e7)
+        27. [Macros](#orga1b3fbe)
+        28. [Netrw](#orgd04a7cf)
+        29. [Packages and plugins](#orgdddd86c)
+        30. [git](#org6676308)
+        31. [Helpful links](#org50b1f67)
+        32. [Open questions](#org4f1e1de)
+        33. [Research](#orgb5f1283)
+        34. [Miscellaneous](#orgf824f0d)
+        35. [Plugins](#org6b38bb7)
 
 
-<a id="org49a10bf"></a>
+<a id="org1aaa040"></a>
 
 # My Vim notes
 
 
-<a id="org05f854a"></a>
+<a id="org8ad7751"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="orgb4d7ed7"></a>
+<a id="org93453c5"></a>
 
 ### Movement
 
@@ -290,7 +291,7 @@ Complex movement
 ---
 
 
-<a id="org5f79278"></a>
+<a id="org3b671a5"></a>
 
 ### Folding
 
@@ -343,7 +344,7 @@ Complex movement
 ---
 
 
-<a id="orgffea051"></a>
+<a id="org96ed6a8"></a>
 
 ### Insertion & replace → insert mode
 
@@ -610,7 +611,7 @@ ADVANCED INSERTION
 </table>
 
 
-<a id="orge4888c0"></a>
+<a id="org14498e4"></a>
 
 ### Search and Substitution
 
@@ -855,7 +856,7 @@ OFFSETS IN SEARCH COMMANDS
 ---
 
 
-<a id="orgf58f8bb"></a>
+<a id="org8c770be"></a>
 
 ### Scrolling
 
@@ -970,7 +971,7 @@ OFFSETS IN SEARCH COMMANDS
     ---
 
 
-<a id="org74678b1"></a>
+<a id="orge0d9144"></a>
 
 ### Sorting
 
@@ -1009,7 +1010,7 @@ You dig deeper:
 ---
 
 
-<a id="org4c9e0b4"></a>
+<a id="org29f2c44"></a>
 
 ### Spell check
 
@@ -1036,7 +1037,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="org3bcaad0"></a>
+<a id="org3aea06f"></a>
 
 ### Non empty lines
 
@@ -1048,7 +1049,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="org62d4bc6"></a>
+<a id="orgd3cd733"></a>
 
 ### Terminal
 
@@ -1057,7 +1058,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="org85133bf"></a>
+<a id="orgd1732a0"></a>
 
 ### Marks
 
@@ -1203,7 +1204,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org8bb08dd"></a>
+<a id="org87e1072"></a>
 
 ### Visual Mode
 
@@ -1250,7 +1251,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org83456a0"></a>
+<a id="org14fec72"></a>
 
 ### Registers and copy and paste
 
@@ -1410,8 +1411,122 @@ UNDOING, REPEATING & REGISTERS
 </tbody>
 </table>
 
+Copying and Moving Text
 
-<a id="org6688f32"></a>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">"{a-zA-Z0-9.%#:-"}</td>
+<td class="org-left">Use register {a-zA-Z0-9.%#:-"} for next delete, yank or put (use uppercase character to append with delete and yank) ({.%#:} only work with put).</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:reg[isters]</td>
+<td class="org-left">Display the contents of all numbered and named registers.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:reg[isters] {arg}</td>
+<td class="org-left">Display the contents of the numbered and named registers that are mentioned in {arg}.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:di[splay] [arg]</td>
+<td class="org-left">Same as :registers.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">["x]y{motion}</td>
+<td class="org-left">Yank {motion} text [into register x].</td>
+</tr>
+
+
+<tr>
+<td class="org-left">["x]yy</td>
+<td class="org-left">Yank [count] lines [into register x]</td>
+</tr>
+
+
+<tr>
+<td class="org-left">["x]Y</td>
+<td class="org-left">yank [count] lines [into register x] (synonym for yy).</td>
+</tr>
+
+
+<tr>
+<td class="org-left">{Visual}["x]y</td>
+<td class="org-left">Yank the highlighted text [into register x] (for {Visual} see Selecting Text).</td>
+</tr>
+
+
+<tr>
+<td class="org-left">{Visual}["x]Y</td>
+<td class="org-left">Yank the highlighted lines [into register x]</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:[range]y[ank] [x]</td>
+<td class="org-left">Yank [range] lines [into register x].</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:[range]y[ank] [x] {count}</td>
+<td class="org-left">Yank {count} lines, starting with last line number in [range] (default: current line), [into register x].</td>
+</tr>
+
+
+<tr>
+<td class="org-left">["x]p</td>
+<td class="org-left">Put the text [from register x] after the cursor [count] times.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">["x]P</td>
+<td class="org-left">Put the text [from register x] before the cursor [count] times.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">["x]gp</td>
+<td class="org-left">Just like "p", but leave the cursor just after the new text.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">["x]gP</td>
+<td class="org-left">Just like "P", but leave the cursor just after the new text.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:[line]pu[t] [x]</td>
+<td class="org-left">Put the text [from register x] after [line] (default current line).</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:[line]pu[t]! [x]</td>
+<td class="org-left">Put the text [from register x] before [line] (default current line).</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="orgc5a6ad6"></a>
 
 ### Ex commands
 
@@ -1566,7 +1681,7 @@ EX RANGES
 </table>
 
 
-<a id="org0df1cd2"></a>
+<a id="org4f21dfa"></a>
 
 ### Vim completion
 
@@ -1694,7 +1809,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="orged81959"></a>
+<a id="org4899763"></a>
 
 ### Word and text manipulation
 
@@ -1839,53 +1954,13 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org29d1477"></a>
+<a id="orgc3e621d"></a>
 
 ### Working with multiple files
 
 <https://vim.fandom.com/wiki/Quick_tips_for_using_tab_pages>
 <https://vim.fandom.com/wiki/Using_tab_pages>
 <http://vimdoc.sourceforge.net/htmldoc/tabpage.html>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">^Ws or :split↵</td>
-<td class="org-left">split window in two</td>
-</tr>
-
-
-<tr>
-<td class="org-left">^Wn or :new↵</td>
-<td class="org-left">create new empty window</td>
-</tr>
-
-
-<tr>
-<td class="org-left">^Wo or :on↵</td>
-<td class="org-left">make current window one on screen</td>
-</tr>
-
-
-<tr>
-<td class="org-left">^Wj ^Wk	move to</td>
-<td class="org-left">window below, above</td>
-</tr>
-
-
-<tr>
-<td class="org-left">^Ww ^W<sup>W</sup></td>
-<td class="org-left">move to window below, above (wrap)</td>
-</tr>
-</tbody>
-</table>
 
 1.  Buffers
 
@@ -2063,7 +2138,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     
     ---
 
-3.  Splits
+3.  Splits and Multiple windows
 
     How do I change the current split's width and height?
     
@@ -2104,6 +2179,132 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     <td class="org-left">Ctrl+W =</td>
     <td class="org-left">equalize width and height of all windows</td>
     </tr>
+    
+    
+    <tr>
+    <td class="org-left">^Ws or :split↵</td>
+    <td class="org-left">split window in two</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">^Wn or :new↵</td>
+    <td class="org-left">create new empty window</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">^Wo or :on↵</td>
+    <td class="org-left">make current window one on screen</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">^Wj ^Wk</td>
+    <td class="org-left">move to window below, above</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">^Ww ^W<sup>W</sup></td>
+    <td class="org-left">move to window below, above (wrap)</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:e filename</td>
+    <td class="org-left">Edit another file</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:split filename</td>
+    <td class="org-left">Split window and load another file</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">CTRL-W v</td>
+    <td class="org-left">Vertical split current window</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">CTRL-W s</td>
+    <td class="org-left">Horizontal split current window</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">CTRL-W Arrow Up</td>
+    <td class="org-left">Move cursor up a window</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">CTRL-W CTRL-W</td>
+    <td class="org-left">Move cursor to another window (cycle)</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">CTRL-W_</td>
+    <td class="org-left">Maximize current window</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">CTRL-W=</td>
+    <td class="org-left">Make all equal size</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">10 CTRL-W+</td>
+    <td class="org-left">Increase window size by 10 lines</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:vsplit file</td>
+    <td class="org-left">Vertical split</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:sview file</td>
+    <td class="org-left">Same as split, but readonly</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:hide</td>
+    <td class="org-left">Close current window</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:only</td>
+    <td class="org-left">Keep only this window open</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:ls</td>
+    <td class="org-left">Show current buffers</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:b 2</td>
+    <td class="org-left">Open buffer #2 in this window</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:bd[n]</td>
+    <td class="org-left">Close current buffer. If [n] is given close buffer #n. #n can be gathered with :ls.</td>
+    </tr>
     </tbody>
     </table>
     
@@ -2118,7 +2319,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="orged631ca"></a>
+<a id="org2358b0c"></a>
 
 ### Vim help
 
@@ -2135,7 +2336,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org1a70ebf"></a>
+<a id="org3955356"></a>
 
 ### Key mappings and abbreviations
 
@@ -2194,7 +2395,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org5b595eb"></a>
+<a id="org359d920"></a>
 
 ### Tags in Vim
 
@@ -2318,7 +2519,7 @@ Ctrl+Right MouseClick - Jump back from definition
 ---
 
 
-<a id="org21b13ff"></a>
+<a id="org8b02b00"></a>
 
 ### Deleting
 
@@ -2465,7 +2666,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="org632467e"></a>
+<a id="org7893310"></a>
 
 ### File comparison with Vim
 
@@ -2494,7 +2695,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="org1b415b6"></a>
+<a id="org1183b31"></a>
 
 ### Grep
 
@@ -2514,7 +2715,7 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="org8da44d4"></a>
+<a id="org4cbc32d"></a>
 
 ### Indentation
 
@@ -2546,7 +2747,7 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="org588c4fb"></a>
+<a id="org59368ea"></a>
 
 ### Line numbers
 
@@ -2559,7 +2760,7 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="orgd908c34"></a>
+<a id="org71e2ed7"></a>
 
 ### Lower case Upper case
 
@@ -2576,7 +2777,7 @@ Alternatively(easier to remember), you can visually select text then press ~ to 
 ---
 
 
-<a id="org8eebe85"></a>
+<a id="org6d5b3e7"></a>
 
 ### Manual insertion of numbered lists
 
@@ -2603,7 +2804,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org90ad2ce"></a>
+<a id="orga1b3fbe"></a>
 
 ### Macros
 
@@ -2650,7 +2851,7 @@ For help, check: :help global.
 ---
 
 
-<a id="orgf6c7117"></a>
+<a id="orgd04a7cf"></a>
 
 ### Netrw
 
@@ -2874,7 +3075,7 @@ Further Reading
 ---
 
 
-<a id="org3a74bbb"></a>
+<a id="orgdddd86c"></a>
 
 ### Packages and plugins
 
@@ -2896,7 +3097,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="org0164bc1"></a>
+<a id="org6676308"></a>
 
 ### git
 
@@ -2922,9 +3123,9 @@ change it to this to get the plugin's URL:
     
     You need to add the following paths to PATH:
     
-    C:\Program Files\Git\bin\\
-    
-    C:\Program Files\Git\cmd\\
+        C:\Program Files\Git\bin\
+        
+        C:\Program Files\Git\cmd\
 
 3.  If Vim does not recognize Git
 
@@ -2936,19 +3137,19 @@ change it to this to get the plugin's URL:
     
     (for 32 bit machines)
     
-    if has('win32')
-    
-    let $PATH .= ';' . 'C:/Program Files (x86)/Git/bin'
-    
-    endif
+        if has('win32')
+        
+            let $PATH .= ';' . 'C:/Program Files (x86)/Git/bin'
+        
+        endif
     
     (for 64 bit machines)
     
-    if has('win64')
-    
-    let $PATH .= ';' . 'C:/Program Files/Git/bin/'
-    
-    endif
+        if has('win64')
+        
+            let $PATH .= ';' . 'C:/Program Files/Git/bin/'
+        
+        endif
 
 4.  If the plugin managing tools have trouble connecting to git when working in a corporate environment:
 
@@ -2956,16 +3157,16 @@ change it to this to get the plugin's URL:
     
     Open Git Bash and run the command if you want to completely disable SSL verification.
     
-    git config &#x2013;global http.sslVerify false
+        git config --global http.sslVerify false
     
     Note: This solution may open you to attacks like man-in-the-middle attacks. Therefore turn on verification again as soon as possible:
     
-    git config &#x2013;global http.sslVerify true 
+        git config --global http.sslVerify true 
     
     ---
 
 
-<a id="orga60efff"></a>
+<a id="org50b1f67"></a>
 
 ### Helpful links
 
@@ -3000,7 +3201,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="orgd5a101f"></a>
+<a id="org4f1e1de"></a>
 
 ### Open questions
 
@@ -3017,7 +3218,7 @@ vimrc shortcut for finding and displaying all the occurences of a word
 ---
 
 
-<a id="org0a99e55"></a>
+<a id="orgb5f1283"></a>
 
 ### Research
 
@@ -3056,7 +3257,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="orgbaeac33"></a>
+<a id="orgf824f0d"></a>
 
 ### Miscellaneous
 
@@ -3149,4 +3350,348 @@ With Gvim, you cannot do that.
 </table>
 
 ---
+
+
+<a id="org6b38bb7"></a>
+
+### Plugins
+
+1.  Vim fugitive
+
+    <https://github.com/tpope/vim-fugitive/blob/master/doc/fugitive.txt>
+    
+    To launch the git status window:
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">:G</td>
+    <td class="org-left">git status</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:Gstatus</td>
+    <td class="org-left">git status</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    When not in the git status window:
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">:Gcommit</td>
+    <td class="org-left">to open the commit window if you are not already in the git status window</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:Gdiff</td>
+    <td class="org-left">diff mode to see the changes for the curent file</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    In the Gstatus window:
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">(minus)</td>
+    <td class="org-left">stage if the file is not staged. unstage if the file is already staged. This also works in visual mode. If you want to stage/unstage more than one file at a time, visually select them and press minus.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">Ctrl n</td>
+    <td class="org-left">next file</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">Ctrl p</td>
+    <td class="org-left">previous file</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">p</td>
+    <td class="org-left">interactive staging. run `git add –patch` for current file</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">Enter</td>
+    <td class="org-left">open a file for quick review. This opens that specific file in a split below. After opening the file, to see the diff view for that specific file, run :Gdiff</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">C</td>
+    <td class="org-left">commit window</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    **Working with the git index**
+    
+    The git index is where you put changes that you want to be included in the next commit. If you are used to working with the command line git client, you might think of the index as an abstract concept. But with fugitive, you can actually read the index version of a file into a buffer by running::Gedit :path/to/file
+    
+    If you run :Gedit with no arguments from a working tree file, it will open the index version of that file. You can always open the index version of the current file by running any one of the following::Gedit
+    
+    :Gedit :0
+    :Gedit :%
+    
+    It helps to understand the lifecycle of the index file between two commits. To begin with, the contents of the index and working copy files will be exactly the same as the most recent commit. As you make changes to your working copy, its contents begin to diverge from those of the index file. Staging a file updates the contents of the index file to match those of the working copy. When you commit your work, it is the contents of the index file that are saved with that commit object.
+    
+    **Comparing working copy with index version using :Gdiff**
+    
+    When you run::Gdiff on a work tree file without any arguments, fugitive performs a vimdiff against the index version of the file. This opens a vertical split window, with the index file on the left and the working copy on the right. The files always appear in that order, so you can commit that to memory.Wholesale reconciliationThe :Gread and :Gwrite commands can either add a file to the index or reset the file, depending on where they are called from. The following table and diagrams summarize the possibilities:
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">command</td>
+    <td class="org-left">active window</td>
+    <td class="org-left">affect</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:Gwrite</td>
+    <td class="org-left">working copy</td>
+    <td class="org-left">stage file</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:Gread</td>
+    <td class="org-left">working copy</td>
+    <td class="org-left">checkout file</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:Gwrite</td>
+    <td class="org-left">index</td>
+    <td class="org-left">checkout file</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:Gread</td>
+    <td class="org-left">index</td>
+    <td class="org-left">stage file</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    **Piecemeal reconciliation**
+    
+    Vim’s built in :diffget and :diffput commands work a bit like :Gread and :Gwrite, except that they are more granular. Whereas :Gread will completely overwrite the current buffer with the contents of the other buffer, :diffget will only pull in a patch at a time.
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">command</td>
+    <td class="org-left">active window</td>
+    <td class="org-left">affect</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:diffput</td>
+    <td class="org-left">working copy</td>
+    <td class="org-left">stage hunk</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:diffget</td>
+    <td class="org-left">working copy</td>
+    <td class="org-left">checkout hunk</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:diffput</td>
+    <td class="org-left">index</td>
+    <td class="org-left">checkout hunk</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:diffget</td>
+    <td class="org-left">index</td>
+    <td class="org-left">stage hunk</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    **resolving merge conflicts with vimdiff**
+    
+    :Gdiff on a conflicted file opens 3-way diffWhen you run :Gdiff on a conflicted file, fugitive opens 3 split windows. They always appear in this order:
+    the left window contains the version from the target branch
+    the middle window contains the working copy of the file, complete with conflict markers
+    the right window contains the version from the merge branch
+    
+    The ‘target’ branch is the one that is active when you run git merge. Or in other words, it’s the HEAD branch. The ‘merge’ branch is the one that is named in the git merge command. In this scenario the ‘master’ branch is the target, and the ‘feature’ branch is merged into target, making it the merge branch.
+    
+    **Strategies for reconciling 3-way diffs**
+    
+    There are two basic strategies for reconciling a 3-way diff. You can either keep your cursor in the middle file, and run :diffget with the bufspec for the file containing the change you want to keep. Or you can position your cursor on the change that you want to keep, and run :diffput with the bufspec for the working copy file. We’ll take a look at each of these strategies in turn, starting with diffget.
+    
+    Introducing buffspecs
+    
+    In the context of a 2-way diff, the :diffget and :diffput commands are unambiguous. If you ask Vim to get the diff from the other window, there is only one place for it to look. When you do a 3-way merge, things get a little more complex. This time, it would be ambiguous if you were to tell Vim to fetch the changes from the other window. You have to specify which buffer to fetch the changes from by providing a [bufspec].The buffspec could either be the buffer number, or a partial match for the buffer’s name. Buffer numbers are assigned sequentially, so they will differ from session to session, but you can always be sure that they will uniquely identify their buffer.Fugitive follows a consistent naming convention when creating buffers for the target and merge versions of a conflicted file. The parent file from the target branch always includes the string //2, while the parent from the merge branch always contains //3. These partial matches are sufficient to uniquely identify the target and merge parents when using the :diffget command.
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">parent version</td>
+    <td class="org-left">buffspec</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">target</td>
+    <td class="org-left">//2</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">merge</td>
+    <td class="org-left">//3</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    **Resolving a 3-way diff with :diffget**
+    
+    The :diffget command modifies the current buffer by pulling a change over from one of the other buffers. In resolving a merge conflict, we want to treat target and merge parents as reference copies, pulling hunks of changes from those into the conflicted working copy. That means that we want to keep the middle buffer active, and run diffget with a reference to the buffer containing the change that we want to use.
+    
+    :diffget //2 - fetches the hunk from the target parent (on the left)
+    :diffget //3 - fetches the hunk from the merge parent (on the right)
+    
+    Note that Vim does not automatically recalculate the diff colors after you run :diffget. You can tell Vim to do this by running :diffupdate.
+    
+    **Resolving a 3-way diff with :diffput**
+    
+    The :diffput command modifies another buffer by pushing a change from the active buffer into it. In the context of a 3-way merge conflict, we want to push changes from the target and merge versions into the working copy.
+    
+    The example in the video used a file called demo.js, which could be referenced using the buffspec ‘demo’. In this case, we could run the exact same command each time:
+    
+    :diffput demo - pushes the hunk from the active buffer into the conflicted working copy
+    
+    Although the command is kept constant, we have to activate the correct window before running it. Whereas using diffget, the window remained constant but we had to pass a different argument each time.
+    
+    In a 2-way diff, the diffget and diffput commands require no argument. Vim provides a couple of convenient shorthand mappings for these commands: do performs a diffget, and dp does diffput. These mappings don’t normally work in a 3-way diff, because the diffget and diffput commands both require an argument in this context. But in the case of the diffput command, it’s pretty easy to guess what that argument is going to be.
+    
+    When you do a 3-way diff between working copy, target and merge parents, fugitive assumes that if you run dp from either of the parent buffers, you want to put the change into the working copy. So even though the dp mapping normally only works in a 2-way diff, you can use it in this special case of a 3-way diff.
+    
+    **Keeping one parent version in its entirety**
+    
+    In reality, it’s often the case that one of the parent versions is to be kept wholesale, and the other version is to be discarded. In this scenario, fugitive’s :Gwrite command comes in handy. This overwrites the working tree and index copies with the contents of the currently active file.
+    
+    If you run :Gwrite from the target or merge version of a file, fugitive raises a warning. This is to protect you from accidentally overwriting the working copy and index files when you’ve carefully cherry picked the changes from the parent versions. If you want to stage either of the parent versions in their entirety, use :Gwrite! to show you really mean it.
+    
+    Useful commands
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">command</td>
+    <td class="org-left">effect</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">[c</td>
+    <td class="org-left">jump to previous hunk</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">]c</td>
+    <td class="org-left">jump to next hunk</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">dp</td>
+    <td class="org-left">shorthand for `:diffput`</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:only</td>
+    <td class="org-left">close all windows apart from the current one</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:Gwrite[!]</td>
+    <td class="org-left">write the current file to the index</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    The dp command normally only works in a two-way diff, as does do: the shorthand for diffget.To leave vimdiff mode, you just need to close the windows that are being compared. The quickest way to do this is to run :only from the window that you want to keep open.When you call :Gwrite from vimdiff mode, it writes the current file to the index and exits vimdiff mode.
+    
+    ---
 
