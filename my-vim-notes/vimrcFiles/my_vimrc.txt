@@ -85,6 +85,12 @@
                                                              " these if you want to change line number displays, relative line number
                                                              " displays and other settings in netrw menu.
 "------------------------------
+
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
+" Fix files with prettier, and then ESLint.
+let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+
     " This requires prettier plugin
     let g:prettier#config#single_quote = 'true'
     let g:prettier#config#bracket_spacing = 'true'
@@ -212,6 +218,7 @@ endif
 " We need to run a command to Download plug.vim and put it in the "autoload" directory.
 call plug#begin('~/.vim/plugged')
 
+Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'airblade/vim-rooter'
 Plug 'ctrlpvim/ctrlp.vim'
