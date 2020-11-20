@@ -36,10 +36,20 @@
 "copy paste everything starting from the line below.
 
 "------------------------------
-	set nocompatible " Limit search to your project.
-	                 " read the documentation related to this.
-                     " Use Vim settings, rather then Vi settings. This setting must be as early as possible, as it has side effects.
+	set nocompatible " Use Vim settings, rather then Vi settings. This setting must be as early as possible, as it has side effects.
 "------------------------------
+" This requires NertTree plugin
+    let NERDTreeHijackNetrw=1
+    let NERDTreeShowHidden=1
+    
+    let g:NERDSpaceDelims = 1
+    
+    function! ToggleNERDTree()
+      NERDTreeToggle
+      silent NERDTreeMirror
+    endfunction
+"------------------------------
+
 	let mapleader = " "        " set space bar as the leader key
     nnoremap <leader>u :UndotreeShow<CR>
 	nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
@@ -54,33 +64,34 @@
     nnoremap <Leader>- :vertical resize -5<CR>
 
     nnoremap <leader>T :tabnew<CR>
-
+    nmap <leader>n :call ToggleNERDTree()<CR>
+    nmap <leader>p :PrettierAsync<CR> 
 "------------------------------
+    " netrw customizations
 	let g:netrw_liststyle = 3 " custom settings for the netrw file/directory menu...
                               " available netrw_liststyle options - 
                               " 1 (thin), 2 (long), 3 (wide), 4 (tree)
-
-	
 	let g:netrw_browse_split = 3 " netrw_browse_split| option - zero by default
                                  " used to cause the opening of files to be done in a new window or tab instead of the default.
                                  " When the option is one or two, the splitting will be taken horizontally or vertically, respectively.
                                  " When the option is set to three, a <cr> will cause the file to appear in a new tab.
-
-	
 	let g:netrw_banner = 0 " enable/suppress the banner. =0: suppress the banner =1: banner is enabled (default)
-
-	
 	let g:netrw_winsize = 25 " netrw_winsize - 
                              " specify initial size of new windows made with "o" (see |netrw-o|), "v" (see |netrw-v|),
                              " |:Hexplore| or |:Vexplore|.
                              " The g:netrw_winsize is an integer describing 
                              " the percentage of the current netrw buffer's window to be used for the new window.
-
-	
 	let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro' " netrw_bufsettings - you can control netrw's buffer settings; change
                                                              " these if you want to change line number displays, relative line number
                                                              " displays and other settings in netrw menu.
-
+"------------------------------
+    " This requires prettier plugin
+    let g:prettier#config#single_quote = 'true'
+    let g:prettier#config#bracket_spacing = 'true'
+    let g:prettier#config#jsx_bracket_same_line = 'false'
+    let g:prettier#config#arrow_parens = 'avoid'
+    let g:prettier#config#trailing_comma = 'es5'
+    let g:prettier#config#use_tabs = 'false'
 "------------------------------
  
 	filetype indent plugin on " Attempt to determine the type of a file 
@@ -99,8 +110,11 @@
 	" tab pages to edit multiple files, but it is still best to enable an option to
 	" allow easier switching between files.
 	"
-	" One such option is the 'hidden' option, which allows you to re-use the same
-	" window and switch from an unsaved buffer without saving it first. Also allows
+	" When off a buffer is unloaded when it is |abandon|ed.  When on a
+	" buffer becomes hidden when it is |abandon|ed.  If the buffer is still
+	" displayed in another window, it does not become hidden, of course.
+    " It which allows you to re-use the same window 
+    " and switch from an unsaved buffer without saving it first. Also allows
 	" you to keep an undo history for multiple files when re-using the same window
 	" in this way. Note that using persistent undo also lets you undo in multiple
 	" files even in the same window, but is less efficient and is actually designed
@@ -113,11 +127,11 @@
 	" set confirm
 	" set autowriteall"
 	set hidden	
+
     "File find options in addition to `hidden`
     set path+=**  " Search all subdirectories and recursively
     set wildmenu
     set wildignore+=**/node_modules/**
-
 
     "Set default font in mac vim and gvim
     " set guifont=Inconsolata\ for\ Powerline:h24
@@ -125,7 +139,6 @@
     set visualbell    " stop that ANNOYING beeping
     set wildmenu
     set wildmode=list:longest,full
-
 
     set autoread                           " Reload files changed outside vim
     au FocusGained,BufEnter * :silent! !   " Trigger autoread when changing buffers or coming back to vim in terminal.
@@ -149,7 +162,7 @@
 	set relativenumber       " shows relative line numbers
 	set number               " shows line numbers
 
-	"set hlsearch               " When there is a previous search pattern, highlight all its matches.
+	set hlsearch               " When there is a previous search pattern, highlight all its matches.
 	"set nohlsearch             " opposite of set hlsearch
 	set noerrorbells            " will not make error sounds when we go to the end of the line, etc.
 	set tabstop=4 softtabstop=4            " tabstop means it is only 4 characters long. softtabstop means it is only 4 spaces long.
@@ -185,19 +198,22 @@
 " In other words, you can be anywhere in your source tree instead of just the root of it.
 set tags=./tags;/         
 
-colorscheme papaya
+colo gruvbox
 
-" Before this, visit the github project for instructions about installing plugged : https://github.com/junegunn/vim-plug
+" Before using this, visit the github project for vim-plug for instructions about installing plugged.
+" https://github.com/junegunn/vim-plug
 " We need to run a command to Download plug.vim and put it in the "autoload" directory.
 call plug#begin('~/.vim/plugged')
 
-Plug 'HenryNewcomer/vim-theme-papaya'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'airblade/vim-rooter'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf.vim'
+Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-fugitive'
-Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 " After making changes to the list here, run the command ':PlugInstall' to get
