@@ -200,6 +200,13 @@ set tags=./tags;/
 
 colo gruvbox
 
+if has('win32')
+    let $PATH .= ';' . 'C:/Program Files (x86)/Git/bin'
+endif
+if has('win64')
+    let $PATH .= ';' . 'C:/Program Files/Git/bin/'
+endif
+
 " Before using this, visit the github project for vim-plug for instructions about installing plugged.
 " https://github.com/junegunn/vim-plug
 " We need to run a command to Download plug.vim and put it in the "autoload" directory.
