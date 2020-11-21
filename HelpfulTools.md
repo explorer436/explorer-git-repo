@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1		.  [Tools common for all OSs](#org51b01bf)
-    1.  [IDEs :](#org82d5321)
-    2.  [Text editors](#orgd4bd6d8)
-    3.  [Browsers](#orgb6f2436)
-    4.  [Miscellaneous](#org4d595f2)
-2.  [Windows](#orgcef6bba)
-3.  [Linux](#org3d30fa9)
-4.  [Android (alphabetical order)](#orge644b31)
-5.  [How to use multiple workspaces](#org82ace7c)
+1.  [Tools common for all OSs](#org5017bf9)
+    1.  [IDEs :](#orga654149)
+    2.  [Text editors](#org1b40b0b)
+    3.  [Browsers](#org382478e)
+    4.  [Miscellaneous](#org9cdab71)
+2.  [Windows](#orgeae79c3)
+3.  [Linux](#org7df48d4)
+4.  [Android (alphabetical order)](#orgc5ce1f1)
+5.  [How to use multiple workspaces](#org977074d)
 
 
-<a id="org51b01bf"></a>
+<a id="org5017bf9"></a>
 
 # Tools common for all OSs
 
 
-<a id="org82d5321"></a>
+<a id="orga654149"></a>
 
 ## IDEs :
 
@@ -38,7 +38,7 @@
         -   To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
 
 
-<a id="orgd4bd6d8"></a>
+<a id="org1b40b0b"></a>
 
 ## Text editors
 
@@ -46,22 +46,22 @@
 2.  gVim
 
 
-<a id="orgb6f2436"></a>
+<a id="org382478e"></a>
 
 ## Browsers
 
-1.  Firefox(lastpass, instapaper)
+1.  Firefox(lastpass, instapaper, Dark Reader)
 2.  Tor browser
 
 
-<a id="org4d595f2"></a>
+<a id="org9cdab71"></a>
 
 ## Miscellaneous
 
 Calibre ebook editor and viewer
 
 
-<a id="orgcef6bba"></a>
+<a id="orgeae79c3"></a>
 
 # Windows
 
@@ -75,7 +75,7 @@ Calibre ebook editor and viewer
 -   Console Emulation program - ConEmu
 
 
-<a id="org3d30fa9"></a>
+<a id="org7df48d4"></a>
 
 # Linux
 
@@ -107,7 +107,7 @@ Calibre ebook editor and viewer
 -   USB Image Writer
 
 
-<a id="orge644b31"></a>
+<a id="orgc5ce1f1"></a>
 
 # Android (alphabetical order)
 
@@ -118,7 +118,7 @@ Calibre ebook editor and viewer
 -   Dropbox (optional)
 -   DuckDuckGo
 -   Fairmail (using this for Gmail and hotmail accounts right now)
--   Firefox (browser)
+-   Firefox (extensions - Dark Reader)
 -   Foxit PDF Reader (for pdf files)
 -   GPS Tools
 -   Geeks for Geeks
@@ -128,8 +128,7 @@ Calibre ebook editor and viewer
 -   Lastpass
 -   LinkedIn (Job search) (Not using it all that much)
 -   Mapquest (maps)
--   Mega Client
--   Mega Sync
+-   Mega Sync Client
 -   Messenger (Facebook) (Messaging apps)
 -   Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
 -   NetGuard
@@ -154,7 +153,7 @@ Calibre ebook editor and viewer
 ---
 
 
-<a id="org82ace7c"></a>
+<a id="org977074d"></a>
 
 # How to use multiple workspaces
 

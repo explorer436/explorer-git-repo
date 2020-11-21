@@ -25,7 +25,7 @@
 
 **** Browsers
 
-1. Firefox(lastpass, instapaper)
+1. Firefox(lastpass, instapaper, Dark Reader)
 2. Tor browser
 
 **** Miscellaneous
@@ -83,7 +83,7 @@ Calibre ebook editor and viewer
 - Dropbox (optional)
 - DuckDuckGo
 - Fairmail (using this for Gmail and hotmail accounts right now)
-- Firefox (browser)
+- Firefox (extensions - Dark Reader)
 - Foxit PDF Reader (for pdf files)
 - GPS Tools
 - Geeks for Geeks

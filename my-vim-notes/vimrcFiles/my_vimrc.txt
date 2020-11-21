@@ -206,7 +206,13 @@ let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
 " In other words, you can be anywhere in your source tree instead of just the root of it.
 set tags=./tags;/         
 
+"------------------------------
+" If Vim keeps complaining about not finding the color scheme at start-up,
+" it maybe worth it to copy the gruvbox.vim file to Vim colors file.
+" In Linux, it is usually at /usr/share/vim/vim82/colors
 colo gruvbox
+set bg=dark
+"------------------------------
 
 if has('win32')
     let $PATH .= ';' . 'C:/Program Files (x86)/Git/bin'
