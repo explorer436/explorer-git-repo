@@ -32,8 +32,10 @@
 "run this `:PlugInstall` (from within vim)
 
 
-"If you want to use this vimrc settings in a machin, 
-"copy paste everything starting from the line below.
+"If you want to use this vimrc settings in a machine, 
+
+" either put this line in your .vimrc file : source /home/explorer436/Downloads/GitRepositories/thoughts-notes/my-vim-notes/vimrcFiles/my_vimrc.vim
+" or copy paste everything starting from the line below.
 
 "------------------------------
 	set nocompatible " Use Vim settings, rather then Vi settings. This setting must be as early as possible, as it has side effects.
