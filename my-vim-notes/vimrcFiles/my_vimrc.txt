@@ -39,6 +39,8 @@
 	set nocompatible " Use Vim settings, rather then Vi settings. This setting must be as early as possible, as it has side effects.
 "------------------------------
 " This requires NertTree plugin
+    let g:NERDTreeWinSize = 60 "increase the size of the NerdTree width
+    let NERDTreeCustomOpenArgs={'file':{'where': 't'}} "open files in tabs
     let NERDTreeHijackNetrw=1
     let NERDTreeShowHidden=1
     
@@ -188,8 +190,8 @@ let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
 	"set cmdheight=2            " Give more space for displaying messages. 
 	"set updatetime=50          " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable delays and poor user experience.
 	"set shortmess+=c           " Don't pass messages to |ins-completion-menu|.
-	set colorcolumn=80          " shows a line at the 80 column of the page
-	highlight ColorColumn ctermbg=0 guibg=lightgrey            " the color that needs to be used for the 80 column line	
+	"set colorcolumn=80          " shows a line at the 80 column of the page
+	"highlight ColorColumn ctermbg=0 guibg=lightgrey            " the color that needs to be used for the 80 column line	
 
 
 "------------------------------
@@ -218,10 +220,10 @@ endif
 " We need to run a command to Download plug.vim and put it in the "autoload" directory.
 call plug#begin('~/.vim/plugged')
 
-Plug 'dense-analysis/ale'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'airblade/vim-rooter'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dense-analysis/ale'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
