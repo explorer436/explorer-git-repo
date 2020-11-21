@@ -747,21 +747,22 @@ EX RANGES
     
     This will show a numbered list with all open tabs. To go to a specific tab, do `:5gt` (to go to the tab with the number 5)
 
-    | :tabs        | List the tab pages and the windows they contain. |
-    | g<Tab>       | Go to the last accessed tab page.                |
-    | :gt          | Go to the next tab                               |
-    | : gT         | Go to the previous tab                           |
-    | : nnn gt     | Go to a numbered tab                             |
-    | :tabn, :tabp | (or gt, gT to switch)                            |
+    | :tabs        | List the tab pages and the windows they contain.    |
+    | g<Tab>       | Go to the last accessed tab page.                   |
+    | :gt          | Go to the next tab                                  |
+    | : gT         | Go to the previous tab                              |
+    | : nnn gt     | Go to a numbered tab. For example, 3gt goes to tab 3 |
+    | :tabn, :tabp | (or gt, gT to switch)                               |
 
     REORDERING TAB PAGES:
     
-    | :tabm[ove] +[N] | Move the current tab page N places to the right (with +) or to the left (with -). |
-    | :tabm[ove] -[N] | Move the current tab page N places to the right (with +) or to the left (with -). |
-    | :tabmove -      | move the tab page to the left                                                     |
-    | :tabmove -1     | as above                                                                          |
-    | :tabmove +      | move the tab page to the right                                                    |
-    | :tabmove +1     | as above                                                                          |
+    | :tabm2          | moves the current tab to appear after tab 2. To move this tab to the first position, use :tabm0. To move this tab to the last position, just use :tabm |
+    | :tabm[ove] +[N] | Move the current tab page N places to the right (with +) or to the left (with -).                                                                    |
+    | :tabm[ove] -[N] | Move the current tab page N places to the right (with +) or to the left (with -).                                                                    |
+    | :tabmove -      | move the tab page to the left                                                                                                                        |
+    | :tabmove -1     | as above                                                                                                                                             |
+    | :tabmove +      | move the tab page to the right                                                                                                                       |
+    | :tabmove +1     | as above                                                                                                                                             |
  
     -------------------------------------------------------------------------------------
     

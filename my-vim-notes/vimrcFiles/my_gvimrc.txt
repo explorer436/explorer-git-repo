@@ -1,3 +1,11 @@
+" ----------------------------------
+" If you have the following options set in the vimrc file, then gvimrc is not
+" necessary because Vim will read the color and background from the vimrc file.
+" colo gruvbox
+" set bg=dark
+" ----------------------------------
+
+
 "What vim color schemes are installed?
 "You can find your installed vim colorscheme files in 
 "the colors subdirectory of your vim installation directory. 
