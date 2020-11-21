@@ -42,9 +42,14 @@
 "------------------------------
     set guitablabel=%N:%M%t " Show tab numbers on each tab
 "------------------------------
+    "Run internal vim terminal at current file's directory
+    map <F6> :let $VIM_DIR=expand('%:p:h')<CR>:terminal<CR>cd $VIM_DIR<CR> 
+"------------------------------
     " This requires NertTree plugin
-    let g:NERDTreeWinSize = 60 "increase the size of the NerdTree width
-    let NERDTreeCustomOpenArgs={'file':{'where': 't'}} "open files in tabs
+    "increase the size of the NerdTree width
+    let g:NERDTreeWinSize = 60 
+    "open files in tabs
+    "let NERDTreeCustomOpenArgs={'file':{'where': 't'}} 
     let NERDTreeHijackNetrw=1
     let NERDTreeShowHidden=1
     
@@ -54,24 +59,46 @@
       NERDTreeToggle
       silent NERDTreeMirror
     endfunction
+
+    nmap ,n :NERDTreeFind<CR>
+
+    " enable line numbers
+    let NERDTreeShowLineNumbers=1
+    " make sure relative line numbers are used
+    autocmd FileType nerdtree setlocal relativenumber
 "------------------------------
-
-	let mapleader = " "        " set space bar as the leader key
+    " set space bar as the leader key
+	let mapleader = " "                                                  
     nnoremap <leader>u :UndotreeShow<CR>
-	nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
-    nnoremap <leader>h :wincmd h<CR>
-    nnoremap <leader>j :wincmd j<CR>
-    nnoremap <leader>k :wincmd k<CR>
-    nnoremap <leader>l :wincmd l<CR>
+    "open netrw to the left with a size 30
+	nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR> 
+    "move cursor to the window on the left
+    nnoremap <leader>h :wincmd h<CR>                                     
+    "move cursor to the window on the bottom
+    nnoremap <leader>j :wincmd j<CR>                                     
+    "move cursor to the window on the top
+    nnoremap <leader>k :wincmd k<CR>                                     
+    "move cursor to the window on the right
+    nnoremap <leader>l :wincmd l<CR>                                     
+    
+    "height increase by 10
+    nnoremap <Leader>hi :resize +10<CR>         
+    "height decrease by 10
+    nnoremap <Leader>hd :resize -10<CR>         
+    "width increase by 10
+    nnoremap <Leader>wi :vertical resize +10<CR> 
+    "width decrease by 10
+    nnoremap <Leader>wd :vertical resize -10<CR> 
 
-    " pressing + is too difficult. = is + without having to press shift.
-    " pressing - is easy enough.
-    nnoremap <Leader>= :vertical resize +5<CR>
-    nnoremap <Leader>- :vertical resize -5<CR>
+    "open a new empty tab
+    nnoremap <leader>tn :tabnew<CR>              
+    "close the tab and all windows in it
+    nnoremap <leader>tc :tabc<CR>               
 
-    nnoremap <leader>T :tabnew<CR>
-    nmap <leader>n :call ToggleNERDTree()<CR>
-    nmap <leader>p :PrettierAsync<CR> 
+    "open nerdtree on the left
+    nmap <leader>n :call ToggleNERDTree()<CR>   
+    "run prettier asynchronously
+    nmap <leader>p :PrettierAsync<CR>           
 "------------------------------
     " netrw customizations
 	let g:netrw_liststyle = 3 " custom settings for the netrw file/directory menu...
@@ -174,7 +201,7 @@
 	set relativenumber       " shows relative line numbers
 	set number               " shows line numbers
 
-	set hlsearch               " When there is a previous search pattern, highlight all its matches.
+	"set hlsearch               " When there is a previous search pattern, highlight all its matches.
 	"set nohlsearch             " opposite of set hlsearch
 	set noerrorbells            " will not make error sounds when we go to the end of the line, etc.
 	set tabstop=4 softtabstop=4            " tabstop means it is only 4 characters long. softtabstop means it is only 4 spaces long.
