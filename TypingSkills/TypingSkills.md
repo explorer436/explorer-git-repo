@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Typing Lessons 1: Introduction to the Home Row](#org6b4d0c0)
-2.  [Typing Lessons 2: The Right-Hand Home Row Keys](#orgb83b9d4)
-3.  [Typing Lessons 3: The Left-Hand Home Row Keys](#org5903992)
-4.  [Typing Lessons 4: Using the Shift and Enter Keys](#org82c26aa)
-5.  [Typing Lessons 5: Apostrophes and Quotation Marks](#org0665102)
-6.  [Typing Lessons 6: The Left-Hand Top Row Keys](#orgcea3be9)
-7.  [Typing Lessons 7: The Right-Hand Top Row Keys](#org12a4e9e)
-8.  [Typing Lessons 8: The Left-Hand Bottom Row Keys](#orgcc9d882)
-9.  [Typing Lessons 9: The Right-Hand Bottom Row Keys](#orgdec2a06)
-10. [Typing Lessons 10: The Left-Hand Number Keys](#org67e5085)
-11. [Typing Lessons 11: The Right-Hand Number Keys](#orgc305cdd)
-12. [Typing Lessons 12: Parentheses and Other Brackets](#orgbdffe28)
-13. [Typing Lessons 13: The Left-Hand Symbol Keys](#org54f3111)
-14. [Typing Lessons 14: The Right-Hand Symbol Keys](#org298d3ae)
-15. [Typing Lessons 15: The Delete and Backspace Keys](#orgba0d48b)
-16. [Typing Lessons 16: Math and Movement Keys](#org49d7d6e)
-17. [Typing Lessons 17: Practice Tips and Tricks](#orgcc5ef64)
-18. [Typing Lessons 18: What Next?](#orgaed2f90)
+1.  [Typing Lessons 1: Introduction to the Home Row](#orgde09797)
+2.  [Typing Lessons 2: The Right-Hand Home Row Keys](#orga3da51f)
+3.  [Typing Lessons 3: The Left-Hand Home Row Keys](#org2aaf15f)
+4.  [Typing Lessons 4: Using the Shift and Enter Keys](#org4787a67)
+5.  [Typing Lessons 5: Apostrophes and Quotation Marks](#orgf0d1d6c)
+6.  [Typing Lessons 6: The Left-Hand Top Row Keys](#orgf28db95)
+7.  [Typing Lessons 7: The Right-Hand Top Row Keys](#org2f1e761)
+8.  [Typing Lessons 8: The Left-Hand Bottom Row Keys](#org948135f)
+9.  [Typing Lessons 9: The Right-Hand Bottom Row Keys](#orgbd0021e)
+10. [Typing Lessons 10: The Left-Hand Number Keys](#org0886be9)
+11. [Typing Lessons 11: The Right-Hand Number Keys](#org27028b0)
+12. [Typing Lessons 12: Parentheses and Other Brackets](#org18412e6)
+13. [Typing Lessons 13: The Left-Hand Symbol Keys](#org5dd2b93)
+14. [Typing Lessons 14: The Right-Hand Symbol Keys](#org6c406bd)
+15. [Typing Lessons 15: The Delete and Backspace Keys](#orgfafbb1a)
+16. [Typing Lessons 16: Math and Movement Keys](#org15ffb5b)
+17. [Typing Lessons 17: Practice Tips and Tricks](#org0148b33)
+18. [Typing Lessons 18: What Next?](#org0520dcd)
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -82,7 +82,7 @@
 ---
 
 
-<a id="org6b4d0c0"></a>
+<a id="orgde09797"></a>
 
 # Typing Lessons 1: Introduction to the Home Row
 
@@ -115,7 +115,7 @@ Before you move on to the next lesson or to take a typing test, practice moving 
 ---
 
 
-<a id="orgb83b9d4"></a>
+<a id="orga3da51f"></a>
 
 # Typing Lessons 2: The Right-Hand Home Row Keys
 
@@ -156,7 +156,7 @@ Now that you've practiced with all five of the right-hand home row keys, go back
 ---
 
 
-<a id="org5903992"></a>
+<a id="org2aaf15f"></a>
 
 # Typing Lessons 3: The Left-Hand Home Row Keys
 
@@ -199,7 +199,7 @@ Are you able to follow these keystrokes without making a mistake? Don't worry ab
 ---
 
 
-<a id="org82c26aa"></a>
+<a id="org4787a67"></a>
 
 # Typing Lessons 4: Using the Shift and Enter Keys
 
@@ -220,7 +220,7 @@ Another important key is the Enter key. On a standard QWERTY keyboard, the Enter
 ---
 
 
-<a id="org0665102"></a>
+<a id="orgf0d1d6c"></a>
 
 # Typing Lessons 5: Apostrophes and Quotation Marks
 
@@ -262,7 +262,7 @@ Congratulations! You know all of the keys on the home row now. This is a good ti
 ---
 
 
-<a id="orgcea3be9"></a>
+<a id="orgf28db95"></a>
 
 # Typing Lessons 6: The Left-Hand Top Row Keys
 
@@ -305,7 +305,7 @@ If you have found a free typing test that lets you choose which letter to focus 
 ---
 
 
-<a id="org12a4e9e"></a>
+<a id="org2f1e761"></a>
 
 # Typing Lessons 7: The Right-Hand Top Row Keys
 
@@ -358,7 +358,7 @@ You know enough about most of the common keys now to get some good touch typing 
 ---
 
 
-<a id="orgcc9d882"></a>
+<a id="org948135f"></a>
 
 # Typing Lessons 8: The Left-Hand Bottom Row Keys
 
@@ -419,7 +419,7 @@ Here's one more typing test to help you get used to using the Shift key when you
 ---
 
 
-<a id="orgdec2a06"></a>
+<a id="orgbd0021e"></a>
 
 # Typing Lessons 9: The Right-Hand Bottom Row Keys
 
@@ -478,7 +478,7 @@ Here's one more typing test to help you get used to using the Shift key. Now tha
 ---
 
 
-<a id="org67e5085"></a>
+<a id="org0886be9"></a>
 
 # Typing Lessons 10: The Left-Hand Number Keys
 
@@ -529,7 +529,7 @@ Here's another typing test that will help you practice these five number keys. T
 ---
 
 
-<a id="orgc305cdd"></a>
+<a id="org27028b0"></a>
 
 # Typing Lessons 11: The Right-Hand Number Keys
 
@@ -553,14 +553,14 @@ Go through these finger movements until you're confident that you can press all 
 
 Are you ready for another typing test? These two paragraphs having you using all of the numbers, all of the letters, and all of the symbols you've learned so far. Remember: accuracy, not speed!
 
-Do you know the song "Inchworm" that Danny Kaye made famous in 1952? It's in the film called "Hans Christian Andersen." Most people remember it for one reason: the chorus. Here's how it goes: "2 and 2 are 4; 4 and 4 are 8; 8 and 8 are 16; 16 and 16 are 32." That film came out a very long time ago, so maybe only 1/3 of people today know the song. When I asked my friends, 0 people had heard of the film, but 7 of them could sing the song quite well.
-
-Just 5 more lessons, and you'll have mastered the exact sequence of finger movements to correctly type all 60 standard letters, numbers, and symbols on a standard QWERTY keyboard. You're on your way to becoming a true typing whiz kid. 
+    Do you know the song "Inchworm" that Danny Kaye made famous in 1952? It's in the film called "Hans Christian Andersen." Most people remember it for one reason: the chorus. Here's how it goes: "2 and 2 are 4; 4 and 4 are 8; 8 and 8 are 16; 16 and 16 are 32." That film came out a very long time ago, so maybe only 1/3 of people today know the song. When I asked my friends, 0 people had heard of the film, but 7 of them could sing the song quite well.
+    
+    Just 5 more lessons, and you'll have mastered the exact sequence of finger movements to correctly type all 60 standard letters, numbers, and symbols on a standard QWERTY keyboard. You're on your way to becoming a true typing whiz kid. 
 
 ---
 
 
-<a id="orgbdffe28"></a>
+<a id="org18412e6"></a>
 
 # Typing Lessons 12: Parentheses and Other Brackets
 
@@ -589,7 +589,7 @@ Now take this typing test to practice using all three types of brackets:
 ---
 
 
-<a id="org54f3111"></a>
+<a id="org5dd2b93"></a>
 
 # Typing Lessons 13: The Left-Hand Symbol Keys
 
@@ -615,22 +615,22 @@ Use your left-hand index finger to type the % symbol on the 5 key as well.
 
 Although you may only ever use some of these symbols during a typing test, you do need to practice them. As we mentioned above, most workplace typing speed tests will require you to use all of the symbols on a standard QWERTY keyboard, just to show that you can find those keys without slowing down too much. To help you practice locating and typing these symbols, go through the free typing test below. You'll learn when and where to use the symbols while you practice!
 
-Any time you want to show a percentage, you'll use the % key, as in "20% of 80 is 16."
-
-In the United States, prices are calculated in dollars. You can expect to pay around $3.50 for a gallon of milk, but a pound of bananas is usually $1.00 or less.
-
-When you're finished with this typing test, you'll be #1 at typing all 7 of these symbols!
-
-Anyone who uses a computer knows that the @ symbol is used in e-mail addresses. But did you know that the name for the @ symbol in Czech means "pickled herring"?
-
-The tilde symbol is often used in Spanish, but on the QWERTY keyboard the only common use is before a number or quantity, to mean "approximately." Here's an example: "The value of pi is ~ 3.14."
-
-Depending on the font type you choose, you may need to use the single quote along with the apostrophe to embed a quotation, like this: "She thinks that using symbols \`is just silly' but she needs to learn to type them anyway."
+    Any time you want to show a percentage, you'll use the % key, as in "20% of 80 is 16."
+    
+    In the United States, prices are calculated in dollars. You can expect to pay around $3.50 for a gallon of milk, but a pound of bananas is usually $1.00 or less.
+    
+    When you're finished with this typing test, you'll be #1 at typing all 7 of these symbols!
+    
+    Anyone who uses a computer knows that the @ symbol is used in e-mail addresses. But did you know that the name for the @ symbol in Czech means "pickled herring"?
+    
+    The tilde symbol is often used in Spanish, but on the QWERTY keyboard the only common use is before a number or quantity, to mean "approximately." Here's an example: "The value of pi is ~ 3.14."
+    
+    Depending on the font type you choose, you may need to use the single quote along with the apostrophe to embed a quotation, like this: "She thinks that using symbols `is just silly' but she needs to learn to type them anyway."
 
 ---
 
 
-<a id="org298d3ae"></a>
+<a id="org6c406bd"></a>
 
 # Typing Lessons 14: The Right-Hand Symbol Keys
 
@@ -665,7 +665,7 @@ At first all of these infrequently-used symbols will probably slow down your tot
 ---
 
 
-<a id="orgba0d48b"></a>
+<a id="orgfafbb1a"></a>
 
 # Typing Lessons 15: The Delete and Backspace Keys
 
@@ -686,7 +686,7 @@ The best way to make sure you don't send out messages with errors is to keep up 
 ---
 
 
-<a id="org49d7d6e"></a>
+<a id="org15ffb5b"></a>
 
 # Typing Lessons 16: Math and Movement Keys
 
@@ -710,13 +710,13 @@ There are two final symbols < and > that are used in mathematical formulas. The 
 
 You might not see any of these symbols in an average typing speed test, but they can be useful. If you're hoping to qualify for a data entry job, you can practice with an online typing test that focuses on data entry and spreadsheet equations. Right now, take this short typing test to practice the numbers you learned in previous lessons, as well as all of the standard mathematical symbols:
 
-1 + 2 = 3
-
-90 / 10 = 9
-
-75 - 48 = 27
-
-(3 + 4) \* (6 - 5) = 12
+    1 + 2 = 3
+    
+    90 / 10 = 9
+    
+    75 - 48 = 27
+    
+    (3 + 4) * (6 - 5) = 12
 
 There are other keys on the keyboard that generally won't be much use during a typing test, but they'll definitely help you in your daily typing practice. These are often referred to as "movement" keys because they help you move quickly around the screen or a page of text. Because these keys can be located in different places depending on the type of keyboard you're using, we'll just talk about them here. Once you locate them on your own keyboard, you can practice using them at any time.
 
@@ -733,7 +733,7 @@ There are other keys on most keyboards, but what they do really depends on the c
 ---
 
 
-<a id="orgcc5ef64"></a>
+<a id="org0148b33"></a>
 
 # Typing Lessons 17: Practice Tips and Tricks
 
@@ -762,7 +762,7 @@ Are you ready for a final typing test? This one is a real challenge, because it 
 ---
 
 
-<a id="orgaed2f90"></a>
+<a id="org0520dcd"></a>
 
 # Typing Lessons 18: What Next?
 

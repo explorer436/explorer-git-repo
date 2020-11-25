@@ -484,9 +484,11 @@ Go through these finger movements until you're confident that you can press all 
 
 Are you ready for another typing test? These two paragraphs having you using all of the numbers, all of the letters, and all of the symbols you've learned so far. Remember: accuracy, not speed!
 
+#+BEGIN_EXAMPLE
 Do you know the song "Inchworm" that Danny Kaye made famous in 1952? It's in the film called "Hans Christian Andersen." Most people remember it for one reason: the chorus. Here's how it goes: "2 and 2 are 4; 4 and 4 are 8; 8 and 8 are 16; 16 and 16 are 32." That film came out a very long time ago, so maybe only 1/3 of people today know the song. When I asked my friends, 0 people had heard of the film, but 7 of them could sing the song quite well.
 
 Just 5 more lessons, and you'll have mastered the exact sequence of finger movements to correctly type all 60 standard letters, numbers, and symbols on a standard QWERTY keyboard. You're on your way to becoming a true typing whiz kid. 
+#+END_EXAMPLE
 
 -------------------------------------
 
@@ -542,6 +544,7 @@ Use your left-hand index finger to type the % symbol on the 5 key as well.
 
 Although you may only ever use some of these symbols during a typing test, you do need to practice them. As we mentioned above, most workplace typing speed tests will require you to use all of the symbols on a standard QWERTY keyboard, just to show that you can find those keys without slowing down too much. To help you practice locating and typing these symbols, go through the free typing test below. You'll learn when and where to use the symbols while you practice!
 
+#+BEGIN_EXAMPLE
 Any time you want to show a percentage, you'll use the % key, as in "20% of 80 is 16."
 
 In the United States, prices are calculated in dollars. You can expect to pay around $3.50 for a gallon of milk, but a pound of bananas is usually $1.00 or less.
@@ -553,6 +556,7 @@ Anyone who uses a computer knows that the @ symbol is used in e-mail addresses. 
 The tilde symbol is often used in Spanish, but on the QWERTY keyboard the only common use is before a number or quantity, to mean "approximately." Here's an example: "The value of pi is ~ 3.14."
 
 Depending on the font type you choose, you may need to use the single quote along with the apostrophe to embed a quotation, like this: "She thinks that using symbols `is just silly' but she needs to learn to type them anyway."
+#+END_EXAMPLE
 
 -------------------------------------
 
@@ -628,6 +632,7 @@ There are two final symbols < and > that are used in mathematical formulas. The 
 
 You might not see any of these symbols in an average typing speed test, but they can be useful. If you're hoping to qualify for a data entry job, you can practice with an online typing test that focuses on data entry and spreadsheet equations. Right now, take this short typing test to practice the numbers you learned in previous lessons, as well as all of the standard mathematical symbols:
 
+#+BEGIN_EXAMPLE
 1 + 2 = 3
 
 90 / 10 = 9
@@ -635,6 +640,7 @@ You might not see any of these symbols in an average typing speed test, but they
 75 - 48 = 27
 
 (3 + 4) * (6 - 5) = 12
+#+END_EXAMPLE
 
 There are other keys on the keyboard that generally won't be much use during a typing test, but they'll definitely help you in your daily typing practice. These are often referred to as "movement" keys because they help you move quickly around the screen or a page of text. Because these keys can be located in different places depending on the type of keyboard you're using, we'll just talk about them here. Once you locate them on your own keyboard, you can practice using them at any time.
 
