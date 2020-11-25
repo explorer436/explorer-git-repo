@@ -49,6 +49,7 @@ A good typing practice session will give you a chance to use all of the keys on 
 
 If you were wondering in the last lesson why we skipped over the H key on the keyboard, it's because the H key is not one of the home base keys. Remember, the home base keys for your right hand are the J, K, L, and ; keys. Rest both your hands on the home row with your fingers in the correct position, and go through the typing test below to see if you can press the correct keys with the right fingers every time. Ready?
 
+#+BEGIN_EXAMPLE
 J K L ;
 
 J L K ;
@@ -60,11 +61,14 @@ L K ; J
 ; L K J
 
 ; K J L
+#+END_EXAMPLE
+
 
 Did you make any mistakes? Go through these keystroke combinations until you are confident that you can accurately hit each key at the right time, with the right finger. Remember to keep your hand in the same position over the home row.
 
 To press the H key, move your index finger from the J key to the left. Press the H key, and then move your index finger back into position on the J key. Practice that movement a few times until it feels comfortable, and then go through the typing test below:
 
+#+BEGIN_EXAMPLE
 H J K L ;
 
 J H L K ;
@@ -76,6 +80,7 @@ L K ; H J
 ; L K J H
 
 H ; K J L
+#+END_EXAMPLE
 
 Now that you've practiced with all five of the right-hand home row keys, go back to the online typing test you used to practice with the space bar, and take it again. Focus on these five keys (plus the space bar) and don't worry about the other keys and letters right now. You might want to bookmark any free typing test you find that helps you practice like this, because it's a good way to do quick practice sessions when you have a few minutes. The more you practice, the easier these finger movements will become.
 
@@ -91,6 +96,7 @@ We'll start out with a review of the four home base keys you strike with your le
 
 Practice these letter sequences using your left hand. Remember to keep both hands in the correct position at the home row, even if you're not using your right hand to type at this point.
 
+#+BEGIN_EXAMPLE
 A S D F
 
 F S D A
@@ -102,9 +108,11 @@ F S A D
 S F A D
 
 D S F A
+#+END_EXAMPLE
 
 Now add the letter G. To reach the G key, move your left-hand index finger to the right. Don't forget to move it back to the home row position over the F after you have pressed the G key.
 
+#+BEGIN_EXAMPLE
 A S D F G
 
 G F S D A
@@ -116,6 +124,7 @@ F S G A D
 S F A G D
 
 D S F A G
+#+END_EXAMPLE
 
 Are you able to follow these keystrokes without making a mistake? Don't worry about speed at this point, just make sure you are hitting the right keys with the right fingers, and keeping your hands in position over the home row keys. After you've practiced with the letter sequences above, go back to the free typing test you bookmarked and try it again. As before, just concentrate on these left-hand keys, but don't stop your right hand from hitting the correct keys if it wants to!
 
@@ -146,13 +155,16 @@ If you're continuing your typing practice after Lesson 4 and going straight into
 
 You'll probably find that you use apostrophes much more often while touch typing, but it's important to learn to use quotation marks as well. For one thing, when you're taking a typing test, you'll almost always be tested on this symbol. Apostrophes are more common in everyday keyboarding online, because they're used in words that are possessive or are contractions. Here are some examples of words and phrases that use an apostrophe:
 
+#+BEGIN_EXAMPLE
 she won't go to school
 the cat's outside the door
 his brother's older than he is
 my mother's car is blue
+#+END_EXAMPLE
 
 Previous typing lessons covered the letters of the home row, and explained how to use the Shift key to create capital letters or switch between the two characters on the ; key. Take this quick typing test to go through some home row key combinations:
 
+#+BEGIN_EXAMPLE
 A Lad Has A Sad
 
 JAG; HAD; LASH; GAL
@@ -174,6 +186,7 @@ Jad: "had gal's salad"
 "Hall; Flag"
 
 Fall's had a GLAD gala
+#+END_EXAMPLE
 
 Congratulations! You know all of the keys on the home row now. This is a good time to go back to any online typing test you took before you started these touch typing lessons. Take the typing test again, and see how much you've improved already!
 
@@ -199,6 +212,7 @@ Move the index finger of your left hand up from the F key and to the right to th
 
 Practice these keystroke movements with the short typing test below. You can use the Shift key to create capital letters, or simply type lowercase letters. Repeat this typing test until you're comfortable with the finger movements and are not making any mistakes.
 
+#+BEGIN_EXAMPLE
 F T F R F T F
 
 D E D E D E
@@ -214,6 +228,7 @@ F T F R D E S W A Q
 F D T R A S Q W
 
 D E R S F Q A T W
+#+END_EXAMPLE
 
 If you have found a free typing test that lets you choose which letter to focus on, try taking that test until you're completely familiar with the left-hand keys on the home row and top row. Try to include a mix of capital and lower-case letters so that you practice pressing the Shift key with your right-hand pinky finger as you strike the letter keys with your left hand.
 
@@ -237,6 +252,7 @@ Press the P key with the pinky finger on your right hand, then place it back on 
 
 Now try these letter and symbol sequences. It's not a typing speed test, but an accuracy test, so only try to build up speed gradually. Use the Shift key if you want to practice switching between uppercase and lowercase letters. Remember to press the Shift key on the left with your left-hand pinky finger while you're learning these right-hand top row keys.
 
+#+BEGIN_EXAMPLE
 J Y J U J Y J U J Y J U
 
 K I K I K I K I
@@ -250,9 +266,11 @@ L O L ; ; ; J U J
 I U K J I L ; O P
 
 P O P K ; I J U Y
+#+END_EXAMPLE
 
 Here's another free typing test so that you can practice using the keys on the home row and the top row to create real words and phrases. When you're typing a word, try to think of it as a whole word and not as a series of letters. This will help your brain to signal your fingers to type all the letters in sequence, rather than sending those signals for individual letters.
 
+#+BEGIN_EXAMPLE
 wet   rest   saw   quirk   play   kids   treat   usual
 
 Jack   Jill   Gail   Larry   Papa   Mom   Lois   Hugh
@@ -264,6 +282,7 @@ he's set
 she is really healthy
 
 Help to type well: type "test help"
+#+END_EXAMPLE
 
 You know enough about most of the common keys now to get some good touch typing practice just by doing your daily keyboarding online. Whether you're typing e-mails to friends or writing a paper for a school assignment, taking an online typing test or just surfing the internet, practice the correct hand position so that it becomes a habit. It's a good idea to take another typing test at this point so that you can have more fun typing real words and phrases. Stay motivated, keep learning, and get ready to learn more letters and symbols in the next lesson!
 
@@ -297,6 +316,7 @@ Go through these instructions and practice the finger movements until you feel c
 
 Now that you've had a chance to practice with the bottom row keys, take this free typing test to see how quickly and accurately you can strike the correct keys in sequence. You can use the Shift key to create capital letters if you like.
 
+#+BEGIN_EXAMPLE
 A   Z   S   X   D   C   F   V   F   B
 
 B   V   C   X   Z
@@ -308,11 +328,13 @@ Z   A   B   F   X   S
 C   D   C   F   Z   V   A   F   B
 
 S   D   X   C   A   F   Z   V   A   B
+#+END_EXAMPLE
 
 Don't worry if these finger movements still feel a little awkward. Each time you take a typing test, they will become more natural, and your accuracy and speed will improve.
 
 Here's one more typing test to help you get used to using the Shift key when you type. This free typing test uses all of the letters on the top row, the letters and symbols on the home row that you learned in the first seven typing lessons, and the five letter keys you just learned.
 
+#+BEGIN_EXAMPLE
 Quite good cake; really very lush taste
 
 "Zebras have stripes"
@@ -324,6 +346,7 @@ You will keep quiet
 "Expert Typist Here"
 
 Five boys just bought: apple pie
+#+END_EXAMPLE
 
 -------------------------------------
 
@@ -351,6 +374,7 @@ If you're normally left-handed, you might have problems at first using your righ
 
 Practice the following key sequences using these new letters and symbols. You can use the Shift key to create capital letters if you like, but don't use the Shift key on the symbol keys yet.
 
+#+BEGIN_EXAMPLE
 N   M   ,   .   /
 
 /   .   ,   M   N
@@ -362,6 +386,7 @@ N   J   M   K   ,   L   .   ;   /
 J   /   N   ;   .   K
 
 L   M   J   ,   K   /  .  N   ;
+#+END_EXAMPLE
 
 Don't worry if these finger movements still feel a little awkward. Each time you practice touch typing, they will become more natural, and your accuracy and speed will improve.
 
@@ -369,6 +394,7 @@ This is a good time to take an online typing test, because you've learned the fi
 
 Here's one more typing test to help you get used to using the Shift key. Now that you can use all of the letters and symbols on the top, home, and bottom row, there's no limit to the words and phrases you can type!
 
+#+BEGIN_EXAMPLE
 "Help," she said; I answered.
 
 Are you going to eat that cake?
@@ -380,6 +406,7 @@ Quick: take this free typing test now.
 Do you expect to receive an excellent score next week, James?
 
 This is the division sign: /
+#+END_EXAMPLE
 
 -------------------------------------
 
@@ -403,6 +430,7 @@ Use the same index finger to press the 5 key, then return your index finger to t
 
 Now type the following letter and number sequences to practice those finger movements:
 
+#+BEGIN_EXAMPLE
 F 5 F 4 F 4 F 5
 
 D 3 D 3 F 4 D 3
@@ -414,9 +442,11 @@ A 1 A 1 S 2 S 2 D 3 F 4 F 5
 3 F 4 S 5 A 1 S 2
 
 1 5 2 4 3 D 3 F 1
+#+END_EXAMPLE
 
 Here's another typing test that will help you practice these five number keys. The following sentences use all of the letters and symbols you've learned so far, including the numbers 1 through 5. The more time you spend in typing practice, the more natural the finger movements will be, so take a few minute every day to type these sentences, or ones like them. Remember to use the Enter key to separate the sentences, and to use the Shift key correctly when typing.
 
+#+BEGIN_EXAMPLE
 A queen doesn't need to ask permission before sitting down to 11 o'clock tea, does she?
 
 I don't remember whether the answer is in Chapter 3 or Chapter 4, but you need to learn the exact rules governing good grammar or you'll score less than 25 points on the exam. That grade would put you in the "almost failing" category.
@@ -428,6 +458,7 @@ Keep calm: carry on.
 Julian is very tall; Camille is rather short.
 
 Don't mix up the number 2 with the words "too" or "to."
+#+END_EXAMPLE
 
 -------------------------------------
 
@@ -477,11 +508,13 @@ The curly brackets are on the same keys as the square brackets. Use the pinky fi
 
 Now take this typing test to practice using all three types of brackets:
 
+#+BEGIN_EXAMPLE
 (Here's an example of the curved brackets normally called "parentheses.")
 
 [This sentence is enclosed in square brackets.]
 
 You won't often need to use curly brackets, you'll often see them used to represent sets in mathematics, like this: P = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29 ...}.
+#+END_EXAMPLE
 
 -------------------------------------
 
@@ -629,6 +662,7 @@ Remember, if you're taking a typing test and you notice that you have problems w
 
 Are you ready for a final typing test? This one is a real challenge, because it uses every single letter, number, and symbol you've learned. That means it's a good way to get some focused typing practice, so bookmark this page and repeat the test frequently.
 
+#+BEGIN_EXAMPLE
 "Hello!" said Jaqueline. "What's the plan for this weekend? I heard that the zoo is offering a two-for-one discount on tickets; it's just $4.99 for two adults, or $7.50 for a family of four. We can purchase tickets by e-mailing zootix@metrozoo.org or we can buy them at the door."
 
 SMS from Veronica: ETA ~ 3:06PM
@@ -640,6 +674,7 @@ Amazon is now #1 in book sales, and retailers like Barnes & Noble have had to sw
 The phrases "four is less than six" and "ten is greater than three" can written with symbols and numbers only, like this: 4 < 6  and  10 > 3
 
 Unless you're a graphic designer, mathematician, or computer programmer, it's not very likely that you'll every need to type the bar (the | symbol) or the backward slash (the \ symbol), and you'll probably only use the curly brackets { and } for emoticons. But learn them anyway!
+#+END_EXAMPLE
 
 -------------------------------------
 
@@ -657,7 +692,6 @@ If you have something you need to read online, open up a document window and typ
 Look for an online game that acts as a typing test, rather than playing yet another round of Farmville or Candy Crush. There are a lot of fun games that require you to type in letters and words in order to score points. You'll get a lot better at both speed and accuracy when you practice with games like these.
 Before you open up your e-mail or your internet browser in the morning, take the first 5 minutes of your online keyboarding time to run through a quick typing test, like one of the ones included in these typing lessons. This will give you at least 30 minutes of typing practice each week.
  
-
 And that's it! You're now on the way to become a skilled touch typist. Keep practicing and keep typing, and you'll keep improving as a typist. We hope you enjoyed these lessons!
 
 -------------------------------------
