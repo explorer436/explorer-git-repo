@@ -874,6 +874,7 @@ EX RANGES
 
    vim delete up until a word
 
+    #+BEGIN_EXAMPLE
    Put your cursor at the point you want to start at.
    
    Make sure you're in command mode.
@@ -883,6 +884,7 @@ EX RANGES
    then hit / and type the word you're looking for to select up to it, then press enter to make the selection
    
    then hit d to delete the text 
+    #+END_EXAMPLE
    
    ---------------------------------------------------------------------------
    To delete a word along with the whitespace after the word - dw (vw to select in visual mode)
