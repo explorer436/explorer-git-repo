@@ -20,7 +20,6 @@ Basic Movement of the cursor:
 | nH               | line n from start of window                                                                                                                                                                                                                                                                        |
 | nL               | line n from bottom of window                                                                                                                                                                                                                                                                       |
 | M                | middle line of window                                                                                                                                                                                                                                                                              |
-| [Control][Enter] | first non-blank character on next line                                                                                                                                                                                                                                                             |
 | (minus)          | move the cursor to the first non-blank character on the previous line                                                                                                                                                                                                                              |
 | (plus)           | move the cursor to the first non-blank character on the next line                                                                                                                                                                                                                                  |
 | M/H/L            | move cursor to middle/top/bottom of screen (Move the cursor only. Do not move the screen)                                                                                                                                                                                           |
@@ -201,12 +200,13 @@ OFFSETS IN SEARCH COMMANDS
 	gem 'strong_parameters'
 #+END_EXAMPLE
 
-	You want to sort the list alphabetically. You select the lines visually:
+	If you want to sort the list alphabetically, select the lines visually and run the command:
 	
-	Shift + V : You invoke the sort function
-	
+#+BEGIN_EXAMPLE
 	:sort
-	You rejoice:
+#+END_EXAMPLE
+
+	That will result in this:
 	
 #+BEGIN_EXAMPLE
 	gem 'bourbon'
@@ -220,8 +220,10 @@ OFFSETS IN SEARCH COMMANDS
 	gem 'thin'
 #+END_EXAMPLE
 
-	You dig deeper:
+	If you want to dig deeper into the sort functionality:
+#+BEGIN_EXAMPLE
 	:help sort
+#+END_EXAMPLE
  
    ------------------------------------------
 
@@ -420,35 +422,39 @@ EX RANGES
     
     **Insert text from a register**
     
-    `ctrl+r`
+    #+BEGIN_EXAMPLE
+        `ctrl+r`
+    #+END_EXAMPLE
       
     **Last inserted text**
     
-    `ctrl+a`
+    #+BEGIN_EXAMPLE
+        `ctrl+a`
+    #+END_EXAMPLE
     
     There are three common cases where we want to insert something Vim's already seen as part of a larger insert:
     
-    1. Insert from a register, using ctrl+rregister.
-    1. Insert the same text as the previous insert, using ctrl+a. This is similar to ctrl+r..
-    1. Complete a partially-typed word or phrase, which will be the focus of this presentation.
+    1. Insert from a register, using [Ctrl][r] register.
+    1. Insert the same text as the previous insert, using [Ctrl][a]. This is similar to [Ctrl][r][.]
+    1. Complete a partially-typed word or phrase, which will be the focus of the next few sections.
     
 **** Completion
     
     **Simple word completion**
     
-    `ctrl+p`
+    [Ctrl][p]
     
     or
     
-    `ctrl+n`
+    [Ctrl][n]
     
-    * `ctrl+p` finds the previous matching completion for the partially typed word.
+    * [Ctrl][p] finds the previous matching completion for the partially typed word.
     
-    * `ctrl+n` finds the next matching completion for the partially typed word.
+    * [Ctrl][n] finds the next matching completion for the partially typed word.
     
-    * `ctrl+p` is usually more useful, because you're more likely to be looking for a word you just used than a word you're about to use.
+    * [Ctrl][p] is usually more useful, because you're more likely to be looking for a word you just used than a word you're about to use.
     
-    * Where Vim looks for completions is controlled by the complete setting. The default is .,w,b,u,t,i, which means Vim will look in:
+    * Where Vim looks for completions is controlled by the 'complete' setting. The default is .,w,b,u,t,i, which means Vim will look in:
             
     		1. The current buffer.
     		2. Buffers in other windows.
@@ -463,68 +469,61 @@ EX RANGES
     
       **Tag completion**
       
-    `ctrl+xctrl+]`
+    [Ctrl][x][Ctrl][]]
     
     Sometimes, you know that the word you want to complete isn't just any old word that appears in your file or files; you know you're trying to complete a symbol from your program.
     
-    If you're using ctags(1) then you can complete a word in your tags file using `ctrl+xctrl+]`.
+    If you're using ctags, then you can complete a word in your tags file using [Ctrl][x][Ctrl][]]
     
-    The initial `ctrl+x` puts Vim into a completion mode, which is a sub-mode of insert mode. We'll see this prefix again.
+    The initial [Ctrl][x] puts Vim into a completion mode, which is a sub-mode of insert mode. We'll see this prefix again.
     
-    When the completion menu appears, you can use `ctrl+p` and `ctrl+n` to navigate through the options.
+    When the completion menu appears, you can use [Ctrl][p] and [Ctrl][n] to navigate through the options.
     
     **Filename completion**
-    
-    `ctrl+xctrl+f`
+
+    [Ctrl][x][Ctrl][f]
     
     Filename completion will complete paths relative to the current working directory, similar to tab completion in Unix shells.
     
     **Context-aware word completion**
     
-    `ctrl+xctrl+p`
+    [Ctrl][x][Ctrl][p]
     
     or
     
-    `ctrl+xctrl+n`
+    [Ctrl][x][Ctrl][n]
     
-    Repeat the command to continue adding matches, e.g. in a document that contained the string Hello world, you could type `Helctrl+xctrl+p` to complete `Hello`, and then immediately repeating `ctrl+xctrl+p` would add world.
+    Repeat the command to continue adding matches, e.g. in a document that contained the string "Hello world", you could type Hel[Ctrl][x][Ctrl][p] to complete `Hello`, and then immediately repeating [Ctrl][x][Ctrl][p] would add world.
     
-    At any point, if there are multiple possible matches, you can use `ctrl+p` and `ctrl+n` to navigate through the options.
+    At any point, if there are multiple possible matches, you can use [Ctrl][p] and [Ctrl][n] to navigate through the options.
     
 **** Context-aware line completion
-    
-    `ctrl+xctrl+l`
+
+    [Ctrl][x][Ctrl][l]
     
     As with word completion, you can repeat the command to continue adding matches.
     
 **** Language-aware completion
     
-    `ctrl+xctrl+o`
+    [Ctrl][x][Ctrl][o]
     
     If you have Vim's filetype plugins enables, you will have access to omnicomplete for some languages. This completion style will complete language keywords and built in classes or functions.
     
-    For example, in a Ruby file, typing "Hello world".capctrl+xctrl+o would complete to "Hello world".capitalize or "Hello world".capitalize!.
+    For example, in a Ruby file, typing "Hello world".cap[Ctrl][x][Ctrl][o] would complete to "Hello world".capitalize or "Hello world".capitalize!.
     
-**** Insert mode completion : `Cntrl N`
+**** Insert mode completion : [Ctrl][N]
     
-**** Omni completion : `^O ^N ^P`
+**** Omni completion : ^O ^N ^P
     
 **** Completion tips : 
     
-    ~ vim is very completion friendly
-    
-    ~ just use <Tab> on command line
-    	
-    ~ for filenames, set ‘wildmenu’ and ‘wildmode’ (I like "list:longest,full")
-    
-    ~ :new ~/dev/fo<Tab> - complete filename
-    	
-    ~ :help ‘comp<Tab> - complete option name
-    	
-    ~ :re<Tab> - complete command
-    	
-    ~ hit <Tab> again to cycle, CTRL-N for next match, CTRL-P for previous
-
+    * vim is very completion friendly
+    * just use <Tab> on command line
+    * for filenames, set ‘wildmenu’ and ‘wildmode’ (I like "list:longest,full")
+    * :new ~/dev/fo<Tab> - complete filename
+    * :help ‘comp<Tab> - complete option name
+    * :re<Tab> - complete command
+    * hit <Tab> again to cycle, CTRL-N for next match, CTRL-P for previous
 
    ------------------------------------------
 
@@ -536,8 +535,8 @@ EX RANGES
      
      Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
      
+     // TODO change this into a table.
      To append something to a word (at the end of the word) - ea
-     
      To delete a word along with the whitespace after the word - dw (vw to select in visual mode)
      To delete a word but not the the whitespace after the word - de (ve to select in visual mode)
      
@@ -545,10 +544,10 @@ EX RANGES
      
      If you want to do the same thing to a collection of lines, like cut, copy, sort, or format, you first need to select the text. Get out of insert mode, hit one of the options below, and then move up or down a few lines. You should see the selected text highlighted.
      
-     V       - selects entire lines 
-     v       - selects range of text
-     ctrl-v  - selects columns
-     gv      - reselect block
+     | V      | selects entire lines  |
+     | v      | selects range of text |
+     | ctrl-v | selects columns       |
+     | gv     | reselect block        |
      
      After selecting the text, try d to cut/delete, or y to copy, or :s/match/replace/, or :center, or !sort, or...
      Move to cursor where you would like to paste.
@@ -556,40 +555,46 @@ EX RANGES
      
 **** SEARCH AND REPLACE :
      
-     How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?  :1,$s/ABC/XYZ/g   and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.  Note that in this example, the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
+     How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?
+    #+BEGIN_EXAMPLE
+     :1,$s/ABC/XYZ/g   and then press [Enter].
+    #+END_EXAMPLE
+     This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.
+     Note that in this example, the "g" character at the end of the command means "global".
+     If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
      
+    #+BEGIN_EXAMPLE
      / : Search
      */# : Search forward/back for word under cursor
+    #+END_EXAMPLE
      
-     :%s/search_for_this/replace_with_this/    - search whole file and replace
-     :%s/search_for_this/replace_with_this/c   - confirm each replace
-     To convert each tab in the file to four spaces : 1,$s/\t/    /g
-     How to replace all tabs with spaces :%s/\t/    /g
+     | :%s/search_for_this/replace_with_this/  | search whole file and replace                  |
+     | :%s/search_for_this/replace_with_this/c | confirm each replace                           |
+     | 1,$s/\t/    /g                          | To convert each tab in the file to four spaces |
+     | :%s/\t/    /g                           | How to replace all tabs with spaces            |
      
      General tips for searching : 
      
-     /pattern       - search forward for pattern
-     ?pattern       - search backward
-     n              - repeat forward search
-     N              - repeat backward
-     
-     :set ignorecase - case insensitive
-     :set smartcase  - use case if any caps used 
-     :set incsearch  - show match as search proceeds
-     :set hlsearch   - search highlighting
+     | /pattern        | search forward for pattern    |
+     | ?pattern        | search backward               |
+     | n               | repeat forward search         |
+     | N               | repeat backward               |
+     | :set ignorecase | case insensitive              |
+     | :set smartcase  | use case if any caps used     |
+     | :set incsearch  | show match as search proceeds |
+     | :set hlsearch   | search highlighting           |
      
      More cool searching tricks:
-     ```
+    #+BEGIN_EXAMPLE
      *               - search for word currently under cursor
      g*              - search for partial word under cursor (repeat with n)
      ctrl-o, ctrl-i  - go through jump locations
      [I              - show lines with matching word under cursor
-     ```
+    #+END_EXAMPLE
      
      -----------------------------------------------------------
-     `:g/<pattern>/j` to join lines within a pattern
-     
-     To join the subsequent line with a line containing a certain text: `:g/.*__text.*/j`
+     | :g/<pattern>/j  | To join lines within a pattern                                    |
+     | :g/.*__text.*/j | To join the subsequent line with a line containing a certain text |
      
      -----------------------------------------------------------
      `:%s/{\_s.*__text/{__text/g` - Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line.

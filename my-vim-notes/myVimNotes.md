@@ -1,56 +1,56 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#org41ad439)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org1e56e44)
-        1.  [Movement](#orgbfad691)
-        2.  [Scrolling](#org5bdf925)
-        3.  [Folding](#org90775d4)
-        4.  [Insertion & replace → insert mode](#orgf687c7f)
-        5.  [Search and Substitution](#orgcd09028)
-        6.  [Sorting](#org1a5f3d6)
-        7.  [Spell check](#org872084c)
-        8.  [Non empty lines](#org0c5f8be)
-        9.  [Terminal](#orga434805)
-        10. [Marks](#orge1ff323)
-        11. [Visual Mode](#org6ae1ffb)
-        12. [Registers and copy and paste](#org9049248)
-        13. [Ex commands](#org265d98e)
-        14. [Vim completion](#orgb2b87ff)
-        15. [Word and text manipulation](#org0949da0)
-        16. [Working with multiple files](#org9826b65)
-        17. [Vim help](#org7d7f014)
-        18. [Key mappings and abbreviations](#org3df28d2)
-        19. [Tags in Vim](#org51ea0f0)
-        20. [Deleting](#org1665a0d)
-        21. [File comparison with Vim](#org8a5ae85)
-        22. [Grep](#org66041f2)
-        23. [Indentation](#org07b6db3)
-        24. [Line numbers](#org247a67b)
-        25. [Lower case Upper case](#orge800ce9)
-        26. [Manual insertion of numbered lists](#org3bfb62e)
-        27. [Macros](#org503fa72)
-        28. [Netrw](#org79fc2eb)
-        29. [Packages and plugins](#org0310670)
-        30. [git](#org8b9ba7d)
-        31. [Helpful links](#org9e98540)
-        32. [Open questions](#orgfe1d1e1)
-        33. [Research](#org1f8e987)
-        34. [Miscellaneous](#orgc09d3bc)
-        35. [Plugins](#org70a4d2e)
+1.  [My Vim notes](#org6e73e9f)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#orgac40b27)
+        1.  [Movement](#org1254679)
+        2.  [Scrolling](#orgb3e254e)
+        3.  [Folding](#orgb1bd16c)
+        4.  [Insertion & replace → insert mode](#orgb2f5345)
+        5.  [Search and Substitution](#org81b7ab6)
+        6.  [Sorting](#org124a2c8)
+        7.  [Spell check](#orgb006c72)
+        8.  [Non empty lines](#orgf6f1a38)
+        9.  [Terminal](#orga42e3c2)
+        10. [Marks](#org18ec0bd)
+        11. [Visual Mode](#orgabd964c)
+        12. [Registers and copy and paste](#org5923039)
+        13. [Ex commands](#org1740ab9)
+        14. [Vim completion](#orgaf4a0d9)
+        15. [Word and text manipulation](#org86f0572)
+        16. [Working with multiple files](#orgdd20c1d)
+        17. [Vim help](#org50d7467)
+        18. [Key mappings and abbreviations](#orgfe8b255)
+        19. [Tags in Vim](#orgd0b564d)
+        20. [Deleting](#orgf003bbd)
+        21. [File comparison with Vim](#org757abc0)
+        22. [Grep](#org1932918)
+        23. [Indentation](#orgb6fa5bc)
+        24. [Line numbers](#org9f4ec21)
+        25. [Lower case Upper case](#orge5d0943)
+        26. [Manual insertion of numbered lists](#org5e40bd5)
+        27. [Macros](#org085f7ab)
+        28. [Netrw](#org2179a3a)
+        29. [Packages and plugins](#orga04137a)
+        30. [git](#org496deff)
+        31. [Helpful links](#orgdc05db2)
+        32. [Open questions](#orga5b3fe6)
+        33. [Research](#org7c3816a)
+        34. [Miscellaneous](#org6c1658f)
+        35. [Plugins](#org713cd40)
 
 
-<a id="org41ad439"></a>
+<a id="org6e73e9f"></a>
 
 # My Vim notes
 
 
-<a id="org1e56e44"></a>
+<a id="orgac40b27"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="orgbfad691"></a>
+<a id="org1254679"></a>
 
 ### Movement
 
@@ -130,12 +130,6 @@ Basic Movement of the cursor:
 <tr>
 <td class="org-left">M</td>
 <td class="org-left">middle line of window</td>
-</tr>
-
-
-<tr>
-<td class="org-left">[Control][Enter]</td>
-<td class="org-left">first non-blank character on next line</td>
 </tr>
 
 
@@ -299,7 +293,7 @@ Complex movement of the cursor:
 ---
 
 
-<a id="org5bdf925"></a>
+<a id="orgb3e254e"></a>
 
 ### Scrolling
 
@@ -410,7 +404,7 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 ---
 
 
-<a id="org90775d4"></a>
+<a id="orgb1bd16c"></a>
 
 ### Folding
 
@@ -463,7 +457,7 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 ---
 
 
-<a id="orgf687c7f"></a>
+<a id="orgb2f5345"></a>
 
 ### Insertion & replace → insert mode
 
@@ -730,7 +724,7 @@ ADVANCED INSERTION
 </table>
 
 
-<a id="orgcd09028"></a>
+<a id="org81b7ab6"></a>
 
 ### Search and Substitution
 
@@ -975,7 +969,7 @@ OFFSETS IN SEARCH COMMANDS
 ---
 
 
-<a id="org1a5f3d6"></a>
+<a id="org124a2c8"></a>
 
 ### Sorting
 
@@ -991,12 +985,11 @@ Imagine you’re working in vim. You come across this code:
     gem 'simple_form'
     gem 'strong_parameters'
 
-You want to sort the list alphabetically. You select the lines visually:
+If you want to sort the list alphabetically, select the lines visually and run the command:
 
-Shift + V : You invoke the sort function
+    :sort
 
-:sort
-You rejoice:
+That will result in this:
 
     gem 'bourbon'
     gem 'clearance', '1.0.0.rc4'
@@ -1008,13 +1001,14 @@ You rejoice:
     gem 'strong_parameters'
     gem 'thin'
 
-You dig deeper:
-:help sort
+If you want to dig deeper into the sort functionality:
+
+    :help sort
 
 ---
 
 
-<a id="org872084c"></a>
+<a id="orgb006c72"></a>
 
 ### Spell check
 
@@ -1041,7 +1035,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="org0c5f8be"></a>
+<a id="orgf6f1a38"></a>
 
 ### Non empty lines
 
@@ -1053,7 +1047,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="orga434805"></a>
+<a id="orga42e3c2"></a>
 
 ### Terminal
 
@@ -1062,7 +1056,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="orge1ff323"></a>
+<a id="org18ec0bd"></a>
 
 ### Marks
 
@@ -1208,7 +1202,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org6ae1ffb"></a>
+<a id="orgabd964c"></a>
 
 ### Visual Mode
 
@@ -1255,7 +1249,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org9049248"></a>
+<a id="org5923039"></a>
 
 ### Registers and copy and paste
 
@@ -1530,7 +1524,7 @@ Copying and Moving Text
 </table>
 
 
-<a id="org265d98e"></a>
+<a id="org1740ab9"></a>
 
 ### Ex commands
 
@@ -1685,7 +1679,7 @@ EX RANGES
 </table>
 
 
-<a id="orgb2b87ff"></a>
+<a id="orgaf4a0d9"></a>
 
 ### Vim completion
 
@@ -1705,35 +1699,35 @@ Even if you're good at it, typing is still slower and more error-prone than not 
 
     ****Insert text from a register****
     
-    \`ctrl+r\`
+        `ctrl+r`
     
     ****Last inserted text****
     
-    \`ctrl+a\`
+        `ctrl+a`
     
     There are three common cases where we want to insert something Vim's already seen as part of a larger insert:
     
-    1.  Insert from a register, using ctrl+rregister.
-    2.  Insert the same text as the previous insert, using ctrl+a. This is similar to ctrl+r..
-    3.  Complete a partially-typed word or phrase, which will be the focus of this presentation.
+    1.  Insert from a register, using [Ctrl][r] register.
+    2.  Insert the same text as the previous insert, using [Ctrl][a]. This is similar to [Ctrl][r][.]
+    3.  Complete a partially-typed word or phrase, which will be the focus of the next few sections.
 
 3.  Completion
 
     ****Simple word completion****
     
-    \`ctrl+p\`
+    [Ctrl][p]
     
     or
     
-    \`ctrl+n\`
+    [Ctrl][n]
     
-    -   \`ctrl+p\` finds the previous matching completion for the partially typed word.
+    -   [Ctrl][p] finds the previous matching completion for the partially typed word.
     
-    -   \`ctrl+n\` finds the next matching completion for the partially typed word.
+    -   [Ctrl][n] finds the next matching completion for the partially typed word.
     
-    -   \`ctrl+p\` is usually more useful, because you're more likely to be looking for a word you just used than a word you're about to use.
+    -   [Ctrl][p] is usually more useful, because you're more likely to be looking for a word you just used than a word you're about to use.
     
-    -   Where Vim looks for completions is controlled by the complete setting. The default is .,w,b,u,t,i, which means Vim will look in:
+    -   Where Vim looks for completions is controlled by the 'complete' setting. The default is .,w,b,u,t,i, which means Vim will look in:
         
         1.  The current buffer.
         2.  Buffers in other windows.
@@ -1748,72 +1742,66 @@ Even if you're good at it, typing is still slower and more error-prone than not 
         
         ****Tag completion****
     
-    \`ctrl+xctrl+]\`
+    [Ctrl][x][Ctrl][]]
     
     Sometimes, you know that the word you want to complete isn't just any old word that appears in your file or files; you know you're trying to complete a symbol from your program.
     
-    If you're using ctags(1) then you can complete a word in your tags file using \`ctrl+xctrl+]\`.
+    If you're using ctags, then you can complete a word in your tags file using [Ctrl][x][Ctrl][]]
     
-    The initial \`ctrl+x\` puts Vim into a completion mode, which is a sub-mode of insert mode. We'll see this prefix again.
+    The initial [Ctrl][x] puts Vim into a completion mode, which is a sub-mode of insert mode. We'll see this prefix again.
     
-    When the completion menu appears, you can use \`ctrl+p\` and \`ctrl+n\` to navigate through the options.
+    When the completion menu appears, you can use [Ctrl][p] and [Ctrl][n] to navigate through the options.
     
     ****Filename completion****
     
-    \`ctrl+xctrl+f\`
+    [Ctrl][x][Ctrl][f]
     
     Filename completion will complete paths relative to the current working directory, similar to tab completion in Unix shells.
     
     ****Context-aware word completion****
     
-    \`ctrl+xctrl+p\`
+    [Ctrl][x][Ctrl][p]
     
     or
     
-    \`ctrl+xctrl+n\`
+    [Ctrl][x][Ctrl][n]
     
-    Repeat the command to continue adding matches, e.g. in a document that contained the string Hello world, you could type \`Helctrl+xctrl+p\` to complete \`Hello\`, and then immediately repeating \`ctrl+xctrl+p\` would add world.
+    Repeat the command to continue adding matches, e.g. in a document that contained the string "Hello world", you could type Hel[Ctrl][x][Ctrl][p] to complete \`Hello\`, and then immediately repeating [Ctrl][x][Ctrl][p] would add world.
     
-    At any point, if there are multiple possible matches, you can use \`ctrl+p\` and \`ctrl+n\` to navigate through the options.
+    At any point, if there are multiple possible matches, you can use [Ctrl][p] and [Ctrl][n] to navigate through the options.
 
 4.  Context-aware line completion
 
-    \`ctrl+xctrl+l\`
+    [Ctrl][x][Ctrl][l]
     
     As with word completion, you can repeat the command to continue adding matches.
 
 5.  Language-aware completion
 
-    \`ctrl+xctrl+o\`
+    [Ctrl][x][Ctrl][o]
     
     If you have Vim's filetype plugins enables, you will have access to omnicomplete for some languages. This completion style will complete language keywords and built in classes or functions.
     
-    For example, in a Ruby file, typing "Hello world".capctrl+xctrl+o would complete to "Hello world".capitalize or "Hello world".capitalize!.
+    For example, in a Ruby file, typing "Hello world".cap[Ctrl][x][Ctrl][o] would complete to "Hello world".capitalize or "Hello world".capitalize!.
 
-6.  Insert mode completion : \`Cntrl N\`
+6.  Insert mode completion : [Ctrl][N]
 
-7.  Omni completion : \`<sup>O</sup> ^N ^P\`
+7.  Omni completion : ^O ^N ^P
 
 8.  Completion tips :
 
-    ~ vim is very completion friendly
-    
-    ~ just use <Tab> on command line
-    
-    ~ for filenames, set ‘wildmenu’ and ‘wildmode’ (I like "list:longest,full")
-    
-    ~ :new ~/dev/fo<Tab> - complete filename
-    
-    ~ :help ‘comp<Tab> - complete option name
-    
-    ~ :re<Tab> - complete command
-    
-    ~ hit <Tab> again to cycle, CTRL-N for next match, CTRL-P for previous
+    -   vim is very completion friendly
+    -   just use <Tab> on command line
+    -   for filenames, set ‘wildmenu’ and ‘wildmode’ (I like "list:longest,full")
+    -   :new ~/dev/fo<Tab> - complete filename
+    -   :help ‘comp<Tab> - complete option name
+    -   :re<Tab> - complete command
+    -   hit <Tab> again to cycle, CTRL-N for next match, CTRL-P for previous
     
     ---
 
 
-<a id="org0949da0"></a>
+<a id="org86f0572"></a>
 
 ### Word and text manipulation
 
@@ -1823,8 +1811,8 @@ Even if you're good at it, typing is still slower and more error-prone than not 
 
     Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
     
+    // TODO change this into a table.
     To append something to a word (at the end of the word) - ea
-    
     To delete a word along with the whitespace after the word - dw (vw to select in visual mode)
     To delete a word but not the the whitespace after the word - de (ve to select in visual mode)
 
@@ -1832,10 +1820,39 @@ Even if you're good at it, typing is still slower and more error-prone than not 
 
     If you want to do the same thing to a collection of lines, like cut, copy, sort, or format, you first need to select the text. Get out of insert mode, hit one of the options below, and then move up or down a few lines. You should see the selected text highlighted.
     
-    V       - selects entire lines 
-    v       - selects range of text
-    ctrl-v  - selects columns
-    gv      - reselect block
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">V</td>
+    <td class="org-left">selects entire lines</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">v</td>
+    <td class="org-left">selects range of text</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">ctrl-v</td>
+    <td class="org-left">selects columns</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">gv</td>
+    <td class="org-left">reselect block</td>
+    </tr>
+    </tbody>
+    </table>
     
     After selecting the text, try d to cut/delete, or y to copy, or :s/match/replace/, or :center, or !sort, or&#x2026;
     Move to cursor where you would like to paste.
@@ -1843,43 +1860,141 @@ Even if you're good at it, typing is still slower and more error-prone than not 
 
 3.  SEARCH AND REPLACE :
 
-    How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?  :1,$s/ABC/XYZ/g   and then press [Enter]. This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.  Note that in this example, the "g" character at the end of the command means "global". If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
+    How do I convert all occurrences of ABC to XYZ in a file using the vi/vim editor?
     
-    / : Search
-    \*/# : Search forward/back for word under cursor
+        :1,$s/ABC/XYZ/g   and then press [Enter].
     
-    :%s/search<sub>for</sub><sub>this</sub>/replace<sub>with</sub><sub>this</sub>/    - search whole file and replace
-    :%s/search<sub>for</sub><sub>this</sub>/replace<sub>with</sub><sub>this</sub>/c   - confirm each replace
-    To convert each tab in the file to four spaces : 1,$s/\t/    *g
-    How to replace all tabs with spaces :%s*\t/    /g
+    This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.
+    Note that in this example, the "g" character at the end of the command means "global".
+    If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
+    
+        / : Search
+        */# : Search forward/back for word under cursor
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">:%s/search<sub>for</sub><sub>this</sub>/replace<sub>with</sub><sub>this</sub>/</td>
+    <td class="org-left">search whole file and replace</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:%s/search<sub>for</sub><sub>this</sub>/replace<sub>with</sub><sub>this</sub>/c</td>
+    <td class="org-left">confirm each replace</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">1,$s/\t/    /g</td>
+    <td class="org-left">To convert each tab in the file to four spaces</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:%s/\t/    /g</td>
+    <td class="org-left">How to replace all tabs with spaces</td>
+    </tr>
+    </tbody>
+    </table>
     
     General tips for searching : 
     
-    /pattern       - search forward for pattern
-    ?pattern       - search backward
-    n              - repeat forward search
-    N              - repeat backward
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
     
-    :set ignorecase - case insensitive
-    :set smartcase  - use case if any caps used 
-    :set incsearch  - show match as search proceeds
-    :set hlsearch   - search highlighting
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">/pattern</td>
+    <td class="org-left">search forward for pattern</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">?pattern</td>
+    <td class="org-left">search backward</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">n</td>
+    <td class="org-left">repeat forward search</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">N</td>
+    <td class="org-left">repeat backward</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:set ignorecase</td>
+    <td class="org-left">case insensitive</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:set smartcase</td>
+    <td class="org-left">use case if any caps used</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:set incsearch</td>
+    <td class="org-left">show match as search proceeds</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:set hlsearch</td>
+    <td class="org-left">search highlighting</td>
+    </tr>
+    </tbody>
+    </table>
     
     More cool searching tricks:
-    \`\`\`
     
-    -   - search for word currently under cursor
-    
-    g\*              - search for partial word under cursor (repeat with n)
-    ctrl-o, ctrl-i  - go through jump locations
-    [I              - show lines with matching word under cursor
-    \`\`\`
+        *               - search for word currently under cursor
+        g*              - search for partial word under cursor (repeat with n)
+        ctrl-o, ctrl-i  - go through jump locations
+        [I              - show lines with matching word under cursor
     
     ---
     
-    \`:g/<pattern>/j\` to join lines within a pattern
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
     
-    To join the subsequent line with a line containing a certain text: \`:g/.\*\_<sub>text</sub>.\*/j\`
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">:g/&lt;pattern&gt;/j</td>
+    <td class="org-left">To join lines within a pattern</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:g/.*_<sub>text</sub>.*/j</td>
+    <td class="org-left">To join the subsequent line with a line containing a certain text</td>
+    </tr>
+    </tbody>
+    </table>
     
     ---
     
@@ -1958,7 +2073,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org9826b65"></a>
+<a id="orgdd20c1d"></a>
 
 ### Working with multiple files
 
@@ -2329,7 +2444,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org7d7f014"></a>
+<a id="org50d7467"></a>
 
 ### Vim help
 
@@ -2346,7 +2461,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org3df28d2"></a>
+<a id="orgfe8b255"></a>
 
 ### Key mappings and abbreviations
 
@@ -2405,7 +2520,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org51ea0f0"></a>
+<a id="orgd0b564d"></a>
 
 ### Tags in Vim
 
@@ -2529,7 +2644,7 @@ Ctrl+Right MouseClick - Jump back from definition
 ---
 
 
-<a id="org1665a0d"></a>
+<a id="orgf003bbd"></a>
 
 ### Deleting
 
@@ -2676,7 +2791,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="org8a5ae85"></a>
+<a id="org757abc0"></a>
 
 ### File comparison with Vim
 
@@ -2705,7 +2820,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="org66041f2"></a>
+<a id="org1932918"></a>
 
 ### Grep
 
@@ -2725,7 +2840,7 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="org07b6db3"></a>
+<a id="orgb6fa5bc"></a>
 
 ### Indentation
 
@@ -2757,7 +2872,7 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="org247a67b"></a>
+<a id="org9f4ec21"></a>
 
 ### Line numbers
 
@@ -2770,7 +2885,7 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="orge800ce9"></a>
+<a id="orge5d0943"></a>
 
 ### Lower case Upper case
 
@@ -2787,7 +2902,7 @@ Alternatively(easier to remember), you can visually select text then press ~ to 
 ---
 
 
-<a id="org3bfb62e"></a>
+<a id="org5e40bd5"></a>
 
 ### Manual insertion of numbered lists
 
@@ -2814,7 +2929,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org503fa72"></a>
+<a id="org085f7ab"></a>
 
 ### Macros
 
@@ -2861,7 +2976,7 @@ For help, check: :help global.
 ---
 
 
-<a id="org79fc2eb"></a>
+<a id="org2179a3a"></a>
 
 ### Netrw
 
@@ -3085,7 +3200,7 @@ Further Reading
 ---
 
 
-<a id="org0310670"></a>
+<a id="orga04137a"></a>
 
 ### Packages and plugins
 
@@ -3107,7 +3222,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="org8b9ba7d"></a>
+<a id="org496deff"></a>
 
 ### git
 
@@ -3176,7 +3291,7 @@ change it to this to get the plugin's URL:
     ---
 
 
-<a id="org9e98540"></a>
+<a id="orgdc05db2"></a>
 
 ### Helpful links
 
@@ -3211,7 +3326,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="orgfe1d1e1"></a>
+<a id="orga5b3fe6"></a>
 
 ### Open questions
 
@@ -3228,7 +3343,7 @@ vimrc shortcut for finding and displaying all the occurences of a word
 ---
 
 
-<a id="org1f8e987"></a>
+<a id="org7c3816a"></a>
 
 ### Research
 
@@ -3267,7 +3382,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="orgc09d3bc"></a>
+<a id="org6c1658f"></a>
 
 ### Miscellaneous
 
@@ -3362,7 +3477,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="org70a4d2e"></a>
+<a id="org713cd40"></a>
 
 ### Plugins
 
