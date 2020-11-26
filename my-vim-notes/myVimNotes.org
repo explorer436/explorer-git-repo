@@ -5,24 +5,28 @@
 
 *** Movement
 
-    Basic Movement
+Moving the cursor gracefully without moving the page:
 
-| h l k j | character left, right; line up, down           |
-| b w     | word/token left, right                         |
-| ge e    | end of word/token left, right                  |
-| {  }    | beginning of previous, next paragraph          |
-| ( )     | beginning of previous, next sentence           |
-| 0       | beginning of line                              |
-| gm      | middle of line                                 |
-| ^       | first character of line                        |
-| $       | last character of line                         |
-| nG ngg  | line n, default the last, first                |
-| n%      | percentage n of the file (n must be provided)  |
-| n       | column n of current line                       |
-| %       | match of next brace, bracket, comment, #define |
-| nH      | line n from start of window                    |
-| nL      | line n from bottom of window                   |
-| M       | middle line of window                          |
+Basic Movement
+
+| h l k j          | character left, right; line up, down                                                                                                                                                                                                                            |
+| b w              | word/token left, right                                                                                                                                                                                                                                          |
+| ge e             | end of word/token left, right                                                                                                                                                                                                                                   |
+| gm               | middle of line                                                                                                                                                                                                                                                  |
+| nG ngg           | line n, default the last, first                                                                                                                                                                                                                                 |
+| n%               | percentage n of the file (n must be provided)                                                                                                                                                                                                                   |
+| n                | column n of current line                                                                                                                                                                                                                                        |
+| %                | match of next brace, bracket, comment, #define. move to the next or previous related item. Items include brackets, opening and closing c-style comments, and C preprocessor conditionals. I find myself using % a lot depending on the programming language.    |
+| nH               | line n from start of window                                                                                                                                                                                                                                     |
+| nL               | line n from bottom of window                                                                                                                                                                                                                                    |
+| M                | middle line of window                                                                                                                                                                                                                                           |
+| [Control][Enter] | first non-blank character on next line                                                                                                                                                                                                                          |
+| (minus)          | first non-blank character on previous line                                                                                                                                                                                                                      |
+| M/H/L            | Move cursor to middle/top/bottom of screen (move only the cursor without moving the screen)                                                                                                                                                                     |
+| ^ and g_         | first and last non blank characters in a line                                                                                                                                                                                                                   |
+| 0 and $          | first and last characters in a line                                                                                                                                                                                                                             |
+| ( )              | move the cursor to the beginning of previous, next sentence                                                                                                                                                                                                     |
+| { and }          | Move the cursor to the beginning of previous or next paragraph.  The definition of a paragraph is based on nroff macros (read man nroff if you want to figure out what that means). This generally works quite well for navigating between large space-separated blocks in a programming language. |
 
 Complex movement
 
@@ -45,6 +49,36 @@ Complex movement
 | [m ]m                         | start of backward, forward Java method        |
 | [# ]#                         | unclosed #if, #else, #endif backward, forward |
 | [* ]*                         | start, end of /* */ backward, forward         |
+
+   ------------------------------------------
+
+*** Scrolling 
+
+Scroll up and down through a page gracefully using Vim the following keystrokes:
+
+Move the page using these commands:
+
+| zt or z↵         | set current line at top of window. move current line to the top of the screen                                                                                                      |
+| zz or z.         | set current line at center of window. move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim) |
+| zb or z-         | set current line at bottom of window. move current line to the bottom of the screen                                                                                                |
+| zh zl            | scroll one character to the right, left                                                                                                                                            |
+| zH zL            | scroll half a screen to the right, left                                                                                                                                            |
+| [Control][b]     | Moves screen up (backward) one page, cursor to last line                                                                                                                           |
+| [Control][f]     | Moves screen down (forward) one page, cursor to first line                                                                                                                         |
+| [Control][u]     | Moves cursor & screen up ½ page (Half-page navigations)                                                                                                                            |
+| [Control][d]     | Moves cursor & screen down ½ page (Half-page navigations)                                                                                                                          |
+| [Control][E]     | move the page/screen up by one line (One-line movements)                                                                                                                           |
+| [Control][Y]     | move the page/screen down by one line (One-line movements)                                                                                                                         |
+| :N               | Go to line N                                                                                                                                                                       |
+| N%               | Go to the line N percent through the file                                                                                                                                          |
+| N(vertical pipe) | Go to column N                                                                                                                                                                     |
+    
+I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
+
+To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg you should define the following option:
+#+BEGIN_EXAMPLE
+:set nostartofline
+#+END_EXAMPLE
 
    ------------------------------------------
 
@@ -149,72 +183,6 @@ OFFSETS IN SEARCH COMMANDS
 | e+n e-n  | n characters right, left to end of match   |
 | s+n s-n  | n characters right, left to start of match |
 | ;sc      | execute search command sc next             |
-
-   ------------------------------------------
-
-*** Scrolling 
-
-| ^E ^Y    | scroll line up, down                    |
-| ^D ^U    | scroll half a page up, down             |
-| ^F ^B    | scroll page up, down                    |
-| zt or z↵ | set current line at top of window       |
-| zz or z. | set current line at center of window    |
-| zb or z- | set current line at bottom of window    |
-| zh zl    | scroll one character to the right, left |
-| zH zL    | scroll half a screen to the right, left |
-    
-**** Moving the cursor gracefully :
-
-     // TODO - Convert this into a table.j
-#+BEGIN_EXAMPLE
-	~ first non-blank character on next line? [Control][Enter]
-	~ first non-blank character on previous line? -
-	M/H/L : Move cursor to middle/top/bottom of screen (move only the cursor without moving the screen)
-	first and last non blank characters in a line : ^ and g_
-	first and last characters in a line : 0 and $
-	To move to the beginning of the next or previous sentence, ( and ) can be used. 
-	Paragraphs can be navigated using { and }.  The definition of a paragraph is based on nroff macros (read man nroff if you want to figure out what that means). 
-	This generally works quite well for navigating between large space-separated blocks in a programming language.
-	Another useful command is %, which moves to the next or previous related item. 
-	Items include brackets, opening and closing c-style comments, and C preprocessor conditionals. 
-	I find myself using % a lot depending on the programming language.
-#+END_EXAMPLE
-
-**** SCROLLING : 
-
-Scroll up and down through a page gracefully using Vim the following keystrokes:
-
-     // TODO - Convert this into a table.j
-#+BEGIN_EXAMPLE
-	[Control][b] - Moves screen up one page, cursor to last line
-	[Control][f] - Moves screen down one page, cursor to first line
-	Half-page navigations
-	[Control][u] - Moves cursor & screen up ½ page
-	[Control][d] - Moves cursor & screen down ½ page
-	One-line movements:
-	[Control][E] - move the page/screen up by one line
-	[Control][Y] - move the page/screen down by one line
-	I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. 
-	Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
-#+END_EXAMPLE
-
-To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg
-you should define the following option:
-
-:set nostartofline
-
-**** Move the page using these commands:
-
-     // TODO - Convert this into a table.j
-	#+BEGIN_EXAMPLE
-		zt - move current line to the top of the screen
-		zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
-		zb - move current line to the bottom of the screen
-	
-		:N : Go to line N
-		N% : Go to the line N percent through the file
-		N| : Go to column N
-	#+END_EXAMPLE
 
    ------------------------------------------
 
@@ -1483,8 +1451,10 @@ The git index is where you put changes that you want to be included in the next 
 
 If you run :Gedit with no arguments from a working tree file, it will open the index version of that file. You can always open the index version of the current file by running any one of the following::Gedit
 
+#+BEGIN_EXAMPLE
 :Gedit :0
 :Gedit :%
+#+END_EXAMPLE
 
 It helps to understand the lifecycle of the index file between two commits. To begin with, the contents of the index and working copy files will be exactly the same as the most recent commit. As you make changes to your working copy, its contents begin to diverge from those of the index file. Staging a file updates the contents of the index file to match those of the working copy. When you commit your work, it is the contents of the index file that are saved with that commit object.
 
@@ -1502,18 +1472,21 @@ When you run::Gdiff on a work tree file without any arguments, fugitive performs
 
 Vim’s built in :diffget and :diffput commands work a bit like :Gread and :Gwrite, except that they are more granular. Whereas :Gread will completely overwrite the current buffer with the contents of the other buffer, :diffget will only pull in a patch at a time.
 
-|command	|active window	|affect|
-|:diffput	|working copy	|stage hunk|
-|:diffget	|working copy	|checkout hunk|
-|:diffput	|index	|checkout hunk|
-|:diffget	|index	|stage hunk|
+| command  | active window | affect        |
+| :diffput | working copy  | stage hunk    |
+| :diffget | working copy  | checkout hunk |
+| :diffput | index         | checkout hunk |
+| :diffget | index         | stage hunk    |
+
+After making changes to the index file (using :diffget and/or :diffput), the status bar at the bottom will show a (+) plus sign indicating unsaved changes to the index file. Run :w on the index file to save the changes and stage the file. If the index file is not the active buffer, run :wa to save all the open buffers. This will make sure that the changes to the index file are saved and staged. If not, the changes to the index file may not be persisted and we would have to start all over again.
 
 *resolving merge conflicts with vimdiff*
 
 :Gdiff on a conflicted file opens 3-way diffWhen you run :Gdiff on a conflicted file, fugitive opens 3 split windows. They always appear in this order:
-the left window contains the version from the target branch
-the middle window contains the working copy of the file, complete with conflict markers
-the right window contains the version from the merge branch
+
+    1. the left window contains the version from the target branch
+    2. the middle window contains the working copy of the file, complete with conflict markers
+    3. the right window contains the version from the merge branch
 
 The ‘target’ branch is the one that is active when you run git merge. Or in other words, it’s the HEAD branch. The ‘merge’ branch is the one that is named in the git merge command. In this scenario the ‘master’ branch is the target, and the ‘feature’ branch is merged into target, making it the merge branch.
 
@@ -1533,8 +1506,10 @@ In the context of a 2-way diff, the :diffget and :diffput commands are unambiguo
 
 The :diffget command modifies the current buffer by pulling a change over from one of the other buffers. In resolving a merge conflict, we want to treat target and merge parents as reference copies, pulling hunks of changes from those into the conflicted working copy. That means that we want to keep the middle buffer active, and run diffget with a reference to the buffer containing the change that we want to use.
 
+#+BEGIN_EXAMPLE
 :diffget //2 - fetches the hunk from the target parent (on the left)
 :diffget //3 - fetches the hunk from the merge parent (on the right)
+#+END_EXAMPLE
 
 Note that Vim does not automatically recalculate the diff colors after you run :diffget. You can tell Vim to do this by running :diffupdate.
 

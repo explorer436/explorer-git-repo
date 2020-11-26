@@ -1,58 +1,60 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#org48d1530)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org073cbff)
-        1.  [Movement](#org8b7f5ec)
-        2.  [Folding](#orge44341c)
-        3.  [Insertion & replace → insert mode](#org3ae3787)
-        4.  [Search and Substitution](#org37647d2)
-        5.  [Scrolling](#org2eb48ab)
-        6.  [Sorting](#org8604996)
-        7.  [Spell check](#org01158a2)
-        8.  [Non empty lines](#org1b48e9b)
-        9.  [Terminal](#orge0dac20)
-        10. [Marks](#orgcd3f404)
-        11. [Visual Mode](#org667ab21)
-        12. [Registers and copy and paste](#orga3e5f93)
-        13. [Ex commands](#org79703ea)
-        14. [Vim completion](#org3336897)
-        15. [Word and text manipulation](#orge05d923)
-        16. [Working with multiple files](#org1d2ffef)
-        17. [Vim help](#orga365fcc)
-        18. [Key mappings and abbreviations](#orge4b4400)
-        19. [Tags in Vim](#org458bd77)
-        20. [Deleting](#org851f23e)
-        21. [File comparison with Vim](#org6022614)
-        22. [Grep](#org4b1290b)
-        23. [Indentation](#orgb88f02f)
-        24. [Line numbers](#org9718169)
-        25. [Lower case Upper case](#orga26c5e9)
-        26. [Manual insertion of numbered lists](#orgcc81b06)
-        27. [Macros](#org81597e6)
-        28. [Netrw](#org1dddaea)
-        29. [Packages and plugins](#org3b57857)
-        30. [git](#orgdd696b9)
-        31. [Helpful links](#orgac464dc)
-        32. [Open questions](#orgaf93fe1)
-        33. [Research](#orgf2c2e42)
-        34. [Miscellaneous](#orgd035f5e)
-        35. [Plugins](#org7f5d997)
+1.  [My Vim notes](#org68eae5d)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org72d45e9)
+        1.  [Movement](#orgb4c7f2d)
+        2.  [Scrolling](#org9ba74df)
+        3.  [Folding](#org5209385)
+        4.  [Insertion & replace → insert mode](#org06ae24d)
+        5.  [Search and Substitution](#orgdf5841b)
+        6.  [Sorting](#org436ca34)
+        7.  [Spell check](#org6636a62)
+        8.  [Non empty lines](#org8c4f1c1)
+        9.  [Terminal](#org36da7f3)
+        10. [Marks](#org80ab3b9)
+        11. [Visual Mode](#org05d7b5d)
+        12. [Registers and copy and paste](#org9922fe5)
+        13. [Ex commands](#orge4d45c3)
+        14. [Vim completion](#org56731b9)
+        15. [Word and text manipulation](#orgb90689a)
+        16. [Working with multiple files](#orgb2fb9e1)
+        17. [Vim help](#org1c9d9ac)
+        18. [Key mappings and abbreviations](#orgccb7e94)
+        19. [Tags in Vim](#org81ad9a2)
+        20. [Deleting](#org249d555)
+        21. [File comparison with Vim](#orgf7916c2)
+        22. [Grep](#orgbb44d59)
+        23. [Indentation](#orgbc4d749)
+        24. [Line numbers](#orgdd99864)
+        25. [Lower case Upper case](#orga73df10)
+        26. [Manual insertion of numbered lists](#org60840bc)
+        27. [Macros](#orgb835d3e)
+        28. [Netrw](#org692f4f4)
+        29. [Packages and plugins](#org5ce346b)
+        30. [git](#org3849d94)
+        31. [Helpful links](#orgd7242f6)
+        32. [Open questions](#orgb7690d2)
+        33. [Research](#org6ed368d)
+        34. [Miscellaneous](#org761c34e)
+        35. [Plugins](#org484746c)
 
 
-<a id="org48d1530"></a>
+<a id="org68eae5d"></a>
 
 # My Vim notes
 
 
-<a id="org073cbff"></a>
+<a id="org72d45e9"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="org8b7f5ec"></a>
+<a id="orgb4c7f2d"></a>
 
 ### Movement
+
+Moving the cursor gracefully without moving the page:
 
 Basic Movement
 
@@ -139,7 +141,7 @@ Basic Movement
 
 <tr>
 <td class="org-left">%</td>
-<td class="org-left">match of next brace, bracket, comment, #define</td>
+<td class="org-left">match of next brace, bracket, comment, #define. move to the next or previous related item. Items include brackets, opening and closing c-style comments, and C preprocessor conditionals. I find myself using % a lot depending on the programming language.</td>
 </tr>
 
 
@@ -158,6 +160,48 @@ Basic Movement
 <tr>
 <td class="org-left">M</td>
 <td class="org-left">middle line of window</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[Control][Enter]</td>
+<td class="org-left">first non-blank character on next line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">(minus)</td>
+<td class="org-left">first non-blank character on previous line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">M/H/L</td>
+<td class="org-left">Move cursor to middle/top/bottom of screen (move only the cursor without moving the screen)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">first and last non blank characters in a line</td>
+<td class="org-left">^ and g_</td>
+</tr>
+
+
+<tr>
+<td class="org-left">first and last characters in a line</td>
+<td class="org-left">0 and $</td>
+</tr>
+
+
+<tr>
+<td class="org-left">To move to the beginning of the next or previous sentence</td>
+<td class="org-left">( )</td>
+</tr>
+
+
+<tr>
+<td class="org-left">{ and }</td>
+<td class="org-left">Paragraphs can be navigated.  The definition of a paragraph is based on nroff macros (read man nroff if you want to figure out what that means). This generally works quite well for navigating between large space-separated blocks in a programming language.</td>
 </tr>
 </tbody>
 </table>
@@ -291,7 +335,136 @@ Complex movement
 ---
 
 
-<a id="orge44341c"></a>
+<a id="org9ba74df"></a>
+
+### Scrolling
+
+Scroll up and down through a page gracefully using Vim the following keystrokes:
+
+Move the page using these commands:
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">^E ^Y</td>
+<td class="org-left">scroll line up, down</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^D ^U</td>
+<td class="org-left">scroll half a page up, down</td>
+</tr>
+
+
+<tr>
+<td class="org-left">^F ^B</td>
+<td class="org-left">scroll page up, down</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zt or z↵</td>
+<td class="org-left">set current line at top of window. move current line to the top of the screen</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zz or z.</td>
+<td class="org-left">set current line at center of window. move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zb or z-</td>
+<td class="org-left">set current line at bottom of window. move current line to the bottom of the screen</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zh zl</td>
+<td class="org-left">scroll one character to the right, left</td>
+</tr>
+
+
+<tr>
+<td class="org-left">zH zL</td>
+<td class="org-left">scroll half a screen to the right, left</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[Control][b]</td>
+<td class="org-left">Moves screen up one page, cursor to last line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[Control][f]</td>
+<td class="org-left">Moves screen down one page, cursor to first line</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[Control][u]</td>
+<td class="org-left">Moves cursor &amp; screen up ½ page (Half-page navigations)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[Control][d]</td>
+<td class="org-left">Moves cursor &amp; screen down ½ page (Half-page navigations)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[Control][E]</td>
+<td class="org-left">move the page/screen up by one line (One-line movements)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">[Control][Y]</td>
+<td class="org-left">move the page/screen down by one line (One-line movements)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:N</td>
+<td class="org-left">Go to line N</td>
+</tr>
+
+
+<tr>
+<td class="org-left">N%</td>
+<td class="org-left">Go to the line N percent through the file</td>
+</tr>
+
+
+<tr>
+<td class="org-left">N(vertical pipe)</td>
+<td class="org-left">Go to column N</td>
+</tr>
+</tbody>
+</table>
+
+I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
+
+To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg you should define the following option:
+
+    :set nostartofline
+
+---
+
+
+<a id="org5209385"></a>
 
 ### Folding
 
@@ -344,7 +517,7 @@ Complex movement
 ---
 
 
-<a id="org3ae3787"></a>
+<a id="org06ae24d"></a>
 
 ### Insertion & replace → insert mode
 
@@ -611,7 +784,7 @@ ADVANCED INSERTION
 </table>
 
 
-<a id="org37647d2"></a>
+<a id="orgdf5841b"></a>
 
 ### Search and Substitution
 
@@ -856,122 +1029,7 @@ OFFSETS IN SEARCH COMMANDS
 ---
 
 
-<a id="org2eb48ab"></a>
-
-### Scrolling
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">^E ^Y</td>
-<td class="org-left">scroll line up, down</td>
-</tr>
-
-
-<tr>
-<td class="org-left">^D ^U</td>
-<td class="org-left">scroll half a page up, down</td>
-</tr>
-
-
-<tr>
-<td class="org-left">^F ^B</td>
-<td class="org-left">scroll page up, down</td>
-</tr>
-
-
-<tr>
-<td class="org-left">zt or z↵</td>
-<td class="org-left">set current line at top of window</td>
-</tr>
-
-
-<tr>
-<td class="org-left">zz or z.</td>
-<td class="org-left">set current line at center of window</td>
-</tr>
-
-
-<tr>
-<td class="org-left">zb or z-</td>
-<td class="org-left">set current line at bottom of window</td>
-</tr>
-
-
-<tr>
-<td class="org-left">zh zl</td>
-<td class="org-left">scroll one character to the right, left</td>
-</tr>
-
-
-<tr>
-<td class="org-left">zH zL</td>
-<td class="org-left">scroll half a screen to the right, left</td>
-</tr>
-</tbody>
-</table>
-
-1.  Moving the cursor gracefully :
-
-    // TODO - Convert this into a table.j
-    
-        ~ first non-blank character on next line? [Control][Enter]
-        ~ first non-blank character on previous line? -
-        M/H/L : Move cursor to middle/top/bottom of screen (move only the cursor without moving the screen)
-        first and last non blank characters in a line : ^ and g_
-        first and last characters in a line : 0 and $
-        To move to the beginning of the next or previous sentence, ( and ) can be used. 
-        Paragraphs can be navigated using { and }.  The definition of a paragraph is based on nroff macros (read man nroff if you want to figure out what that means). 
-        This generally works quite well for navigating between large space-separated blocks in a programming language.
-        Another useful command is %, which moves to the next or previous related item. 
-        Items include brackets, opening and closing c-style comments, and C preprocessor conditionals. 
-        I find myself using % a lot depending on the programming language.
-
-2.  SCROLLING :
-
-    Scroll up and down through a page gracefully using Vim the following keystrokes:
-    
-    // TODO - Convert this into a table.j
-    
-        [Control][b] - Moves screen up one page, cursor to last line
-        [Control][f] - Moves screen down one page, cursor to first line
-        Half-page navigations
-        [Control][u] - Moves cursor & screen up ½ page
-        [Control][d] - Moves cursor & screen down ½ page
-        One-line movements:
-        [Control][E] - move the page/screen up by one line
-        [Control][Y] - move the page/screen down by one line
-        I lose visual context every time for the former two, so I have developed the bad habit of hitting the latter (Ctrl-Y and Ctrl-E) repetitively. 
-        Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
-    
-    To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl+U, G, H, M, L, gg
-    you should define the following option:
-    
-    :set nostartofline
-
-3.  Move the page using these commands:
-
-    // TODO - Convert this into a table.j
-    
-        zt - move current line to the top of the screen
-        zz - move current line to the middle of the screen (Careful with zz, if you happen to have Caps Lock on accidentally, you will save and exit vim!)
-        zb - move current line to the bottom of the screen
-        
-        :N : Go to line N
-        N% : Go to the line N percent through the file
-        N| : Go to column N
-    
-    ---
-
-
-<a id="org8604996"></a>
+<a id="org436ca34"></a>
 
 ### Sorting
 
@@ -1010,7 +1068,7 @@ You dig deeper:
 ---
 
 
-<a id="org01158a2"></a>
+<a id="org6636a62"></a>
 
 ### Spell check
 
@@ -1037,7 +1095,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="org1b48e9b"></a>
+<a id="org8c4f1c1"></a>
 
 ### Non empty lines
 
@@ -1049,7 +1107,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="orge0dac20"></a>
+<a id="org36da7f3"></a>
 
 ### Terminal
 
@@ -1058,7 +1116,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="orgcd3f404"></a>
+<a id="org80ab3b9"></a>
 
 ### Marks
 
@@ -1204,7 +1262,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org667ab21"></a>
+<a id="org05d7b5d"></a>
 
 ### Visual Mode
 
@@ -1251,7 +1309,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="orga3e5f93"></a>
+<a id="org9922fe5"></a>
 
 ### Registers and copy and paste
 
@@ -1526,7 +1584,7 @@ Copying and Moving Text
 </table>
 
 
-<a id="org79703ea"></a>
+<a id="orge4d45c3"></a>
 
 ### Ex commands
 
@@ -1681,7 +1739,7 @@ EX RANGES
 </table>
 
 
-<a id="org3336897"></a>
+<a id="org56731b9"></a>
 
 ### Vim completion
 
@@ -1809,7 +1867,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="orge05d923"></a>
+<a id="orgb90689a"></a>
 
 ### Word and text manipulation
 
@@ -1954,7 +2012,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org1d2ffef"></a>
+<a id="orgb2fb9e1"></a>
 
 ### Working with multiple files
 
@@ -2325,7 +2383,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="orga365fcc"></a>
+<a id="org1c9d9ac"></a>
 
 ### Vim help
 
@@ -2342,7 +2400,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="orge4b4400"></a>
+<a id="orgccb7e94"></a>
 
 ### Key mappings and abbreviations
 
@@ -2401,7 +2459,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org458bd77"></a>
+<a id="org81ad9a2"></a>
 
 ### Tags in Vim
 
@@ -2525,7 +2583,7 @@ Ctrl+Right MouseClick - Jump back from definition
 ---
 
 
-<a id="org851f23e"></a>
+<a id="org249d555"></a>
 
 ### Deleting
 
@@ -2672,7 +2730,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="org6022614"></a>
+<a id="orgf7916c2"></a>
 
 ### File comparison with Vim
 
@@ -2701,7 +2759,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="org4b1290b"></a>
+<a id="orgbb44d59"></a>
 
 ### Grep
 
@@ -2721,7 +2779,7 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="orgb88f02f"></a>
+<a id="orgbc4d749"></a>
 
 ### Indentation
 
@@ -2753,7 +2811,7 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="org9718169"></a>
+<a id="orgdd99864"></a>
 
 ### Line numbers
 
@@ -2766,7 +2824,7 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="orga26c5e9"></a>
+<a id="orga73df10"></a>
 
 ### Lower case Upper case
 
@@ -2783,7 +2841,7 @@ Alternatively(easier to remember), you can visually select text then press ~ to 
 ---
 
 
-<a id="orgcc81b06"></a>
+<a id="org60840bc"></a>
 
 ### Manual insertion of numbered lists
 
@@ -2810,7 +2868,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org81597e6"></a>
+<a id="orgb835d3e"></a>
 
 ### Macros
 
@@ -2857,7 +2915,7 @@ For help, check: :help global.
 ---
 
 
-<a id="org1dddaea"></a>
+<a id="org692f4f4"></a>
 
 ### Netrw
 
@@ -3081,7 +3139,7 @@ Further Reading
 ---
 
 
-<a id="org3b57857"></a>
+<a id="org5ce346b"></a>
 
 ### Packages and plugins
 
@@ -3103,7 +3161,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="orgdd696b9"></a>
+<a id="org3849d94"></a>
 
 ### git
 
@@ -3172,7 +3230,7 @@ change it to this to get the plugin's URL:
     ---
 
 
-<a id="orgac464dc"></a>
+<a id="orgd7242f6"></a>
 
 ### Helpful links
 
@@ -3207,7 +3265,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="orgaf93fe1"></a>
+<a id="orgb7690d2"></a>
 
 ### Open questions
 
@@ -3224,7 +3282,7 @@ vimrc shortcut for finding and displaying all the occurences of a word
 ---
 
 
-<a id="orgf2c2e42"></a>
+<a id="org6ed368d"></a>
 
 ### Research
 
@@ -3263,7 +3321,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="orgd035f5e"></a>
+<a id="org761c34e"></a>
 
 ### Miscellaneous
 
@@ -3358,7 +3416,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="org7f5d997"></a>
+<a id="org484746c"></a>
 
 ### Plugins
 
@@ -3468,8 +3526,8 @@ With Gvim, you cannot do that.
     
     If you run :Gedit with no arguments from a working tree file, it will open the index version of that file. You can always open the index version of the current file by running any one of the following::Gedit
     
-    :Gedit :0
-    :Gedit :%
+        :Gedit :0
+        :Gedit :%
     
     It helps to understand the lifecycle of the index file between two commits. To begin with, the contents of the index and working copy files will be exactly the same as the most recent commit. As you make changes to your working copy, its contents begin to diverge from those of the index file. Staging a file updates the contents of the index file to match those of the working copy. When you commit your work, it is the contents of the index file that are saved with that commit object.
     
@@ -3575,12 +3633,15 @@ With Gvim, you cannot do that.
     </tbody>
     </table>
     
+    After making changes to the index file (using :diffget and/or :diffput), the status bar at the bottom will show a (+) plus sign indicating unsaved changes to the index file. Run :w on the index file to save the changes and stage the file. If the index file is not the active buffer, run :wa to save all the open buffers. This will make sure that the changes to the index file are saved and staged. If not, the changes to the index file may not be persisted and we would have to start all over again.
+    
     **resolving merge conflicts with vimdiff**
     
     :Gdiff on a conflicted file opens 3-way diffWhen you run :Gdiff on a conflicted file, fugitive opens 3 split windows. They always appear in this order:
-    the left window contains the version from the target branch
-    the middle window contains the working copy of the file, complete with conflict markers
-    the right window contains the version from the merge branch
+    
+    1.  the left window contains the version from the target branch
+    2.  the middle window contains the working copy of the file, complete with conflict markers
+    3.  the right window contains the version from the merge branch
     
     The ‘target’ branch is the one that is active when you run git merge. Or in other words, it’s the HEAD branch. The ‘merge’ branch is the one that is named in the git merge command. In this scenario the ‘master’ branch is the target, and the ‘feature’ branch is merged into target, making it the merge branch.
     
@@ -3624,8 +3685,8 @@ With Gvim, you cannot do that.
     
     The :diffget command modifies the current buffer by pulling a change over from one of the other buffers. In resolving a merge conflict, we want to treat target and merge parents as reference copies, pulling hunks of changes from those into the conflicted working copy. That means that we want to keep the middle buffer active, and run diffget with a reference to the buffer containing the change that we want to use.
     
-    :diffget //2 - fetches the hunk from the target parent (on the left)
-    :diffget //3 - fetches the hunk from the merge parent (on the right)
+        :diffget //2 - fetches the hunk from the target parent (on the left)
+        :diffget //3 - fetches the hunk from the merge parent (on the right)
     
     Note that Vim does not automatically recalculate the diff colors after you run :diffget. You can tell Vim to do this by running :diffupdate.
     
