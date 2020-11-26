@@ -1,56 +1,56 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#org53aa65c)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org8a455f0)
-        1.  [Movement](#org3710da5)
-        2.  [Scrolling](#org50fecc2)
-        3.  [Folding](#org9b62570)
-        4.  [Insertion & replace → insert mode](#org2f57cb0)
-        5.  [Search and Substitution](#org1f70318)
-        6.  [Sorting](#org27d835f)
-        7.  [Spell check](#org037e6fe)
-        8.  [Non empty lines](#org5205bf3)
-        9.  [Terminal](#org1c48dd8)
-        10. [Marks](#orge29a60e)
-        11. [Visual Mode](#org02686f6)
-        12. [Registers and copy and paste](#org1578529)
-        13. [Ex commands](#orgd2dd55e)
-        14. [Vim completion](#orgcbd1e18)
-        15. [Word and text manipulation](#org3dbd766)
-        16. [Working with multiple files](#orgaf9d7e1)
-        17. [Vim help](#org81d9de7)
-        18. [Key mappings and abbreviations](#org5334731)
-        19. [Tags in Vim](#orgfa2371e)
-        20. [Deleting](#org7bc1cc5)
-        21. [File comparison with Vim](#orgd10a367)
-        22. [Grep](#org63e62a2)
-        23. [Indentation](#orgb155bf8)
-        24. [Line numbers](#org8e71b55)
-        25. [Lower case Upper case](#org4cde62c)
-        26. [Manual insertion of numbered lists](#orgdc9e922)
-        27. [Macros](#org58dbfea)
-        28. [Netrw](#org6788567)
-        29. [Packages and plugins](#orgba7d4ac)
-        30. [git](#org421341a)
-        31. [Helpful links](#org1d64d92)
-        32. [Open questions](#org4e4c08a)
-        33. [Research](#org48d7395)
-        34. [Miscellaneous](#org84b7007)
-        35. [Plugins](#org47668ca)
+1.  [My Vim notes](#org41ad439)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org1e56e44)
+        1.  [Movement](#orgbfad691)
+        2.  [Scrolling](#org5bdf925)
+        3.  [Folding](#org90775d4)
+        4.  [Insertion & replace → insert mode](#orgf687c7f)
+        5.  [Search and Substitution](#orgcd09028)
+        6.  [Sorting](#org1a5f3d6)
+        7.  [Spell check](#org872084c)
+        8.  [Non empty lines](#org0c5f8be)
+        9.  [Terminal](#orga434805)
+        10. [Marks](#orge1ff323)
+        11. [Visual Mode](#org6ae1ffb)
+        12. [Registers and copy and paste](#org9049248)
+        13. [Ex commands](#org265d98e)
+        14. [Vim completion](#orgb2b87ff)
+        15. [Word and text manipulation](#org0949da0)
+        16. [Working with multiple files](#org9826b65)
+        17. [Vim help](#org7d7f014)
+        18. [Key mappings and abbreviations](#org3df28d2)
+        19. [Tags in Vim](#org51ea0f0)
+        20. [Deleting](#org1665a0d)
+        21. [File comparison with Vim](#org8a5ae85)
+        22. [Grep](#org66041f2)
+        23. [Indentation](#org07b6db3)
+        24. [Line numbers](#org247a67b)
+        25. [Lower case Upper case](#orge800ce9)
+        26. [Manual insertion of numbered lists](#org3bfb62e)
+        27. [Macros](#org503fa72)
+        28. [Netrw](#org79fc2eb)
+        29. [Packages and plugins](#org0310670)
+        30. [git](#org8b9ba7d)
+        31. [Helpful links](#org9e98540)
+        32. [Open questions](#orgfe1d1e1)
+        33. [Research](#org1f8e987)
+        34. [Miscellaneous](#orgc09d3bc)
+        35. [Plugins](#org70a4d2e)
 
 
-<a id="org53aa65c"></a>
+<a id="org41ad439"></a>
 
 # My Vim notes
 
 
-<a id="org8a455f0"></a>
+<a id="org1e56e44"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="org3710da5"></a>
+<a id="orgbfad691"></a>
 
 ### Movement
 
@@ -153,19 +153,19 @@ Basic Movement of the cursor:
 
 <tr>
 <td class="org-left">M/H/L</td>
-<td class="org-left">Move cursor to middle/top/bottom of screen (move only the cursor without moving the screen)</td>
+<td class="org-left">move cursor to middle/top/bottom of screen (Move the cursor only. Do not move the screen)</td>
 </tr>
 
 
 <tr>
 <td class="org-left">^ and g_</td>
-<td class="org-left">first and last non blank characters in a line</td>
+<td class="org-left">move the cursor to the first and last non blank characters in a line</td>
 </tr>
 
 
 <tr>
 <td class="org-left">0 and $</td>
-<td class="org-left">first and last characters in a line</td>
+<td class="org-left">move the cursor to the first and last characters in the current line</td>
 </tr>
 
 
@@ -299,7 +299,7 @@ Complex movement of the cursor:
 ---
 
 
-<a id="org50fecc2"></a>
+<a id="org5bdf925"></a>
 
 ### Scrolling
 
@@ -410,7 +410,7 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 ---
 
 
-<a id="org9b62570"></a>
+<a id="org90775d4"></a>
 
 ### Folding
 
@@ -463,7 +463,7 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 ---
 
 
-<a id="org2f57cb0"></a>
+<a id="orgf687c7f"></a>
 
 ### Insertion & replace → insert mode
 
@@ -730,7 +730,7 @@ ADVANCED INSERTION
 </table>
 
 
-<a id="org1f70318"></a>
+<a id="orgcd09028"></a>
 
 ### Search and Substitution
 
@@ -975,7 +975,7 @@ OFFSETS IN SEARCH COMMANDS
 ---
 
 
-<a id="org27d835f"></a>
+<a id="org1a5f3d6"></a>
 
 ### Sorting
 
@@ -1014,7 +1014,7 @@ You dig deeper:
 ---
 
 
-<a id="org037e6fe"></a>
+<a id="org872084c"></a>
 
 ### Spell check
 
@@ -1041,7 +1041,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="org5205bf3"></a>
+<a id="org0c5f8be"></a>
 
 ### Non empty lines
 
@@ -1053,7 +1053,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="org1c48dd8"></a>
+<a id="orga434805"></a>
 
 ### Terminal
 
@@ -1062,7 +1062,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="orge29a60e"></a>
+<a id="orge1ff323"></a>
 
 ### Marks
 
@@ -1208,7 +1208,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org02686f6"></a>
+<a id="org6ae1ffb"></a>
 
 ### Visual Mode
 
@@ -1255,7 +1255,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org1578529"></a>
+<a id="org9049248"></a>
 
 ### Registers and copy and paste
 
@@ -1530,7 +1530,7 @@ Copying and Moving Text
 </table>
 
 
-<a id="orgd2dd55e"></a>
+<a id="org265d98e"></a>
 
 ### Ex commands
 
@@ -1685,7 +1685,7 @@ EX RANGES
 </table>
 
 
-<a id="orgcbd1e18"></a>
+<a id="orgb2b87ff"></a>
 
 ### Vim completion
 
@@ -1813,7 +1813,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org3dbd766"></a>
+<a id="org0949da0"></a>
 
 ### Word and text manipulation
 
@@ -1958,7 +1958,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="orgaf9d7e1"></a>
+<a id="org9826b65"></a>
 
 ### Working with multiple files
 
@@ -2329,7 +2329,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org81d9de7"></a>
+<a id="org7d7f014"></a>
 
 ### Vim help
 
@@ -2346,7 +2346,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org5334731"></a>
+<a id="org3df28d2"></a>
 
 ### Key mappings and abbreviations
 
@@ -2405,7 +2405,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="orgfa2371e"></a>
+<a id="org51ea0f0"></a>
 
 ### Tags in Vim
 
@@ -2529,7 +2529,7 @@ Ctrl+Right MouseClick - Jump back from definition
 ---
 
 
-<a id="org7bc1cc5"></a>
+<a id="org1665a0d"></a>
 
 ### Deleting
 
@@ -2676,7 +2676,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="orgd10a367"></a>
+<a id="org8a5ae85"></a>
 
 ### File comparison with Vim
 
@@ -2705,7 +2705,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="org63e62a2"></a>
+<a id="org66041f2"></a>
 
 ### Grep
 
@@ -2725,7 +2725,7 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="orgb155bf8"></a>
+<a id="org07b6db3"></a>
 
 ### Indentation
 
@@ -2757,7 +2757,7 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="org8e71b55"></a>
+<a id="org247a67b"></a>
 
 ### Line numbers
 
@@ -2770,7 +2770,7 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="org4cde62c"></a>
+<a id="orge800ce9"></a>
 
 ### Lower case Upper case
 
@@ -2787,7 +2787,7 @@ Alternatively(easier to remember), you can visually select text then press ~ to 
 ---
 
 
-<a id="orgdc9e922"></a>
+<a id="org3bfb62e"></a>
 
 ### Manual insertion of numbered lists
 
@@ -2814,7 +2814,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org58dbfea"></a>
+<a id="org503fa72"></a>
 
 ### Macros
 
@@ -2861,7 +2861,7 @@ For help, check: :help global.
 ---
 
 
-<a id="org6788567"></a>
+<a id="org79fc2eb"></a>
 
 ### Netrw
 
@@ -3085,7 +3085,7 @@ Further Reading
 ---
 
 
-<a id="orgba7d4ac"></a>
+<a id="org0310670"></a>
 
 ### Packages and plugins
 
@@ -3107,7 +3107,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="org421341a"></a>
+<a id="org8b9ba7d"></a>
 
 ### git
 
@@ -3176,7 +3176,7 @@ change it to this to get the plugin's URL:
     ---
 
 
-<a id="org1d64d92"></a>
+<a id="org9e98540"></a>
 
 ### Helpful links
 
@@ -3211,7 +3211,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="org4e4c08a"></a>
+<a id="orgfe1d1e1"></a>
 
 ### Open questions
 
@@ -3228,7 +3228,7 @@ vimrc shortcut for finding and displaying all the occurences of a word
 ---
 
 
-<a id="org48d7395"></a>
+<a id="org1f8e987"></a>
 
 ### Research
 
@@ -3267,7 +3267,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="org84b7007"></a>
+<a id="orgc09d3bc"></a>
 
 ### Miscellaneous
 
@@ -3362,7 +3362,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="org47668ca"></a>
+<a id="org70a4d2e"></a>
 
 ### Plugins
 
