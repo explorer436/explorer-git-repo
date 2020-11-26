@@ -7,7 +7,7 @@
 
 Moving the cursor gracefully without moving the page:
 
-Basic Movement
+Basic Movement of the cursor:
 
 | h l k j          | character left, right; line up, down                                                                                                                                                                                                                            |
 | b w              | word/token left, right                                                                                                                                                                                                                                          |
@@ -28,7 +28,7 @@ Basic Movement
 | ( )              | move the cursor to the beginning of previous, next sentence                                                                                                                                                                                                     |
 | { and }          | Move the cursor to the beginning of previous or next paragraph.  The definition of a paragraph is based on nroff macros (read man nroff if you want to figure out what that means). This generally works quite well for navigating between large space-separated blocks in a programming language. |
 
-Complex movement
+Complex movement of the cursor:
 
 | (minus)                       | line up, down on first non-blank character    |
 | (plus)                        | line up, down on first non-blank character    |
