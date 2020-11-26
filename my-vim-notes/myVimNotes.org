@@ -355,6 +355,8 @@ UNDOING, REPEATING & REGISTERS
 | :@c↵     | execute register c as an Ex command                     |
 | :rg/p/c↵ | execute Ex command c on range r where pattern p matches |
 
+   ------------------------------------------
+
 Copying and Moving Text
 
 | "{a-zA-Z0-9.%#:-"}         | Use register {a-zA-Z0-9.%#:-"} for next delete, yank or put (use uppercase character to append with delete and yank) ({.%#:} only work with put). |
@@ -375,24 +377,43 @@ Copying and Moving Text
 | :[line]pu[t] [x]           | Put the text [from register x] after [line] (default current line).                                                                               |
 | :[line]pu[t]! [x]          | Put the text [from register x] before [line] (default current line).                                                                              |
 
+   ------------------------------------------
+
 *** Ex commands
 
    EX COMMANDS (↵)
 
-|:e f	|edit file f, unless changes have been made|
-|:e!  f	|edit file f always (by default reload current)|
-|:wn :wN	|write file and edit next, previous one|
-|:n :N	|edit next, previous file in list|
-|:rw	|write range r to current file|
-|:rw f	|write range r to file f|
-|:rw>>f	|append range r to file f|
-|:q :q!	|quit and confirm, quit and discard changes|
-|:wq or :x or ZZ	|write to current file and exit|
-|<up> <down>	|recall commands starting with current|
-|:r f	|insert content of file f below cursor|
-|:r!  c	|insert output of command c below cursor|
-|:args	|display the argument list|
-|:rco  a :rm  a	|copy, move range r below line a|
+| :e f            | edit file f, unless changes have been made     |
+| :e!  f          | edit file f always (by default reload current) |
+| :n :N           | edit next, previous file in list               |
+| :rw             | write range r to current file                  |
+| :rw f           | write range r to file f                        |
+| :rw>>f          | append range r to file f                       |
+| :q :q!          | quit and confirm, quit and discard changes     |
+| :wq or :x or ZZ | write to current file and exit                 |
+| :wn :wN         | write file and edit next, previous one         |
+| <up> <down>     | recall commands starting with current          |
+| :r f            | insert content of file f below cursor          |
+| :r!  c          | insert output of command c below cursor        |
+| :args           | display the argument list                      |
+| :rco  a :rm  a  | copy, move range r below line a                |
+
+   ------------------------------------------
+
+SAVE ALL OPEN BUFFERS AT ONCE
+
+Vim can open multiple files, each in its own buffer. Here is how to save all changes and continue working, or save all changes and exit Vim. It is also possible to quit all (discard changes).
+| :wa  | write all changed files (save all changes), and keep working |
+| :xa  | exit all (save all changes and close Vim)                    |
+| :wqa | same as :xa                                                  |
+| :qa  | quit all (close Vim, but not if there are unsaved changes)   |
+| :qa! | quit all (close Vim without saving—discard any changes)      |
+
+The :wa and :xa commands only write a file when its buffer has been changed. By contrast, the :w command always writes the current buffer to its file (use :update to save the current buffer only if it has been changed).
+
+Warning: If you enter :qa!, Vim will discard all changes without asking "are you sure?". 
+
+   ------------------------------------------
 
 EX RANGES
 
@@ -404,6 +425,8 @@ EX RANGES
 | /p/ ?p? | the next, previous line where p matches        |
 | +n -n   | +n, -n to the preceding line number            |
     
+   ------------------------------------------
+
 *** Vim completion
    
     Let Vim do the typing by George Brocklehurst (@georgebrock)
@@ -607,7 +630,7 @@ EX RANGES
 
      | :g/<pattern>/j                                                                                     | To join lines within a pattern                                                                                                                                                                                                        |
      | :g/.*(underscore)(underscore)text.*/j                                                              | To join the subsequent line with a line containing a certain text                                                                                                                                                                     |
-     | :%s/{\_s.*__text/{__text/g                                                                         | Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line. This looks for lines ending with "{" and a next line starting with the text (a wildcard) "__text" and joins them into a single line. |
+     | :%s/{\(underscore)s.*(underscore)(underscore)text/{(underscore)(underscore)text/g                                                                         | Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line. This looks for lines ending with "{" and a next line starting with the text (a wildcard) "(underscore)(underscore)text" and joins them into a single line. |
      | :%s/' ,/',\r/g                                                                                     | Replace each "' }," in the current file by a new line                                                                                                                                                                                 |
      | :{\(underscore)$\(underscore)s*(underscore)(underscore)prefix                                      | This searches for lines ending with `{` and a subsequent line starting with `(underscore)(underscore)prefix`.                                                                                                                         |
      | :',\(underscore)$\(underscore)s*(underscore)(underscore)text                                       | This searches for lines ending with `',` and a subsequent line starting with `(underscore)(underscore)text`.                                                                                                                          |
@@ -622,11 +645,11 @@ EX RANGES
      
      * Count the number of occurrences of a word or pattern in the current file : 
      
-    #+BEGIN_EXAMPLE
-         (first use * on the word)
-     
-         after that, use the following command to get a count : %s///gn
-    #+END_EXAMPLE
+       #+BEGIN_EXAMPLE
+            (first use * on the word)
+        
+            after that, use the following command to get a count : %s///gn
+       #+END_EXAMPLE
      
          We are actually calling the :substitute command, but the n flag suppresses the usual behaviour.
          Instead of replacing each match witht the target, it simply counts the number of matches and then echoes the result below the command line.
@@ -635,13 +658,16 @@ EX RANGES
      
      * Find all occurrences of a word in the current file and populate the quickfix list window
      
-    #+BEGIN_EXAMPLE
-         :vim /pattern/ % | cw
-    #+END_EXAMPLE
+       #+BEGIN_EXAMPLE
+            :vim /pattern/ % | cw
+       #+END_EXAMPLE
      
      ------------------------------------------------
      
-     ~ & - repeat last substitution on current line
+    #+BEGIN_EXAMPLE
+    ~ & -
+    #+END_EXAMPLE
+    Repeat last substitution on current line
      
      ------------------------------------------------
      
@@ -680,9 +706,11 @@ EX RANGES
     
     To replace four white spaces in java files with a tab use this - :bufdo exexute "%s/    /(press tab)/g" | update
     
+    #+BEGIN_EXAMPLE
     1. :bufdo execute "%s/(press tab){/{/g" | update
     1. :bufdo execute "global/^{/normal -gJ" | update
     1. :bufdo execute "%s/){/) {/g" | update
+    #+END_EXAMPLE
     
     -------------------------------------------------------------------------------------
 
@@ -785,13 +813,17 @@ EX RANGES
 *** Vim help
    Opening Vim help in a vertical split window
 
+    #+BEGIN_EXAMPLE
    :vertical (vert)
 
    :vert help
+    #+END_EXAMPLE
 
    You can also control whether the window splits on the left/top or the right/bottom with topleft (to) and botright (bo). For example, to open help in the right window of a vertical split:
 
+    #+BEGIN_EXAMPLE
    :vert bo help
+    #+END_EXAMPLE
  
    ------------------------------------------
 
@@ -876,13 +908,9 @@ EX RANGES
 
     #+BEGIN_EXAMPLE
    Put your cursor at the point you want to start at.
-   
    Make sure you're in command mode.
-   
    hit v to start a visual selection
-   
    then hit / and type the word you're looking for to select up to it, then press enter to make the selection
-   
    then hit d to delete the text 
     #+END_EXAMPLE
    
@@ -1541,3 +1569,86 @@ Useful commands
 The dp command normally only works in a two-way diff, as does do: the shorthand for diffget.To leave vimdiff mode, you just need to close the windows that are being compared. The quickest way to do this is to run :only from the window that you want to keep open.When you call :Gwrite from vimdiff mode, it writes the current file to the index and exits vimdiff mode.
 
    ------------------------------------------
+
+**** fzf
+
+**How to search faster in Vim with FZF.vim**
+
+**FZF syntax**
+
+Let's go over syntax so we can search more efficiently. Fortunately for us, there aren't many to learn.
+
+| ^      | prefix exact match. To search for phrase starting with "welcome", we do ^welcome.                         |
+| $      | suffix exact match. To search for phrase ending with "my friends", we do friends$.                        |
+| '      | n exact match. To search for phrase "welcome my friends", we do 'welcome my friends.                      |
+| (pipe) | n "or" match. To search for either "friends" or "foes", we can use friends (pipe) foes.                   |
+| !      | n inverse match. To search for phrase containing "welcome" and not "friends", we can use welcome !friends |
+
+We can mix and match the above. For example, ^hello | ^welcome friends$ searches for phrase starting with either "welcome" or "hello" and ending with "friends".
+
+Side note: FZF.vim :Rg option also searches for file name in addition to the phrase. If you think this is an issue, check out this comment. I added this in my .vimrc:
+
+#+BEGIN_EXAMPLE
+command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+#+END_EXAMPLE
+
+With the above, every time we invoke Rg, FZF + ripgrep will not consider filename as a match in Vim.
+
+**Replacing grep with rg**
+
+Internally, Vim has two ways to search in files: :vimgrep and :grep.
+
+:vimgrep uses vim's built-in grep and :grep uses external tool which you can reassign using 'grepprg'.
+
+For example, if we want to search for "iggy" with :grep, we can run :grep "iggy" . -R
+
+You may notice that Vim's :grep syntax is similar to terminal grep command; this is because :grep by default runs grep -n $* /dev/null on unix-based machine.
+
+The command above will search for string "iggy" recursively (-R) from current location (.).
+
+Vim allows us to change the program used by :grep. We can tell Vim to use ripgrep instead of grep by adding this inside our vimrc:
+
+#+BEGIN_EXAMPLE
+set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+#+END_EXAMPLE
+
+Now when we run :grep inside Vim, it will run rg --vimgrep --smart-case --follow instead.
+
+For more information what the options above mean, check out man rg.
+
+I can now run a more succinct command :grep "iggy" instead of :grep "iggy" . -R.
+
+Vim :grep command uses quickfix to display results. We can use :copen to display quickfix window and :cclose to close quickfix window. Try it!
+
+You might wonder, "Well, this is nice but I never used :grep in Vim, plus can't we just use :Rg to find string in files? When will I ever need to use :grep?"
+
+That is a very good question. The answer to "why do we need grep in Vim?" is that it will let us do what I'll going to cover next: search and replace in multiple files.
+
+**Search and replace in multiple files**
+
+Modern text editors like VSCode makes it very easy to search and replace string across multiple files. If I may confess, in the beginning when I had to search/replace string in multiple files, I used VSCode because doing it in Vim, although possible, takes too long... until now.
+
+I will show you two different tricks to easily do search and replace phrases across multiple files in Vim.
+
+The first method is to replace ALL matching phrases in our project. We will need to use :grep. Let's say you want to replace all instance of "pizza" with "donut". Here's what you do:
+
+#+BEGIN_EXAMPLE
+:grep "pizza"
+:cfdo %s/pizza/donut/g | update
+#+END_EXAMPLE
+
+That's it? Yup! That's it. Let me break down the steps:
+
+    1. :grep pizza uses ripgrep to succinctly search for all instances of "pizza". By the way, this would still work even if we didn't reassign ripgrep to replace default grep. We would have to do :grep "pizza" . -R instead of :grep "pizza".
+    2. We run :cfdo because :grep uses quickfix.:cfdo executes any command we pass (in this case, our command is %s/pizza/donut/g) on all entries in our quickfix list. To run multiple commands, we can chain it with pipe (|). The first command we are executing is pizza-donut substitution: %s/pizza/donut/g. The second command, update, saves each file after the first is finished.
+
+Let's discuss the second way.
+
+The second method is to search and replace in select multiple files instead of all files using buffers. Here we can choose which files we want to perform select and replace.
+
+    1. Clear our buffers (:Buffers) first. Our buffers list should contain only the needed files. We can clear it with %bd | e# | bd# (or restart Vim).
+    2. Run :Files.
+    3. Select all files you want to perform search and replace on. To select multiple files, use Tab / Shift+Tab. This is only possible if we have -m in FZF_DEFAULT_OPTS.
+    4. Run :bufdo %s/pizza/donut/g | update.
+
+Our command :bufdo %s/pizza/donut/g | update looks similar to :cfdo %s/pizza/donut/g | update. That's because they are. Instead of performing substitution on all quickfix (cfdo) entries, we perform our substitution on all buffer (bufdo) entries.

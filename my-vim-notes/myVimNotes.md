@@ -1,56 +1,56 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#orge3a43fd)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org54b1c1d)
-        1.  [Movement](#org822f96d)
-        2.  [Scrolling](#org0a1d1e4)
-        3.  [Folding](#org376b79e)
-        4.  [Insertion & replace → insert mode](#org5ca4f0f)
-        5.  [Search and Substitution](#org3b31289)
-        6.  [Sorting](#org15ea554)
-        7.  [Spell check](#org6a53e49)
-        8.  [Non empty lines](#org1fc53d1)
-        9.  [Terminal](#org7078e15)
-        10. [Marks](#org0bac3e4)
-        11. [Visual Mode](#org614c619)
-        12. [Registers and copy and paste](#org4ad99b1)
-        13. [Ex commands](#org39ed8a2)
-        14. [Vim completion](#org477c55b)
-        15. [Word and text manipulation](#org80c9349)
-        16. [Working with multiple files](#org1479dd7)
-        17. [Vim help](#org64703a0)
-        18. [Key mappings and abbreviations](#org61a1209)
-        19. [Tags in Vim](#orge59b132)
-        20. [Deleting](#org29f82b2)
-        21. [File comparison with Vim](#org4ce47c1)
-        22. [Grep](#org8c02ab4)
-        23. [Indentation](#org39de0c2)
-        24. [Line numbers](#org5fbc9e3)
-        25. [Lower case Upper case](#orgb214f18)
-        26. [Manual insertion of numbered lists](#org55afd36)
-        27. [Macros](#org8353687)
-        28. [Netrw](#orge6bce02)
-        29. [Packages and plugins](#org039129d)
-        30. [git](#org553ed32)
-        31. [Helpful links](#org3654347)
-        32. [Open questions](#org802a022)
-        33. [Research](#orgb2d54f1)
-        34. [Miscellaneous](#orgc9dfb3c)
-        35. [Plugins](#orgf381dca)
+1.  [My Vim notes](#org9493041)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org2b63779)
+        1.  [Movement](#orga5464bc)
+        2.  [Scrolling](#orgf51bec1)
+        3.  [Folding](#org84ba8b2)
+        4.  [Insertion & replace → insert mode](#org209cc6f)
+        5.  [Search and Substitution](#org52dd884)
+        6.  [Sorting](#org5148596)
+        7.  [Spell check](#org5d4d8ca)
+        8.  [Non empty lines](#org1cbf763)
+        9.  [Terminal](#orgbd795af)
+        10. [Marks](#org63b917c)
+        11. [Visual Mode](#org9bc8792)
+        12. [Registers and copy and paste](#org92cd735)
+        13. [Ex commands](#orgb8ed7b7)
+        14. [Vim completion](#orgbd25d00)
+        15. [Word and text manipulation](#orgd295af1)
+        16. [Working with multiple files](#org9666ca0)
+        17. [Vim help](#org01ac7f3)
+        18. [Key mappings and abbreviations](#org8faa2e6)
+        19. [Tags in Vim](#org69f8163)
+        20. [Deleting](#orgc477983)
+        21. [File comparison with Vim](#orgdff4c08)
+        22. [Grep](#org7d5e633)
+        23. [Indentation](#orgff67ea9)
+        24. [Line numbers](#org51056a2)
+        25. [Lower case Upper case](#orgda23732)
+        26. [Manual insertion of numbered lists](#org0c1c6e7)
+        27. [Macros](#org701dff6)
+        28. [Netrw](#org99a7a8d)
+        29. [Packages and plugins](#org56bc5a4)
+        30. [git](#orgee08892)
+        31. [Helpful links](#orgabb2fcb)
+        32. [Open questions](#orgc8d136f)
+        33. [Research](#org0a45917)
+        34. [Miscellaneous](#org23a06ce)
+        35. [Plugins](#org0ab16cb)
 
 
-<a id="orge3a43fd"></a>
+<a id="org9493041"></a>
 
 # My Vim notes
 
 
-<a id="org54b1c1d"></a>
+<a id="org2b63779"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="org822f96d"></a>
+<a id="orga5464bc"></a>
 
 ### Movement
 
@@ -293,7 +293,7 @@ Complex movement of the cursor:
 ---
 
 
-<a id="org0a1d1e4"></a>
+<a id="orgf51bec1"></a>
 
 ### Scrolling
 
@@ -404,7 +404,7 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 ---
 
 
-<a id="org376b79e"></a>
+<a id="org84ba8b2"></a>
 
 ### Folding
 
@@ -457,7 +457,7 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 ---
 
 
-<a id="org5ca4f0f"></a>
+<a id="org209cc6f"></a>
 
 ### Insertion & replace → insert mode
 
@@ -724,7 +724,7 @@ ADVANCED INSERTION
 </table>
 
 
-<a id="org3b31289"></a>
+<a id="org52dd884"></a>
 
 ### Search and Substitution
 
@@ -969,7 +969,7 @@ OFFSETS IN SEARCH COMMANDS
 ---
 
 
-<a id="org15ea554"></a>
+<a id="org5148596"></a>
 
 ### Sorting
 
@@ -1008,7 +1008,7 @@ If you want to dig deeper into the sort functionality:
 ---
 
 
-<a id="org6a53e49"></a>
+<a id="org5d4d8ca"></a>
 
 ### Spell check
 
@@ -1035,7 +1035,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="org1fc53d1"></a>
+<a id="org1cbf763"></a>
 
 ### Non empty lines
 
@@ -1047,7 +1047,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="org7078e15"></a>
+<a id="orgbd795af"></a>
 
 ### Terminal
 
@@ -1056,7 +1056,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="org0bac3e4"></a>
+<a id="org63b917c"></a>
 
 ### Marks
 
@@ -1202,7 +1202,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org614c619"></a>
+<a id="org9bc8792"></a>
 
 ### Visual Mode
 
@@ -1249,7 +1249,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org4ad99b1"></a>
+<a id="org92cd735"></a>
 
 ### Registers and copy and paste
 
@@ -1409,6 +1409,8 @@ UNDOING, REPEATING & REGISTERS
 </tbody>
 </table>
 
+---
+
 Copying and Moving Text
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -1523,8 +1525,10 @@ Copying and Moving Text
 </tbody>
 </table>
 
+---
 
-<a id="org39ed8a2"></a>
+
+<a id="orgb8ed7b7"></a>
 
 ### Ex commands
 
@@ -1548,12 +1552,6 @@ EX COMMANDS (↵)
 <tr>
 <td class="org-left">:e!  f</td>
 <td class="org-left">edit file f always (by default reload current)</td>
-</tr>
-
-
-<tr>
-<td class="org-left">:wn :wN</td>
-<td class="org-left">write file and edit next, previous one</td>
 </tr>
 
 
@@ -1594,6 +1592,12 @@ EX COMMANDS (↵)
 
 
 <tr>
+<td class="org-left">:wn :wN</td>
+<td class="org-left">write file and edit next, previous one</td>
+</tr>
+
+
+<tr>
 <td class="org-left">&lt;up&gt; &lt;down&gt;</td>
 <td class="org-left">recall commands starting with current</td>
 </tr>
@@ -1623,6 +1627,58 @@ EX COMMANDS (↵)
 </tr>
 </tbody>
 </table>
+
+---
+
+SAVE ALL OPEN BUFFERS AT ONCE
+
+Vim can open multiple files, each in its own buffer. Here is how to save all changes and continue working, or save all changes and exit Vim. It is also possible to quit all (discard changes).
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">:wa</td>
+<td class="org-left">write all changed files (save all changes), and keep working</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:xa</td>
+<td class="org-left">exit all (save all changes and close Vim)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:wqa</td>
+<td class="org-left">same as :xa</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:qa</td>
+<td class="org-left">quit all (close Vim, but not if there are unsaved changes)</td>
+</tr>
+
+
+<tr>
+<td class="org-left">:qa!</td>
+<td class="org-left">quit all (close Vim without saving—discard any changes)</td>
+</tr>
+</tbody>
+</table>
+
+The :wa and :xa commands only write a file when its buffer has been changed. By contrast, the :w command always writes the current buffer to its file (use :update to save the current buffer only if it has been changed).
+
+Warning: If you enter :qa!, Vim will discard all changes without asking "are you sure?". 
+
+---
 
 EX RANGES
 
@@ -1678,8 +1734,10 @@ EX RANGES
 </tbody>
 </table>
 
+---
 
-<a id="org477c55b"></a>
+
+<a id="orgbd25d00"></a>
 
 ### Vim completion
 
@@ -1801,7 +1859,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org80c9349"></a>
+<a id="orgd295af1"></a>
 
 ### Word and text manipulation
 
@@ -2063,8 +2121,8 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     
     
     <tr>
-    <td class="org-left">:%s/{\<sub>s</sub>.*_<sub>text</sub>/{_<sub>text</sub>/g</td>
-    <td class="org-left">Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line. This looks for lines ending with "{" and a next line starting with the text (a wildcard) "_<sub>text</sub>" and joins them into a single line.</td>
+    <td class="org-left">:%s/{\(underscore)s.*(underscore)(underscore)text/{(underscore)(underscore)text/g</td>
+    <td class="org-left">Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line. This looks for lines ending with "{" and a next line starting with the text (a wildcard) "(underscore)(underscore)text" and joins them into a single line.</td>
     </tr>
     
     
@@ -2115,24 +2173,26 @@ Even if you're good at it, typing is still slower and more error-prone than not 
 
 4.  COUNTING WORDS OR PATTERNS
 
-    -   Count the number of occurrences of a word or pattern in the current file :
-    
-        (first use * on the word)
+    -   Count the number of occurrences of a word or pattern in the current file : 
         
-        after that, use the following command to get a count : %s///gn
-    
-    We are actually calling the :substitute command, but the n flag suppresses the usual behaviour.
-    Instead of replacing each match witht the target, it simply counts the number of matches and then echoes the result below the command line.
-    Do not omit any of the forward slashes.
-    g stands for global (in the curent file).
+            (first use * on the word)
+            
+            after that, use the following command to get a count : %s///gn
+        
+        We are actually calling the :substitute command, but the n flag suppresses the usual behaviour.
+        Instead of replacing each match witht the target, it simply counts the number of matches and then echoes the result below the command line.
+        Do not omit any of the forward slashes.
+        g stands for global (in the curent file).
     
     -   Find all occurrences of a word in the current file and populate the quickfix list window
-    
-        :vim /pattern/ % | cw
+        
+            :vim /pattern/ % | cw
     
     ---
     
-    ~ & - repeat last substitution on current line
+        ~ & -
+    
+    Repeat last substitution on current line
     
     ---
     
@@ -2149,7 +2209,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org1479dd7"></a>
+<a id="org9666ca0"></a>
 
 ### Working with multiple files
 
@@ -2173,9 +2233,9 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     
     To replace four white spaces in java files with a tab use this - :bufdo exexute "%s/    /(press tab)/g" | update
     
-    1.  :bufdo execute "%s/(press tab){/{/g" | update
-    2.  :bufdo execute "global/^{/normal -gJ" | update
-    3.  :bufdo execute "%s/){/) {/g" | update
+        1. :bufdo execute "%s/(press tab){/{/g" | update
+        1. :bufdo execute "global/^{/normal -gJ" | update
+        1. :bufdo execute "%s/){/) {/g" | update
     
     ---
 
@@ -2520,24 +2580,24 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org64703a0"></a>
+<a id="org01ac7f3"></a>
 
 ### Vim help
 
 Opening Vim help in a vertical split window
 
-:vertical (vert)
-
-:vert help
+    :vertical (vert)
+    
+    :vert help
 
 You can also control whether the window splits on the left/top or the right/bottom with topleft (to) and botright (bo). For example, to open help in the right window of a vertical split:
 
-:vert bo help
+    :vert bo help
 
 ---
 
 
-<a id="org61a1209"></a>
+<a id="org8faa2e6"></a>
 
 ### Key mappings and abbreviations
 
@@ -2596,7 +2656,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="orge59b132"></a>
+<a id="org69f8163"></a>
 
 ### Tags in Vim
 
@@ -2720,7 +2780,7 @@ Ctrl+Right MouseClick - Jump back from definition
 ---
 
 
-<a id="org29f82b2"></a>
+<a id="orgc477983"></a>
 
 ### Deleting
 
@@ -2775,13 +2835,9 @@ Deletion
 vim delete up until a word
 
     Put your cursor at the point you want to start at.
-    
     Make sure you're in command mode.
-    
     hit v to start a visual selection
-    
     then hit / and type the word you're looking for to select up to it, then press enter to make the selection
-    
     then hit d to delete the text 
 
 ---
@@ -2867,7 +2923,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="org4ce47c1"></a>
+<a id="orgdff4c08"></a>
 
 ### File comparison with Vim
 
@@ -2896,7 +2952,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="org8c02ab4"></a>
+<a id="org7d5e633"></a>
 
 ### Grep
 
@@ -2916,7 +2972,7 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="org39de0c2"></a>
+<a id="orgff67ea9"></a>
 
 ### Indentation
 
@@ -2948,7 +3004,7 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="org5fbc9e3"></a>
+<a id="org51056a2"></a>
 
 ### Line numbers
 
@@ -2961,7 +3017,7 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="orgb214f18"></a>
+<a id="orgda23732"></a>
 
 ### Lower case Upper case
 
@@ -2978,7 +3034,7 @@ Alternatively(easier to remember), you can visually select text then press ~ to 
 ---
 
 
-<a id="org55afd36"></a>
+<a id="org0c1c6e7"></a>
 
 ### Manual insertion of numbered lists
 
@@ -3005,7 +3061,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org8353687"></a>
+<a id="org701dff6"></a>
 
 ### Macros
 
@@ -3052,7 +3108,7 @@ For help, check: :help global.
 ---
 
 
-<a id="orge6bce02"></a>
+<a id="org99a7a8d"></a>
 
 ### Netrw
 
@@ -3276,7 +3332,7 @@ Further Reading
 ---
 
 
-<a id="org039129d"></a>
+<a id="org56bc5a4"></a>
 
 ### Packages and plugins
 
@@ -3298,7 +3354,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="org553ed32"></a>
+<a id="orgee08892"></a>
 
 ### git
 
@@ -3367,7 +3423,7 @@ change it to this to get the plugin's URL:
     ---
 
 
-<a id="org3654347"></a>
+<a id="orgabb2fcb"></a>
 
 ### Helpful links
 
@@ -3402,7 +3458,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="org802a022"></a>
+<a id="orgc8d136f"></a>
 
 ### Open questions
 
@@ -3419,7 +3475,7 @@ vimrc shortcut for finding and displaying all the occurences of a word
 ---
 
 
-<a id="orgb2d54f1"></a>
+<a id="org0a45917"></a>
 
 ### Research
 
@@ -3458,7 +3514,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="orgc9dfb3c"></a>
+<a id="org23a06ce"></a>
 
 ### Miscellaneous
 
@@ -3553,7 +3609,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="orgf381dca"></a>
+<a id="org0ab16cb"></a>
 
 ### Plugins
 
@@ -3898,4 +3954,115 @@ With Gvim, you cannot do that.
     The dp command normally only works in a two-way diff, as does do: the shorthand for diffget.To leave vimdiff mode, you just need to close the windows that are being compared. The quickest way to do this is to run :only from the window that you want to keep open.When you call :Gwrite from vimdiff mode, it writes the current file to the index and exits vimdiff mode.
     
     ---
+
+2.  fzf
+
+    ****How to search faster in Vim with FZF.vim****
+    
+    ****FZF syntax****
+    
+    Let's go over syntax so we can search more efficiently. Fortunately for us, there aren't many to learn.
+    
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">^</td>
+    <td class="org-left">prefix exact match. To search for phrase starting with "welcome", we do ^welcome.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">$</td>
+    <td class="org-left">suffix exact match. To search for phrase ending with "my friends", we do friends$.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">'</td>
+    <td class="org-left">n exact match. To search for phrase "welcome my friends", we do 'welcome my friends.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">(pipe)</td>
+    <td class="org-left">n "or" match. To search for either "friends" or "foes", we can use friends (pipe) foes.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">!</td>
+    <td class="org-left">n inverse match. To search for phrase containing "welcome" and not "friends", we can use welcome !friends</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    We can mix and match the above. For example, ^hello | ^welcome friends$ searches for phrase starting with either "welcome" or "hello" and ending with "friends".
+    
+    Side note: FZF.vim :Rg option also searches for file name in addition to the phrase. If you think this is an issue, check out this comment. I added this in my .vimrc:
+    
+        command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+    
+    With the above, every time we invoke Rg, FZF + ripgrep will not consider filename as a match in Vim.
+    
+    ****Replacing grep with rg****
+    
+    Internally, Vim has two ways to search in files: :vimgrep and :grep.
+    
+    :vimgrep uses vim's built-in grep and :grep uses external tool which you can reassign using 'grepprg'.
+    
+    For example, if we want to search for "iggy" with :grep, we can run :grep "iggy" . -R
+    
+    You may notice that Vim's :grep syntax is similar to terminal grep command; this is because :grep by default runs grep -n $\* /dev/null on unix-based machine.
+    
+    The command above will search for string "iggy" recursively (-R) from current location (.).
+    
+    Vim allows us to change the program used by :grep. We can tell Vim to use ripgrep instead of grep by adding this inside our vimrc:
+    
+        set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+    
+    Now when we run :grep inside Vim, it will run rg &#x2013;vimgrep &#x2013;smart-case &#x2013;follow instead.
+    
+    For more information what the options above mean, check out man rg.
+    
+    I can now run a more succinct command :grep "iggy" instead of :grep "iggy" . -R.
+    
+    Vim :grep command uses quickfix to display results. We can use :copen to display quickfix window and :cclose to close quickfix window. Try it!
+    
+    You might wonder, "Well, this is nice but I never used :grep in Vim, plus can't we just use :Rg to find string in files? When will I ever need to use :grep?"
+    
+    That is a very good question. The answer to "why do we need grep in Vim?" is that it will let us do what I'll going to cover next: search and replace in multiple files.
+    
+    ****Search and replace in multiple files****
+    
+    Modern text editors like VSCode makes it very easy to search and replace string across multiple files. If I may confess, in the beginning when I had to search/replace string in multiple files, I used VSCode because doing it in Vim, although possible, takes too long&#x2026; until now.
+    
+    I will show you two different tricks to easily do search and replace phrases across multiple files in Vim.
+    
+    The first method is to replace ALL matching phrases in our project. We will need to use :grep. Let's say you want to replace all instance of "pizza" with "donut". Here's what you do:
+    
+        :grep "pizza"
+        :cfdo %s/pizza/donut/g | update
+    
+    That's it? Yup! That's it. Let me break down the steps:
+    
+    1.  :grep pizza uses ripgrep to succinctly search for all instances of "pizza". By the way, this would still work even if we didn't reassign ripgrep to replace default grep. We would have to do :grep "pizza" . -R instead of :grep "pizza".
+    2.  We run :cfdo because :grep uses quickfix.:cfdo executes any command we pass (in this case, our command is %s/pizza/donut/g) on all entries in our quickfix list. To run multiple commands, we can chain it with pipe (|). The first command we are executing is pizza-donut substitution: %s/pizza/donut/g. The second command, update, saves each file after the first is finished.
+    
+    Let's discuss the second way.
+    
+    The second method is to search and replace in select multiple files instead of all files using buffers. Here we can choose which files we want to perform select and replace.
+    
+    1.  Clear our buffers (:Buffers) first. Our buffers list should contain only the needed files. We can clear it with %bd | e# | bd# (or restart Vim).
+    2.  Run :Files.
+    3.  Select all files you want to perform search and replace on. To select multiple files, use Tab / Shift+Tab. This is only possible if we have -m in FZF<sub>DEFAULT</sub><sub>OPTS</sub>.
+    4.  Run :bufdo %s/pizza/donut/g | update.
+    
+    Our command :bufdo %s/pizza/donut/g | update looks similar to :cfdo %s/pizza/donut/g | update. That's because they are. Instead of performing substitution on all quickfix (cfdo) entries, we perform our substitution on all buffer (bufdo) entries.
 
