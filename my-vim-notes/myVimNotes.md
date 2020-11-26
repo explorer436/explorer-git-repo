@@ -1,56 +1,56 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#orgdb5b277)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#orge7ac5e9)
-        1.  [Movement](#org7bf0ec1)
-        2.  [Scrolling](#org5430b59)
-        3.  [Folding](#orgd72216e)
-        4.  [Insertion & replace → insert mode](#org8e2f98f)
-        5.  [Search and Substitution](#org716322f)
-        6.  [Sorting](#org18eadec)
-        7.  [Spell check](#orgc2aa83f)
-        8.  [Non empty lines](#org10b4cbb)
-        9.  [Terminal](#orgfa3505c)
-        10. [Marks](#orga5f77c1)
-        11. [Visual Mode](#org3c4c7cb)
-        12. [Registers and copy and paste](#org952a0b1)
-        13. [Ex commands](#orgd4ff40c)
-        14. [Vim completion](#orgf8c05ad)
-        15. [Word and text manipulation](#org3c0c33c)
-        16. [Working with multiple files](#orgbdf57b2)
-        17. [Vim help](#orgaf6c29b)
-        18. [Key mappings and abbreviations](#org851d242)
-        19. [Tags in Vim](#orgd90c9ae)
-        20. [Deleting](#orgd47f997)
-        21. [File comparison with Vim](#org77ff889)
-        22. [Grep](#org9695de8)
-        23. [Indentation](#orgfb78e9d)
-        24. [Line numbers](#orgfc56fe8)
-        25. [Lower case Upper case](#org779bbc7)
-        26. [Manual insertion of numbered lists](#org31e8673)
-        27. [Macros](#org8f93ace)
-        28. [Netrw](#org536442e)
-        29. [Packages and plugins](#org19b3c8a)
-        30. [git](#org8cb9845)
-        31. [Helpful links](#orge76bd8d)
-        32. [Open questions](#org59e840c)
-        33. [Research](#orga65ca79)
-        34. [Miscellaneous](#org4e0c557)
-        35. [Plugins](#org7dcd61b)
+1.  [My Vim notes](#org116912b)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org00a7abf)
+        1.  [Movement](#orgcac3bbc)
+        2.  [Scrolling](#orgf788723)
+        3.  [Folding](#org624bc9c)
+        4.  [Insertion & replace → insert mode](#orgeb37102)
+        5.  [Search and Substitution](#orgb60e566)
+        6.  [Sorting](#orgcea9751)
+        7.  [Spell check](#orgffc25d2)
+        8.  [Non empty lines](#orge50cbec)
+        9.  [Terminal](#orgd9635d8)
+        10. [Marks](#org3167514)
+        11. [Visual Mode](#orga69d515)
+        12. [Registers and copy and paste](#org9eaa355)
+        13. [Ex commands](#org3ce58aa)
+        14. [Vim completion](#org388d381)
+        15. [Word and text manipulation](#org9007183)
+        16. [Working with multiple files](#orgae15b90)
+        17. [Vim help](#org0a98ae4)
+        18. [Key mappings and abbreviations](#org43f2d3a)
+        19. [Tags in Vim](#org902f555)
+        20. [Deleting](#org42d8db5)
+        21. [File comparison with Vim](#org5d4f66a)
+        22. [Grep](#org4cdb05a)
+        23. [Indentation](#org89b3c6d)
+        24. [Line numbers](#org6391688)
+        25. [Lower case Upper case](#org5c58a79)
+        26. [Manual insertion of numbered lists](#orge95581b)
+        27. [Macros](#org85fc66d)
+        28. [Netrw](#orgd3dc8dc)
+        29. [Packages and plugins](#org0e4f8b3)
+        30. [git](#orgc75f33a)
+        31. [Helpful links](#org2c89c17)
+        32. [Open questions](#orge480349)
+        33. [Research](#org72fb4f9)
+        34. [Miscellaneous](#orgd660d3d)
+        35. [Plugins](#org477de67)
 
 
-<a id="orgdb5b277"></a>
+<a id="org116912b"></a>
 
 # My Vim notes
 
 
-<a id="orge7ac5e9"></a>
+<a id="org00a7abf"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="org7bf0ec1"></a>
+<a id="orgcac3bbc"></a>
 
 ### Movement
 
@@ -293,7 +293,7 @@ Complex movement of the cursor:
 ---
 
 
-<a id="org5430b59"></a>
+<a id="orgf788723"></a>
 
 ### Scrolling
 
@@ -404,7 +404,7 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 ---
 
 
-<a id="orgd72216e"></a>
+<a id="org624bc9c"></a>
 
 ### Folding
 
@@ -457,7 +457,7 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 ---
 
 
-<a id="org8e2f98f"></a>
+<a id="orgeb37102"></a>
 
 ### Insertion & replace → insert mode
 
@@ -724,7 +724,7 @@ ADVANCED INSERTION
 </table>
 
 
-<a id="org716322f"></a>
+<a id="orgb60e566"></a>
 
 ### Search and Substitution
 
@@ -969,7 +969,7 @@ OFFSETS IN SEARCH COMMANDS
 ---
 
 
-<a id="org18eadec"></a>
+<a id="orgcea9751"></a>
 
 ### Sorting
 
@@ -1008,7 +1008,7 @@ If you want to dig deeper into the sort functionality:
 ---
 
 
-<a id="orgc2aa83f"></a>
+<a id="orgffc25d2"></a>
 
 ### Spell check
 
@@ -1035,7 +1035,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="org10b4cbb"></a>
+<a id="orge50cbec"></a>
 
 ### Non empty lines
 
@@ -1047,7 +1047,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="orgfa3505c"></a>
+<a id="orgd9635d8"></a>
 
 ### Terminal
 
@@ -1056,7 +1056,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="orga5f77c1"></a>
+<a id="org3167514"></a>
 
 ### Marks
 
@@ -1202,7 +1202,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org3c4c7cb"></a>
+<a id="orga69d515"></a>
 
 ### Visual Mode
 
@@ -1249,7 +1249,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org952a0b1"></a>
+<a id="org9eaa355"></a>
 
 ### Registers and copy and paste
 
@@ -1524,7 +1524,7 @@ Copying and Moving Text
 </table>
 
 
-<a id="orgd4ff40c"></a>
+<a id="org3ce58aa"></a>
 
 ### Ex commands
 
@@ -1679,7 +1679,7 @@ EX RANGES
 </table>
 
 
-<a id="orgf8c05ad"></a>
+<a id="org388d381"></a>
 
 ### Vim completion
 
@@ -1801,7 +1801,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org3c0c33c"></a>
+<a id="org9007183"></a>
 
 ### Word and text manipulation
 
@@ -1811,10 +1811,33 @@ Even if you're good at it, typing is still slower and more error-prone than not 
 
     Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
     
-    // TODO change this into a table.
-    To append something to a word (at the end of the word) - ea
-    To delete a word along with the whitespace after the word - dw (vw to select in visual mode)
-    To delete a word but not the the whitespace after the word - de (ve to select in visual mode)
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-left">ea</td>
+    <td class="org-left">To append something to a word (at the end of the word)</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">dw (vw to select in visual mode)</td>
+    <td class="org-left">To delete a word along with the whitespace after the word</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">de (ve to select in visual mode)</td>
+    <td class="org-left">To delete a word but not the the whitespace after the word</td>
+    </tr>
+    </tbody>
+    </table>
 
 2.  TEXT SELECTION :
 
@@ -1867,6 +1890,21 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     This vi command replaces every occurrence of ABC with XYZ on every line, and even when there are multiple occurrences on a line.
     Note that in this example, the "g" character at the end of the command means "global".
     If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
+    
+    ---
+    
+    How to select a word within Vim and replace it with something else?
+    
+    (a quick search on the internet shows many ways to do this. but here is a simple way to do it)
+    
+    \`:%s//bar/g\`
+        Replace each match of the last search pattern with 'bar'. 
+        For example, you might first place the cursor on the word foo then press \* to search for that word. 
+        The above substitute would then change all words exactly matching 'foo' to 'bar'.
+    
+    Refer to [this page](<https://vim.fandom.com/wiki/Search_and_replace#substitute_last_search>) for more examples
+    
+    ---
     
         / : Search
         */# : Search forward/back for word under cursor
@@ -2028,62 +2066,69 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     <td class="org-left">:%s/{\<sub>s</sub>.*_<sub>text</sub>/{_<sub>text</sub>/g</td>
     <td class="org-left">Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line. This looks for lines ending with "{" and a next line starting with the text (a wildcard) "_<sub>text</sub>" and joins them into a single line.</td>
     </tr>
+    
+    
+    <tr>
+    <td class="org-left">:%s/' ,/',\r/g</td>
+    <td class="org-left">Replace each "' }," in the current file by a new line</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:{\(underscore)$\(underscore)s*(underscore)(underscore)prefix</td>
+    <td class="org-left">This searches for lines ending with `{` and a subsequent line starting with `(underscore)(underscore)prefix`.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:',\(underscore)$\(underscore)s*(underscore)(underscore)text</td>
+    <td class="org-left">This searches for lines ending with `',` and a subsequent line starting with `(underscore)(underscore)text`.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:%s/',\(underscore)$\(underscore)s*(underscore)(underscore)text/',(underscore)(underscore)text/g</td>
+    <td class="org-left">This searches for lines ending with `',` and a subsequent line starting with `(underscore)(underscore)text` and joins the two lines together.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:%s/{\(underscore)$\(underscore)s*(underscore)(underscore)prefix/{(underscore)(underscore)prefix\g</td>
+    <td class="org-left">This searches for lines ending with `{` and a subsequent line starting with `(underscore)(underscore)prefix` and joins the two lines together.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:g/.*(underscore)(underscore)prefix.*(underscore)(underscore)text.* },\(underscore)$/normal! @a</td>
+    <td class="org-left">Record a macro in register a and play it on a pattern match.</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">:g/pattern to match/ s/text to search/text to replace/gc</td>
+    <td class="org-left">How to mix global command and replace command? Using the above command or variants of it, we can search for patterns in the entire file and do replace operations on those specific lines.</td>
+    </tr>
     </tbody>
     </table>
     
     ---
-    
-    \`:%s/' ,/',\r/g\` - Replace each \`' },\` in the current file by a new line. 
-    
-    ---
-    
-    \`:{\\\_$\\<sub>s</sub>\*\_<sub>prefix</sub>\` - This searches for lines ending with \`{\` and a subsequent line starting with \`\_<sub>prefix</sub>\`. 
-    
-    \`:',\\\_$\\<sub>s</sub>\*\_<sub>text</sub>\` - This searches for lines ending with \`',\` and a subsequent line starting with \`\_<sub>text</sub>\`.
-    
-    \`:%s/',\\\_$\\<sub>s</sub>\*\_<sub>text</sub>/',\_<sub>text</sub>/g\` - This searches for lines ending with \`',\` and a subsequent line starting with \`\_<sub>text</sub>\` and joins the two lines together.
-    
-    \`:%s/{\\\_$\\<sub>s</sub>\*\_<sub>prefix</sub>/{\_<sub>prefix\g</sub>\` - This searches for lines ending with \`{\` and a subsequent line starting with \`\_<sub>prefix</sub>\` and joins the two lines together.
-    
-    \`:g/.\*\_<sub>prefix</sub>.\*\_<sub>text</sub>.\* },\\\_$/normal! @a\` - Record a macro in register a and play it on a pattern match.
-    
-    ---
-    
-    How to mix global command and replace command : 
-    
-    \`:g/pattern<sub>to</sub><sub>match</sub>/ s/text<sub>to</sub><sub>search</sub>/text<sub>to</sub><sub>replace</sub>/gc\`
-    
-    Using the above command or variants of it, we can search for patterns in the entire file and do replace operations on those specific lines.
-    
-    ---
-    
-    How to select a word within Vim and replace it with something else?
-    
-    (a quick search on the internet shows many ways to do this. but here is a simple way to do it)
-    
-    \`:%s//bar/g\`
-        Replace each match of the last search pattern with 'bar'. 
-        For example, you might first place the cursor on the word foo then press \* to search for that word. 
-        The above substitute would then change all words exactly matching 'foo' to 'bar'.
-    
-    Refer to [this page](<https://vim.fandom.com/wiki/Search_and_replace#substitute_last_search>) for more examples
 
 4.  COUNTING WORDS OR PATTERNS
 
-    -   Count the number of occurrences of a word or pattern in the current file : 
+    -   Count the number of occurrences of a word or pattern in the current file :
+    
+        (first use * on the word)
         
-        (first use \* on the word)
-        
-        after that, use the following command to get a count : \`%s///gn\`
-        
-        We are actually calling the :substitute command, but the n flag suppresses the usual behaviour.
-        Instead of replacing each match witht the target, it simply counts the number of matches and then echoes the result below the command line.
-        Do not omit any of the forward slashes.
-        g stands for global (in the curent file).
+        after that, use the following command to get a count : %s///gn
+    
+    We are actually calling the :substitute command, but the n flag suppresses the usual behaviour.
+    Instead of replacing each match witht the target, it simply counts the number of matches and then echoes the result below the command line.
+    Do not omit any of the forward slashes.
+    g stands for global (in the curent file).
     
     -   Find all occurrences of a word in the current file and populate the quickfix list window
-        
-        \`:vim *pattern* % | cw\`
+    
+        :vim /pattern/ % | cw
     
     ---
     
@@ -2093,16 +2138,18 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     
     Insert mode tips :
     
-    gi - (incredibly handy) - goes to Insert mode where you left it last time
+        gi - (incredibly handy) - goes to Insert mode where you left it last time
+    
     e.g. scenario: edit something, exit Insert, go look at something else, then gi back to restart editing
     
-    CTRL-T and CTRL-D (tab and de-tab)
+        CTRL-T and CTRL-D (tab and de-tab)
+    
     inserts or deletes one shiftwidth of indent at the start of the line
     
     ---
 
 
-<a id="orgbdf57b2"></a>
+<a id="orgae15b90"></a>
 
 ### Working with multiple files
 
@@ -2473,7 +2520,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="orgaf6c29b"></a>
+<a id="org0a98ae4"></a>
 
 ### Vim help
 
@@ -2490,7 +2537,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org851d242"></a>
+<a id="org43f2d3a"></a>
 
 ### Key mappings and abbreviations
 
@@ -2549,7 +2596,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="orgd90c9ae"></a>
+<a id="org902f555"></a>
 
 ### Tags in Vim
 
@@ -2673,7 +2720,7 @@ Ctrl+Right MouseClick - Jump back from definition
 ---
 
 
-<a id="orgd47f997"></a>
+<a id="org42d8db5"></a>
 
 ### Deleting
 
@@ -2820,7 +2867,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="org77ff889"></a>
+<a id="org5d4f66a"></a>
 
 ### File comparison with Vim
 
@@ -2849,7 +2896,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="org9695de8"></a>
+<a id="org4cdb05a"></a>
 
 ### Grep
 
@@ -2869,7 +2916,7 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="orgfb78e9d"></a>
+<a id="org89b3c6d"></a>
 
 ### Indentation
 
@@ -2901,7 +2948,7 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="orgfc56fe8"></a>
+<a id="org6391688"></a>
 
 ### Line numbers
 
@@ -2914,7 +2961,7 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="org779bbc7"></a>
+<a id="org5c58a79"></a>
 
 ### Lower case Upper case
 
@@ -2931,7 +2978,7 @@ Alternatively(easier to remember), you can visually select text then press ~ to 
 ---
 
 
-<a id="org31e8673"></a>
+<a id="orge95581b"></a>
 
 ### Manual insertion of numbered lists
 
@@ -2958,7 +3005,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org8f93ace"></a>
+<a id="org85fc66d"></a>
 
 ### Macros
 
@@ -3005,7 +3052,7 @@ For help, check: :help global.
 ---
 
 
-<a id="org536442e"></a>
+<a id="orgd3dc8dc"></a>
 
 ### Netrw
 
@@ -3229,7 +3276,7 @@ Further Reading
 ---
 
 
-<a id="org19b3c8a"></a>
+<a id="org0e4f8b3"></a>
 
 ### Packages and plugins
 
@@ -3251,7 +3298,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="org8cb9845"></a>
+<a id="orgc75f33a"></a>
 
 ### git
 
@@ -3320,7 +3367,7 @@ change it to this to get the plugin's URL:
     ---
 
 
-<a id="orge76bd8d"></a>
+<a id="org2c89c17"></a>
 
 ### Helpful links
 
@@ -3355,7 +3402,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="org59e840c"></a>
+<a id="orge480349"></a>
 
 ### Open questions
 
@@ -3372,7 +3419,7 @@ vimrc shortcut for finding and displaying all the occurences of a word
 ---
 
 
-<a id="orga65ca79"></a>
+<a id="org72fb4f9"></a>
 
 ### Research
 
@@ -3411,7 +3458,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="org4e0c557"></a>
+<a id="orgd660d3d"></a>
 
 ### Miscellaneous
 
@@ -3506,7 +3553,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="org7dcd61b"></a>
+<a id="org477de67"></a>
 
 ### Plugins
 

@@ -535,10 +535,9 @@ EX RANGES
      
      Quickly change word or line : To quickly change a word you can use cw,caw (change a word) or ciw (change in word). Use c$ or just C to quickly change from the cursor to the end of a line, cc to change an entire line, or cis (change in sentense) for a sentence
      
-     // TODO change this into a table.
-     To append something to a word (at the end of the word) - ea
-     To delete a word along with the whitespace after the word - dw (vw to select in visual mode)
-     To delete a word but not the the whitespace after the word - de (ve to select in visual mode)
+     | ea                               | To append something to a word (at the end of the word)     |
+     | dw (vw to select in visual mode) | To delete a word along with the whitespace after the word  |
+     | de (ve to select in visual mode) | To delete a word but not the the whitespace after the word |
      
 **** TEXT SELECTION :
      
@@ -563,6 +562,20 @@ EX RANGES
      Note that in this example, the "g" character at the end of the command means "global".
      If you don't use this "g" the tab character will only be replaced the first time it is seen on a line, but if you add the "g" at the end of the command every tab character in each line will be replaced.
      
+     -------------------------------------------------------------
+
+     How to select a word within Vim and replace it with something else?
+     
+     (a quick search on the internet shows many ways to do this. but here is a simple way to do it)
+     
+     `:%s//bar/g`
+         Replace each match of the last search pattern with 'bar'. 
+         For example, you might first place the cursor on the word foo then press * to search for that word. 
+         The above substitute would then change all words exactly matching 'foo' to 'bar'.
+         
+     Refer to [this page](https://vim.fandom.com/wiki/Search_and_replace#substitute_last_search) for more examples
+
+     -------------------------------------------------------------
     #+BEGIN_EXAMPLE
      / : Search
      */# : Search forward/back for word under cursor
@@ -592,62 +605,39 @@ EX RANGES
      
      -----------------------------------------------------------
 
-     | :g/<pattern>/j                        | To join lines within a pattern                                    |
-     | :g/.*(underscore)(underscore)text.*/j | To join the subsequent line with a line containing a certain text |
-     |:%s/{\_s.*__text/{__text/g|  Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line. This looks for lines ending with "{" and a next line starting with the text (a wildcard) "__text" and joins them into a single line.|
-     
-     -----------------------------------------------------------
-     `:%s/' ,/',\r/g` - Replace each `' },` in the current file by a new line. 
-     
-     -----------------------------------------------------------
-     `:{\_$\_s*__prefix` - This searches for lines ending with `{` and a subsequent line starting with `__prefix`. 
-     
-     `:',\_$\_s*__text` - This searches for lines ending with `',` and a subsequent line starting with `__text`.
-     
-     `:%s/',\_$\_s*__text/',__text/g` - This searches for lines ending with `',` and a subsequent line starting with `__text` and joins the two lines together.
-     
-     `:%s/{\_$\_s*__prefix/{__prefix\g` - This searches for lines ending with `{` and a subsequent line starting with `__prefix` and joins the two lines together.
-     
-     `:g/.*__prefix.*__text.* },\_$/normal! @a` - Record a macro in register a and play it on a pattern match.
-     
-     -----------------------------------------------------------
-     How to mix global command and replace command : 
-     
-     `:g/pattern_to_match/ s/text_to_search/text_to_replace/gc`
-     
-     Using the above command or variants of it, we can search for patterns in the entire file and do replace operations on those specific lines.
+     | :g/<pattern>/j                                                                                     | To join lines within a pattern                                                                                                                                                                                                        |
+     | :g/.*(underscore)(underscore)text.*/j                                                              | To join the subsequent line with a line containing a certain text                                                                                                                                                                     |
+     | :%s/{\_s.*__text/{__text/g                                                                         | Join two lines with a pattern ending on one line and a pattern beginning on the subsequent line. This looks for lines ending with "{" and a next line starting with the text (a wildcard) "__text" and joins them into a single line. |
+     | :%s/' ,/',\r/g                                                                                     | Replace each "' }," in the current file by a new line                                                                                                                                                                                 |
+     | :{\(underscore)$\(underscore)s*(underscore)(underscore)prefix                                      | This searches for lines ending with `{` and a subsequent line starting with `(underscore)(underscore)prefix`.                                                                                                                         |
+     | :',\(underscore)$\(underscore)s*(underscore)(underscore)text                                       | This searches for lines ending with `',` and a subsequent line starting with `(underscore)(underscore)text`.                                                                                                                          |
+     | :%s/',\(underscore)$\(underscore)s*(underscore)(underscore)text/',(underscore)(underscore)text/g   | This searches for lines ending with `',` and a subsequent line starting with `(underscore)(underscore)text` and joins the two lines together.                                                                                         |
+     | :%s/{\(underscore)$\(underscore)s*(underscore)(underscore)prefix/{(underscore)(underscore)prefix\g | This searches for lines ending with `{` and a subsequent line starting with `(underscore)(underscore)prefix` and joins the two lines together.                                                                                        |
+     | :g/.*(underscore)(underscore)prefix.*(underscore)(underscore)text.* },\(underscore)$/normal! @a    | Record a macro in register a and play it on a pattern match.                                                                                                                                                                          |
+     | :g/pattern to match/ s/text to search/text to replace/gc                                           | How to mix global command and replace command? Using the above command or variants of it, we can search for patterns in the entire file and do replace operations on those specific lines.                                            |
      
      -------------------------------------------------------------
-     How to select a word within Vim and replace it with something else?
-     
-     (a quick search on the internet shows many ways to do this. but here is a simple way to do it)
-     
-     `:%s//bar/g`
-         Replace each match of the last search pattern with 'bar'. 
-         For example, you might first place the cursor on the word foo then press * to search for that word. 
-         The above substitute would then change all words exactly matching 'foo' to 'bar'.
-         
-     Refer to [this page](https://vim.fandom.com/wiki/Search_and_replace#substitute_last_search) for more examples
-     
+
 **** COUNTING WORDS OR PATTERNS
-     
      
      * Count the number of occurrences of a word or pattern in the current file : 
      
+    #+BEGIN_EXAMPLE
          (first use * on the word)
      
-         after that, use the following command to get a count : `%s///gn`
+         after that, use the following command to get a count : %s///gn
+    #+END_EXAMPLE
      
          We are actually calling the :substitute command, but the n flag suppresses the usual behaviour.
          Instead of replacing each match witht the target, it simply counts the number of matches and then echoes the result below the command line.
          Do not omit any of the forward slashes.
          g stands for global (in the curent file).
      
-     
-     
      * Find all occurrences of a word in the current file and populate the quickfix list window
      
-         `:vim /pattern/ % | cw`
+    #+BEGIN_EXAMPLE
+         :vim /pattern/ % | cw
+    #+END_EXAMPLE
      
      ------------------------------------------------
      
@@ -657,10 +647,14 @@ EX RANGES
      
      Insert mode tips :
      
+    #+BEGIN_EXAMPLE
      gi - (incredibly handy) - goes to Insert mode where you left it last time
+    #+END_EXAMPLE
      e.g. scenario: edit something, exit Insert, go look at something else, then gi back to restart editing
      
+    #+BEGIN_EXAMPLE
      CTRL-T and CTRL-D (tab and de-tab)
+    #+END_EXAMPLE
      inserts or deletes one shiftwidth of indent at the start of the line
 
    ------------------------------------------
