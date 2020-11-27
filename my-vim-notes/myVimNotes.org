@@ -1596,11 +1596,11 @@ The result looks like this:
 |           |              |            |
 +-----------+--------------+------------+
 
-The stuff inside the brackets are the 'revision' specifiers that fugitive.vim understands in this context. See :h fugitive-revision for more information.
+The stuff inside the brackets are the 'revision' specifiers that fugitive.vim understands in this context.
 
+See :h fugitive-revision for more information.
 
-
-   ------------------------------------------
+------------------------------------------
 
 **** fzf
 
