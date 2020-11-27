@@ -45,6 +45,10 @@
     "Run internal vim terminal at current file's directory
     map <F6> :let $VIM_DIR=expand('%:p:h')<CR>:terminal<CR>cd $VIM_DIR<CR> 
 "------------------------------
+" FZF.vim :Rg option also searches for file name in addition to the phrase. If you think this is an issue, use the command below to change the behavior:
+" With this command, every time we invoke Rg, FZF + ripgrep will not consider filename as a match in Vim.
+command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+"------------------------------
     " This requires NertTree plugin
     "increase the size of the NerdTree width
     let g:NERDTreeWinSize = 60 

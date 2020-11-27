@@ -1,56 +1,56 @@
 
 # Table of Contents
 
-1.  [My Vim notes](#org9493041)
-    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#org2b63779)
-        1.  [Movement](#orga5464bc)
-        2.  [Scrolling](#orgf51bec1)
-        3.  [Folding](#org84ba8b2)
-        4.  [Insertion & replace → insert mode](#org209cc6f)
-        5.  [Search and Substitution](#org52dd884)
-        6.  [Sorting](#org5148596)
-        7.  [Spell check](#org5d4d8ca)
-        8.  [Non empty lines](#org1cbf763)
-        9.  [Terminal](#orgbd795af)
-        10. [Marks](#org63b917c)
-        11. [Visual Mode](#org9bc8792)
-        12. [Registers and copy and paste](#org92cd735)
-        13. [Ex commands](#orgb8ed7b7)
-        14. [Vim completion](#orgbd25d00)
-        15. [Word and text manipulation](#orgd295af1)
-        16. [Working with multiple files](#org9666ca0)
-        17. [Vim help](#org01ac7f3)
-        18. [Key mappings and abbreviations](#org8faa2e6)
-        19. [Tags in Vim](#org69f8163)
-        20. [Deleting](#orgc477983)
-        21. [File comparison with Vim](#orgdff4c08)
-        22. [Grep](#org7d5e633)
-        23. [Indentation](#orgff67ea9)
-        24. [Line numbers](#org51056a2)
-        25. [Lower case Upper case](#orgda23732)
-        26. [Manual insertion of numbered lists](#org0c1c6e7)
-        27. [Macros](#org701dff6)
-        28. [Netrw](#org99a7a8d)
-        29. [Packages and plugins](#org56bc5a4)
-        30. [git](#orgee08892)
-        31. [Helpful links](#orgabb2fcb)
-        32. [Open questions](#orgc8d136f)
-        33. [Research](#org0a45917)
-        34. [Miscellaneous](#org23a06ce)
-        35. [Plugins](#org0ab16cb)
+1.  [My Vim notes](#orgf95e39c)
+    1.  [Helpful tips related to configuration and other things related to Vim that I find useful.](#orgd5e1a12)
+        1.  [Movement](#org201b644)
+        2.  [Scrolling](#org8ecfbb0)
+        3.  [Folding](#org3592d66)
+        4.  [Insertion & replace → insert mode](#orgc528122)
+        5.  [Search and Substitution](#org1cea5ad)
+        6.  [Sorting](#org474691f)
+        7.  [Spell check](#orgedfb832)
+        8.  [Non empty lines](#org3d4e0f2)
+        9.  [Terminal](#org5c9bdfb)
+        10. [Marks](#orgcf5a0b6)
+        11. [Visual Mode](#org1b07ae8)
+        12. [Registers and copy and paste](#org95ce9ba)
+        13. [Ex commands](#orgad2981a)
+        14. [Vim completion](#org92eef45)
+        15. [Word and text manipulation](#orgd90aa70)
+        16. [Working with multiple files](#orga4b0ecf)
+        17. [Vim help](#orgce9a3e4)
+        18. [Key mappings and abbreviations](#orge568988)
+        19. [Tags in Vim](#org1159d04)
+        20. [Deleting](#org3a58cf2)
+        21. [File comparison with Vim](#orgfc22721)
+        22. [Grep](#orgfba5397)
+        23. [Indentation](#org19679a8)
+        24. [Line numbers](#orgcc55a4d)
+        25. [Lower case Upper case](#orgd615c64)
+        26. [Manual insertion of numbered lists](#orgea762c4)
+        27. [Macros](#org29fefdc)
+        28. [Netrw](#org12b12c7)
+        29. [Packages and plugins](#orgdfb1925)
+        30. [git](#org853a8ee)
+        31. [Helpful links](#orgd9e7216)
+        32. [Open questions](#orgf9ab1ca)
+        33. [Research](#orgd2aa6cd)
+        34. [Miscellaneous](#orgfa218eb)
+        35. [Plugins](#org0b66e59)
 
 
-<a id="org9493041"></a>
+<a id="orgf95e39c"></a>
 
 # My Vim notes
 
 
-<a id="org2b63779"></a>
+<a id="orgd5e1a12"></a>
 
 ## Helpful tips related to configuration and other things related to Vim that I find useful.
 
 
-<a id="orga5464bc"></a>
+<a id="org201b644"></a>
 
 ### Movement
 
@@ -293,7 +293,7 @@ Complex movement of the cursor:
 ---
 
 
-<a id="orgf51bec1"></a>
+<a id="org8ecfbb0"></a>
 
 ### Scrolling
 
@@ -404,7 +404,7 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 ---
 
 
-<a id="org84ba8b2"></a>
+<a id="org3592d66"></a>
 
 ### Folding
 
@@ -457,7 +457,7 @@ To leave the cursor in the same column when you use Ctrl+D, Ctrl+F, Ctrl+B, Ctrl
 ---
 
 
-<a id="org209cc6f"></a>
+<a id="orgc528122"></a>
 
 ### Insertion & replace → insert mode
 
@@ -724,7 +724,7 @@ ADVANCED INSERTION
 </table>
 
 
-<a id="org52dd884"></a>
+<a id="org1cea5ad"></a>
 
 ### Search and Substitution
 
@@ -969,7 +969,7 @@ OFFSETS IN SEARCH COMMANDS
 ---
 
 
-<a id="org5148596"></a>
+<a id="org474691f"></a>
 
 ### Sorting
 
@@ -1008,7 +1008,7 @@ If you want to dig deeper into the sort functionality:
 ---
 
 
-<a id="org5d4d8ca"></a>
+<a id="orgedfb832"></a>
 
 ### Spell check
 
@@ -1035,7 +1035,7 @@ Vim scans backward from the cursor position, stopping when it finds a mis-spelt 
 ---
 
 
-<a id="org1cbf763"></a>
+<a id="org3d4e0f2"></a>
 
 ### Non empty lines
 
@@ -1047,7 +1047,7 @@ To do something only to the visually selected non-empty lines, use the same appr
 ---
 
 
-<a id="orgbd795af"></a>
+<a id="org5c9bdfb"></a>
 
 ### Terminal
 
@@ -1056,7 +1056,7 @@ Launch terminal from within Vim using \`:term\`
 ---
 
 
-<a id="org63b917c"></a>
+<a id="orgcf5a0b6"></a>
 
 ### Marks
 
@@ -1202,7 +1202,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org9bc8792"></a>
+<a id="org1b07ae8"></a>
 
 ### Visual Mode
 
@@ -1249,7 +1249,7 @@ MARKS AND MOTIONS
 ---
 
 
-<a id="org92cd735"></a>
+<a id="org95ce9ba"></a>
 
 ### Registers and copy and paste
 
@@ -1528,7 +1528,7 @@ Copying and Moving Text
 ---
 
 
-<a id="orgb8ed7b7"></a>
+<a id="orgad2981a"></a>
 
 ### Ex commands
 
@@ -1737,7 +1737,7 @@ EX RANGES
 ---
 
 
-<a id="orgbd25d00"></a>
+<a id="org92eef45"></a>
 
 ### Vim completion
 
@@ -1859,7 +1859,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="orgd295af1"></a>
+<a id="orgd90aa70"></a>
 
 ### Word and text manipulation
 
@@ -2209,7 +2209,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org9666ca0"></a>
+<a id="orga4b0ecf"></a>
 
 ### Working with multiple files
 
@@ -2580,7 +2580,7 @@ Even if you're good at it, typing is still slower and more error-prone than not 
     ---
 
 
-<a id="org01ac7f3"></a>
+<a id="orgce9a3e4"></a>
 
 ### Vim help
 
@@ -2597,7 +2597,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org8faa2e6"></a>
+<a id="orge568988"></a>
 
 ### Key mappings and abbreviations
 
@@ -2656,7 +2656,7 @@ You can also control whether the window splits on the left/top or the right/bott
 ---
 
 
-<a id="org69f8163"></a>
+<a id="org1159d04"></a>
 
 ### Tags in Vim
 
@@ -2780,7 +2780,7 @@ Ctrl+Right MouseClick - Jump back from definition
 ---
 
 
-<a id="orgc477983"></a>
+<a id="org3a58cf2"></a>
 
 ### Deleting
 
@@ -2923,7 +2923,7 @@ The following command deletes any trailing whitespace at the end of each line. I
 ---
 
 
-<a id="orgdff4c08"></a>
+<a id="orgfc22721"></a>
 
 ### File comparison with Vim
 
@@ -2952,7 +2952,7 @@ diffsplit does a diff, and splits the files and scrolls locks them.
 ---
 
 
-<a id="org7d5e633"></a>
+<a id="orgfba5397"></a>
 
 ### Grep
 
@@ -2972,7 +2972,7 @@ How to exclude one specific folder or a list of folders from the search results?
 ---
 
 
-<a id="orgff67ea9"></a>
+<a id="org19679a8"></a>
 
 ### Indentation
 
@@ -3004,7 +3004,7 @@ What you've done is replace the beginning of each selected line (the ^ symbol me
 ---
 
 
-<a id="org51056a2"></a>
+<a id="orgcc55a4d"></a>
 
 ### Line numbers
 
@@ -3017,7 +3017,7 @@ Relative Line Numbers : To display line numbers relative to the line with the cu
 ---
 
 
-<a id="orgda23732"></a>
+<a id="orgd615c64"></a>
 
 ### Lower case Upper case
 
@@ -3034,7 +3034,7 @@ Alternatively(easier to remember), you can visually select text then press ~ to 
 ---
 
 
-<a id="org0c1c6e7"></a>
+<a id="orgea762c4"></a>
 
 ### Manual insertion of numbered lists
 
@@ -3061,7 +3061,7 @@ To add some characters (., :, )) after the numbers, select them in visual block 
 ---
 
 
-<a id="org701dff6"></a>
+<a id="org29fefdc"></a>
 
 ### Macros
 
@@ -3108,7 +3108,7 @@ For help, check: :help global.
 ---
 
 
-<a id="org99a7a8d"></a>
+<a id="org12b12c7"></a>
 
 ### Netrw
 
@@ -3332,7 +3332,7 @@ Further Reading
 ---
 
 
-<a id="org56bc5a4"></a>
+<a id="orgdfb1925"></a>
 
 ### Packages and plugins
 
@@ -3354,7 +3354,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="orgee08892"></a>
+<a id="org853a8ee"></a>
 
 ### git
 
@@ -3423,7 +3423,7 @@ change it to this to get the plugin's URL:
     ---
 
 
-<a id="orgabb2fcb"></a>
+<a id="orgd9e7216"></a>
 
 ### Helpful links
 
@@ -3458,7 +3458,7 @@ change it to this to get the plugin's URL:
 ---
 
 
-<a id="orgc8d136f"></a>
+<a id="orgf9ab1ca"></a>
 
 ### Open questions
 
@@ -3475,7 +3475,7 @@ vimrc shortcut for finding and displaying all the occurences of a word
 ---
 
 
-<a id="org0a45917"></a>
+<a id="orgd2aa6cd"></a>
 
 ### Research
 
@@ -3514,7 +3514,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="org23a06ce"></a>
+<a id="orgfa218eb"></a>
 
 ### Miscellaneous
 
@@ -3609,7 +3609,7 @@ With Gvim, you cannot do that.
 ---
 
 
-<a id="org0ab16cb"></a>
+<a id="org0b66e59"></a>
 
 ### Plugins
 
@@ -3953,6 +3953,52 @@ With Gvim, you cannot do that.
     
     The dp command normally only works in a two-way diff, as does do: the shorthand for diffget.To leave vimdiff mode, you just need to close the windows that are being compared. The quickest way to do this is to run :only from the window that you want to keep open.When you call :Gwrite from vimdiff mode, it writes the current file to the index and exits vimdiff mode.
     
+    ****Show base in fugitive.vim conflict diff****
+    
+    By default if you use fugitive.vim's :Gdiff on a file buffer which is in conflict with git, you will get a three way diff showing HEAD, the working copy (with conflict markers), and the merge.
+    
+    I like to have git config merge.conflictstyle diff3 set, which includes the base (most recent common ancestor of HEAD and merge in the conflict markers.
+    
+    Unfortunately even with diff3 as the conflictstyle in fugitive.vim you still only get 3 panes (no base).
+    
+    Does anyone know how to make show it in another pane? Ideally about the working copy.
+    
+    The quickest way I know of is this command, issued in the conflicted buffer:
+    
+        :Gsdiff :1 | Gvdiff
+    
+    You must enter these commands as a one-liner, the effect is different when you enter them as two separate commands.
+    
+    The result looks like this:
+    
+    <!-- This HTML table template is generated by emacs 27.1 -->
+    <table border="1">
+      <tr>
+        <td colspan="3" align="left" valign="top">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;common&nbsp;ancestor&nbsp;(:1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+      </tr>
+      <tr>
+        <td align="left" valign="top">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+          &nbsp;HEAD&nbsp;(:2)&nbsp;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td align="left" valign="top">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+          &nbsp;working&nbsp;copy&nbsp;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td align="left" valign="top">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+          &nbsp;merge&nbsp;(:3)&nbsp;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+      </tr>
+    </table>
+    
+    The stuff inside the brackets are the 'revision' specifiers that fugitive.vim understands in this context. See :h fugitive-revision for more information.
+    
     ---
 
 2.  fzf
@@ -4021,7 +4067,7 @@ With Gvim, you cannot do that.
     
     You may notice that Vim's :grep syntax is similar to terminal grep command; this is because :grep by default runs grep -n $\* /dev/null on unix-based machine.
     
-    The command above will search for string "iggy" recursively (-R) from current location (.).
+    The command above will search for the string "iggy" recursively (-R) from current location (.).
     
     Vim allows us to change the program used by :grep. We can tell Vim to use ripgrep instead of grep by adding this inside our vimrc:
     
@@ -4029,7 +4075,7 @@ With Gvim, you cannot do that.
     
     Now when we run :grep inside Vim, it will run rg &#x2013;vimgrep &#x2013;smart-case &#x2013;follow instead.
     
-    For more information what the options above mean, check out man rg.
+    For more information about what the options above mean, check out man rg.
     
     I can now run a more succinct command :grep "iggy" instead of :grep "iggy" . -R.
     
@@ -4037,7 +4083,7 @@ With Gvim, you cannot do that.
     
     You might wonder, "Well, this is nice but I never used :grep in Vim, plus can't we just use :Rg to find string in files? When will I ever need to use :grep?"
     
-    That is a very good question. The answer to "why do we need grep in Vim?" is that it will let us do what I'll going to cover next: search and replace in multiple files.
+    That is a very good question. The answer to "why do we need to use grep in Vim?" is that it will let us do what I'll going to cover next: search and replace in multiple files.
     
     ****Search and replace in multiple files****
     
@@ -4052,8 +4098,8 @@ With Gvim, you cannot do that.
     
     That's it? Yup! That's it. Let me break down the steps:
     
-    1.  :grep pizza uses ripgrep to succinctly search for all instances of "pizza". By the way, this would still work even if we didn't reassign ripgrep to replace default grep. We would have to do :grep "pizza" . -R instead of :grep "pizza".
-    2.  We run :cfdo because :grep uses quickfix.:cfdo executes any command we pass (in this case, our command is %s/pizza/donut/g) on all entries in our quickfix list. To run multiple commands, we can chain it with pipe (|). The first command we are executing is pizza-donut substitution: %s/pizza/donut/g. The second command, update, saves each file after the first is finished.
+    1.  :grep pizza uses ripgrep to succinctly search for all instances of "pizza". By the way, this would still work even if we didn't reassign ripgrep to replace default grep. The difference is, with default grep, we would have to do :grep "pizza" . -R instead of :grep "pizza".
+    2.  We run :cfdo because :grep uses quickfix and :cfdo executes any command we pass (in this case, our command is %s/pizza/donut/g) on all entries in our quickfix list. To run multiple commands, we can chain it with pipe (|). The first command we are executing is pizza-donut substitution: %s/pizza/donut/g. The second command, update, saves each file after the first is finished.
     
     Let's discuss the second way.
     

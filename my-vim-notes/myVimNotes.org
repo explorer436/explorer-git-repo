@@ -1568,6 +1568,38 @@ Useful commands
 
 The dp command normally only works in a two-way diff, as does do: the shorthand for diffget.To leave vimdiff mode, you just need to close the windows that are being compared. The quickest way to do this is to run :only from the window that you want to keep open.When you call :Gwrite from vimdiff mode, it writes the current file to the index and exits vimdiff mode.
 
+**Show base in fugitive.vim conflict diff**
+
+By default if you use fugitive.vim's :Gdiff on a file buffer which is in conflict with git, you will get a three way diff showing HEAD, the working copy (with conflict markers), and the merge.
+
+I like to have git config merge.conflictstyle diff3 set, which includes the base (most recent common ancestor of HEAD and merge in the conflict markers.
+
+Unfortunately even with diff3 as the conflictstyle in fugitive.vim you still only get 3 panes (no base).
+
+Does anyone know how to make show it in another pane? Ideally about the working copy.
+
+The quickest way I know of is this command, issued in the conflicted buffer:
+
+#+BEGIN_EXAMPLE
+:Gsdiff :1 | Gvdiff
+#+END_EXAMPLE
+
+You must enter these commands as a one-liner, the effect is different when you enter them as two separate commands.
+
+The result looks like this:
+
++---------------------------------------+
+|         common ancestor (:1)          |
++-----------+--------------+------------+
+|           |              |            |
+| HEAD (:2) | working copy | merge (:3) |
+|           |              |            |
++-----------+--------------+------------+
+
+The stuff inside the brackets are the 'revision' specifiers that fugitive.vim understands in this context. See :h fugitive-revision for more information.
+
+
+
    ------------------------------------------
 
 **** fzf
@@ -1604,7 +1636,7 @@ For example, if we want to search for "iggy" with :grep, we can run :grep "iggy"
 
 You may notice that Vim's :grep syntax is similar to terminal grep command; this is because :grep by default runs grep -n $* /dev/null on unix-based machine.
 
-The command above will search for string "iggy" recursively (-R) from current location (.).
+The command above will search for the string "iggy" recursively (-R) from current location (.).
 
 Vim allows us to change the program used by :grep. We can tell Vim to use ripgrep instead of grep by adding this inside our vimrc:
 
@@ -1614,7 +1646,7 @@ set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 
 Now when we run :grep inside Vim, it will run rg --vimgrep --smart-case --follow instead.
 
-For more information what the options above mean, check out man rg.
+For more information about what the options above mean, check out man rg.
 
 I can now run a more succinct command :grep "iggy" instead of :grep "iggy" . -R.
 
@@ -1622,7 +1654,7 @@ Vim :grep command uses quickfix to display results. We can use :copen to display
 
 You might wonder, "Well, this is nice but I never used :grep in Vim, plus can't we just use :Rg to find string in files? When will I ever need to use :grep?"
 
-That is a very good question. The answer to "why do we need grep in Vim?" is that it will let us do what I'll going to cover next: search and replace in multiple files.
+That is a very good question. The answer to "why do we need to use grep in Vim?" is that it will let us do what I'll going to cover next: search and replace in multiple files.
 
 **Search and replace in multiple files**
 
@@ -1639,8 +1671,8 @@ The first method is to replace ALL matching phrases in our project. We will need
 
 That's it? Yup! That's it. Let me break down the steps:
 
-    1. :grep pizza uses ripgrep to succinctly search for all instances of "pizza". By the way, this would still work even if we didn't reassign ripgrep to replace default grep. We would have to do :grep "pizza" . -R instead of :grep "pizza".
-    2. We run :cfdo because :grep uses quickfix.:cfdo executes any command we pass (in this case, our command is %s/pizza/donut/g) on all entries in our quickfix list. To run multiple commands, we can chain it with pipe (|). The first command we are executing is pizza-donut substitution: %s/pizza/donut/g. The second command, update, saves each file after the first is finished.
+    1. :grep pizza uses ripgrep to succinctly search for all instances of "pizza". By the way, this would still work even if we didn't reassign ripgrep to replace default grep. The difference is, with default grep, we would have to do :grep "pizza" . -R instead of :grep "pizza".
+    2. We run :cfdo because :grep uses quickfix and :cfdo executes any command we pass (in this case, our command is %s/pizza/donut/g) on all entries in our quickfix list. To run multiple commands, we can chain it with pipe (|). The first command we are executing is pizza-donut substitution: %s/pizza/donut/g. The second command, update, saves each file after the first is finished.
 
 Let's discuss the second way.
 
