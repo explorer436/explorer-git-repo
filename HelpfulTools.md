@@ -1,31 +1,34 @@
 
 # Table of Contents
 
-1.  [Tools common for all OSs](#org3040278)
-    1.  [IDEs :](#org49f045f)
-    2.  [Text editors](#org64fddb0)
-    3.  [Browsers](#org39bf884)
-    4.  [Miscellaneous](#orged74319)
-2.  [Windows](#org45cd315)
-3.  [Linux](#orgdc51e05)
-4.  [Android (alphabetical order)](#org8bd6203)
-5.  [How to use multiple workspaces](#orgfba9930)
-    1.  [Multiple workspaces in Windows](#org510929b)
-6.  [Ready API/Soap UI preferences](#orgdede8aa)
-7.  [Android alternatives](#orgeb8c31f)
-8.  [Wizdler](#org9b553d7)
-9.  [OpenAPI spec editing tools](#orge95cb4a)
-10. [Putty](#orgdffde52)
-11. [Calibre book-reader customization](#org81c3cb8)
-12. [Command to put computer to sleep](#org3d66b08)
+1.  [Tools common for all OSs](#org9ea0a7c)
+    1.  [IDEs :](#org253c6c7)
+    2.  [Text editors](#orgac20b1c)
+    3.  [Browsers](#orgebcccf1)
+    4.  [Miscellaneous](#orgd4ce37b)
+2.  [Windows](#org2de2ff7)
+3.  [Linux](#org55abbf6)
+4.  [Android (alphabetical order)](#org998f7a5)
+5.  [How to use multiple workspaces](#org39cde42)
+    1.  [Multiple workspaces in Windows](#org77dd7ab)
+6.  [Ready API/Soap UI preferences](#org137d52a)
+7.  [Android alternatives](#org546b934)
+8.  [Wizdler](#orgb4838a5)
+9.  [OpenAPI spec editing tools](#org3a505cc)
+10. [Putty](#org946719f)
+11. [Calibre book-reader customization](#org7cc0dd7)
+12. [Command to put computer to sleep](#org723b706)
+13. [Mouse issues in Windows](#org8a5a0f7)
+14. [Lenovo Thinkpad tips](#orgd9ec80d)
+15. [Windows VDEs running out of memory](#org380b55f)
 
 
-<a id="org3040278"></a>
+<a id="org9ea0a7c"></a>
 
 # Tools common for all OSs
 
 
-<a id="org49f045f"></a>
+<a id="org253c6c7"></a>
 
 ## IDEs :
 
@@ -46,7 +49,7 @@
         -   To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
 
 
-<a id="org64fddb0"></a>
+<a id="orgac20b1c"></a>
 
 ## Text editors
 
@@ -54,7 +57,7 @@
 2.  gVim
 
 
-<a id="org39bf884"></a>
+<a id="orgebcccf1"></a>
 
 ## Browsers
 
@@ -62,14 +65,14 @@
 2.  Tor browser
 
 
-<a id="orged74319"></a>
+<a id="orgd4ce37b"></a>
 
 ## Miscellaneous
 
 Calibre ebook editor and viewer
 
 
-<a id="org45cd315"></a>
+<a id="org2de2ff7"></a>
 
 # Windows
 
@@ -83,7 +86,7 @@ Calibre ebook editor and viewer
 -   Console Emulation program - ConEmu
 
 
-<a id="orgdc51e05"></a>
+<a id="org55abbf6"></a>
 
 # Linux
 
@@ -115,7 +118,7 @@ Calibre ebook editor and viewer
 -   USB Image Writer
 
 
-<a id="org8bd6203"></a>
+<a id="org998f7a5"></a>
 
 # Android (alphabetical order)
 
@@ -161,7 +164,7 @@ Calibre ebook editor and viewer
 ---
 
 
-<a id="orgfba9930"></a>
+<a id="org39cde42"></a>
 
 # How to use multiple workspaces
 
@@ -176,7 +179,7 @@ tap an arrow key—and you’ll switch between workspaces,
 taking the currently active window with you to the new workspace.
 
 
-<a id="org510929b"></a>
+<a id="org77dd7ab"></a>
 
 ## Multiple workspaces in Windows
 
@@ -195,7 +198,7 @@ taking the currently active window with you to the new workspace.
 ---
 
 
-<a id="orgdede8aa"></a>
+<a id="org137d52a"></a>
 
 # Ready API/Soap UI preferences
 
@@ -208,7 +211,7 @@ ReadyAPI - Default SOAP request editor : XML
 ---
 
 
-<a id="orgeb8c31f"></a>
+<a id="org546b934"></a>
 
 # Android alternatives
 
@@ -218,7 +221,7 @@ LineageOS (supports many older devices)
 ---
 
 
-<a id="org9b553d7"></a>
+<a id="orgb4838a5"></a>
 
 # Wizdler
 
@@ -229,7 +232,7 @@ Recognizes WSDL information on the page to show you the available services and o
 ---
 
 
-<a id="orge95cb4a"></a>
+<a id="org3a505cc"></a>
 
 # OpenAPI spec editing tools
 
@@ -242,7 +245,7 @@ Stoplight studio is another good one.
 ---
 
 
-<a id="orgdffde52"></a>
+<a id="org946719f"></a>
 
 # Putty
 
@@ -251,7 +254,7 @@ change password : \`passwd\`
 ---
 
 
-<a id="org81c3cb8"></a>
+<a id="org7cc0dd7"></a>
 
 # Calibre book-reader customization
 
@@ -262,13 +265,69 @@ Preferences -> User Stylesheet -> p {line-height: 2}
 ---
 
 
-<a id="org3d66b08"></a>
+<a id="org723b706"></a>
 
 # Command to put computer to sleep
 
 Windows:
 
     rundll32.exe powrprof.dll,SetSuspendState 0,1,0
+
+---
+
+
+<a id="org8a5a0f7"></a>
+
+# Mouse issues in Windows
+
+Mouse cursor disappears in any dialogue or text box or document : 
+
+If you want to change it to a larger one :
+Control Panel -> Large icons -> Mouse -> Pointers -> Normal Select -> Browse -> aero<sub>arrow.cur</sub> (or any other one that you like)
+Control Panel -> Large icons -> Mouse -> Pointers -> Text Select -> Browse -> aero<sub>arrow.cur</sub> (or any other one that you like)
+
+a. Open Control Panel. 
+b. In View by: Large icon view, click on Mouse.
+c. Click the Pointer options tab and uncheck Hide pointer while typing.
+d. Click on Apply and check the issue.
+
+---
+
+
+<a id="orgd9ec80d"></a>
+
+# Lenovo Thinkpad tips
+
+How do you turn on the light on top of the monitor?
+
+To turn on the small light on the top of the monitor (when working in the dark and it is very difficult to see the keyboard) \`Fn + PgUp\` should do it.
+
+---
+
+
+<a id="org380b55f"></a>
+
+# Windows VDEs running out of memory
+
+Hi all, the C drive in one of my VDE slices seems to be running out of memory. 
+It came with 50 GB initially and now it has just about 100MB memory available in it. 
+I freed up some space by uninstalling some of the programs I was not using all that often and that freed up about 1 GB of space in the C drive but all that free space quickly got filled up by some processes running in the background. 
+I submitted a request for 'clean up C drive' but that seems to have failed - twice. 
+I cannot do anything with that slice because of the lack of available memory. 
+I requested a new slice but I am trying to understand what it is that went wrong with it. 
+Did any of you see this happen in the past?
+
+Download WizTree on your slice, it'll tell you where all of your space is being used up.
+
+By using this tool, after determining that 'C:\Windows\ccmcache' is the folder taking up all the space,
+
+The ccmcache folder is used by System Center Configuration Manager (SCCM) client. This is where files downloaded by SCCM are stored. SCCM is an enterprise software management system used in many Windows environment, and provides operating system and software deployment services, remote management, reporting services, etc. You will typically only find this folder on systems in a managed enterprise environment.
+SCCM caches files used for software deployment in the ccmcache folder. This may include software packages which are automatically installed on your machine, some types of software updates, etc. Files are not automatically removed from the ccmcache folder after they are used, but they are marked as being eligible for deletion. You should not manually delete files in this folder as you may accidentally delete something which has not been used yet. You should definitely not remove the folder altogether, as this would break SCCM and you would cease to automatically receive software packages from your network administrator.
+You should be able to reduce the size of this folder using the ConfigMgr Control Panel. This will require local administrator privileges. To do this:
+Open "Configuration Manager Properties" in the control panel. You may need to change the control panel to "icon view" instead of "category view".
+Go to the "cache" tab
+Click "Configure Settings" and acknowledge the UAC Prompt if prompted
+The "Delete Files" button should become available. Click this button to clear files. It will automatically keep any files which should not be deleted.
 
 ---
 
