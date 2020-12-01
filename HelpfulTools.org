@@ -119,8 +119,7 @@ Calibre ebook editor and viewer
 
 *** How to use multiple workspaces
 
-This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace.
-Keyboard shortcuts are available. 
+This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace. Using keyboard shortcuts make this even better. 
 
 Hold down Ctrl + Alt and tap an arrow key to 
 quickly move up, down, left, or right between workspaces, 
@@ -129,6 +128,20 @@ depending on how they’re laid out.
 Add the Shift key—so, press Shift + Ctrl + Alt and 
 tap an arrow key—and you’ll switch between workspaces, 
 taking the currently active window with you to the new workspace.
+
+**** Multiple workspaces in Windows
+
+    1. How to add a desktop in Windows 10:
+       To add a virtual desktop, open up the new Task View pane by clicking the Task View button (two overlapping rectangles) on the taskbar, or by pressing the Windows Key + Tab. In the Task View pane, click New desktop to add a virtual desktop. If you have two or more desktops already open, the "Add a desktop" button will appear as a gray tile with a plus symbol. You can also quickly add a desktop without entering the Task View pane by using the keyboard shortcut Windows Key + Ctrl + D.
+
+    2. How to switch between desktops:
+       To switch between virtual desktops, open the Task View pane and click on the desktop you want to switch to. You can also quickly switch desktops without going into the Task View pane by using the keyboard shortcuts Windows Key + Ctrl + Left Arrow and Windows Key + Ctrl + Right Arrow.
+
+    3. Move windows between desktops:
+       To move a window from one desktop to another, you first have to open up the Task View pane and then hover over the desktop containing the window you want to move. The windows on that desktop will pop up; find the window you want to move, right-click it, and go to Move to and choose the desktop you want to move the window to. You can also drag and drop windows -- grab the window you want to move and drag it into the desired desktop.
+
+    4. Close a desktop:
+       To close a virtual desktop, open up the Task View pane and hover over the desktop you want to close until a small X appears in the upper right corner. Click the X to close the desktop. You can also close desktops without going into the Task View pane by using the keyboard shortcut Windows Key + Ctrl + F4 (this will close the desktop you're currently on).
 
 -----------------------------------------------------------------------------------------
 
