@@ -1,24 +1,31 @@
 
 # Table of Contents
 
-1.  [Tools common for all OSs](#org99d4776)
-    1.  [IDEs :](#orgf145eb0)
-    2.  [Text editors](#org1773bfa)
-    3.  [Browsers](#orge9680a5)
-    4.  [Miscellaneous](#org82f14d1)
-2.  [Windows](#orgc8d279f)
-3.  [Linux](#orgb3cf323)
-4.  [Android (alphabetical order)](#org4d3c442)
-5.  [How to use multiple workspaces](#org6a84e35)
-    1.  [Multiple workspaces in Windows](#org4318e86)
+1.  [Tools common for all OSs](#org3040278)
+    1.  [IDEs :](#org49f045f)
+    2.  [Text editors](#org64fddb0)
+    3.  [Browsers](#org39bf884)
+    4.  [Miscellaneous](#orged74319)
+2.  [Windows](#org45cd315)
+3.  [Linux](#orgdc51e05)
+4.  [Android (alphabetical order)](#org8bd6203)
+5.  [How to use multiple workspaces](#orgfba9930)
+    1.  [Multiple workspaces in Windows](#org510929b)
+6.  [Ready API/Soap UI preferences](#orgdede8aa)
+7.  [Android alternatives](#orgeb8c31f)
+8.  [Wizdler](#org9b553d7)
+9.  [OpenAPI spec editing tools](#orge95cb4a)
+10. [Putty](#orgdffde52)
+11. [Calibre book-reader customization](#org81c3cb8)
+12. [Command to put computer to sleep](#org3d66b08)
 
 
-<a id="org99d4776"></a>
+<a id="org3040278"></a>
 
 # Tools common for all OSs
 
 
-<a id="orgf145eb0"></a>
+<a id="org49f045f"></a>
 
 ## IDEs :
 
@@ -39,7 +46,7 @@
         -   To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
 
 
-<a id="org1773bfa"></a>
+<a id="org64fddb0"></a>
 
 ## Text editors
 
@@ -47,7 +54,7 @@
 2.  gVim
 
 
-<a id="orge9680a5"></a>
+<a id="org39bf884"></a>
 
 ## Browsers
 
@@ -55,14 +62,14 @@
 2.  Tor browser
 
 
-<a id="org82f14d1"></a>
+<a id="orged74319"></a>
 
 ## Miscellaneous
 
 Calibre ebook editor and viewer
 
 
-<a id="orgc8d279f"></a>
+<a id="org45cd315"></a>
 
 # Windows
 
@@ -76,7 +83,7 @@ Calibre ebook editor and viewer
 -   Console Emulation program - ConEmu
 
 
-<a id="orgb3cf323"></a>
+<a id="orgdc51e05"></a>
 
 # Linux
 
@@ -108,7 +115,7 @@ Calibre ebook editor and viewer
 -   USB Image Writer
 
 
-<a id="org4d3c442"></a>
+<a id="org8bd6203"></a>
 
 # Android (alphabetical order)
 
@@ -154,7 +161,7 @@ Calibre ebook editor and viewer
 ---
 
 
-<a id="org6a84e35"></a>
+<a id="orgfba9930"></a>
 
 # How to use multiple workspaces
 
@@ -169,7 +176,7 @@ tap an arrow key—and you’ll switch between workspaces,
 taking the currently active window with you to the new workspace.
 
 
-<a id="org4318e86"></a>
+<a id="org510929b"></a>
 
 ## Multiple workspaces in Windows
 
@@ -187,7 +194,10 @@ taking the currently active window with you to the new workspace.
 
 ---
 
-**Ready API/Soap UI preferences**
+
+<a id="orgdede8aa"></a>
+
+# Ready API/Soap UI preferences
 
 UI - Workspace type : Tabbed Desktop
 
@@ -197,14 +207,20 @@ ReadyAPI - Default SOAP request editor : XML
 
 ---
 
-**Android alternatives**
+
+<a id="orgeb8c31f"></a>
+
+# Android alternatives
 
 GrapheneOS
 LineageOS (supports many older devices)
 
 ---
 
-**Wizdler**
+
+<a id="org9b553d7"></a>
+
+# Wizdler
 
 Parses the WSDL files and generates SOAP messages for you # Wizdler
 
@@ -212,13 +228,47 @@ Recognizes WSDL information on the page to show you the available services and o
 
 ---
 
-**OpenAPI spec editing tools**
+
+<a id="orge95cb4a"></a>
+
+# OpenAPI spec editing tools
 
 Swagger YAML editing tool : <http://editor.swagger.io/>
 
 use this to generate server code and client code as well.
 
 Stoplight studio is another good one. 
+
+---
+
+
+<a id="orgdffde52"></a>
+
+# Putty
+
+change password : \`passwd\`
+
+---
+
+
+<a id="org81c3cb8"></a>
+
+# Calibre book-reader customization
+
+In order to increase line spacing in paragraphs:
+
+Preferences -> User Stylesheet -> p {line-height: 2}
+
+---
+
+
+<a id="org3d66b08"></a>
+
+# Command to put computer to sleep
+
+Windows:
+
+    rundll32.exe powrprof.dll,SetSuspendState 0,1,0
 
 ---
 

@@ -32,7 +32,6 @@
 
 Calibre ebook editor and viewer
 
-
 *** Windows
 
 - Git + Good git interface for Windows
@@ -72,7 +71,6 @@ Calibre ebook editor and viewer
 - Variety (Nitrogen is an alternative) - wallpaper utility tool. Generally, there are great wallpapers on unsplash.com. There is an option in Variety's preferences to pull wallpapers from unsplash.
 - USB Stick Formatter
 - USB Image Writer
-
 
 *** Android (alphabetical order)
 
@@ -145,7 +143,7 @@ taking the currently active window with you to the new workspace.
 
 -----------------------------------------------------------------------------------------
 
-*Ready API/Soap UI preferences*
+*** Ready API/Soap UI preferences
 
 UI - Workspace type : Tabbed Desktop
 
@@ -155,14 +153,14 @@ ReadyAPI - Default SOAP request editor : XML
 
 -----------------------------------------------------------------------------------------
 
-*Android alternatives*
+*** Android alternatives
 
 GrapheneOS
 LineageOS (supports many older devices)
 
 -----------------------------------------------------------------------------------------
 
-*Wizdler*
+*** Wizdler
 
 Parses the WSDL files and generates SOAP messages for you # Wizdler
 
@@ -170,12 +168,36 @@ Recognizes WSDL information on the page to show you the available services and o
 
 -----------------------------------------------------------------------------------------
 
-*OpenAPI spec editing tools*
+*** OpenAPI spec editing tools
 
 Swagger YAML editing tool : http://editor.swagger.io/
 
 use this to generate server code and client code as well.
 
 Stoplight studio is another good one. 
+
+-----------------------------------------------------------------------------------------
+
+*** Putty
+
+   change password : `passwd`
+ 
+-----------------------------------------------------------------------------------------
+
+*** Calibre book-reader customization
+
+   In order to increase line spacing in paragraphs:
+
+    Preferences -> User Stylesheet -> p {line-height: 2}
+ 
+-----------------------------------------------------------------------------------------
+
+*** Command to put computer to sleep
+
+    Windows:
+    
+      #+BEGIN_EXAMPLE
+      rundll32.exe powrprof.dll,SetSuspendState 0,1,0
+      #+END_EXAMPLE
 
 -----------------------------------------------------------------------------------------

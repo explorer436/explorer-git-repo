@@ -58,7 +58,6 @@ Here, L indicates the maximum display depth of the directory tree.
 For more details, refer the man pages.
 $ man tree
 
-
 ------------------------------------------------
 
 In Windows machines : 
