@@ -1,23 +1,24 @@
 
 # Table of Contents
 
-1.  [Tools common for all OSs](#org5017bf9)
-    1.  [IDEs :](#orga654149)
-    2.  [Text editors](#org1b40b0b)
-    3.  [Browsers](#org382478e)
-    4.  [Miscellaneous](#org9cdab71)
-2.  [Windows](#orgeae79c3)
-3.  [Linux](#org7df48d4)
-4.  [Android (alphabetical order)](#orgc5ce1f1)
-5.  [How to use multiple workspaces](#org977074d)
+1.  [Tools common for all OSs](#org99d4776)
+    1.  [IDEs :](#orgf145eb0)
+    2.  [Text editors](#org1773bfa)
+    3.  [Browsers](#orge9680a5)
+    4.  [Miscellaneous](#org82f14d1)
+2.  [Windows](#orgc8d279f)
+3.  [Linux](#orgb3cf323)
+4.  [Android (alphabetical order)](#org4d3c442)
+5.  [How to use multiple workspaces](#org6a84e35)
+    1.  [Multiple workspaces in Windows](#org4318e86)
 
 
-<a id="org5017bf9"></a>
+<a id="org99d4776"></a>
 
 # Tools common for all OSs
 
 
-<a id="orga654149"></a>
+<a id="orgf145eb0"></a>
 
 ## IDEs :
 
@@ -38,7 +39,7 @@
         -   To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
 
 
-<a id="org1b40b0b"></a>
+<a id="org1773bfa"></a>
 
 ## Text editors
 
@@ -46,7 +47,7 @@
 2.  gVim
 
 
-<a id="org382478e"></a>
+<a id="orge9680a5"></a>
 
 ## Browsers
 
@@ -54,14 +55,14 @@
 2.  Tor browser
 
 
-<a id="org9cdab71"></a>
+<a id="org82f14d1"></a>
 
 ## Miscellaneous
 
 Calibre ebook editor and viewer
 
 
-<a id="orgeae79c3"></a>
+<a id="orgc8d279f"></a>
 
 # Windows
 
@@ -75,7 +76,7 @@ Calibre ebook editor and viewer
 -   Console Emulation program - ConEmu
 
 
-<a id="org7df48d4"></a>
+<a id="orgb3cf323"></a>
 
 # Linux
 
@@ -107,7 +108,7 @@ Calibre ebook editor and viewer
 -   USB Image Writer
 
 
-<a id="orgc5ce1f1"></a>
+<a id="org4d3c442"></a>
 
 # Android (alphabetical order)
 
@@ -153,12 +154,11 @@ Calibre ebook editor and viewer
 ---
 
 
-<a id="org977074d"></a>
+<a id="org6a84e35"></a>
 
 # How to use multiple workspaces
 
-This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace.
-Keyboard shortcuts are available. 
+This is useful in both Windows and Linux. This makes the workflow so much easier than switching between windows in a single workspace. Using keyboard shortcuts make this even better. 
 
 Hold down Ctrl + Alt and tap an arrow key to 
 quickly move up, down, left, or right between workspaces, 
@@ -167,6 +167,23 @@ depending on how they’re laid out.
 Add the Shift key—so, press Shift + Ctrl + Alt and 
 tap an arrow key—and you’ll switch between workspaces, 
 taking the currently active window with you to the new workspace.
+
+
+<a id="org4318e86"></a>
+
+## Multiple workspaces in Windows
+
+1.  How to add a desktop in Windows 10:
+    To add a virtual desktop, open up the new Task View pane by clicking the Task View button (two overlapping rectangles) on the taskbar, or by pressing the Windows Key + Tab. In the Task View pane, click New desktop to add a virtual desktop. If you have two or more desktops already open, the "Add a desktop" button will appear as a gray tile with a plus symbol. You can also quickly add a desktop without entering the Task View pane by using the keyboard shortcut Windows Key + Ctrl + D.
+
+2.  How to switch between desktops:
+    To switch between virtual desktops, open the Task View pane and click on the desktop you want to switch to. You can also quickly switch desktops without going into the Task View pane by using the keyboard shortcuts Windows Key + Ctrl + Left Arrow and Windows Key + Ctrl + Right Arrow.
+
+3.  Move windows between desktops:
+    To move a window from one desktop to another, you first have to open up the Task View pane and then hover over the desktop containing the window you want to move. The windows on that desktop will pop up; find the window you want to move, right-click it, and go to Move to and choose the desktop you want to move the window to. You can also drag and drop windows &#x2013; grab the window you want to move and drag it into the desired desktop.
+
+4.  Close a desktop:
+    To close a virtual desktop, open up the Task View pane and hover over the desktop you want to close until a small X appears in the upper right corner. Click the X to close the desktop. You can also close desktops without going into the Task View pane by using the keyboard shortcut Windows Key + Ctrl + F4 (this will close the desktop you're currently on).
 
 ---
 
