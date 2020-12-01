@@ -266,6 +266,10 @@ endif
 " Before using this, visit the github project for vim-plug for instructions about installing plugged.
 " https://github.com/junegunn/vim-plug
 " We need to run a command to Download plug.vim and put it in the "autoload" directory.
+" We may need to toggle this on and off for installing plugins when behind a
+" corporate firewall.
+" git config --global http.sslVerify false
+" git config --global http.sslVerify true 
 call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-rooter'
