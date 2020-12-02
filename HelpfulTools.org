@@ -32,7 +32,7 @@
 
 Calibre ebook editor and viewer
 
-*** Windows
+*** Tools for Windows
 
 - Git + Good git interface for Windows
 
@@ -43,7 +43,7 @@ Calibre ebook editor and viewer
 
 - Console Emulation program - ConEmu
 
-*** Linux
+*** Tools for Linux
 
 - Git + Good git interface for Linux - 
   - If we can work with Vim and vim-fugitive, that, when used along with terminal, should be enough for pretty much everything related to Git.
@@ -72,7 +72,7 @@ Calibre ebook editor and viewer
 - USB Stick Formatter
 - USB Image Writer
 
-*** Android (alphabetical order)
+*** Tools for Android (alphabetical order)
 
 - APAS (Algorithm Problems and Solutions)
 - Algorithms (visual explanation)
@@ -248,3 +248,169 @@ Click "Configure Settings" and acknowledge the UAC Prompt if prompted
 The "Delete Files" button should become available. Click this button to clear files. It will automatically keep any files which should not be deleted.
 
 -----------------------------------------------------------------------------------------
+
+*** Tree
+
+    **How To View Directory Tree Structure In Linux**
+
+    Today, we are going to learn how to view directory structure using Tree command. This command will display the contents of a directory in a tree-like format. You might wonder why on the earth someone would use this command whilst we already have ls command to list the contents of a directory. Unlike ls command, Tree command is a recursive directory listing program that produces a depth indented listing of files. It is quite useful to find the directories that contains lot of sub-directories in Unix-like systems.
+    
+    Install Tree
+    Tree command is available in the default repositories of most Linux distributions. So, it can be installed from the distribution's default package.
+    
+    On Arch Linux and its derivatives: $ sudo pacman -S tree
+    On RHEL, CentOS, Fedora: $ sudo yum install tree Or, $ sudo dnf install tree
+    On SUSE/openSUSE: $ sudo zypper install tree
+    On Debian, Linux Mint, Ubuntu: $ sudo apt-get install tree
+    
+    We have installed tree utility. Now, let us see some practical examples.
+
+    **View Directory Tree Structure In Linux**
+ 
+    If you run the tree command without any arguments, the tree command will display all contents of the current working directory in a tree-like format.  
+        #+BEGIN_EXAMPLE
+        $ tree
+        #+END_EXAMPLE
+    
+    Upon completion of listing all files/directories found, tree returns the total number of files and/or directories listed. As you see in the above output, the current directory contains 3321 sub-directories, and 40023 files.
+    
+    
+    To list the files of the specific directory in a tree-like format, say for example /etc, run:
+    
+        #+BEGIN_EXAMPLE
+        $ tree /etc/
+        #+END_EXAMPLE
+    
+    By default, Tree will notdoesn't list the hidden files. If you want to list the hidden files, use -a parameter like below.
+        #+BEGIN_EXAMPLE
+        $ tree -a /etc/
+        #+END_EXAMPLE
+    
+    
+    Now, check the above output. The total of number of directories and files are higher than the previous output. It is because, this time the tree command lists all directories and files including hidden files.
+    
+    
+     
+    To view the directory structure in a colored format, use -C parameter.
+    
+       #+BEGIN_EXAMPLE
+       $ tree -C /etc/
+       #+END_EXAMPLE
+    
+    Did you notice? Now, the tree command lists the directories and files in different colors. This is will useful to easily distinguish the directories and files.
+    
+     
+    As you may have noticed, all of the above commands lists the sub-directories and files. You can also list only the directories using -d parameter like below.
+    
+       #+BEGIN_EXAMPLE
+       $ tree -d /etc/
+       #+END_EXAMPLE
+    
+    You can also display the directory listing line by line using the following command:
+    
+       #+BEGIN_EXAMPLE
+       $ tree -d /etc/ | less
+       #+END_EXAMPLE
+    Press ENTER to navigate through the output.
+    
+    By default, Tree command will list all sub-directories and the files inside the main directory. To limit the depth or of level of recursion, use -L parameter like below.
+       #+BEGIN_EXAMPLE
+       $ tree -L 2 /etc
+       #+END_EXAMPLE
+    Here, L indicates the maximum display depth of the directory tree.
+    
+    For more details, refer the man pages.
+ 
+    #+BEGIN_EXAMPLE
+    $ man tree
+    #+END_EXAMPLE
+ 
+    **In Windows machines**
+ 
+    #+BEGIN_EXAMPLE
+    $ tree /a /f > Catalog.txt
+    #+END_EXAMPLE
+ 
+    Options:
+    
+    /A - Specifies that alternative characters (plus signs, hyphens, and vertical bars) be used to draw the tree diagram so that it can be printed by printers that don`t support the line-drawing and box-drawing characters (DOS Versions 4 and 5).
+    
+    /F - Displays the names of the files found within each directory listed.
+    
+    
+    Conclusion
+    
+    As you can see in this guide, tree command will give you a nice graphical tree view of the directory structure. You can use this command when you want to view the contents of directories that have tons of other files/folders nested inside their folders.
+
+-----------------------------------------------------------------------------------------
+
+*** Tips for searching and copying files and directories :
+
+How to do file search for a string in a folder (including its sub folders) in Windows?
+
+    #+BEGIN_EXAMPLE
+    C:\Users\user\Desktop\FolderName>findstr /S /I /M /C:"search text" *.*
+    #+END_EXAMPLE
+
+How to find files on windows modified/created after a given date using the command line? You can use PowerShell to do this :
+
+    #+BEGIN_EXAMPLE
+    Get-ChildItem -Recurse | Where-Object { $_.LastWriteTime -ge "12/27/2016" }
+    #+END_EXAMPLE
+
+This also works with time: 
+
+    #+BEGIN_EXAMPLE
+    { $_.LastWriteTime -ge "12/27/2016 20:00:00" }
+    #+END_EXAMPLE
+
+How to copy everything from one folder to another folder?
+
+    #+BEGIN_EXAMPLE
+    ROBOCOPY sourceFolder   destinationFolder /MIR /R:0 /W:0
+    
+    ROBOCOPY C:\Users\n123456\Desktop   C:\Users\n123456\Downloads\NewFolder /MIR /R:0 /W:0
+    #+END_EXAMPLE
+Be careful before using this command. If there are files or folders in the destination folder before using this command, they will all be erased. Make sure this command is used to copy files into a new folder only.
+
+
+In Mac OSX: A few commands that help in copying files in Mac OSX:
+    #+BEGIN_EXAMPLE
+    cp -R "/Volumes/SIGNATURE/folder1" "/Users/explorer436/Google Drive"
+    
+    cp -R "/Volumes/SIGNATURE/folder2" "/Users/explorer436/Google Drive"
+    
+    cp -R "/Volumes/SIGNATURE/folder3/folder4/folder5" "/Volumes/SIGNATURE"
+    #+END_EXAMPLE
+
+To list the files and folders in a directory and to list their sizes:
+    #+BEGIN_EXAMPLE
+    du – displaying disk usage for a specific file, folder, directory, or whatever, is made easier to interpret with -h
+    
+    du -sh */
+    #+END_EXAMPLE
+
+
+While you are using cp command to copy huge folders, to find out how much data is copied, go to Applications -> Utilities -> Activity Monitor -> Disk view
+
+And look at the process name 'cp'
+
+
+
+To copy only missing files from one folder to another, use rsync :
+    #+BEGIN_EXAMPLE
+    rsync -av /Users/harshavardhanedupuganti/Google\ Drive/harsha_personal_stuff/  /Volumes/SIGNATURE/Google\ Drive/harsha_personal_stuff/
+
+    rsync -av /source-path/source-dir /destination-path
+    #+END_EXAMPLE
+rsync will copy only new and changed files to the new location.
+
+It is important to understand how a trailing slash on the source argument functions. If there is a trailing slash then the contents of /source-path/source-dir will be copied to destination-path. If there is no trailing slash then source-dir itself will be copied to the destination and its contents will be another level down in the destination hierarchy.
+
+So if you want to replicate one path to another include the trailing slash as follows:
+    #+BEGIN_EXAMPLE
+    rsync -av /sourcepath/sourcedir/ /duplicatpath/sourcedir/
+    #+END_EXAMPLE
+
+-----------------------------------------------------------------------------------------
+

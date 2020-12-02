@@ -1,34 +1,36 @@
 
 # Table of Contents
 
-1.  [Tools common for all OSs](#org9ea0a7c)
-    1.  [IDEs :](#org253c6c7)
-    2.  [Text editors](#orgac20b1c)
-    3.  [Browsers](#orgebcccf1)
-    4.  [Miscellaneous](#orgd4ce37b)
-2.  [Windows](#org2de2ff7)
-3.  [Linux](#org55abbf6)
-4.  [Android (alphabetical order)](#org998f7a5)
-5.  [How to use multiple workspaces](#org39cde42)
-    1.  [Multiple workspaces in Windows](#org77dd7ab)
-6.  [Ready API/Soap UI preferences](#org137d52a)
-7.  [Android alternatives](#org546b934)
-8.  [Wizdler](#orgb4838a5)
-9.  [OpenAPI spec editing tools](#org3a505cc)
-10. [Putty](#org946719f)
-11. [Calibre book-reader customization](#org7cc0dd7)
-12. [Command to put computer to sleep](#org723b706)
-13. [Mouse issues in Windows](#org8a5a0f7)
-14. [Lenovo Thinkpad tips](#orgd9ec80d)
-15. [Windows VDEs running out of memory](#org380b55f)
+1.  [Tools common for all OSs](#org1df294a)
+    1.  [IDEs :](#orge34dd3e)
+    2.  [Text editors](#orgafbedfc)
+    3.  [Browsers](#org394bfac)
+    4.  [Miscellaneous](#org4c76b20)
+2.  [Tools for Windows](#org0cb7226)
+3.  [Tools for Linux](#org0680c1b)
+4.  [Tools for Android (alphabetical order)](#org98864de)
+5.  [How to use multiple workspaces](#org287fe2c)
+    1.  [Multiple workspaces in Windows](#org0ead19b)
+6.  [Ready API/Soap UI preferences](#orgc3b3f8a)
+7.  [Android alternatives](#org63bcdd0)
+8.  [Wizdler](#orgad45402)
+9.  [OpenAPI spec editing tools](#org075d468)
+10. [Putty](#org581ab05)
+11. [Calibre book-reader customization](#org3fad0a6)
+12. [Command to put computer to sleep](#orgdcbc372)
+13. [Mouse issues in Windows](#orgf907a94)
+14. [Lenovo Thinkpad tips](#org665b337)
+15. [Windows VDEs running out of memory](#org03decc0)
+16. [Tree](#org16d6885)
+17. [Tips for searching and copying files and directories :](#orgc9da9ee)
 
 
-<a id="org9ea0a7c"></a>
+<a id="org1df294a"></a>
 
 # Tools common for all OSs
 
 
-<a id="org253c6c7"></a>
+<a id="orge34dd3e"></a>
 
 ## IDEs :
 
@@ -49,7 +51,7 @@
         -   To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
 
 
-<a id="orgac20b1c"></a>
+<a id="orgafbedfc"></a>
 
 ## Text editors
 
@@ -57,7 +59,7 @@
 2.  gVim
 
 
-<a id="orgebcccf1"></a>
+<a id="org394bfac"></a>
 
 ## Browsers
 
@@ -65,16 +67,16 @@
 2.  Tor browser
 
 
-<a id="orgd4ce37b"></a>
+<a id="org4c76b20"></a>
 
 ## Miscellaneous
 
 Calibre ebook editor and viewer
 
 
-<a id="org2de2ff7"></a>
+<a id="org0cb7226"></a>
 
-# Windows
+# Tools for Windows
 
 -   Git + Good git interface for Windows
 
@@ -86,9 +88,9 @@ Calibre ebook editor and viewer
 -   Console Emulation program - ConEmu
 
 
-<a id="org55abbf6"></a>
+<a id="org0680c1b"></a>
 
-# Linux
+# Tools for Linux
 
 -   Git + Good git interface for Linux - 
     -   If we can work with Vim and vim-fugitive, that, when used along with terminal, should be enough for pretty much everything related to Git.
@@ -118,9 +120,9 @@ Calibre ebook editor and viewer
 -   USB Image Writer
 
 
-<a id="org998f7a5"></a>
+<a id="org98864de"></a>
 
-# Android (alphabetical order)
+# Tools for Android (alphabetical order)
 
 -   APAS (Algorithm Problems and Solutions)
 -   Algorithms (visual explanation)
@@ -164,7 +166,7 @@ Calibre ebook editor and viewer
 ---
 
 
-<a id="org39cde42"></a>
+<a id="org287fe2c"></a>
 
 # How to use multiple workspaces
 
@@ -179,7 +181,7 @@ tap an arrow key—and you’ll switch between workspaces,
 taking the currently active window with you to the new workspace.
 
 
-<a id="org77dd7ab"></a>
+<a id="org0ead19b"></a>
 
 ## Multiple workspaces in Windows
 
@@ -198,7 +200,7 @@ taking the currently active window with you to the new workspace.
 ---
 
 
-<a id="org137d52a"></a>
+<a id="orgc3b3f8a"></a>
 
 # Ready API/Soap UI preferences
 
@@ -211,7 +213,7 @@ ReadyAPI - Default SOAP request editor : XML
 ---
 
 
-<a id="org546b934"></a>
+<a id="org63bcdd0"></a>
 
 # Android alternatives
 
@@ -221,7 +223,7 @@ LineageOS (supports many older devices)
 ---
 
 
-<a id="orgb4838a5"></a>
+<a id="orgad45402"></a>
 
 # Wizdler
 
@@ -232,7 +234,7 @@ Recognizes WSDL information on the page to show you the available services and o
 ---
 
 
-<a id="org3a505cc"></a>
+<a id="org075d468"></a>
 
 # OpenAPI spec editing tools
 
@@ -245,7 +247,7 @@ Stoplight studio is another good one.
 ---
 
 
-<a id="org946719f"></a>
+<a id="org581ab05"></a>
 
 # Putty
 
@@ -254,7 +256,7 @@ change password : \`passwd\`
 ---
 
 
-<a id="org7cc0dd7"></a>
+<a id="org3fad0a6"></a>
 
 # Calibre book-reader customization
 
@@ -265,7 +267,7 @@ Preferences -> User Stylesheet -> p {line-height: 2}
 ---
 
 
-<a id="org723b706"></a>
+<a id="orgdcbc372"></a>
 
 # Command to put computer to sleep
 
@@ -276,7 +278,7 @@ Windows:
 ---
 
 
-<a id="org8a5a0f7"></a>
+<a id="orgf907a94"></a>
 
 # Mouse issues in Windows
 
@@ -294,7 +296,7 @@ d. Click on Apply and check the issue.
 ---
 
 
-<a id="orgd9ec80d"></a>
+<a id="org665b337"></a>
 
 # Lenovo Thinkpad tips
 
@@ -305,7 +307,7 @@ To turn on the small light on the top of the monitor (when working in the dark a
 ---
 
 
-<a id="org380b55f"></a>
+<a id="org03decc0"></a>
 
 # Windows VDEs running out of memory
 
@@ -328,6 +330,144 @@ Open "Configuration Manager Properties" in the control panel. You may need to ch
 Go to the "cache" tab
 Click "Configure Settings" and acknowledge the UAC Prompt if prompted
 The "Delete Files" button should become available. Click this button to clear files. It will automatically keep any files which should not be deleted.
+
+---
+
+
+<a id="org16d6885"></a>
+
+# Tree
+
+****How To View Directory Tree Structure In Linux****
+
+Today, we are going to learn how to view directory structure using Tree command. This command will display the contents of a directory in a tree-like format. You might wonder why on the earth someone would use this command whilst we already have ls command to list the contents of a directory. Unlike ls command, Tree command is a recursive directory listing program that produces a depth indented listing of files. It is quite useful to find the directories that contains lot of sub-directories in Unix-like systems.
+
+Install Tree
+Tree command is available in the default repositories of most Linux distributions. So, it can be installed from the distribution's default package.
+
+On Arch Linux and its derivatives: $ sudo pacman -S tree
+On RHEL, CentOS, Fedora: $ sudo yum install tree Or, $ sudo dnf install tree
+On SUSE/openSUSE: $ sudo zypper install tree
+On Debian, Linux Mint, Ubuntu: $ sudo apt-get install tree
+
+We have installed tree utility. Now, let us see some practical examples.
+
+****View Directory Tree Structure In Linux****
+
+If you run the tree command without any arguments, the tree command will display all contents of the current working directory in a tree-like format.  
+
+    $ tree
+
+Upon completion of listing all files/directories found, tree returns the total number of files and/or directories listed. As you see in the above output, the current directory contains 3321 sub-directories, and 40023 files.
+
+To list the files of the specific directory in a tree-like format, say for example /etc, run:
+
+    $ tree /etc/
+
+By default, Tree will notdoesn't list the hidden files. If you want to list the hidden files, use -a parameter like below.
+
+    $ tree -a /etc/
+
+Now, check the above output. The total of number of directories and files are higher than the previous output. It is because, this time the tree command lists all directories and files including hidden files.
+
+To view the directory structure in a colored format, use -C parameter.
+
+    $ tree -C /etc/
+
+Did you notice? Now, the tree command lists the directories and files in different colors. This is will useful to easily distinguish the directories and files.
+
+As you may have noticed, all of the above commands lists the sub-directories and files. You can also list only the directories using -d parameter like below.
+
+    $ tree -d /etc/
+
+You can also display the directory listing line by line using the following command:
+
+    $ tree -d /etc/ | less
+
+Press ENTER to navigate through the output.
+
+By default, Tree command will list all sub-directories and the files inside the main directory. To limit the depth or of level of recursion, use -L parameter like below.
+
+    $ tree -L 2 /etc
+
+Here, L indicates the maximum display depth of the directory tree.
+
+For more details, refer the man pages.
+
+    $ man tree
+
+****In Windows machines****
+
+    $ tree /a /f > Catalog.txt
+
+Options:
+
+/A - Specifies that alternative characters (plus signs, hyphens, and vertical bars) be used to draw the tree diagram so that it can be printed by printers that don\`t support the line-drawing and box-drawing characters (DOS Versions 4 and 5).
+
+/F - Displays the names of the files found within each directory listed.
+
+Conclusion
+
+As you can see in this guide, tree command will give you a nice graphical tree view of the directory structure. You can use this command when you want to view the contents of directories that have tons of other files/folders nested inside their folders.
+
+---
+
+
+<a id="orgc9da9ee"></a>
+
+# Tips for searching and copying files and directories :
+
+How to do file search for a string in a folder (including its sub folders) in Windows?
+
+    C:\Users\user\Desktop\FolderName>findstr /S /I /M /C:"search text" *.*
+
+How to find files on windows modified/created after a given date using the command line? You can use PowerShell to do this :
+
+    Get-ChildItem -Recurse | Where-Object { $_.LastWriteTime -ge "12/27/2016" }
+
+This also works with time: 
+
+    { $_.LastWriteTime -ge "12/27/2016 20:00:00" }
+
+How to copy everything from one folder to another folder?
+
+    ROBOCOPY sourceFolder   destinationFolder /MIR /R:0 /W:0
+    
+    ROBOCOPY C:\Users\n123456\Desktop   C:\Users\n123456\Downloads\NewFolder /MIR /R:0 /W:0
+
+Be careful before using this command. If there are files or folders in the destination folder before using this command, they will all be erased. Make sure this command is used to copy files into a new folder only.
+
+In Mac OSX: A few commands that help in copying files in Mac OSX:
+
+    cp -R "/Volumes/SIGNATURE/folder1" "/Users/explorer436/Google Drive"
+    
+    cp -R "/Volumes/SIGNATURE/folder2" "/Users/explorer436/Google Drive"
+    
+    cp -R "/Volumes/SIGNATURE/folder3/folder4/folder5" "/Volumes/SIGNATURE"
+
+To list the files and folders in a directory and to list their sizes:
+
+    du – displaying disk usage for a specific file, folder, directory, or whatever, is made easier to interpret with -h
+    
+    du -sh */
+
+While you are using cp command to copy huge folders, to find out how much data is copied, go to Applications -> Utilities -> Activity Monitor -> Disk view
+
+And look at the process name 'cp'
+
+To copy only missing files from one folder to another, use rsync :
+
+    rsync -av /Users/harshavardhanedupuganti/Google\ Drive/harsha_personal_stuff/  /Volumes/SIGNATURE/Google\ Drive/harsha_personal_stuff/
+    
+    rsync -av /source-path/source-dir /destination-path
+
+rsync will copy only new and changed files to the new location.
+
+It is important to understand how a trailing slash on the source argument functions. If there is a trailing slash then the contents of /source-path/source-dir will be copied to destination-path. If there is no trailing slash then source-dir itself will be copied to the destination and its contents will be another level down in the destination hierarchy.
+
+So if you want to replicate one path to another include the trailing slash as follows:
+
+    rsync -av /sourcepath/sourcedir/ /duplicatpath/sourcedir/
 
 ---
 
