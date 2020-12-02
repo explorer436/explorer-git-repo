@@ -1,36 +1,42 @@
 
 # Table of Contents
 
-1.  [Tools common for all OSs](#org1df294a)
-    1.  [IDEs :](#orge34dd3e)
-    2.  [Text editors](#orgafbedfc)
-    3.  [Browsers](#org394bfac)
-    4.  [Miscellaneous](#org4c76b20)
-2.  [Tools for Windows](#org0cb7226)
-3.  [Tools for Linux](#org0680c1b)
-4.  [Tools for Android (alphabetical order)](#org98864de)
-5.  [How to use multiple workspaces](#org287fe2c)
-    1.  [Multiple workspaces in Windows](#org0ead19b)
-6.  [Ready API/Soap UI preferences](#orgc3b3f8a)
-7.  [Android alternatives](#org63bcdd0)
-8.  [Wizdler](#orgad45402)
-9.  [OpenAPI spec editing tools](#org075d468)
-10. [Putty](#org581ab05)
-11. [Calibre book-reader customization](#org3fad0a6)
-12. [Command to put computer to sleep](#orgdcbc372)
-13. [Mouse issues in Windows](#orgf907a94)
-14. [Lenovo Thinkpad tips](#org665b337)
-15. [Windows VDEs running out of memory](#org03decc0)
-16. [Tree](#org16d6885)
-17. [Tips for searching and copying files and directories :](#orgc9da9ee)
+1.  [Tools common for all OSs](#orgb05c3fd)
+    1.  [IDEs :](#org7255067)
+    2.  [Text editors](#org3ad409a)
+    3.  [Browsers](#org98883ba)
+    4.  [Miscellaneous](#org774de24)
+2.  [Tools for Windows](#org63638e5)
+3.  [Tools for Linux](#orgdcfcd3c)
+4.  [Tools for Android (alphabetical order)](#org57800b2)
+5.  [How to use multiple workspaces](#orgd40d59f)
+    1.  [Multiple workspaces in Windows](#orgbcf9f4d)
+6.  [Ready API/Soap UI preferences](#org404f74b)
+7.  [Android alternatives](#orgfcf3a11)
+8.  [Wizdler](#orgbb5ee35)
+9.  [OpenAPI spec editing tools](#org5efecd5)
+10. [Putty](#org754379e)
+11. [Calibre book-reader customization](#org439bd3c)
+12. [Command to put computer to sleep](#org86bbfde)
+13. [Mouse issues in Windows](#org3a3ba88)
+14. [Lenovo Thinkpad tips](#org638378a)
+15. [Windows VDEs running out of memory](#orgae0279c)
+16. [Tree](#org9b7917d)
+17. [Tips for searching and copying files and directories :](#orgb5df31d)
+18. [Killing a process](#org4c4ae37)
+19. [Postman tips](#org32960e2)
+20. [Running jar files from terminal](#org5e3023f)
+21. [Cntlm](#org4f4cee9)
+22. [Commands to run tests on individual files](#org5c778db)
+23. [Gradle commands](#org06ec45d)
 
 
-<a id="org1df294a"></a>
+<a id="orgb05c3fd"></a>
 
 # Tools common for all OSs
 
 
-<a id="orge34dd3e"></a>
+<a id="org7255067"></a>
 
 ## IDEs :
 
@@ -51,7 +57,7 @@
         -   To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
 
 
-<a id="orgafbedfc"></a>
+<a id="org3ad409a"></a>
 
 ## Text editors
 
@@ -59,7 +65,7 @@
 2.  gVim
 
 
-<a id="org394bfac"></a>
+<a id="org98883ba"></a>
 
 ## Browsers
 
@@ -67,14 +73,14 @@
 2.  Tor browser
 
 
-<a id="org4c76b20"></a>
+<a id="org774de24"></a>
 
 ## Miscellaneous
 
 Calibre ebook editor and viewer
 
 
-<a id="org0cb7226"></a>
+<a id="org63638e5"></a>
 
 # Tools for Windows
 
@@ -88,7 +94,7 @@ Calibre ebook editor and viewer
 -   Console Emulation program - ConEmu
 
 
-<a id="org0680c1b"></a>
+<a id="orgdcfcd3c"></a>
 
 # Tools for Linux
 
@@ -120,7 +126,7 @@ Calibre ebook editor and viewer
 -   USB Image Writer
 
 
-<a id="org98864de"></a>
+<a id="org57800b2"></a>
 
 # Tools for Android (alphabetical order)
 
@@ -166,7 +172,7 @@ Calibre ebook editor and viewer
 ---
 
 
-<a id="org287fe2c"></a>
+<a id="orgd40d59f"></a>
 
 # How to use multiple workspaces
 
@@ -181,7 +187,7 @@ tap an arrow key—and you’ll switch between workspaces,
 taking the currently active window with you to the new workspace.
 
 
-<a id="org0ead19b"></a>
+<a id="orgbcf9f4d"></a>
 
 ## Multiple workspaces in Windows
 
@@ -200,7 +206,7 @@ taking the currently active window with you to the new workspace.
 ---
 
 
-<a id="orgc3b3f8a"></a>
+<a id="org404f74b"></a>
 
 # Ready API/Soap UI preferences
 
@@ -213,7 +219,7 @@ ReadyAPI - Default SOAP request editor : XML
 ---
 
 
-<a id="org63bcdd0"></a>
+<a id="orgfcf3a11"></a>
 
 # Android alternatives
 
@@ -223,7 +229,7 @@ LineageOS (supports many older devices)
 ---
 
 
-<a id="orgad45402"></a>
+<a id="orgbb5ee35"></a>
 
 # Wizdler
 
@@ -234,7 +240,7 @@ Recognizes WSDL information on the page to show you the available services and o
 ---
 
 
-<a id="org075d468"></a>
+<a id="org5efecd5"></a>
 
 # OpenAPI spec editing tools
 
@@ -247,16 +253,18 @@ Stoplight studio is another good one.
 ---
 
 
-<a id="org581ab05"></a>
+<a id="org754379e"></a>
 
 # Putty
 
-change password : \`passwd\`
+change password : 
+
+    passwd
 
 ---
 
 
-<a id="org3fad0a6"></a>
+<a id="org439bd3c"></a>
 
 # Calibre book-reader customization
 
@@ -267,7 +275,7 @@ Preferences -> User Stylesheet -> p {line-height: 2}
 ---
 
 
-<a id="orgdcbc372"></a>
+<a id="org86bbfde"></a>
 
 # Command to put computer to sleep
 
@@ -278,7 +286,7 @@ Windows:
 ---
 
 
-<a id="orgf907a94"></a>
+<a id="org3a3ba88"></a>
 
 # Mouse issues in Windows
 
@@ -296,18 +304,20 @@ d. Click on Apply and check the issue.
 ---
 
 
-<a id="org665b337"></a>
+<a id="org638378a"></a>
 
 # Lenovo Thinkpad tips
 
 How do you turn on the light on top of the monitor?
 
-To turn on the small light on the top of the monitor (when working in the dark and it is very difficult to see the keyboard) \`Fn + PgUp\` should do it.
+To turn on the small light on the top of the monitor (when working in the dark and it is very difficult to see the keyboard) 
+
+    Fn + PgUp
 
 ---
 
 
-<a id="org03decc0"></a>
+<a id="orgae0279c"></a>
 
 # Windows VDEs running out of memory
 
@@ -334,7 +344,7 @@ The "Delete Files" button should become available. Click this button to clear fi
 ---
 
 
-<a id="org16d6885"></a>
+<a id="org9b7917d"></a>
 
 # Tree
 
@@ -402,7 +412,7 @@ For more details, refer the man pages.
 
 Options:
 
-/A - Specifies that alternative characters (plus signs, hyphens, and vertical bars) be used to draw the tree diagram so that it can be printed by printers that don\`t support the line-drawing and box-drawing characters (DOS Versions 4 and 5).
+/A - Specifies that alternative characters (plus signs, hyphens, and vertical bars) be used to draw the tree diagram so that it can be printed by printers that don't support the line-drawing and box-drawing characters (DOS Versions 4 and 5).
 
 /F - Displays the names of the files found within each directory listed.
 
@@ -413,7 +423,7 @@ As you can see in this guide, tree command will give you a nice graphical tree v
 ---
 
 
-<a id="orgc9da9ee"></a>
+<a id="orgb5df31d"></a>
 
 # Tips for searching and copying files and directories :
 
@@ -468,6 +478,169 @@ It is important to understand how a trailing slash on the source argument functi
 So if you want to replicate one path to another include the trailing slash as follows:
 
     rsync -av /sourcepath/sourcedir/ /duplicatpath/sourcedir/
+
+---
+
+
+<a id="org4c4ae37"></a>
+
+# Killing a process
+
+    ****In Windows machines****
+If you need to kill a process manually on Windows it’s actually pretty easy. First, fire up a command prompt and type the following command.
+
+    netstat -a -o -n
+
+To kill the process we need to find the PID of the process in question. I just run down the list by port until I find port 8080 and here you will see the process id was 28344.
+
+Finally, with the PID we can run the following command to kill the process
+
+    taskkill /F /PID 28344
+
+****In Linux****
+
+This command will print you PID of process bound on that port :
+
+    fuser 8080/tcp
+
+And this command will kill that process : 
+
+    fuser -k 8080/tcp
+
+****Issue with port 80 being blocked****
+
+If anyone is running into issues with port 80 blocked while setting up their new slice, I have a workaround if you would like to use it. I have an open ticket with VDE support to see about getting the Citrix Virtual Desktop Service changed to a different port.  I will let you know when they have verified this fix or have a different workaround.
+I have been able to successfully reboot my slice several times and log back into the Citrix Workspace with no issue.
+Verify it is the Citrix Desktop Service running over port 80 by using the following command (as Admin):
+
+    netsh http show servicestate | findstr HTTP
+
+Run the following command to change its port (you should run netstat -aon to make sure the number you choose is free).
+
+    C:\Program Files\Citrix\Virtual Desktop Agent\Agent Configuration\Agentconfig.exe /portnumber:4150
+
+Restart the Citrix Service (or reboot your machine)
+
+---
+
+
+<a id="org32960e2"></a>
+
+# Postman tips
+
+Script to read fields from a JSON response and set it as a collection variable that can be used in the subsequent steps:
+
+    var jsonData = JSON.parse(responseBody);
+    pm.collectionVariables.set("quoteId", jsonData.data.quoteId);
+
+Script to read fields from a SOAP response and set it as a collection variable that can be used in the subsequent steps:
+
+    var parseString = require('xml2js').parseString;
+    var stripPrefix = require('xml2js').processors.stripPrefix;
+    
+    parseString(responseBody, { tagNameProcessors: [ stripPrefix ] }, function(err, js) {
+        if(err) throw err;
+    
+        var companysQuoteNumber = js.Envelope.Body[0].rateResponse[0].response[0].HomePolicyQuoteInqRs[0].PersPolicy[0].QuoteInfo[0].CompanysQuoteNumber[0];
+    
+        pm.collectionVariables.set("companysQuoteNumber", companysQuoteNumber);
+    });
+
+(A simpler way is to use xml2json but it will not remove the namespaces from the json and if the namespaces are dynamically changing, it can be a problem)
+
+---
+
+
+<a id="org5e3023f"></a>
+
+# Running jar files from terminal
+
+    java -jar jarFileName.jar
+
+---
+
+
+<a id="org4f4cee9"></a>
+
+# Cntlm
+
+Updating password in cntlm : 
+
+In a Linux slice, cntlm config file is usually located here : 
+
+    /etc/cntlm.conf
+    or
+    /usr/local/etc/cntlm.conf
+
+Many corporate security policies require regular password changes, CNTLM makes these very easy.
+
+First, get the hashes for the new password with: 
+
+    cntlm -H
+
+Copy and paste those hashes into your cntlm.conf file located at: 
+
+    /etc/cntlm.conf
+    or 
+    /usr/local/etc/cntlm.conf
+
+(if you get this error while trying to edit the file : readonly option is set (add ! to override) - 
+This happens when the user is trying to write on a file without the right permissions. Login as root using sudo su and now you can do the edit.)
+
+Restart your CNTLM instance and reconnect, you should be good to go 
+
+    : brew services restart cntlm (if you have brew installed)
+
+If this doesn't work, restarting the slice using the command 'reboot' works.
+
+---
+
+
+<a id="org5c778db"></a>
+
+# Commands to run tests on individual files
+
+****Command to run cucumber tests alone if you are using gradle****
+
+    ./gradlew test --tests pagro.project.RunCukesTest*
+
+****for a javascript project****
+
+    npx jest ./src/main/module/Operation/OperationService.test.ts
+    npm run test -- ./src/main/module/Operation/OperationService.test.ts
+
+---
+
+
+<a id="org06ec45d"></a>
+
+# Gradle commands
+
+Go to the EAR folder in command prompt:
+
+    C:\XXXXXXXXXXXXXEAR
+
+And use this command to build EAR.
+
+    gradle clean ear --info
+    gradle clean testall --info
+    gradle clean testAll ear –-info
+
+From folder :      C:\XXXXXXXXXXEAR\build\distributions
+To folder :        C:\WASLP<sub>dev\tools\WASLP8559\wlp\usr\servers\default\dropins</sub>
+Windows command to copy the EAR from a source folder to a destination folder:
+
+    xcopy C:\XXXXXXXXXXXXXXEAR\build\distributions C:\WASLP_dev\tools\WASLP8559\wlp\usr\servers\default\dropins
+
+From folder :      C:\Users\n0281526\Documents\services-property-insurance-partner-exchange\PiAcordSalesMediationServiceEAR
+To folder :        C:\WASLP<sub>dev\tools\WASLP8559\wlp\usr\servers\default\dropins</sub>
+Windows command to copy the EAR from a source folder to a destination folder:
+
+    xcopy C:\WASLP_dev\workspaces\git_repo\services-property-insurance-partner-exchange\PiAcordSalesMediationServiceEAR\build\distributions C:\WASLP_dev\tools\WASLP8559\wlp\usr\servers\default\dropins
+
+To exclude a few tasks from the build process : 
+
+    ./gradlew build -x checkstyleMain -x findbugsMain -x test -x jacocoTestCoverageVerification -x pmdMain
 
 ---
 
