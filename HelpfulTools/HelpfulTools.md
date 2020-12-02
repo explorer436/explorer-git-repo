@@ -1,43 +1,47 @@
 
 # Table of Contents
 
-1.  [Tools common for all OSs](#org65115a2)
-    1.  [IDEs :](#org994b52a)
-    2.  [Text editors](#orgf271910)
-    3.  [Browsers](#org0d893cc)
-    4.  [Miscellaneous](#orgee949a9)
-2.  [Tools for Windows](#orge3c5fce)
-3.  [Tools for Linux](#org9fac675)
-4.  [Tools for Android (alphabetical order)](#org12611e2)
-5.  [How to use multiple workspaces](#org6c3773a)
-    1.  [Multiple workspaces in Windows](#orgdca07b8)
-6.  [Ready API/Soap UI preferences](#orga835769)
-7.  [Android alternatives](#orgb8cdbda)
-8.  [Wizdler](#org856e03e)
-9.  [OpenAPI spec editing tools](#org847a85f)
-10. [Putty](#orga19400d)
-11. [Calibre book-reader customization](#orgafbb3a8)
-12. [Command to put computer to sleep](#org4755c03)
-13. [Mouse issues in Windows](#org9e412c6)
-14. [Lenovo Thinkpad tips](#orgf233c6c)
-15. [Windows VDEs running out of memory](#org5651bc0)
-16. [Tree](#org7d2f6ad)
-17. [Tips for searching and copying files and directories :](#org6d9081a)
-18. [Killing a process](#org8eb38be)
-19. [Postman tips](#org21a7539)
-20. [Running jar files from terminal](#org0c2d8c3)
-21. [Cntlm](#org7bb99f6)
-22. [Commands to run tests on individual files](#org87eda25)
-23. [Gradle commands](#org01a2d05)
-24. [Cygwin](#org7e3831e)
+1.  [Tools common for all OSs](#org1c63b51)
+    1.  [IDEs :](#orgde9ae17)
+    2.  [Text editors](#org66cb35e)
+    3.  [Browsers](#org661417f)
+    4.  [Miscellaneous](#org83eaef3)
+2.  [Tools for Windows](#org6311d28)
+3.  [Tools for Linux](#org37c95c9)
+4.  [Tools for Android (alphabetical order)](#orgc13197d)
+5.  [How to use multiple workspaces](#org9ba44f2)
+    1.  [Multiple workspaces in Windows](#orgac1cae1)
+6.  [Ready API/Soap UI preferences](#org37da1fe)
+7.  [Android alternatives](#org34f003d)
+8.  [Wizdler](#org3675f30)
+9.  [OpenAPI spec editing tools](#org3ff1762)
+10. [Putty](#orgc8d7401)
+11. [Calibre book-reader customization](#orgd37e344)
+12. [Command to put computer to sleep](#orga38f066)
+13. [Mouse issues in Windows](#org6838d6f)
+14. [Lenovo Thinkpad tips](#org5ee61df)
+15. [Windows VDEs running out of memory](#orgc12f708)
+16. [Tree](#orgf663df3)
+17. [Tips for searching and copying files and directories :](#org12c546f)
+18. [Killing a process](#orgf491927)
+19. [Postman tips](#org4c86055)
+20. [Running jar files from terminal](#org0000140)
+21. [Cntlm](#org0f5df52)
+22. [Commands to run tests on individual files](#org20ec33f)
+23. [Gradle commands](#orgf8a118a)
+24. [Cygwin](#org2d58fd3)
+25. [Hosts file](#org7655f98)
+26. [SonarQube](#orge35a1f5)
+27. [WID - clean and build tips](#orge82976a)
+28. [Issues encountered while working with MongoDB](#org57d35f6)
 
 
-<a id="org65115a2"></a>
+<a id="org1c63b51"></a>
 
 # Tools common for all OSs
 
 
-<a id="org994b52a"></a>
+<a id="orgde9ae17"></a>
 
 ## IDEs :
 
@@ -58,7 +62,7 @@
         -   To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
 
 
-<a id="orgf271910"></a>
+<a id="org66cb35e"></a>
 
 ## Text editors
 
@@ -66,7 +70,7 @@
 2.  gVim
 
 
-<a id="org0d893cc"></a>
+<a id="org661417f"></a>
 
 ## Browsers
 
@@ -74,14 +78,14 @@
 2.  Tor browser
 
 
-<a id="orgee949a9"></a>
+<a id="org83eaef3"></a>
 
 ## Miscellaneous
 
 Calibre ebook editor and viewer
 
 
-<a id="orge3c5fce"></a>
+<a id="org6311d28"></a>
 
 # Tools for Windows
 
@@ -95,7 +99,7 @@ Calibre ebook editor and viewer
 -   Console Emulation program - ConEmu
 
 
-<a id="org9fac675"></a>
+<a id="org37c95c9"></a>
 
 # Tools for Linux
 
@@ -127,7 +131,7 @@ Calibre ebook editor and viewer
 -   USB Image Writer
 
 
-<a id="org12611e2"></a>
+<a id="orgc13197d"></a>
 
 # Tools for Android (alphabetical order)
 
@@ -173,7 +177,7 @@ Calibre ebook editor and viewer
 ---
 
 
-<a id="org6c3773a"></a>
+<a id="org9ba44f2"></a>
 
 # How to use multiple workspaces
 
@@ -188,7 +192,7 @@ tap an arrow key—and you’ll switch between workspaces,
 taking the currently active window with you to the new workspace.
 
 
-<a id="orgdca07b8"></a>
+<a id="orgac1cae1"></a>
 
 ## Multiple workspaces in Windows
 
@@ -207,7 +211,7 @@ taking the currently active window with you to the new workspace.
 ---
 
 
-<a id="orga835769"></a>
+<a id="org37da1fe"></a>
 
 # Ready API/Soap UI preferences
 
@@ -217,10 +221,34 @@ ReadyAPI - Default SOAP request editor : XML
            Default REST request editor : Request
            Default response editor : XML
 
+Groovy<sub>script</sub><sub>to</sub><sub>read</sub><sub>attributes</sub><sub>from</sub><sub>response</sub><sub>in</sub><sub>SoapUI</sub><sub>and</sub><sub>write</sub><sub>contents</sub><sub>to</sub><sub>a</sub><sub>file</sub>
+
+    import com.eviware.soapui.support.XmlHolder
+    
+    def response = testRunner.testCase.testSteps["TestRequest"].testRequest.response.getRequest().getResponseContentAsXml()
+    
+    def responseAsXml = new XmlHolder( response )
+    
+    responseAsXml.declareNamespace( 'ns2', 'http://abcd.com/test/xyz/service/specificservice/v1_0')
+    
+    def RqUID = responseAsXml.getNodeValue("//ns2:getResponse/response/RqUID")
+    log.info("RqUID [" + RqUID + "]")
+    
+    def payload = responseAsXml.getNodeValue("//ns2:getResponse/response/Payload")
+    log.info("payl [" + payload + "]")
+    
+    def responseFile = new PrintWriter ("C:\\Users\\explorer\\Downloads\\folder\\" + RqUID + ".txt")
+    
+    responseFile.println(payload)
+    
+    responseFile.flush()
+    
+    responseFile.close()
+
 ---
 
 
-<a id="orgb8cdbda"></a>
+<a id="org34f003d"></a>
 
 # Android alternatives
 
@@ -230,7 +258,7 @@ LineageOS (supports many older devices)
 ---
 
 
-<a id="org856e03e"></a>
+<a id="org3675f30"></a>
 
 # Wizdler
 
@@ -241,7 +269,7 @@ Recognizes WSDL information on the page to show you the available services and o
 ---
 
 
-<a id="org847a85f"></a>
+<a id="org3ff1762"></a>
 
 # OpenAPI spec editing tools
 
@@ -254,7 +282,7 @@ Stoplight studio is another good one.
 ---
 
 
-<a id="orga19400d"></a>
+<a id="orgc8d7401"></a>
 
 # Putty
 
@@ -265,7 +293,7 @@ change password :
 ---
 
 
-<a id="orgafbb3a8"></a>
+<a id="orgd37e344"></a>
 
 # Calibre book-reader customization
 
@@ -276,7 +304,7 @@ Preferences -> User Stylesheet -> p {line-height: 2}
 ---
 
 
-<a id="org4755c03"></a>
+<a id="orga38f066"></a>
 
 # Command to put computer to sleep
 
@@ -287,7 +315,7 @@ Windows:
 ---
 
 
-<a id="org9e412c6"></a>
+<a id="org6838d6f"></a>
 
 # Mouse issues in Windows
 
@@ -305,7 +333,7 @@ d. Click on Apply and check the issue.
 ---
 
 
-<a id="orgf233c6c"></a>
+<a id="org5ee61df"></a>
 
 # Lenovo Thinkpad tips
 
@@ -318,7 +346,7 @@ To turn on the small light on the top of the monitor (when working in the dark a
 ---
 
 
-<a id="org5651bc0"></a>
+<a id="orgc12f708"></a>
 
 # Windows VDEs running out of memory
 
@@ -345,7 +373,7 @@ The "Delete Files" button should become available. Click this button to clear fi
 ---
 
 
-<a id="org7d2f6ad"></a>
+<a id="orgf663df3"></a>
 
 # Tree
 
@@ -424,7 +452,7 @@ As you can see in this guide, tree command will give you a nice graphical tree v
 ---
 
 
-<a id="org6d9081a"></a>
+<a id="org12c546f"></a>
 
 # Tips for searching and copying files and directories :
 
@@ -483,7 +511,7 @@ So if you want to replicate one path to another include the trailing slash as fo
 ---
 
 
-<a id="org8eb38be"></a>
+<a id="orgf491927"></a>
 
 # Killing a process
 
@@ -525,7 +553,7 @@ Restart the Citrix Service (or reboot your machine)
 ---
 
 
-<a id="org21a7539"></a>
+<a id="org4c86055"></a>
 
 # Postman tips
 
@@ -552,7 +580,7 @@ Script to read fields from a SOAP response and set it as a collection variable t
 ---
 
 
-<a id="org0c2d8c3"></a>
+<a id="org0000140"></a>
 
 # Running jar files from terminal
 
@@ -561,7 +589,7 @@ Script to read fields from a SOAP response and set it as a collection variable t
 ---
 
 
-<a id="org7bb99f6"></a>
+<a id="org0f5df52"></a>
 
 # Cntlm
 
@@ -597,7 +625,7 @@ If this doesn't work, restarting the slice using the command 'reboot' works.
 ---
 
 
-<a id="org87eda25"></a>
+<a id="org20ec33f"></a>
 
 # Commands to run tests on individual files
 
@@ -613,7 +641,7 @@ If this doesn't work, restarting the slice using the command 'reboot' works.
 ---
 
 
-<a id="org01a2d05"></a>
+<a id="orgf8a118a"></a>
 
 # Gradle commands
 
@@ -646,7 +674,7 @@ To exclude a few tasks from the build process :
 ---
 
 
-<a id="org7e3831e"></a>
+<a id="org2d58fd3"></a>
 
 # Cygwin
 
@@ -743,6 +771,72 @@ For shell, use this: "C:\cygwin64\bin\mintty.exe"
 ****Integrate with Command Prompt****
 
 For 64 bit, add C:\Users\\<username>\cygwin64\bin; to the end of the environment variables.
+
+---
+
+
+<a id="org7655f98"></a>
+
+# Hosts file
+
+Access your hosts file on your services slice (C:\Windows\System32\drivers\etc)
+
+---
+
+
+<a id="orge35a1f5"></a>
+
+# SonarQube
+
+How to run SonarQube in local slice or developer machine ?
+
+Get Started in Two Minutes Guide
+Download the SonarQube Community Edition
+
+Unzip it, let's say in C:\sonarqube or /etc/sonarqube
+
+Start the SonarQube Server:
+
+    C:\sonarqube\bin\windows-x86-xx\StartSonar.bat
+
+    /etc/sonarqube/bin/[OS]/sonar.sh console
+
+Log in to <http://localhost:9000> with System Administrator credentials (admin/admin)
+
+For multi-language projects, remove the property "sonar.language=java" from "sonar-project.properties"
+
+---
+
+
+<a id="orge82976a"></a>
+
+# WID - clean and build tips
+
+List only files of a particular extension with the DIR command:
+
+    `dir *.class`
+    
+    `dir /S *.class`
+
+will show files with ".class" suffix in specified directory and all sub-directories.
+This approach works with files of any extension. e.g. .txt
+
+When you do a full clean/build within wid it takes quite some time to do the clean part.  
+So, before you do a clean/build,  close WID, then go into a cmd prompt into your workspace and
+use the command  'del \*.class /s' to delete the compiled class files.
+It takes about 10 seconds instead of letting wid do the clean in like 15 minutes.
+
+---
+
+
+<a id="org57d35f6"></a>
+
+# Issues encountered while working with MongoDB
+
+Issues encountered while working on Employee Lambdas using MongoDB : 
+
+mongodb is refusing connections:
+go to AWS security group and open up port 27107 (port range 0 - 65535)
 
 ---
 
