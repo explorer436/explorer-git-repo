@@ -1,3 +1,5 @@
+*** Debugging ENOSPCSystemLimitForNumberOfFileWatchersReached
+
 Error: ENOSPC: System limit for number of file watchers reached
 
 You can fix it, that increasing the amount of inotify watchers.

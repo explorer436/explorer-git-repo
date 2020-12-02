@@ -19,7 +19,7 @@ In order to rename a file in Linux you can use either of two approaches
 
     This just moves the old file, to a new name.
 
-vifm (a tool that works with vim commands) is an alternative to this. Using vifm, we can change the name of a file or folder using `cw` (change word).
+vifm (a tool that works with vim shortcuts) is an alternative to this. Using vifm, we can change the name of a file or folder using `cw` (change word).
 
 -------------------------------------------------------------------
 
@@ -63,11 +63,13 @@ sudo service docker status
 Kdenlive - good tool for editing videos.
 
 -------------------------------------------------------------------
+
 Recursive copy
 To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
 $ cp -R * /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
 
 -------------------------------------------------------------------
+
 To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip *
 To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
 
@@ -105,7 +107,6 @@ rpm -e package-1.2.3.rpm
 Command to view ip address: hostname -I
 
 ---------------
-
 
 How do I install a .deb file via the command line?
 
@@ -211,4 +212,5 @@ How to install OSS code (the open source version of Visual Studio Code) in Fedor
 	sudo dnf check-update
 	sudo dnf install code
 
+--------------------------------
 
