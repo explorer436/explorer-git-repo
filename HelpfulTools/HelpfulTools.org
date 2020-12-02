@@ -592,3 +592,139 @@ To exclude a few tasks from the build process :
     #+END_EXAMPLE
 
 -----------------------------------------------------------------------------------------
+
+
+*** Cygwin
+
+Cygwin Must Have Packages - Tutorial Table of Contents
+
+Cygwin: 3:05 : https://www.cygwin.com
+
+**Packages**
+
+lynx, wget, curl, rsync
+
+python, python3
+
+bzip, tar
+
+bash-completion
+
+vim, vim-common
+
+tmux
+
+git
+
+diffutils
+
+make
+
+gcc-c, gcc-g++, gcc-fortran
+
+openssh
+
+ 
+
+**Useful Stuff**
+
+cd /bin
+
+curl https://github.com/git/git/raw/master/contrib/completion/git-completion.bash -OL
+
+# source is to turn it on. Basically, we are reloading.
+
+source git-completion.bash
+
+ 
+
+# Forgot to add this following line to ~/.bashrc in the video
+
+source /bin/git-completion.bash
+
+# Save and quit
+
+ 
+source ~/.bashrc
+
+ 
+
+**Download apt-cyg. It is used to install packages**
+
+# Greater than sign is not allowed in the description. Change greaterThanSign to a greater than sign.
+
+cd ~
+
+lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg greaterThanSign apt-cyg
+
+OR
+
+curl rawgit.com/transcode-open/apt-cyg/master/apt-cyg -OL -k
+
+ 
+
+After that, run this:
+
+install apt-cyg /bin
+
+ 
+
+**How to use apt-cyg to install packages?**
+
+
+apt-cyg install nano
+
+apt-cyg install zip
+
+apt-cyg install unzip
+
+ 
+
+Next, lets add some shortcuts. Open bashrc file. You can use Vim or nano.
+
+vim ~/.bashrc or nano ~/.bashrc
+
+ 
+
+# Add the following lines to ~/.bashrc (~/.bashrc is a settings file that runs commands every time the terminal opens)
+
+alias desktop="cd C:/Users/huyle/Desktop"
+
+# We can use open for file explorer. e.g. When you are in Desktop in cygwin, type 'open .' to open it in file explorer.
+
+alias open='cygstart'
+
+# If we need to make changes to bashrc file and reload them:
+
+alias reload='source ~/.bash_profile'
+
+export PATH="${HOME}/bin:${PATH}"
+
+ 
+
+After making these changes, 'source' the bashrc file using 'source ~/.bashrc'
+
+ 
+
+**Tabs and Hotkeys**
+
+Cygwin does not have tabs. So, we have to use something else that supports tabs.
+
+Use Console2 or any of your favorite terminal emulators.
+
+Console2: https://sourceforge.net/projects/cons...
+
+
+These will be helpful while configuring the terminal emulator to use Cygwin.
+
+For icon, use this: "C:\cygwin64\Cygwin-Terminal.ico"
+
+For shell, use this: "C:\cygwin64\bin\mintty.exe"
+
+ 
+
+**Integrate with Command Prompt**
+
+For 64 bit, add C:\Users\<username>\cygwin64\bin; to the end of the environment variables.
+
+-----------------------------------------------------------------------------------------

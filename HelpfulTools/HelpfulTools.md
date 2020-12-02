@@ -1,42 +1,43 @@
 
 # Table of Contents
 
-1.  [Tools common for all OSs](#orgb05c3fd)
-    1.  [IDEs :](#org7255067)
-    2.  [Text editors](#org3ad409a)
-    3.  [Browsers](#org98883ba)
-    4.  [Miscellaneous](#org774de24)
-2.  [Tools for Windows](#org63638e5)
-3.  [Tools for Linux](#orgdcfcd3c)
-4.  [Tools for Android (alphabetical order)](#org57800b2)
-5.  [How to use multiple workspaces](#orgd40d59f)
-    1.  [Multiple workspaces in Windows](#orgbcf9f4d)
-6.  [Ready API/Soap UI preferences](#org404f74b)
-7.  [Android alternatives](#orgfcf3a11)
-8.  [Wizdler](#orgbb5ee35)
-9.  [OpenAPI spec editing tools](#org5efecd5)
-10. [Putty](#org754379e)
-11. [Calibre book-reader customization](#org439bd3c)
-12. [Command to put computer to sleep](#org86bbfde)
-13. [Mouse issues in Windows](#org3a3ba88)
-14. [Lenovo Thinkpad tips](#org638378a)
-15. [Windows VDEs running out of memory](#orgae0279c)
-16. [Tree](#org9b7917d)
-17. [Tips for searching and copying files and directories :](#orgb5df31d)
-18. [Killing a process](#org4c4ae37)
-19. [Postman tips](#org32960e2)
-20. [Running jar files from terminal](#org5e3023f)
-21. [Cntlm](#org4f4cee9)
-22. [Commands to run tests on individual files](#org5c778db)
-23. [Gradle commands](#org06ec45d)
+1.  [Tools common for all OSs](#org65115a2)
+    1.  [IDEs :](#org994b52a)
+    2.  [Text editors](#orgf271910)
+    3.  [Browsers](#org0d893cc)
+    4.  [Miscellaneous](#orgee949a9)
+2.  [Tools for Windows](#orge3c5fce)
+3.  [Tools for Linux](#org9fac675)
+4.  [Tools for Android (alphabetical order)](#org12611e2)
+5.  [How to use multiple workspaces](#org6c3773a)
+    1.  [Multiple workspaces in Windows](#orgdca07b8)
+6.  [Ready API/Soap UI preferences](#orga835769)
+7.  [Android alternatives](#orgb8cdbda)
+8.  [Wizdler](#org856e03e)
+9.  [OpenAPI spec editing tools](#org847a85f)
+10. [Putty](#orga19400d)
+11. [Calibre book-reader customization](#orgafbb3a8)
+12. [Command to put computer to sleep](#org4755c03)
+13. [Mouse issues in Windows](#org9e412c6)
+14. [Lenovo Thinkpad tips](#orgf233c6c)
+15. [Windows VDEs running out of memory](#org5651bc0)
+16. [Tree](#org7d2f6ad)
+17. [Tips for searching and copying files and directories :](#org6d9081a)
+18. [Killing a process](#org8eb38be)
+19. [Postman tips](#org21a7539)
+20. [Running jar files from terminal](#org0c2d8c3)
+21. [Cntlm](#org7bb99f6)
+22. [Commands to run tests on individual files](#org87eda25)
+23. [Gradle commands](#org01a2d05)
+24. [Cygwin](#org7e3831e)
 
 
-<a id="orgb05c3fd"></a>
+<a id="org65115a2"></a>
 
 # Tools common for all OSs
 
 
-<a id="org7255067"></a>
+<a id="org994b52a"></a>
 
 ## IDEs :
 
@@ -57,7 +58,7 @@
         -   To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
 
 
-<a id="org3ad409a"></a>
+<a id="orgf271910"></a>
 
 ## Text editors
 
@@ -65,7 +66,7 @@
 2.  gVim
 
 
-<a id="org98883ba"></a>
+<a id="org0d893cc"></a>
 
 ## Browsers
 
@@ -73,14 +74,14 @@
 2.  Tor browser
 
 
-<a id="org774de24"></a>
+<a id="orgee949a9"></a>
 
 ## Miscellaneous
 
 Calibre ebook editor and viewer
 
 
-<a id="org63638e5"></a>
+<a id="orge3c5fce"></a>
 
 # Tools for Windows
 
@@ -94,7 +95,7 @@ Calibre ebook editor and viewer
 -   Console Emulation program - ConEmu
 
 
-<a id="orgdcfcd3c"></a>
+<a id="org9fac675"></a>
 
 # Tools for Linux
 
@@ -126,7 +127,7 @@ Calibre ebook editor and viewer
 -   USB Image Writer
 
 
-<a id="org57800b2"></a>
+<a id="org12611e2"></a>
 
 # Tools for Android (alphabetical order)
 
@@ -172,7 +173,7 @@ Calibre ebook editor and viewer
 ---
 
 
-<a id="orgd40d59f"></a>
+<a id="org6c3773a"></a>
 
 # How to use multiple workspaces
 
@@ -187,7 +188,7 @@ tap an arrow key—and you’ll switch between workspaces,
 taking the currently active window with you to the new workspace.
 
 
-<a id="orgbcf9f4d"></a>
+<a id="orgdca07b8"></a>
 
 ## Multiple workspaces in Windows
 
@@ -206,7 +207,7 @@ taking the currently active window with you to the new workspace.
 ---
 
 
-<a id="org404f74b"></a>
+<a id="orga835769"></a>
 
 # Ready API/Soap UI preferences
 
@@ -219,7 +220,7 @@ ReadyAPI - Default SOAP request editor : XML
 ---
 
 
-<a id="orgfcf3a11"></a>
+<a id="orgb8cdbda"></a>
 
 # Android alternatives
 
@@ -229,7 +230,7 @@ LineageOS (supports many older devices)
 ---
 
 
-<a id="orgbb5ee35"></a>
+<a id="org856e03e"></a>
 
 # Wizdler
 
@@ -240,7 +241,7 @@ Recognizes WSDL information on the page to show you the available services and o
 ---
 
 
-<a id="org5efecd5"></a>
+<a id="org847a85f"></a>
 
 # OpenAPI spec editing tools
 
@@ -253,7 +254,7 @@ Stoplight studio is another good one.
 ---
 
 
-<a id="org754379e"></a>
+<a id="orga19400d"></a>
 
 # Putty
 
@@ -264,7 +265,7 @@ change password :
 ---
 
 
-<a id="org439bd3c"></a>
+<a id="orgafbb3a8"></a>
 
 # Calibre book-reader customization
 
@@ -275,7 +276,7 @@ Preferences -> User Stylesheet -> p {line-height: 2}
 ---
 
 
-<a id="org86bbfde"></a>
+<a id="org4755c03"></a>
 
 # Command to put computer to sleep
 
@@ -286,7 +287,7 @@ Windows:
 ---
 
 
-<a id="org3a3ba88"></a>
+<a id="org9e412c6"></a>
 
 # Mouse issues in Windows
 
@@ -304,7 +305,7 @@ d. Click on Apply and check the issue.
 ---
 
 
-<a id="org638378a"></a>
+<a id="orgf233c6c"></a>
 
 # Lenovo Thinkpad tips
 
@@ -317,7 +318,7 @@ To turn on the small light on the top of the monitor (when working in the dark a
 ---
 
 
-<a id="orgae0279c"></a>
+<a id="org5651bc0"></a>
 
 # Windows VDEs running out of memory
 
@@ -344,7 +345,7 @@ The "Delete Files" button should become available. Click this button to clear fi
 ---
 
 
-<a id="org9b7917d"></a>
+<a id="org7d2f6ad"></a>
 
 # Tree
 
@@ -423,7 +424,7 @@ As you can see in this guide, tree command will give you a nice graphical tree v
 ---
 
 
-<a id="orgb5df31d"></a>
+<a id="org6d9081a"></a>
 
 # Tips for searching and copying files and directories :
 
@@ -482,7 +483,7 @@ So if you want to replicate one path to another include the trailing slash as fo
 ---
 
 
-<a id="org4c4ae37"></a>
+<a id="org8eb38be"></a>
 
 # Killing a process
 
@@ -524,7 +525,7 @@ Restart the Citrix Service (or reboot your machine)
 ---
 
 
-<a id="org32960e2"></a>
+<a id="org21a7539"></a>
 
 # Postman tips
 
@@ -551,7 +552,7 @@ Script to read fields from a SOAP response and set it as a collection variable t
 ---
 
 
-<a id="org5e3023f"></a>
+<a id="org0c2d8c3"></a>
 
 # Running jar files from terminal
 
@@ -560,7 +561,7 @@ Script to read fields from a SOAP response and set it as a collection variable t
 ---
 
 
-<a id="org4f4cee9"></a>
+<a id="org7bb99f6"></a>
 
 # Cntlm
 
@@ -596,7 +597,7 @@ If this doesn't work, restarting the slice using the command 'reboot' works.
 ---
 
 
-<a id="org5c778db"></a>
+<a id="org87eda25"></a>
 
 # Commands to run tests on individual files
 
@@ -612,7 +613,7 @@ If this doesn't work, restarting the slice using the command 'reboot' works.
 ---
 
 
-<a id="org06ec45d"></a>
+<a id="org01a2d05"></a>
 
 # Gradle commands
 
@@ -641,6 +642,107 @@ Windows command to copy the EAR from a source folder to a destination folder:
 To exclude a few tasks from the build process : 
 
     ./gradlew build -x checkstyleMain -x findbugsMain -x test -x jacocoTestCoverageVerification -x pmdMain
+
+---
+
+
+<a id="org7e3831e"></a>
+
+# Cygwin
+
+Cygwin Must Have Packages - Tutorial Table of Contents
+
+Cygwin: 3:05 : <https://www.cygwin.com>
+
+****Packages****
+
+lynx, wget, curl, rsync
+
+python, python3
+
+bzip, tar
+
+bash-completion
+
+vim, vim-common
+
+tmux
+
+git
+
+diffutils
+
+make
+
+gcc-c, gcc-g++, gcc-fortran
+
+openssh
+
+****Useful Stuff****
+
+cd /bin
+
+curl <https://github.com/git/git/raw/master/contrib/completion/git-completion.bash> -OL
+
+source git-completion.bash
+
+source /bin/git-completion.bash
+
+source ~/.bashrc
+
+****Download apt-cyg. It is used to install packages****
+
+cd ~
+
+lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg greaterThanSign apt-cyg
+
+OR
+
+curl rawgit.com/transcode-open/apt-cyg/master/apt-cyg -OL -k
+
+After that, run this:
+
+install apt-cyg /bin
+
+****How to use apt-cyg to install packages?****
+
+apt-cyg install nano
+
+apt-cyg install zip
+
+apt-cyg install unzip
+
+Next, lets add some shortcuts. Open bashrc file. You can use Vim or nano.
+
+vim ~/.bashrc or nano ~/.bashrc
+
+alias desktop="cd C:/Users/huyle/Desktop"
+
+alias open='cygstart'
+
+alias reload='source ~/.bash<sub>profile</sub>'
+
+export PATH="\({HOME}/bin:\){PATH}"
+
+After making these changes, 'source' the bashrc file using 'source ~/.bashrc'
+
+****Tabs and Hotkeys****
+
+Cygwin does not have tabs. So, we have to use something else that supports tabs.
+
+Use Console2 or any of your favorite terminal emulators.
+
+Console2: <https://sourceforge.net/projects/cons>&#x2026;
+
+These will be helpful while configuring the terminal emulator to use Cygwin.
+
+For icon, use this: "C:\cygwin64\Cygwin-Terminal.ico"
+
+For shell, use this: "C:\cygwin64\bin\mintty.exe"
+
+****Integrate with Command Prompt****
+
+For 64 bit, add C:\Users\\<username>\cygwin64\bin; to the end of the environment variables.
 
 ---
 
