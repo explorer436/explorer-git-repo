@@ -59,11 +59,10 @@ lscpu (look at the architecture row)
 
 -------------------------------------------------------------------
 
-ls --all (command to show all files and folders including hidden ones)
-How do I make `ls` show file sizes in megabytes?
-ls -l --block-size=M (round file sizes to the nearest MB)
-ls -l --block-size=MB
-ls -l --block-size=K
+| ls --all              | command to show all files and folders including hidden ones                    |
+| ls -l --block-size=M  | (round file sizes to the nearest MB) To make `ls` show file sizes in megabytes |
+| ls -l --block-size=MB | To make `ls` show file sizes in megabytes                                      |
+| ls -l --block-size=K  | To make `ls` show file sizes in kilobytes                                      |
 
 -------------------------------------------------------------------
 
@@ -127,12 +126,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/i
 
 Next, add Homebrew to your PATH by running the following commands. These commands work on all major flavors of Linux by adding either `~/.profile` on Debian/Ubuntu or `~/.bash_profile` on CentOS/Fedora/RedHat:
 
-```
+#+BEGIN_EXAMPLE
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
 echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
-```
+#+END_EXAMPLE
 
 Verify that Homebrew is installed: `brew --version`
 
@@ -176,8 +175,11 @@ differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is
 How to execute .sh programs in fedora :
 
 	Either make the file executable, and then run it while specifying the path:
+
+#+BEGIN_EXAMPLE
 	chmod +x somefile.sh
 	./somefile.sh
+#+END_EXAMPLE
 
 	or, pass it to the shell interpreter like this: sh somefile.sh
 
@@ -187,11 +189,15 @@ Configure RPMfusion Yum Repository :
 
 	Some packages/frameworks may be available only in RPMFusion repository. So, we may have to add it to Fedora using the following commands :
 	
+#+BEGIN_EXAMPLE
 	sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 	sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+#+END_EXAMPLE
 
 	After the repository is added, they can be installed using commands like the one below :
+#+BEGIN_EXAMPLE
 	sudo dnf -y install ffmpeg
+#+END_EXAMPLE
 
 --------------------------------
 
@@ -201,13 +207,17 @@ How to install OSS code (the open source version of Visual Studio Code) in Fedor
 	
 	We currently ship the stable 64-bit VS Code in a yum repository, the following script will install the key and repository:
 	
+#+BEGIN_EXAMPLE
 	sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 	sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+#+END_EXAMPLE
 	
 	Then update the package cache and install the package using dnf (Fedora 22 and above):
 	
+#+BEGIN_EXAMPLE
 	sudo dnf check-update
 	sudo dnf install code
+#+END_EXAMPLE
 
 --------------------------------
 
@@ -259,6 +269,7 @@ rm -fv *.txt
 #+END_EXAMPLE
 
 **How to Remove Directories**
+
 In Linux, you can remove/delete directories with the rmdir and rm.
 
 rmdir is a command-line utility for deleting empty directories while with rm you can remove directories and their contents recursively.

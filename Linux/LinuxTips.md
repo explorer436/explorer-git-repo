@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Terminal](#orgb38dec7)
-    1.  [How to rename a file from terminal in Linux?](#org2d23d48)
-    2.  [How to launch terminal in Linux :](#org82eb47e)
-2.  [How to Remove Files and Directories Using Linux Command Line](#org8c4a583)
+1.  [Terminal](#org2e15978)
+    1.  [How to rename a file from terminal in Linux?](#orgc8c8587)
+    2.  [How to launch terminal in Linux :](#org0227611)
+2.  [How to Remove Files and Directories Using Linux Command Line](#orge5a2dd1)
 
 
-<a id="orgb38dec7"></a>
+<a id="org2e15978"></a>
 
 # Terminal
 
 
-<a id="org2d23d48"></a>
+<a id="orgc8c8587"></a>
 
 ## How to rename a file from terminal in Linux?
 
@@ -38,7 +38,7 @@ In order to rename a file in Linux you can use either of two approaches
 ---
 
 
-<a id="org82eb47e"></a>
+<a id="org0227611"></a>
 
 ## How to launch terminal in Linux :
 
@@ -76,11 +76,39 @@ lscpu (look at the architecture row)
 
 ---
 
-ls &#x2013;all (command to show all files and folders including hidden ones)
-How do I make \`ls\` show file sizes in megabytes?
-ls -l &#x2013;block-size=M (round file sizes to the nearest MB)
-ls -l &#x2013;block-size=MB
-ls -l &#x2013;block-size=K
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">ls &#x2013;all</td>
+<td class="org-left">command to show all files and folders including hidden ones</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ls -l &#x2013;block-size=M</td>
+<td class="org-left">(round file sizes to the nearest MB) To make `ls` show file sizes in megabytes</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ls -l &#x2013;block-size=MB</td>
+<td class="org-left">To make `ls` show file sizes in megabytes</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ls -l &#x2013;block-size=K</td>
+<td class="org-left">To make `ls` show file sizes in kilobytes</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
@@ -143,12 +171,10 @@ sh -c "$(curl -fsSL <https://raw.githubusercontent.com/Linuxbrew/install/master/
 
 Next, add Homebrew to your PATH by running the following commands. These commands work on all major flavors of Linux by adding either \`~/.profile\` on Debian/Ubuntu or \`~/.bash<sub>profile</sub>\` on CentOS/Fedora/RedHat:
 
-\`\`\`
-test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
-test -d *home/linuxbrew*.linuxbrew && eval \((/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-test -r ~/.bash_profile && echo "eval \\)(\((brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
-echo "eval \\)($(brew &#x2013;prefix)/bin/brew shellenv)" >>~/.profile
-\`\`\`
+    test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+    test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+    echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 
 Verify that Homebrew is installed: \`brew &#x2013;version\`
 
@@ -191,8 +217,9 @@ differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is
 How to execute .sh programs in fedora :
 
 Either make the file executable, and then run it while specifying the path:
-chmod +x somefile.sh
-./somefile.sh
+
+    chmod +x somefile.sh
+    ./somefile.sh
 
 or, pass it to the shell interpreter like this: sh somefile.sh
 
@@ -202,11 +229,12 @@ Configure RPMfusion Yum Repository :
 
 Some packages/frameworks may be available only in RPMFusion repository. So, we may have to add it to Fedora using the following commands :
 
-sudo dnf -y install <https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release>-\((rpm -E %fedora).noarch.rpm
-	sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-\)(rpm -E %fedora).noarch.rpm
+    sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+    sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 After the repository is added, they can be installed using commands like the one below :
-sudo dnf -y install ffmpeg
+
+    sudo dnf -y install ffmpeg
 
 ---
 
@@ -216,18 +244,18 @@ RHEL, Fedora, and CentOS based distributions#
 
 We currently ship the stable 64-bit VS Code in a yum repository, the following script will install the key and repository:
 
-sudo rpm &#x2013;import <https://packages.microsoft.com/keys/microsoft.asc>
-sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=<https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc>" > /etc/yum.repos.d/vscode.repo'
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
 Then update the package cache and install the package using dnf (Fedora 22 and above):
 
-sudo dnf check-update
-sudo dnf install code
+    sudo dnf check-update
+    sudo dnf install code
 
 ---
 
 
-<a id="org8c4a583"></a>
+<a id="orge5a2dd1"></a>
 
 # How to Remove Files and Directories Using Linux Command Line
 
@@ -267,6 +295,7 @@ You can also combine rm options. For example, to remove all .txt files in the cu
     rm -fv *.txt
 
 ****How to Remove Directories****
+
 In Linux, you can remove/delete directories with the rmdir and rm.
 
 rmdir is a command-line utility for deleting empty directories while with rm you can remove directories and their contents recursively.
