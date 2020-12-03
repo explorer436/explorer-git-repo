@@ -122,9 +122,15 @@ sudo dpkg -r PACKAGE_NAME
 
 Run the following to install Homebrew:
 
+#+BEGIN_EXAMPLE
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+#+END_EXAMPLE
 
-Next, add Homebrew to your PATH by running the following commands. These commands work on all major flavors of Linux by adding either `~/.profile` on Debian/Ubuntu or `~/.bash_profile` on CentOS/Fedora/RedHat:
+Next, add Homebrew to your PATH by running the following commands.
+
+#+BEGIN_EXAMPLE
+These commands work on all major flavors of Linux by adding either `~/.profile` on Debian/Ubuntu or `~/.bash_profile` on CentOS/Fedora/RedHat:
+#+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)

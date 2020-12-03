@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Terminal](#org2e15978)
-    1.  [How to rename a file from terminal in Linux?](#orgc8c8587)
-    2.  [How to launch terminal in Linux :](#org0227611)
-2.  [How to Remove Files and Directories Using Linux Command Line](#orge5a2dd1)
+1.  [Terminal](#orga6c3ba1)
+    1.  [How to rename a file from terminal in Linux?](#orgac1696e)
+    2.  [How to launch terminal in Linux :](#orgcdb8960)
+2.  [How to Remove Files and Directories Using Linux Command Line](#org029c9fe)
 
 
-<a id="org2e15978"></a>
+<a id="orga6c3ba1"></a>
 
 # Terminal
 
 
-<a id="orgc8c8587"></a>
+<a id="orgac1696e"></a>
 
 ## How to rename a file from terminal in Linux?
 
@@ -38,7 +38,7 @@ In order to rename a file in Linux you can use either of two approaches
 ---
 
 
-<a id="org0227611"></a>
+<a id="orgcdb8960"></a>
 
 ## How to launch terminal in Linux :
 
@@ -167,9 +167,11 @@ sudo dpkg -r PACKAGE<sub>NAME</sub>
 
 Run the following to install Homebrew:
 
-sh -c "$(curl -fsSL <https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh>)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 
-Next, add Homebrew to your PATH by running the following commands. These commands work on all major flavors of Linux by adding either \`~/.profile\` on Debian/Ubuntu or \`~/.bash<sub>profile</sub>\` on CentOS/Fedora/RedHat:
+Next, add Homebrew to your PATH by running the following commands.
+
+    These commands work on all major flavors of Linux by adding either `~/.profile` on Debian/Ubuntu or `~/.bash_profile` on CentOS/Fedora/RedHat:
 
     test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
     test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
@@ -255,7 +257,7 @@ Then update the package cache and install the package using dnf (Fedora 22 and a
 ---
 
 
-<a id="orge5a2dd1"></a>
+<a id="org029c9fe"></a>
 
 # How to Remove Files and Directories Using Linux Command Line
 
