@@ -1,7 +1,6 @@
 * My Emacs notes
   
-  
-** Helpful tips related to configuration and other things related to Emacs that I find useful.
+Helpful tips related to configuration and other things related to Emacs that I find useful.
 
 *** How to view the list of all the currently installed packages in Emacs?
 
@@ -34,11 +33,14 @@ To change to mode from some other mode : M-x evil-mode
 ------------
 
 *** How to work with org-mode and evil-mode?
-    It looks like Vim key bindings will work in Org mode as well.
+    Install evil-mode and turn it on and we should be good to go.
+    Vim key bindings will work in Org mode as well.
+
 
 ------------
 
 *** Helpful commands
+
     | Command                    | Description                                                                                                                                                             |
     |----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | C-x b and C-x C-b          | Switching between buffers                                                                                                                                               |
@@ -111,4 +113,7 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
     
     Alt+x global-display-line-numbers-mode ? Emacs 26 (released in 2018-05)
      
+    Add the following line to the .emacs file to make it the default behavior:
+    (global-display-line-numbers-mode)
+
 ------------
