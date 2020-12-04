@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Typing Lessons 1: Introduction to the Home Row](#orgde09797)
-2.  [Typing Lessons 2: The Right-Hand Home Row Keys](#orga3da51f)
-3.  [Typing Lessons 3: The Left-Hand Home Row Keys](#org2aaf15f)
-4.  [Typing Lessons 4: Using the Shift and Enter Keys](#org4787a67)
-5.  [Typing Lessons 5: Apostrophes and Quotation Marks](#orgf0d1d6c)
-6.  [Typing Lessons 6: The Left-Hand Top Row Keys](#orgf28db95)
-7.  [Typing Lessons 7: The Right-Hand Top Row Keys](#org2f1e761)
-8.  [Typing Lessons 8: The Left-Hand Bottom Row Keys](#org948135f)
-9.  [Typing Lessons 9: The Right-Hand Bottom Row Keys](#orgbd0021e)
-10. [Typing Lessons 10: The Left-Hand Number Keys](#org0886be9)
-11. [Typing Lessons 11: The Right-Hand Number Keys](#org27028b0)
-12. [Typing Lessons 12: Parentheses and Other Brackets](#org18412e6)
-13. [Typing Lessons 13: The Left-Hand Symbol Keys](#org5dd2b93)
-14. [Typing Lessons 14: The Right-Hand Symbol Keys](#org6c406bd)
-15. [Typing Lessons 15: The Delete and Backspace Keys](#orgfafbb1a)
-16. [Typing Lessons 16: Math and Movement Keys](#org15ffb5b)
-17. [Typing Lessons 17: Practice Tips and Tricks](#org0148b33)
-18. [Typing Lessons 18: What Next?](#org0520dcd)
+1.  [Typing Lessons 1: Introduction to the Home Row](#org23ac88e)
+2.  [Typing Lessons 2: The Right-Hand Home Row Keys](#org31dfdec)
+3.  [Typing Lessons 3: The Left-Hand Home Row Keys](#org95f509e)
+4.  [Typing Lessons 4: Using the Shift and Enter Keys](#orge84c297)
+5.  [Typing Lessons 5: Apostrophes and Quotation Marks](#orgc772b65)
+6.  [Typing Lessons 6: The Left-Hand Top Row Keys](#org8d10ddd)
+7.  [Typing Lessons 7: The Right-Hand Top Row Keys](#orgd6517ae)
+8.  [Typing Lessons 8: The Left-Hand Bottom Row Keys](#org8058dfe)
+9.  [Typing Lessons 9: The Right-Hand Bottom Row Keys](#org63dc7fd)
+10. [Typing Lessons 10: The Left-Hand Number Keys](#org61165f0)
+11. [Typing Lessons 11: The Right-Hand Number Keys](#org19dc044)
+12. [Typing Lessons 12: Parentheses and Other Brackets](#org59a6836)
+13. [Typing Lessons 13: The Left-Hand Symbol Keys](#org9b82c31)
+14. [Typing Lessons 14: The Right-Hand Symbol Keys](#orgf5c9e13)
+15. [Typing Lessons 15: The Delete and Backspace Keys](#org38a5c66)
+16. [Typing Lessons 16: Math and Movement Keys](#org0cbc8cb)
+17. [Typing Lessons 17: Practice Tips and Tricks](#orge8ae823)
+18. [Typing Lessons 18: What Next?](#orgd651132)
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -82,7 +82,7 @@
 ---
 
 
-<a id="orgde09797"></a>
+<a id="org23ac88e"></a>
 
 # Typing Lessons 1: Introduction to the Home Row
 
@@ -92,7 +92,7 @@ Here's a basic rule of touch typing: never look down at the keyboard. Your finge
 
 When you're just starting to learn touch typing, don't worry about speed. You won't be ready to take a typing speed test until you've learned how to keep your hand positioned over the home row, and only move your fingers to the other keys. In this lesson, you'll learn which of the home row keys are your home base keys, and how to practice moving your fingers without moving your hands.
 
-Most people who are keyboarding online are using a laptop or computer keyboard. These typing lessons will teach you how to use the standard QWERTY keyboard, and how to use all of your fingers and thumbs to touch type. Remember, you won't do well on a typing test if you're "texting" the letters with only one or two fingers!
+Most people who are typing online are using a laptop or computer keyboard. These typing lessons will teach you how to use the standard QWERTY keyboard, and how to use all of your fingers and thumbs to touch type. Remember, you won't do well on a typing test if you're "texting" the letters with only one or two fingers!
 
 To start this lesson, let's look at the home row and its eight home base keys:
 
@@ -106,7 +106,7 @@ K         Put the tip of the middle finger on your right hand on top of this key
 L          Keep the tip your right-hand ring finger lightly on this key.
 ;           Place the tip of the pinky on your right hand on this key.
 
-Are all of your fingers in place? You'll probably feel a small bump under your two index fingers on the F and J keys. These bumps will help you keep your hands in the right place as you start keyboarding online.
+Are all of your fingers in place? You'll probably feel a small bump under your two index fingers on the F and J keys. These bumps will help you keep your hands in the right place as you start typing online.
 
 Your thumbs should rest lightly on the space bar. You can press the space bar with either thumb. Some people use their two thumbs alternately, while others tend to use the thumb on their dominant hand to press the space bar. If you're right-handed, you may find it more natural to use your right thumb. To find out which feels more comfortable, find a free typing test online and go through it without worrying about your accuracy - just focus on using the space bar. With a little practice this movement will become habit.
 
@@ -115,11 +115,11 @@ Before you move on to the next lesson or to take a typing test, practice moving 
 ---
 
 
-<a id="orga3da51f"></a>
+<a id="org31dfdec"></a>
 
 # Typing Lessons 2: The Right-Hand Home Row Keys
 
-A good typing practice session will give you a chance to use all of the keys on the keyboard, including letters, numbers, and symbols. When you're first starting to learn touch typing, it's best to start out learning keys and keystrokes in smaller groups. That's why you should only take a typing test at this point if it focuses on a few letters rather than the entire keyboard. If you try to take a test using all of the keys, you may get discouraged, because your score on an average typing speed test will be fairly low. But if you go through all of these typing lessons in order, you will learn each group of keys before moving on to the next one, and you'll find that keyboarding online will be much easier.
+A good typing practice session will give you a chance to use all of the keys on the keyboard, including letters, numbers, and symbols. When you're first starting to learn touch typing, it's best to start out learning keys and keystrokes in smaller groups. That's why you should only take a typing test at this point if it focuses on a few letters rather than the entire keyboard. If you try to take a test using all of the keys, you may get discouraged, because your score on an average typing speed test will be fairly low. But if you go through all of these typing lessons in order, you will learn each group of keys before moving on to the next one, and you'll find that typing online will be much easier.
 
 If you were wondering in the last lesson why we skipped over the H key on the keyboard, it's because the H key is not one of the home base keys. Remember, the home base keys for your right hand are the J, K, L, and ; keys. Rest both your hands on the home row with your fingers in the correct position, and go through the typing test below to see if you can press the correct keys with the right fingers every time. Ready?
 
@@ -156,11 +156,11 @@ Now that you've practiced with all five of the right-hand home row keys, go back
 ---
 
 
-<a id="org2aaf15f"></a>
+<a id="org95f509e"></a>
 
 # Typing Lessons 3: The Left-Hand Home Row Keys
 
-As we discussed in the last lesson, it's important that you learn to keep your hands in position over the home row when you're keyboarding online. If you notice that you're moving your entire hand as you go through these typing lessons, try resting your wrist on the edge of the laptop, or the wrist rest built into most plug-in keyboards. Some of the newer, smaller keyboards don't have these wrist rests, so keep the base of your palm or your wrist in contact with the table or desk as you work on your typing practice. Don't put too much weight down on your wrists as you're touch typing, though. This can lead to problems with the tendons and muscles in your wrists, hands, and arms. Just use enough pressure that you're not as tempted to move your hands as you type. If you're not sure whether or not you're moving your hands too much, get a friend to watch your hands as you go through a typing test. Remember, you're not supposed to be looking down at the keyboard, so you can't watch your own hands!
+As we discussed in the last lesson, it's important that you learn to keep your hands in position over the home row when you're typing online. If you notice that you're moving your entire hand as you go through these typing lessons, try resting your wrist on the edge of the laptop, or the wrist rest built into most plug-in keyboards. Some of the newer, smaller keyboards don't have these wrist rests, so keep the base of your palm or your wrist in contact with the table or desk as you work on your typing practice. Don't put too much weight down on your wrists as you're touch typing, though. This can lead to problems with the tendons and muscles in your wrists, hands, and arms. Just use enough pressure that you're not as tempted to move your hands as you type. If you're not sure whether or not you're moving your hands too much, get a friend to watch your hands as you go through a typing test. Remember, you're not supposed to be looking down at the keyboard, so you can't watch your own hands!
 
 If you went through an online typing test to practice using the space bar and the right-hand home row keys, and you had your hands in the correct position on the home row, you probably found yourself automatically pressing the left-hand home row keys during that typing test. That's good! It means that your fingers are starting to learn the right movements to make and the right keys to hit, even if you're not thinking about those keys. In this lesson, we'll focus on those left-hand home row keys.
 
@@ -199,7 +199,7 @@ Are you able to follow these keystrokes without making a mistake? Don't worry ab
 ---
 
 
-<a id="org4787a67"></a>
+<a id="orge84c297"></a>
 
 # Typing Lessons 4: Using the Shift and Enter Keys
 
@@ -215,18 +215,18 @@ The D key is typed with the middle finger of your left hand. To make a capital l
 
 That's easy enough, isn't it? If you're going to press the letter or symbol key with the right hand, you'll press and hold the Shift key with the pinky of your left hand. If you're going to press the letter or symbol key with the left hand, use the pinky of your right hand to press and hold the Shift key. While this might not make sense right now, once you take your first typing speed test you'll quickly realize that using this balanced approach helps you type even faster. If you don't think that's true, look up any free typing test on line and try taking the typing test several times. Practice with the balanced alternating hand technique described above, and then try it again using the left and right Shift keys randomly. You will find that it is hard to press and hold the Shift key with one hand and also press a letter or symbol key with another finger on that hand. If you don't want to have slowed-down typing test results, make sure you use the alternating hand technique you learned in this lesson.
 
-Another important key is the Enter key. On a standard QWERTY keyboard, the Enter key is at the far right side of the home row. Whether you are right-handed or left-handed, you'll need to practice using the pinky finger on your right hand to hit this key. Some people who are used to keyboarding online in text messages or casual e-mails might not use the Enter key as often, but any typing test you take will require you to separate paragraphs, sentences, or even words in order to get a good score.
+Another important key is the Enter key. On a standard QWERTY keyboard, the Enter key is at the far right side of the home row. Whether you are right-handed or left-handed, you'll need to practice using the pinky finger on your right hand to hit this key. Some people who are used to typing online in text messages or casual e-mails might not use the Enter key as often, but any typing test you take will require you to separate paragraphs, sentences, or even words in order to get a good score.
 
 ---
 
 
-<a id="orgf0d1d6c"></a>
+<a id="orgc772b65"></a>
 
 # Typing Lessons 5: Apostrophes and Quotation Marks
 
 If you're continuing your typing practice after Lesson 4 and going straight into Lesson 5, you might want to take a break for a few minutes first. That's because we're going to be talking about another key and set of characters that requires you to use your right-hand pinky finger. Don't worry - this is the last of these typing lessons where one finger will have so much to do! In this lesson, we're going to look at apostrophes and quotation marks. Both of these symbols are found on the key to the right of the home row on a standard QWERTY keyboard, between the ; key and the Enter key.
 
-You'll probably find that you use apostrophes much more often while touch typing, but it's important to learn to use quotation marks as well. For one thing, when you're taking a typing test, you'll almost always be tested on this symbol. Apostrophes are more common in everyday keyboarding online, because they're used in words that are possessive or are contractions. Here are some examples of words and phrases that use an apostrophe:
+You'll probably find that you use apostrophes much more often while touch typing, but it's important to learn to use quotation marks as well. For one thing, when you're taking a typing test, you'll almost always be tested on this symbol. Apostrophes are more common in everyday typing online, because they're used in words that are possessive or are contractions. Here are some examples of words and phrases that use an apostrophe:
 
     she won't go to school
     the cat's outside the door
@@ -262,11 +262,11 @@ Congratulations! You know all of the keys on the home row now. This is a good ti
 ---
 
 
-<a id="orgf28db95"></a>
+<a id="org8d10ddd"></a>
 
 # Typing Lessons 6: The Left-Hand Top Row Keys
 
-It's time to move away from the home row keys and look at some of the other letters and symbols on the standard QWERTY keyboard. But remember - when we say "move away" we don't mean moving your hands away from their position on the home row! As you learned in the first of these typing lessons, always keep your hands in the same place, with the tips of your left-hand fingers resting lightly on the A S D and F keys, and the tips of your right-hand fingers on the J K L and ; keys. Keep your wrists flat and just touching the desk or edge of the keyboard. It's important to be in the right position when taking a typing test or when touch typing in general, otherwise your speed and accuracy will go down. What's more, if you spend a lot of time keyboarding online, poor hand position may lead to problems with your muscles, all the way up to the muscles in your neck and back. If you're regularly taking an online typing test, you're already going to be under pressure to perform, especially if it's a typing speed test. Keep your wrists and arms relaxed as you go through any typing practice sessions.
+It's time to move away from the home row keys and look at some of the other letters and symbols on the standard QWERTY keyboard. But remember - when we say "move away" we don't mean moving your hands away from their position on the home row! As you learned in the first of these typing lessons, always keep your hands in the same place, with the tips of your left-hand fingers resting lightly on the A S D and F keys, and the tips of your right-hand fingers on the J K L and ; keys. Keep your wrists flat and just touching the desk or edge of the keyboard. It's important to be in the right position when taking a typing test or when touch typing in general, otherwise your speed and accuracy will go down. What's more, if you spend a lot of time typing online, poor hand position may lead to problems with your muscles, all the way up to the muscles in your neck and back. If you're regularly taking an online typing test, you're already going to be under pressure to perform, especially if it's a typing speed test. Keep your wrists and arms relaxed as you go through any typing practice sessions.
 
 The left-hand top row keys should be familiar by now, because we've mentioned them several times already. They're the keys that gave the keyboard you're using its name: QWERTY (the Y is actually typed with one of the fingers of the right hand, and we'll cover that in the next lesson).
 
@@ -305,7 +305,7 @@ If you have found a free typing test that lets you choose which letter to focus 
 ---
 
 
-<a id="org2f1e761"></a>
+<a id="orgd6517ae"></a>
 
 # Typing Lessons 7: The Right-Hand Top Row Keys
 
@@ -353,18 +353,18 @@ Here's another free typing test so that you can practice using the keys on the h
     
     Help to type well: type "test help"
 
-You know enough about most of the common keys now to get some good touch typing practice just by doing your daily keyboarding online. Whether you're typing e-mails to friends or writing a paper for a school assignment, taking an online typing test or just surfing the internet, practice the correct hand position so that it becomes a habit. It's a good idea to take another typing test at this point so that you can have more fun typing real words and phrases. Stay motivated, keep learning, and get ready to learn more letters and symbols in the next lesson!
+You know enough about most of the common keys now to get some good touch typing practice just by doing your daily typing online. Whether you're typing e-mails to friends or writing a paper for a school assignment, taking an online typing test or just surfing the internet, practice the correct hand position so that it becomes a habit. It's a good idea to take another typing test at this point so that you can have more fun typing real words and phrases. Stay motivated, keep learning, and get ready to learn more letters and symbols in the next lesson!
 
 ---
 
 
-<a id="org948135f"></a>
+<a id="org8058dfe"></a>
 
 # Typing Lessons 8: The Left-Hand Bottom Row Keys
 
 The last row of letters and symbols on a standard QWERTY keyboard is on the bottom row. This row is sometimes hard to learn, but regular typing practice will help you train your fingers to make the movements down to these keys. You've probably noticed when you've been taking a typing speed test that you slow down a little bit when you are searching for the bottom-row keys. That's because moving your fingers down and back is not a natural movement for most people. We tend to find it easier to move our fingers out and forward, not down and backward. But that's what these typing lessons are all about: teaching you the easiest and best ways to learn touch typing.
 
-The letters and symbols on the bottom row include a few letters that you probably won't use as often, and two symbols that you'll be using all of the time when you're keyboarding online. After we look at the keys and the fingers you use to press them, you'll take a typing test to practice how these finger movements feel.
+The letters and symbols on the bottom row include a few letters that you probably won't use as often, and two symbols that you'll be using all of the time when you're typing online. After we look at the keys and the fingers you use to press them, you'll take a typing test to practice how these finger movements feel.
 
 The keys on the left-hand side of the bottom row of a standard QWERTY keyboard are as follows:
 
@@ -419,7 +419,7 @@ Here's one more typing test to help you get used to using the Shift key when you
 ---
 
 
-<a id="orgbd0021e"></a>
+<a id="org63dc7fd"></a>
 
 # Typing Lessons 9: The Right-Hand Bottom Row Keys
 
@@ -427,7 +427,7 @@ This is the last of the typing lessons to teach you where to find the letters of
 
 N   M   ,   .   /
 
-You'll definitely be using the comma (,) and period (.) keys regularly when you're keyboarding online, so take all of the time you need to get familiar with these last five keys and the letters and symbols on them. The second symbol on the / key is the question mark (?) and you'll get a chance to practice that symbol in a typing test, after you learn the correct finger movements.
+You'll definitely be using the comma (,) and period (.) keys regularly when you're typing online, so take all of the time you need to get familiar with these last five keys and the letters and symbols on them. The second symbol on the / key is the question mark (?) and you'll get a chance to practice that symbol in a typing test, after you learn the correct finger movements.
 
 Place your hands in position with your fingers over the home base keys, then go through the right-hand finger movements as follows:
 
@@ -478,11 +478,11 @@ Here's one more typing test to help you get used to using the Shift key. Now tha
 ---
 
 
-<a id="org0886be9"></a>
+<a id="org61165f0"></a>
 
 # Typing Lessons 10: The Left-Hand Number Keys
 
-In the first nine typing lessons of this series, you learned where all of the letters of the alphabet are found on a standard QWERTY keyboard. You also learned which fingers to use to strike each of those keys, and the importance of returning each finger to its home row position to help you be as accurate as possible when touch typing. You got typing practice with some of the common symbols that you'll use every day when keyboarding online, like the comma (,) and colon (:) and question mark (?). We gave you several free typing tests to help you learn how to use the Shift keys correctly; do you remember that rule? If you said "always press the Shift key with the pinky finger of the hand opposite the one used to strike the letter or symbol key" then congratulations! You've got all the basics down, and you should already be noticing an improvement in your score when you take a typing speed test.
+In the first nine typing lessons of this series, you learned where all of the letters of the alphabet are found on a standard QWERTY keyboard. You also learned which fingers to use to strike each of those keys, and the importance of returning each finger to its home row position to help you be as accurate as possible when touch typing. You got typing practice with some of the common symbols that you'll use every day when typing online, like the comma (,) and colon (:) and question mark (?). We gave you several free typing tests to help you learn how to use the Shift keys correctly; do you remember that rule? If you said "always press the Shift key with the pinky finger of the hand opposite the one used to strike the letter or symbol key" then congratulations! You've got all the basics down, and you should already be noticing an improvement in your score when you take a typing speed test.
 
 In these next typing lessons, we'll introduce you to the number keys. While it's true that many computer keyboards have numeric keypads that people often use to type numbers, these lessons will show you how to use the regular QWERTY keyboard keys to type them. There are several reasons for this: first, if you're using a laptop like many people do, there probably isn't a numeric keypad - you'd have to switch some of the letters over to numbers, and then remember to switch them back. That will definitely slow you down when you're taking a typing test! Second, a numeric keypad is most useful when you're doing data entry. If you're looking for an office job, you may be asked to take an online typing test for numeric data entry, so it's a good idea to practice with a keypad for that purpose. However, when you're touch typing on a daily basis, you'll find it easier to use the number keys at the top of the QWERY keyboard.
 
@@ -529,13 +529,13 @@ Here's another typing test that will help you practice these five number keys. T
 ---
 
 
-<a id="org27028b0"></a>
+<a id="org19dc044"></a>
 
 # Typing Lessons 11: The Right-Hand Number Keys
 
-Your touch typing should feel more natural now that you've had the chance to get some typing practice with each free typing test that uses all of the letters on the standard QWERTY keyboard. If you're still having problems or feel like you need to look down at the keyboard as you type, try going back to earlier typing lessons and reviewing specific keystroke movements. Another good way to practice is to spend as much time as possible keyboarding online, using practice texts and focusing on accuracy instead of speed. While you can take a typing speed test just to see what your current word per minute (wpm) score is, don't worry about speed right now. In fact, for some people it's a good idea to avoid taking any typing test until they get more familiar with all of the keystrokes and finger movements. That's because it can be discouraging to get a low score on an online typing test. Remember that practice makes perfect, and right now you should be concentrating on getting as much practice time on the keyboard as you possibly can. Keep your hands in position on the home row, keep your eyes on the screen instead of the keyboard, and if you want to take a typing test, try for a high accuracy score rather than a high speed score.
+Your touch typing should feel more natural now that you've had the chance to get some typing practice with each free typing test that uses all of the letters on the standard QWERTY keyboard. If you're still having problems or feel like you need to look down at the keyboard as you type, try going back to earlier typing lessons and reviewing specific keystroke movements. Another good way to practice is to spend as much time as possible typing online, using practice texts and focusing on accuracy instead of speed. While you can take a typing speed test just to see what your current word per minute (wpm) score is, don't worry about speed right now. In fact, for some people it's a good idea to avoid taking any typing test until they get more familiar with all of the keystrokes and finger movements. That's because it can be discouraging to get a low score on an online typing test. Remember that practice makes perfect, and right now you should be concentrating on getting as much practice time on the keyboard as you possibly can. Keep your hands in position on the home row, keep your eyes on the screen instead of the keyboard, and if you want to take a typing test, try for a high accuracy score rather than a high speed score.
 
-In this lesson, you'll learn the other five number keys on the top row of the keyboard. As we said in the last lesson, it's a good idea to learn how to type numbers on the standard QWERTY layout rather than using a numeric keypad. If you want to learn how to do numeric data entry or calculations using a keypad, that's something you can do later, after you have all of the basic touch typing principles learned. However, you'll probably find it a lot more efficient to type numbers using the keyboard keys instead of the numeric keypad keys when you're keyboarding online on a day-to-day basis.
+In this lesson, you'll learn the other five number keys on the top row of the keyboard. As we said in the last lesson, it's a good idea to learn how to type numbers on the standard QWERTY layout rather than using a numeric keypad. If you want to learn how to do numeric data entry or calculations using a keypad, that's something you can do later, after you have all of the basic touch typing principles learned. However, you'll probably find it a lot more efficient to type numbers using the keyboard keys instead of the numeric keypad keys when you're typing online on a day-to-day basis.
 
 Here are the finger movements for the numbers 6 through 0 on the QWERTY keyboard:
 
@@ -560,11 +560,11 @@ Are you ready for another typing test? These two paragraphs having you using all
 ---
 
 
-<a id="org18412e6"></a>
+<a id="org59a6836"></a>
 
 # Typing Lessons 12: Parentheses and Other Brackets
 
-The things you'll need to type when you're keyboarding online will depend on what you're doing. Do you think you'll just be on social media sites, chatting with friends, or commenting on blog posts? You'll probably only use the letter and number keys, and some of the common symbols when you're touch typing if you're a casual user, and you probably won't need to type more than about 40wpm. Any free typing test will help you determine whether you've reached that goal already. While accuracy is still very important, you don't need to be as concerned about speed.
+The things you'll need to type when you're typing online will depend on what you're doing. Do you think you'll just be on social media sites, chatting with friends, or commenting on blog posts? You'll probably only use the letter and number keys, and some of the common symbols when you're touch typing if you're a casual user, and you probably won't need to type more than about 40wpm. Any free typing test will help you determine whether you've reached that goal already. While accuracy is still very important, you don't need to be as concerned about speed.
 
 However, if you're a student with papers to write, or if you do most of your communications through longer e-mails, then you should think about speed as well as accuracy. After you're done with this series of typing lessons, take a typing speed test to check your words per minute. Someone who depends on fast, accurate communication should be able to type at least 60wpm with an accuracy of 80% or above. For students or anyone else who needs to write a lot of papers or produce a lot of documents, this is the minimum speed required to make sure you can keep up with your work load.
 
@@ -589,11 +589,11 @@ Now take this typing test to practice using all three types of brackets:
 ---
 
 
-<a id="org5dd2b93"></a>
+<a id="org9b82c31"></a>
 
 # Typing Lessons 13: The Left-Hand Symbol Keys
 
-Now that you've learned all of the letters and numbers, the rest of these typing lessons will help you learn all of the symbols on the standard QWERTY keyboard. You'll use some of these symbols quite often when you're keyboarding online, others only infrequently, and some symbols you may never use - but it's a good idea to learn where they are on the keyboard, just in case. Some online typing tests make a point of testing you on every single key. What's more, it's not unusual for employers to give prospective employees a typing test as part of the hiring process for many office jobs. In order to show that your touch typing is at a professional level, you'll need to know all of the keys.
+Now that you've learned all of the letters and numbers, the rest of these typing lessons will help you learn all of the symbols on the standard QWERTY keyboard. You'll use some of these symbols quite often when you're typing online, others only infrequently, and some symbols you may never use - but it's a good idea to learn where they are on the keyboard, just in case. Some online typing tests make a point of testing you on every single key. What's more, it's not unusual for employers to give prospective employees a typing test as part of the hiring process for many office jobs. In order to show that your touch typing is at a professional level, you'll need to know all of the keys.
 
 There are 7 symbols you'll type with the fingers of your left hand. All but one of them require you to also press the Shift key with the pinky finger of your right hand at the same time. Repeat this typing practice sequence as many times as you need.
 
@@ -630,7 +630,7 @@ Although you may only ever use some of these symbols during a typing test, you d
 ---
 
 
-<a id="org6c406bd"></a>
+<a id="orgf5c9e13"></a>
 
 # Typing Lessons 14: The Right-Hand Symbol Keys
 
@@ -642,7 +642,7 @@ The ^ symbol is called the carat symbol, and it's right above the 6 key on the t
 
 The ampersand is the & symbol on the 7 key, and you'll use this to replace the word "and." Up to a few decades ago, this was a common way of saying "and" but these days it's mostly used in names, like "AT&T."
 
-You will use the asterisk \* found above the 8 when you're typing a document with footnotes,  and sometimes when you're keyboarding online. One asterisk tells the reader to look for a footnote with more information at the bottom of the page. Two asterisks around a word or phrase shows emphasis in a text or e-mail message, like this: "I can't **believe** he said that!"
+You will use the asterisk \* found above the 8 when you're typing a document with footnotes,  and sometimes when you're typing online. One asterisk tells the reader to look for a footnote with more information at the bottom of the page. Two asterisks around a word or phrase shows emphasis in a text or e-mail message, like this: "I can't **believe** he said that!"
 
 The hyphen - is found on the key just to the right of the 0 key on the top row of a QWERTY keyboard. Use hyphens to create compound words like "twenty-one" and "high-stakes."
 
@@ -660,12 +660,12 @@ There are two more symbols you type with your right hand, the bar symbol | and t
 
 Move your right-hand pinky finger from the ; key over to the \\ key and back again. Press and hold the Shift key with your left-hand pinky finger and use your right-hand pinky finger to strike the same key, which gives you the | symbol.
 
-At first all of these infrequently-used symbols will probably slow down your total words per minute (wpm) in any typing speed test, but keep practicing and you'll soon be able to hit those keys confidently and accurately. Remember, you'll probably only need to use a few of them regularly, so they won't slow down your overall speed in a standard typing test or when you're keyboarding online.
+At first all of these infrequently-used symbols will probably slow down your total words per minute (wpm) in any typing speed test, but keep practicing and you'll soon be able to hit those keys confidently and accurately. Remember, you'll probably only need to use a few of them regularly, so they won't slow down your overall speed in a standard typing test or when you're typing online.
 
 ---
 
 
-<a id="orgfafbb1a"></a>
+<a id="org38a5c66"></a>
 
 # Typing Lessons 15: The Delete and Backspace Keys
 
@@ -679,18 +679,18 @@ The Backspace key is usually to the right of the top row of number keys. Use you
 
 The Delete key is usually found at the very top right of the keyboard. You'll also use the pinky finger on your right hand for this key.
 
-Of course, when you're keyboarding online and writing e-mails, creating text documents, and communicating with people, you need to make sure that what you've typed is error-free before you print out a document or hit the Enter key to send a message. Even if you're able to type at 90wpm, use some of the time you saved typing to check your text carefully. Keep in mind that your computer won't catch all of the errors and typos, because sometimes a mistyped word is still a properly-spelled word, just not the one you meant! Any typing mistake means that you could be confusing the person on the other end of the communication, whether that's via an online e-mail or a printed document. For example, you don't want to send someone a message with directions to meet you for lunch, and tell them to "go tough the crossing" instead of  to"go through the crossing."
+Of course, when you're typing online and writing e-mails, creating text documents, and communicating with people, you need to make sure that what you've typed is error-free before you print out a document or hit the Enter key to send a message. Even if you're able to type at 90wpm, use some of the time you saved typing to check your text carefully. Keep in mind that your computer won't catch all of the errors and typos, because sometimes a mistyped word is still a properly-spelled word, just not the one you meant! Any typing mistake means that you could be confusing the person on the other end of the communication, whether that's via an online e-mail or a printed document. For example, you don't want to send someone a message with directions to meet you for lunch, and tell them to "go tough the crossing" instead of  to"go through the crossing."
 
 The best way to make sure you don't send out messages with errors is to keep up with regular typing practice. Now that you've learned all of the letters and numbers on the keyboard, and almost all of the symbols, go ahead and take a typing test to see where you score on speed and accuracy - but try to avoid the Backspace and Delete keys!
 
 ---
 
 
-<a id="org15ffb5b"></a>
+<a id="org0cbc8cb"></a>
 
 # Typing Lessons 16: Math and Movement Keys
 
-This is the last of the typing lessons in this series where you'll learn how to type new symbols. We'll also introduce you to some useful keys that will help you when you're keyboarding online, with quick ways to get around a block of text or move through a document. Once you're done with this lesson, you'll be able to focus on typing practice that will improve your speed and accuracy. Remember, if you're touch typing and you find that you're frequently making mistakes on one or two keys or symbols, go back through these typing lessons and practice with the appropriate typing test until you're sure you know the right finger movements.
+This is the last of the typing lessons in this series where you'll learn how to type new symbols. We'll also introduce you to some useful keys that will help you when you're typing online, with quick ways to get around a block of text or move through a document. Once you're done with this lesson, you'll be able to focus on typing practice that will improve your speed and accuracy. Remember, if you're touch typing and you find that you're frequently making mistakes on one or two keys or symbols, go back through these typing lessons and practice with the appropriate typing test until you're sure you know the right finger movements.
 
 We'll start out with the last of the keyboard symbols found on a standard QWERTY keyboard, the plus sign + and the equals sign =. Unless you're typing out a mathematical formula, you'll probably only use these as shorthand for the words "plus" and "equals." Most people who need to type in a lot of math equations (into a spreadsheet, for example) will use the numeric keypad, but it's a good idea to learn where all of the symbols used in basic math are located on the keyboard.
 
@@ -733,13 +733,13 @@ There are other keys on most keyboards, but what they do really depends on the c
 ---
 
 
-<a id="org0148b33"></a>
+<a id="orge8ae823"></a>
 
 # Typing Lessons 17: Practice Tips and Tricks
 
 Congratulations! You have learned every standard letter, number, and symbol on the standard QWERTY keyboard! Now that you have the basics down, it's time to concentrate on your speed and your accuracy. The more you practice touch typing, the better both will be. Try to set aside time every day to take a typing test. There are many free typing tests available over the internet, but be sure to get one that you can use on your laptop or computer, rather than an app you download on your phone.
 
-If you already spend a lot of time keyboarding online, that's good! But if you've only been typing for casual communication, now's the time to make sure you're being just as careful as you would if you were typing a project for school or work. When you treat every short e-mail as a good way to get typing practice, you'll get into the habit of typing accurately. Once you've conquered any typing errors you've been making, you can work on really increasing your speed.
+If you already spend a lot of time typing online, that's good! But if you've only been typing for casual communication, now's the time to make sure you're being just as careful as you would if you were typing a project for school or work. When you treat every short e-mail as a good way to get typing practice, you'll get into the habit of typing accurately. Once you've conquered any typing errors you've been making, you can work on really increasing your speed.
 
 Take a typing speed test at least once a week. This will help you judge how quickly you're improving. Most online typing tests track your speed and your accuracy separately, and some of them will even give you a graph at the end so that you have visual proof that you're getting better at touch typing.
 
@@ -762,7 +762,7 @@ Are you ready for a final typing test? This one is a real challenge, because it 
 ---
 
 
-<a id="org0520dcd"></a>
+<a id="orgd651132"></a>
 
 # Typing Lessons 18: What Next?
 
@@ -770,13 +770,13 @@ Each typing test contained in this series of typing lessons can be used for a qu
 
 After you've improved your accuracy, you can work on your speed. Remember, it might be fun to get a score of 125wpm on a typing speed test, but if you've made a lot of errors, you really aren't touch typing correctly. Try to keep your accuracy rate at 90% or better while you're focusing on increasing your typing speed.
 
-Simply spending time keyboarding online is one of the easiest ways to get your typing practice! As long as you're just as careful to avoid errors, you can treat every keyboard session as a typing test by concentrating on making as few mistakes as possible while still typing at a good speed.
+Simply spending time typing online is one of the easiest ways to get your typing practice! As long as you're just as careful to avoid errors, you can treat every keyboard session as a typing test by concentrating on making as few mistakes as possible while still typing at a good speed.
 
 Some people think that they just don't have time in their day to do even half an hour of typing practice, but there are ways to use everyday tasks to do some typing. Here are some suggestions:
 
 If you have something you need to read online, open up a document window and type what you're reading into that document, as you're reading it. Keep your eyes on the page you're reading, not the page you're typing, and don't try to correct any typing mistakes. At the end, compare the original text you read with the text you typed. This exercise works best with short text passages - don't try to re-type your college textbooks!
 Look for an online game that acts as a typing test, rather than playing yet another round of Farmville or Candy Crush. There are a lot of fun games that require you to type in letters and words in order to score points. You'll get a lot better at both speed and accuracy when you practice with games like these.
-Before you open up your e-mail or your internet browser in the morning, take the first 5 minutes of your online keyboarding time to run through a quick typing test, like one of the ones included in these typing lessons. This will give you at least 30 minutes of typing practice each week.
+Before you open up your e-mail or your internet browser in the morning, take the first 5 minutes of your online typing time to run through a quick typing test, like one of the ones included in these typing lessons. This will give you at least 30 minutes of typing practice each week.
 
 And that's it! You're now on the way to become a skilled touch typist. Keep practicing and keep typing, and you'll keep improving as a typist. We hope you enjoyed these lessons!
 
