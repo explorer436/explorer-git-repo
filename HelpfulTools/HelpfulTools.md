@@ -1,47 +1,47 @@
 
 # Table of Contents
 
-1.  [Tools common for all OSs](#org1c63b51)
-    1.  [IDEs :](#orgde9ae17)
-    2.  [Text editors](#org66cb35e)
-    3.  [Browsers](#org661417f)
-    4.  [Miscellaneous](#org83eaef3)
-2.  [Tools for Windows](#org6311d28)
-3.  [Tools for Linux](#org37c95c9)
-4.  [Tools for Android (alphabetical order)](#orgc13197d)
-5.  [How to use multiple workspaces](#org9ba44f2)
-    1.  [Multiple workspaces in Windows](#orgac1cae1)
-6.  [Ready API/Soap UI preferences](#org37da1fe)
-7.  [Android alternatives](#org34f003d)
-8.  [Wizdler](#org3675f30)
-9.  [OpenAPI spec editing tools](#org3ff1762)
-10. [Putty](#orgc8d7401)
-11. [Calibre book-reader customization](#orgd37e344)
-12. [Command to put computer to sleep](#orga38f066)
-13. [Mouse issues in Windows](#org6838d6f)
-14. [Lenovo Thinkpad tips](#org5ee61df)
-15. [Windows VDEs running out of memory](#orgc12f708)
-16. [Tree](#orgf663df3)
-17. [Tips for searching and copying files and directories :](#org12c546f)
-18. [Killing a process](#orgf491927)
-19. [Postman tips](#org4c86055)
-20. [Running jar files from terminal](#org0000140)
-21. [Cntlm](#org0f5df52)
-22. [Commands to run tests on individual files](#org20ec33f)
-23. [Gradle commands](#orgf8a118a)
-24. [Cygwin](#org2d58fd3)
-25. [Hosts file](#org7655f98)
-26. [SonarQube](#orge35a1f5)
-27. [WID - clean and build tips](#orge82976a)
-28. [Issues encountered while working with MongoDB](#org57d35f6)
+1.  [Tools common for all OSs](#org61f7024)
+    1.  [IDEs :](#orgc474df1)
+    2.  [Text editors](#orga942f45)
+    3.  [Browsers](#org3f4cb2c)
+    4.  [Miscellaneous](#org57b7f1c)
+2.  [Tools for Windows](#orgf1e4a65)
+3.  [Tools for Linux](#orga0fe1a1)
+4.  [Tools for Android (alphabetical order)](#org5d177ba)
+5.  [How to use multiple workspaces](#org48659f3)
+    1.  [Multiple workspaces in Windows](#orgc0da8cb)
+6.  [Ready API/Soap UI preferences](#org59ec96e)
+7.  [Android alternatives](#org2dffc41)
+8.  [Wizdler](#org714b355)
+9.  [OpenAPI spec editing tools](#orgde9823b)
+10. [Putty](#orgd2a7b5c)
+11. [Calibre book-reader customization](#org632ffcb)
+12. [Command to put computer to sleep](#orgcd43cc8)
+13. [Mouse issues in Windows](#org3059bc7)
+14. [Lenovo Thinkpad tips](#orgf941dfb)
+15. [Windows VDEs running out of memory](#org32ce5e0)
+16. [Tree](#org7f0a46d)
+17. [Tips for searching and copying files and directories :](#org9df1dbb)
+18. [Killing a process](#orgf155a93)
+19. [Postman tips](#org670122c)
+20. [Running jar files from terminal](#org72f1c52)
+21. [Cntlm](#orgaa76460)
+22. [Commands to run tests on individual files](#org8c633da)
+23. [Gradle commands](#org380cac1)
+24. [Cygwin](#org081f5c9)
+25. [Hosts file](#org87b2fc3)
+26. [SonarQube](#orge6d1459)
+27. [WID - clean and build tips](#org18fa0d0)
+28. [Issues encountered while working with MongoDB](#orgbd8a0b9)
 
 
-<a id="org1c63b51"></a>
+<a id="org61f7024"></a>
 
 # Tools common for all OSs
 
 
-<a id="orgde9ae17"></a>
+<a id="orgc474df1"></a>
 
 ## IDEs :
 
@@ -62,7 +62,7 @@
         -   To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
 
 
-<a id="org66cb35e"></a>
+<a id="orga942f45"></a>
 
 ## Text editors
 
@@ -70,7 +70,7 @@
 2.  gVim
 
 
-<a id="org661417f"></a>
+<a id="org3f4cb2c"></a>
 
 ## Browsers
 
@@ -78,14 +78,14 @@
 2.  Tor browser
 
 
-<a id="org83eaef3"></a>
+<a id="org57b7f1c"></a>
 
 ## Miscellaneous
 
 Calibre ebook editor and viewer
 
 
-<a id="org6311d28"></a>
+<a id="orgf1e4a65"></a>
 
 # Tools for Windows
 
@@ -99,7 +99,7 @@ Calibre ebook editor and viewer
 -   Console Emulation program - ConEmu
 
 
-<a id="org37c95c9"></a>
+<a id="orga0fe1a1"></a>
 
 # Tools for Linux
 
@@ -131,7 +131,7 @@ Calibre ebook editor and viewer
 -   USB Image Writer
 
 
-<a id="orgc13197d"></a>
+<a id="org5d177ba"></a>
 
 # Tools for Android (alphabetical order)
 
@@ -153,13 +153,13 @@ Calibre ebook editor and viewer
 -   LinkedIn (Job search) (Not using it all that much)
 -   Mapquest (maps)
 -   Mega Sync Client
--   Messenger (Facebook) (Messaging apps)
 -   Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
 -   NetGuard
 -   OsmAnd (maps)
 -   Outlook (Microsoft) (For FusionAlliance Webmail and hotmail accounts - might also work for Gmail and other accounts) (Email client)
 -   Podcasts (Google) (Podcasts)
 -   Quora	 (Reading)
+-   Signal (Messaging apps)
 -   Spotify (Music)
 -   Sync (cloud client)
 -   The weather channel (weather)
@@ -177,7 +177,7 @@ Calibre ebook editor and viewer
 ---
 
 
-<a id="org9ba44f2"></a>
+<a id="org48659f3"></a>
 
 # How to use multiple workspaces
 
@@ -192,7 +192,7 @@ tap an arrow key—and you’ll switch between workspaces,
 taking the currently active window with you to the new workspace.
 
 
-<a id="orgac1cae1"></a>
+<a id="orgc0da8cb"></a>
 
 ## Multiple workspaces in Windows
 
@@ -211,7 +211,7 @@ taking the currently active window with you to the new workspace.
 ---
 
 
-<a id="org37da1fe"></a>
+<a id="org59ec96e"></a>
 
 # Ready API/Soap UI preferences
 
@@ -248,7 +248,7 @@ Groovy<sub>script</sub><sub>to</sub><sub>read</sub><sub>attributes</sub><sub>fro
 ---
 
 
-<a id="org34f003d"></a>
+<a id="org2dffc41"></a>
 
 # Android alternatives
 
@@ -258,7 +258,7 @@ LineageOS (supports many older devices)
 ---
 
 
-<a id="org3675f30"></a>
+<a id="org714b355"></a>
 
 # Wizdler
 
@@ -269,7 +269,7 @@ Recognizes WSDL information on the page to show you the available services and o
 ---
 
 
-<a id="org3ff1762"></a>
+<a id="orgde9823b"></a>
 
 # OpenAPI spec editing tools
 
@@ -282,7 +282,7 @@ Stoplight studio is another good one.
 ---
 
 
-<a id="orgc8d7401"></a>
+<a id="orgd2a7b5c"></a>
 
 # Putty
 
@@ -293,7 +293,7 @@ change password :
 ---
 
 
-<a id="orgd37e344"></a>
+<a id="org632ffcb"></a>
 
 # Calibre book-reader customization
 
@@ -304,7 +304,7 @@ Preferences -> User Stylesheet -> p {line-height: 2}
 ---
 
 
-<a id="orga38f066"></a>
+<a id="orgcd43cc8"></a>
 
 # Command to put computer to sleep
 
@@ -315,7 +315,7 @@ Windows:
 ---
 
 
-<a id="org6838d6f"></a>
+<a id="org3059bc7"></a>
 
 # Mouse issues in Windows
 
@@ -333,7 +333,7 @@ d. Click on Apply and check the issue.
 ---
 
 
-<a id="org5ee61df"></a>
+<a id="orgf941dfb"></a>
 
 # Lenovo Thinkpad tips
 
@@ -346,7 +346,7 @@ To turn on the small light on the top of the monitor (when working in the dark a
 ---
 
 
-<a id="orgc12f708"></a>
+<a id="org32ce5e0"></a>
 
 # Windows VDEs running out of memory
 
@@ -373,7 +373,7 @@ The "Delete Files" button should become available. Click this button to clear fi
 ---
 
 
-<a id="orgf663df3"></a>
+<a id="org7f0a46d"></a>
 
 # Tree
 
@@ -452,7 +452,7 @@ As you can see in this guide, tree command will give you a nice graphical tree v
 ---
 
 
-<a id="org12c546f"></a>
+<a id="org9df1dbb"></a>
 
 # Tips for searching and copying files and directories :
 
@@ -511,7 +511,7 @@ So if you want to replicate one path to another include the trailing slash as fo
 ---
 
 
-<a id="orgf491927"></a>
+<a id="orgf155a93"></a>
 
 # Killing a process
 
@@ -553,7 +553,7 @@ Restart the Citrix Service (or reboot your machine)
 ---
 
 
-<a id="org4c86055"></a>
+<a id="org670122c"></a>
 
 # Postman tips
 
@@ -580,7 +580,7 @@ Script to read fields from a SOAP response and set it as a collection variable t
 ---
 
 
-<a id="org0000140"></a>
+<a id="org72f1c52"></a>
 
 # Running jar files from terminal
 
@@ -589,7 +589,7 @@ Script to read fields from a SOAP response and set it as a collection variable t
 ---
 
 
-<a id="org0f5df52"></a>
+<a id="orgaa76460"></a>
 
 # Cntlm
 
@@ -625,7 +625,7 @@ If this doesn't work, restarting the slice using the command 'reboot' works.
 ---
 
 
-<a id="org20ec33f"></a>
+<a id="org8c633da"></a>
 
 # Commands to run tests on individual files
 
@@ -641,7 +641,7 @@ If this doesn't work, restarting the slice using the command 'reboot' works.
 ---
 
 
-<a id="orgf8a118a"></a>
+<a id="org380cac1"></a>
 
 # Gradle commands
 
@@ -674,7 +674,7 @@ To exclude a few tasks from the build process :
 ---
 
 
-<a id="org2d58fd3"></a>
+<a id="org081f5c9"></a>
 
 # Cygwin
 
@@ -775,7 +775,7 @@ For 64 bit, add C:\Users\\<username>\cygwin64\bin; to the end of the environment
 ---
 
 
-<a id="org7655f98"></a>
+<a id="org87b2fc3"></a>
 
 # Hosts file
 
@@ -784,7 +784,7 @@ Access your hosts file on your services slice (C:\Windows\System32\drivers\etc)
 ---
 
 
-<a id="orge35a1f5"></a>
+<a id="orge6d1459"></a>
 
 # SonarQube
 
@@ -808,7 +808,7 @@ For multi-language projects, remove the property "sonar.language=java" from "son
 ---
 
 
-<a id="orge82976a"></a>
+<a id="org18fa0d0"></a>
 
 # WID - clean and build tips
 
@@ -829,7 +829,7 @@ It takes about 10 seconds instead of letting wid do the clean in like 15 minutes
 ---
 
 
-<a id="org57d35f6"></a>
+<a id="orgbd8a0b9"></a>
 
 # Issues encountered while working with MongoDB
 

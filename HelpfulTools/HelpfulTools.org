@@ -92,13 +92,13 @@ Calibre ebook editor and viewer
 - LinkedIn (Job search) (Not using it all that much)
 - Mapquest (maps)
 - Mega Sync Client
-- Messenger (Facebook) (Messaging apps)
 - Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
 - NetGuard
 - OsmAnd (maps)
 - Outlook (Microsoft) (For FusionAlliance Webmail and hotmail accounts - might also work for Gmail and other accounts) (Email client)
 - Podcasts (Google) (Podcasts)
 - Quora	 (Reading)
+- Signal (Messaging apps)
 - Spotify (Music)
 - Sync (cloud client)
 - The weather channel (weather)
