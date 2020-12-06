@@ -71,6 +71,7 @@ Calibre ebook editor and viewer
 - Variety (Nitrogen is an alternative) - wallpaper utility tool. Generally, there are great wallpapers on unsplash.com. There is an option in Variety's preferences to pull wallpapers from unsplash.
 - USB Stick Formatter
 - USB Image Writer
+- Xfce4-screenshooter
 
 *** Tools for Android (alphabetical order)
 
