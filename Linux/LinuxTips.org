@@ -23,11 +23,10 @@ In order to rename a file in Linux you can use either of two approaches
 
 -------------------------------------------------------------------
 
-**** How to launch terminal in Linux : 
+| systemctl suspend   | command to reboot from terminal |
+| systemctl hibernate | command to reboot from terminal |
+| reboot              | command to reboot from terminal |
 
-Super key (Windows) + T
-
-command to reboot from terminal : reboot
 
 To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
 

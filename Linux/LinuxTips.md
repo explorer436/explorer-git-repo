@@ -1,18 +1,17 @@
 
 # Table of Contents
 
-1.  [Terminal](#orga6c3ba1)
-    1.  [How to rename a file from terminal in Linux?](#orgac1696e)
-    2.  [How to launch terminal in Linux :](#orgcdb8960)
-2.  [How to Remove Files and Directories Using Linux Command Line](#org029c9fe)
+1.  [Terminal](#org6e235ea)
+    1.  [How to rename a file from terminal in Linux?](#orga1358aa)
+2.  [How to Remove Files and Directories Using Linux Command Line](#orgc15b5bc)
 
 
-<a id="orga6c3ba1"></a>
+<a id="org6e235ea"></a>
 
 # Terminal
 
 
-<a id="orgac1696e"></a>
+<a id="orga1358aa"></a>
 
 ## How to rename a file from terminal in Linux?
 
@@ -37,14 +36,33 @@ In order to rename a file in Linux you can use either of two approaches
 
 ---
 
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<a id="orgcdb8960"></a>
 
-## How to launch terminal in Linux :
+<colgroup>
+<col  class="org-left" />
 
-Super key (Windows) + T
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">systemctl suspend</td>
+<td class="org-left">command to reboot from terminal</td>
+</tr>
 
-command to reboot from terminal : reboot
+
+<tr>
+<td class="org-left">systemctl hibernate</td>
+<td class="org-left">command to reboot from terminal</td>
+</tr>
+
+
+<tr>
+<td class="org-left">reboot</td>
+<td class="org-left">command to reboot from terminal</td>
+</tr>
+</tbody>
+</table>
 
 To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
 
@@ -257,7 +275,7 @@ Then update the package cache and install the package using dnf (Fedora 22 and a
 ---
 
 
-<a id="org029c9fe"></a>
+<a id="orgc15b5bc"></a>
 
 # How to Remove Files and Directories Using Linux Command Line
 
