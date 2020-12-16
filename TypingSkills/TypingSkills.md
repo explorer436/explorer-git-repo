@@ -1,24 +1,24 @@
 
 # Table of Contents
 
-1.  [Typing Lessons 1: Introduction to the Home Row](#org23ac88e)
-2.  [Typing Lessons 2: The Right-Hand Home Row Keys](#org31dfdec)
-3.  [Typing Lessons 3: The Left-Hand Home Row Keys](#org95f509e)
-4.  [Typing Lessons 4: Using the Shift and Enter Keys](#orge84c297)
-5.  [Typing Lessons 5: Apostrophes and Quotation Marks](#orgc772b65)
-6.  [Typing Lessons 6: The Left-Hand Top Row Keys](#org8d10ddd)
-7.  [Typing Lessons 7: The Right-Hand Top Row Keys](#orgd6517ae)
-8.  [Typing Lessons 8: The Left-Hand Bottom Row Keys](#org8058dfe)
-9.  [Typing Lessons 9: The Right-Hand Bottom Row Keys](#org63dc7fd)
-10. [Typing Lessons 10: The Left-Hand Number Keys](#org61165f0)
-11. [Typing Lessons 11: The Right-Hand Number Keys](#org19dc044)
-12. [Typing Lessons 12: Parentheses and Other Brackets](#org59a6836)
-13. [Typing Lessons 13: The Left-Hand Symbol Keys](#org9b82c31)
-14. [Typing Lessons 14: The Right-Hand Symbol Keys](#orgf5c9e13)
-15. [Typing Lessons 15: The Delete and Backspace Keys](#org38a5c66)
-16. [Typing Lessons 16: Math and Movement Keys](#org0cbc8cb)
-17. [Typing Lessons 17: Practice Tips and Tricks](#orge8ae823)
-18. [Typing Lessons 18: What Next?](#orgd651132)
+1.  [Typing Lessons 1: Introduction to the Home Row](#org565ee7c)
+2.  [Typing Lessons 2: The Right-Hand Home Row Keys](#org0e06da7)
+3.  [Typing Lessons 3: The Left-Hand Home Row Keys](#orgfe11ffb)
+4.  [Typing Lessons 4: Using the Shift and Enter Keys](#org0bfd7f8)
+5.  [Typing Lessons 5: Apostrophes and Quotation Marks](#orgd39217b)
+6.  [Typing Lessons 6: The Left-Hand Top Row Keys](#org219fff5)
+7.  [Typing Lessons 7: The Right-Hand Top Row Keys](#org0dbe36c)
+8.  [Typing Lessons 8: The Left-Hand Bottom Row Keys](#org62462d4)
+9.  [Typing Lessons 9: The Right-Hand Bottom Row Keys](#org4d7b87d)
+10. [Typing Lessons 10: The Left-Hand Number Keys](#orgc3d8b73)
+11. [Typing Lessons 11: The Right-Hand Number Keys](#org1243339)
+12. [Typing Lessons 12: Parentheses and Other Brackets](#org39918af)
+13. [Typing Lessons 13: The Left-Hand Symbol Keys](#org6719126)
+14. [Typing Lessons 14: The Right-Hand Symbol Keys](#orga1c0125)
+15. [Typing Lessons 15: The Delete and Backspace Keys](#org43c5099)
+16. [Typing Lessons 16: Math and Movement Keys](#org0c5b374)
+17. [Typing Lessons 17: Practice Tips and Tricks](#orgd874654)
+18. [Typing Lessons 18: What Next?](#org592b11b)
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -34,55 +34,109 @@
 
 <tbody>
 <tr>
-<td class="org-left">typing.com</td>
+<td class="org-left">10 Fast Fingers: <a href="https://10fastfingers.com/">https://10fastfingers.com/</a> - random words. If you are a beginner trying to reach a speed of 80 wpm. Use this only to measure speed but not to practise.</td>
 </tr>
 
 
 <tr>
-<td class="org-left">typingclub.com</td>
+<td class="org-left">Key rollover test: <a href="http://gadzikowski.com/nkeyrollover.html">http://gadzikowski.com/nkeyrollover.html</a></td>
 </tr>
 
 
 <tr>
-<td class="org-left">key.br</td>
+<td class="org-left">Monkey Type: <a href="https://monkeytype.com/">https://monkeytype.com/</a> - random words - There is a quote mode. A game like set up.</td>
 </tr>
 
 
 <tr>
-<td class="org-left">10fastfingers.com</td>
+<td class="org-left">Nitro Type: <a href="https://www.nitrotype.com/">https://www.nitrotype.com/</a> - Sentence or  paragraph based.  It rewards playing a lot as opposed to typing speed. Good interface.</td>
 </tr>
 
 
 <tr>
-<td class="org-left">keyhero.com</td>
-</tr>
-
-
-<tr>
-<td class="org-left">typings.com</td>
-</tr>
-
-
-<tr>
-<td class="org-left">typeracer.com</td>
-</tr>
-
-
-<tr>
-<td class="org-left">zty.pe (like a shooting game. fun to play)</td>
+<td class="org-left">Type Racer: <a href="https://play.typeracer.com/">https://play.typeracer.com/</a> - Sentence or  paragraph based. Forces you to correct mistakes and discourages you from making mistakes in the first place.</td>
 </tr>
 
 
 <tr>
 <td class="org-left"><a href="https://typingtestnow.com/lessons/free_typing_lessons/1.html">https://typingtestnow.com/lessons/free_typing_lessons/1.html</a> (There is good information about improving skills here.)</td>
 </tr>
+
+
+<tr>
+<td class="org-left">key.br: <a href="https://www.keybr.com/">https://www.keybr.com/</a></td>
+</tr>
+
+
+<tr>
+<td class="org-left">keyhero.com: <a href="https://www.keyhero.com/">https://www.keyhero.com/</a></td>
+</tr>
+
+
+<tr>
+<td class="org-left">typing.com: <a href="https://www.typing.com/">https://www.typing.com/</a></td>
+</tr>
+
+
+<tr>
+<td class="org-left">typingclub.com: <a href="https://www.typingclub.com/">https://www.typingclub.com/</a></td>
+</tr>
+
+
+<tr>
+<td class="org-left">typings.com: <a href="http://typings.com/">http://typings.com/</a></td>
+</tr>
+
+
+<tr>
+<td class="org-left">zty.pe: <a href="https://zty.pe/">https://zty.pe/</a> (like a shooting game. fun to play)</td>
+</tr>
 </tbody>
 </table>
+
+Earlier in the process, form good habits or correct bad ones.
+Also, focus on accuracy as opposed to speed in the beginning.
+Try to maintain average accuracy of atleast 96%. If we start with bad habits, it is hard to improve.
+Even if you need to slow down to improve the accuracy, it is worth it in the long run.
+Use Ctrl + backspace to delete an entire word.
+Try to use as many fingers as possible.
+Eventually, we will personalize and optimize our typing style.
+Make sure not to look at the keyboard as much as possible.
+
+First try to reach a speed of 80 wpm.
+But remember - "Progress is not linear" - Maria Montessori
+Do not get frustrated if you get stuck.
+
+After that try to improve progress upto 120 wpm.
+This speed will not come naturally to a lot of people. So you may have to put in a lot of effort and time.
+One important change we need to make is to type word by word - rather than letter by letter.
+Think of words like a note on a piano cord. You should drop your hands on the keyboard and the word should appear on the screen.
+Start smaller and do not worry if this does not come naturally at first.
+Take a text and type it word by word or syllable by syllable.
+Take a pause between each chunk.
+You can make the pause can get smaller and smaller until you are typing at the speed you want.
+Have separate times to focus on accuracy and raw speed.
+You do not need to type every word at the same pace. If there is a word with a lot of uncommon letters, slow down a little bit to type that word so that you will make less mistakes. The opposite is also true.
+You should start thinking about reading ahead. This is an important tip that is least talked about. You do not want to catch up to the word that you are reading because that will lead to you pausing. At 120 wpm, reading one word ahead is enough but if you can do more, that is great.
+Again, progress is not linear. Even if it takes weeks or months, do not give up.
+
+After that, there is a lot of improvement. Keep practising.
+
+Last important tip:
+Optimizing your typing style.
+One important part of this is to eliminate consecutive finger usage. You do not want to use the same finger for two letters in a row. This is much more of a problem on a qwerty keyboard.
+You need to develop your own preferences.
+Eventually, the optimizations should be automatic.
+
+There is no magic trick. If you keep practising, you will improve.
+Practise with intention.
+Have separate practise sessions to focus on accuracy, speed and even smaller details.
+Mindless practise will only get you so far.
 
 ---
 
 
-<a id="org23ac88e"></a>
+<a id="org565ee7c"></a>
 
 # Typing Lessons 1: Introduction to the Home Row
 
@@ -115,7 +169,7 @@ Before you move on to the next lesson or to take a typing test, practice moving 
 ---
 
 
-<a id="org31dfdec"></a>
+<a id="org0e06da7"></a>
 
 # Typing Lessons 2: The Right-Hand Home Row Keys
 
@@ -156,7 +210,7 @@ Now that you've practiced with all five of the right-hand home row keys, go back
 ---
 
 
-<a id="org95f509e"></a>
+<a id="orgfe11ffb"></a>
 
 # Typing Lessons 3: The Left-Hand Home Row Keys
 
@@ -199,7 +253,7 @@ Are you able to follow these keystrokes without making a mistake? Don't worry ab
 ---
 
 
-<a id="orge84c297"></a>
+<a id="org0bfd7f8"></a>
 
 # Typing Lessons 4: Using the Shift and Enter Keys
 
@@ -220,7 +274,7 @@ Another important key is the Enter key. On a standard QWERTY keyboard, the Enter
 ---
 
 
-<a id="orgc772b65"></a>
+<a id="orgd39217b"></a>
 
 # Typing Lessons 5: Apostrophes and Quotation Marks
 
@@ -262,7 +316,7 @@ Congratulations! You know all of the keys on the home row now. This is a good ti
 ---
 
 
-<a id="org8d10ddd"></a>
+<a id="org219fff5"></a>
 
 # Typing Lessons 6: The Left-Hand Top Row Keys
 
@@ -305,7 +359,7 @@ If you have found a free typing test that lets you choose which letter to focus 
 ---
 
 
-<a id="orgd6517ae"></a>
+<a id="org0dbe36c"></a>
 
 # Typing Lessons 7: The Right-Hand Top Row Keys
 
@@ -358,7 +412,7 @@ You know enough about most of the common keys now to get some good touch typing 
 ---
 
 
-<a id="org8058dfe"></a>
+<a id="org62462d4"></a>
 
 # Typing Lessons 8: The Left-Hand Bottom Row Keys
 
@@ -419,7 +473,7 @@ Here's one more typing test to help you get used to using the Shift key when you
 ---
 
 
-<a id="org63dc7fd"></a>
+<a id="org4d7b87d"></a>
 
 # Typing Lessons 9: The Right-Hand Bottom Row Keys
 
@@ -478,7 +532,7 @@ Here's one more typing test to help you get used to using the Shift key. Now tha
 ---
 
 
-<a id="org61165f0"></a>
+<a id="orgc3d8b73"></a>
 
 # Typing Lessons 10: The Left-Hand Number Keys
 
@@ -529,7 +583,7 @@ Here's another typing test that will help you practice these five number keys. T
 ---
 
 
-<a id="org19dc044"></a>
+<a id="org1243339"></a>
 
 # Typing Lessons 11: The Right-Hand Number Keys
 
@@ -560,7 +614,7 @@ Are you ready for another typing test? These two paragraphs having you using all
 ---
 
 
-<a id="org59a6836"></a>
+<a id="org39918af"></a>
 
 # Typing Lessons 12: Parentheses and Other Brackets
 
@@ -589,7 +643,7 @@ Now take this typing test to practice using all three types of brackets:
 ---
 
 
-<a id="org9b82c31"></a>
+<a id="org6719126"></a>
 
 # Typing Lessons 13: The Left-Hand Symbol Keys
 
@@ -630,7 +684,7 @@ Although you may only ever use some of these symbols during a typing test, you d
 ---
 
 
-<a id="orgf5c9e13"></a>
+<a id="orga1c0125"></a>
 
 # Typing Lessons 14: The Right-Hand Symbol Keys
 
@@ -665,7 +719,7 @@ At first all of these infrequently-used symbols will probably slow down your tot
 ---
 
 
-<a id="org38a5c66"></a>
+<a id="org43c5099"></a>
 
 # Typing Lessons 15: The Delete and Backspace Keys
 
@@ -686,7 +740,7 @@ The best way to make sure you don't send out messages with errors is to keep up 
 ---
 
 
-<a id="org0cbc8cb"></a>
+<a id="org0c5b374"></a>
 
 # Typing Lessons 16: Math and Movement Keys
 
@@ -733,7 +787,7 @@ There are other keys on most keyboards, but what they do really depends on the c
 ---
 
 
-<a id="orge8ae823"></a>
+<a id="orgd874654"></a>
 
 # Typing Lessons 17: Practice Tips and Tricks
 
@@ -762,7 +816,7 @@ Are you ready for a final typing test? This one is a real challenge, because it 
 ---
 
 
-<a id="orgd651132"></a>
+<a id="org592b11b"></a>
 
 # Typing Lessons 18: What Next?
 

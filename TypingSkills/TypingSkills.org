@@ -1,15 +1,57 @@
 
-| Websites to help improve typing skills                                                                                |
-|-----------------------------------------------------------------------------------------------------------------------|
-| typing.com                                                                                                            |
-| typingclub.com                                                                                                        |
-| key.br                                                                                                                |
-| 10fastfingers.com                                                                                                     |
-| keyhero.com                                                                                                           |
-| typings.com                                                                                                           |
-| typeracer.com                                                                                                         |
-| zty.pe (like a shooting game. fun to play)                                                                            |
-| https://typingtestnow.com/lessons/free_typing_lessons/1.html (There is good information about improving skills here.) |
+| Websites to help improve typing skills                                                                                                                                   |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 10 Fast Fingers: https://10fastfingers.com/ - random words. If you are a beginner trying to reach a speed of 80 wpm. Use this only to measure speed but not to practise. |
+| Key rollover test: http://gadzikowski.com/nkeyrollover.html                                                                                                              |
+| Monkey Type: https://monkeytype.com/ - random words - There is a quote mode. A game like set up.                                                                         |
+| Nitro Type: https://www.nitrotype.com/ - Sentence or  paragraph based.  It rewards playing a lot as opposed to typing speed. Good interface.                             |
+| Type Racer: https://play.typeracer.com/ - Sentence or  paragraph based. Forces you to correct mistakes and discourages you from making mistakes in the first place.      |
+| https://typingtestnow.com/lessons/free_typing_lessons/1.html (There is good information about improving skills here.)                                                    |
+| key.br: https://www.keybr.com/                                                                                                                                                                 |
+| keyhero.com: https://www.keyhero.com/                                                                                                                                                         |
+| typing.com: https://www.typing.com/                                                                                                                                                             |
+| typingclub.com: https://www.typingclub.com/                                                                                                                                                         |
+| typings.com: http://typings.com/                                                                                                                                                            |
+| zty.pe: https://zty.pe/ (like a shooting game. fun to play)                                                                                                                             |
+
+Earlier in the process, form good habits or correct bad ones.
+Also, focus on accuracy as opposed to speed in the beginning.
+Try to maintain average accuracy of atleast 96%. If we start with bad habits, it is hard to improve.
+Even if you need to slow down to improve the accuracy, it is worth it in the long run.
+Use Ctrl + backspace to delete an entire word.
+Try to use as many fingers as possible.
+Eventually, we will personalize and optimize our typing style.
+Make sure not to look at the keyboard as much as possible.
+
+First try to reach a speed of 80 wpm.
+But remember - "Progress is not linear" - Maria Montessori
+Do not get frustrated if you get stuck.
+
+After that try to improve progress upto 120 wpm.
+This speed will not come naturally to a lot of people. So you may have to put in a lot of effort and time.
+One important change we need to make is to type word by word - rather than letter by letter.
+Think of words like a note on a piano cord. You should drop your hands on the keyboard and the word should appear on the screen.
+Start smaller and do not worry if this does not come naturally at first.
+Take a text and type it word by word or syllable by syllable.
+Take a pause between each chunk.
+You can make the pause can get smaller and smaller until you are typing at the speed you want.
+Have separate times to focus on accuracy and raw speed.
+You do not need to type every word at the same pace. If there is a word with a lot of uncommon letters, slow down a little bit to type that word so that you will make less mistakes. The opposite is also true.
+You should start thinking about reading ahead. This is an important tip that is least talked about. You do not want to catch up to the word that you are reading because that will lead to you pausing. At 120 wpm, reading one word ahead is enough but if you can do more, that is great.
+Again, progress is not linear. Even if it takes weeks or months, do not give up.
+
+After that, there is a lot of improvement. Keep practising.
+
+Last important tip:
+Optimizing your typing style.
+One important part of this is to eliminate consecutive finger usage. You do not want to use the same finger for two letters in a row. This is much more of a problem on a qwerty keyboard.
+You need to develop your own preferences.
+Eventually, the optimizations should be automatic.
+
+There is no magic trick. If you keep practising, you will improve.
+Practise with intention.
+Have separate practise sessions to focus on accuracy, speed and even smaller details.
+Mindless practise will only get you so far.
 
 -------------------------------------
 
