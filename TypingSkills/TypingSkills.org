@@ -1,3 +1,4 @@
+*** List of websites
 
 | Websites to help improve typing skills                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,6 +14,8 @@
 | typingclub.com: https://www.typingclub.com/                                                                                                                                                         |
 | typings.com: http://typings.com/                                                                                                                                                            |
 | zty.pe: https://zty.pe/ (like a shooting game. fun to play)                                                                                                                             |
+
+*** General tips
 
 Earlier in the process, form good habits or correct bad ones.
 Also, focus on accuracy as opposed to speed in the beginning.

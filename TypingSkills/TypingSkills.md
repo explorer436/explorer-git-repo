@@ -1,24 +1,31 @@
 
 # Table of Contents
 
-1.  [Typing Lessons 1: Introduction to the Home Row](#org565ee7c)
-2.  [Typing Lessons 2: The Right-Hand Home Row Keys](#org0e06da7)
-3.  [Typing Lessons 3: The Left-Hand Home Row Keys](#orgfe11ffb)
-4.  [Typing Lessons 4: Using the Shift and Enter Keys](#org0bfd7f8)
-5.  [Typing Lessons 5: Apostrophes and Quotation Marks](#orgd39217b)
-6.  [Typing Lessons 6: The Left-Hand Top Row Keys](#org219fff5)
-7.  [Typing Lessons 7: The Right-Hand Top Row Keys](#org0dbe36c)
-8.  [Typing Lessons 8: The Left-Hand Bottom Row Keys](#org62462d4)
-9.  [Typing Lessons 9: The Right-Hand Bottom Row Keys](#org4d7b87d)
-10. [Typing Lessons 10: The Left-Hand Number Keys](#orgc3d8b73)
-11. [Typing Lessons 11: The Right-Hand Number Keys](#org1243339)
-12. [Typing Lessons 12: Parentheses and Other Brackets](#org39918af)
-13. [Typing Lessons 13: The Left-Hand Symbol Keys](#org6719126)
-14. [Typing Lessons 14: The Right-Hand Symbol Keys](#orga1c0125)
-15. [Typing Lessons 15: The Delete and Backspace Keys](#org43c5099)
-16. [Typing Lessons 16: Math and Movement Keys](#org0c5b374)
-17. [Typing Lessons 17: Practice Tips and Tricks](#orgd874654)
-18. [Typing Lessons 18: What Next?](#org592b11b)
+1.  [List of websites](#orgf14818e)
+2.  [General tips](#org296b567)
+3.  [Typing Lessons 1: Introduction to the Home Row](#org595ee42)
+4.  [Typing Lessons 2: The Right-Hand Home Row Keys](#org409c402)
+5.  [Typing Lessons 3: The Left-Hand Home Row Keys](#org32d0f3d)
+6.  [Typing Lessons 4: Using the Shift and Enter Keys](#org66b2f0b)
+7.  [Typing Lessons 5: Apostrophes and Quotation Marks](#orgd64d27f)
+8.  [Typing Lessons 6: The Left-Hand Top Row Keys](#orgb25818e)
+9.  [Typing Lessons 7: The Right-Hand Top Row Keys](#org141b3cd)
+10. [Typing Lessons 8: The Left-Hand Bottom Row Keys](#orgff5562a)
+11. [Typing Lessons 9: The Right-Hand Bottom Row Keys](#org2f16eff)
+12. [Typing Lessons 10: The Left-Hand Number Keys](#orgaca8174)
+13. [Typing Lessons 11: The Right-Hand Number Keys](#org7a04681)
+14. [Typing Lessons 12: Parentheses and Other Brackets](#org3389d09)
+15. [Typing Lessons 13: The Left-Hand Symbol Keys](#org2175aa4)
+16. [Typing Lessons 14: The Right-Hand Symbol Keys](#orgd340ea4)
+17. [Typing Lessons 15: The Delete and Backspace Keys](#org686573f)
+18. [Typing Lessons 16: Math and Movement Keys](#org7f0dec4)
+19. [Typing Lessons 17: Practice Tips and Tricks](#orgae14c2d)
+20. [Typing Lessons 18: What Next?](#orge6e8ec1)
+
+
+<a id="orgf14818e"></a>
+
+# List of websites
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -94,6 +101,11 @@
 </tbody>
 </table>
 
+
+<a id="org296b567"></a>
+
+# General tips
+
 Earlier in the process, form good habits or correct bad ones.
 Also, focus on accuracy as opposed to speed in the beginning.
 Try to maintain average accuracy of atleast 96%. If we start with bad habits, it is hard to improve.
@@ -136,7 +148,7 @@ Mindless practise will only get you so far.
 ---
 
 
-<a id="org565ee7c"></a>
+<a id="org595ee42"></a>
 
 # Typing Lessons 1: Introduction to the Home Row
 
@@ -169,7 +181,7 @@ Before you move on to the next lesson or to take a typing test, practice moving 
 ---
 
 
-<a id="org0e06da7"></a>
+<a id="org409c402"></a>
 
 # Typing Lessons 2: The Right-Hand Home Row Keys
 
@@ -210,7 +222,7 @@ Now that you've practiced with all five of the right-hand home row keys, go back
 ---
 
 
-<a id="orgfe11ffb"></a>
+<a id="org32d0f3d"></a>
 
 # Typing Lessons 3: The Left-Hand Home Row Keys
 
@@ -253,7 +265,7 @@ Are you able to follow these keystrokes without making a mistake? Don't worry ab
 ---
 
 
-<a id="org0bfd7f8"></a>
+<a id="org66b2f0b"></a>
 
 # Typing Lessons 4: Using the Shift and Enter Keys
 
@@ -274,7 +286,7 @@ Another important key is the Enter key. On a standard QWERTY keyboard, the Enter
 ---
 
 
-<a id="orgd39217b"></a>
+<a id="orgd64d27f"></a>
 
 # Typing Lessons 5: Apostrophes and Quotation Marks
 
@@ -316,7 +328,7 @@ Congratulations! You know all of the keys on the home row now. This is a good ti
 ---
 
 
-<a id="org219fff5"></a>
+<a id="orgb25818e"></a>
 
 # Typing Lessons 6: The Left-Hand Top Row Keys
 
@@ -359,7 +371,7 @@ If you have found a free typing test that lets you choose which letter to focus 
 ---
 
 
-<a id="org0dbe36c"></a>
+<a id="org141b3cd"></a>
 
 # Typing Lessons 7: The Right-Hand Top Row Keys
 
@@ -412,7 +424,7 @@ You know enough about most of the common keys now to get some good touch typing 
 ---
 
 
-<a id="org62462d4"></a>
+<a id="orgff5562a"></a>
 
 # Typing Lessons 8: The Left-Hand Bottom Row Keys
 
@@ -473,7 +485,7 @@ Here's one more typing test to help you get used to using the Shift key when you
 ---
 
 
-<a id="org4d7b87d"></a>
+<a id="org2f16eff"></a>
 
 # Typing Lessons 9: The Right-Hand Bottom Row Keys
 
@@ -532,7 +544,7 @@ Here's one more typing test to help you get used to using the Shift key. Now tha
 ---
 
 
-<a id="orgc3d8b73"></a>
+<a id="orgaca8174"></a>
 
 # Typing Lessons 10: The Left-Hand Number Keys
 
@@ -583,7 +595,7 @@ Here's another typing test that will help you practice these five number keys. T
 ---
 
 
-<a id="org1243339"></a>
+<a id="org7a04681"></a>
 
 # Typing Lessons 11: The Right-Hand Number Keys
 
@@ -614,7 +626,7 @@ Are you ready for another typing test? These two paragraphs having you using all
 ---
 
 
-<a id="org39918af"></a>
+<a id="org3389d09"></a>
 
 # Typing Lessons 12: Parentheses and Other Brackets
 
@@ -643,7 +655,7 @@ Now take this typing test to practice using all three types of brackets:
 ---
 
 
-<a id="org6719126"></a>
+<a id="org2175aa4"></a>
 
 # Typing Lessons 13: The Left-Hand Symbol Keys
 
@@ -684,7 +696,7 @@ Although you may only ever use some of these symbols during a typing test, you d
 ---
 
 
-<a id="orga1c0125"></a>
+<a id="orgd340ea4"></a>
 
 # Typing Lessons 14: The Right-Hand Symbol Keys
 
@@ -719,7 +731,7 @@ At first all of these infrequently-used symbols will probably slow down your tot
 ---
 
 
-<a id="org43c5099"></a>
+<a id="org686573f"></a>
 
 # Typing Lessons 15: The Delete and Backspace Keys
 
@@ -740,7 +752,7 @@ The best way to make sure you don't send out messages with errors is to keep up 
 ---
 
 
-<a id="org0c5b374"></a>
+<a id="org7f0dec4"></a>
 
 # Typing Lessons 16: Math and Movement Keys
 
@@ -787,7 +799,7 @@ There are other keys on most keyboards, but what they do really depends on the c
 ---
 
 
-<a id="orgd874654"></a>
+<a id="orgae14c2d"></a>
 
 # Typing Lessons 17: Practice Tips and Tricks
 
@@ -816,7 +828,7 @@ Are you ready for a final typing test? This one is a real challenge, because it 
 ---
 
 
-<a id="org592b11b"></a>
+<a id="orge6e8ec1"></a>
 
 # Typing Lessons 18: What Next?
 
