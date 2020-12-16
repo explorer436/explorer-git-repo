@@ -117,3 +117,8 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
     (global-display-line-numbers-mode)
 
 ------------
+
+*** Exporting
+
+At some point you might want to print your notes, publish them on the web, or share them with people not using Org.
+Org can convert and export documents to a variety of other formats while retaining as much structure (see Document Structure) and markup (see Markup for Rich Contents) as possible.  
