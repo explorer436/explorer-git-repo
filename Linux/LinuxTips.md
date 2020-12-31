@@ -1,40 +1,40 @@
 
 # Table of Contents
 
-1.  [List of things that I find useful](#org107f565)
-    1.  [Search for files](#org237bf85)
-    2.  [How to rename a file from terminal in Linux?](#orgfd4bef1)
-    3.  [Recursive copy](#org9b5cc7c)
-    4.  [System commands](#org938bf0c)
-    5.  [Check the PATH](#orgbb3045f)
-    6.  [Installing tar files](#org491d027)
-    7.  [View ip address](#org2b163ef)
-    8.  [System information](#org3973847)
-    9.  [list commands](#orga6c6f1e)
-    10. [Packages](#org764e978)
-    11. [Docker](#orgb099096)
-    12. [Editiong videos](#org97921d4)
-    13. [How to install Homebrew?](#orgeb13f04)
-    14. [XFCE tips](#orgd854777)
-    15. [Fedora tips :](#orgd7b6de8)
-    16. [How to execute .sh programs](#org6638fa7)
-    17. [How to install OSS code (the open source version of Visual Studio Code) in Fedora?](#org9d537bd)
-    18. [How to Remove Files and Directories Using Linux Command Line](#orgf45192d)
+1.  [List of things that I find useful](#org08d690b)
+    1.  [Search for files](#org4d58a60)
+    2.  [How to rename a file from terminal in Linux?](#org21dc316)
+    3.  [Recursive copy](#org17d939e)
+    4.  [System commands](#org279f957)
+    5.  [Check the PATH](#org7a78834)
+    6.  [Installing tar files](#orge06df5b)
+    7.  [View ip address](#org22f7d0d)
+    8.  [System information](#org06e4c3b)
+    9.  [list commands](#org82d989f)
+    10. [Packages](#org55021b2)
+    11. [Docker](#org4b40877)
+    12. [Editing videos](#org8e8dbb1)
+    13. [How to install Homebrew?](#orgab957be)
+    14. [XFCE tips](#org7ede6ad)
+    15. [Fedora tips :](#orgcac5a23)
+    16. [How to execute .sh programs](#org91bd092)
+    17. [How to install OSS code (the open source version of Visual Studio Code) in Fedora?](#orgfae17bc)
+    18. [How to Remove Files and Directories Using Linux Command Line](#org5b58602)
 
 
-<a id="org107f565"></a>
+<a id="org08d690b"></a>
 
 # List of things that I find useful
 
 
-<a id="org237bf85"></a>
+<a id="org4d58a60"></a>
 
 ## Search for files
 
 command to search for a file in linux : locate fileName
 
 
-<a id="orgfd4bef1"></a>
+<a id="org21dc316"></a>
 
 ## How to rename a file from terminal in Linux?
 
@@ -45,11 +45,12 @@ Another option:
 In order to rename a file in Linux you can use either of two approaches
 
 1.  Create a copy of the existing file with the new desired name and then delete the old file.
-    $ cp oldfile newfile
+    
+        $ cp oldfile newfile
     
     This creates a copy of the same file with a new name in the same location.
     
-    $ rm oldfil
+        $ rm oldfil
     
     This will delete the old file keeping the newfile intact.
 
@@ -57,27 +58,33 @@ In order to rename a file in Linux you can use either of two approaches
     
     Rename by moving
     
-    $mv old-file-name  new-file-name
+        $mv old-file-name  new-file-name
     
     This just moves the old file, to a new name.
 
 ---
 
 
-<a id="org9b5cc7c"></a>
+<a id="org17d939e"></a>
 
 ## Recursive copy
 
 To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
-$ cp -R \* /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
 
-To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip \*
-To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
+    $ cp -R * /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
+
+To zip all the contents of the current folder from command line : 
+
+    zip -r BooksForAkhil.zip *
+
+To zip all the contents of the a folder from some other location in command line : 
+
+    zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
 
 ---
 
 
-<a id="org938bf0c"></a>
+<a id="org279f957"></a>
 
 ## System commands
 
@@ -112,7 +119,7 @@ To zip all the contents of the a folder from some other location in command line
 ---
 
 
-<a id="orgbb3045f"></a>
+<a id="org7a78834"></a>
 
 ## Check the PATH
 
@@ -121,7 +128,7 @@ To check your PATH, logged in as yourself, you can issue the command (from this 
 ---
 
 
-<a id="org491d027"></a>
+<a id="orge06df5b"></a>
 
 ## Installing tar files
 
@@ -132,7 +139,7 @@ Type: tar -zxvf file.tar.gz
 ---
 
 
-<a id="org2b163ef"></a>
+<a id="org22f7d0d"></a>
 
 ## View ip address
 
@@ -141,7 +148,7 @@ Command to view ip address: hostname -I
 ---
 
 
-<a id="org3973847"></a>
+<a id="org06e4c3b"></a>
 
 ## System information
 
@@ -152,7 +159,7 @@ lscpu (look at the architecture row)
 ---
 
 
-<a id="orga6c6f1e"></a>
+<a id="org82d989f"></a>
 
 ## list commands
 
@@ -199,7 +206,7 @@ Vim has a builtin help system. You might want to edit the file as a superuser as
 ---
 
 
-<a id="org764e978"></a>
+<a id="org55021b2"></a>
 
 ## Packages
 
@@ -269,7 +276,7 @@ After the repository is added, they can be installed using commands like the one
 ---
 
 
-<a id="orgb099096"></a>
+<a id="org4b40877"></a>
 
 ## Docker
 
@@ -279,9 +286,9 @@ sudo service docker status
 ---
 
 
-<a id="org97921d4"></a>
+<a id="org8e8dbb1"></a>
 
-## Editiong videos
+## Editing videos
 
 Kdenlive - good tool for editing videos.
 
@@ -298,7 +305,7 @@ Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k 
 ---
 
 
-<a id="orgeb13f04"></a>
+<a id="orgab957be"></a>
 
 ## How to install Homebrew?
 
@@ -322,7 +329,7 @@ Verify that Homebrew is installed: \`brew &#x2013;version\`
 ---
 
 
-<a id="orgd854777"></a>
+<a id="org7ede6ad"></a>
 
 ## XFCE tips
 
@@ -331,7 +338,7 @@ In XFCE, there is a utility program called 'Preferred Applications' that lets yo
 ---
 
 
-<a id="orgd7b6de8"></a>
+<a id="orgcac5a23"></a>
 
 ## Fedora tips :
 
@@ -343,7 +350,7 @@ To install emacs on fedora : sudo yum install emacs
 ---
 
 
-<a id="org6638fa7"></a>
+<a id="org91bd092"></a>
 
 ## How to execute .sh programs
 
@@ -357,7 +364,7 @@ or, pass it to the shell interpreter like this: sh somefile.sh
 ---
 
 
-<a id="org9d537bd"></a>
+<a id="orgfae17bc"></a>
 
 ## How to install OSS code (the open source version of Visual Studio Code) in Fedora?
 
@@ -376,7 +383,7 @@ Then update the package cache and install the package using dnf (Fedora 22 and a
 ---
 
 
-<a id="orgf45192d"></a>
+<a id="org5b58602"></a>
 
 ## How to Remove Files and Directories Using Linux Command Line
 

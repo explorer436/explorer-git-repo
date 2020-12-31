@@ -13,11 +13,16 @@ Another option:
 In order to rename a file in Linux you can use either of two approaches
 
 1.  Create a copy of the existing file with the new desired name and then delete the old file.
-    $ cp oldfile newfile
+
+        #+BEGIN_EXAMPLE
+            $ cp oldfile newfile
+        #+END_EXAMPLE
 
     This creates a copy of the same file with a new name in the same location.
 
-    $ rm oldfil
+        #+BEGIN_EXAMPLE
+            $ rm oldfil
+        #+END_EXAMPLE
 
     This will delete the old file keeping the newfile intact.
 
@@ -25,7 +30,9 @@ In order to rename a file in Linux you can use either of two approaches
 
     Rename by moving
 
-    $mv old-file-name  new-file-name
+        #+BEGIN_EXAMPLE
+            $mv old-file-name  new-file-name
+        #+END_EXAMPLE
 
     This just moves the old file, to a new name.
 
@@ -34,10 +41,18 @@ In order to rename a file in Linux you can use either of two approaches
 **** Recursive copy
 
 To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
-$ cp -R * /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
+        #+BEGIN_EXAMPLE
+            $ cp -R * /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
+        #+END_EXAMPLE
 
-To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip *
-To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
+To zip all the contents of the current folder from command line : 
+        #+BEGIN_EXAMPLE
+            zip -r BooksForAkhil.zip *
+        #+END_EXAMPLE
+To zip all the contents of the a folder from some other location in command line : 
+        #+BEGIN_EXAMPLE
+            zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
+        #+END_EXAMPLE
 
 -------------------------------------------------------------------
 
@@ -172,7 +187,7 @@ sudo service docker status
 
 -------------------------------------------------------------------
 
-**** Editiong videos
+**** Editing videos
      
 Kdenlive - good tool for editing videos.
 
