@@ -58,9 +58,9 @@ To zip all the contents of the a folder from some other location in command line
 
 **** System commands
 
-| systemctl suspend   | command to reboot from terminal |
-| systemctl hibernate | command to reboot from terminal |
-| reboot              | command to reboot from terminal |
+| systemctl suspend   | command to put the system in sleep/suspend mode |
+| systemctl hibernate | command to put the system in hibernate mode     |
+| reboot              | command to reboot from terminal                 |
 
 -------------------------------------------------------------------
 
