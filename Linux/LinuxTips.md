@@ -1,33 +1,40 @@
 
 # Table of Contents
 
-1.  [List of things that I find useful](#org2d376d7)
-    1.  [Search for files](#orgc5f134f)
-    2.  [How to rename a file from terminal in Linux?](#orgc9de0e3)
-    3.  [Recursive copy](#org51928ad)
-    4.  [System commands](#orgeffbe42)
-    5.  [Check the PATH](#org1a127fb)
-    6.  [Installing tar files](#org7b4e2ab)
-    7.  [View ip address](#orgc9e8648)
-    8.  [System information](#org71be476)
-    9.  [list commands](#org5bca269)
-    10. [How to execute .sh programs](#org60c9436)
-    11. [How to Remove Files and Directories Using Linux Command Line](#orgf996b31)
+1.  [List of things that I find useful](#org107f565)
+    1.  [Search for files](#org237bf85)
+    2.  [How to rename a file from terminal in Linux?](#orgfd4bef1)
+    3.  [Recursive copy](#org9b5cc7c)
+    4.  [System commands](#org938bf0c)
+    5.  [Check the PATH](#orgbb3045f)
+    6.  [Installing tar files](#org491d027)
+    7.  [View ip address](#org2b163ef)
+    8.  [System information](#org3973847)
+    9.  [list commands](#orga6c6f1e)
+    10. [Packages](#org764e978)
+    11. [Docker](#orgb099096)
+    12. [Editiong videos](#org97921d4)
+    13. [How to install Homebrew?](#orgeb13f04)
+    14. [XFCE tips](#orgd854777)
+    15. [Fedora tips :](#orgd7b6de8)
+    16. [How to execute .sh programs](#org6638fa7)
+    17. [How to install OSS code (the open source version of Visual Studio Code) in Fedora?](#org9d537bd)
+    18. [How to Remove Files and Directories Using Linux Command Line](#orgf45192d)
 
 
-<a id="org2d376d7"></a>
+<a id="org107f565"></a>
 
 # List of things that I find useful
 
 
-<a id="orgc5f134f"></a>
+<a id="org237bf85"></a>
 
 ## Search for files
 
 command to search for a file in linux : locate fileName
 
 
-<a id="orgc9de0e3"></a>
+<a id="orgfd4bef1"></a>
 
 ## How to rename a file from terminal in Linux?
 
@@ -57,7 +64,7 @@ In order to rename a file in Linux you can use either of two approaches
 ---
 
 
-<a id="org51928ad"></a>
+<a id="org9b5cc7c"></a>
 
 ## Recursive copy
 
@@ -70,7 +77,7 @@ To zip all the contents of the a folder from some other location in command line
 ---
 
 
-<a id="orgeffbe42"></a>
+<a id="org938bf0c"></a>
 
 ## System commands
 
@@ -105,7 +112,7 @@ To zip all the contents of the a folder from some other location in command line
 ---
 
 
-<a id="org1a127fb"></a>
+<a id="orgbb3045f"></a>
 
 ## Check the PATH
 
@@ -114,7 +121,7 @@ To check your PATH, logged in as yourself, you can issue the command (from this 
 ---
 
 
-<a id="org7b4e2ab"></a>
+<a id="org491d027"></a>
 
 ## Installing tar files
 
@@ -125,7 +132,7 @@ Type: tar -zxvf file.tar.gz
 ---
 
 
-<a id="orgc9e8648"></a>
+<a id="org2b163ef"></a>
 
 ## View ip address
 
@@ -134,7 +141,7 @@ Command to view ip address: hostname -I
 ---
 
 
-<a id="org71be476"></a>
+<a id="org3973847"></a>
 
 ## System information
 
@@ -145,7 +152,7 @@ lscpu (look at the architecture row)
 ---
 
 
-<a id="org5bca269"></a>
+<a id="orga6c6f1e"></a>
 
 ## list commands
 
@@ -191,29 +198,18 @@ Vim has a builtin help system. You might want to edit the file as a superuser as
 
 ---
 
+
+<a id="org764e978"></a>
+
+## Packages
+
+List of software package management systems
+<https://en.wikipedia.org/wiki/List_of_software_package_management_systems#Linux> 
+
 To update the installed packages and package cache on your instance.
-sudo yum update -y
 
----
-
-To check if docker is running : 
-sudo service docker status
-
----
-
-Kdenlive - good tool for editing videos.
-
----
-
-$ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
-
-$ shrinkpdf in.pdf out.pdf
-
----
-
-Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
-
----
+for systems using RPM (redhat package manager): sudo yum update -y
+arch linux: pacman -Syu
 
 Removing Package:
 
@@ -236,7 +232,77 @@ If dpkg reports an error due to dependency problems, you can run sudo apt-get in
 Remove a package
 sudo dpkg -r PACKAGE<sub>NAME</sub>
 
+Fedora uses rpm packages.
+Install RPM File With Yum (Fedora or RedHat Linux)
+You can use the yum package manager to install .rpm files.
+Enter the following:
+sudo yum localinstall sample<sub>file.rpm</sub>
+The localinstall option instructions yum to look at your current working directory for the installation file.
+
+update fedora from command line : dnf upgrade
+
+command to install rpm package in fedora : 
+sudo dnf install NAME<sub>OF</sub><sub>RPM.rpm</sub>
+
+To install a rpm package using command line on redhat based system use -i command line switch with rpm command.
+rpm -i package-1.2.3.rpm
+
+You can also use YUM or DNF package manager to install downloaded rpm file. Its benefit to resolve dependencies required for the package
+yum localinstall package-1.2.3.rpm     ## CentOS, RHEL systems 
+dnf localinstall package-1.2.3.rpm     ## Fedora systems
+
+differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
+
 ---
+
+Configure RPMfusion Yum Repository : 
+
+Some packages/frameworks may be available only in RPMFusion repository. So, we may have to add it to Fedora using the following commands :
+
+    sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+    sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+After the repository is added, they can be installed using commands like the one below :
+
+    sudo dnf -y install ffmpeg
+
+---
+
+
+<a id="orgb099096"></a>
+
+## Docker
+
+To check if docker is running : 
+sudo service docker status
+
+---
+
+
+<a id="org97921d4"></a>
+
+## Editiong videos
+
+Kdenlive - good tool for editing videos.
+
+---
+
+$ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
+
+$ shrinkpdf in.pdf out.pdf
+
+---
+
+Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
+
+---
+
+
+<a id="orgeb13f04"></a>
+
+## How to install Homebrew?
+
+<https://en.wikipedia.org/wiki/Homebrew_(package_manager)> 
 
 Run the following to install Homebrew:
 
@@ -255,42 +321,29 @@ Verify that Homebrew is installed: \`brew &#x2013;version\`
 
 ---
 
+
+<a id="orgd854777"></a>
+
+## XFCE tips
+
 In XFCE, there is a utility program called 'Preferred Applications' that lets you change the default applications for browser, mail reader, file manager and terminal emulator. If you want to change the default applications, this is a very helpful tool.
 
 ---
 
-Fedora tips : 
 
-Fedora uses rpm packages.
-Install RPM File With Yum (Fedora or RedHat Linux)
-You can use the yum package manager to install .rpm files.
-Enter the following:
-sudo yum localinstall sample<sub>file.rpm</sub>
-The localinstall option instructions yum to look at your current working directory for the installation file.
+<a id="orgd7b6de8"></a>
+
+## Fedora tips :
 
 pdf file modification in fedora : use the pdfmod utility that comes with fedora
 
 To install gVim on fedora : yum install vim-X11
 To install emacs on fedora : sudo yum install emacs
 
-update fedora from command line : dnf upgrade
-
-command to install rpm package in fedora : 
-sudo dnf install NAME<sub>OF</sub><sub>RPM.rpm</sub>
-
-To install a rpm package using command line on redhat based system use -i command line switch with rpm command.
-rpm -i package-1.2.3.rpm
-
-You can also use YUM or DNF package manager to install downloaded rpm file. Its benefit to resolve dependencies required for the package
-yum localinstall package-1.2.3.rpm     ## CentOS, RHEL systems 
-dnf localinstall package-1.2.3.rpm     ## Fedora systems
-
-differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
-
 ---
 
 
-<a id="org60c9436"></a>
+<a id="org6638fa7"></a>
 
 ## How to execute .sh programs
 
@@ -303,20 +356,10 @@ or, pass it to the shell interpreter like this: sh somefile.sh
 
 ---
 
-Configure RPMfusion Yum Repository : 
 
-Some packages/frameworks may be available only in RPMFusion repository. So, we may have to add it to Fedora using the following commands :
+<a id="org9d537bd"></a>
 
-    sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-    sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-
-After the repository is added, they can be installed using commands like the one below :
-
-    sudo dnf -y install ffmpeg
-
----
-
-How to install OSS code (the open source version of Visual Studio Code) in Fedora?
+## How to install OSS code (the open source version of Visual Studio Code) in Fedora?
 
 RHEL, Fedora, and CentOS based distributions#
 
@@ -333,7 +376,7 @@ Then update the package cache and install the package using dnf (Fedora 22 and a
 ---
 
 
-<a id="orgf996b31"></a>
+<a id="orgf45192d"></a>
 
 ## How to Remove Files and Directories Using Linux Command Line
 
