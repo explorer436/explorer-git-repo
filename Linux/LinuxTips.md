@@ -1,33 +1,33 @@
 
 # Table of Contents
 
-1.  [List of things that I find useful](#org2386628)
-    1.  [Search for files](#org679f250)
-    2.  [How to rename a file from terminal in Linux?](#orgf56840a)
-    3.  [Recursive copy](#orgaeb3469)
-    4.  [System commands](#orgd2e00a1)
-    5.  [Check the PATH](#orgbfefc04)
-    6.  [Installing tar files](#org437f7ec)
-    7.  [View ip address](#orgb405bb2)
-    8.  [System information](#orgff33065)
-    9.  [list commands](#orga03cdc5)
-    10. [How to execute .sh programs](#org719d0e9)
-2.  [How to Remove Files and Directories Using Linux Command Line](#orgc38c1b9)
+1.  [List of things that I find useful](#org2d376d7)
+    1.  [Search for files](#orgc5f134f)
+    2.  [How to rename a file from terminal in Linux?](#orgc9de0e3)
+    3.  [Recursive copy](#org51928ad)
+    4.  [System commands](#orgeffbe42)
+    5.  [Check the PATH](#org1a127fb)
+    6.  [Installing tar files](#org7b4e2ab)
+    7.  [View ip address](#orgc9e8648)
+    8.  [System information](#org71be476)
+    9.  [list commands](#org5bca269)
+    10. [How to execute .sh programs](#org60c9436)
+    11. [How to Remove Files and Directories Using Linux Command Line](#orgf996b31)
 
 
-<a id="org2386628"></a>
+<a id="org2d376d7"></a>
 
 # List of things that I find useful
 
 
-<a id="org679f250"></a>
+<a id="orgc5f134f"></a>
 
 ## Search for files
 
 command to search for a file in linux : locate fileName
 
 
-<a id="orgf56840a"></a>
+<a id="orgc9de0e3"></a>
 
 ## How to rename a file from terminal in Linux?
 
@@ -57,7 +57,7 @@ In order to rename a file in Linux you can use either of two approaches
 ---
 
 
-<a id="orgaeb3469"></a>
+<a id="org51928ad"></a>
 
 ## Recursive copy
 
@@ -70,7 +70,7 @@ To zip all the contents of the a folder from some other location in command line
 ---
 
 
-<a id="orgd2e00a1"></a>
+<a id="orgeffbe42"></a>
 
 ## System commands
 
@@ -105,7 +105,7 @@ To zip all the contents of the a folder from some other location in command line
 ---
 
 
-<a id="orgbfefc04"></a>
+<a id="org1a127fb"></a>
 
 ## Check the PATH
 
@@ -114,7 +114,7 @@ To check your PATH, logged in as yourself, you can issue the command (from this 
 ---
 
 
-<a id="org437f7ec"></a>
+<a id="org7b4e2ab"></a>
 
 ## Installing tar files
 
@@ -125,7 +125,7 @@ Type: tar -zxvf file.tar.gz
 ---
 
 
-<a id="orgb405bb2"></a>
+<a id="orgc9e8648"></a>
 
 ## View ip address
 
@@ -134,7 +134,7 @@ Command to view ip address: hostname -I
 ---
 
 
-<a id="orgff33065"></a>
+<a id="org71be476"></a>
 
 ## System information
 
@@ -145,7 +145,7 @@ lscpu (look at the architecture row)
 ---
 
 
-<a id="orga03cdc5"></a>
+<a id="org5bca269"></a>
 
 ## list commands
 
@@ -290,7 +290,7 @@ differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is
 ---
 
 
-<a id="org719d0e9"></a>
+<a id="org60c9436"></a>
 
 ## How to execute .sh programs
 
@@ -333,11 +333,9 @@ Then update the package cache and install the package using dnf (Fedora 22 and a
 ---
 
 
-<a id="orgc38c1b9"></a>
+<a id="orgf996b31"></a>
 
-# How to Remove Files and Directories Using Linux Command Line
-
-****How to Remove Files****
+## How to Remove Files and Directories Using Linux Command Line
 
 To remove (or delete) a file in Linux from the command line, use either the rm (remove) or unlink command.
 The unlink command allows you to remove only a single file, while with rm you can remove multiple files at once.

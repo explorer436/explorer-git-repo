@@ -248,9 +248,7 @@ How to install OSS code (the open source version of Visual Studio Code) in Fedor
 
 --------------------------------
 
-*** How to Remove Files and Directories Using Linux Command Line
-
-**How to Remove Files**
+**** How to Remove Files and Directories Using Linux Command Line
 
 To remove (or delete) a file in Linux from the command line, use either the rm (remove) or unlink command.
 The unlink command allows you to remove only a single file, while with rm you can remove multiple files at once.
