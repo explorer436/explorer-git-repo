@@ -1,20 +1,40 @@
 
 # Table of Contents
 
-1.  [Terminal](#org6e235ea)
-    1.  [How to rename a file from terminal in Linux?](#orga1358aa)
-2.  [How to Remove Files and Directories Using Linux Command Line](#orgc15b5bc)
+1.  [List of things that I find useful](#org2386628)
+    1.  [Search for files](#org679f250)
+    2.  [How to rename a file from terminal in Linux?](#orgf56840a)
+    3.  [Recursive copy](#orgaeb3469)
+    4.  [System commands](#orgd2e00a1)
+    5.  [Check the PATH](#orgbfefc04)
+    6.  [Installing tar files](#org437f7ec)
+    7.  [View ip address](#orgb405bb2)
+    8.  [System information](#orgff33065)
+    9.  [list commands](#orga03cdc5)
+    10. [How to execute .sh programs](#org719d0e9)
+2.  [How to Remove Files and Directories Using Linux Command Line](#orgc38c1b9)
 
 
-<a id="org6e235ea"></a>
+<a id="org2386628"></a>
 
-# Terminal
+# List of things that I find useful
 
 
-<a id="orga1358aa"></a>
+<a id="org679f250"></a>
+
+## Search for files
+
+command to search for a file in linux : locate fileName
+
+
+<a id="orgf56840a"></a>
 
 ## How to rename a file from terminal in Linux?
 
+One option:
+vifm (a tool that works with vim shortcuts) is an alternative to this. Using vifm, we can change the name of a file or folder using \`cw\` (change word).
+
+Another option:
 In order to rename a file in Linux you can use either of two approaches
 
 1.  Create a copy of the existing file with the new desired name and then delete the old file.
@@ -35,6 +55,24 @@ In order to rename a file in Linux you can use either of two approaches
     This just moves the old file, to a new name.
 
 ---
+
+
+<a id="orgaeb3469"></a>
+
+## Recursive copy
+
+To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
+$ cp -R \* /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
+
+To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip \*
+To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
+
+---
+
+
+<a id="orgd2e00a1"></a>
+
+## System commands
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -64,35 +102,52 @@ In order to rename a file in Linux you can use either of two approaches
 </tbody>
 </table>
 
+---
+
+
+<a id="orgbfefc04"></a>
+
+## Check the PATH
+
 To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
 
-command to search for a file in linux : locate fileName
+---
+
+
+<a id="org437f7ec"></a>
+
+## Installing tar files
 
 command to install a tar file in linux : how to use sudo command to install .tar.gz :
 Open a console, and go to the directory where the file is
 Type: tar -zxvf file.tar.gz
 
-Recursive copy
+---
 
-To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
-$ cp -R \* /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
 
-To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip \*
-To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
+<a id="orgb405bb2"></a>
+
+## View ip address
 
 Command to view ip address: hostname -I
 
 ---
 
-vifm (a tool that works with vim shortcuts) is an alternative to this. Using vifm, we can change the name of a file or folder using \`cw\` (change word).
 
----
+<a id="orgff33065"></a>
+
+## System information
 
 To figure out if your computer has 64 bit or 32 bit processor :  
 uname -a
 lscpu (look at the architecture row)
 
 ---
+
+
+<a id="orga03cdc5"></a>
+
+## list commands
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -234,7 +289,10 @@ differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is
 
 ---
 
-How to execute .sh programs in fedora :
+
+<a id="org719d0e9"></a>
+
+## How to execute .sh programs
 
 Either make the file executable, and then run it while specifying the path:
 
@@ -275,7 +333,7 @@ Then update the package cache and install the package using dnf (Fedora 22 and a
 ---
 
 
-<a id="orgc15b5bc"></a>
+<a id="orgc38c1b9"></a>
 
 # How to Remove Files and Directories Using Linux Command Line
 

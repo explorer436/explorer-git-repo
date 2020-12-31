@@ -1,7 +1,15 @@
-*** Terminal
+*** List of things that I find useful
+
+**** Search for files
+
+command to search for a file in linux : locate fileName
 
 **** How to rename a file from terminal in Linux?
 
+One option:
+vifm (a tool that works with vim shortcuts) is an alternative to this. Using vifm, we can change the name of a file or folder using `cw` (change word).
+
+Another option:
 In order to rename a file in Linux you can use either of two approaches
 
 1.  Create a copy of the existing file with the new desired name and then delete the old file.
@@ -23,20 +31,7 @@ In order to rename a file in Linux you can use either of two approaches
 
 -------------------------------------------------------------------
 
-| systemctl suspend   | command to reboot from terminal |
-| systemctl hibernate | command to reboot from terminal |
-| reboot              | command to reboot from terminal |
-
-
-To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
-
-command to search for a file in linux : locate fileName
-
-command to install a tar file in linux : how to use sudo command to install .tar.gz :
-Open a console, and go to the directory where the file is
-Type: tar -zxvf file.tar.gz
-
-Recursive copy
+**** Recursive copy
 
 To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
 $ cp -R * /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
@@ -44,19 +39,45 @@ $ cp -R * /home/explorer436/Downloads/destinationFolder (We might have to create
 To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip *
 To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
 
+-------------------------------------------------------------------
+
+**** System commands
+
+| systemctl suspend   | command to reboot from terminal |
+| systemctl hibernate | command to reboot from terminal |
+| reboot              | command to reboot from terminal |
+
+-------------------------------------------------------------------
+
+**** Check the PATH
+
+To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
+
+-------------------------------------------------------------------
+
+**** Installing tar files
+
+command to install a tar file in linux : how to use sudo command to install .tar.gz :
+Open a console, and go to the directory where the file is
+Type: tar -zxvf file.tar.gz
+
+-------------------------------------------------------------------
+
+**** View ip address
+     
 Command to view ip address: hostname -I
 
 -------------------------------------------------------------------
 
-vifm (a tool that works with vim shortcuts) is an alternative to this. Using vifm, we can change the name of a file or folder using `cw` (change word).
-
--------------------------------------------------------------------
+**** System information
 
 To figure out if your computer has 64 bit or 32 bit processor :  
 uname -a
 lscpu (look at the architecture row)
 
 -------------------------------------------------------------------
+
+**** list commands
 
 | ls --all              | command to show all files and folders including hidden ones                    |
 | ls -l --block-size=M  | (round file sizes to the nearest MB) To make `ls` show file sizes in megabytes |
@@ -177,14 +198,14 @@ differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is
 
 --------------------------------
 
-How to execute .sh programs in fedora :
+**** How to execute .sh programs
 
 	Either make the file executable, and then run it while specifying the path:
 
-#+BEGIN_EXAMPLE
-	chmod +x somefile.sh
-	./somefile.sh
-#+END_EXAMPLE
+        #+BEGIN_EXAMPLE
+            chmod +x somefile.sh
+            ./somefile.sh
+        #+END_EXAMPLE
 
 	or, pass it to the shell interpreter like this: sh somefile.sh
 
@@ -194,15 +215,16 @@ Configure RPMfusion Yum Repository :
 
 	Some packages/frameworks may be available only in RPMFusion repository. So, we may have to add it to Fedora using the following commands :
 	
-#+BEGIN_EXAMPLE
-	sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-	sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-#+END_EXAMPLE
+        #+BEGIN_EXAMPLE
+	    sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+	    sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+        #+END_EXAMPLE
 
 	After the repository is added, they can be installed using commands like the one below :
-#+BEGIN_EXAMPLE
-	sudo dnf -y install ffmpeg
-#+END_EXAMPLE
+
+        #+BEGIN_EXAMPLE
+	    sudo dnf -y install ffmpeg
+        #+END_EXAMPLE
 
 --------------------------------
 
@@ -212,17 +234,17 @@ How to install OSS code (the open source version of Visual Studio Code) in Fedor
 	
 	We currently ship the stable 64-bit VS Code in a yum repository, the following script will install the key and repository:
 	
-#+BEGIN_EXAMPLE
-	sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-	sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-#+END_EXAMPLE
+        #+BEGIN_EXAMPLE
+            sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+            sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+        #+END_EXAMPLE
 	
 	Then update the package cache and install the package using dnf (Fedora 22 and above):
 	
-#+BEGIN_EXAMPLE
-	sudo dnf check-update
-	sudo dnf install code
-#+END_EXAMPLE
+        #+BEGIN_EXAMPLE
+            sudo dnf check-update
+            sudo dnf install code
+        #+END_EXAMPLE
 
 --------------------------------
 
