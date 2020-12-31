@@ -1,40 +1,40 @@
 
 # Table of Contents
 
-1.  [List of things that I find useful](#org08d690b)
-    1.  [Search for files](#org4d58a60)
-    2.  [How to rename a file from terminal in Linux?](#org21dc316)
-    3.  [Recursive copy](#org17d939e)
-    4.  [System commands](#org279f957)
-    5.  [Check the PATH](#org7a78834)
-    6.  [Installing tar files](#orge06df5b)
-    7.  [View ip address](#org22f7d0d)
-    8.  [System information](#org06e4c3b)
-    9.  [list commands](#org82d989f)
-    10. [Packages](#org55021b2)
-    11. [Docker](#org4b40877)
-    12. [Editing videos](#org8e8dbb1)
-    13. [How to install Homebrew?](#orgab957be)
-    14. [XFCE tips](#org7ede6ad)
-    15. [Fedora tips :](#orgcac5a23)
-    16. [How to execute .sh programs](#org91bd092)
-    17. [How to install OSS code (the open source version of Visual Studio Code) in Fedora?](#orgfae17bc)
-    18. [How to Remove Files and Directories Using Linux Command Line](#org5b58602)
+1.  [List of things that I find useful](#org58f1d4c)
+    1.  [Search for files](#org1d2366a)
+    2.  [How to rename a file from terminal in Linux?](#org064f696)
+    3.  [Recursive copy](#org6f16b47)
+    4.  [System commands](#org8ad1d84)
+    5.  [Check the PATH](#org3263716)
+    6.  [Installing tar files](#orgdf866c8)
+    7.  [View ip address](#org0aa592a)
+    8.  [System information](#org0f214ff)
+    9.  [list commands](#org3c3dbfd)
+    10. [Packages](#orgf053200)
+    11. [Docker](#org9754845)
+    12. [Editing videos](#org17e101b)
+    13. [How to install Homebrew?](#org04b4bcc)
+    14. [XFCE tips](#org000d059)
+    15. [Fedora tips :](#orga2c9701)
+    16. [How to execute .sh programs](#org046e6b7)
+    17. [How to install OSS code (the open source version of Visual Studio Code) in Fedora?](#org8452c0c)
+    18. [How to Remove Files and Directories Using Linux Command Line](#orgcb0db8a)
 
 
-<a id="org08d690b"></a>
+<a id="org58f1d4c"></a>
 
 # List of things that I find useful
 
 
-<a id="org4d58a60"></a>
+<a id="org1d2366a"></a>
 
 ## Search for files
 
 command to search for a file in linux : locate fileName
 
 
-<a id="org21dc316"></a>
+<a id="org064f696"></a>
 
 ## How to rename a file from terminal in Linux?
 
@@ -65,7 +65,7 @@ In order to rename a file in Linux you can use either of two approaches
 ---
 
 
-<a id="org17d939e"></a>
+<a id="org6f16b47"></a>
 
 ## Recursive copy
 
@@ -84,7 +84,7 @@ To zip all the contents of the a folder from some other location in command line
 ---
 
 
-<a id="org279f957"></a>
+<a id="org8ad1d84"></a>
 
 ## System commands
 
@@ -119,47 +119,53 @@ To zip all the contents of the a folder from some other location in command line
 ---
 
 
-<a id="org7a78834"></a>
+<a id="org3263716"></a>
 
 ## Check the PATH
 
-To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
+To check the PATH, logged in as yourself, run the command (from the system terminal), type 
+
+    env | grep PATH
 
 ---
 
 
-<a id="orge06df5b"></a>
+<a id="orgdf866c8"></a>
 
 ## Installing tar files
 
 command to install a tar file in linux : how to use sudo command to install .tar.gz :
 Open a console, and go to the directory where the file is
-Type: tar -zxvf file.tar.gz
+
+    tar -zxvf file.tar.gz
 
 ---
 
 
-<a id="org22f7d0d"></a>
+<a id="org0aa592a"></a>
 
 ## View ip address
 
-Command to view ip address: hostname -I
+Command to view ip address: 
+
+    hostname -I
 
 ---
 
 
-<a id="org06e4c3b"></a>
+<a id="org0f214ff"></a>
 
 ## System information
 
 To figure out if your computer has 64 bit or 32 bit processor :  
-uname -a
-lscpu (look at the architecture row)
+
+    uname -a
+    lscpu (look at the architecture row)
 
 ---
 
 
-<a id="org82d989f"></a>
+<a id="org3c3dbfd"></a>
 
 ## list commands
 
@@ -206,7 +212,7 @@ Vim has a builtin help system. You might want to edit the file as a superuser as
 ---
 
 
-<a id="org55021b2"></a>
+<a id="orgf053200"></a>
 
 ## Packages
 
@@ -276,7 +282,7 @@ After the repository is added, they can be installed using commands like the one
 ---
 
 
-<a id="org4b40877"></a>
+<a id="org9754845"></a>
 
 ## Docker
 
@@ -286,7 +292,7 @@ sudo service docker status
 ---
 
 
-<a id="org8e8dbb1"></a>
+<a id="org17e101b"></a>
 
 ## Editing videos
 
@@ -305,7 +311,7 @@ Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k 
 ---
 
 
-<a id="orgab957be"></a>
+<a id="org04b4bcc"></a>
 
 ## How to install Homebrew?
 
@@ -329,7 +335,7 @@ Verify that Homebrew is installed: \`brew &#x2013;version\`
 ---
 
 
-<a id="org7ede6ad"></a>
+<a id="org000d059"></a>
 
 ## XFCE tips
 
@@ -338,7 +344,7 @@ In XFCE, there is a utility program called 'Preferred Applications' that lets yo
 ---
 
 
-<a id="orgcac5a23"></a>
+<a id="orga2c9701"></a>
 
 ## Fedora tips :
 
@@ -350,7 +356,7 @@ To install emacs on fedora : sudo yum install emacs
 ---
 
 
-<a id="org91bd092"></a>
+<a id="org046e6b7"></a>
 
 ## How to execute .sh programs
 
@@ -364,7 +370,7 @@ or, pass it to the shell interpreter like this: sh somefile.sh
 ---
 
 
-<a id="orgfae17bc"></a>
+<a id="org8452c0c"></a>
 
 ## How to install OSS code (the open source version of Visual Studio Code) in Fedora?
 
@@ -383,7 +389,7 @@ Then update the package cache and install the package using dnf (Fedora 22 and a
 ---
 
 
-<a id="org5b58602"></a>
+<a id="orgcb0db8a"></a>
 
 ## How to Remove Files and Directories Using Linux Command Line
 

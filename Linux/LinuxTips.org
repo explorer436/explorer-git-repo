@@ -66,7 +66,10 @@ To zip all the contents of the a folder from some other location in command line
 
 **** Check the PATH
 
-To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
+To check the PATH, logged in as yourself, run the command (from the system terminal), type 
+        #+BEGIN_EXAMPLE
+            env | grep PATH
+        #+END_EXAMPLE
 
 -------------------------------------------------------------------
 
@@ -74,21 +77,29 @@ To check your PATH, logged in as yourself, you can issue the command (from this 
 
 command to install a tar file in linux : how to use sudo command to install .tar.gz :
 Open a console, and go to the directory where the file is
-Type: tar -zxvf file.tar.gz
+    #+BEGIN_EXAMPLE
+        tar -zxvf file.tar.gz
+    #+END_EXAMPLE
 
 -------------------------------------------------------------------
 
 **** View ip address
      
-Command to view ip address: hostname -I
+Command to view ip address: 
+    #+BEGIN_EXAMPLE
+        hostname -I
+    #+END_EXAMPLE
 
 -------------------------------------------------------------------
 
 **** System information
 
 To figure out if your computer has 64 bit or 32 bit processor :  
-uname -a
-lscpu (look at the architecture row)
+    #+BEGIN_EXAMPLE
+        uname -a
+        lscpu (look at the architecture row)
+    #+END_EXAMPLE
+
 
 -------------------------------------------------------------------
 
