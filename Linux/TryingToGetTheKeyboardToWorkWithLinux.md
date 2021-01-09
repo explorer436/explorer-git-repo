@@ -91,4 +91,5 @@ Edit /etc/default/grub and append your kernel options between the quotes in the 
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 And then automatically re-generate the grub.cfg file with:
 `$ grub-mkconfig -o /boot/grub/grub.cfg`
+If, for whatever reason, the computer does not detect the keyboard after software updates, run the above command to re-generate the grub.cfg file again and reboot the computer. That should fix it.
 
