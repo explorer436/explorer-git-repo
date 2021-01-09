@@ -78,8 +78,8 @@ In that file, we will see info that looks like this:
 After determining the idVendor and idProduct for the device that we want to work with,
 
 
-You can pass usbcore quirks as kernel parameters, see this page : https://raw.githubusercontent.com/torva … meters.txt
-Should be `usbcore.quirks=17ef:6047:gki`
+You can pass usbcore quirks as kernel parameters, see this page : https://raw.githubusercontent.com/torvalds/linux/master/Documentation/admin-guide/kernel-parameters.txt
+Specifically, look at: `usbcore.quirks=17ef:6047:gki`
 
 I added the parameter to my loader config file and it works!
 Reference: Where to put the parameter for anyone who has the same problem:  https://wiki.archlinux.org/index.php/Kernel_parameters
