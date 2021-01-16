@@ -79,7 +79,6 @@ Calibre ebook editor and viewer
 - Algorithms (visual explanation)
 - Alltrails
 - Authenticator (Microsoft)
-- Dropbox (optional)
 - DuckDuckGo
 - Fairmail (using this for Gmail and hotmail accounts right now)
 - Firefox (extensions - Dark Reader)
