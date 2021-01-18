@@ -1,47 +1,48 @@
 
 # Table of Contents
 
-1.  [Tools common for all OSs](#org0ac4752)
-    1.  [IDEs :](#org9d446f1)
-    2.  [Text editors](#org1b75ce4)
-    3.  [Browsers](#org2d4d61b)
-    4.  [Miscellaneous](#org95ab628)
-2.  [Tools for Windows](#org618fae9)
-3.  [Tools for Linux](#org97f12ec)
-4.  [Tools for Android (alphabetical order)](#orgf9bf490)
-5.  [How to use multiple workspaces](#org79ecaf6)
-    1.  [Multiple workspaces in Windows](#orgca94846)
-6.  [Ready API/Soap UI preferences](#orgd4703de)
-7.  [Android alternatives](#org2fbf95d)
-8.  [Wizdler](#org117a8e1)
-9.  [OpenAPI spec editing tools](#org170176f)
-10. [Putty](#org1b4847d)
-11. [Calibre book-reader customization](#org1e549cc)
-12. [Command to put computer to sleep](#org0059589)
-13. [Mouse issues in Windows](#org4c0966e)
-14. [Lenovo Thinkpad tips](#orga266839)
-15. [Windows VDEs running out of memory](#org5d56047)
-16. [Tree](#org60c184a)
-17. [Tips for searching and copying files and directories :](#org1883524)
-18. [Killing a process](#orge85709c)
-19. [Postman tips](#orgcb9a6ee)
-20. [Running jar files from terminal](#org59d4cbf)
-21. [Cntlm](#orgd2948fd)
-22. [Commands to run tests on individual files](#orgc59856b)
-23. [Gradle commands](#orgcd14623)
-24. [Cygwin](#org954e32a)
-25. [Hosts file](#orga0e8086)
-26. [SonarQube](#orgcd4119f)
-27. [WID - clean and build tips](#org7c235de)
-28. [Issues encountered while working with MongoDB](#orgffecfb5)
+1.  [Tools common for all OSs](#org42f0af3)
+    1.  [IDEs :](#org2fa6db6)
+    2.  [Text editors](#org27de933)
+    3.  [Browsers](#org1304d9a)
+    4.  [Miscellaneous](#org4e6bf6e)
+2.  [Tools for Windows](#orge6cedef)
+3.  [Tools for Linux](#orga9a137f)
+4.  [Tools for Android (alphabetical order)](#org87e1b76)
+5.  [How to use multiple workspaces](#org3fd4cf0)
+    1.  [Multiple workspaces in Windows](#orgaf5d425)
+6.  [Ready API/Soap UI preferences](#org6bb4fd3)
+7.  [Android alternatives](#org224d868)
+8.  [Browser choices](#org669a2f4)
+9.  [Wizdler](#org8fe26a7)
+10. [OpenAPI spec editing tools](#orgc7a09f9)
+11. [Putty](#org03ec85e)
+12. [Calibre book-reader customization](#org5667897)
+13. [Command to put computer to sleep](#org9d7be6d)
+14. [Mouse issues in Windows](#org33d3c3e)
+15. [Lenovo Thinkpad tips](#orgbb9021d)
+16. [Windows VDEs running out of memory](#org4e878a9)
+17. [Tree](#orga324614)
+18. [Tips for searching and copying files and directories :](#orgfa20aac)
+19. [Killing a process](#org0ffa25a)
+20. [Postman tips](#orgefc8b8b)
+21. [Running jar files from terminal](#orgdf30e0b)
+22. [Cntlm](#org2eaa2c9)
+23. [Commands to run tests on individual files](#org04af2a5)
+24. [Gradle commands](#org6f8eee2)
+25. [Cygwin](#orgc13f270)
+26. [Hosts file](#org5e228eb)
+27. [SonarQube](#orgae7eb25)
+28. [WID - clean and build tips](#orga6c8786)
+29. [Issues encountered while working with MongoDB](#orgcb68f5e)
 
 
-<a id="org0ac4752"></a>
+<a id="org42f0af3"></a>
 
 # Tools common for all OSs
 
 
-<a id="org9d446f1"></a>
+<a id="org2fa6db6"></a>
 
 ## IDEs :
 
@@ -62,7 +63,7 @@
         -   To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
 
 
-<a id="org1b75ce4"></a>
+<a id="org27de933"></a>
 
 ## Text editors
 
@@ -70,7 +71,7 @@
 2.  gVim
 
 
-<a id="org2d4d61b"></a>
+<a id="org1304d9a"></a>
 
 ## Browsers
 
@@ -78,14 +79,14 @@
 2.  Tor browser
 
 
-<a id="org95ab628"></a>
+<a id="org4e6bf6e"></a>
 
 ## Miscellaneous
 
 Calibre ebook editor and viewer
 
 
-<a id="org618fae9"></a>
+<a id="orge6cedef"></a>
 
 # Tools for Windows
 
@@ -99,7 +100,7 @@ Calibre ebook editor and viewer
 -   Console Emulation program - ConEmu
 
 
-<a id="org97f12ec"></a>
+<a id="orga9a137f"></a>
 
 # Tools for Linux
 
@@ -132,40 +133,49 @@ Calibre ebook editor and viewer
 -   Xfce4-screenshooter
 
 
-<a id="orgf9bf490"></a>
+<a id="org87e1b76"></a>
 
 # Tools for Android (alphabetical order)
 
 -   APAS (Algorithm Problems and Solutions)
--   Algorithms (visual explanation)
--   Alltrails
+-   Algorithms (visual explanation of algorithms)
+-   Alltrails (optional)
+-   Amazon Prime Video (streaming)
 -   Authenticator (Microsoft)
--   DuckDuckGo
+-   Cambridge Dictionary
+-   Chess.com
+-   DuckDuckGo (optional)
 -   Fairmail (using this for Gmail and hotmail accounts right now)
--   Firefox (extensions - Dark Reader)
+-   Fdroid (optional)
+-   Firefox (extensions - Dark Reader) (set startpage.com as the default search engine)
 -   Foxit PDF Reader (for pdf files)
--   GPS Tools
--   Geeks for Geeks
+-   GPS Tools (good app with various features to determine gps info)
+-   Geeks for Geeks (optional)
 -   GitHub
--   Glassdoor (Job search) Is there an app for indeed?
--   Instapaper (Reading)
--   Lastpass
--   LinkedIn (Job search) (Not using it all that much)
+-   Glassdoor (Job search) (optional)
+-   HBO Max (streaming)
+-   Instapaper (Reading articles)
+-   LBRY
+-   Lastpass (password manager)
+-   LinkedIn (Job search) (optional)
 -   Mapquest (maps)
 -   Mega Sync Client
 -   Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
 -   NetGuard
+-   Netflix (streaming)
+-   OpenPhone (optional)
 -   OsmAnd (maps)
 -   Outlook (Microsoft) (For FusionAlliance Webmail and hotmail accounts - might also work for Gmail and other accounts) (Email client)
 -   Podcasts (Google) (Podcasts)
 -   Quora	 (Reading)
 -   Signal (Messaging apps)
 -   Spotify (Music)
+-   Startpage search engine app
 -   Sync (cloud client)
 -   The weather channel (weather)
--   Tor Browser (browser)
+-   Tor Browser (browser) (set startpage.com as the default search engine)
 -   Tutanota (Email client)
--   Udemy
+-   Udemy (optional)
 -   Vim Master
 -   Walldrobe (wallpapers from Unsplash)
 -   Whatsapp (Messaging apps)
@@ -177,7 +187,7 @@ Calibre ebook editor and viewer
 ---
 
 
-<a id="org79ecaf6"></a>
+<a id="org3fd4cf0"></a>
 
 # How to use multiple workspaces
 
@@ -192,7 +202,7 @@ tap an arrow key—and you’ll switch between workspaces,
 taking the currently active window with you to the new workspace.
 
 
-<a id="orgca94846"></a>
+<a id="orgaf5d425"></a>
 
 ## Multiple workspaces in Windows
 
@@ -211,7 +221,7 @@ taking the currently active window with you to the new workspace.
 ---
 
 
-<a id="orgd4703de"></a>
+<a id="org6bb4fd3"></a>
 
 # Ready API/Soap UI preferences
 
@@ -248,7 +258,7 @@ Groovy<sub>script</sub><sub>to</sub><sub>read</sub><sub>attributes</sub><sub>fro
 ---
 
 
-<a id="org2fbf95d"></a>
+<a id="org224d868"></a>
 
 # Android alternatives
 
@@ -258,7 +268,19 @@ LineageOS (supports many older devices)
 ---
 
 
-<a id="org117a8e1"></a>
+<a id="org669a2f4"></a>
+
+# Browser choices
+
+If you are not happy with firefox, here are some alternatives:
+LibreWolf
+vimb
+qutebrowser
+
+---
+
+
+<a id="org8fe26a7"></a>
 
 # Wizdler
 
@@ -269,7 +291,7 @@ Recognizes WSDL information on the page to show you the available services and o
 ---
 
 
-<a id="org170176f"></a>
+<a id="orgc7a09f9"></a>
 
 # OpenAPI spec editing tools
 
@@ -282,7 +304,7 @@ Stoplight studio is another good one.
 ---
 
 
-<a id="org1b4847d"></a>
+<a id="org03ec85e"></a>
 
 # Putty
 
@@ -293,7 +315,7 @@ change password :
 ---
 
 
-<a id="org1e549cc"></a>
+<a id="org5667897"></a>
 
 # Calibre book-reader customization
 
@@ -304,7 +326,7 @@ Preferences -> User Stylesheet -> p {line-height: 2}
 ---
 
 
-<a id="org0059589"></a>
+<a id="org9d7be6d"></a>
 
 # Command to put computer to sleep
 
@@ -315,7 +337,7 @@ Windows:
 ---
 
 
-<a id="org4c0966e"></a>
+<a id="org33d3c3e"></a>
 
 # Mouse issues in Windows
 
@@ -333,7 +355,7 @@ d. Click on Apply and check the issue.
 ---
 
 
-<a id="orga266839"></a>
+<a id="orgbb9021d"></a>
 
 # Lenovo Thinkpad tips
 
@@ -346,7 +368,7 @@ To turn on the small light on the top of the monitor (when working in the dark a
 ---
 
 
-<a id="org5d56047"></a>
+<a id="org4e878a9"></a>
 
 # Windows VDEs running out of memory
 
@@ -373,7 +395,7 @@ The "Delete Files" button should become available. Click this button to clear fi
 ---
 
 
-<a id="org60c184a"></a>
+<a id="orga324614"></a>
 
 # Tree
 
@@ -452,7 +474,7 @@ As you can see in this guide, tree command will give you a nice graphical tree v
 ---
 
 
-<a id="org1883524"></a>
+<a id="orgfa20aac"></a>
 
 # Tips for searching and copying files and directories :
 
@@ -511,7 +533,7 @@ So if you want to replicate one path to another include the trailing slash as fo
 ---
 
 
-<a id="orge85709c"></a>
+<a id="org0ffa25a"></a>
 
 # Killing a process
 
@@ -553,7 +575,7 @@ Restart the Citrix Service (or reboot your machine)
 ---
 
 
-<a id="orgcb9a6ee"></a>
+<a id="orgefc8b8b"></a>
 
 # Postman tips
 
@@ -580,7 +602,7 @@ Script to read fields from a SOAP response and set it as a collection variable t
 ---
 
 
-<a id="org59d4cbf"></a>
+<a id="orgdf30e0b"></a>
 
 # Running jar files from terminal
 
@@ -589,7 +611,7 @@ Script to read fields from a SOAP response and set it as a collection variable t
 ---
 
 
-<a id="orgd2948fd"></a>
+<a id="org2eaa2c9"></a>
 
 # Cntlm
 
@@ -625,7 +647,7 @@ If this doesn't work, restarting the slice using the command 'reboot' works.
 ---
 
 
-<a id="orgc59856b"></a>
+<a id="org04af2a5"></a>
 
 # Commands to run tests on individual files
 
@@ -641,7 +663,7 @@ If this doesn't work, restarting the slice using the command 'reboot' works.
 ---
 
 
-<a id="orgcd14623"></a>
+<a id="org6f8eee2"></a>
 
 # Gradle commands
 
@@ -674,7 +696,7 @@ To exclude a few tasks from the build process :
 ---
 
 
-<a id="org954e32a"></a>
+<a id="orgc13f270"></a>
 
 # Cygwin
 
@@ -775,7 +797,7 @@ For 64 bit, add C:\Users\\<username>\cygwin64\bin; to the end of the environment
 ---
 
 
-<a id="orga0e8086"></a>
+<a id="org5e228eb"></a>
 
 # Hosts file
 
@@ -784,7 +806,7 @@ Access your hosts file on your services slice (C:\Windows\System32\drivers\etc)
 ---
 
 
-<a id="orgcd4119f"></a>
+<a id="orgae7eb25"></a>
 
 # SonarQube
 
@@ -808,7 +830,7 @@ For multi-language projects, remove the property "sonar.language=java" from "son
 ---
 
 
-<a id="org7c235de"></a>
+<a id="orga6c8786"></a>
 
 # WID - clean and build tips
 
@@ -829,7 +851,7 @@ It takes about 10 seconds instead of letting wid do the clean in like 15 minutes
 ---
 
 
-<a id="orgffecfb5"></a>
+<a id="orgcb68f5e"></a>
 
 # Issues encountered while working with MongoDB
 

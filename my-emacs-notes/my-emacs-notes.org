@@ -122,3 +122,6 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
 
 At some point you might want to print your notes, publish them on the web, or share them with people not using Org.
 Org can convert and export documents to a variety of other formats while retaining as much structure (see Document Structure) and markup (see Markup for Rich Contents) as possible.  
+
+Use C-c C-e to launch the export command and then use the options displayed to make selections.
+e.g. to export as a UTF-8 plain text file, select 't' and 'u'
