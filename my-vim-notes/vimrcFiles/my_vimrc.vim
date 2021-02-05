@@ -101,8 +101,6 @@ command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-hea
 
     "open nerdtree on the left
     nmap <leader>n :call ToggleNERDTree()<CR>   
-    "run prettier asynchronously
-    nmap <leader>p :PrettierAsync<CR>           
 "------------------------------
     " netrw customizations
 	let g:netrw_liststyle = 3 " custom settings for the netrw file/directory menu...
@@ -121,20 +119,6 @@ command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-hea
 	let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro' " netrw_bufsettings - you can control netrw's buffer settings; change
                                                              " these if you want to change line number displays, relative line number
                                                              " displays and other settings in netrw menu.
-"------------------------------
-    " ale plugin configuration
-    " Set this variable to 1 to fix files when you save them.
-    let g:ale_fix_on_save = 1
-    " Fix files with prettier, and then ESLint.
-    let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
-
-    " This requires prettier plugin
-    let g:prettier#config#single_quote = 'true'
-    let g:prettier#config#bracket_spacing = 'true'
-    let g:prettier#config#jsx_bracket_same_line = 'false'
-    let g:prettier#config#arrow_parens = 'avoid'
-    let g:prettier#config#trailing_comma = 'es5'
-    let g:prettier#config#use_tabs = 'false'
 "------------------------------
  
 	filetype indent plugin on " Attempt to determine the type of a file 
@@ -274,13 +258,11 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-rooter'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-fugitive'
 
 call plug#end()
