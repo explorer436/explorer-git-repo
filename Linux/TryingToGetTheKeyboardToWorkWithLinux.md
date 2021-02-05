@@ -3,6 +3,7 @@ To figure that out, run `lsusb` and see if the keyboard shows up in the list the
 
 After that, run `dmesg | tail`. That will give us an output that looks like this.
 
+```
 [explorer436@explorer436-cf52ekmbdam /]$ dmesg | tail
 [28600.645427] usb 5-1: Product: ThinkPad Compact USB Keyboard with TrackPoint
 [28600.645429] usb 5-1: Manufacturer: Lenovo
@@ -14,12 +15,14 @@ After that, run `dmesg | tail`. That will give us an output that looks like this
 [28722.116445] usb 5-1: Manufacturer: Lenovo
 [30307.478599] audit: type=1130 audit(1603031368.217:714): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
 [30318.015193] audit: type=1131 audit(1603031378.753:715): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+```
 
 The key pieces of information we are looking for in the output of the above command are `idVendor` and `idProduct`.
 idVendor=17ef, idProduct=6047
 
 Note: The idVendor and idProduct can also be determined by looking at the file `usb.ids` - which is usually located at `/usr/share/misc/usb.ids`. If you cannot find the file there, use broot to figure out where the file is. In ArcoLinux, it is located here `/usr/share/hwdata/usb.ids`
 In that file, we will see info that looks like this:
+```
 17ef  Lenovo
         1000  ThinkPad X6 UltraBase
         1003  Integrated Smart Card Reader
@@ -69,22 +72,24 @@ In that file, we will see info that looks like this:
         6044  ThinkPad Laser Mouse
         6047  ThinkPad Compact Keyboard with TrackPoint
         604b  Precision Wireless Mouse
-
+```
 
 
 After determining the idVendor and idProduct for the device that we want to work with,
 
 
-You can pass usbcore quirks as kernel parameters, see this page : https://raw.githubusercontent.com/torva … meters.txt
-Should be `usbcore.quirks=17ef:6047:gki`
+You can pass usbcore quirks as kernel parameters, see this page : https://raw.githubusercontent.com/torvalds/linux/master/Documentation/admin-guide/kernel-parameters.txt
+Specifically, look at: `usbcore.quirks=17ef:6047:gki`
 
 I added the parameter to my loader config file and it works!
 Reference: Where to put the parameter for anyone who has the same problem:  https://wiki.archlinux.org/index.php/Kernel_parameters
 
 GRUB
+
 To make the change persistent after reboot, you could manually edit /boot/grub/grub.cfg with the exact line from above, but the best practice is to: 
 Edit /etc/default/grub and append your kernel options between the quotes in the GRUB_CMDLINE_LINUX_DEFAULT line:
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 And then automatically re-generate the grub.cfg file with:
-# grub-mkconfig -o /boot/grub/grub.cfg
+`$ grub-mkconfig -o /boot/grub/grub.cfg`
+If, for whatever reason, the computer does not detect the keyboard after software updates, run the above command to re-generate the grub.cfg file again and reboot the computer. That should fix it.
 

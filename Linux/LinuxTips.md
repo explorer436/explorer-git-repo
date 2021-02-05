@@ -1,28 +1,56 @@
 
 # Table of Contents
 
-1.  [Terminal](#org6e235ea)
-    1.  [How to rename a file from terminal in Linux?](#orga1358aa)
-2.  [How to Remove Files and Directories Using Linux Command Line](#orgc15b5bc)
+1.  [List of things that I find useful](#org0129c9c)
+    1.  [Search for files](#orge2920b1)
+    2.  [How to rename a file from terminal in Linux?](#org9133681)
+    3.  [Recursive copy](#org830bac2)
+    4.  [System commands](#org0a2b1c2)
+    5.  [Check the PATH](#orgc54bf09)
+    6.  [Installing tar files](#org79afdd8)
+    7.  [View ip address](#org441d0d4)
+    8.  [System information](#orgdb29c51)
+    9.  [list commands](#orge057447)
+    10. [Packages](#org3f4c2fa)
+    11. [Docker](#orga8286dc)
+    12. [Editing videos](#org4df1d6e)
+    13. [How to install Homebrew?](#orgfa42a33)
+    14. [XFCE tips](#orgb2f5d00)
+    15. [Fedora tips :](#org59a1274)
+    16. [How to execute .sh programs](#orge6eeae0)
+    17. [How to install OSS code (the open source version of Visual Studio Code) in Fedora?](#org347559b)
+    18. [How to Remove Files and Directories Using Linux Command Line](#orgc003a8e)
 
 
-<a id="org6e235ea"></a>
+<a id="org0129c9c"></a>
 
-# Terminal
+# List of things that I find useful
 
 
-<a id="orga1358aa"></a>
+<a id="orge2920b1"></a>
+
+## Search for files
+
+command to search for a file in linux : locate fileName
+
+
+<a id="org9133681"></a>
 
 ## How to rename a file from terminal in Linux?
 
+One option:
+vifm (a tool that works with vim shortcuts) is an alternative to this. Using vifm, we can change the name of a file or folder using \`cw\` (change word).
+
+Another option:
 In order to rename a file in Linux you can use either of two approaches
 
 1.  Create a copy of the existing file with the new desired name and then delete the old file.
-    $ cp oldfile newfile
+    
+        $ cp oldfile newfile
     
     This creates a copy of the same file with a new name in the same location.
     
-    $ rm oldfil
+        $ rm oldfil
     
     This will delete the old file keeping the newfile intact.
 
@@ -30,11 +58,35 @@ In order to rename a file in Linux you can use either of two approaches
     
     Rename by moving
     
-    $mv old-file-name  new-file-name
+        $mv old-file-name  new-file-name
     
     This just moves the old file, to a new name.
 
 ---
+
+
+<a id="org830bac2"></a>
+
+## Recursive copy
+
+To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
+
+    $ cp -R * /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
+
+To zip all the contents of the current folder from command line : 
+
+    zip -r BooksForAkhil.zip *
+
+To zip all the contents of the a folder from some other location in command line : 
+
+    zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
+
+---
+
+
+<a id="org0a2b1c2"></a>
+
+## System commands
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -47,13 +99,13 @@ In order to rename a file in Linux you can use either of two approaches
 <tbody>
 <tr>
 <td class="org-left">systemctl suspend</td>
-<td class="org-left">command to reboot from terminal</td>
+<td class="org-left">command to put the system in sleep/suspend mode</td>
 </tr>
 
 
 <tr>
 <td class="org-left">systemctl hibernate</td>
-<td class="org-left">command to reboot from terminal</td>
+<td class="org-left">command to put the system in hibernate mode</td>
 </tr>
 
 
@@ -64,35 +116,58 @@ In order to rename a file in Linux you can use either of two approaches
 </tbody>
 </table>
 
-To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
+---
 
-command to search for a file in linux : locate fileName
+
+<a id="orgc54bf09"></a>
+
+## Check the PATH
+
+To check the PATH, logged in as yourself, run the command (from the system terminal), type 
+
+    env | grep PATH
+
+---
+
+
+<a id="org79afdd8"></a>
+
+## Installing tar files
 
 command to install a tar file in linux : how to use sudo command to install .tar.gz :
 Open a console, and go to the directory where the file is
-Type: tar -zxvf file.tar.gz
 
-Recursive copy
-
-To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
-$ cp -R \* /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
-
-To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip \*
-To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
-
-Command to view ip address: hostname -I
+    tar -zxvf file.tar.gz
 
 ---
 
-vifm (a tool that works with vim shortcuts) is an alternative to this. Using vifm, we can change the name of a file or folder using \`cw\` (change word).
+
+<a id="org441d0d4"></a>
+
+## View ip address
+
+Command to view ip address: 
+
+    hostname -I
 
 ---
+
+
+<a id="orgdb29c51"></a>
+
+## System information
 
 To figure out if your computer has 64 bit or 32 bit processor :  
-uname -a
-lscpu (look at the architecture row)
+
+    uname -a
+    lscpu (look at the architecture row)
 
 ---
+
+
+<a id="orge057447"></a>
+
+## list commands
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -136,29 +211,18 @@ Vim has a builtin help system. You might want to edit the file as a superuser as
 
 ---
 
+
+<a id="org3f4c2fa"></a>
+
+## Packages
+
+List of software package management systems
+<https://en.wikipedia.org/wiki/List_of_software_package_management_systems#Linux> 
+
 To update the installed packages and package cache on your instance.
-sudo yum update -y
 
----
-
-To check if docker is running : 
-sudo service docker status
-
----
-
-Kdenlive - good tool for editing videos.
-
----
-
-$ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
-
-$ shrinkpdf in.pdf out.pdf
-
----
-
-Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
-
----
+for systems using RPM (redhat package manager): sudo yum update -y
+arch linux: pacman -Syu
 
 Removing Package:
 
@@ -181,7 +245,77 @@ If dpkg reports an error due to dependency problems, you can run sudo apt-get in
 Remove a package
 sudo dpkg -r PACKAGE<sub>NAME</sub>
 
+Fedora uses rpm packages.
+Install RPM File With Yum (Fedora or RedHat Linux)
+You can use the yum package manager to install .rpm files.
+Enter the following:
+sudo yum localinstall sample<sub>file.rpm</sub>
+The localinstall option instructions yum to look at your current working directory for the installation file.
+
+update fedora from command line : dnf upgrade
+
+command to install rpm package in fedora : 
+sudo dnf install NAME<sub>OF</sub><sub>RPM.rpm</sub>
+
+To install a rpm package using command line on redhat based system use -i command line switch with rpm command.
+rpm -i package-1.2.3.rpm
+
+You can also use YUM or DNF package manager to install downloaded rpm file. Its benefit to resolve dependencies required for the package
+yum localinstall package-1.2.3.rpm     ## CentOS, RHEL systems 
+dnf localinstall package-1.2.3.rpm     ## Fedora systems
+
+differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
+
 ---
+
+Configure RPMfusion Yum Repository : 
+
+Some packages/frameworks may be available only in RPMFusion repository. So, we may have to add it to Fedora using the following commands :
+
+    sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+    sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+After the repository is added, they can be installed using commands like the one below :
+
+    sudo dnf -y install ffmpeg
+
+---
+
+
+<a id="orga8286dc"></a>
+
+## Docker
+
+To check if docker is running : 
+sudo service docker status
+
+---
+
+
+<a id="org4df1d6e"></a>
+
+## Editing videos
+
+Kdenlive - good tool for editing videos.
+
+---
+
+$ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
+
+$ shrinkpdf in.pdf out.pdf
+
+---
+
+Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
+
+---
+
+
+<a id="orgfa42a33"></a>
+
+## How to install Homebrew?
+
+<https://en.wikipedia.org/wiki/Homebrew_(package_manager)> 
 
 Run the following to install Homebrew:
 
@@ -200,41 +334,31 @@ Verify that Homebrew is installed: \`brew &#x2013;version\`
 
 ---
 
+
+<a id="orgb2f5d00"></a>
+
+## XFCE tips
+
 In XFCE, there is a utility program called 'Preferred Applications' that lets you change the default applications for browser, mail reader, file manager and terminal emulator. If you want to change the default applications, this is a very helpful tool.
 
 ---
 
-Fedora tips : 
 
-Fedora uses rpm packages.
-Install RPM File With Yum (Fedora or RedHat Linux)
-You can use the yum package manager to install .rpm files.
-Enter the following:
-sudo yum localinstall sample<sub>file.rpm</sub>
-The localinstall option instructions yum to look at your current working directory for the installation file.
+<a id="org59a1274"></a>
+
+## Fedora tips :
 
 pdf file modification in fedora : use the pdfmod utility that comes with fedora
 
 To install gVim on fedora : yum install vim-X11
 To install emacs on fedora : sudo yum install emacs
 
-update fedora from command line : dnf upgrade
-
-command to install rpm package in fedora : 
-sudo dnf install NAME<sub>OF</sub><sub>RPM.rpm</sub>
-
-To install a rpm package using command line on redhat based system use -i command line switch with rpm command.
-rpm -i package-1.2.3.rpm
-
-You can also use YUM or DNF package manager to install downloaded rpm file. Its benefit to resolve dependencies required for the package
-yum localinstall package-1.2.3.rpm     ## CentOS, RHEL systems 
-dnf localinstall package-1.2.3.rpm     ## Fedora systems
-
-differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
-
 ---
 
-How to execute .sh programs in fedora :
+
+<a id="orge6eeae0"></a>
+
+## How to execute .sh programs
 
 Either make the file executable, and then run it while specifying the path:
 
@@ -245,20 +369,10 @@ or, pass it to the shell interpreter like this: sh somefile.sh
 
 ---
 
-Configure RPMfusion Yum Repository : 
 
-Some packages/frameworks may be available only in RPMFusion repository. So, we may have to add it to Fedora using the following commands :
+<a id="org347559b"></a>
 
-    sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-    sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-
-After the repository is added, they can be installed using commands like the one below :
-
-    sudo dnf -y install ffmpeg
-
----
-
-How to install OSS code (the open source version of Visual Studio Code) in Fedora?
+## How to install OSS code (the open source version of Visual Studio Code) in Fedora?
 
 RHEL, Fedora, and CentOS based distributions#
 
@@ -275,11 +389,9 @@ Then update the package cache and install the package using dnf (Fedora 22 and a
 ---
 
 
-<a id="orgc15b5bc"></a>
+<a id="orgc003a8e"></a>
 
-# How to Remove Files and Directories Using Linux Command Line
-
-****How to Remove Files****
+## How to Remove Files and Directories Using Linux Command Line
 
 To remove (or delete) a file in Linux from the command line, use either the rm (remove) or unlink command.
 The unlink command allows you to remove only a single file, while with rm you can remove multiple files at once.

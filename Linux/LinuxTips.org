@@ -1,15 +1,28 @@
-*** Terminal
+*** List of things that I find useful
+
+**** Search for files
+
+command to search for a file in linux : locate fileName
 
 **** How to rename a file from terminal in Linux?
 
+One option:
+vifm (a tool that works with vim shortcuts) is an alternative to this. Using vifm, we can change the name of a file or folder using `cw` (change word).
+
+Another option:
 In order to rename a file in Linux you can use either of two approaches
 
 1.  Create a copy of the existing file with the new desired name and then delete the old file.
-    $ cp oldfile newfile
+
+        #+BEGIN_EXAMPLE
+            $ cp oldfile newfile
+        #+END_EXAMPLE
 
     This creates a copy of the same file with a new name in the same location.
 
-    $ rm oldfil
+        #+BEGIN_EXAMPLE
+            $ rm oldfil
+        #+END_EXAMPLE
 
     This will delete the old file keeping the newfile intact.
 
@@ -17,46 +30,80 @@ In order to rename a file in Linux you can use either of two approaches
 
     Rename by moving
 
-    $mv old-file-name  new-file-name
+        #+BEGIN_EXAMPLE
+            $mv old-file-name  new-file-name
+        #+END_EXAMPLE
 
     This just moves the old file, to a new name.
 
 -------------------------------------------------------------------
 
-| systemctl suspend   | command to reboot from terminal |
-| systemctl hibernate | command to reboot from terminal |
-| reboot              | command to reboot from terminal |
+**** Recursive copy
 
+To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
+        #+BEGIN_EXAMPLE
+            $ cp -R * /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
+        #+END_EXAMPLE
 
-To check your PATH, logged in as yourself, you can issue the command (from this system terminal), type "env | grep PATH"
+To zip all the contents of the current folder from command line : 
+        #+BEGIN_EXAMPLE
+            zip -r BooksForAkhil.zip *
+        #+END_EXAMPLE
+To zip all the contents of the a folder from some other location in command line : 
+        #+BEGIN_EXAMPLE
+            zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
+        #+END_EXAMPLE
 
-command to search for a file in linux : locate fileName
+-------------------------------------------------------------------
+
+**** System commands
+
+| systemctl suspend   | command to put the system in sleep/suspend mode |
+| systemctl hibernate | command to put the system in hibernate mode     |
+| reboot              | command to reboot from terminal                 |
+
+-------------------------------------------------------------------
+
+**** Check the PATH
+
+To check the PATH, logged in as yourself, run the command (from the system terminal), type 
+        #+BEGIN_EXAMPLE
+            env | grep PATH
+        #+END_EXAMPLE
+
+-------------------------------------------------------------------
+
+**** Installing tar files
 
 command to install a tar file in linux : how to use sudo command to install .tar.gz :
 Open a console, and go to the directory where the file is
-Type: tar -zxvf file.tar.gz
-
-Recursive copy
-
-To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):
-$ cp -R * /home/explorer436/Downloads/destinationFolder (We might have to create destinationFolder before running this command)
-
-To zip all the contents of the current folder from command line : zip -r BooksForAkhil.zip *
-To zip all the contents of the a folder from some other location in command line : zip -r FilesForAkhil.zip /home/harshavardhanedupuganti/Downloads/FilesForAkhil
-
-Command to view ip address: hostname -I
+    #+BEGIN_EXAMPLE
+        tar -zxvf file.tar.gz
+    #+END_EXAMPLE
 
 -------------------------------------------------------------------
 
-vifm (a tool that works with vim shortcuts) is an alternative to this. Using vifm, we can change the name of a file or folder using `cw` (change word).
+**** View ip address
+     
+Command to view ip address: 
+    #+BEGIN_EXAMPLE
+        hostname -I
+    #+END_EXAMPLE
 
 -------------------------------------------------------------------
+
+**** System information
 
 To figure out if your computer has 64 bit or 32 bit processor :  
-uname -a
-lscpu (look at the architecture row)
+    #+BEGIN_EXAMPLE
+        uname -a
+        lscpu (look at the architecture row)
+    #+END_EXAMPLE
+
 
 -------------------------------------------------------------------
+
+**** list commands
 
 | ls --all              | command to show all files and folders including hidden ones                    |
 | ls -l --block-size=M  | (round file sizes to the nearest MB) To make `ls` show file sizes in megabytes |
@@ -71,30 +118,15 @@ Vim has a builtin help system. You might want to edit the file as a superuser as
 
 -------------------------------------------------------------------
 
+**** Packages
+
+    List of software package management systems
+    https://en.wikipedia.org/wiki/List_of_software_package_management_systems#Linux 
+
 To update the installed packages and package cache on your instance.
-sudo yum update -y
 
--------------------------------------------------------------------
-
-To check if docker is running : 
-sudo service docker status
-
--------------------------------------------------------------------
-
-Kdenlive - good tool for editing videos.
-
--------------------------------------------------------------------
-
-
-$ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
-
-$ shrinkpdf in.pdf out.pdf
-
------------------------------------------------------------------
-
-Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
-
-------------------------------------------------------------------
+for systems using RPM (redhat package manager): sudo yum update -y
+arch linux: pacman -Syu
 
 Removing Package:
 
@@ -117,7 +149,74 @@ If dpkg reports an error due to dependency problems, you can run sudo apt-get in
 Remove a package
 sudo dpkg -r PACKAGE_NAME
 
+
+Fedora uses rpm packages.
+Install RPM File With Yum (Fedora or RedHat Linux)
+You can use the yum package manager to install .rpm files.
+Enter the following:
+sudo yum localinstall sample_file.rpm
+The localinstall option instructions yum to look at your current working directory for the installation file.
+
+update fedora from command line : dnf upgrade
+
+command to install rpm package in fedora : 
+sudo dnf install NAME_OF_RPM.rpm
+
+To install a rpm package using command line on redhat based system use -i command line switch with rpm command.
+rpm -i package-1.2.3.rpm
+
+
+You can also use YUM or DNF package manager to install downloaded rpm file. Its benefit to resolve dependencies required for the package
+yum localinstall package-1.2.3.rpm     ## CentOS, RHEL systems 
+dnf localinstall package-1.2.3.rpm     ## Fedora systems
+
+differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
+
+-------------------------------------------------------------------
+
+Configure RPMfusion Yum Repository : 
+
+	Some packages/frameworks may be available only in RPMFusion repository. So, we may have to add it to Fedora using the following commands :
+	
+        #+BEGIN_EXAMPLE
+	    sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+	    sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+        #+END_EXAMPLE
+
+	After the repository is added, they can be installed using commands like the one below :
+
+        #+BEGIN_EXAMPLE
+	    sudo dnf -y install ffmpeg
+        #+END_EXAMPLE
+
+--------------------------------
+
+**** Docker
+     
+To check if docker is running : 
+sudo service docker status
+
+-------------------------------------------------------------------
+
+**** Editing videos
+     
+Kdenlive - good tool for editing videos.
+
+-------------------------------------------------------------------
+
+$ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
+
+$ shrinkpdf in.pdf out.pdf
+
+-----------------------------------------------------------------
+
+Command to convert m4a to mp3 : ffmpeg -i input.m4a -acodec libmp3lame -ab 128k output.mp3
+
 ---------------------------------------------------------------
+
+**** How to install Homebrew?
+
+https://en.wikipedia.org/wiki/Homebrew_(package_manager) 
 
 Run the following to install Homebrew:
 
@@ -142,93 +241,56 @@ Verify that Homebrew is installed: `brew --version`
 
 ---------------------------------------------------------------
 
+**** XFCE tips
+     
 In XFCE, there is a utility program called 'Preferred Applications' that lets you change the default applications for browser, mail reader, file manager and terminal emulator. If you want to change the default applications, this is a very helpful tool.
 
 ---------------------------------------------------------------
 
-Fedora tips : 
-
-Fedora uses rpm packages.
-Install RPM File With Yum (Fedora or RedHat Linux)
-You can use the yum package manager to install .rpm files.
-Enter the following:
-sudo yum localinstall sample_file.rpm
-The localinstall option instructions yum to look at your current working directory for the installation file.
+**** Fedora tips : 
 
 pdf file modification in fedora : use the pdfmod utility that comes with fedora
 
 To install gVim on fedora : yum install vim-X11
 To install emacs on fedora : sudo yum install emacs
 
-update fedora from command line : dnf upgrade
-
-command to install rpm package in fedora : 
-sudo dnf install NAME_OF_RPM.rpm
-
-To install a rpm package using command line on redhat based system use -i command line switch with rpm command.
-rpm -i package-1.2.3.rpm
-
-
-You can also use YUM or DNF package manager to install downloaded rpm file. Its benefit to resolve dependencies required for the package
-yum localinstall package-1.2.3.rpm     ## CentOS, RHEL systems 
-dnf localinstall package-1.2.3.rpm     ## Fedora systems
-
-differences about rpm -Uvh foo.rpm and sudo dnf foo.rpm . The main difference is dnf resolves dependency problems.
-
 --------------------------------
 
-How to execute .sh programs in fedora :
+**** How to execute .sh programs
 
 	Either make the file executable, and then run it while specifying the path:
 
-#+BEGIN_EXAMPLE
-	chmod +x somefile.sh
-	./somefile.sh
-#+END_EXAMPLE
+        #+BEGIN_EXAMPLE
+            chmod +x somefile.sh
+            ./somefile.sh
+        #+END_EXAMPLE
 
 	or, pass it to the shell interpreter like this: sh somefile.sh
 
---------------------------------
-
-Configure RPMfusion Yum Repository : 
-
-	Some packages/frameworks may be available only in RPMFusion repository. So, we may have to add it to Fedora using the following commands :
-	
-#+BEGIN_EXAMPLE
-	sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-	sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-#+END_EXAMPLE
-
-	After the repository is added, they can be installed using commands like the one below :
-#+BEGIN_EXAMPLE
-	sudo dnf -y install ffmpeg
-#+END_EXAMPLE
 
 --------------------------------
 
-How to install OSS code (the open source version of Visual Studio Code) in Fedora?
+**** How to install OSS code (the open source version of Visual Studio Code) in Fedora?
 
 	RHEL, Fedora, and CentOS based distributions#
 	
 	We currently ship the stable 64-bit VS Code in a yum repository, the following script will install the key and repository:
 	
-#+BEGIN_EXAMPLE
-	sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-	sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-#+END_EXAMPLE
+        #+BEGIN_EXAMPLE
+            sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+            sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+        #+END_EXAMPLE
 	
 	Then update the package cache and install the package using dnf (Fedora 22 and above):
 	
-#+BEGIN_EXAMPLE
-	sudo dnf check-update
-	sudo dnf install code
-#+END_EXAMPLE
+        #+BEGIN_EXAMPLE
+            sudo dnf check-update
+            sudo dnf install code
+        #+END_EXAMPLE
 
 --------------------------------
 
-*** How to Remove Files and Directories Using Linux Command Line
-
-**How to Remove Files**
+**** How to Remove Files and Directories Using Linux Command Line
 
 To remove (or delete) a file in Linux from the command line, use either the rm (remove) or unlink command.
 The unlink command allows you to remove only a single file, while with rm you can remove multiple files at once.

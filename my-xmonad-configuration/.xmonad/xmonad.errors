@@ -1,6 +1,0 @@
-
-xmonad.hs:62:42: error:
-    Variable not in scope: xmobarEscape :: [Char] -> [Char]
-   |
-62 | myClickableWorkspaces = clickable . (map xmobarEscape)
-   |                                          ^^^^^^^^^^^^

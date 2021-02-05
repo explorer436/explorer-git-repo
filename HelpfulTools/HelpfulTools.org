@@ -76,36 +76,44 @@ Calibre ebook editor and viewer
 *** Tools for Android (alphabetical order)
 
 - APAS (Algorithm Problems and Solutions)
-- Algorithms (visual explanation)
-- Alltrails
+- Algorithms (visual explanation of algorithms)
+- Alltrails (optional)
+- Amazon Prime Video (streaming)
 - Authenticator (Microsoft)
-- Dropbox (optional)
-- DuckDuckGo
+- Cambridge Dictionary
+- Chess.com
+- DuckDuckGo (optional)
 - Fairmail (using this for Gmail and hotmail accounts right now)
-- Firefox (extensions - Dark Reader)
+- Fdroid (optional)
+- Firefox (extensions - Dark Reader) (set startpage.com as the default search engine)
 - Foxit PDF Reader (for pdf files)
-- GPS Tools
-- Geeks for Geeks
+- GPS Tools (good app with various features to determine gps info)
+- Geeks for Geeks (optional)
 - GitHub
-- Glassdoor (Job search) Is there an app for indeed?
-- Instapaper (Reading)
-- Lastpass
-- LinkedIn (Job search) (Not using it all that much)
+- Glassdoor (Job search) (optional)
+- HBO Max (streaming)
+- Instapaper (Reading articles)
+- LBRY
+- Lastpass (password manager)
+- LinkedIn (Job search) (optional)
 - Mapquest (maps)
 - Mega Sync Client
 - Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
 - NetGuard
+- Netflix (streaming)
+- OpenPhone (optional)
 - OsmAnd (maps)
 - Outlook (Microsoft) (For FusionAlliance Webmail and hotmail accounts - might also work for Gmail and other accounts) (Email client)
 - Podcasts (Google) (Podcasts)
 - Quora	 (Reading)
 - Signal (Messaging apps)
 - Spotify (Music)
+- Startpage search engine app
 - Sync (cloud client)
 - The weather channel (weather)
-- Tor Browser (browser)
+- Tor Browser (browser) (set startpage.com as the default search engine)
 - Tutanota (Email client)
-- Udemy
+- Udemy (optional)
 - Vim Master
 - Walldrobe (wallpapers from Unsplash)
 - Whatsapp (Messaging apps)
@@ -185,6 +193,15 @@ Groovy_script_to_read_attributes_from_response_in_SoapUI_and_write_contents_to_a
 
 GrapheneOS
 LineageOS (supports many older devices)
+
+-----------------------------------------------------------------------------------------
+
+*** Browser choices
+
+    If you are not happy with firefox, here are some alternatives:
+    LibreWolf
+    vimb
+    qutebrowser
 
 -----------------------------------------------------------------------------------------
 
