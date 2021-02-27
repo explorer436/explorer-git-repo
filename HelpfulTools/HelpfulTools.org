@@ -835,3 +835,10 @@ mongodb is refusing connections:
 go to AWS security group and open up port 27107 (port range 0 - 65535)
 
 -----------------------------------------------------------------------------------------
+
+A website that displays the information that the browser can collect from the computer:
+This shows what info the browser can send to other parties with/without our consent.
+
+https://www.deviceinfo.me/
+
+-----------------------------------------------------------------------------------------
