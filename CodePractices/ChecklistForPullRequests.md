@@ -14,17 +14,18 @@ This is a checklist that could be helpful when submitting and dealing with pull 
  6. Make changes and test everything again - unit tests, integration tests, linters, etc.
  7. Push your changes.
  8. Deploy your branch to develop to make sure it works as expected in an environment other than local computer.
- 9. If there is a new service integration, is the documentation updated? Update the README file if necessary. Are the manifest files updated? Alphabetical order for the lists in the manifest files.
-10. Is there common code that can be put in a library as opposed to including it in the application itself?
-11. Wherever possible, if things need to be added to constructors, put them in constructors - I'd ask myself: Should I re-use the same DependentService instance for all requests from the CurrentClass? Or do I need a new one for each request?
-12. Do not put process variables or write code for process variables in test classes. Instead, mock them.
-13. Passing parameters to constructors is a good idea instead of passing parameters to individual functions. Especially, if the methods use state and if they are not pure.
-14. Make sure each layer like controller layer, service layer, etc. is doing what it is expected to do. Pay attention to separation of concerns. Things like validation should not seep into the deeper layers of the application. They should be handled as early as possible. Preferably, in the controller layer or in the service layer.
-15. Wherever necessary, redact the sensitive data like passwords, tokens from printing on the logs.
-16. In javascript, verify the use of single quotes can be replaced by backticks.
-17. Go through the javadocs, jsdocs or descriptions for each single method and test case and verify if they are describing the method or test case appropriately. When method signatures are modified, make sure that the corresponding documentation on each method, test, etc. are also updated.
-18. For javascript tests, make sure that there is a class level description at the top.
-19. Create pull request and send it out for review.
+ 9. Do you need to run regression and performance tests before merging these changes into the develop/master branch?
+ 10. If there is a new service integration, is the documentation updated? Update the README file if necessary. Are the manifest files updated? Alphabetical order for the lists in the manifest files.
+11. Is there common code that can be put in a library as opposed to including it in the application itself?
+12. Wherever possible, if things need to be added to constructors, put them in constructors - I'd ask myself: Should I re-use the same DependentService instance for all requests from the CurrentClass? Or do I need a new one for each request?
+13. Do not put process variables or write code for process variables in test classes. Instead, mock them.
+14. Passing parameters to constructors is a good idea instead of passing parameters to individual functions. Especially, if the methods use state and if they are not pure.
+15. Make sure each layer like controller layer, service layer, etc. is doing what it is expected to do. Pay attention to separation of concerns. Things like validation should not seep into the deeper layers of the application. They should be handled as early as possible. Preferably, in the controller layer or in the service layer.
+16. Wherever necessary, redact the sensitive data like passwords, tokens from printing on the logs.
+17. In javascript, verify the use of single quotes can be replaced by backticks.
+18. Go through the javadocs, jsdocs or descriptions for each single method and test case and verify if they are describing the method or test case appropriately. When method signatures are modified, make sure that the corresponding documentation on each method, test, etc. are also updated.
+19. For javascript tests, make sure that there is a class level description at the top.
+20. Create pull request and send it out for review.
 
 ---------------------------------
 
