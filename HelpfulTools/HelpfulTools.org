@@ -194,6 +194,17 @@ Groovy_script_to_read_attributes_from_response_in_SoapUI_and_write_contents_to_a
 GrapheneOS
 LineageOS (supports many older devices)
 
+Look into these as well:
+Sprinboard Volla - phone
+Cosmo Communicator - phone
+Proix - phone
+
+Purism librem 5 -> Not recommended
+Pinephone is the better alternative
+Regarding the OS that can be used on Pinephone, UBPorts (Ubuntu Touch) is recommended.
+
+What do people use for maps when using Linux phones?
+
 -----------------------------------------------------------------------------------------
 
 *** Browser choices
