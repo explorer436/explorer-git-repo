@@ -1,30 +1,29 @@
 
 # Table of Contents
 
-1.  [My Emacs notes](#orgdeddcf3)
-        1.  [How to view the list of all the currently installed packages in Emacs?](#org10085cb)
-        2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#org9ba7339)
-        3.  [How to work with org-mode and evil-mode?](#orga3fa8a9)
-        4.  [Helpful commands](#org5752327)
-        5.  [.emacs file](#org88c28f6)
-        6.  [Resources for emacs](#orgfd710a2)
-        7.  [How to auto save an org document in markdown format?](#org0d5bf7b)
-        8.  [Line numbers](#org069b653)
-        9.  [Exporting](#orge340fd1)
+1.  [How to view the list of all the currently installed packages in Emacs?](#org092be3f)
+2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#org8880275)
+3.  [How to work with org-mode and evil-mode?](#org4f8caf1)
+4.  [Helpful commands](#orgd1407de)
+5.  [.emacs file](#org12c9bb5)
+6.  [Resources for emacs](#org54ff1fa)
+7.  [How to auto save an org document in markdown format?](#orgced9cae)
+8.  [Line numbers](#org28cc0c9)
+9.  [Exporting](#orgc54da22)
+10. [Search in current buffer](#org5981608)
 
-
-<a id="orgdeddcf3"></a>
-
-# My Emacs notes
+s\* My Emacs notes
 
 Helpful tips related to configuration and other things related to Emacs that I find useful.
 
 
-<a id="org10085cb"></a>
+<a id="org092be3f"></a>
 
-### How to view the list of all the currently installed packages in Emacs?
+# How to view the list of all the currently installed packages in Emacs?
 
-If you are using Emacs in one machine, and if you want to set-up the exact same set-up settings in another machine, you need to view the list of installed packages from the package manager.
+If you are using Emacs in one machine,
+and if you want to set-up the exact same set-up settings in another machine,
+you need to view the list of installed packages from the package manager.
 
 To see a list of the available packages : M-x list-packages
 
@@ -39,27 +38,31 @@ Another alternative is, simply copy the ".emacs" file from this computer to the 
 ---
 
 
-<a id="org9ba7339"></a>
+<a id="org8880275"></a>
 
-### How to add MELPA as another source of packages in addition to GNU's elpa?
+# How to add MELPA as another source of packages in addition to GNU's elpa?
 
 1.  Hint: In order to avoid having to do this multiple times when switching between multiple machines, save the \`.emacs\` settings in GitHub so that you can just move it from machine to machine.
-2.  The alternative is: In a browser, visit MELPA website and grab the URL for the package archive "<https://melpa.org/packages/>"
-    M-x customize-group -> package -> Go to "package archives" -> "INS" to insert a new entry. Provide archive name and archive URL. Set the "State" to "Save for future sessions".
+2.  The alternative is:
+    In a browser, visit MELPA website.
+    Grab the URL for the package archive "<https://melpa.org/packages/>"
+    M-x customize-group -> package -> Go to "package archives" -> "INS" to insert a new entry.
+    Provide archive name and archive URL. Set the "State" to "Save for future sessions".
 
 After making changes to the config to add MELPA as a source of packages, run the following two commands:
 
-1.  M-x package-refresh-contents (to refresh the list of packages)
-2.  M-x package-install RET evil (to install the evil package)
+1.  \`M-x\` package-refresh-contents (to refresh the list of packages)
+2.  \`M-x\` \`package-install\` RET (to launch package install mode)
+3.  Type the name of the package you are looking for and when you find the package -> RET
 
 To change to mode from some other mode : M-x evil-mode
 
 ---
 
 
-<a id="orga3fa8a9"></a>
+<a id="org4f8caf1"></a>
 
-### How to work with org-mode and evil-mode?
+# How to work with org-mode and evil-mode?
 
 Install evil-mode and turn it on and we should be good to go.
 Vim key bindings will work in Org mode as well.
@@ -67,9 +70,9 @@ Vim key bindings will work in Org mode as well.
 ---
 
 
-<a id="org5752327"></a>
+<a id="orgd1407de"></a>
 
-### Helpful commands
+# Helpful commands
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -154,12 +157,6 @@ Vim key bindings will work in Org mode as well.
 
 
 <tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Refresh the listing in dired mode</td>
-</tr>
-
-
-<tr>
 <td class="org-left">C-x b * untitled *</td>
 <td class="org-left">(remove the spaces before and after the asterisks) will open new buffer if not exist</td>
 </tr>
@@ -169,9 +166,9 @@ Vim key bindings will work in Org mode as well.
 ---
 
 
-<a id="org88c28f6"></a>
+<a id="org12c9bb5"></a>
 
-### .emacs file
+# .emacs file
 
 If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch again.
 
@@ -190,9 +187,9 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
 ---
 
 
-<a id="orgfd710a2"></a>
+<a id="org54ff1fa"></a>
 
-### Resources for emacs
+# Resources for emacs
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -265,18 +262,18 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
 ---
 
 
-<a id="org0d5bf7b"></a>
+<a id="orgced9cae"></a>
 
-### How to auto save an org document in markdown format?
+# How to auto save an org document in markdown format?
 
 Install the package 'auto-org-md' and after editing the file in org-mode, switch to it using this : "M-x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.
 
 ---
 
 
-<a id="org069b653"></a>
+<a id="org28cc0c9"></a>
 
-### Line numbers
+# Line numbers
 
 How to show line numbers in files in emacs?
 
@@ -292,13 +289,31 @@ Add the following line to the .emacs file to make it the default behavior:
 ---
 
 
-<a id="orge340fd1"></a>
+<a id="orgc54da22"></a>
 
-### Exporting
+# Exporting
 
 At some point you might want to print your notes, publish them on the web, or share them with people not using Org.
 Org can convert and export documents to a variety of other formats while retaining as much structure (see Document Structure) and markup (see Markup for Rich Contents) as possible.  
 
 Use C-c C-e to launch the export command and then use the options displayed to make selections.
 e.g. to export as a UTF-8 plain text file, select 't' and 'u'
+
+---
+
+
+<a id="org5981608"></a>
+
+# Search in current buffer
+
+emacs isearch. Ctrl+s
+
+While in isearch:
+
+Ctrl+s → Jump to next occurrence
+Ctrl+r → Jump to previous occurrence.
+Ctrl+g → Exit and place cursor at original position.
+Enter → exit and place cursor at current position.
+
+---
 
