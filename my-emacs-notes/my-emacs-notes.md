@@ -1,25 +1,31 @@
 
 # Table of Contents
 
-1.  [How to view the list of all the currently installed packages in Emacs?](#org092be3f)
-2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#org8880275)
-3.  [How to work with org-mode and evil-mode?](#org4f8caf1)
-4.  [Helpful commands](#orgd1407de)
-5.  [.emacs file](#org12c9bb5)
-6.  [Resources for emacs](#org54ff1fa)
-7.  [How to auto save an org document in markdown format?](#orgced9cae)
-8.  [Line numbers](#org28cc0c9)
-9.  [Exporting](#orgc54da22)
-10. [Search in current buffer](#org5981608)
+1.  [My Emacs notes](#org6b9f2b4)
+        1.  [How to view the list of all the currently installed packages in Emacs?](#org2b76fd4)
+        2.  [How to add MELPA as another source of packages in addition to GNU's elpa?](#org302f736)
+        3.  [How to work with org-mode and evil-mode?](#orgd9c2920)
+        4.  [Helpful commands](#org19ff896)
+        5.  [.emacs file](#org1222813)
+        6.  [Resources for emacs](#org0b80d79)
+        7.  [How to auto save an org document in markdown format?](#orgb59ef12)
+        8.  [Line numbers](#org7540484)
+        9.  [Exporting](#org79b9f60)
+        10. [Search in current buffer](#org09d1700)
 
-s\* My Emacs notes
+
+<a id="org6b9f2b4"></a>
+
+# My Emacs notes
+
+To export this document as a markdown file after modifying it, C-c C-e m m
 
 Helpful tips related to configuration and other things related to Emacs that I find useful.
 
 
-<a id="org092be3f"></a>
+<a id="org2b76fd4"></a>
 
-# How to view the list of all the currently installed packages in Emacs?
+### How to view the list of all the currently installed packages in Emacs?
 
 If you are using Emacs in one machine,
 and if you want to set-up the exact same set-up settings in another machine,
@@ -38,9 +44,9 @@ Another alternative is, simply copy the ".emacs" file from this computer to the 
 ---
 
 
-<a id="org8880275"></a>
+<a id="org302f736"></a>
 
-# How to add MELPA as another source of packages in addition to GNU's elpa?
+### How to add MELPA as another source of packages in addition to GNU's elpa?
 
 1.  Hint: In order to avoid having to do this multiple times when switching between multiple machines, save the \`.emacs\` settings in GitHub so that you can just move it from machine to machine.
 2.  The alternative is:
@@ -60,9 +66,9 @@ To change to mode from some other mode : M-x evil-mode
 ---
 
 
-<a id="org4f8caf1"></a>
+<a id="orgd9c2920"></a>
 
-# How to work with org-mode and evil-mode?
+### How to work with org-mode and evil-mode?
 
 Install evil-mode and turn it on and we should be good to go.
 Vim key bindings will work in Org mode as well.
@@ -70,9 +76,9 @@ Vim key bindings will work in Org mode as well.
 ---
 
 
-<a id="orgd1407de"></a>
+<a id="org19ff896"></a>
 
-# Helpful commands
+### Helpful commands
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -166,9 +172,9 @@ Vim key bindings will work in Org mode as well.
 ---
 
 
-<a id="org12c9bb5"></a>
+<a id="org1222813"></a>
 
-# .emacs file
+### .emacs file
 
 If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch again.
 
@@ -187,9 +193,9 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
 ---
 
 
-<a id="org54ff1fa"></a>
+<a id="org0b80d79"></a>
 
-# Resources for emacs
+### Resources for emacs
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -214,7 +220,7 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
 
 
 <tr>
-<td class="org-left">From Vim to Emacs in Fourteen Days - <a href="https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html">https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html</a></td>
+<td class="org-left">From Vim  to Emacs in Fourteen Days - <a href="https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html">https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html</a></td>
 </tr>
 
 
@@ -262,18 +268,18 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
 ---
 
 
-<a id="orgced9cae"></a>
+<a id="orgb59ef12"></a>
 
-# How to auto save an org document in markdown format?
+### How to auto save an org document in markdown format?
 
 Install the package 'auto-org-md' and after editing the file in org-mode, switch to it using this : "M-x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.
 
 ---
 
 
-<a id="org28cc0c9"></a>
+<a id="org7540484"></a>
 
-# Line numbers
+### Line numbers
 
 How to show line numbers in files in emacs?
 
@@ -289,9 +295,9 @@ Add the following line to the .emacs file to make it the default behavior:
 ---
 
 
-<a id="orgc54da22"></a>
+<a id="org79b9f60"></a>
 
-# Exporting
+### Exporting
 
 At some point you might want to print your notes, publish them on the web, or share them with people not using Org.
 Org can convert and export documents to a variety of other formats while retaining as much structure (see Document Structure) and markup (see Markup for Rich Contents) as possible.  
@@ -302,9 +308,9 @@ e.g. to export as a UTF-8 plain text file, select 't' and 'u'
 ---
 
 
-<a id="org5981608"></a>
+<a id="org09d1700"></a>
 
-# Search in current buffer
+### Search in current buffer
 
 emacs isearch. Ctrl+s
 

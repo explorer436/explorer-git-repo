@@ -1,6 +1,8 @@
 * My Emacs notes
+
+  To export this document as a markdown file after modifying it, C-c C-e m m
   
-Helpful tips related to configuration and other things related to Emacs that I find useful.
+  Helpful tips related to configuration and other things related to Emacs that I find useful.
 
 *** How to view the list of all the currently installed packages in Emacs?
 
@@ -89,18 +91,18 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
 
 *** Resources for emacs
 
-| How to learn Emacs :: About this guide to Emacs - https://david.rothlis.net/emacs/howtolearn.html                    |
-| MELPA - http://melpa.org/#/                                                                                          |
-| mastering-emacs-in-one-year - https://github.com/redguardtoo/mastering-emacs-in-one-year-guide                       |
-| From Vim to Emacs in Fourteen Days - https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html |
-| Howardism - http://howardism.org/                                                                                    |
-| Magit User Manual - https://magit.vc/manual/magit/                                                                   |
-| The Org Manual - https://orgmode.org/manual/index.html                                                               |
-| Org mode beginning at the basics - https://orgmode.org/worg/org-tutorials/org4beginners.html                         |
-| EmacsWiki - https://www.emacswiki.org/emacs/SiteMap                                                                  |
-| Xah Emacs Site - http://ergoemacs.org/index.html                                                                     |
-| https://jaderholm.com/screencasts.html                                                                               |
-| https://cestlaz.github.io/stories/emacs/                                                                             |
+| How to learn Emacs :: About this guide to Emacs - https://david.rothlis.net/emacs/howtolearn.html                     |
+| MELPA - http://melpa.org/#/                                                                                           |
+| mastering-emacs-in-one-year - https://github.com/redguardtoo/mastering-emacs-in-one-year-guide                        |
+| From Vim  to Emacs in Fourteen Days - https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html |
+| Howardism - http://howardism.org/                                                                                     |
+| Magit User Manual - https://magit.vc/manual/magit/                                                                    |
+| The Org Manual - https://orgmode.org/manual/index.html                                                                |
+| Org mode beginning at the basics - https://orgmode.org/worg/org-tutorials/org4beginners.html                          |
+| EmacsWiki - https://www.emacswiki.org/emacs/SiteMap                                                                   |
+| Xah Emacs Site - http://ergoemacs.org/index.html                                                                      |
+| https://jaderholm.com/screencasts.html                                                                                |
+| https://cestlaz.github.io/stories/emacs/                                                                              |
 
 ------------
 
@@ -135,7 +137,7 @@ e.g. to export as a UTF-8 plain text file, select 't' and 'u'
 ------------
 
 *** Search in current buffer
-
+    
 emacs isearch. Ctrl+s
 
 While in isearch:
@@ -144,5 +146,18 @@ Ctrl+s → Jump to next occurrence
 Ctrl+r → Jump to previous occurrence.
 Ctrl+g → Exit and place cursor at original position.
 Enter → exit and place cursor at current position.
+
+------------
+
+*** Magit tips
+
+To launch magit when you are editing a file that is in a git repository, `C-c g`
+
+To see the diff version of a file in the magit status page, with the mouse on that file, hit `tab`. To close the diff view, hit tab again.
+
+After staging all the files we want to commit, to commit them, hit `C-c C-c`
+Enter a commit message and hit `C-c C-c`
+
+After you have a commit, to push it to the remote repository, hit `P`. It gives you options about where to push it and some other details.
 
 ------------
