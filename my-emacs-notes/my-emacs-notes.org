@@ -50,13 +50,78 @@ To change to mode from some other mode : M-x evil-mode
 
 *** Helpful commands
 
+    Move by screenfuls:
+
+    | Command                    | Description                                                                                                                                                             |
+    |----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | C-v                        | Move forward one screenful                                                                                                                                              |
+    | M-v                        | Move backward one screenful                                                                                                                                             |
+    | C-l                        | Moving the text around the cursor to the center of the screen, top of the screen and bottom of the screen                                                               |
+
+    Move by lines: (P for previous, N for next, B for backward and F for forward)
+
+			  Previous line, C-p
+				  :
+				  :
+   Backward, C-b .... Current cursor position .... Forward, C-f
+				  :
+				  :
+			    Next line, C-n
+
+   If moving by characters is too slow, you can move by words.  M-f (META-f) moves forward a word and M-b moves back a word.
+
+   When you are in the middle of a word, M-f moves to the end of the word.
+   When you are in whitespace between words, M-f moves to the end of the following word.
+   M-b works likewise in the opposite direction.
+
+   
+   This parallel applies between lines and sentences:
+   C-a and C-e move to the beginning or end of a line, and
+   M-a and M-e move to the beginning or end of a sentence.
+
+
+
+    | Command | Description                        |
+    |---------+------------------------------------|
+    | C-f     | Move forward a character           |
+    | C-b     | Move backward a character          |
+    | M-f     | Move forward a word                |
+    | M-b     | Move backward a word               |
+    | C-n     | Move to next line                  |
+    | C-p     | Move to previous line              |
+    | C-a     | Move to beginning of line          |
+    | C-e     | Move to end of line                |
+    | M-a     | Move back to beginning of sentence |
+    | M-e     | Move forward to end of sentence    |
+
+    Two other important cursor motion commands are M-< (META Less-than),
+    which moves to the beginning of the whole text, and M-> (META
+    Greater-than), which moves to the end of the whole text.
+
+    On most terminals, the "<" is above the comma, so you must use the
+    shift key to type it.  On these terminals you must use the shift key
+    to type M-< also; without the shift key, you would be typing M-comma.
+
+    C-x 1	One window (i.e., kill all other windows).
+
+    Here is a summary of the delete operations:
+
+	<DEL>        Delete the character just before the cursor
+	C-d   	     Delete the next character after the cursor
+
+	M-<DEL>      Kill the word immediately before the cursor
+	M-d	     Kill the next word after the cursor
+
+	C-k	     Kill from the cursor position to end of line
+	M-k	     Kill to the end of the current s
+
+
     | Command                    | Description                                                                                                                                                             |
     |----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | C-x b and C-x C-b          | Switching between buffers                                                                                                                                               |
     | C-g                        | Cancelling half-entered commands                                                                                                                                        |
     | C-h m, C-h k, C-h f, C-h a | Getting help on editing modes,keybindings and commands. (just remember C-h and read the prompt in the minibuffer)                                                       |
     | C-x C-c                    | Quitting Emacs                                                                                                                                                          |
-    | C-h i                      | The info directory                                                                                                                                                      |
     | C-x k                      | kill buffer                                                                                                                                                             |
     | M-x                        | Invoking commands by name                                                                                                                                               |
     | M-x customize              | to enter customization menu                                                                                                                                             |
@@ -64,6 +129,50 @@ To change to mode from some other mode : M-x evil-mode
     | C-x C-s                    | Saving files                                                                                                                                                            |
     | g                          | Refresh the listing in dired mode                                                                                                                                       |
     | C-x b * untitled *         | (remove the spaces before and after the asterisks) will open new buffer if not exist                                                                                    |
+
+------------
+
+*** help file
+
+    For information about GNU Emacs and the GNU system, type C-h C-a.
+    
+    To view documentation on your current major mode, type C-h m.
+    
+    How to launch help mode on the fly? C-h
+    
+    To use the Help features, type the C-h character, and then a
+    character saying what kind of help you want.  If you are REALLY lost,
+    type C-h ? and Emacs will tell you what kinds of help it can give.
+
+    The most basic HELP feature is C-h c.
+
+    To get more information about a command, use C-h k instead of C-h c.
+
+    >> Type C-h k C-p.
+
+    C-h a	Command Apropos.  Type in a keyword and Emacs will list
+		all the commands whose names contain that keyword.
+		These commands can all be invoked with META-x.
+		For some commands, Command Apropos will also list a
+		sequence of one or more characters which runs the same
+		command.
+
+    >> Type C-h a file <Return>.
+
+    This displays in another window a list of all M-x commands with "file"
+    in their names.  You will see character-commands listed beside the
+    corresponding command names (such as C-x C-f beside find-file).		
+
+   | C-h i | The info directory |
+   
+    C-h i	Read included Manuals (a.k.a. Info).  This command puts
+		you into a special buffer called "*info*" where you
+		can read manuals for the packages installed on your system.
+		Type m emacs <Return> to read the Emacs manual.
+		If you have never before used Info, type h and Emacs
+		will take you on a guided tour of Info mode facilities.
+		Once you are through with the tutorial, you should
+		consult the Emacs Info manual as your primary documenta
 
 ------------
 
@@ -159,5 +268,20 @@ After staging all the files we want to commit, to commit them, hit `C-c C-c`
 Enter a commit message and hit `C-c C-c`
 
 After you have a commit, to push it to the remote repository, hit `P`. It gives you options about where to push it and some other details.
+
+------------
+
+*** Dired tips
+
+Deleting Files with Dired
+
+    d
+    Flag this file for deletion (dired-flag-file-deletion).
+    
+    u
+    Remove the deletion flag (dired-unmark).
+    
+    x
+    Delete files flagged for deletion (dired-do-flagged-delete).
 
 ------------
