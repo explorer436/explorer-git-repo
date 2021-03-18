@@ -260,14 +260,15 @@ Enter → exit and place cursor at current position.
 
 *** Magit tips
 
-To launch magit when you are editing a file that is in a git repository, `C-c g`
+    (When this gets reasonably big, pull this section into a separate file of its own.)
+    To launch magit when you are editing a file that is in a git repository, `C-c g`
 
-To see the diff version of a file in the magit status page, with the mouse on that file, hit `tab`. To close the diff view, hit tab again.
+    To see the diff version of a file in the magit status page, with the mouse on that file, hit `tab`. To close the diff view, hit tab again.
 
-After staging all the files we want to commit, to commit them, hit `C-c C-c`
-Enter a commit message and hit `C-c C-c`
+    After staging all the files we want to commit, to commit them, hit `C-c C-c`
+    Enter a commit message and hit `C-c C-c`
 
-After you have a commit, to push it to the remote repository, hit `P`. It gives you options about where to push it and some other details.
+    After you have a commit, to push it to the remote repository, hit `P`. It gives you options about where to push it and some other details.
 
 ------------
 
@@ -283,5 +284,17 @@ Deleting Files with Dired
     
     x
     Delete files flagged for deletion (dired-do-flagged-delete).
+
+------------
+
+*** Find the answers for the following:
+
+    Go to the beginning of the file
+    Go to the end of the file
+    Using  marks in a file/directory
+    Repeat command (the equivalent of . - the dot command in Vim)
+    How to search in an entire directory for a word and replace it?
+    How to search in an entire directory for a specific file?
+    How to org files appear in Github? Do we have to explicitly export them as markdown files or can we just save them as org files and still view them in a nice format in Github?
 
 ------------

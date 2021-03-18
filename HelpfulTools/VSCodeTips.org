@@ -1,0 +1,14 @@
+
+- Visual Studio Code :
+	- Themes: 
+		- azure (nice theme but it doesn't apply to file menu on the left)
+		- light theme (I like to use it in daylight),
+		- GitHub Theme (nice theme that applies to file menu on the left)
+	- Plugins: 
+		- haskell-linter
+		- Haskell Syatax Highlighting
+		- Open in Vim (if working with Vim is not possible)
+		- Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
+		- Markdown preview (Use ghostwriter instead of this if possible)
+	- Customizations:
+		- To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
