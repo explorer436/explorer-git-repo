@@ -297,5 +297,6 @@ Deleting Files with Dired
    1. How to search in an entire directory for a specific file?
    1. How to org files appear in Github? Do we have to explicitly export them as markdown files or can we just save them as org files and still view them in a nice format in Github?
    1. How to remapping capslock key to  Ctrl
+   1. Convert a word from smaller case to upper case, upper case to smaller case or invert the case of each of the letters in the word.
 
 ------------
