@@ -8,7 +8,14 @@
 		- haskell-linter
 		- Haskell Syatax Highlighting
 		- Open in Vim (if working with Vim is not possible)
-		- Vim plugin for Visual Studio Code (this cuts down the pain of setting up something like Emacs)
-		- Markdown preview (Use ghostwriter instead of this if possible)
+		- Vim plugin for Visual Studio Code
+		- Markdown preview (Eclipse markdown editor and ghostwriter are alternatives)
+		- GitLens - In addition to other functionality, GitLens enables the local repo to be compared with other branches in the remote repo. E.g. the local feature branch can be compared with the remote master.
+			- Update settings:
+				- To eliminate verbose (and copious) messages, turn off "Current Line Blame" "Git Code Lens" and "Hovers"
+				- To add GitLens icon to the left hand navigation panel, select "GITLENS LAYOUT"
+				- To compare local repo with any branch, select GitLens icon → SEARCH & COMPARE → Compare
+				- To compare a file with any branch, right click in file and select Open Changes / Open Changes with Branch or Tag...
+		- Jest Runner - Allows a single jest test to be run from editor
 	- Customizations:
 		- To remove the sideview bar (called the minimap), set "editor.minimap.enabled": false in your user or workspace settings.
