@@ -296,5 +296,6 @@ Deleting Files with Dired
     How to search in an entire directory for a word and replace it?
     How to search in an entire directory for a specific file?
     How to org files appear in Github? Do we have to explicitly export them as markdown files or can we just save them as org files and still view them in a nice format in Github?
+    How to remapping capslock key to  Ctrl
 
 ------------
