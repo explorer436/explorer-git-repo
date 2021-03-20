@@ -299,5 +299,6 @@ Deleting Files with Dired
    1. How to remapping capslock key to  Ctrl
    1. Convert a word from smaller case to upper case, upper case to smaller case or invert the case of each of the letters in the word.
    1. Go through all the bindings for Vim and find their equivalents for emacs
+   1. Rewrite the configuration file in org mode
 
 ------------
