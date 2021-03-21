@@ -274,10 +274,13 @@ Enter → exit and place cursor at current position.
 
 *** Dired tips
 
-Deleting Files with Dired
+(Alphabetical order)
 
     d
     Flag this file for deletion (dired-flag-file-deletion).
+    
+    R
+    rename a file
     
     u
     Remove the deletion flag (dired-unmark).
