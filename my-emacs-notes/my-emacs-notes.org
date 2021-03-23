@@ -41,13 +41,6 @@ To change to mode from some other mode : M-x evil-mode
 
 ------------
 
-*** How to work with org-mode and evil-mode?
-
-    Install evil-mode and turn it on and we should be good to go.
-    Vim key bindings will work in Org mode as well.
-
-------------
-
 *** Helpful commands
 
     Move by screenfuls:
@@ -178,23 +171,15 @@ To change to mode from some other mode : M-x evil-mode
 
 *** .emacs file
 
-If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch again.
+If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch or the backed up version of the file again.
 
-------------
-
-Where can I find my .emacs file for Emacs running on Windows?
-
- 
-
-If you want to look at the contents of the file:
-
+Where can I find my .emacs file for Emacs running on Windows? If you want to look at the contents of the file:
 Within Emacs, ~ at the beginning of a file name is expanded to your HOME directory, so you can always find your .emacs file with C-x C-f ~/.emacs.
 
- 
 
 If you are trying to find out where the file is as opposed to looking at the contents of the file:
-
-It should be stored in the variable user-init-file. Use C-H v user-init-file RET to check. You can also open it directly by using M-x eval-expression RET (find-file user-init-file) RET
+It should be stored in the variable user-init-file.
+Use C-H v user-init-file RET to check. You can also open it directly by using M-x eval-expression RET (find-file user-init-file) RET
 
 ------------
 
@@ -212,26 +197,23 @@ It should be stored in the variable user-init-file. Use C-H v user-init-file RET
 | Xah Emacs Site - http://ergoemacs.org/index.html                                                                      |
 | https://jaderholm.com/screencasts.html                                                                                |
 | https://cestlaz.github.io/stories/emacs/                                                                              |
+| http://emacsrocks.com/ - video episodes about various emacs features and functionalities                              |
 
 ------------
 
 *** How to auto save an org document in markdown format?
+
     Install the package 'auto-org-md' and after editing the file in org-mode, switch to it using this : "M-x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.
+
+    Is there a way to do this without using the 'auto-org-md' package?
+    This may not be necessary at all. The org files are showing up very nicely in github. So there is no need to export them as markdown files at all.
 
 ------------
 
 *** Line numbers
 
-    How to show line numbers in files in emacs?
-
-    emacs has 2 line numbers mode.
-    
-    Alt+x linum-mode ? old, hack, slow. Emacs 23 (released in 2009).
-    
-    Alt+x global-display-line-numbers-mode ? Emacs 26 (released in 2018-05)
-     
-    Add the following line to the .emacs file to make it the default behavior:
-    (global-display-line-numbers-mode)
+(global-display-line-numbers-mode)
+(setq display-line-numbers-type 'relative)
 
 ------------
 
@@ -247,7 +229,7 @@ e.g. to export as a UTF-8 plain text file, select 't' and 'u'
 
 *** Search in current buffer
     
-emacs isearch. Ctrl+s
+emacs isearch (incremental). Ctrl+s
 
 While in isearch:
 
@@ -290,7 +272,8 @@ Enter → exit and place cursor at current position.
 
 ------------
 
-*** Find the answers for the following:
+*** Find the answe
+    rs for the following:
 
    1. Go to the beginning of the file
    1. Go to the end of the file
@@ -303,5 +286,6 @@ Enter → exit and place cursor at current position.
    1. Convert a word from smaller case to upper case, upper case to smaller case or invert the case of each of the letters in the word.
    1. Go through all the bindings for Vim and find their equivalents for emacs
    1. Rewrite the configuration file in org mode
+   1. How to get a Tree view of directories as opposed to using dired for navigating project directories?
 
 ------------
