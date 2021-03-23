@@ -101,7 +101,24 @@ e.g.
 
    #+BEGIN_EXAMPLE
    `git push -f origin cc4b63bebb6:alpha-0.3.0`
-   #+END_EXAMPLE
+    #+END_EXAMPLE
+
+------------------------------------------------
+
+*** Remove last commit from remote git repository
+
+    Be careful that this will create an "alternate reality" for people who have already fetch/pulled/cloned from the remote repository.
+    But in fact, it's quite simple:
+
+    #+BEGIN_EXAMPLE
+    git reset HEAD^ # remove commit locally
+    git push origin +HEAD # force-push the new HEAD commit
+    #+END_EXAMPLE
+	
+    If you want to still have it in your local repository and only remove it from the remote, then you can use:
+    #+BEGIN_EXAMPLE
+    git push origin +HEAD^:<name of your branch, most likely 'master'>
+    #+END_EXAMPLE
 
 ------------------------------------------------
 
