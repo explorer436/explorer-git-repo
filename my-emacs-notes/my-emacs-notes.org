@@ -54,7 +54,8 @@ To change to mode from some other mode : M-x evil-mode
 *** Multiple cursors
 
     Install multiple-cursors and (the dependent package cl-lib) first.
-    If you want to start multiple cursors at a word (or a tag or anything) that exists on multiple lines (the lines do not have to be continuous), mark the word (using Ctrl space) and then do Ctrl Shift . (dot).
+    If you want to start multiple cursors at a word (or a tag or anything) that exists on multiple lines (the lines do not have to be continuous),
+    mark the word (using Ctrl space) and then do Ctrl Shift . (dot).
     This will start multiple cursors on the multiple lines.
     After that, you can do normal operations like delete, insert, cut, copy, etc.
     There are a lot of features that can be done using this.
@@ -70,22 +71,33 @@ To change to mode from some other mode : M-x evil-mode
 
     You can further narrow down the list by typing the first characters of the names of the functions.
 
-*** Built in replace functions
-    
-    There are built in functions for replacing text.
+*** Replace functions
 
-    M-x replace-string
-    M-x replace-regexp
-    M-x replace-rectangle
+    There are multiple ways to do this.
 
-    Using these, it is easy to perform replace operations.
+    1. There are built in functions for replacing text.
 
-    Example:
-    How to insert something at the beginning of every line?
-    M-x replace-regexp - ^ - String that you want to put at the beginning of each line.
+       M-x replace-string
+       M-x replace-regexp
+       M-x replace-rectangle
+   
+       Using these, it is easy to perform replace operations.
+   
+       Example:
+       How to insert something at the beginning of every line?
+       M-x replace-regexp - ^ - String that you want to put at the beginning of each line.
+   
+       How to delete something at the beginning of every line?
+       M-x replace-regexp - String that you want to delete at the beginning of each line - (replace with nothing) - RET.
+       
+    2. Use multiple markers package.
 
-    How to delete something at the beginning of every line?
-    M-x replace-regexp - String that you want to delete at the beginning of each line - (replace with nothing) - RET.
+       Mark the lines that you want to change and use the functions
+       mc/edit-beginning-of-lines
+       mc/edit-end-of-lines
+       mc/edit-lines
+
+       Using this, we can also do things like deleting/changing a common word/text in multiple lines in the file.
     
 *** Helpful commands
 
@@ -327,16 +339,30 @@ Enter → exit and place cursor at current position.
 
 ------------
 
+*** Terminal
+
+    https://www.gnu.org/software/emacs/manual/html_node/emacs/Interactive-Shell.html
+
+    To launch terminal within emacd, M-x shell.
+    To kill it, Ctrl-x k.
+    
 *** Find the answers for the following:
 
    1. Using  marks in a file/directory
    1. Repeat command (the equivalent of . - the dot command in Vim)
    1. How to search in an entire directory for a word and replace it?
    1. How to search in an entire directory for a specific file?
+      Many people seem to be suggesting the package "Projectile". Take a look at it.
    1. How to remapping capslock key to  Ctrl
    1. Convert a word from smaller case to upper case, upper case to smaller case or invert the case of each of the letters in the word.
    1. Go through all the bindings for Vim and find their equivalents for emacs
    1. Rewrite the configuration file in org mode
    1. How to get a Tree view of directories as opposed to using dired for navigating project directories?
+   1. Change the style of bullets. e.g. Change a star bullet list into number bullet list. Or vice versa.
+   1. How to go to the pairing paranthesis?
+      https://stackoverflow.com/questions/9845661/with-emacs-how-to-go-to-the-pairing-balancing-parentheses
+   1. A simple way to duplicate lines (one or more than one times) in emacs
+      https://stackoverflow.com/questions/88399/how-do-i-duplicate-a-whole-line-in-emacs
+      https://www.emacswiki.org/emacs/CopyingWholeLines#:~:text=Standard%20Emacs,-There%20are%20various&text=You%20can%20also%20use%20either,Meta%20key%20while%20you%20click.&text='C%2Da%20C%2DSPC%20C%2De%20M%2Dw,current%20line%2C%20including%20the%20newline.
 
 ------------
