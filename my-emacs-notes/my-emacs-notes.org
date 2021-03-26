@@ -60,6 +60,32 @@ To change to mode from some other mode : M-x evil-mode
     There are a lot of features that can be done using this.
     This needs a lot more research.
     But this should be a good starting point to insert/delete text on multiple lines based on certain common words in multiple lines.0
+
+    https://github.com/magnars/multiple-cursors.el
+
+*** Functions
+    
+    To view the list of all available functions,
+    M-x tab.
+
+    You can further narrow down the list by typing the first characters of the names of the functions.
+
+*** Built in replace functions
+    
+    There are built in functions for replacing text.
+
+    M-x replace-string
+    M-x replace-regexp
+    M-x replace-rectangle
+
+    Using these, it is easy to perform replace operations.
+
+    Example:
+    How to insert something at the beginning of every line?
+    M-x replace-regexp - ^ - String that you want to put at the beginning of each line.
+
+    How to delete something at the beginning of every line?
+    M-x replace-regexp - String that you want to delete at the beginning of each line - (replace with nothing) - RET.
     
 *** Helpful commands
 
@@ -205,6 +231,7 @@ Use C-H v user-init-file RET to check. You can also open it directly by using M-
 
 *** Resources for emacs
 
+| GNU The Emacs Editor - https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html#SEC_Contents                              |
 | How to learn Emacs :: About this guide to Emacs - https://david.rothlis.net/emacs/howtolearn.html                     |
 | MELPA - http://melpa.org/#/                                                                                           |
 | mastering-emacs-in-one-year - https://github.com/redguardtoo/mastering-emacs-in-one-year-guide                        |
@@ -223,7 +250,10 @@ Use C-H v user-init-file RET to check. You can also open it directly by using M-
 
 *** How to auto save an org document in markdown format?
 
-    Install the package 'auto-org-md' and after editing the file in org-mode, switch to it using this : "M-x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.
+    To do it automatically,
+    install the package 'auto-org-md' and use "M-x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.
+    If you turn it on,
+    after editing a file in org-mode, when you save it, a markdown version of the file is saved automatically in the same folder that the org file is in.
 
     Is there a way to do this without using the 'auto-org-md' package?
     This may not be necessary at all. The org files are showing up very nicely in github. So there is no need to export them as markdown files at all.
@@ -292,8 +322,7 @@ Enter → exit and place cursor at current position.
 
 ------------
 
-*** Find the answe
-    rs for the following:
+*** Find the answers for the following:
 
    1. Go to the beginning of the file
    1. Go to the end of the file
