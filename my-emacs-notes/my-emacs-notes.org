@@ -89,6 +89,11 @@ To change to mode from some other mode : M-x evil-mode
     
 *** Helpful commands
 
+    Navigation:
+
+    1. Go to the beginning of the file M-< (M Shift ,)
+    1. Go to the end of the file M-> (M Shift .)
+    
     Move by screenfuls:
 
     | Command                    | Description                                                                                                                                                             |
@@ -324,13 +329,10 @@ Enter → exit and place cursor at current position.
 
 *** Find the answers for the following:
 
-   1. Go to the beginning of the file
-   1. Go to the end of the file
    1. Using  marks in a file/directory
    1. Repeat command (the equivalent of . - the dot command in Vim)
    1. How to search in an entire directory for a word and replace it?
    1. How to search in an entire directory for a specific file?
-   1. How to org files appear in Github? Do we have to explicitly export them as markdown files or can we just save them as org files and still view them in a nice format in Github?
    1. How to remapping capslock key to  Ctrl
    1. Convert a word from smaller case to upper case, upper case to smaller case or invert the case of each of the letters in the word.
    1. Go through all the bindings for Vim and find their equivalents for emacs
