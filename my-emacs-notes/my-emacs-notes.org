@@ -105,7 +105,9 @@ To change to mode from some other mode : M-x evil-mode
 
     1. Go to the beginning of the file M-< (M Shift ,)
     1. Go to the end of the file M-> (M Shift .)
-    
+    1. How to go the first non-whitespace character in a line (The equivalent of ^ in Vim)? Alt + A
+    1. How to go the last non-whitespace character in a line (The equivalent of ^ in Vim)? Alt + E?
+
     Move by screenfuls:
 
     | Command                    | Description                                                                                                                                                             |
@@ -248,7 +250,7 @@ Use C-H v user-init-file RET to check. You can also open it directly by using M-
 
 *** Resources for emacs
 
-| GNU The Emacs Editor - https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html#SEC_Contents                              |
+| GNU The Emacs Editor - https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html#SEC_Contents              |
 | How to learn Emacs :: About this guide to Emacs - https://david.rothlis.net/emacs/howtolearn.html                     |
 | MELPA - http://melpa.org/#/                                                                                           |
 | mastering-emacs-in-one-year - https://github.com/redguardtoo/mastering-emacs-in-one-year-guide                        |
