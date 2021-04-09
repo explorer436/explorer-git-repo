@@ -68,6 +68,7 @@ Calibre ebook editor and viewer
 - Alltrails (optional)
 - Amazon Prime Video (streaming)
 - Authenticator (Microsoft)
+- BlipBlip (blip reminder on an hourly or timely basis)
 - Cambridge Dictionary
 - Chess.com
 - DuckDuckGo (optional)
