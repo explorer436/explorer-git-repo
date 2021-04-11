@@ -2,7 +2,7 @@
 
   To export this document as a markdown file after modifying it, C-c C-e m m
   
-  Helpful tips related to configuration and other things related to Emacs that I find useful.
+  Tips related to configuration and other things related to Emacs that I find useful.
 
 *** How to view the list of all the currently installed packages in Emacs?
 
@@ -99,7 +99,7 @@ To change to mode from some other mode : M-x evil-mode
 
        Using this, we can also do things like deleting/changing a common word/text in multiple lines in the file.
     
-*** Helpful commands
+*** Commands
 
     Navigation:
 
@@ -173,12 +173,10 @@ To change to mode from some other mode : M-x evil-mode
 	C-k	     Kill from the cursor position to end of line
 	M-k	     Kill to the end of the current s
 
-
     | Command                    | Description                                                                                                                                                             |
     |----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | C-x b and C-x C-b          | Switching between buffers                                                                                                                                               |
     | C-g                        | Cancelling half-entered commands                                                                                                                                        |
-    | C-h m, C-h k, C-h f, C-h a | Getting help on editing modes,keybindings and commands. (just remember C-h and read the prompt in the minibuffer)                                                       |
     | C-x C-c                    | Quitting Emacs                                                                                                                                                          |
     | C-x k                      | kill buffer                                                                                                                                                             |
     | M-x                        | Invoking commands by name                                                                                                                                               |
@@ -190,7 +188,9 @@ To change to mode from some other mode : M-x evil-mode
 
 ------------
 
-*** help file
+*** help with emacs
+
+    | C-h m, C-h k, C-h f, C-h a | Getting help on editing modes, keybindings and commands. (just remember C-h and read the prompt in the minibuffer)                                                      |
 
     For information about GNU Emacs and the GNU system, type C-h C-a.
     
@@ -230,7 +230,7 @@ To change to mode from some other mode : M-x evil-mode
 		If you have never before used Info, type h and Emacs
 		will take you on a guided tour of Info mode facilities.
 		Once you are through with the tutorial, you should
-		consult the Emacs Info manual as your primary documenta
+		consult the Emacs Info manual as your primary documentation.
 
 ------------
 
@@ -288,7 +288,7 @@ Use C-H v user-init-file RET to check. You can also open it directly by using M-
 
 *** Exporting
 
-At some point you might want to print your notes, publish them on the web, or share them with people not using Org.
+You might want to print your notes, publish them on the web, or share them with people not using Org.
 Org can convert and export documents to a variety of other formats while retaining as much structure (see Document Structure) and markup (see Markup for Rich Contents) as possible.  
 
 Use C-c C-e to launch the export command and then use the options displayed to make selections.
@@ -302,10 +302,9 @@ emacs isearch (incremental). Ctrl+s
 
 While in isearch:
 
-Ctrl+s → Jump to next occurrence
-Ctrl+r → Jump to previous occurrence.
-Ctrl+g → Exit and place cursor at original position.
-Enter → exit and place cursor at current position.
+Ctrl+s       → Jump to next occurrence
+Ctrl+r       → Jump to previous occurrence.
+Ctrl+g/Enter → Exit and place cursor at original position.
 
 ------------
 
@@ -368,4 +367,28 @@ Enter → exit and place cursor at current position.
       https://www.emacswiki.org/emacs/CopyingWholeLines#:~:text=Standard%20Emacs,-There%20are%20various&text=You%20can%20also%20use%20either,Meta%20key%20while%20you%20click.&text='C%2Da%20C%2DSPC%20C%2De%20M%2Dw,current%20line%2C%20including%20the%20newline.
    1. How to read internet articles in plain text mode in emacs?
 
+------------
+
+*** The point
+
+    In Emacs, the current position of the cursor is called point.
+    The expression (point) returns a number that tells you where the cursor is located as a count of the number of characters from the beginning of the buffer up to point.
+
+    Evaluate (Ctrl x Ctrl e) the following function:
+    (point)
+
+*** Evaluating expressions in emacs
+
+    There are many ways to evaluate expressions in emacs.
+
+    1) Type the function in the current buffer and evaluate (Ctrl x Ctrl e) it.
+       e.g.
+       (point)
+       (buffer-name)
+       (buffer-file-name)
+   
+    2) By using M-x eval-expression RET (buffer-name) RET
+
+       https://www.gnu.org/software/emacs/manual/html_node/eintr/Practicing-Evaluation.html
+       
 ------------
