@@ -99,14 +99,14 @@ To change to mode from some other mode : M-x evil-mode
 
        Using this, we can also do things like deleting/changing a common word/text in multiple lines in the file.
     
-*** Commands
+*** Navigation commands
 
     Navigation:
 
     1. Go to the beginning of the file M-< (M Shift ,)
     1. Go to the end of the file M-> (M Shift .)
     1. How to go the first non-whitespace character in a line (The equivalent of ^ in Vim)? Alt + A
-    1. How to go the last non-whitespace character in a line (The equivalent of ^ in Vim)? Alt + E?
+    1. How to go the last non-whitespace character in a line (The equivalent of ^ in Vim)? ???
 
     Move by screenfuls:
 
@@ -137,8 +137,6 @@ To change to mode from some other mode : M-x evil-mode
    C-a and C-e move to the beginning or end of a line, and
    M-a and M-e move to the beginning or end of a sentence.
 
-
-
     | Command | Description                        |
     |---------+------------------------------------|
     | C-f     | Move forward a character           |
@@ -162,6 +160,10 @@ To change to mode from some other mode : M-x evil-mode
 
     C-x 1	One window (i.e., kill all other windows).
 
+-------------------
+
+*** Text manipulation commands
+
     Here is a summary of the delete operations:
 
 	<DEL>        Delete the character just before the cursor
@@ -171,59 +173,73 @@ To change to mode from some other mode : M-x evil-mode
 	M-d	     Kill the next word after the cursor
 
 	C-k	     Kill from the cursor position to end of line
-	M-k	     Kill to the end of the current s
+	M-k	     Kill to the end of the current sentense (the next full stop)
 
-    | Command                    | Description                                                                                                                                                             |
-    |----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | C-x b and C-x C-b          | Switching between buffers                                                                                                                                               |
-    | C-g                        | Cancelling half-entered commands                                                                                                                                        |
-    | C-x C-c                    | Quitting Emacs                                                                                                                                                          |
-    | C-x k                      | kill buffer                                                                                                                                                             |
-    | M-x                        | Invoking commands by name                                                                                                                                               |
-    | M-x customize              | to enter customization menu                                                                                                                                             |
-    | C-x C-f                    | Visiting (opening) files. (This puts us in Emac's dired mode - directory editor). To create a new file, just start typing the name of the file that you want to create. |
-    | C-x C-s                    | Saving files                                                                                                                                                            |
-    | g                          | Refresh the listing in dired mode                                                                                                                                       |
-    | C-x b * untitled *         | (remove the spaces before and after the asterisks) will open new buffer if not exist                                                                                    |
+	
+    The command for yanking (pasting) is C-y.  It reinserts the last killed text, at the current cursor position.
 
+    What do you do if you have some text you want to yank back, and then you kill something else?
+    C-y would yank the more recent kill.
+    But the previous text is not lost.
+    You can get back to it using the M-y command.
+    After you have done C-y to get the most recent kill, typing M-y replaces that yanked text with the previous kill.
+    Typing M-y again and again brings in earlier and earlier kills.
+    When you have reached the text you are looking for, you do not have to do anything to keep it.
+    Just go on with your editing, leaving the yanked text where it is.
+
+    If you M-y enough times, you come back to the starting point (the most recent kill).
+    
 ------------
+
+*** File navigation commands
+
+    | Command            | Description                                                                                                                                                             |
+    |--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | C-x b and C-x C-b  | Switching between buffers                                                                                                                                               |
+    | C-g                | Cancelling half-entered commands                                                                                                                                        |
+    | C-x C-c            | Quitting Emacs                                                                                                                                                          |
+    | C-x k              | kill buffer                                                                                                                                                             |
+    | M-x                | Invoking commands by name                                                                                                                                               |
+    | M-x customize      | to enter customization menu                                                                                                                                             |
+    | C-x C-f            | Visiting (opening) files. (This puts us in Emac's dired mode - directory editor). To create a new file, just start typing the name of the file that you want to create. |
+    | C-x C-s            | Saving files                                                                                                                                                            |
+    | g                  | Refresh the listing in dired mode                                                                                                                                       |
+    | C-x b * untitled * | (remove the spaces before and after the asterisks) will open new buffer if not exist                                                                                    |
 
 *** help with emacs
 
     | C-h m, C-h k, C-h f, C-h a | Getting help on editing modes, keybindings and commands. (just remember C-h and read the prompt in the minibuffer)                                                      |
 
-    For information about GNU Emacs and the GNU system, type C-h C-a.
+    Ctrl h Ctrl a - For information about GNU Emacs and the GNU system.
     
-    To view documentation on your current major mode, type C-h m.
+    Ctrl h m - To view documentation on your current major mode.
     
-    How to launch help mode on the fly? C-h
+    Ctrl h - To launch help mode on the fly.
     
-    To use the Help features, type the C-h character, and then a
-    character saying what kind of help you want.  If you are REALLY lost,
-    type C-h ? and Emacs will tell you what kinds of help it can give.
+    To use the Help features, type the C-h character, and then a character saying what kind of help you want.
+
+    If you are REALLY lost, type C-h ? and Emacs will tell you what kinds of help it can give.
 
     The most basic HELP feature is C-h c.
 
     To get more information about a command, use C-h k instead of C-h c.
 
-    >> Type C-h k C-p.
+    >> Type Ctrl h k Ctrl p.
 
-    C-h a	Command Apropos.  Type in a keyword and Emacs will list
+    Ctrl h a	Command Apropos.  Type in a keyword and Emacs will list
 		all the commands whose names contain that keyword.
 		These commands can all be invoked with META-x.
 		For some commands, Command Apropos will also list a
 		sequence of one or more characters which runs the same
 		command.
 
-    >> Type C-h a file <Return>.
+    >> Type Ctrl h a file <Return>.
 
     This displays in another window a list of all M-x commands with "file"
     in their names.  You will see character-commands listed beside the
     corresponding command names (such as C-x C-f beside find-file).		
 
-   | C-h i | The info directory |
-   
-    C-h i	Read included Manuals (a.k.a. Info).  This command puts
+    Ctrl h i	Read included Manuals (a.k.a. Info).  This command puts
 		you into a special buffer called "*info*" where you
 		can read manuals for the packages installed on your system.
 		Type m emacs <Return> to read the Emacs manual.
@@ -231,6 +247,10 @@ To change to mode from some other mode : M-x evil-mode
 		will take you on a guided tour of Info mode facilities.
 		Once you are through with the tutorial, you should
 		consult the Emacs Info manual as your primary documentation.
+
+   Ctrl h f - Describe a function.  You type in the name of the function.
+
+   Ctrl h k - To get more information about a command, use C-h k instead of C-h c.
 
 ------------
 
@@ -245,25 +265,6 @@ Within Emacs, ~ at the beginning of a file name is expanded to your HOME directo
 If you are trying to find out where the file is as opposed to looking at the contents of the file:
 It should be stored in the variable user-init-file.
 Use C-H v user-init-file RET to check. You can also open it directly by using M-x eval-expression RET (find-file user-init-file) RET
-
-------------
-
-*** Resources for emacs
-
-| GNU The Emacs Editor - https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html#SEC_Contents              |
-| How to learn Emacs :: About this guide to Emacs - https://david.rothlis.net/emacs/howtolearn.html                     |
-| MELPA - http://melpa.org/#/                                                                                           |
-| mastering-emacs-in-one-year - https://github.com/redguardtoo/mastering-emacs-in-one-year-guide                        |
-| From Vim  to Emacs in Fourteen Days - https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html |
-| Howardism - http://howardism.org/                                                                                     |
-| Magit User Manual - https://magit.vc/manual/magit/                                                                    |
-| The Org Manual - https://orgmode.org/manual/index.html                                                                |
-| Org mode beginning at the basics - https://orgmode.org/worg/org-tutorials/org4beginners.html                          |
-| EmacsWiki - https://www.emacswiki.org/emacs/SiteMap                                                                   |
-| Xah Emacs Site - http://ergoemacs.org/index.html                                                                      |
-| https://jaderholm.com/screencasts.html                                                                                |
-| https://cestlaz.github.io/stories/emacs/                                                                              |
-| http://emacsrocks.com/ - video episodes about various emacs features and functionalities                              |
 
 ------------
 
@@ -355,7 +356,6 @@ Ctrl+g/Enter → Exit and place cursor at original position.
    1. How to search in an entire directory for a specific file?
       Many people seem to be suggesting the package "Projectile". Take a look at it.
    1. How to remapping capslock key to  Ctrl
-   1. Convert a word from smaller case to upper case, upper case to smaller case or invert the case of each of the letters in the word.
    1. Go through all the bindings for Vim and find their equivalents for emacs
    1. Rewrite the configuration file in org mode
    1. How to get a Tree view of directories as opposed to using dired for navigating project directories?
@@ -369,6 +369,14 @@ Ctrl+g/Enter → Exit and place cursor at original position.
 
 ------------
 
+*** Case conversion commmands
+
+    https://www.gnu.org/software/emacs/manual/html_node/emacs/Case.html
+    
+   1. convert a word from smaller case to upper case, upper case to smaller case or invert the case of each of the letters in the word.
+
+-----------
+
 *** The point
 
     In Emacs, the current position of the cursor is called point.
@@ -377,7 +385,11 @@ Ctrl+g/Enter → Exit and place cursor at original position.
     Evaluate (Ctrl x Ctrl e) the following function:
     (point)
 
+------------
+    
 *** Evaluating expressions in emacs
+
+    https://www.gnu.org/software/emacs/manual/html_node/emacs/Lisp-Eval.html
 
     There are many ways to evaluate expressions in emacs.
 
@@ -391,4 +403,43 @@ Ctrl+g/Enter → Exit and place cursor at original position.
 
        https://www.gnu.org/software/emacs/manual/html_node/eintr/Practicing-Evaluation.html
        
+------------
+
+*** Spelling
+
+    https://www.gnu.org/software/emacs/manual/html_node/emacs/Spelling.html
+
+-------------
+
+*** Region
+
+    https://www.gnu.org/software/emacs/manual/html_node/emacs/Using-Region.html
+
+-------------
+
+*** Undo
+
+    Ctrl /
+    Ctrl _ (underscore)
+    Ctrl x u
+
+--------------    
+
+*** Resources for emacs
+
+| GNU The Emacs Editor - https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html#SEC_Contents              |
+| How to learn Emacs :: About this guide to Emacs - https://david.rothlis.net/emacs/howtolearn.html                     |
+| MELPA - http://melpa.org/#/                                                                                           |
+| mastering-emacs-in-one-year - https://github.com/redguardtoo/mastering-emacs-in-one-year-guide                        |
+| From Vim  to Emacs in Fourteen Days - https://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html |
+| Howardism - http://howardism.org/                                                                                     |
+| Magit User Manual - https://magit.vc/manual/magit/                                                                    |
+| The Org Manual - https://orgmode.org/manual/index.html                                                                |
+| Org mode beginning at the basics - https://orgmode.org/worg/org-tutorials/org4beginners.html                          |
+| EmacsWiki - https://www.emacswiki.org/emacs/SiteMap                                                                   |
+| Xah Emacs Site - http://ergoemacs.org/index.html                                                                      |
+| https://jaderholm.com/screencasts.html                                                                                |
+| https://cestlaz.github.io/stories/emacs/                                                                              |
+| http://emacsrocks.com/ - video episodes about various emacs features and functionalities                              |
+
 ------------
