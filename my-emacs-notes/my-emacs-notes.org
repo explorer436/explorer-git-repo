@@ -254,17 +254,22 @@ To change to mode from some other mode : M-x evil-mode
 
 ------------
 
-*** .emacs file
+*** Init file
 
-If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch or the backed up version of the file again.
+    https://www.emacswiki.org/emacs/InitFile
 
-Where can I find my .emacs file for Emacs running on Windows? If you want to look at the contents of the file:
-Within Emacs, ~ at the beginning of a file name is expanded to your HOME directory, so you can always find your .emacs file with C-x C-f ~/.emacs.
+    Your init file contains personal EmacsLisp code that you want to execute when you start Emacs.
 
+    For GnuEmacs, your init file is ~/.emacs, ~/.emacs.el, or ~/.emacs.d/init.el.
 
-If you are trying to find out where the file is as opposed to looking at the contents of the file:
-It should be stored in the variable user-init-file.
-Use C-H v user-init-file RET to check. You can also open it directly by using M-x eval-expression RET (find-file user-init-file) RET
+    If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch or the backed up version of the file again.
+
+    Where can I find my .emacs file for Emacs running on Windows?
+    If you want to look at the contents of the file within Emacs, ~ at the beginning of a file name is expanded to your HOME directory, so you can always find your .emacs file with C-x C-f ~/.emacs.
+
+    If you are trying to find out where the file is as opposed to looking at the contents of the file:
+    It should be stored in the variable `user-init-file`.
+    Use `M-x describe-variable RET user-init-file RET` or  `C-H v user-init-file` RET to check. You can also open it directly by using M-x eval-expression RET (find-file user-init-file) RET
 
 ------------
 
