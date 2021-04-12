@@ -291,8 +291,11 @@ To change to mode from some other mode : Meta x evil-mode
 
 *** Line numbers
 
-(global-display-line-numbers-mode)
-(setq display-line-numbers-type 'relative)
+    #+NAME: <set relative line numbers in emacs>
+    #+BEGIN_SRC
+    (global-display-line-numbers-mode)
+    (setq display-line-numbers-type 'relative)
+    #+END_SRC
 
 ------------
 
@@ -312,9 +315,9 @@ emacs isearch (incremental). Ctrl+s
 
 While in isearch:
 
-Ctrl+s       → Jump to next occurrence
-Ctrl+r       → Jump to previous occurrence.
-Ctrl+g/Enter → Exit and place cursor at original position.
+| Ctrl+s       | Jump to next occurrence                     |
+| Ctrl+r       | Jump to previous occurrence.                |
+| Ctrl+g/Enter | Exit and place cursor at original position. |
 
 ------------
 
