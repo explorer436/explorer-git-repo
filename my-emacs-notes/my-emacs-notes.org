@@ -1,7 +1,5 @@
 * My Emacs notes
 
-  To export this document as a markdown file after modifying it, C-c C-e m m
-  
   Tips related to configuration and other things related to Emacs that I find useful.
 
 *** How to view the list of all the currently installed packages in Emacs?
@@ -71,34 +69,6 @@ To change to mode from some other mode : M-x evil-mode
 
     You can further narrow down the list by typing the first characters of the names of the functions.
 
-*** Replace functions
-
-    There are multiple ways to do this.
-
-    1. There are built in functions for replacing text.
-
-       M-x replace-string
-       M-x replace-regexp
-       M-x replace-rectangle
-   
-       Using these, it is easy to perform replace operations.
-   
-       Example:
-       How to insert something at the beginning of every line?
-       M-x replace-regexp - ^ - String that you want to put at the beginning of each line.
-   
-       How to delete something at the beginning of every line?
-       M-x replace-regexp - String that you want to delete at the beginning of each line - (replace with nothing) - RET.
-       
-    2. Use multiple markers package.
-
-       Mark the lines that you want to change and use the functions
-       mc/edit-beginning-of-lines
-       mc/edit-end-of-lines
-       mc/edit-lines
-
-       Using this, we can also do things like deleting/changing a common word/text in multiple lines in the file.
-    
 *** Navigation commands
 
     Navigation:
@@ -188,27 +158,55 @@ To change to mode from some other mode : M-x evil-mode
     Just go on with your editing, leaving the yanked text where it is.
 
     If you M-y enough times, you come back to the starting point (the most recent kill).
+
+**** Replace functions
+
+    There are multiple ways to do this.
+
+    1. There are built in functions for replacing text.
+
+       M-x replace-string
+       M-x replace-regexp
+       M-x replace-rectangle
+   
+       Using these, it is easy to perform replace operations.
+   
+       Example:
+       How to insert something at the beginning of every line?
+       M-x replace-regexp - ^ - String that you want to put at the beginning of each line.
+   
+       How to delete something at the beginning of every line?
+       M-x replace-regexp - String that you want to delete at the beginning of each line - (replace with nothing) - RET.
+       
+    2. Use multiple markers package.
+
+       Mark the lines that you want to change and use the functions
+       mc/edit-beginning-of-lines
+       mc/edit-end-of-lines
+       mc/edit-lines
+
+       Using this, we can also do things like deleting/changing a common word/text in multiple lines in the file.
     
 ------------
 
 *** File navigation commands
 
-    | Command            | Description                                                                                                                                                             |
-    |--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | C-x b and C-x C-b  | Switching between buffers                                                                                                                                               |
-    | C-g                | Cancelling half-entered commands                                                                                                                                        |
-    | C-x C-c            | Quitting Emacs                                                                                                                                                          |
-    | C-x k              | kill buffer                                                                                                                                                             |
-    | M-x                | Invoking commands by name                                                                                                                                               |
-    | M-x customize      | to enter customization menu                                                                                                                                             |
-    | C-x C-f            | Visiting (opening) files. (This puts us in Emac's dired mode - directory editor). To create a new file, just start typing the name of the file that you want to create. |
-    | C-x C-s            | Saving files                                                                                                                                                            |
-    | g                  | Refresh the listing in dired mode                                                                                                                                       |
-    | C-x b * untitled * | (remove the spaces before and after the asterisks) will open new buffer if not exist                                                                                    |
+    | Command                    | Description                                                                                                                                                             |
+    |----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Ctrl x b and Ctrl x Ctrl b | Switching between buffers                                                                                                                                               |
+    | Ctrl g                     | Cancelling half-entered commands                                                                                                                                        |
+    | Ctrl x Ctrl c              | Quitting Emacs                                                                                                                                                          |
+    | Ctrl x k                   | kill buffer                                                                                                                                                             |
+    | M-x                        | Invoking commands by name                                                                                                                                               |
+    | M-x customize              | to enter customization menu                                                                                                                                             |
+    | Ctrl x Ctrl f              | Visiting (opening) files. (This puts us in Emac's dired mode - directory editor). To create a new file, just start typing the name of the file that you want to create. |
+    | Ctrl x Ctrl s              | Saving files                                                                                                                                                            |
+    | g                          | Refresh the listing in dired mode                                                                                                                                       |
+    | Ctrl x b * untitled *      | (remove the spaces before and after the asterisks) will open new buffer if not exist                                                                                    |
 
 *** help with emacs
 
-    | C-h m, C-h k, C-h f, C-h a | Getting help on editing modes, keybindings and commands. (just remember C-h and read the prompt in the minibuffer)                                                      |
+    | Ctrl h m, Ctrl h k, Ctrl h f, Ctrl h a | Getting help on editing modes, keybindings and commands. (just remember Ctrl h and read the prompt in the minibuffer)                                                      |
 
     Ctrl h Ctrl a - For information about GNU Emacs and the GNU system.
     
@@ -216,13 +214,13 @@ To change to mode from some other mode : M-x evil-mode
     
     Ctrl h - To launch help mode on the fly.
     
-    To use the Help features, type the C-h character, and then a character saying what kind of help you want.
+    To use the Help features, type the Ctrl h character, and then a character saying what kind of help you want.
 
-    If you are REALLY lost, type C-h ? and Emacs will tell you what kinds of help it can give.
+    If you are REALLY lost, type Ctrl h ? and Emacs will tell you what kinds of help it can give.
 
-    The most basic HELP feature is C-h c.
+    The most basic HELP feature is Ctrl h c.
 
-    To get more information about a command, use C-h k instead of C-h c.
+    To get more information about a command, use Ctrl h k instead of Ctrl h c.
 
     >> Type Ctrl h k Ctrl p.
 
@@ -237,7 +235,7 @@ To change to mode from some other mode : M-x evil-mode
 
     This displays in another window a list of all M-x commands with "file"
     in their names.  You will see character-commands listed beside the
-    corresponding command names (such as C-x C-f beside find-file).		
+    corresponding command names (such as Ctrl x Ctrl f beside find-file).
 
     Ctrl h i	Read included Manuals (a.k.a. Info).  This command puts
 		you into a special buffer called "*info*" where you
@@ -250,7 +248,7 @@ To change to mode from some other mode : M-x evil-mode
 
    Ctrl h f - Describe a function.  You type in the name of the function.
 
-   Ctrl h k - To get more information about a command, use C-h k instead of C-h c.
+   Ctrl h k - To get more information about a command, use Ctrl h k instead of Ctrl h c.
 
 ------------
 
@@ -265,11 +263,11 @@ To change to mode from some other mode : M-x evil-mode
     If anything goes wrong with the customizations, delete the ".emacs" file in the home directory and start from scratch or the backed up version of the file again.
 
     Where can I find my .emacs file for Emacs running on Windows?
-    If you want to look at the contents of the file within Emacs, ~ at the beginning of a file name is expanded to your HOME directory, so you can always find your .emacs file with C-x C-f ~/.emacs.
+    If you want to look at the contents of the file within Emacs, ~ at the beginning of a file name is expanded to your HOME directory, so you can always find your .emacs file with Ctrl x Ctrl f ~/.emacs.
 
     If you are trying to find out where the file is as opposed to looking at the contents of the file:
     It should be stored in the variable `user-init-file`.
-    Use `M-x describe-variable RET user-init-file RET` or  `C-H v user-init-file` RET to check. You can also open it directly by using M-x eval-expression RET (find-file user-init-file) RET
+    Use `M-x describe-variable RET user-init-file RET` or  `Ctrl H v user-init-file` RET to check. You can also open it directly by using M-x eval-expression RET (find-file user-init-file) RET
 
 ------------
 
@@ -297,7 +295,7 @@ To change to mode from some other mode : M-x evil-mode
 You might want to print your notes, publish them on the web, or share them with people not using Org.
 Org can convert and export documents to a variety of other formats while retaining as much structure (see Document Structure) and markup (see Markup for Rich Contents) as possible.  
 
-Use C-c C-e to launch the export command and then use the options displayed to make selections.
+Use Ctrl c Ctrl e to launch the export command and then use the options displayed to make selections.
 e.g. to export as a UTF-8 plain text file, select 't' and 'u'
 
 ------------
@@ -317,12 +315,12 @@ Ctrl+g/Enter → Exit and place cursor at original position.
 *** Magit tips
 
     (When this gets reasonably big, pull this section into a separate file of its own.)
-    To launch magit when you are editing a file that is in a git repository, `C-c g`
+    To launch magit when you are editing a file that is in a git repository, `Ctrl c g`
 
     To see the diff version of a file in the magit status page, with the mouse on that file, hit `tab`. To close the diff view, hit tab again.
 
-    After staging all the files we want to commit, to commit them, hit `C-c C-c`
-    Enter a commit message and hit `C-c C-c`
+    After staging all the files we want to commit, to commit them, hit `Ctrl c Ctrl c`
+    Enter a commit message and hit `Ctrl c Ctrl c`
 
     After you have a commit, to push it to the remote repository, hit `P`. It gives you options about where to push it and some other details.
 
@@ -350,11 +348,12 @@ Ctrl+g/Enter → Exit and place cursor at original position.
 
     https://www.gnu.org/software/emacs/manual/html_node/emacs/Interactive-Shell.html
 
-    To launch terminal within emacd, M-x shell.
+    To launch terminal within emacd, Meta x shell.
     To kill it, Ctrl-x k.
     
 *** Find the answers for the following:
 
+   1. How to rewrite the configuration file in org mode?
    1. Using  marks in a file/directory
    1. Repeat command (the equivalent of . - the dot command in Vim)
    1. How to search in an entire directory for a word and replace it?
@@ -362,7 +361,6 @@ Ctrl+g/Enter → Exit and place cursor at original position.
       Many people seem to be suggesting the package "Projectile". Take a look at it.
    1. How to remapping capslock key to  Ctrl
    1. Go through all the bindings for Vim and find their equivalents for emacs
-   1. Rewrite the configuration file in org mode
    1. How to get a Tree view of directories as opposed to using dired for navigating project directories?
    1. Change the style of bullets. e.g. Change a star bullet list into number bullet list. Or vice versa.
    1. How to go to the pairing paranthesis?
@@ -371,6 +369,8 @@ Ctrl+g/Enter → Exit and place cursor at original position.
       https://stackoverflow.com/questions/88399/how-do-i-duplicate-a-whole-line-in-emacs
       https://www.emacswiki.org/emacs/CopyingWholeLines#:~:text=Standard%20Emacs,-There%20are%20various&text=You%20can%20also%20use%20either,Meta%20key%20while%20you%20click.&text='C%2Da%20C%2DSPC%20C%2De%20M%2Dw,current%20line%2C%20including%20the%20newline.
    1. How to read internet articles in plain text mode in emacs?
+      This is a workflow that I find useful.
+      Copy the link for the article. Open it in Tor-browser/Firefox reader mode. Copy the contents and paste them into a buffer in emacs and read it there.
 
 ------------
 
@@ -404,7 +404,7 @@ Ctrl+g/Enter → Exit and place cursor at original position.
        (buffer-name)
        (buffer-file-name)
    
-    2) By using M-x eval-expression RET (buffer-name) RET
+    2) By using Meta x eval-expression RET (buffer-name) RET
 
        https://www.gnu.org/software/emacs/manual/html_node/eintr/Practicing-Evaluation.html
        
