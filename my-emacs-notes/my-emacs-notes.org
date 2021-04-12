@@ -62,6 +62,8 @@ To change to mode from some other mode : Meta x evil-mode
 
     https://github.com/magnars/multiple-cursors.el
 
+-------------
+
 *** Functions
     
     To view the list of all available functions,
@@ -69,6 +71,8 @@ To change to mode from some other mode : Meta x evil-mode
 
     You can further narrow down the list by typing the first characters of the names of the functions.
 
+-------------
+    
 *** Navigation commands
 
     Navigation:
@@ -204,6 +208,8 @@ To change to mode from some other mode : Meta x evil-mode
     | g                          | Refresh the listing in dired mode                                                                                                                                       |
     | Ctrl x b * untitled *      | (remove the spaces before and after the asterisks) will open new buffer if not exist                                                                                    |
 
+-------------
+    
 *** help with emacs
 
     | Ctrl h m, Ctrl h k, Ctrl h f, Ctrl h a | Getting help on editing modes, keybindings and commands. (just remember Ctrl h and read the prompt in the minibuffer)                                                      |
@@ -350,6 +356,8 @@ Ctrl+g/Enter → Exit and place cursor at original position.
 
     To launch terminal within emacd, Meta x shell.
     To kill it, Ctrl-x k.
+
+-------------
     
 *** Find the answers for the following:
 
