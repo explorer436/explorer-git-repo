@@ -10,11 +10,11 @@ you need to view the list of installed packages from the package manager.
 
 To see a list of the available packages : M-x list-packages
 
-Run this command till you find the first row of installed package: "C-s installed"
+Run this command till you find the first row of installed package: "Ctrl s installed"
 
-Start selecting with C-SPC.
+Start selecting with Ctrl SPC.
 
-Go down till you reach built-in packages. Copy with M-w. C-x b for new buffer. Paste with C-y.C-x C-s to save file.
+Go down till you reach built-in packages. Copy with M-w. Ctrl x b for new buffer. Paste with Ctrl y.Ctrl x Ctrl s to save file.
 
 Another alternative is, simply copy the ".emacs" file from this computer to the other computer.
 
@@ -43,7 +43,7 @@ To change to mode from some other mode : M-x evil-mode
 
     You can use the command load-file (M-x load-file, then press return twice to accept the default filename, which is the current file being edited).
 
-    You can also just move the point to the end of any sexp and press C-xC-e to execute just that sexp. Usually it's not necessary to reload the whole file if you're just changing a line or two.
+    You can also just move the point to the end of any sexp and press Ctrl xCtrl e to execute just that sexp. Usually it's not necessary to reload the whole file if you're just changing a line or two.
 
     https://stackoverflow.com/a/2580726
 
@@ -80,21 +80,21 @@ To change to mode from some other mode : M-x evil-mode
 
     Move by screenfuls:
 
-    | Command                    | Description                                                                                                                                                             |
-    |----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | C-v                        | Move forward one screenful                                                                                                                                              |
-    | M-v                        | Move backward one screenful                                                                                                                                             |
-    | C-l                        | Moving the text around the cursor to the center of the screen, top of the screen and bottom of the screen                                                               |
+    | Command | Description                                                                                               |
+    |---------+-----------------------------------------------------------------------------------------------------------|
+    | Ctrl v  | Move forward one screenful                                                                                |
+    | M-v     | Move backward one screenful                                                                               |
+    | Ctrl l  | Moving the text around the cursor to the center of the screen, top of the screen and bottom of the screen |
 
     Move by lines: (P for previous, N for next, B for backward and F for forward)
 
-			  Previous line, C-p
+			  Previous line, Ctrl p
 				  :
 				  :
-   Backward, C-b .... Current cursor position .... Forward, C-f
+   Backward, Ctrl b .... Current cursor position .... Forward, Ctrl f
 				  :
 				  :
-			    Next line, C-n
+			    Next line, Ctrl n
 
    If moving by characters is too slow, you can move by words.  M-f (META-f) moves forward a word and M-b moves back a word.
 
@@ -104,19 +104,19 @@ To change to mode from some other mode : M-x evil-mode
 
    
    This parallel applies between lines and sentences:
-   C-a and C-e move to the beginning or end of a line, and
+   Ctrl a and Ctrl e move to the beginning or end of a line, and
    M-a and M-e move to the beginning or end of a sentence.
 
     | Command | Description                        |
     |---------+------------------------------------|
-    | C-f     | Move forward a character           |
-    | C-b     | Move backward a character          |
+    | Ctrl f  | Move forward a character           |
+    | Ctrl b  | Move backward a character          |
     | M-f     | Move forward a word                |
     | M-b     | Move backward a word               |
-    | C-n     | Move to next line                  |
-    | C-p     | Move to previous line              |
-    | C-a     | Move to beginning of line          |
-    | C-e     | Move to end of line                |
+    | Ctrl n  | Move to next line                  |
+    | Ctrl p  | Move to previous line              |
+    | Ctrl a  | Move to beginning of line          |
+    | Ctrl e  | Move to end of line                |
     | M-a     | Move back to beginning of sentence |
     | M-e     | Move forward to end of sentence    |
 
@@ -128,7 +128,7 @@ To change to mode from some other mode : M-x evil-mode
     shift key to type it.  On these terminals you must use the shift key
     to type M-< also; without the shift key, you would be typing M-comma.
 
-    C-x 1	One window (i.e., kill all other windows).
+    Ctrl x 1	One window (i.e., kill all other windows).
 
 -------------------
 
@@ -137,27 +137,27 @@ To change to mode from some other mode : M-x evil-mode
     Here is a summary of the delete operations:
 
 	<DEL>        Delete the character just before the cursor
-	C-d   	     Delete the next character after the cursor
+	Ctrl d   	     Delete the next character after the cursor
 
 	M-<DEL>      Kill the word immediately before the cursor
 	M-d	     Kill the next word after the cursor
 
-	C-k	     Kill from the cursor position to end of line
+	Ctrl k	     Kill from the cursor position to end of line
 	M-k	     Kill to the end of the current sentense (the next full stop)
 
 	
-    The command for yanking (pasting) is C-y.  It reinserts the last killed text, at the current cursor position.
+    The command for yanking (pasting) is Ctrl y.  It reinserts the last killed text, at the current cursor position.
 
     What do you do if you have some text you want to yank back, and then you kill something else?
-    C-y would yank the more recent kill.
+    Ctrl y would yank the more recent kill.
     But the previous text is not lost.
     You can get back to it using the M-y command.
-    After you have done C-y to get the most recent kill, typing M-y replaces that yanked text with the previous kill.
-    Typing M-y again and again brings in earlier and earlier kills.
+    After you have done Ctrl y to get the most recent kill, typing Meta y replaces that yanked text with the previous kill.
+    Typing Meta y again and again brings in earlier and earlier kills.
     When you have reached the text you are looking for, you do not have to do anything to keep it.
     Just go on with your editing, leaving the yanked text where it is.
 
-    If you M-y enough times, you come back to the starting point (the most recent kill).
+    If you Meta y enough times, you come back to the starting point (the most recent kill).
 
 **** Replace functions
 
@@ -165,18 +165,18 @@ To change to mode from some other mode : M-x evil-mode
 
     1. There are built in functions for replacing text.
 
-       M-x replace-string
-       M-x replace-regexp
-       M-x replace-rectangle
+       Meta x replace-string
+       Meta x replace-regexp
+       Meta x replace-rectangle
    
        Using these, it is easy to perform replace operations.
    
        Example:
        How to insert something at the beginning of every line?
-       M-x replace-regexp - ^ - String that you want to put at the beginning of each line.
+       Meta x replace-regexp - ^ - String that you want to put at the beginning of each line.
    
        How to delete something at the beginning of every line?
-       M-x replace-regexp - String that you want to delete at the beginning of each line - (replace with nothing) - RET.
+       Meta x replace-regexp - String that you want to delete at the beginning of each line - (replace with nothing) - RET.
        
     2. Use multiple markers package.
 
@@ -197,8 +197,8 @@ To change to mode from some other mode : M-x evil-mode
     | Ctrl g                     | Cancelling half-entered commands                                                                                                                                        |
     | Ctrl x Ctrl c              | Quitting Emacs                                                                                                                                                          |
     | Ctrl x k                   | kill buffer                                                                                                                                                             |
-    | M-x                        | Invoking commands by name                                                                                                                                               |
-    | M-x customize              | to enter customization menu                                                                                                                                             |
+    | Meta x                     | Invoking commands by name                                                                                                                                               |
+    | Meta x customize           | to enter customization menu                                                                                                                                             |
     | Ctrl x Ctrl f              | Visiting (opening) files. (This puts us in Emac's dired mode - directory editor). To create a new file, just start typing the name of the file that you want to create. |
     | Ctrl x Ctrl s              | Saving files                                                                                                                                                            |
     | g                          | Refresh the listing in dired mode                                                                                                                                       |
@@ -233,7 +233,7 @@ To change to mode from some other mode : M-x evil-mode
 
     >> Type Ctrl h a file <Return>.
 
-    This displays in another window a list of all M-x commands with "file"
+    This displays in another window a list of all Meta x commands with "file"
     in their names.  You will see character-commands listed beside the
     corresponding command names (such as Ctrl x Ctrl f beside find-file).
 
@@ -267,14 +267,14 @@ To change to mode from some other mode : M-x evil-mode
 
     If you are trying to find out where the file is as opposed to looking at the contents of the file:
     It should be stored in the variable `user-init-file`.
-    Use `M-x describe-variable RET user-init-file RET` or  `Ctrl H v user-init-file` RET to check. You can also open it directly by using M-x eval-expression RET (find-file user-init-file) RET
+    Use `Meta x describe-variable RET user-init-file RET` or  `Ctrl H v user-init-file` RET to check. You can also open it directly by using Meta x eval-expression RET (find-file user-init-file) RET
 
 ------------
 
 *** How to auto save an org document in markdown format?
 
     To do it automatically,
-    install the package 'auto-org-md' and use "M-x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.
+    install the package 'auto-org-md' and use "Meta x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.
     If you turn it on,
     after editing a file in org-mode, when you save it, a markdown version of the file is saved automatically in the same folder that the org file is in.
 
