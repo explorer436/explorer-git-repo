@@ -339,17 +339,10 @@ While in isearch:
 
 (Alphabetical order)
 
-    d
-    Flag this file for deletion (dired-flag-file-deletion).
-    
-    R
-    rename a file
-    
-    u
-    Remove the deletion flag (dired-unmark).
-    
-    x
-    Delete files flagged for deletion (dired-do-flagged-delete).
+| d | Flag this file for deletion (dired-flag-file-deletion).      |
+| R | rename a file                                                |
+| u | Remove the deletion flag (dired-unmark).                     |
+| x | Delete files flagged for deletion (dired-do-flagged-delete). |
 
 ------------
 
@@ -373,7 +366,6 @@ While in isearch:
    1. How to remapping capslock key to  Ctrl
    1. Go through all the bindings for Vim and find their equivalents for emacs
    1. How to get a Tree view of directories as opposed to using dired for navigating project directories?
-   1. Change the style of bullets. e.g. Change a star bullet list into number bullet list. Or vice versa.
    1. How to go to the pairing paranthesis?
       https://stackoverflow.com/questions/9845661/with-emacs-how-to-go-to-the-pairing-balancing-parentheses
    1. A simple way to duplicate lines (one or more than one times) in emacs
@@ -389,7 +381,7 @@ While in isearch:
 
     https://www.gnu.org/software/emacs/manual/html_node/emacs/Case.html
     
-   1. convert a word from smaller case to upper case, upper case to smaller case or invert the case of each of the letters in the word.
+   Convert a word from smaller case to upper case, upper case to smaller case or invert the case of each of the letters in the word.
 
 -----------
 
@@ -435,9 +427,17 @@ While in isearch:
 
 *** Undo
 
-    Ctrl /
-    Ctrl _ (underscore)
-    Ctrl x u
+    1. Ctrl /
+    1. Ctrl _ (underscore)
+    1. Ctrl x u
 
 --------------    
 
+*** Lists
+
+       How to change the style of bullets?
+       e.g. Change a star bullet list into number bullet list. Or vice versa.
+
+       https://orgmode.org/manual/Plain-Lists.html
+
+----------------       
