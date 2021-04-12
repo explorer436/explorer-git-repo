@@ -1,0 +1,14 @@
+*** Commands to run tests on individual files
+
+**Command to run cucumber tests alone if you are using gradle**
+
+    #+BEGIN_EXAMPLE
+    ./gradlew test --tests pagro.project.RunCukesTest*
+    #+END_EXAMPLE
+
+**for a javascript project**
+
+    #+BEGIN_EXAMPLE
+    npx jest ./src/main/module/Operation/OperationService.test.ts
+    npm run test -- ./src/main/module/Operation/OperationService.test.ts
+    #+END_EXAMPLE

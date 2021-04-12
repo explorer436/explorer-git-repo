@@ -1,0 +1,35 @@
+*** Cntlm
+
+Updating password in cntlm : 
+
+In a Linux slice, cntlm config file is usually located here : 
+
+    #+BEGIN_EXAMPLE
+    /etc/cntlm.conf
+    or
+    /usr/local/etc/cntlm.conf
+    #+END_EXAMPLE
+
+Many corporate security policies require regular password changes, CNTLM makes these very easy.
+
+First, get the hashes for the new password with: 
+    #+BEGIN_EXAMPLE
+    cntlm -H
+    #+END_EXAMPLE
+
+Copy and paste those hashes into your cntlm.conf file located at: 
+    #+BEGIN_EXAMPLE
+    /etc/cntlm.conf
+    or 
+    /usr/local/etc/cntlm.conf
+    #+END_EXAMPLE
+
+(if you get this error while trying to edit the file : readonly option is set (add ! to override) - 
+This happens when the user is trying to write on a file without the right permissions. Login as root using sudo su and now you can do the edit.)
+
+Restart your CNTLM instance and reconnect, you should be good to go 
+    #+BEGIN_EXAMPLE
+    : brew services restart cntlm (if you have brew installed)
+    #+END_EXAMPLE
+
+If this doesn't work, restarting the slice using the command 'reboot' works.

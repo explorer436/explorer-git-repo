@@ -1,0 +1,6 @@
+*** Putty
+
+   change password : 
+    #+BEGIN_EXAMPLE
+    passwd
+    #+END_EXAMPLE

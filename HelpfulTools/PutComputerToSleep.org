@@ -1,0 +1,7 @@
+*** Command to put computer to sleep
+
+    Windows:
+    
+      #+BEGIN_EXAMPLE
+      rundll32.exe powrprof.dll,SetSuspendState 0,1,0
+      #+END_EXAMPLE

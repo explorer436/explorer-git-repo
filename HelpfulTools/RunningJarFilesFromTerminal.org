@@ -1,0 +1,5 @@
+*** Running jar files from terminal
+
+    #+BEGIN_EXAMPLE
+    java -jar jarFileName.jar
+    #+END_EXAMPLE

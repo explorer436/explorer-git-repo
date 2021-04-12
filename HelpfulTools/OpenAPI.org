@@ -1,0 +1,7 @@
+*** OpenAPI spec editing tools
+
+Swagger YAML editing tool : http://editor.swagger.io/
+
+use this to generate server code and client code as well.
+
+Stoplight studio is another good one. 

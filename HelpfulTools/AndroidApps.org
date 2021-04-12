@@ -1,0 +1,66 @@
+*** Tools for Android (alphabetical order)
+
+- APAS (Algorithm Problems and Solutions)
+- Algorithms (visual explanation of algorithms)
+- Alltrails (optional)
+- Amazon Prime Video (streaming)
+- Authenticator (Microsoft)
+- BlipBlip (blip reminder on an hourly or timely basis)
+- Cambridge Dictionary
+- Chess.com
+- DuckDuckGo (optional)
+- Fairmail (using this for Gmail and hotmail accounts right now)
+- Fdroid (optional)
+- Firefox (extensions - Dark Reader) (set startpage.com as the default search engine)
+- Foxit PDF Reader (for pdf files)
+- GPS Tools (good app with various features to determine gps info)
+- Geeks for Geeks (optional)
+- GitHub
+- Glassdoor (Job search) (optional)
+- HBO Max (streaming)
+- Instapaper (Reading articles)
+- LBRY
+- Lastpass (password manager)
+- LinkedIn (Job search) (optional)
+- Mapquest (maps)
+- Mega Sync Client
+- Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
+- NetGuard
+- Netflix (streaming)
+- OpenPhone (optional)
+- OsmAnd (maps)
+- Outlook (Microsoft) (For FusionAlliance Webmail and hotmail accounts - might also work for Gmail and other accounts) (Email client)
+- Podcasts (Google) (Podcasts)
+- Quora	 (Reading)
+- Signal (Messaging apps)
+- Spotify (Music)
+- Startpage search engine app
+- Sync (cloud client)
+- The weather channel (weather)
+- Tor Browser (browser) (set startpage.com as the default search engine)
+- Tutanota (Email client)
+- Udemy (optional)
+- Vim Master
+- Walldrobe (wallpapers from Unsplash)
+- Whatsapp (Messaging apps)
+- Word (Microsoft) (for word files)
+- WriterP (simple text editor)
+- Yahoomail (good with Yahoo accounts - if this cannot be set up in other email clients - can we set it up in Microsoft Outlook app?) (Email client)
+- Youtube
+
+
+*** Android alternatives
+
+GrapheneOS
+LineageOS (supports many older devices)
+
+Look into these as well:
+Sprinboard Volla - phone
+Cosmo Communicator - phone
+Proix - phone
+
+Purism librem 5 -> Not recommended
+Pinephone is the better alternative
+Regarding the OS that can be used on Pinephone, UBPorts (Ubuntu Touch) is recommended.
+
+What do people use for maps when using Linux phones?
