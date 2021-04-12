@@ -16,13 +16,13 @@ Start selecting with Ctrl SPC.
 
 Go down till you reach built-in packages. Copy with Meta w. Ctrl x b for new buffer. Paste with Ctrl y.Ctrl x Ctrl s to save file.
 
-Another alternative is, simply copy the ".emacs" file from this computer to the other computer.
+Another alternative is, simply copy the ~.emacs~ file from this computer to the other computer.
 
 ------------
 
 *** How to add MELPA as another source of packages in addition to GNU's elpa?
     
-    1. Hint: In order to avoid having to do this multiple times when switching between multiple machines, save the `.emacs` settings in GitHub so that you can just move it from machine to machine.
+    1. Hint: In order to avoid having to do this multiple times when switching between multiple machines, save the ~.emacs~ settings in GitHub so that you can just move it from machine to machine.
     2. The alternative is:
        In a browser, visit MELPA website.
        Grab the URL for the package archive "https://melpa.org/packages/"
@@ -31,8 +31,8 @@ Another alternative is, simply copy the ".emacs" file from this computer to the 
 
 After making changes to the config to add MELPA as a source of packages, run the following two commands:
 
-  1. `Meta x` package-refresh-contents (to refresh the list of packages)
-  2. `Meta x` `package-install` RET (to launch package install mode)
+  1. ~Meta x~ package-refresh-contents (to refresh the list of packages)
+  2. ~Meta x~ ~package-install~ RET (to launch package install mode)
   3. Type the name of the package you are looking for and when you find the package -> RET 
 
 To change to mode from some other mode : Meta x evil-mode
@@ -87,7 +87,7 @@ To change to mode from some other mode : Meta x evil-mode
     | Command | Description                                                                                               |
     |---------+-----------------------------------------------------------------------------------------------------------|
     | Ctrl v  | Move forward one screenful                                                                                |
-    | Meta v     | Move backward one screenful                                                                               |
+    | Meta v  | Move backward one screenful                                                                               |
     | Ctrl l  | Moving the text around the cursor to the center of the screen, top of the screen and bottom of the screen |
 
     Move by lines: (P for previous, N for next, B for backward and F for forward)
@@ -115,14 +115,14 @@ To change to mode from some other mode : Meta x evil-mode
     |---------+------------------------------------|
     | Ctrl f  | Move forward a character           |
     | Ctrl b  | Move backward a character          |
-    | Meta f     | Move forward a word                |
-    | Meta b     | Move backward a word               |
+    | Meta f  | Move forward a word                |
+    | Meta b  | Move backward a word               |
     | Ctrl n  | Move to next line                  |
     | Ctrl p  | Move to previous line              |
     | Ctrl a  | Move to beginning of line          |
     | Ctrl e  | Move to end of line                |
-    | Meta a     | Move back to beginning of sentence |
-    | Meta e     | Move forward to end of sentence    |
+    | Meta a  | Move back to beginning of sentence |
+    | Meta e  | Move forward to end of sentence    |
 
     Two other important cursor motion commands are Meta < (META Less-than),
     which moves to the beginning of the whole text, and Meta > (META
@@ -272,15 +272,16 @@ To change to mode from some other mode : Meta x evil-mode
     If you want to look at the contents of the file within Emacs, ~ at the beginning of a file name is expanded to your HOME directory, so you can always find your .emacs file with Ctrl x Ctrl f ~/.emacs.
 
     If you are trying to find out where the file is as opposed to looking at the contents of the file:
-    It should be stored in the variable `user-init-file`.
-    Use `Meta x describe-variable RET user-init-file RET` or  `Ctrl H v user-init-file` RET to check. You can also open it directly by using Meta x eval-expression RET (find-file user-init-file) RET
+    It should be stored in the variable ~user-init-file~.
+    Use ~Meta x describe-variable RET user-init-file RET~ or  ~Ctrl H v user-init-file~ RET to check. You can also open it directly by using Meta x eval-expression RET (find-file user-init-file) RET
 
 ------------
 
 *** How to auto save an org document in markdown format?
 
     To do it automatically,
-    install the package 'auto-org-md' and use "Meta x auto-org-md-mode" to toggle the auto save to markdown functionality on and off.
+    install the package ~auto-org-md~ and use ~Meta x auto-org-md-mode~ to toggle the auto save to markdown functionality on and off.
+    
     If you turn it on,
     after editing a file in org-mode, when you save it, a markdown version of the file is saved automatically in the same folder that the org file is in.
 
@@ -304,7 +305,7 @@ To change to mode from some other mode : Meta x evil-mode
 You might want to print your notes, publish them on the web, or share them with people not using Org.
 Org can convert and export documents to a variety of other formats while retaining as much structure (see Document Structure) and markup (see Markup for Rich Contents) as possible.  
 
-Use Ctrl c Ctrl e to launch the export command and then use the options displayed to make selections.
+Use ~Ctrl c Ctrl e~ to launch the export command and then use the options displayed to make selections.
 e.g. to export as a UTF-8 plain text file, select 't' and 'u'
 
 ------------
@@ -324,14 +325,14 @@ While in isearch:
 *** Magit tips
 
     (When this gets reasonably big, pull this section into a separate file of its own.)
-    To launch magit when you are editing a file that is in a git repository, `Ctrl c g`
+    To launch magit when you are editing a file that is in a git repository, ~Ctrl c g~
 
-    To see the diff version of a file in the magit status page, with the mouse on that file, hit `tab`. To close the diff view, hit tab again.
+    To see the diff version of a file in the magit status page, with the mouse on that file, hit ~tab~. To close the diff view, hit tab again.
 
-    After staging all the files we want to commit, to commit them, hit `Ctrl c Ctrl c`
-    Enter a commit message and hit `Ctrl c Ctrl c`
+    After staging all the files we want to commit, to commit them, hit ~Ctrl c Ctrl c~
+    Enter a commit message and hit ~Ctrl c Ctrl c~
 
-    After you have a commit, to push it to the remote repository, hit `P`. It gives you options about where to push it and some other details.
+    After you have a commit, to push it to the remote repository, hit ~P~. It gives you options about where to push it and some other details.
 
 ------------
 
@@ -350,8 +351,8 @@ While in isearch:
 
     https://www.gnu.org/software/emacs/manual/html_node/emacs/Interactive-Shell.html
 
-    To launch terminal within emacd, Meta x shell.
-    To kill it, Ctrl-x k.
+    To launch terminal within emacs, ~Meta x shell~.
+    To kill it, ~Ctrl-x k~.
 
 -------------
     
@@ -391,7 +392,7 @@ While in isearch:
     The expression (point) returns a number that tells you where the cursor is located as a count of the number of characters from the beginning of the buffer up to point.
 
     Evaluate (Ctrl x Ctrl e) the following function:
-    (point)
+    ~(point)~
 
 ------------
     
@@ -403,9 +404,9 @@ While in isearch:
 
     1) Type the function in the current buffer and evaluate (Ctrl x Ctrl e) it.
        e.g.
-       (point)
-       (buffer-name)
-       (buffer-file-name)
+       ~(point)~
+       ~(buffer-name)~
+       ~(buffer-file-name)~
    
     2) By using Meta x eval-expression RET (buffer-name) RET
 
@@ -427,9 +428,9 @@ While in isearch:
 
 *** Undo
 
-    1. Ctrl /
-    1. Ctrl _ (underscore)
-    1. Ctrl x u
+    1. ~Ctrl /~
+    1. ~Ctrl _~
+    1. ~Ctrl x u~
 
 --------------    
 
