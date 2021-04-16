@@ -322,20 +322,6 @@ How to do case insensitive search?
 
 ------------
 
-*** Magit tips
-
-    (When this gets reasonably big, pull this section into a separate file of its own.)
-    To launch magit when you are editing a file that is in a git repository, ~Ctrl c g~
-
-    To see the diff version of a file in the magit status page, with the mouse on that file, hit ~tab~. To close the diff view, hit tab again.
-
-    After staging all the files we want to commit, to commit them, hit ~Ctrl c Ctrl c~
-    Enter a commit message and hit ~Ctrl c Ctrl c~
-
-    After you have a commit, to push it to the remote repository, hit ~P~. It gives you options about where to push it and some other details.
-
-------------
-
 *** Dired tips
 
 (Alphabetical order)
@@ -459,8 +445,24 @@ How to do case insensitive search?
 
 ----------------
 
-*** Avy (plugin)
+*** Plugins
+
+**** Avy
 
     https://github.com/abo-abo/avy
 
+------------
     
+**** Magit tips
+
+    (When this gets reasonably big, pull this section into a separate file of its own.)
+    To launch magit when you are editing a file that is in a git repository, ~Ctrl c g~
+
+    To see the diff version of a file in the magit status page, with the mouse on that file, hit ~tab~. To close the diff view, hit tab again.
+
+    After staging all the files we want to commit, to commit them, hit ~Ctrl c Ctrl c~
+    Enter a commit message and hit ~Ctrl c Ctrl c~
+
+    After you have a commit, to push it to the remote repository, hit ~P~. It gives you options about where to push it and some other details.
+
+------------
