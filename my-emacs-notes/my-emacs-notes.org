@@ -195,18 +195,16 @@ To change to mode from some other mode : Meta x evil-mode
 
 *** File navigation commands
 
-    | Command                    | Description                                                                                                                                                             |
-    |----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Ctrl x b and Ctrl x Ctrl b | Switching between buffers                                                                                                                                               |
-    | Ctrl g                     | Cancelling half-entered commands                                                                                                                                        |
-    | Ctrl x Ctrl c              | Quitting Emacs                                                                                                                                                          |
-    | Ctrl x k                   | kill buffer                                                                                                                                                             |
-    | Meta x                     | Invoking commands by name                                                                                                                                               |
-    | Meta x customize           | to enter customization menu                                                                                                                                             |
-    | Ctrl x Ctrl f              | Visiting (opening) files. (This puts us in Emac's dired mode - directory editor). To create a new file, just start typing the name of the file that you want to create. |
-    | Ctrl x Ctrl s              | Saving files                                                                                                                                                            |
-    | g                          | Refresh the listing in dired mode                                                                                                                                       |
-    | Ctrl x b * untitled *      | (remove the spaces before and after the asterisks) will open new buffer if not exist                                                                                    |
+    | Command                    | Description                                                                          |   |   |   |
+    |----------------------------+--------------------------------------------------------------------------------------+---+---+---|
+    | Ctrl x b and Ctrl x Ctrl b | Switching between buffers                                                            |   |   |   |
+    | Ctrl g                     | Cancelling half-entered commands                                                     |   |   |   |
+    | Ctrl x Ctrl c              | Quitting Emacs                                                                       |   |   |   |
+    | Ctrl x k                   | kill buffer                                                                          |   |   |   |
+    | Meta x                     | Invoking commands by name                                                            |   |   |   |
+    | Meta x customize           | to enter customization menu                                                          |   |   |   |
+    | Ctrl x b * untitled *      | (remove the spaces before and after the asterisks) will open new buffer if not exist |   |   |   |
+    | Ctrl x Ctrl s              | Saving files                                                                         |   |   |   |
 
 -------------
     
@@ -340,10 +338,14 @@ While in isearch:
 
 (Alphabetical order)
 
-| d | Flag this file for deletion (dired-flag-file-deletion).      |
-| R | rename a file                                                |
-| u | Remove the deletion flag (dired-unmark).                     |
-| x | Delete files flagged for deletion (dired-do-flagged-delete). |
+    | Ctrl x Ctrl f | Visiting (opening) files. (This puts us in Emac's dired mode - directory editor). To create a new file, just start typing the name of the file that you want to create. |
+    | g             | Refresh the listing in dired mode                                                                                                                                       |
+
+    
+    | d | Flag this file for deletion (dired-flag-file-deletion).      |
+    | R | rename a file                                                |
+    | u | Remove the deletion flag (dired-unmark).                     |
+    | x | Delete files flagged for deletion (dired-do-flagged-delete). |
 
 ------------
 
@@ -359,9 +361,21 @@ While in isearch:
 *** Find the answers for the following:
 
    1. How to rewrite the configuration file in org mode?
+   1. Sort a bunch of lines alphabetically.
+   1. Join the next line with the current one
    1. Using  marks in a file/directory
+   1. Completion. Either complete words from dictionary or context aware completion.
+      Completing words based on words used in the current buffer or project.
+      Language aware completion.
+   1. Count the number of occurrences of a word or pattern in the current file.
+   1. File comparison with emacs
+   1. Indentation
+   1. How to move an entire paragraph (or block of code) up? (like alt up arrow  or down arrow in visual studio code)
+   1. How to move an entire line up? (like alt up arrow  or down arrow in visual studio code)
+   1. Macros
    1. Repeat command (the equivalent of . - the dot command in Vim)
    1. How to search in an entire directory for a word and replace it?
+   1. How to display all the occurances of a word in a buffer(like the way it is done in Notepad++)
    1. How to search in an entire directory for a specific file?
       Many people seem to be suggesting the package "Projectile". Take a look at it.
    1. How to remapping capslock key to  Ctrl

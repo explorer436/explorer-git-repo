@@ -1397,7 +1397,8 @@ EX RANGES
 
    Interesting comments about Vim :
 
-   It's simply a piece of software that integrates several tools needed for Development in a single instance. Vim comes bare bone but plug ins can easily be installed using Plug ins Manager such as Vundle or Vim Plug.
+   It's simply a piece of software that integrates several tools needed for Development in a single instance.
+   Vim comes bare bone but plug ins can easily be installed using Plug ins Manager such as Vundle or Vim Plug.
    
    It can then provide for capabilities including but not limited to:
    
