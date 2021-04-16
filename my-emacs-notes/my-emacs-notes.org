@@ -318,6 +318,8 @@ While in isearch:
 | Ctrl+r       | Jump to previous occurrence.                |
 | Ctrl+g/Enter | Exit and place cursor at original position. |
 
+How to do case insensitive search?
+
 ------------
 
 *** Magit tips
@@ -455,4 +457,10 @@ While in isearch:
 
        https://orgmode.org/manual/Plain-Lists.html
 
-----------------       
+----------------
+
+*** Avy (plugin)
+
+    https://github.com/abo-abo/avy
+
+    
