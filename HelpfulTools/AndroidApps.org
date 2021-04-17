@@ -12,7 +12,6 @@
 - Fairmail (using this for Gmail and hotmail accounts right now)
 - Fdroid (optional)
 - Firefox (extensions - Dark Reader) (set startpage.com as the default search engine)
-- Foxit PDF Reader (for pdf files)
 - GPS Tools (good app with various features to determine gps info)
 - Geeks for Geeks (optional)
 - GitHub
@@ -43,7 +42,7 @@
 - Vim Master
 - Walldrobe (wallpapers from Unsplash)
 - Whatsapp (Messaging apps)
-- Word (Microsoft) (for word files)
+- Word (Microsoft) (for word files and pdf files as well)
 - WriterP (simple text editor)
 - Yahoomail (good with Yahoo accounts - if this cannot be set up in other email clients - can we set it up in Microsoft Outlook app?) (Email client)
 - Youtube
