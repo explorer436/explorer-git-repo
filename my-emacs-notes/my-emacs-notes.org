@@ -445,6 +445,33 @@ How to do case insensitive search?
 
 ----------------
 
+*** Joining lines in emacs
+
+       How to join lines into one in emacs?
+
+       1. ~~Meta ^~~
+
+	  Either visually select and call Meta ^ to join the visually selected lines.
+	  Or place the point anywhere on the last line of the group of lines that need joining and call Meta ^ repeatedly until all the lines are merged.
+          It leaves one space between all of the now joined lines.
+
+       2. ~~Meta join-line~~ : This will join two lines. Bind it to a convenient keystroke.
+
+       3. Select paragraph/lines by ~~Meta h~~ or ~~Ctrl SPC~~. Press ~~Meta q~~
+
+       4. Multiple Cursors combined with ~~Meta ^~~ will collapse all selected lines into one with all extraneous white-space removed.
+
+          For example to select an entire buffer, invoke multiple cursors mode, collapse into one line, and then disable multiple cursors mode:
+
+          #+BEGIN_SRC
+          C-x h
+          M-x mc/edit-lines
+          M-^
+          C-g
+          #+END_SRC
+
+----------------
+
 *** Plugins
 
 **** Avy
