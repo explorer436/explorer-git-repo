@@ -22,7 +22,8 @@ Another alternative is, simply copy the ~.emacs~ file from this computer to the 
 
 *** How to add MELPA as another source of packages in addition to GNU's elpa?
     
-    1. Hint: In order to avoid having to do this multiple times when switching between multiple machines, save the ~.emacs~ settings in GitHub so that you can just move it from machine to machine.
+    1. Hint: In order to avoid having to do this multiple times when switching between multiple machines,
+       save the init files in GitHub so that you can just move them from machine to machine.
     2. The alternative is:
        In a browser, visit MELPA website.
        Grab the URL for the package archive "https://melpa.org/packages/"
@@ -43,24 +44,10 @@ To change to mode from some other mode : Meta x evil-mode
 
     You can use the command load-file (Meta x load-file, then press return twice to accept the default filename, which is the current file being edited).
 
-    You can also just move the point to the end of any sexp and press Ctrl xCtrl e to execute just that sexp. Usually it's not necessary to reload the whole file if you're just changing a line or two.
+    You can also just move the point to the end of any sexp and press Ctrl xCtrl e to execute just that sexp.
+    Usually it's not necessary to reload the whole file if you're just changing a line or two.
 
     https://stackoverflow.com/a/2580726
-
--------------
-
-*** Multiple cursors
-
-    Install multiple-cursors and (the dependent package cl-lib) first.
-    If you want to start multiple cursors at a word (or a tag or anything) that exists on multiple lines (the lines do not have to be continuous),
-    mark the word (using Ctrl space) and then do Ctrl Shift . (dot).
-    This will start multiple cursors on the multiple lines.
-    After that, you can do normal operations like delete, insert, cut, copy, etc.
-    There are a lot of features that can be done using this.
-    This needs a lot more research.
-    But this should be a good starting point to insert/delete text on multiple lines based on certain common words in multiple lines.0
-
-    https://github.com/magnars/multiple-cursors.el
 
 -------------
 
@@ -156,12 +143,12 @@ To change to mode from some other mode : Meta x evil-mode
     Ctrl y would yank the more recent kill.
     But the previous text is not lost.
     You can get back to it using the Meta y command.
-    After you have done Ctrl y to get the most recent kill, typing Meta y replaces that yanked text with the previous kill.
+    After you have done ~~Ctrl y~~ to get the most recent kill, typing ~~Meta y~~ replaces that yanked text with the previous kill.
     Typing Meta y again and again brings in earlier and earlier kills.
     When you have reached the text you are looking for, you do not have to do anything to keep it.
     Just go on with your editing, leaving the yanked text where it is.
 
-    If you Meta y enough times, you come back to the starting point (the most recent kill).
+    If you ~~Meta y~~ enough times, you come back to the starting point (the most recent kill).
 
 **** Replace functions
 
@@ -491,5 +478,20 @@ How to do case insensitive search?
     Enter a commit message and hit ~Ctrl c Ctrl c~
 
     After you have a commit, to push it to the remote repository, hit ~P~. It gives you options about where to push it and some other details.
+
+------------
+
+**** Multiple cursors
+
+    Install multiple-cursors and (the dependent package cl-lib) first.
+    If you want to start multiple cursors at a word (or a tag or anything) that exists on multiple lines (the lines do not have to be continuous),
+    mark the word (using Ctrl space) and then do Ctrl Shift . (dot).
+    This will start multiple cursors on the multiple lines.
+    After that, you can do normal operations like delete, insert, cut, copy, etc.
+    There are a lot of features that can be done using this.
+    This needs a lot more research.
+    But this should be a good starting point to insert/delete text on multiple lines based on certain common words in multiple lines.0
+
+    https://github.com/magnars/multiple-cursors.el
 
 ------------
