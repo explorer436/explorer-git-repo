@@ -484,6 +484,8 @@ How to do case insensitive search?
 
     After you have a commit, to push it to the remote repository, hit ~P~. It gives you options about where to push it and some other details.
 
+    https://magit.vc/manual/magit/Resolving-Conflicts.html
+
 ------------
 
 **** Multiple cursors
