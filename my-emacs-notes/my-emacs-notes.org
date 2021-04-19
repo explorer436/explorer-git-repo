@@ -8,7 +8,7 @@ If you are using Emacs in one machine,
 and if you want to set-up the exact same set-up settings in another machine,
 you need to view the list of installed packages from the package manager.
 
-To see a list of the available packages : Meta x list-packages
+To see a list of the available packages : ~~Meta x list-packages~~
 
 Run this command till you find the first row of installed package: "Ctrl s installed"
 
@@ -36,13 +36,13 @@ After making changes to the config to add MELPA as a source of packages, run the
   2. ~Meta x~ ~package-install~ RET (to launch package install mode)
   3. Type the name of the package you are looking for and when you find the package -> RET 
 
-To change to mode from some other mode : Meta x evil-mode
+To change to mode from some other mode : ~~Meta x evil-mode~~
 
 ------------
 
 *** How can I reload .emacs after changing it?
 
-    You can use the command load-file (Meta x load-file, then press return twice to accept the default filename, which is the current file being edited).
+    You can use the command load-file (~~Meta x load-file~~, then press return twice to accept the default filename, which is the current file being edited).
 
     You can also just move the point to the end of any sexp and press Ctrl xCtrl e to execute just that sexp.
     Usually it's not necessary to reload the whole file if you're just changing a line or two.
@@ -54,7 +54,7 @@ To change to mode from some other mode : Meta x evil-mode
 *** Functions
     
     To view the list of all available functions,
-    Meta x tab.
+    ~~Meta x tab~~
 
     You can further narrow down the list by typing the first characters of the names of the functions.
 
@@ -64,13 +64,12 @@ To change to mode from some other mode : Meta x evil-mode
 
     Navigation:
 
-    1. Go to the beginning of the file Meta < (M Shift ,)
-    1. Go to the end of the file Meta > (M Shift .)
-    1. How to go the first non-whitespace character in a line (The equivalent of ^ in Vim)? Alt + A
-    1. How to go the last non-whitespace character in a line (The equivalent of ^ in Vim)? ???
+    1. Go to the beginning of the file ~~Meta <~~ (M Shift ,)
+    1. Go to the end of the file ~~Meta >~~ (M Shift .)
+    1. How to go the first non-whitespace character in a line (The equivalent of ^ in Vim)? ~~Alt A~~
+    1. How to go the last non-whitespace character in a line (The equivalent of ^ in Vim)? ~~Alt E~~
 
     Move by screenfuls:
-
     | Command | Description                                                                                               |
     |---------+-----------------------------------------------------------------------------------------------------------|
     | Ctrl v  | Move forward one screenful                                                                                |
@@ -111,9 +110,10 @@ To change to mode from some other mode : Meta x evil-mode
     | Meta a  | Move back to beginning of sentence |
     | Meta e  | Move forward to end of sentence    |
 
-    Two other important cursor motion commands are Meta < (META Less-than),
-    which moves to the beginning of the whole text, and Meta > (META
-    Greater-than), which moves to the end of the whole text.
+    Two other important cursor motion commands are
+    Meta < (META Less-than), which moves to the beginning of the whole text,
+    and
+    Meta > (META Greater-than), which moves to the end of the whole text.
 
     On most terminals, the "<" is above the comma, so you must use the
     shift key to type it.  On these terminals you must use the shift key
@@ -285,6 +285,12 @@ To change to mode from some other mode : Meta x evil-mode
 
 ------------
 
+*** Macros
+
+    https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html
+
+------------
+
 *** Exporting
 
 You might want to print your notes, publish them on the web, or share them with people not using Org.
@@ -347,7 +353,6 @@ How to do case insensitive search?
    1. Indentation
    1. How to move an entire paragraph (or block of code) up? (like alt up arrow  or down arrow in visual studio code)
    1. How to move an entire line up? (like alt up arrow  or down arrow in visual studio code)
-   1. Macros
    1. Repeat command (the equivalent of . - the dot command in Vim)
    1. How to search in an entire directory for a word and replace it?
    1. How to display all the occurances of a word in a buffer(like the way it is done in Notepad++)
