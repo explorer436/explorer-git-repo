@@ -323,10 +323,11 @@ How to do case insensitive search?
     | g             | Refresh the listing in dired mode                                                                                                                                       |
 
     
-    | d | Flag this file for deletion (dired-flag-file-deletion).      |
-    | R | rename a file                                                |
-    | u | Remove the deletion flag (dired-unmark).                     |
-    | x | Delete files flagged for deletion (dired-do-flagged-delete). |
+    | w | When you are in dired mode, if you put the point on a file and press w, the name of the file will be copied into the kill ring. Makes it easier if you are trying to rename files. |
+    | d | Flag this file for deletion (dired-flag-file-deletion).                                                                                                                            |
+    | R | rename a file                                                                                                                                                                      |
+    | u | Remove the deletion flag (dired-unmark).                                                                                                                                           |
+    | x | Delete files flagged for deletion (dired-do-flagged-delete).                                                                                                                       |
 
 ------------
 
