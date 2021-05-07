@@ -898,7 +898,9 @@ EX RANGES
    ---------------------------------------------------------------------------------------------------
  
 *** Deleting
+
    Deletion
+
    | x X   | delete character under, before cursor      |
    | dm    | delete text of movement command m          |
    | dd D  | delete current line, to the end of line    |
@@ -938,6 +940,7 @@ EX RANGES
    1: #sometext
    2: #sometext
    3: #sometext
+
    If you want to delete the text before the pattern ":" (colon). I have used the following command to replace every :%s/^.*/\://
    If want to delete the texts after the pattern ":" (colon). I have used the following command to replace every :%s/\:.*$//
    I would like to learn other ways to do.
@@ -957,10 +960,12 @@ EX RANGES
    If you want a non-greedy solution, try - :%s/.\{-}Hello/Hello
    
    ---------------------------------------------------------------------------
-   Removing duplicate rows in vi :sort u
+
+   How to remove duplicate rows in vi :sort u
    
    ---------------------------------------------------------------------------
    How to “delete all blank(empty) lines” 
+
    To delete blank lines in vim (empty lines), use this command - :g/^$/d
    
    The g character says, “perform the following operation globally in this file.” (Operate on all lines in this file.)
@@ -970,7 +975,8 @@ EX RANGES
    In a similar way, to delete Lines Beginning With A certain text In Vim :g/^(enter text here)/d
    
    ---------------------------------------------------------------------------
-   delete line containing certain text in vim with prompt :%s/.*text.*\n//gc
+   How to delete line containing certain text in vim with prompt :%s/.*text.*\n//gc
+
    The substitute command works by 
    1. adding a wildcard
    2. and adding an end-of-line.
@@ -988,6 +994,20 @@ EX RANGES
    
    :%s/\s\+$//e
    
+   ---------------------------------------------------------------------------
+
+   How to delete text between all braces {} in vim?
+
+   You can do this with the global command. 
+   :g/{/normal f{da{
+
+   What is this doing:
+   For all lines containing a {, move to the first { on that line and delete everything from there up to and including a matching }.
+
+   If you want to add a ; at the end - which I suspect would be the next thing you'd want - you can add a A; at the end of that command.
+
+   Note: This might break if you have comments or strings containing {}s in your file.
+
    ---------------------------------------------------------------------------
  
 *** File comparison with Vim
