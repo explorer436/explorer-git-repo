@@ -1396,6 +1396,7 @@ EX RANGES
 | https://vimhelp.org/                                     |
 | https://sanctum.geek.nz/arabesque/advanced-vim-macros/   |
 | https://vim.fandom.com/wiki/Copy,_cut_and_paste          |
+| https://vim.fandom.com/wiki/Power_of_g                   |
 
    ------------------------------------------
 
