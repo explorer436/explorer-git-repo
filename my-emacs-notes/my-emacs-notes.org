@@ -323,11 +323,12 @@ How to do case insensitive search?
     | g             | Refresh the listing in dired mode                                                                                                                                       |
 
     
-    | w | When you are in dired mode, if you put the point on a file and press w, the name of the file will be copied into the kill ring. Makes it easier if you are trying to rename files. |
-    | d | Flag this file for deletion (dired-flag-file-deletion).                                                                                                                            |
-    | R | rename a file                                                                                                                                                                      |
-    | u | Remove the deletion flag (dired-unmark).                                                                                                                                           |
-    | x | Delete files flagged for deletion (dired-do-flagged-delete).                                                                                                                       |
+    | w             | When you are in dired mode, if you put the point on a file and press w, the name of the file will be copied into the kill ring. Makes it easier if you are trying to rename files.                                     |
+    | Ctrl x Ctrl q | Turn dired into editing mode. You can then edit the file names by hand or use M-% to replace foo with bar in the dired buffer. This will change the file names. Use C-c C-c so apply the changes, or C-c ESC to cancel |
+    | d             | Flag this file for deletion (dired-flag-file-deletion).                                                                                                                                                                |
+    | R             | rename a file                                                                                                                                                                                                          |
+    | u             | Remove the deletion flag (dired-unmark).                                                                                                                                                                               |
+    | x             | Delete files flagged for deletion (dired-do-flagged-delete).                                                                                                                                                           |
 
 ------------
 
