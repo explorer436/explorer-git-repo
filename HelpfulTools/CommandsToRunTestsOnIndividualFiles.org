@@ -8,6 +8,8 @@
 
     #+BEGIN_EXAMPLE
     mvn test -Dtest=com.packagename.classname
+
+    mvn test -Dtest=com.packagename.classname#nameOfTheMethod
     #+END_EXAMPLE
 
 **for a javascript project**
