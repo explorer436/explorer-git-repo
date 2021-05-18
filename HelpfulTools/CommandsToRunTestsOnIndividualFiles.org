@@ -6,6 +6,10 @@
     ./gradlew test --tests pagro.project.RunCukesTest*
     #+END_EXAMPLE
 
+    #+BEGIN_EXAMPLE
+    mvn test -Dtest=com.packagename.classname
+    #+END_EXAMPLE
+
 **for a javascript project**
 
     #+BEGIN_EXAMPLE

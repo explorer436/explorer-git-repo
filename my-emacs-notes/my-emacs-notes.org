@@ -321,14 +321,27 @@ How to do case insensitive search?
 
     | Ctrl x Ctrl f | Visiting (opening) files. (This puts us in Emac's dired mode - directory editor). To create a new file, just start typing the name of the file that you want to create. |
     | g             | Refresh the listing in dired mode                                                                                                                                       |
-
+    | m             | mark a file in dired mode                                                                                                                                               |
+    | u             | un-mark a file in dired mode                                                                                                                                            |
+    | U             | un-mark all files                                                                                                                                                       |
     
     | w             | When you are in dired mode, if you put the point on a file and press w, the name of the file will be copied into the kill ring. Makes it easier if you are trying to rename files.                                     |
     | Ctrl x Ctrl q | Turn dired into editing mode. You can then edit the file names by hand or use M-% to replace foo with bar in the dired buffer. This will change the file names. Use C-c C-c so apply the changes, or C-c ESC to cancel |
     | d             | Flag this file for deletion (dired-flag-file-deletion).                                                                                                                                                                |
-    | R             | rename a file                                                                                                                                                                                                          |
+    | C             | copy a file                                                                                                                                                                                                 |
+    | R             | rename/move a file                                                                                                                                                                                                     |
+    | D             | delete a file                                                                                                                                                                                               |
     | u             | Remove the deletion flag (dired-unmark).                                                                                                                                                                               |
     | x             | Delete files flagged for deletion (dired-do-flagged-delete).                                                                                                                                                           |
+
+
+    Supposing you wanted to delete a bunch of files, but wanted to see them first to visually check you are deleting the right ones, you might do the following:
+
+    1. mark the files manually, or using a regular expression
+    1. * t invert the selection
+    1. k hide the selected files so now you see the ones you originally selected for deletion so you can check you got the right ones
+    1. * s to select those visible files
+    1. D to delete them
 
 ------------
 
@@ -337,7 +350,9 @@ How to do case insensitive search?
     https://www.gnu.org/software/emacs/manual/html_node/emacs/Interactive-Shell.html
 
     To launch terminal within emacs, ~Meta x shell~.
-    To kill it, ~Ctrl-x k~.
+    To kill it, ~Ctrl-x k~turn dired into editing mode. You can then edit the file names by hand or
+use M-% to replace foo with bar in the dired buffer. This will change the file names
+use C-c C-c so apply the changes, or C-c ESC to cancel.
 
 -------------
     
