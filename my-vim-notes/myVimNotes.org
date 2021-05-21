@@ -1156,6 +1156,8 @@ EX RANGES
    	* @@ 	execute your macro again 
    #+END_EXAMPLE
    
+   How to run a macro on the rest of the lines in the file without knowing the number of times it needs to be run?
+   
    ----------------------------
    
    In Vim, how do we apply a macro to a set of lines?
