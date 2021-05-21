@@ -359,9 +359,6 @@ use C-c C-c so apply the changes, or C-c ESC to cancel.
 *** Find the answers for the following:
 
    1. How to rewrite the configuration file in org mode?
-   1. Sort a bunch of lines alphabetically.
-   1. Join the next line with the current one
-   1. Using  marks in a file/directory
    1. Completion. Either complete words from dictionary or context aware completion.
       Completing words based on words used in the current buffer or project.
       Language aware completion.
@@ -370,19 +367,10 @@ use C-c C-c so apply the changes, or C-c ESC to cancel.
    1. Indentation
    1. How to move an entire paragraph (or block of code) up? (like alt up arrow  or down arrow in visual studio code)
    1. How to move an entire line up? (like alt up arrow  or down arrow in visual studio code)
-   1. Repeat command (the equivalent of . - the dot command in Vim)
    1. How to search in an entire directory for a word and replace it?
    1. How to display all the occurances of a word in a buffer(like the way it is done in Notepad++)
-   1. How to search in an entire directory for a specific file?
-      Many people seem to be suggesting the package "Projectile". Take a look at it.
    1. How to remapping capslock key to  Ctrl
-   1. Go through all the bindings for Vim and find their equivalents for emacs
    1. How to get a Tree view of directories as opposed to using dired for navigating project directories?
-   1. How to go to the pairing paranthesis?
-      https://stackoverflow.com/questions/9845661/with-emacs-how-to-go-to-the-pairing-balancing-parentheses
-   1. A simple way to duplicate lines (one or more than one times) in emacs
-      https://stackoverflow.com/questions/88399/how-do-i-duplicate-a-whole-line-in-emacs
-      https://www.emacswiki.org/emacs/CopyingWholeLines#:~:text=Standard%20Emacs,-There%20are%20various&text=You%20can%20also%20use%20either,Meta%20key%20while%20you%20click.&text='C%2Da%20C%2DSPC%20C%2De%20M%2Dw,current%20line%2C%20including%20the%20newline.
    1. How to read internet articles in plain text mode in emacs?
       This is a workflow that I find useful.
       Copy the link for the article. Open it in Tor-browser/Firefox reader mode. Copy the contents and paste them into a buffer in emacs and read it there.
@@ -517,5 +505,11 @@ use C-c C-c so apply the changes, or C-c ESC to cancel.
     But this should be a good starting point to insert/delete text on multiple lines based on certain common words in multiple lines.0
 
     https://github.com/magnars/multiple-cursors.el
+
+------------
+**** Org Mode
+
+    How to send notifications from Org Mode planner/schedueler?
+    If this works, can this be a replacement for Google Calendar?
 
 ------------
