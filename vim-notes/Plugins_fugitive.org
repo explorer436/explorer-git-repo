@@ -2,7 +2,7 @@
 
 https://github.com/tpope/vim-fugitive/blob/master/doc/fugitive.txt
 
-To launch the git status window:
+**** To launch the git status window
 
 | :G       | git status |
 | :Gstatus | git status |
@@ -22,7 +22,7 @@ In the Gstatus window:
 | Enter   | open a file for quick review. This opens that specific file in a split below. After opening the file, to see the diff view for that specific file, run :Gdiff                                            |
 | C       | commit window                                                                                                                                                                                            |
 
-*Working with the git index*
+**** Working with the git index
 
 The git index is where you put changes that you want to be included in the next commit.
 If you are used to working with the command line git client, you might think of the index as an abstract concept.
@@ -42,7 +42,7 @@ As you make changes to your working copy, its contents begin to diverge from tho
 Staging a file updates the contents of the index file to match those of the working copy.
 When you commit your work, it is the contents of the index file that are saved with that commit object.
 
-*Comparing working copy with index version using :Gdiff*
+***** Comparing working copy with index version using :Gdiff
 
 When you run::Gdiff on a work tree file without any arguments, fugitive performs a vimdiff against the index version of the file. This opens a vertical split window, with the index file on the left and the working copy on the right. The files always appear in that order, so you can commit that to memory.Wholesale reconciliationThe :Gread and :Gwrite commands can either add a file to the index or reset the file, depending on where they are called from. The following table and diagrams summarize the possibilities:
 
@@ -52,7 +52,7 @@ When you run::Gdiff on a work tree file without any arguments, fugitive performs
 | :Gwrite | index         | checkout file |
 | :Gread  | index         | stage file    |
 
-*Piecemeal reconciliation*
+***** Piecemeal reconciliation
 
 Vim’s built in :diffget and :diffput commands work a bit like :Gread and :Gwrite, except that they are more granular.
 Whereas :Gread will completely overwrite the current buffer with the contents of the other buffer, :diffget will only pull in a patch at a time.
@@ -65,7 +65,7 @@ Whereas :Gread will completely overwrite the current buffer with the contents of
 
 After making changes to the index file (using :diffget and/or :diffput), the status bar at the bottom will show a (+) plus sign indicating unsaved changes to the index file. Run :w on the index file to save the changes and stage the file. If the index file is not the active buffer, run :wa to save all the open buffers. This will make sure that the changes to the index file are saved and staged. If not, the changes to the index file may not be persisted and we would have to start all over again.
 
-*resolving merge conflicts with vimdiff*
+**** Resolving merge conflicts with vimdiff
 
 :Gdiff on a conflicted file opens 3-way diffWhen you run :Gdiff on a conflicted file, fugitive opens 3 split windows. They always appear in this order:
 
@@ -75,7 +75,7 @@ After making changes to the index file (using :diffget and/or :diffput), the sta
 
 The ‘target’ branch is the one that is active when you run git merge. Or in other words, it’s the HEAD branch. The ‘merge’ branch is the one that is named in the git merge command. In this scenario the ‘master’ branch is the target, and the ‘feature’ branch is merged into target, making it the merge branch.
 
-*Strategies for reconciling 3-way diffs*
+**** Strategies for reconciling 3-way diffs
 
 There are two basic strategies for reconciling a 3-way diff. You can either keep your cursor in the middle file, and run :diffget with the bufspec for the file containing the change you want to keep. Or you can position your cursor on the change that you want to keep, and run :diffput with the bufspec for the working copy file. We’ll take a look at each of these strategies in turn, starting with diffget.
 
@@ -87,7 +87,7 @@ In the context of a 2-way diff, the :diffget and :diffput commands are unambiguo
 | target         | //2      |
 | merge          | //3      |
 
-*Resolving a 3-way diff with :diffget*
+**** Resolving a 3-way diff with :diffget
 
 The :diffget command modifies the current buffer by pulling a change over from one of the other buffers. In resolving a merge conflict, we want to treat target and merge parents as reference copies, pulling hunks of changes from those into the conflicted working copy. That means that we want to keep the middle buffer active, and run diffget with a reference to the buffer containing the change that we want to use.
 
@@ -98,7 +98,7 @@ The :diffget command modifies the current buffer by pulling a change over from o
 
 Note that Vim does not automatically recalculate the diff colors after you run :diffget. You can tell Vim to do this by running :diffupdate.
 
-*Resolving a 3-way diff with :diffput*
+**** Resolving a 3-way diff with :diffput
 
 The :diffput command modifies another buffer by pushing a change from the active buffer into it. In the context of a 3-way merge conflict, we want to push changes from the target and merge versions into the working copy.
 
@@ -112,14 +112,17 @@ In a 2-way diff, the diffget and diffput commands require no argument. Vim provi
 
 When you do a 3-way diff between working copy, target and merge parents, fugitive assumes that if you run dp from either of the parent buffers, you want to put the change into the working copy. So even though the dp mapping normally only works in a 2-way diff, you can use it in this special case of a 3-way diff.
 
-*Keeping one parent version in its entirety*
+**** Keeping one parent version in its entirety
 
-In reality, it’s often the case that one of the parent versions is to be kept wholesale, and the other version is to be discarded. In this scenario, fugitive’s :Gwrite command comes in handy. This overwrites the working tree and index copies with the contents of the currently active file.
+In reality, it’s often the case that one of the parent versions is to be kept wholesale, and the other version is to be discarded.
+In this scenario, fugitive’s :Gwrite command comes in handy.
+This overwrites the working tree and index copies with the contents of the currently active file.
 
-If you run :Gwrite from the target or merge version of a file, fugitive raises a warning. This is to protect you from accidentally overwriting the working copy and index files when you’ve carefully cherry picked the changes from the parent versions. If you want to stage either of the parent versions in their entirety, use :Gwrite! to show you really mean it.
+If you run :Gwrite from the target or merge version of a file, fugitive raises a warning.
+This is to protect you from accidentally overwriting the working copy and index files when you’ve carefully cherry picked the changes from the parent versions.
+If you want to stage either of the parent versions in their entirety, use :Gwrite! to show you really mean it.
 
-
-Useful commands
+**** Useful commands
 
 | command    | effect                                       |
 | [c         | jump to previous hunk                        |
