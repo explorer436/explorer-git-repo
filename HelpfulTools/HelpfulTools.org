@@ -13,12 +13,22 @@
 
 **** Browsers
 
-1. Firefox(lastpass, instapaper, Dark Reader)
-2. Tor browser
+1. Brave browser
+2. Firefox(lastpass, instapaper, Dark Reader)
+3. Tor browser
 
 **** Miscellaneous
 
 Calibre ebook editor and viewer
+
+**** Work related
+
+- Webstorm
+- Redis on Windows or other OSs
+- Ready API
+- NodeJS
+- Java
+  
 
 *** Tools for Windows
 
