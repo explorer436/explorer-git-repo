@@ -72,11 +72,14 @@ That's it? Yup! That's it. Let me break down the steps:
 
 Let's discuss the second way.
 
-The second method is to search and replace in select multiple files instead of all files using buffers. Here we can choose which files we want to perform select and replace.
+The second method is to search and replace in select multiple files instead of all files using buffers.
+Here we can choose which files we want to perform select and replace.
 
     1. Clear our buffers (:Buffers) first. Our buffers list should contain only the needed files. We can clear it with %bd | e# | bd# (or restart Vim).
     2. Run :Files.
     3. Select all files you want to perform search and replace on. To select multiple files, use Tab / Shift+Tab. This is only possible if we have -m in FZF_DEFAULT_OPTS.
     4. Run :bufdo %s/pizza/donut/g | update.
 
-Our command :bufdo %s/pizza/donut/g | update looks similar to :cfdo %s/pizza/donut/g | update. That's because they are. Instead of performing substitution on all quickfix (cfdo) entries, we perform our substitution on all buffer (bufdo) entries.
+Our command :bufdo %s/pizza/donut/g | update looks similar to :cfdo %s/pizza/donut/g | update.
+That's because they are.
+Instead of performing substitution on all quickfix (cfdo) entries, we perform our substitution on all buffer (bufdo) entries.
