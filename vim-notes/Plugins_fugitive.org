@@ -21,6 +21,7 @@ In the Gstatus window:
 | p       | interactive staging. run `git add –patch` for current file                                                                                                                                               |
 | Enter   | open a file for quick review. This opens that specific file in a split below. After opening the file, to see the diff view for that specific file, run :Gdiff                                            |
 | C       | commit window                                                                                                                                                                                            |
+| Gread   | checkout file (discard local changes)                                                                                                                                                                    |
 
 **** Working with the git index
 
@@ -44,7 +45,11 @@ When you commit your work, it is the contents of the index file that are saved w
 
 ***** Comparing working copy with index version using :Gdiff
 
-When you run::Gdiff on a work tree file without any arguments, fugitive performs a vimdiff against the index version of the file. This opens a vertical split window, with the index file on the left and the working copy on the right. The files always appear in that order, so you can commit that to memory.Wholesale reconciliationThe :Gread and :Gwrite commands can either add a file to the index or reset the file, depending on where they are called from. The following table and diagrams summarize the possibilities:
+When you run::Gdiff on a work tree file without any arguments, fugitive performs a vimdiff against the index version of the file. This opens a vertical split window, with the index file on the left and the working copy on the right. The files always appear in that order, so you can commit that to memory. 
+
+***** Wholesale reconciliation
+
+The :Gread and :Gwrite commands can either add a file to the index or reset the file, depending on where they are called from. The following table and diagrams summarize the possibilities:
 
 | command | active window | affect        |
 | :Gwrite | working copy  | stage file    |
@@ -79,7 +84,7 @@ The ‘target’ branch is the one that is active when you run git merge. Or in 
 
 There are two basic strategies for reconciling a 3-way diff. You can either keep your cursor in the middle file, and run :diffget with the bufspec for the file containing the change you want to keep. Or you can position your cursor on the change that you want to keep, and run :diffput with the bufspec for the working copy file. We’ll take a look at each of these strategies in turn, starting with diffget.
 
-Introducing buffspecs
+***** Introducing buffspecs
 
 In the context of a 2-way diff, the :diffget and :diffput commands are unambiguous. If you ask Vim to get the diff from the other window, there is only one place for it to look. When you do a 3-way merge, things get a little more complex. This time, it would be ambiguous if you were to tell Vim to fetch the changes from the other window. You have to specify which buffer to fetch the changes from by providing a [bufspec].The buffspec could either be the buffer number, or a partial match for the buffer’s name. Buffer numbers are assigned sequentially, so they will differ from session to session, but you can always be sure that they will uniquely identify their buffer.Fugitive follows a consistent naming convention when creating buffers for the target and merge versions of a conflicted file. The parent file from the target branch always includes the string //2, while the parent from the merge branch always contains //3. These partial matches are sufficient to uniquely identify the target and merge parents when using the :diffget command.
 
