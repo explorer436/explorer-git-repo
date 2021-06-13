@@ -469,6 +469,10 @@ use C-c C-c so apply the changes, or C-c ESC to cancel.
 
 ----------------
 
+*** Open questions
+
+    Can we change Ctrl x to leader key in normal mode whilt using evil mode?
+
 *** Plugins
 
 **** Avy

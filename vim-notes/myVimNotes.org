@@ -260,6 +260,7 @@ OFFSETS IN SEARCH COMMANDS
    ------------------------------------------
 
 *** Terminal
+
    Launch terminal from within Vim using `:term`
  
    ------------------------------------------
@@ -579,9 +580,31 @@ EX RANGES
     Tip: the numbers on buffers do not change during a session.
 
     -------------------------------------------------------------------------------------
+
+    Get the name of the current file 
+
     When working in a file/buffer, how to paste the name of the file/buffer in it?
     "%p
     This is because, the name of the file is available in the register "%".
+    
+    
+    Register % contains the name of the current file, and register # contains the name of the alternate file. These registers allow the name of the current or alternate files to be displayed or inserted. The name, or full path, or directory containing the file can be used.
+
+    For example, in directory /abc the command vim def/my.txt would edit file /abc/def/my.txt. The following commands could be entered to display the information shown.
+    
+    | :echo @%                | def/my.txt      | directory/name of file (relative to the current working directory of /abc)                                                               |
+    | :echo expand('%:t')     | my.txt          | name of file ('tail')                                                                                                                    |
+    | :echo expand('%:p')     | /abc/def/my.txt | full path                                                                                                                                |
+    | :echo expand('%:p:h')   | /abc/def        | directory containing file ('head')                                                                                                       |
+    | :echo expand('%:p:h:t') | def             | First get the full path with :p (/abc/def/my.txt), then get the head of that with :h (/abc/def), then get the tail of that with :t (def) |
+    | :echo expand('%:r')     | def/my          | name of file less one extension ('root')                                                                                                 |
+    | :echo expand('%:e')     | txt             | name of file's extension ('extension')                                                                                                   |
+    
+    The following commands insert lines consisting of the full path of the current and alternate files into the buffer:
+
+    :put =expand('%:p')
+    :put =expand('#:p')
+
     -------------------------------------------------------------------------------------
 
     (This is the general method to update multiple java files at once)
