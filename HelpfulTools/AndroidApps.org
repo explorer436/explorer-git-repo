@@ -30,7 +30,7 @@
 - OsmAnd (maps)
 - Outlook (Microsoft) (For FusionAlliance Webmail and hotmail accounts - might also work for Gmail and other accounts) (Email client)
 - Podcasts (Google) (Podcasts)
-- Quora	 (Reading)
+- Quora	 (Reading) - Beware of this. This could turn out to be a time pit. You are probably better off logging into the website in a computer when necessary.
 - Signal (Messaging apps)
 - Spotify (Music)
 - Startpage search engine app
