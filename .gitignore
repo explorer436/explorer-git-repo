@@ -45,6 +45,7 @@ Thumbs.db
 *.swn
 tags
 *.md.backup
+*#
 
 .project
 
