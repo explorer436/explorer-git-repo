@@ -14,7 +14,7 @@
 - Firefox (extensions - Dark Reader) (set startpage.com as the default search engine)
 - GPS Tools (good app with various features to determine gps info)
 - Geeks for Geeks (optional)
-- GitHub
+- GitHub (Preferable to look at repositories in a browser. The app is not all that helpful)
 - Glassdoor (Job search) (optional)
 - HBO Max (streaming)
 - Instapaper (Reading articles)
