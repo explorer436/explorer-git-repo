@@ -834,15 +834,24 @@ EX RANGES
    To delete a word but not the the whitespace after the word - de (ve to select in visual mode)
    
    ---------------------------------------------------------------------------
-   To remove unnecessary spaces and tabs in empty lines in Vim-
+   To remove unnecessary spaces and tabs in empty lines in Vim-:
    
-   In a search, \s finds whitespace (a space or a tab), and \+ finds one or more occurrences.
+   * (these don't seem to work with eclipse vim plugin and emacs vi mode)
    
-   The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
+       In a search, \s finds whitespace (a space or a tab), and \+ finds one or more occurrences.
    
-   `:%s/\s\+$//e`
+       The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
    
-   (this did not work with eclipse vim plugin)
+       `:%s/\s\+$//e`
+   
+   * How to delete whitespace in blank lines?
+
+       :%s/^\s\+$//
+
+       % — execute for all lines
+       s/^\s\+$// — search and replace command:
+             search lines that only have whitespaces
+             and replace with an empty string.
    
    ---------------------------------------------------------------------------
    Delete all text before search pattern : 
