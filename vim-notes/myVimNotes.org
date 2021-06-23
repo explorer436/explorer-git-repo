@@ -842,7 +842,7 @@ EX RANGES
    
        The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
    
-       `:%s/\s\+$//e`
+       :%s/\s\+$//e
    
    * How to delete whitespace in blank lines?
 
