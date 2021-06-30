@@ -2,7 +2,10 @@
 
 **** IDEs : 
 
-- Eclipse (Optional Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4) 
+The Thinkpad laptop seems to have trouble when we launch Eclipse. IntelliJ is probably just as bad.
+It would be nice to find a minimal editor that would still work well for Java development.
+
+- Eclipse (Optional Plugins : TestNG, EclEmma Code Coverage, Spring Tools 4). This is very resource intensive.
 - Visual Studio Code (see the file for it for details)
 - IntelliJ Idea - Try and stay away from this. This is very resource intensive.
 
