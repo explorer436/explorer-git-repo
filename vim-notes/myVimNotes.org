@@ -1,13 +1,6 @@
-:CONTENTS:
+* My Vim notes                                                          :TOC:
+  - [[#helpful-tips-related-to-configuration-and-other-things-related-to-vim-that-i-find-useful][Helpful tips related to configuration and other things related to Vim that I find useful.]]
 
-:END:
-:PROPERTIES:
-:TOC:      :include all
-:END:
-
-* My Vim notes
-  
-  
 ** Helpful tips related to configuration and other things related to Vim that I find useful.
 
 *** Movement
