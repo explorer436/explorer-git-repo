@@ -809,8 +809,6 @@ EX RANGES
  
 *** Deleting
 
-   Deletion
-
    | x X   | delete character under, before cursor      |
    | dm    | delete text of movement command m          |
    | dd D  | delete current line, to the end of line    |
@@ -818,7 +816,7 @@ EX RANGES
    | :rd↵  | delete range r lines                       |
    | :rdx↵ | delete range r lines into register x       |
 
-   vim delete up until a word
+***** Vim delete up until a word
 
     #+BEGIN_EXAMPLE
    Put your cursor at the point you want to start at.
@@ -828,13 +826,15 @@ EX RANGES
    then hit d to delete the text 
     #+END_EXAMPLE
    
-   ---------------------------------------------------------------------------
-   To delete a word along with the whitespace after the word - dw (vw to select in visual mode)
+***** Delete a word along with the whitespace after the word 
+
+     dw (vw to select in visual mode)
    
-   To delete a word but not the the whitespace after the word - de (ve to select in visual mode)
+***** Delete a word but not the the whitespace after the word 
    
-   ---------------------------------------------------------------------------
-   To remove unnecessary spaces and tabs in empty lines in Vim-:
+     de (ve to select in visual mode)
+   
+***** Delete unnecessary spaces and tabs in empty lines in Vim-:
    
    * (these don't seem to work with eclipse vim plugin and emacs vi mode)
    
@@ -844,7 +844,7 @@ EX RANGES
    
        :%s/\s\+$//e
    
-   * How to delete whitespace in blank lines?
+***** Delete whitespace in blank lines
 
        :%s/^\s\+$//
 
@@ -853,8 +853,8 @@ EX RANGES
              search lines that only have whitespaces
              and replace with an empty string.
    
-   ---------------------------------------------------------------------------
-   Delete all text before search pattern : 
+***** Delete all text before search pattern
+
    If you have a file that looks like below
    1: #sometext
    2: #sometext
@@ -878,12 +878,12 @@ EX RANGES
    abcHellodefHelloghi - it will become - Helloghi
    If you want a non-greedy solution, try - :%s/.\{-}Hello/Hello
    
-   ---------------------------------------------------------------------------
 
-   How to remove duplicate rows in vi :sort u
+***** Delete duplicate rows in vi 
+      
+      :sort u
    
-   ---------------------------------------------------------------------------
-   How to “delete all blank(empty) lines” 
+***** delete all blank(empty) lines
 
    To delete blank lines in vim (empty lines), use this command - :g/^$/d
    
@@ -893,29 +893,27 @@ EX RANGES
    
    In a similar way, to delete Lines Beginning With A certain text In Vim :g/^(enter text here)/d
    
-   ---------------------------------------------------------------------------
-   How to delete line containing certain text in vim with prompt :%s/.*text.*\n//gc
+***** Delete line containing certain text in vim with prompt 
+
+   :%s/.*text.*\n//gc
 
    The substitute command works by 
    1. adding a wildcard
    2. and adding an end-of-line.
    
-   ---------------------------------------------------------------------------
-   How to delete all lines that do NOT contain a certain word in Vim?
+***** Delete all lines that do NOT contain a certain word in Vim
    
    `:%g!/price/d`
    
    to delete every line that doesn't contain the word "price"
    
-   ---------------------------------------------------------------------------
+***** Delete trailing whitespaces at the end of each line
    
    The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
    
    :%s/\s\+$//e
    
-   ---------------------------------------------------------------------------
-
-   How to delete text between all braces {} in vim?
+***** Delete text between all braces {} in vim
 
    You can do this with the global command. 
    :g/{/normal f{da{
@@ -927,8 +925,6 @@ EX RANGES
 
    Note: This might break if you have comments or strings containing {}s in your file.
 
-   ---------------------------------------------------------------------------
- 
 *** File comparison with Vim
 
    Comparing two files in Vim
