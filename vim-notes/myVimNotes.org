@@ -1,7 +1,6 @@
-* My Vim notes                                                          :TOC:
-  - [[#helpful-tips-related-to-configuration-and-other-things-related-to-vim-that-i-find-useful][Helpful tips related to configuration and other things related to Vim that I find useful.]]
+* My Vim notes
 
-** Helpful tips related to configuration and other things related to Vim that I find useful.
+Helpful tips related to configuration and other things related to Vim that I find useful.
 
 *** Movement
 
@@ -258,7 +257,6 @@ OFFSETS IN SEARCH COMMANDS
 	To do something only to the visually selected non-empty lines, use the same approach.
 
    ------------------------------------------
-
 
 *** Marks
    https://vim.fandom.com/wiki/Using_marks
@@ -873,7 +871,6 @@ EX RANGES
    abcHellodefHelloghi - it will become - Helloghi
    If you want a non-greedy solution, try - :%s/.\{-}Hello/Hello
    
-
 ***** Delete duplicate rows in vi 
       
       :sort u
@@ -1313,7 +1310,6 @@ EX RANGES
    - EasyMotion for rapid motion throughout a document without the use of the mouse
    
    - Additional support for languages such as Markdown
-   
    
 *** Terminal
 
