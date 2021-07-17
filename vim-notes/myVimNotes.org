@@ -259,11 +259,6 @@ OFFSETS IN SEARCH COMMANDS
 
    ------------------------------------------
 
-*** Terminal
-
-   Launch terminal from within Vim using `:term`
- 
-   ------------------------------------------
 
 *** Marks
    https://vim.fandom.com/wiki/Using_marks
@@ -816,7 +811,7 @@ EX RANGES
    | :rd↵  | delete range r lines                       |
    | :rdx↵ | delete range r lines into register x       |
 
-***** Vim delete up until a word
+***** Delete up until a word
 
     #+BEGIN_EXAMPLE
    Put your cursor at the point you want to start at.
@@ -883,7 +878,7 @@ EX RANGES
       
       :sort u
    
-***** delete all blank(empty) lines
+***** Delete all blank(empty) lines
 
    To delete blank lines in vim (empty lines), use this command - :g/^$/d
    
@@ -891,7 +886,9 @@ EX RANGES
    The forward slash characters enclose the pattern I’m trying to match. In this case I want to match blank lines, so I use the regular expression ^$. Here the ^ means “beginning of line,” and $ means “end of line,” so with no characters in between them, this vim regex means “blank line.” (If I had typed ^abc$, that would mean, “find a line with only the sequence of characters ‘abc’”.)
    The d at the end of the command says, “When you find this pattern, delete the line.”
    
-   In a similar way, to delete Lines Beginning With A certain text In Vim :g/^(enter text here)/d
+***** Delete Lines Beginning With A certain text In Vim 
+
+   :g/^(enter text here)/d
    
 ***** Delete line containing certain text in vim with prompt 
 
@@ -903,9 +900,7 @@ EX RANGES
    
 ***** Delete all lines that do NOT contain a certain word in Vim
    
-   `:%g!/price/d`
-   
-   to delete every line that doesn't contain the word "price"
+   :%g!/price/d  - this deletes every line that doesn't contain the word "price"
    
 ***** Delete trailing whitespaces at the end of each line
    
@@ -928,6 +923,8 @@ EX RANGES
 *** File comparison with Vim
 
    Comparing two files in Vim
+   
+***** Option 1:
 
    Open the side by side view:
    Ctrl+w v
@@ -939,7 +936,7 @@ EX RANGES
    (from terminal)
    vimdiff file1.txt file2.txt
    
-   ------------------------------
+***** Option 2:
    
    Or just open the first file in VIM, then 
    :vert diffsplit ./file2 (if file2 is in the same folder as file1)
@@ -948,8 +945,6 @@ EX RANGES
    
    :vert makes it split the screen vertically.
    diffsplit does a diff, and splits the files and scrolls locks them.
-
-   ------------------------------------------
 
 *** Grep
 
@@ -965,7 +960,6 @@ EX RANGES
     
     How to exclude one specific folder or a list of folders from the search results? e.g. 'node_modules' in a javascript project?
     
-    ---------------------------------------------------------------------------
 *** Installation
 
     In Redhat Linux, gVim can be installed using this : sudo yum install vim-X11
@@ -989,7 +983,6 @@ EX RANGES
    
    --------------------------------------------
    
-   
    How to insert white spaces before a line?
    Here's one way to move selected text over a few spaces:
    
@@ -1000,8 +993,6 @@ EX RANGES
    
    What you've done is replace the beginning of each selected line (the ^ symbol means "the beginning of the line") with spaces. 
    
-   --------------------------------------------
-
 *** Line numbers
 
    To display line numbers :set number (To turn off the line number display :set nonumber)
@@ -1010,8 +1001,6 @@ EX RANGES
    
    Relative Line Numbers : To display line numbers relative to the line with the cursor, :set relativenumber or :set norelativenumber
    
-   ------------------------------------------
-
 *** Lower case Upper case
 
    How to change lower case letters words to upper case words? How to change upper case words to lower case words?
@@ -1026,8 +1015,6 @@ EX RANGES
        
    Alternatively(easier to remember), you can visually select text then press ~ to toggle case, or U to convert to uppercase, or u to convert to lowercase. 
    
-   ------------------------------------------
-
 *** Manual insertion of numbered lists
 
    How to insert numbered bullet list for a few lines in a file?
@@ -1050,13 +1037,11 @@ EX RANGES
    
    To add some characters (., :, )) after the numbers, select them in visual block (Ctrl+v), then append the character (A, type the character, then finish with Esc).
    
-   ------------------------------------------
-
 *** Macros
 
    Recording a macro is a great way to perform a one-time task, or to get things done quickly when you don't want to mess with Vim script or mappings, or if you do not yet know how to do it more elegantly. 
 
-   Recording a macro
+***** Recording a macro
    
    	Each register is identified by a letter a to z. To enter a macro, type: q<letter><commands>q
    	
@@ -1071,11 +1056,9 @@ EX RANGES
    	* @@ 	execute your macro again 
    #+END_EXAMPLE
    
+***** In Vim, how do we apply a macro to a set of lines?
+
    How to run a macro on the rest of the lines in the file without knowing the number of times it needs to be run?
-   
-   ----------------------------
-   
-   In Vim, how do we apply a macro to a set of lines?
    
    Use the normal command in Ex mode to execute the macro on multiple/all lines:
    
@@ -1097,8 +1080,6 @@ EX RANGES
    Enter :help normal in vim to read more.
    For help, check: :help global.
  
-   ------------------------------------------
-
 *** Netrw
 
    Vim documentation: http://vimdoc.sourceforge.net/htmldoc/pi_netrw.html#netrw
@@ -1226,8 +1207,6 @@ EX RANGES
       https://github.com/pechorin/any-jump.vim
    #+END_EXAMPLE
 
-   ------------------------------------------
-
 *** git
 
 **** gitignore 
@@ -1290,8 +1269,6 @@ EX RANGES
     git config --global http.sslVerify true 
    #+END_EXAMPLE
 
-   ------------------------------------------
-
 *** Helpful links
 
 | https://vim.fandom.com/wiki/Search_across_multiple_lines |
@@ -1299,8 +1276,6 @@ EX RANGES
 | https://sanctum.geek.nz/arabesque/advanced-vim-macros/   |
 | https://vim.fandom.com/wiki/Copy,_cut_and_paste          |
 | https://vim.fandom.com/wiki/Power_of_g                   |
-
-   ------------------------------------------
 
 *** Open questions
     
@@ -1313,8 +1288,6 @@ EX RANGES
     1. To minimise the method/function implementation. (-) - minus? need a working example.
     1. color schemes in Vim
     1. vimrc shortcut for finding and displaying all the occurences of a word
-
-   ------------------------------------------
 
 *** Research
 
@@ -1342,8 +1315,10 @@ EX RANGES
    - Additional support for languages such as Markdown
    
    
-   -------------------------------------------------------------
-   
+*** Terminal
+
+   Launch terminal from within Vim using `:term`
+ 
    How to switch between Vim and terminal when using Vim in a terminal (found this when looking for differences between Vim and GVim)
    
    With vim (not gVim) you can get benefit from ctrl-Z
@@ -1351,8 +1326,6 @@ EX RANGES
    if you want to test your codes in shell/terminal, or execute some shell commands during your editing. 
    In vim you can just ctrl-z to back to terminal do what you want, and fg back to vim. 
    With Gvim, you cannot do that. 
-
-   ------------------------------------------
 
 *** Miscellaneous
 
@@ -1369,8 +1342,6 @@ EX RANGES
 | :mkview [f]         | save view configuration [to file f]              |
 | :loadview [f]       | load view configuration [from file f]            |
 | ^@ ^K ^_  \  Fn ^Fn | unmapped keys                                    |
-
-   ------------------------------------------
 
 *** Plugins
 
