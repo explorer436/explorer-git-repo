@@ -827,49 +827,80 @@ EX RANGES
    
      de (ve to select in visual mode)
    
-***** Delete unnecessary spaces and tabs in empty lines in Vim-:
+***** Delete unnecessary spaces and tabs in empty lines in Vim
    
-   * (these don't seem to work with eclipse vim plugin and emacs vi mode)
+     (This doesn't seem to work with eclipse vim plugin and emacs vi mode)
    
-       In a search, \s finds whitespace (a space or a tab), and \+ finds one or more occurrences.
+     In a search, \s finds whitespace (a space or a tab), and \+ finds one or more occurrences.
    
-       The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
+     The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
    
-       :%s/\s\+$//e
+     :%s/\s\+$//e
    
 ***** Delete whitespace in blank lines
 
        :%s/^\s\+$//
 
        % — execute for all lines
+
        s/^\s\+$// — search and replace command:
-             search lines that only have whitespaces
-             and replace with an empty string.
+
+       search lines that only have whitespaces and replace with an empty string.
    
 ***** Delete all text before search pattern
 
    If you have a file that looks like below
+   
+   #+begin_src 
    1: #sometext
    2: #sometext
    3: #sometext
+   #+end_src
 
-   If you want to delete the text before the pattern ":" (colon). I have used the following command to replace every :%s/^.*/\://
-   If want to delete the texts after the pattern ":" (colon). I have used the following command to replace every :%s/\:.*$//
+   If you want to delete the text before the pattern ":" (colon). I have used the following command to replace every 
+
+   #+begin_src 
+   :%s/^.*/\://
+   #+end_src
+
+   If want to delete the texts after the pattern ":" (colon). I have used the following command to replace every 
+
+   #+begin_src 
+   :%s/\:.*$//
+   #+end_src
+
    I would like to learn other ways to do.
    
    Another answer : 
+
    Do you want to not include the colon?
-   If so, then for deleting everything before (but not including) the colon :%s/.*\ze://
-   And for everything after :%s/:\zs.*//
+   If so, then for deleting everything before (but not including) the colon 
+
+   #+begin_src 
+   :%s/.*\ze://
+   #+end_src
+
+   And for everything after 
+
+   #+begin_src 
+   :%s/:\zs.*//
+   #+end_src
+
    See :help \zs and :help \ze for more info.
    
-   These atoms are amazing! After I discovered them, I started using them all the time. I remember them as z == zero-width (since they don't match anything).
+   I remember them as z == zero-width (since they don't match anything).
    
    If you want to delete all characters before "Hello", you can do
+   #+begin_src 
    :%s/.*Hello/Hello/
+   #+end_src
+
    Note that .* is greedy, i.e. it will eat all occurrences of "Hello" till it finds the last one. If you have a line:
    abcHellodefHelloghi - it will become - Helloghi
-   If you want a non-greedy solution, try - :%s/.\{-}Hello/Hello
+   If you want a non-greedy solution, try - 
+   #+begin_src 
+   :%s/.\{-}Hello/Hello
+   #+end_src
    
 ***** Delete duplicate rows in vi 
       
