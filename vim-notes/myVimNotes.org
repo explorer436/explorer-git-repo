@@ -904,23 +904,35 @@ EX RANGES
    
 ***** Delete duplicate rows in vi 
       
+      #+begin_src 
       :sort u
+      #+end_src
    
 ***** Delete all blank(empty) lines
 
-   To delete blank lines in vim (empty lines), use this command - :g/^$/d
+   To delete blank lines in vim (empty lines), use this command - 
+
+   #+begin_src 
+   :g/^$/d
+   #+end_src
    
    The g character says, “perform the following operation globally in this file.” (Operate on all lines in this file.)
+
    The forward slash characters enclose the pattern I’m trying to match. In this case I want to match blank lines, so I use the regular expression ^$. Here the ^ means “beginning of line,” and $ means “end of line,” so with no characters in between them, this vim regex means “blank line.” (If I had typed ^abc$, that would mean, “find a line with only the sequence of characters ‘abc’”.)
+
    The d at the end of the command says, “When you find this pattern, delete the line.”
    
 ***** Delete Lines Beginning With A certain text In Vim 
 
-   :g/^(enter text here)/d
+      #+begin_src 
+      :g/^(enter text here)/d
+      #+end_src
    
 ***** Delete line containing certain text in vim with prompt 
 
-   :%s/.*text.*\n//gc
+      #+begin_src 
+      :%s/.*text.*\n//gc
+      #+end_src
 
    The substitute command works by 
    1. adding a wildcard
@@ -928,20 +940,29 @@ EX RANGES
    
 ***** Delete all lines that do NOT contain a certain word in Vim
    
-   :%g!/price/d  - this deletes every line that doesn't contain the word "price"
+      #+begin_src 
+      :%g!/price/d
+      #+end_src
+
+      This deletes every line that doesn't contain the word "price"
    
 ***** Delete trailing whitespaces at the end of each line
    
    The following command deletes any trailing whitespace at the end of each line. If no trailing whitespace is found no change occurs, and the e flag means no error is displayed.
    
+   #+begin_src 
    :%s/\s\+$//e
+   #+end_src
    
 ***** Delete text between all braces {} in vim
 
    You can do this with the global command. 
+   #+begin_src 
    :g/{/normal f{da{
+   #+end_src
 
    What is this doing:
+
    For all lines containing a {, move to the first { on that line and delete everything from there up to and including a matching }.
 
    If you want to add a ; at the end - which I suspect would be the next thing you'd want - you can add a A; at the end of that command.
