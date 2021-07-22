@@ -1,0 +1,17 @@
+*** Android alternatives
+
+GrapheneOS
+LineageOS (supports many older devices)
+
+Look into these as well:
+Sprinboard Volla - phone
+Cosmo Communicator - phone
+Proix - phone
+
+Purism librem 5 -> Not recommended. 
+
+Pinephone is the better choice compared to Purism.
+Regarding the OS that can be used on Pinephone, UBPorts (Ubuntu Touch) is recommended.
+How does Manjaro Plasma compare to UBPorts?
+
+What do people use for maps when using Linux phones?

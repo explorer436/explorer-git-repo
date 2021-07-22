@@ -6,60 +6,45 @@
 - Amazon Prime Video (streaming)
 - Authenticator (Microsoft)
 - BlipBlip (blip reminder on an hourly or timely basis)
-- Cambridge Dictionary
+- +Cambridge Dictionary+
 - Chess.com
-- DuckDuckGo (optional)
+- +DuckDuckGo+
 - Fairmail (using this for Gmail and hotmail accounts right now)
-- Fdroid (optional)
+- +Fdroid+
 - Firefox (extensions - Dark Reader) (set startpage.com as the default search engine)
 - GPS Tools (good app with various features to determine gps info)
-- Geeks for Geeks (optional)
+- +Geeks for Geeks+
 - GitHub (Preferable to look at repositories in a browser. The app is not all that helpful)
-- Glassdoor (Job search) (optional)
+- +Glassdoor (Job search)+
 - HBO Max (streaming)
 - Instapaper (Reading articles)
-- LBRY
+- +LBRY+
 - Lastpass (password manager)
-- LinkedIn (Job search) (optional)
-- Mapquest (maps)
+- +LinkedIn (Job search)+
+- +Mapquest+ (maps)
 - Mega Sync Client
-- Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app.)
+- Moonreader (This has good support for txt and markdown files along with epub, mobi and a lot of other file types. A very good app. Use this for pdfs as well. You do not need any other app specifically for pdfs.)
 - NetGuard
 - Netflix (streaming)
 - OpenPhone (optional)
-- OsmAnd (maps)
+- +OsmAnd+
 - Outlook (Microsoft) (For FusionAlliance Webmail and hotmail accounts - might also work for Gmail and other accounts) (Email client)
 - Podcasts (Google) (Podcasts)
-- Quora	 (Reading) - Beware of this. This could turn out to be a time pit. You are probably better off logging into the website in a computer when necessary.
+- +Quora (Reading) - Beware of this. This could turn out to be a time pit. You are probably better off logging into the website in a computer when necessary+
 - Signal (Messaging apps)
 - Spotify (Music)
-- Startpage search engine app
+- +Startpage search engine app+
 - Sync (cloud client)
 - The weather channel (weather)
 - Tor Browser (browser) (set startpage.com as the default search engine)
 - Tutanota (Email client)
 - Udemy (optional)
-- Vim Master
+- +Vim Master+
 - Walldrobe (wallpapers from Unsplash)
 - Whatsapp (Messaging apps)
-- Word (Microsoft) (for word files and pdf files as well)
+- +Word (Microsoft) (technically, it supports pdf files as well. But it is very slow. Moonreader seems to be much faster alternative to this.)+
 - WriterP (simple text editor)
 - Yahoomail (good with Yahoo accounts - if this cannot be set up in other email clients - can we set it up in Microsoft Outlook app?) (Email client)
 - Youtube
 
 
-*** Android alternatives
-
-GrapheneOS
-LineageOS (supports many older devices)
-
-Look into these as well:
-Sprinboard Volla - phone
-Cosmo Communicator - phone
-Proix - phone
-
-Purism librem 5 -> Not recommended
-Pinephone is the better alternative
-Regarding the OS that can be used on Pinephone, UBPorts (Ubuntu Touch) is recommended.
-
-What do people use for maps when using Linux phones?
